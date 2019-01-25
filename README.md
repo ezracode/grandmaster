@@ -20,12 +20,24 @@ de 1996 entre Gary Kasparov y Deep Blue.
 | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; |
 | &#9814; | &#9816; | &#9815; | &#9813; | &#9812; | &#9815; | &#9816; | &#9814; |
 
+<style >
+    .white 
+    {
+        background-color: white;
+    }
+
+    .black
+    {
+        background-color: black;
+    }
+</style>
+
 <div>
     <div name = "Fila8">
-        <div name = "a8" style="background-color:white;">
+        <div class = "white" name = "a8" >
             <p>&#9820;</p>
         </div>
-        <div name = "b8" style="background-color:black;">
+        <div class = "black" name = "b8">
             <p>&#9822;</p>
         </div>
         <div name = "c8" style="background-color:white;">
