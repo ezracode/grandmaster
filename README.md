@@ -11,7 +11,7 @@ de 1996 entre Gary Kasparov y Deep Blue.
 1. e4 e5
 
 (setq markdown-xhtml-header-content
-"<style type='text/css'>
+<style type="text/css">
     .chessboard {
         width: 640px;
         height: 640px;
@@ -38,7 +38,7 @@ de 1996 entre Gary Kasparov y Deep Blue.
         display: table-cell;
         vertical-align:middle;
     }
-</style>")
+</style>)
 
 <div class="chessboard">
     <!-- 1st -->
