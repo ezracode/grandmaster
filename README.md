@@ -22,28 +22,28 @@ de 1996 entre Gary Kasparov y Deep Blue.
 
 <div>
     <div name = "Fila8">
-        <div name = "a8">
+        <div name = "a8" style="background-color:white;">
             <p>&#9820;</p>
         </div>
-        <div name = "b8">
+        <div name = "b8" style="background-color:black;">
             <p>&#9822;</p>
         </div>
-        <div name = "c8">
+        <div name = "c8" style="background-color:white;">
             <p>&#9821;</p>
         </div>
-        <div name = "d8">
+        <div name = "d8" style="background-color:black;">
             <p>&#9819;</p>
         </div>
-        <div name = "e8">
+        <div name = "e8" style="background-color:white;">
             <p>&#9818;</p>
         </div>
-        <div name = "f8">
+        <div name = "f8" style="background-color:black;">
             <p>&#9821;</p>
         </div>
-        <div name = "g8">
+        <div name = "g8" style="background-color:white;">
             <p>&#9822;</p>
         </div>
-        <div name = "h8">
+        <div name = "h8" style="background-color:black;">
             <p>&#9820;</p>
         </div>
     </div>
