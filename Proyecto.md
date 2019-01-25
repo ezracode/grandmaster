@@ -1,36 +1,38 @@
-#Descripcin del Proyecto
+# Descripción del Proyecto
 
 GrandMaster es un proyecto que nace de la idea de permitir que lo jugadores de ajedrez puedan mejorar en las tácticas y estrategias del juego.  
 
-#Objetivos
-##Generales
+## Objetivos
+
+### Generales
 
     Ser una herramienta que permita estudiar juegos completos de ajedrez.
 
     Ser una herramienta que muetre las mejores tacticas y estrategias del juego de ajedrez
 
-##Especifivos
+### Especifivos
 
     Permitir el estudio de un juego completo de ajedrez.
 
     Mostrar las posiciones que pueden llevar a ganar una partida de ajedrez.
 
-#Supuestos
+## Supuestos
 
     El usuario ya tiene la compresión básica del juego.  El usuario ya entiende el movimiento de las piezas de ajedrez, así como el finalidad del juego.
 
-#Alcances y Restricciones
+## Alcances y Restricciones
 
-##Alcances
+### Alcances
 
     Analisis de partidas de ajedrez.
     Analisis de jugadas dentro de la partida.
 
-##Restricciones
+### Restricciones
 
-#Analisis de Contexto
-#Diagrama General del Proyecto
+## Analisis de Contexto
 
-#Requerimientos Funcionales
+## Diagrama General del Proyecto
 
-#Requerimientos no Funcionales
+## Requerimientos Funcionales
+
+## Requerimientos no Funcionales
