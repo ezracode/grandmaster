@@ -20,21 +20,11 @@ de 1996 entre Gary Kasparov y Deep Blue.
 | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; |
 | &#9814; | &#9816; | &#9815; | &#9813; | &#9812; | &#9815; | &#9816; | &#9814; |
 
-<style>
-    .white 
-    {
-        background-color: white;
-    }
-    .black
-    {
-        background-color: black;
-    }
-</style>
-
 <div>
     <div name = "Fila8">
         <div class = "white" name = "a8" >
             <p>&#9820;</p>
+            <span style="color:blue">some *This is Blue italic.* text</span>
         </div>
         <div class = "black" name = "b8">
             <p>&#9822;</p>
@@ -107,3 +97,14 @@ para el analisis de cada jugada
 para la documentación
 
     - Markdown
+
+<style>
+    .white 
+    {
+        background-color: white;
+    }
+    .black
+    {
+        background-color: black;
+    }
+</style>
