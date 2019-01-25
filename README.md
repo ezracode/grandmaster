@@ -8,11 +8,11 @@ programa).
 A continuación un extracto de las primeras cinco jugadas de la partida número uno
 de 1996 entre Gary Kasparov y Deep Blue.
 
-1. e4 e5
+1. <p>e4 e5</p>
 2. c3 d5
-3. exd5 &BLACK CHESS QUEEN;xd5
-4. d4 &BLACK CHESS KNIGHT;f6
-5. &WHITE CHESS KNIGHT;f3 &BLACK CHESS BISHOP;g4
+3. exd5 &#9819;xd5
+4. d4 &#9822;f6
+5. &#9816;f3 &#9821;g4
 
 Si cargamos varios juegos en una base de datos podriamos buscar la posición
 actual del tablero y ver como jugaron otros jugadores y se podria ir viendo lo que
