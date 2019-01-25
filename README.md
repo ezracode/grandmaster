@@ -1,4 +1,4 @@
-## Introducción
+# Introducción
 
 Debido a que hay muchas personas que quieren aprender a jugar ajedrez o mejorar
 en sus tácticas o estrategia se me ocurrio hacer un tablero que permita cargar
@@ -9,48 +9,6 @@ A continuación un extracto de las primeras cinco jugadas de la partida número 
 de 1996 entre Gary Kasparov y Deep Blue.
 
 1. e4 e5
-
-| &#9820; | &#9822; | &#9821; | &#9819; | &#9818; | &#9821; | &#9822; | &#9820; |
-|-|-|-|-|-|-|-|-|
-| &#9823; | &#9823; | &#9823; | &#9823; | &#9823; | &#9823; | &#9823; | &#9823; |
-| &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; |
-| &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; |
-| &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; |
-| &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; | &#8193; |
-| &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; |
-| &#9814; | &#9816; | &#9815; | &#9813; | &#9812; | &#9815; | &#9816; | &#9814; |
-
-<div>
-    <div name = "Fila8">
-        <div class = "white" name = "a8" >
-            <p>&#9820;</p>
-            <span style="color:blue">some *This is Blue italic.* text</span>
-        </div>
-        <div class = "black" name = "b8">
-            <p>&#9822;</p>
-        </div>
-        <div name = "c8" style="background-color:white;">
-            <p>&#9821;</p>
-        </div>
-        <div name = "d8" style="background-color:black;">
-            <p>&#9819;</p>
-        </div>
-        <div name = "e8" style="background-color:white;">
-            <p>&#9818;</p>
-        </div>
-        <div name = "f8" style="background-color:black;">
-            <p>&#9821;</p>
-        </div>
-        <div name = "g8" style="background-color:white;">
-            <p>&#9822;</p>
-        </div>
-        <div name = "h8" style="background-color:black;">
-            <p>&#9820;</p>
-        </div>
-    </div>
-</div>
-
-
 2. c3 d5
 3. exd5 &#9819;xd5
 4. d4 &#9822;f6
@@ -97,14 +55,3 @@ para el analisis de cada jugada
 para la documentación
 
     - Markdown
-
-<style>
-    .white 
-    {
-        background-color: white;
-    }
-    .black
-    {
-        background-color: black;
-    }
-</style>
