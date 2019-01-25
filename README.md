@@ -20,12 +20,11 @@ de 1996 entre Gary Kasparov y Deep Blue.
 | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; | &#9817; |
 | &#9814; | &#9816; | &#9815; | &#9813; | &#9812; | &#9815; | &#9816; | &#9814; |
 
-<style >
+<style>
     .white 
     {
         background-color: white;
     }
-
     .black
     {
         background-color: black;
