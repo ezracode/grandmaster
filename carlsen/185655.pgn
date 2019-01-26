@@ -1,0 +1,1926 @@
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.19"]
+[Round "1"]
+[White "Navara, David"]
+[Black "Mamedov, Rauf"]
+[Result "1/2-1/2"]
+[Board "1"]
+[WhiteElo "2745"]
+[WhiteTitle "GM"]
+[WhiteCountry "CZE"]
+[WhiteFideId "309095"]
+[WhiteEloChange "-1"]
+[BlackElo "2704"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401653"]
+[BlackEloChange "1"]
+
+1. e4 {[%clk 1:59:55]} c5 {[%clk 1:59:53]} 2. Nf3 {[%clk 1:59:47]} Nc6 {[%clk
+1:59:50]} 3. Nc3 {[%clk 1:59:38]} g6 {[%clk 1:59:47]} 4. d4 {[%clk 1:59:30]} cxd4
+{[%clk 1:59:44]} 5. Nxd4 {[%clk 1:59:24]} Bg7 {[%clk 1:59:42]} 6. Be3 {[%clk
+1:59:08]} Nf6 {[%clk 1:59:35]} 7. Bc4 {[%clk 1:58:54]} O-O {[%clk 1:59:30]} 8.
+Bb3 {[%clk 1:58:39]} Re8 {[%clk 1:59:22]} 9. f3 {[%clk 1:58:17]} e6 {[%clk
+1:59:20]} 10. f4 {[%clk 1:58:09]} d6 {[%clk 1:59:17]} 11. Ndb5 {[%clk 1:58:03]}
+Bf8 {[%clk 1:41:03]} 12. Qf3 {[%clk 1:57:57]} a6 {[%clk 1:18:46]} 13. Nd4 {[%clk
+1:57:47]} Na5 {[%clk 1:16:27]} 14. O-O {[%clk 1:57:16]} b5 {[%clk 1:08:00]} 15.
+f5 {[%clk 1:57:10]} exf5 {[%clk 1:03:58]} 16. exf5 {[%clk 1:57:04]} Bb7 {[%clk
+1:03:25]} 17. Bxf7+ {[%clk 1:56:58]} Kxf7 {[%clk 1:02:17]} 18. Qg3 {[%clk
+1:56:46]} Bg7 {[%clk 0:56:22]} 19. fxg6+ {[%clk 1:53:06]} hxg6 {[%clk 0:52:01]}
+20. Bg5 {[%clk 1:49:11]} Nc6 {[%clk 0:36:52]} 21. Rxf6+ {[%clk 1:11:43]} Bxf6
+{[%clk 0:36:49]} 22. Rf1 {[%clk 1:11:27]} Nxd4 {[%clk 0:36:38]} 23. Bxf6 {[%clk
+1:10:50]} Qxf6 {[%clk 0:36:28]} 24. Rxf6+ {[%clk 1:10:43]} Kxf6 {[%clk 0:36:27]}
+25. Qh4+ {[%clk 1:10:19]} Ke5 {[%clk 0:36:24]} 26. Qh7 {[%clk 1:09:42]} Bxg2
+{[%clk 0:24:29]} 27. Qg7+ {[%clk 1:06:48]} Ke6 {[%clk 0:19:55]} 28. Qxg6+ {[%clk
+1:04:10]} Kd7 {[%clk 0:18:08]} 29. Qg7+ {[%clk 1:04:02]} Ke6 {[%clk 0:11:54]} 30.
+Qxd4 {[%clk 1:02:36]} Rg8 {[%clk 0:11:34]} 31. Kf2 {[%clk 1:02:23]} Raf8+ {[%clk
+0:10:59]} 32. Ke3 {[%clk 0:58:06]} Rg5 {[%clk 0:08:59]} 33. Qb6 {[%clk 0:52:52]}
+Rc5 {[%clk 0:07:15]} 34. Ne2 {[%clk 0:48:33]} Rf3+ {[%clk 0:05:54]} 35. Kd2
+{[%clk 0:48:26]} Rf2 {[%clk 0:05:50]} 36. Ke3 {[%clk 0:45:50]} Rf3+ {[%clk
+0:05:43]} 37. Kd2 {[%clk 0:45:41]} Rf2 {[%clk 0:04:02]} 38. Ke3 {[%clk 0:45:32]}
+Rf3+ {[%clk 0:03:48]} 39. Kd2 {[%clk 0:45:26]} Rf2 {[%clk 0:03:17]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.19"]
+[Round "1"]
+[White "Ding, Liren"]
+[Black "Wojtaszek, Radoslaw"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "CHN"]
+[WhiteFideId "8603677"]
+[BlackElo "2744"]
+[BlackTitle "GM"]
+[BlackCountry "POL"]
+[BlackFideId "1118358"]
+
+1. c4 {[%clk 1:59:54]} Nf6 {[%clk 1:59:55]} 2. Nc3 {[%clk 1:59:41]} e5 {[%clk
+1:59:49]} 3. Nf3 {[%clk 1:59:24]} Nc6 {[%clk 1:59:44]} 4. g3 {[%clk 1:59:20]} Bb4
+{[%clk 1:59:29]} 5. Bg2 {[%clk 1:59:01]} d6 {[%clk 1:58:54]} 6. O-O {[%clk
+1:58:50]} O-O {[%clk 1:58:47]} 7. d3 {[%clk 1:58:00]} Re8 {[%clk 1:57:57]} 8. Bd2
+{[%clk 1:57:41]} Nd4 {[%clk 1:43:56]} 9. a3 {[%clk 1:53:22]} Nxf3+ {[%clk
+1:40:03]} 10. Bxf3 {[%clk 1:51:56]} Bxc3 {[%clk 1:36:49]} 11. Bxc3 {[%clk
+1:51:49]} c6 {[%clk 1:28:01]} 12. e4 {[%clk 1:44:46]} Bh3 {[%clk 1:26:29]} 13.
+Re1 {[%clk 1:44:34]} c5 {[%clk 1:20:10]} 14. b4 {[%clk 1:40:57]} b6 {[%clk
+1:20:02]} 15. a4 {[%clk 1:28:56]} Nd7 {[%clk 1:18:01]} 16. a5 {[%clk 1:25:21]}
+Be6 {[%clk 1:10:43]} 17. Ra3 {[%clk 1:19:15]} Rb8 {[%clk 0:53:46]} 18. b5 {[%clk
+1:14:44]} Qc8 {[%clk 0:50:33]} 19. axb6 {[%clk 1:11:29]} axb6 {[%clk 0:50:29]}
+20. Re2 {[%clk 1:11:15]} Ra8 {[%clk 0:49:58]} 21. Rea2 {[%clk 1:08:02]} Rxa3
+{[%clk 0:49:52]} 22. Rxa3 {[%clk 1:07:59]} Qc7 {[%clk 0:48:34]} 23. Bg2 {[%clk
+1:04:33]} Nf8 {[%clk 0:46:53]} 24. f4 {[%clk 1:03:11]} f6 {[%clk 0:46:29]} 25. f5
+{[%clk 0:44:43]} Bc8 {[%clk 0:45:07]} 26. Bd2 {[%clk 0:42:24]} Bb7 {[%clk
+0:39:55]} 27. g4 {[%clk 0:39:32]} h6 {[%clk 0:39:35]} 28. h4 {[%clk 0:38:49]} Nh7
+{[%clk 0:38:27]} 29. Bf3 {[%clk 0:31:40]} Qe7 {[%clk 0:35:55]} 30. Kf2 {[%clk
+0:25:29]} Rb8 {[%clk 0:34:49]} 31. Qc1 {[%clk 0:23:29]} Ra8 {[%clk 0:20:33]} 32.
+Rxa8+ {[%clk 0:23:05]} Bxa8 {[%clk 0:20:29]} 33. Qa1 {[%clk 0:22:27]} Bb7 {[%clk
+0:19:39]} 34. Qa7 {[%clk 0:22:16]} Qc7 {[%clk 0:19:34]} 35. g5 {[%clk 0:18:28]}
+fxg5 {[%clk 0:18:00]} 36. hxg5 {[%clk 0:16:16]} Nxg5 {[%clk 0:17:45]} 37. Bxg5
+{[%clk 0:16:10]} hxg5 {[%clk 0:17:42]} 38. Bh5 {[%clk 0:15:36]} Kf8 {[%clk
+0:16:59]} 39. Kg3 {[%clk 0:14:23]} Ke7 {[%clk 0:14:33]} 40. Kg4 {[%clk 1:13:12]}
+Kd8 {[%clk 1:06:31]} 41. Bg6 {[%clk 1:01:32]} Ke7 {[%clk 0:21:36]} 42. Kxg5
+{[%clk 0:59:41]} Kf8 {[%clk 0:21:32]} 43. Kh5 {[%clk 0:58:10]} Ke7 {[%clk
+0:21:26]} 44. Kg4 {[%clk 0:57:56]} Kd8 {[%clk 0:21:22]} 45. Bh7 {[%clk 0:46:51]}
+Ke8 {[%clk 0:21:18]} 46. Bg8 {[%clk 0:42:02]} g6 {[%clk 0:20:33]} 47. Bd5 {[%clk
+0:33:35]} gxf5+ {[%clk 0:20:29]} 48. Kf3 {[%clk 0:20:48]} fxe4+ {[%clk 0:20:25]}
+49. Ke3 {[%clk 0:20:43]} Qd8 {[%clk 0:20:01]} 50. Bxb7 {[%clk 0:20:19]} Qg5+
+{[%clk 0:19:57]} 51. Kxe4 {[%clk 0:19:36]} Qf4+ {[%clk 0:08:23]} 52. Kd5 {[%clk
+0:19:33]} Qf3+ {[%clk 0:08:19]} 53. Kxd6 {[%clk 0:18:27]} Qf6+ {[%clk 0:08:14]}
+54. Kd5 {[%clk 0:18:01]} Qf3+ {[%clk 0:07:03]} 55. Kxe5 {[%clk 0:14:38]} Qg3+
+{[%clk 0:06:29]} 56. Kf5 {[%clk 0:14:33]} Qh3+ {[%clk 0:04:49]} 57. Kf4 {[%clk
+0:14:20]} Qh4+ {[%clk 0:03:51]} 58. Kf3 {[%clk 0:14:01]} Qf6+ {[%clk 0:03:21]}
+59. Ke2 {[%clk 0:13:21]} Qb2+ {[%clk 0:02:48]} 60. Ke1 {[%clk 0:25:14]} Qc1+
+{[%clk 0:17:22]} 61. Ke2 {[%clk 0:25:05]} Qb2+ {[%clk 0:17:43]} 62. Kf1 {[%clk
+0:25:33]} Qc1+ {[%clk 0:17:06]} 63. Kg2 {[%clk 0:24:55]} Qd2+ {[%clk 0:16:22]}
+64. Kg3 {[%clk 0:23:28]} Qg5+ {[%clk 0:16:47]} 65. Kf3 {[%clk 0:23:17]} Qf6+
+{[%clk 0:17:06]} 66. Ke3 {[%clk 0:21:33]} Qd4+ {[%clk 0:16:41]} 67. Ke2 {[%clk
+0:22:01]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.19"]
+[Round "1"]
+[White "Mamedyarov, Shakhriyar"]
+[Black "Carlsen, Magnus"]
+[Result "1/2-1/2"]
+[Board "3"]
+[WhiteElo "2814"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401319"]
+[BlackElo "2843"]
+[BlackTitle "GM"]
+[BlackCountry "NOR"]
+[BlackFideId "1503014"]
+
+1. d4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:49]} 2. c4 {[%clk 1:59:52]} g6 {[%clk
+1:59:39]} 3. Nc3 {[%clk 1:59:40]} Bg7 {[%clk 1:59:30]} 4. g3 {[%clk 1:57:36]} O-O
+{[%clk 1:57:27]} 5. Bg2 {[%clk 1:57:23]} Nc6 {[%clk 1:57:15]} 6. Nf3 {[%clk
+1:52:49]} d5 {[%clk 1:57:06]} 7. cxd5 {[%clk 1:52:11]} Nxd5 {[%clk 1:57:03]} 8.
+O-O {[%clk 1:52:06]} e5 {[%clk 1:56:45]} 9. Nxe5 {[%clk 1:40:47]} Nxc3 {[%clk
+1:56:36]} 10. Nxc6 {[%clk 1:40:35]} Nxd1 {[%clk 1:56:24]} 11. Nxd8 {[%clk
+1:40:32]} Rxd8 {[%clk 1:42:45]} 12. Rxd1 {[%clk 1:39:16]} Rxd4 {[%clk 1:42:38]}
+13. Be3 {[%clk 1:33:00]} Rxd1+ {[%clk 1:41:56]} 14. Rxd1 {[%clk 1:32:58]} Bf6
+{[%clk 1:41:44]} 15. Bd4 {[%clk 1:28:50]} Bxd4 {[%clk 1:39:02]} 16. Rxd4 {[%clk
+1:26:45]} Be6 {[%clk 1:38:54]} 17. f4 {[%clk 1:21:54]} c6 {[%clk 1:33:44]} 18.
+Rb4 {[%clk 1:19:09]} b6 {[%clk 1:29:34]} 19. Bxc6 {[%clk 1:11:37]} Rc8 {[%clk
+1:29:08]} 20. Bb5 {[%clk 1:06:45]} Bxa2 {[%clk 1:26:26]} 21. Ra4 {[%clk 1:04:45]}
+Be6 {[%clk 1:26:20]} 22. Rxa7 {[%clk 1:04:35]} Rc1+ {[%clk 1:26:13]} 23. Kf2
+{[%clk 1:04:24]} Rb1 {[%clk 1:26:10]} 24. Bd7 {[%clk 1:00:38]} Bxd7 {[%clk
+1:26:02]} 25. Rxd7 {[%clk 1:00:35]} Rxb2 {[%clk 1:25:52]} 26. g4 {[%clk 0:59:45]}
+b5 {[%clk 1:25:42]} 27. Rb7 {[%clk 0:59:24]} b4 {[%clk 1:25:10]} 28. g5 {[%clk
+0:59:01]} b3 {[%clk 1:24:49]} 29. Kf3 {[%clk 0:58:16]} Rb1 {[%clk 1:24:44]} 30.
+Ke4 {[%clk 0:57:42]} Kg7 {[%clk 1:24:25]} 31. Ke5 {[%clk 0:55:45]} Rb2 {[%clk
+1:23:39]} 32. e4 {[%clk 0:55:39]} Rxh2 {[%clk 1:23:35]} 33. Rxb3 {[%clk 0:55:37]}
+h6 {[%clk 1:22:56]} 34. gxh6+ {[%clk 0:55:32]} Rxh6 {[%clk 1:22:50]} 35. Rg3
+{[%clk 0:55:22]} Rh8 {[%clk 1:22:25]} 36. Rb3 {[%clk 0:55:10]} Re8+ {[%clk
+1:22:16]} 37. Kd4 {[%clk 0:55:07]} Ra8 {[%clk 1:22:10]} 38. Ke3 {[%clk 0:55:02]}
+Ra7 {[%clk 1:22:05]} 39. Kf3 {[%clk 0:54:58]} Ra8 {[%clk 1:22:00]} 40. Kg4 {[%clk
+1:54:54]} Ra7 {[%clk 2:21:51]} 41. Rc3 {[%clk 1:54:49]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.19"]
+[Round "1"]
+[White "Giri, Anish"]
+[Black "Karjakin, Sergey"]
+[Result "1/2-1/2"]
+[Board "4"]
+[WhiteElo "2777"]
+[WhiteTitle "GM"]
+[WhiteCountry "NED"]
+[WhiteFideId "24116068"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "RUS"]
+[BlackFideId "14109603"]
+
+1. d4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:54]} 2. c4 {[%clk 1:59:52]} e6 {[%clk
+1:59:52]} 3. Nc3 {[%clk 1:59:48]} Bb4 {[%clk 1:59:47]} 4. Qc2 {[%clk 1:59:45]} d5
+{[%clk 1:59:20]} 5. cxd5 {[%clk 1:59:34]} exd5 {[%clk 1:58:52]} 6. Bg5 {[%clk
+1:59:28]} h6 {[%clk 1:58:44]} 7. Bh4 {[%clk 1:59:25]} c5 {[%clk 1:58:13]} 8. dxc5
+{[%clk 1:59:20]} g5 {[%clk 1:57:28]} 9. Bg3 {[%clk 1:59:14]} Ne4 {[%clk 1:57:24]}
+10. e3 {[%clk 1:58:04]} Nc6 {[%clk 1:46:15]} 11. Bd3 {[%clk 1:44:18]} Nxg3 {[%clk
+1:43:58]} 12. hxg3 {[%clk 1:44:09]} d4 {[%clk 1:43:54]} 13. exd4 {[%clk 1:43:56]}
+Qxd4 {[%clk 1:43:48]} 14. Nf3 {[%clk 1:20:10]} Qxc5 {[%clk 1:43:30]} 15. O-O
+{[%clk 1:19:23]} Be6 {[%clk 1:37:09]} 16. Rfc1 {[%clk 1:11:08]} g4 {[%clk
+1:15:53]} 17. Ne1 {[%clk 1:00:49]} O-O-O {[%clk 1:11:46]} 18. Be4 {[%clk
+0:46:20]} Kb8 {[%clk 0:41:22]} 19. Nd3 {[%clk 0:30:00]} Qc4 {[%clk 0:40:53]} 20.
+Qe2 {[%clk 0:24:48]} Qa6 {[%clk 0:32:41]} 21. Nxb4 {[%clk 0:20:13]} Nxb4 {[%clk
+0:32:20]} 22. Qe3 {[%clk 0:20:11]} Qb6 {[%clk 0:31:46]} 23. Qf4+ {[%clk 0:19:45]}
+Qd6 {[%clk 0:31:14]} 24. Qe3 {[%clk 0:19:43]} Qd4 {[%clk 0:26:54]} 25. Qf4+
+{[%clk 0:19:33]} Qd6 {[%clk 0:26:52]} 26. Qe3 {[%clk 0:19:26]} Qd4 {[%clk
+0:26:48]} 27. Qf4+ {[%clk 0:19:23]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.19"]
+[Round "1"]
+[White "Topalov, Veselin"]
+[Black "Radjabov, Teimour"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2749"]
+[WhiteTitle "GM"]
+[WhiteCountry "BUL"]
+[WhiteFideId "2900084"]
+[BlackElo "2748"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13400924"]
+
+1. e4 {[%clk 1:59:54]} e5 {[%clk 1:59:55]} 2. Nf3 {[%clk 1:59:30]} Nc6 {[%clk
+1:59:50]} 3. Bb5 {[%clk 1:59:19]} Nf6 {[%clk 1:59:44]} 4. O-O {[%clk 1:57:41]}
+Nxe4 {[%clk 1:59:27]} 5. d4 {[%clk 1:56:44]} Nd6 {[%clk 1:59:11]} 6. Bxc6 {[%clk
+1:55:17]} dxc6 {[%clk 1:59:01]} 7. dxe5 {[%clk 1:55:07]} Nf5 {[%clk 1:58:53]} 8.
+Qxd8+ {[%clk 1:55:00]} Kxd8 {[%clk 1:58:47]} 9. Nc3 {[%clk 1:54:44]} Ke8 {[%clk
+1:57:58]} 10. h3 {[%clk 1:52:58]} h5 {[%clk 1:55:26]} 11. Bf4 {[%clk 1:51:18]}
+Be7 {[%clk 1:52:21]} 12. Rad1 {[%clk 1:50:19]} Be6 {[%clk 1:51:52]} 13. Ng5
+{[%clk 1:49:10]} Rh6 {[%clk 1:51:00]} 14. Rfe1 {[%clk 1:45:57]} Bb4 {[%clk
+1:46:43]} 15. a3 {[%clk 1:44:36]} Bxc3 {[%clk 1:43:19]} 16. bxc3 {[%clk 1:44:31]}
+Ne7 {[%clk 1:41:22]} 17. Nf3 {[%clk 1:43:16]} Rh8 {[%clk 1:36:28]} 18. Nd4 {[%clk
+1:42:55]} Nd5 {[%clk 1:35:12]} 19. Bg5 {[%clk 1:41:36]} Nxc3 {[%clk 1:29:26]} 20.
+Rd3 {[%clk 1:41:31]} Na4 {[%clk 1:21:33]} 21. f4 {[%clk 1:37:08]} Nc5 {[%clk
+1:14:20]} 22. Rc3 {[%clk 1:25:05]} Na4 {[%clk 1:10:35]} 23. Rg3 {[%clk 1:19:06]}
+c5 {[%clk 1:04:35]} 24. Nxe6 {[%clk 1:14:31]} fxe6 {[%clk 1:04:29]} 25. f5 {[%clk
+1:12:18]} Kf7 {[%clk 1:00:55]} 26. Bh4 {[%clk 1:07:14]} Rag8 {[%clk 0:50:12]} 27.
+Rb1 {[%clk 0:56:36]} Nb6 {[%clk 0:45:41]} 28. fxe6+ {[%clk 0:53:55]} Kxe6 {[%clk
+0:45:21]} 29. Rg6+ {[%clk 0:51:34]} Kf7 {[%clk 0:40:54]} 30. Rg5 {[%clk 0:51:06]}
+Ke6 {[%clk 0:40:22]} 31. a4 {[%clk 0:45:48]} Nxa4 {[%clk 0:35:01]} 32. Rxb7
+{[%clk 0:44:17]} Nc3 {[%clk 0:30:55]} 33. Rxc7 {[%clk 0:43:50]} Ne4 {[%clk
+0:29:26]} 34. Rg6+ {[%clk 0:38:27]} Kf5 {[%clk 0:27:27]} 35. Ra6 {[%clk 0:35:50]}
+g5 {[%clk 0:19:51]} 36. Be1 {[%clk 0:33:54]} Re8 {[%clk 0:17:06]} 37. Raxa7
+{[%clk 0:30:25]} Rxe5 {[%clk 0:13:46]} 38. Rf7+ {[%clk 0:27:25]} Ke6 {[%clk
+0:10:40]} 39. c4 {[%clk 0:24:44]} Re8 {[%clk 0:09:37]} 40. Rg7 {[%clk 1:21:03]}
+Kf5 {[%clk 1:08:35]} 41. Rgf7+ {[%clk 1:18:20]} Ke6 {[%clk 1:08:26]} 42. Rg7
+{[%clk 1:18:14]} Kf5 {[%clk 1:08:23]} 43. Rgf7+ {[%clk 1:18:11]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.20"]
+[Round "2"]
+[White "Karjakin, Sergey"]
+[Black "Ding, Liren"]
+[Result "1/2-1/2"]
+[Board "1"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "RUS"]
+[WhiteFideId "14109603"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "CHN"]
+[BlackFideId "8603677"]
+
+1. e4 {[%clk 1:59:58]} e5 {[%clk 1:59:55]} 2. Nf3 {[%clk 1:59:54]} Nc6 {[%clk
+1:59:51]} 3. Bc4 {[%clk 1:59:48]} Nf6 {[%clk 1:59:08]} 4. d3 {[%clk 1:59:40]} Bc5
+{[%clk 1:59:01]} 5. c3 {[%clk 1:59:33]} d6 {[%clk 1:58:25]} 6. O-O {[%clk
+1:59:13]} O-O {[%clk 1:58:17]} 7. h3 {[%clk 1:58:13]} a5 {[%clk 1:57:09]} 8. Re1
+{[%clk 1:56:41]} h6 {[%clk 1:56:38]} 9. Nbd2 {[%clk 1:56:33]} Be6 {[%clk
+1:56:33]} 10. b3 {[%clk 1:56:17]} Ba7 {[%clk 1:38:51]} 11. Nf1 {[%clk 1:55:55]}
+d5 {[%clk 1:37:56]} 12. exd5 {[%clk 1:55:34]} Nxd5 {[%clk 1:37:46]} 13. Bd2
+{[%clk 1:55:28]} Qf6 {[%clk 1:36:45]} 14. N1h2 {[%clk 1:55:07]} Rad8 {[%clk
+1:35:31]} 15. Ng4 {[%clk 1:54:14]} Bxg4 {[%clk 1:35:07]} 16. hxg4 {[%clk
+1:54:07]} e4 {[%clk 1:34:59]} 17. g5 {[%clk 1:54:01]} hxg5 {[%clk 1:33:07]} 18.
+Bxg5 {[%clk 1:53:55]} Nxc3 {[%clk 1:33:03]} 19. Bxf6 {[%clk 1:53:46]} Nxd1 {[%clk
+1:33:01]} 20. Raxd1 {[%clk 1:53:25]} gxf6 {[%clk 1:32:36]} 21. Rxe4 {[%clk
+1:52:38]} Rfe8 {[%clk 1:31:05]} 22. Rde1 {[%clk 1:51:38]} Rxe4 {[%clk 1:29:49]}
+23. Rxe4 {[%clk 1:51:33]} Kf8 {[%clk 1:29:38]} 24. Rh4 {[%clk 1:50:20]} Kg7
+{[%clk 1:28:54]} 25. Rg4+ {[%clk 1:50:15]} Kf8 {[%clk 1:28:52]} 26. Rh4 {[%clk
+1:50:09]} Kg7 {[%clk 1:28:50]} 27. Rg4+ {[%clk 1:50:04]} Kf8 {[%clk 1:28:48]}
+1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.20"]
+[Round "2"]
+[White "Topalov, Veselin"]
+[Black "Giri, Anish"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2749"]
+[WhiteTitle "GM"]
+[WhiteCountry "BUL"]
+[WhiteFideId "2900084"]
+[BlackElo "2777"]
+[BlackTitle "GM"]
+[BlackCountry "NED"]
+[BlackFideId "24116068"]
+
+1. c4 {[%clk 1:59:56]} Nf6 {[%clk 1:59:40]} 2. Nc3 {[%clk 1:59:49]} e5 {[%clk
+1:59:29]} 3. Nf3 {[%clk 1:59:42]} Nc6 {[%clk 1:59:26]} 4. a3 {[%clk 1:59:37]} d5
+{[%clk 1:58:19]} 5. cxd5 {[%clk 1:59:31]} Nxd5 {[%clk 1:58:16]} 6. Qc2 {[%clk
+1:58:32]} Nxc3 {[%clk 1:58:02]} 7. dxc3 {[%clk 1:56:25]} Bd6 {[%clk 1:57:03]} 8.
+e4 {[%clk 1:52:17]} O-O {[%clk 1:56:45]} 9. Bc4 {[%clk 1:47:43]} Qe7 {[%clk
+1:52:43]} 10. Bg5 {[%clk 1:43:52]} Qe8 {[%clk 1:52:12]} 11. O-O-O {[%clk
+1:35:45]} Be6 {[%clk 1:50:18]} 12. Bd5 {[%clk 1:30:59]} f6 {[%clk 1:42:12]} 13.
+Be3 {[%clk 1:29:30]} Bxd5 {[%clk 1:35:16]} 14. Rxd5 {[%clk 1:28:31]} Ne7 {[%clk
+1:28:52]} 15. Rdd1 {[%clk 1:19:33]} Qc6 {[%clk 1:20:21]} 16. Nd2 {[%clk 1:10:20]}
+a5 {[%clk 1:12:38]} 17. Qb3+ {[%clk 1:00:48]} Kh8 {[%clk 1:12:17]} 18. Qc4 {[%clk
+0:59:49]} Qd7 {[%clk 1:00:52]} 19. a4 {[%clk 0:58:35]} b6 {[%clk 0:58:54]} 20. f3
+{[%clk 0:49:58]} Rab8 {[%clk 0:55:13]} 21. Kc2 {[%clk 0:46:57]} b5 {[%clk
+0:52:35]} 22. axb5 {[%clk 0:46:47]} Rxb5 {[%clk 0:52:32]} 23. Ra1 {[%clk
+0:43:30]} Rfb8 {[%clk 0:51:32]} 24. b3 {[%clk 0:41:24]} Ng6 {[%clk 0:48:05]} 25.
+Qa4 {[%clk 0:33:23]} Qe7 {[%clk 0:35:20]} 26. Nc4 {[%clk 0:25:15]} Bc5 {[%clk
+0:32:48]} 27. Bxc5 {[%clk 0:19:29]} Qxc5 {[%clk 0:32:42]} 28. Rhd1 {[%clk
+0:19:21]} Nf4 {[%clk 0:31:59]} 29. Rd2 {[%clk 0:17:22]} h6 {[%clk 0:29:44]} 30.
+Qa3 {[%clk 0:13:30]} a4 {[%clk 0:25:45]} 31. bxa4 {[%clk 0:08:02]} Rb4 {[%clk
+0:24:56]} 32. Rb1 {[%clk 0:07:24]} Qxc4 {[%clk 0:19:43]} 33. Rxb4 {[%clk
+0:07:19]} Rxb4 {[%clk 0:19:39]} 34. Qxb4 {[%clk 0:07:11]} Qa2+ {[%clk 0:19:38]}
+35. Qb2 {[%clk 0:06:57]} Qxa4+ {[%clk 0:19:36]} 36. Qb3 {[%clk 0:06:50]} Qa6
+{[%clk 0:19:25]} 37. g3 {[%clk 0:03:51]} Ne6 {[%clk 0:19:16]} 38. Qd5 {[%clk
+0:02:02]} Ng5 {[%clk 0:17:10]} 39. f4 {[%clk 0:01:03]} Nf3 {[%clk 0:10:36]} 40.
+Rd1 {[%clk 1:00:30]} Qe2+ {[%clk 1:02:28]} 41. Kb3 {[%clk 0:51:01]} Nd4+ {[%clk
+0:59:46]} 42. Rxd4 {[%clk 0:50:52]} exd4 {[%clk 0:59:43]} 43. Qxd4 {[%clk
+0:50:34]} Qxh2 {[%clk 0:59:16]} 44. Qd8+ {[%clk 0:49:33]} Kh7 {[%clk 0:59:14]}
+45. Qd3 {[%clk 0:49:27]} Kh8 {[%clk 0:51:39]} 46. e5 {[%clk 0:46:57]} fxe5 {[%clk
+0:50:01]} 47. fxe5 {[%clk 0:46:53]} Qg2 {[%clk 0:48:16]} 48. Qd8+ {[%clk
+0:34:47]} Kh7 {[%clk 0:48:14]} 49. Qd3+ {[%clk 0:34:42]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.20"]
+[Round "2"]
+[White "Carlsen, Magnus"]
+[Black "Navara, David"]
+[Result "1/2-1/2"]
+[Board "3"]
+[WhiteElo "2843"]
+[WhiteTitle "GM"]
+[WhiteCountry "NOR"]
+[WhiteFideId "1503014"]
+[WhiteEloChange "-1"]
+[BlackElo "2745"]
+[BlackTitle "GM"]
+[BlackCountry "CZE"]
+[BlackFideId "309095"]
+[BlackEloChange "1"]
+
+1. e4 {[%clk 1:59:58]} c6 {[%clk 1:59:52]} 2. d4 {[%clk 1:58:26]} d5 {[%clk
+1:59:45]} 3. e5 {[%clk 1:53:02]} Bf5 {[%clk 1:59:31]} 4. Nd2 {[%clk 1:51:57]} e6
+{[%clk 1:59:09]} 5. Nb3 {[%clk 1:51:53]} Nd7 {[%clk 1:58:54]} 6. Nf3 {[%clk
+1:51:39]} a6 {[%clk 1:57:51]} 7. Be2 {[%clk 1:50:08]} c5 {[%clk 1:57:28]} 8. c3
+{[%clk 1:49:57]} h6 {[%clk 1:56:57]} 9. dxc5 {[%clk 1:47:31]} Bxc5 {[%clk
+1:56:46]} 10. Nxc5 {[%clk 1:46:40]} Nxc5 {[%clk 1:56:38]} 11. Be3 {[%clk
+1:45:15]} Nd7 {[%clk 1:48:45]} 12. Nd4 {[%clk 1:43:53]} Ne7 {[%clk 1:48:26]} 13.
+f4 {[%clk 1:43:31]} Be4 {[%clk 1:47:22]} 14. O-O {[%clk 1:43:18]} Nc6 {[%clk
+1:45:15]} 15. Nxc6 {[%clk 1:34:25]} bxc6 {[%clk 1:44:55]} 16. c4 {[%clk 1:34:12]}
+O-O {[%clk 1:42:57]} 17. cxd5 {[%clk 1:33:15]} cxd5 {[%clk 1:34:57]} 18. b4
+{[%clk 1:32:37]} f6 {[%clk 1:32:49]} 19. exf6 {[%clk 1:31:17]} Qxf6 {[%clk
+1:25:14]} 20. Rc1 {[%clk 1:16:05]} e5 {[%clk 1:19:33]} 21. Bd3 {[%clk 1:11:44]}
+Qg6 {[%clk 1:08:29]} 22. Bxe4 {[%clk 1:11:32]} Qxe4 {[%clk 1:08:20]} 23. Re1
+{[%clk 1:10:56]} d4 {[%clk 1:07:39]} 24. Qb3+ {[%clk 1:10:31]} Kh8 {[%clk
+1:05:01]} 25. Bd2 {[%clk 1:10:19]} Qf5 {[%clk 1:04:19]} 26. Qh3 {[%clk 1:01:39]}
+Qxh3 {[%clk 0:53:06]} 27. gxh3 {[%clk 1:00:19]} exf4 {[%clk 0:52:53]} 28. Rc4
+{[%clk 0:59:05]} Rad8 {[%clk 0:45:27]} 29. Re6 {[%clk 0:47:21]} Rf6 {[%clk
+0:44:43]} 30. Re4 {[%clk 0:37:17]} Nb6 {[%clk 0:40:18]} 31. Rcxd4 {[%clk
+0:37:07]} Rxd4 {[%clk 0:40:06]} 32. Rxd4 {[%clk 0:37:03]} g5 {[%clk 0:39:20]} 33.
+h4 {[%clk 0:34:55]} Kg7 {[%clk 0:35:51]} 34. hxg5 {[%clk 0:34:32]} hxg5 {[%clk
+0:35:23]} 35. h4 {[%clk 0:34:26]} Kg6 {[%clk 0:32:47]} 36. Kg2 {[%clk 0:34:01]}
+gxh4 {[%clk 0:28:56]} 37. Bxf4 {[%clk 0:33:54]} Rc6 {[%clk 0:27:50]} 38. Kf3
+{[%clk 0:32:38]} Kf5 {[%clk 0:23:33]} 39. Be3 {[%clk 0:32:29]} Rc3 {[%clk
+0:20:57]} 40. Rf4+ {[%clk 1:31:50]} Ke5 {[%clk 1:20:08]} 41. Rxh4 {[%clk
+1:31:08]} Nc4 {[%clk 1:18:58]} 42. Re4+ {[%clk 1:31:01]} Kd5 {[%clk 1:18:50]} 43.
+Kf4 {[%clk 1:30:26]} Nxe3 {[%clk 1:18:39]} 44. Rxe3 {[%clk 1:30:20]} Rxe3 {[%clk
+1:18:26]} 45. Kxe3 {[%clk 1:30:16]} Kc4 {[%clk 1:18:20]} 46. a3 {[%clk 1:30:03]}
+Kb3 {[%clk 1:18:15]} 47. Kd4 {[%clk 1:29:58]} Kxa3 {[%clk 1:18:11]} 48. Kc5
+{[%clk 1:29:51]} Kb3 {[%clk 1:18:06]} 49. b5 {[%clk 1:29:45]} axb5 {[%clk
+1:18:03]} 50. Kxb5 {[%clk 1:29:37]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.20"]
+[Round "2"]
+[White "Wojtaszek, Radoslaw"]
+[Black "Mamedyarov, Shakhriyar"]
+[Result "1/2-1/2"]
+[Board "4"]
+[WhiteElo "2744"]
+[WhiteTitle "GM"]
+[WhiteCountry "POL"]
+[WhiteFideId "1118358"]
+[WhiteEloChange "1"]
+[BlackElo "2814"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401319"]
+[BlackEloChange "-1"]
+
+1. d4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:55]} 2. c4 {[%clk 1:59:53]} e6 {[%clk
+1:59:52]} 3. g3 {[%clk 1:59:44]} d5 {[%clk 1:59:31]} 4. Bg2 {[%clk 1:59:37]} dxc4
+{[%clk 1:58:38]} 5. Nf3 {[%clk 1:59:30]} Nc6 {[%clk 1:58:13]} 6. Qa4 {[%clk
+1:58:51]} Bb4+ {[%clk 1:57:49]} 7. Bd2 {[%clk 1:58:32]} Nd5 {[%clk 1:57:46]} 8.
+Bxb4 {[%clk 1:56:38]} Nxb4 {[%clk 1:57:18]} 9. Ne5 {[%clk 1:56:26]} O-O {[%clk
+1:44:08]} 10. Nxc6 {[%clk 1:55:37]} Nxc6 {[%clk 1:44:04]} 11. e3 {[%clk 1:55:18]}
+e5 {[%clk 1:39:00]} 12. d5 {[%clk 1:55:10]} Ne7 {[%clk 1:38:59]} 13. Qxc4 {[%clk
+1:54:57]} c6 {[%clk 1:33:35]} 14. dxc6 {[%clk 1:53:45]} Nxc6 {[%clk 1:33:32]} 15.
+Nc3 {[%clk 1:51:51]} Be6 {[%clk 1:26:50]} 16. Qb5 {[%clk 1:46:23]} Qb6 {[%clk
+1:23:21]} 17. Qxb6 {[%clk 1:44:23]} axb6 {[%clk 1:23:03]} 18. O-O {[%clk
+1:30:01]} Rfd8 {[%clk 1:21:42]} 19. Rfd1 {[%clk 1:26:03]} Kf8 {[%clk 1:21:05]}
+20. Bd5 {[%clk 1:18:46]} Ke7 {[%clk 1:14:33]} 21. Kf1 {[%clk 1:15:40]} f5 {[%clk
+1:10:12]} 22. f3 {[%clk 1:12:15]} b5 {[%clk 1:02:26]} 23. Bxe6 {[%clk 1:08:07]}
+Rxd1+ {[%clk 0:57:13]} 24. Rxd1 {[%clk 1:07:31]} Kxe6 {[%clk 0:57:10]} 25. a3
+{[%clk 1:06:24]} b4 {[%clk 0:57:01]} 26. axb4 {[%clk 1:01:51]} Nxb4 {[%clk
+0:56:40]} 27. Ke2 {[%clk 1:01:32]} Na2 {[%clk 0:49:52]} 28. Rb1 {[%clk 0:42:51]}
+Nb4 {[%clk 0:47:34]} 29. Rd1 {[%clk 0:42:34]} Na2 {[%clk 0:47:28]} 30. Rb1 {[%clk
+0:42:30]} Nb4 {[%clk 0:47:24]} 31. Rd1 {[%clk 0:42:26]} Na2 {[%clk 0:47:22]}
+1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.20"]
+[Round "2"]
+[White "Radjabov, Teimour"]
+[Black "Mamedov, Rauf"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2748"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13400924"]
+[WhiteEloChange "-1"]
+[BlackElo "2704"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401653"]
+[BlackEloChange "1"]
+
+1. d4 {[%clk 1:59:57]} d5 {[%clk 1:59:49]} 2. c4 {[%clk 1:59:49]} c6 {[%clk
+1:59:42]} 3. Nc3 {[%clk 1:59:23]} Nf6 {[%clk 1:59:36]} 4. Nf3 {[%clk 1:58:13]}
+dxc4 {[%clk 1:59:14]} 5. a4 {[%clk 1:58:03]} Bf5 {[%clk 1:58:32]} 6. e3 {[%clk
+1:57:17]} e6 {[%clk 1:58:15]} 7. Bxc4 {[%clk 1:57:03]} Bb4 {[%clk 1:57:40]} 8.
+O-O {[%clk 1:55:48]} Nbd7 {[%clk 1:54:40]} 9. Qe2 {[%clk 1:53:39]} O-O {[%clk
+1:54:10]} 10. e4 {[%clk 1:53:10]} Bg6 {[%clk 1:54:05]} 11. Bd3 {[%clk 1:52:38]}
+Bh5 {[%clk 1:52:08]} 12. e5 {[%clk 1:51:36]} Nd5 {[%clk 1:51:43]} 13. Nxd5 {[%clk
+1:51:26]} cxd5 {[%clk 1:51:38]} 14. Qe3 {[%clk 1:51:20]} Be7 {[%clk 1:51:28]} 15.
+Ng5 {[%clk 1:45:04]} Bxg5 {[%clk 1:38:29]} 16. Qxg5 {[%clk 1:44:26]} Bg6 {[%clk
+1:38:26]} 17. Qxd8 {[%clk 1:43:20]} Rfxd8 {[%clk 1:34:41]} 18. Be2 {[%clk
+1:42:32]} Nb8 {[%clk 1:30:05]} 19. Be3 {[%clk 1:36:14]} Nc6 {[%clk 1:26:38]} 20.
+Rfc1 {[%clk 1:32:32]} Rdc8 {[%clk 1:19:14]} 21. Rc3 {[%clk 1:23:02]} Nb4 {[%clk
+1:06:44]} 22. Raa3 {[%clk 1:19:01]} a5 {[%clk 0:59:45]} 23. h4 {[%clk 1:17:25]}
+h6 {[%clk 0:56:41]} 24. g4 {[%clk 1:05:13]} Nc2 {[%clk 0:52:06]} 25. Rab3 {[%clk
+1:00:05]} Nxe3 {[%clk 0:49:16]} 26. fxe3 {[%clk 0:57:05]} Bc2 {[%clk 0:47:37]}
+27. Rxc8+ {[%clk 0:53:00]} Rxc8 {[%clk 0:47:20]} 28. Rxb7 {[%clk 0:52:57]} Bxa4
+{[%clk 0:47:15]} 29. Ra7 {[%clk 0:52:50]} Bd1 {[%clk 0:44:14]} 30. Bxd1 {[%clk
+0:51:23]} Rc1 {[%clk 0:43:53]} 31. Rxa5 {[%clk 0:51:16]} Rxd1+ {[%clk 0:43:48]}
+32. Kf2 {[%clk 0:51:10]} Rd2+ {[%clk 0:43:45]} 33. Kf3 {[%clk 0:51:05]} Rxb2
+{[%clk 0:43:42]} 34. Ra8+ {[%clk 0:50:58]} Kh7 {[%clk 0:43:39]} 35. Ra7 {[%clk
+0:50:53]} Kg8 {[%clk 0:43:37]} 36. Ra8+ {[%clk 0:50:48]} Kh7 {[%clk 0:43:35]} 37.
+Ra7 {[%clk 0:50:43]} Kg8 {[%clk 0:43:32]} 38. Ra8+ {[%clk 0:50:40]} Kh7 {[%clk
+0:43:30]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.21"]
+[Round "3"]
+[White "Navara, David"]
+[Black "Wojtaszek, Radoslaw"]
+[Result "1/2-1/2"]
+[Board "1"]
+[WhiteElo "2745"]
+[WhiteTitle "GM"]
+[WhiteCountry "CZE"]
+[WhiteFideId "309095"]
+[BlackElo "2744"]
+[BlackTitle "GM"]
+[BlackCountry "POL"]
+[BlackFideId "1118358"]
+
+1. e4 {[%clk 1:59:57]} c5 {[%clk 1:59:57]} 2. Nf3 {[%clk 1:59:51]} d6 {[%clk
+1:59:54]} 3. d4 {[%clk 1:59:45]} cxd4 {[%clk 1:59:49]} 4. Nxd4 {[%clk 1:59:38]}
+Nf6 {[%clk 1:59:45]} 5. Nc3 {[%clk 1:59:31]} a6 {[%clk 1:59:41]} 6. g3 {[%clk
+1:59:24]} e5 {[%clk 1:59:33]} 7. Nde2 {[%clk 1:59:19]} Be7 {[%clk 1:59:17]} 8.
+Bg2 {[%clk 1:59:09]} b5 {[%clk 1:59:09]} 9. Nd5 {[%clk 1:59:00]} Nbd7 {[%clk
+1:59:03]} 10. Nec3 {[%clk 1:58:38]} Nb6 {[%clk 1:58:55]} 11. Nxe7 {[%clk
+1:57:32]} Qxe7 {[%clk 1:58:51]} 12. Bg5 {[%clk 1:55:58]} O-O {[%clk 1:58:27]} 13.
+O-O {[%clk 1:54:15]} h6 {[%clk 1:58:09]} 14. Bxf6 {[%clk 1:54:01]} Qxf6 {[%clk
+1:58:03]} 15. a4 {[%clk 1:53:53]} b4 {[%clk 1:57:04]} 16. Nd5 {[%clk 1:50:41]}
+Nxd5 {[%clk 1:56:53]} 17. Qxd5 {[%clk 1:50:28]} Be6 {[%clk 1:56:05]} 18. Qxd6
+{[%clk 1:46:33]} a5 {[%clk 1:55:59]} 19. Qb6 {[%clk 1:31:58]} Rfc8 {[%clk
+1:27:40]} 20. Rfc1 {[%clk 1:31:26]} Qe7 {[%clk 1:12:47]} 21. Qe3 {[%clk 1:25:46]}
+Rc5 {[%clk 1:08:04]} 22. Bf1 {[%clk 1:22:01]} Rac8 {[%clk 1:07:46]} 23. Ba6
+{[%clk 1:19:41]} R8c6 {[%clk 1:02:26]} 24. Bb5 {[%clk 1:19:02]} Rc8 {[%clk
+1:01:48]} 25. Ba6 {[%clk 1:13:26]} R8c6 {[%clk 1:01:42]} 26. Bb5 {[%clk 1:11:05]}
+Rc8 {[%clk 1:01:38]} 27. Ba6 {[%clk 1:07:58]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.21"]
+[Round "3"]
+[White "Mamedyarov, Shakhriyar"]
+[Black "Karjakin, Sergey"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2814"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401319"]
+[WhiteEloChange "-1"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "RUS"]
+[BlackFideId "14109603"]
+[BlackEloChange "1"]
+
+1. d4 {[%clk 1:59:45]} Nf6 {[%clk 1:59:55]} 2. c4 {[%clk 1:59:41]} e6 {[%clk
+1:59:51]} 3. Nc3 {[%clk 1:59:36]} Bb4 {[%clk 1:59:47]} 4. Qc2 {[%clk 1:59:26]} d5
+{[%clk 1:59:39]} 5. a3 {[%clk 1:59:14]} Bxc3+ {[%clk 1:59:32]} 6. Qxc3 {[%clk
+1:59:10]} Ne4 {[%clk 1:59:26]} 7. Qc2 {[%clk 1:58:59]} c5 {[%clk 1:59:19]} 8.
+dxc5 {[%clk 1:58:51]} Nc6 {[%clk 1:59:11]} 9. Nf3 {[%clk 1:58:36]} Qa5+ {[%clk
+1:58:38]} 10. Bd2 {[%clk 1:58:30]} Qxc5 {[%clk 1:58:28]} 11. e3 {[%clk 1:58:23]}
+Nxd2 {[%clk 1:58:22]} 12. Nxd2 {[%clk 1:58:20]} dxc4 {[%clk 1:58:13]} 13. O-O-O
+{[%clk 1:58:15]} Qf5 {[%clk 1:33:51]} 14. Ne4 {[%clk 1:57:44]} O-O {[%clk
+1:33:46]} 15. Bxc4 {[%clk 1:57:42]} Ne5 {[%clk 1:33:39]} 16. g4 {[%clk 1:57:31]}
+Nxg4 {[%clk 1:18:27]} 17. Rhg1 {[%clk 1:57:12]} Nf6 {[%clk 1:15:09]} 18. Bd3
+{[%clk 1:52:21]} Nxe4 {[%clk 1:14:22]} 19. Bxe4 {[%clk 1:52:13]} Qh5 {[%clk
+1:14:18]} 20. f4 {[%clk 1:43:45]} f5 {[%clk 1:11:05]} 21. Bh1 {[%clk 1:29:29]}
+Qf7 {[%clk 1:09:57]} 22. Kb1 {[%clk 1:25:54]} e5 {[%clk 1:00:45]} 23. fxe5 {[%clk
+1:21:58]} Be6 {[%clk 1:00:26]} 24. Rd6 {[%clk 1:17:31]} Rac8 {[%clk 0:56:37]} 25.
+Qd2 {[%clk 1:15:29]} Rc5 {[%clk 0:49:41]} 26. Bxb7 {[%clk 1:11:49]} Rxe5 {[%clk
+0:36:08]} 27. Qd4 {[%clk 1:07:12]} Ba2+ {[%clk 0:35:23]} 28. Ka1 {[%clk 1:06:25]}
+Re7 {[%clk 0:35:22]} 29. Bc6 {[%clk 1:00:43]} Bb3 {[%clk 0:34:17]} 30. Rc1 {[%clk
+0:45:18]} f4 {[%clk 0:30:22]} 31. exf4 {[%clk 0:42:46]} Qxf4 {[%clk 0:30:06]} 32.
+Bd5+ {[%clk 0:42:32]} Bxd5 {[%clk 0:29:59]} 33. Qxd5+ {[%clk 0:42:26]} Kh8 {[%clk
+0:27:36]} 34. Qd2 {[%clk 0:41:12]} h6 {[%clk 0:26:33]} 35. Ka2 {[%clk 0:40:39]}
+Qf7+ {[%clk 0:25:58]} 36. Ka1 {[%clk 0:40:34]} Qf4 {[%clk 0:25:54]} 37. Ka2
+{[%clk 0:40:31]} Qf7+ {[%clk 0:25:48]} 38. Ka1 {[%clk 0:40:29]} Qf4 {[%clk
+0:25:38]} 39. Ka2 {[%clk 0:40:25]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.21"]
+[Round "3"]
+[White "Mamedov, Rauf"]
+[Black "Carlsen, Magnus"]
+[Result "1/2-1/2"]
+[Board "3"]
+[WhiteElo "2704"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401653"]
+[WhiteEloChange "2"]
+[BlackElo "2843"]
+[BlackTitle "GM"]
+[BlackCountry "NOR"]
+[BlackFideId "1503014"]
+[BlackEloChange "-2"]
+
+1. e4 {[%clk 1:59:56]} d6 {[%clk 1:59:50]} 2. d4 {[%clk 1:59:49]} Nf6 {[%clk
+1:59:44]} 3. Nc3 {[%clk 1:56:50]} g6 {[%clk 1:59:36]} 4. f4 {[%clk 1:55:14]} Bg7
+{[%clk 1:59:28]} 5. Nf3 {[%clk 1:55:10]} c5 {[%clk 1:59:13]} 6. Bb5+ {[%clk
+1:53:33]} Bd7 {[%clk 1:59:04]} 7. e5 {[%clk 1:53:28]} Ng4 {[%clk 1:58:57]} 8.
+Bxd7+ {[%clk 1:47:08]} Qxd7 {[%clk 1:58:40]} 9. d5 {[%clk 1:45:25]} dxe5 {[%clk
+1:58:31]} 10. h3 {[%clk 1:45:13]} e4 {[%clk 1:58:20]} 11. Nxe4 {[%clk 1:43:11]}
+Nf6 {[%clk 1:58:05]} 12. Nxf6+ {[%clk 1:36:14]} Bxf6 {[%clk 1:57:58]} 13. O-O
+{[%clk 1:34:20]} O-O {[%clk 1:57:45]} 14. c4 {[%clk 1:31:39]} e6 {[%clk 1:42:13]}
+15. Be3 {[%clk 1:22:28]} exd5 {[%clk 1:32:13]} 16. cxd5 {[%clk 1:20:26]} Rd8
+{[%clk 1:30:37]} 17. Qc2 {[%clk 1:07:13]} Na6 {[%clk 1:19:19]} 18. Rad1 {[%clk
+1:06:41]} Nb4 {[%clk 1:17:41]} 19. Qxc5 {[%clk 1:01:21]} Nxd5 {[%clk 1:17:07]}
+20. Bd4 {[%clk 0:55:36]} Rac8 {[%clk 1:12:17]} 21. Qa3 {[%clk 0:45:49]} Qf5
+{[%clk 0:57:59]} 22. Bxf6 {[%clk 0:44:24]} Qxf6 {[%clk 0:57:19]} 23. Qxa7 {[%clk
+0:42:19]} Nxf4 {[%clk 0:40:44]} 24. Rxd8+ {[%clk 0:37:49]} Rxd8 {[%clk 0:40:15]}
+25. Qe3 {[%clk 0:36:00]} Nd5 {[%clk 0:33:54]} 26. Qb3 {[%clk 0:34:21]} Nf4 {[%clk
+0:31:29]} 27. Qe3 {[%clk 0:33:32]} Nd5 {[%clk 0:26:33]} 28. Qb3 {[%clk 0:33:12]}
+b6 {[%clk 0:24:38]} 29. Rd1 {[%clk 0:30:56]} Nf4 {[%clk 0:24:31]} 30. Rxd8+
+{[%clk 0:29:41]} Qxd8 {[%clk 0:24:26]} 31. Qe3 {[%clk 0:23:07]} g5 {[%clk
+0:23:25]} 32. Kh2 {[%clk 0:19:27]} h6 {[%clk 0:22:47]} 33. h4 {[%clk 0:07:32]}
+Ne6 {[%clk 0:22:26]} 34. hxg5 {[%clk 0:07:28]} hxg5 {[%clk 0:22:18]} 35. Qe4
+{[%clk 0:05:50]} Qf6 {[%clk 0:17:57]} 36. Qe5 {[%clk 0:05:14]} Qg6 {[%clk
+0:17:17]} 37. g4 {[%clk 0:04:09]} Qd3 {[%clk 0:14:31]} 38. Kg3 {[%clk 0:03:37]}
+b5 {[%clk 0:11:24]} 39. Kf2 {[%clk 0:03:13]} Kf8 {[%clk 0:07:45]} 40. Qe2 {[%clk
+1:00:44]} Nf4 {[%clk 1:03:05]} 41. Qxd3 {[%clk 1:00:27]} Nxd3+ {[%clk 1:02:54]}
+42. Ke3 {[%clk 1:00:05]} Nxb2 {[%clk 1:02:47]} 43. Nxg5 {[%clk 1:00:03]} Nd1+
+{[%clk 1:02:32]} 44. Kd4 {[%clk 0:59:56]} Nf2 {[%clk 1:02:27]} 45. Nxf7 {[%clk
+0:59:41]} Kxf7 {[%clk 1:02:17]} 46. Kc5 {[%clk 0:59:38]} Ne4+ {[%clk 1:02:04]}
+47. Kxb5 {[%clk 0:59:35]} Nc3+ {[%clk 1:01:57]} 48. Kc4 {[%clk 0:59:33]} Nxa2
+{[%clk 1:01:50]} 49. g5 {[%clk 0:59:32]} Kg7 {[%clk 1:01:38]} 50. g6 {[%clk
+0:59:29]} Nb4 {[%clk 1:01:33]} 51. Kxb4 {[%clk 0:59:25]} Kxg6 {[%clk 1:01:33]}
+1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.21"]
+[Round "3"]
+[White "Ding, Liren"]
+[Black "Topalov, Veselin"]
+[Result "1/2-1/2"]
+[Board "4"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "CHN"]
+[WhiteFideId "8603677"]
+[BlackElo "2749"]
+[BlackTitle "GM"]
+[BlackCountry "BUL"]
+[BlackFideId "2900084"]
+
+1. d4 {[%clk 1:59:48]} Nf6 {[%clk 1:59:35]} 2. c4 {[%clk 1:59:42]} e6 {[%clk
+1:59:28]} 3. Nf3 {[%clk 1:59:37]} d5 {[%clk 1:59:24]} 4. Nc3 {[%clk 1:59:31]} c6
+{[%clk 1:57:12]} 5. e3 {[%clk 1:59:23]} Nbd7 {[%clk 1:56:43]} 6. Be2 {[%clk
+1:59:13]} Bd6 {[%clk 1:53:50]} 7. O-O {[%clk 1:58:47]} O-O {[%clk 1:53:14]} 8. b3
+{[%clk 1:58:42]} b6 {[%clk 1:50:37]} 9. Bb2 {[%clk 1:58:29]} Bb7 {[%clk 1:49:27]}
+10. Qc2 {[%clk 1:58:19]} Qe7 {[%clk 1:47:16]} 11. Rfe1 {[%clk 1:57:43]} Rfe8
+{[%clk 1:44:29]} 12. Rad1 {[%clk 1:55:53]} Rad8 {[%clk 1:34:39]} 13. Bf1 {[%clk
+1:55:35]} c5 {[%clk 1:29:55]} 14. cxd5 {[%clk 1:54:04]} exd5 {[%clk 1:29:21]} 15.
+g3 {[%clk 1:53:06]} a6 {[%clk 1:21:19]} 16. Bg2 {[%clk 1:48:15]} Rc8 {[%clk
+1:05:05]} 17. Qb1 {[%clk 1:37:05]} h6 {[%clk 0:48:15]} 18. Nh4 {[%clk 1:31:17]}
+c4 {[%clk 0:40:47]} 19. Nf5 {[%clk 1:27:30]} Qf8 {[%clk 0:40:40]} 20. Nxd6 {[%clk
+1:24:15]} Qxd6 {[%clk 0:40:34]} 21. bxc4 {[%clk 1:23:35]} Rxc4 {[%clk 0:40:29]}
+22. a4 {[%clk 1:05:42]} Rec8 {[%clk 0:35:01]} 23. Rc1 {[%clk 1:04:54]} h5 {[%clk
+0:34:28]} 24. h3 {[%clk 0:52:36]} Nf8 {[%clk 0:33:15]} 25. Qa2 {[%clk 0:49:12]}
+Ne6 {[%clk 0:27:24]} 26. Qb3 {[%clk 0:48:57]} Qd8 {[%clk 0:22:32]} 27. Re2 {[%clk
+0:42:51]} Bc6 {[%clk 0:19:03]} 28. Rec2 {[%clk 0:40:30]} b5 {[%clk 0:17:12]} 29.
+axb5 {[%clk 0:40:25]} axb5 {[%clk 0:17:07]} 30. Nb1 {[%clk 0:38:10]} Ng5 {[%clk
+0:15:38]} 31. h4 {[%clk 0:32:47]} Nge4 {[%clk 0:15:33]} 32. Na3 {[%clk 0:32:38]}
+Qe7 {[%clk 0:10:00]} 33. Qd3 {[%clk 0:27:24]} Rxc2 {[%clk 0:07:05]} 34. Nxc2
+{[%clk 0:27:16]} Bd7 {[%clk 0:06:16]} 35. Qa3 {[%clk 0:23:10]} Qe8 {[%clk
+0:04:57]} 36. Nb4 {[%clk 0:22:15]} Rc4 {[%clk 0:03:42]} 37. Rxc4 {[%clk 0:13:08]}
+bxc4 {[%clk 0:03:27]} 38. Bc1 {[%clk 0:12:53]} Be6 {[%clk 0:01:54]} 39. Na6
+{[%clk 1:11:49]} Qb5 {[%clk 1:00:43]} 40. Nc5 {[%clk 1:06:12]} Kh7 {[%clk
+1:00:15]} 41. Nxe6 {[%clk 0:57:55]} fxe6 {[%clk 1:00:08]} 42. Bf1 {[%clk
+0:57:48]} Nxf2 {[%clk 0:48:15]} 43. Kxf2 {[%clk 0:56:02]} Ne4+ {[%clk 0:48:03]}
+44. Ke2 {[%clk 0:35:40]} c3+ {[%clk 0:32:37]} 45. Ke1 {[%clk 0:35:37]} Qb1 {[%clk
+0:32:32]} 46. Bg2 {[%clk 0:33:37]} Qc2 {[%clk 0:32:14]} 47. Bxe4+ {[%clk
+0:33:32]} dxe4 {[%clk 0:32:05]} 48. Kf1 {[%clk 0:31:31]} Kg6 {[%clk 0:22:22]} 49.
+Kg1 {[%clk 0:31:15]} Kh7 {[%clk 0:16:55]} 50. Kh1 {[%clk 0:30:35]} Kh6 {[%clk
+0:15:56]} 51. Kg1 {[%clk 0:29:31]} Kg6 {[%clk 0:15:33]} 52. Kh1 {[%clk 0:29:15]}
+Qd1+ {[%clk 0:12:02]} 53. Kh2 {[%clk 0:29:12]} Qe2+ {[%clk 0:11:55]} 54. Kg1
+{[%clk 0:28:49]} Qd1+ {[%clk 0:08:18]} 55. Kh2 {[%clk 0:28:45]} Qe2+ {[%clk
+0:06:46]} 56. Kg1 {[%clk 0:28:42]} Qe1+ {[%clk 0:04:23]} 57. Kg2 {[%clk 0:28:37]}
+Qe2+ {[%clk 0:04:04]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.21"]
+[Round "3"]
+[White "Giri, Anish"]
+[Black "Radjabov, Teimour"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2777"]
+[WhiteTitle "GM"]
+[WhiteCountry "NED"]
+[WhiteFideId "24116068"]
+[BlackElo "2748"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13400924"]
+
+1. e4 {[%clk 1:59:56]} e6 {[%clk 1:59:58]} 2. d4 {[%clk 1:59:34]} d5 {[%clk
+1:59:54]} 3. exd5 {[%clk 1:59:31]} exd5 {[%clk 1:59:47]} 4. Nf3 {[%clk 1:59:05]}
+Nf6 {[%clk 1:59:21]} 5. Bd3 {[%clk 1:59:02]} Bd6 {[%clk 1:55:02]} 6. O-O {[%clk
+1:58:52]} O-O {[%clk 1:54:56]} 7. Bg5 {[%clk 1:58:49]} Bg4 {[%clk 1:49:46]} 8.
+Nbd2 {[%clk 1:58:35]} Nbd7 {[%clk 1:46:12]} 9. c4 {[%clk 1:58:20]} dxc4 {[%clk
+1:37:20]} 10. Nxc4 {[%clk 1:58:08]} Re8 {[%clk 1:37:19]} 11. h3 {[%clk 1:57:57]}
+Be6 {[%clk 1:30:09]} 12. Nxd6 {[%clk 1:56:26]} cxd6 {[%clk 1:27:52]} 13. Nd2
+{[%clk 1:40:11]} Qa5 {[%clk 1:26:26]} 14. Bf4 {[%clk 1:33:33]} Qb4 {[%clk
+1:23:02]} 15. Bg3 {[%clk 1:26:54]} Qxb2 {[%clk 1:16:30]} 16. Rb1 {[%clk 1:20:35]}
+Qxa2 {[%clk 1:07:27]} 17. Rxb7 {[%clk 1:18:19]} Qd5 {[%clk 1:06:24]} 18. Rc7
+{[%clk 1:02:07]} Rec8 {[%clk 0:58:32]} 19. Rxc8+ {[%clk 1:01:10]} Rxc8 {[%clk
+0:58:28]} 20. Qa1 {[%clk 1:01:01]} Bf5 {[%clk 0:45:40]} 21. Bxf5 {[%clk 0:55:48]}
+Qxf5 {[%clk 0:45:29]} 22. Qxa7 {[%clk 0:55:26]} Qc2 {[%clk 0:40:58]} 23. Nf3
+{[%clk 0:50:50]} Qc6 {[%clk 0:40:10]} 24. Ra1 {[%clk 0:46:05]} Ne4 {[%clk
+0:39:40]} 25. d5 {[%clk 0:43:59]} Qc3 {[%clk 0:38:24]} 26. Kh2 {[%clk 0:33:41]}
+Ndf6 {[%clk 0:36:31]} 27. Ra6 {[%clk 0:30:28]} Qb4 {[%clk 0:27:35]} 28. Qc7
+{[%clk 0:24:17]} Qb8 {[%clk 0:22:50]} 29. Qxb8 {[%clk 0:23:42]} Rxb8 {[%clk
+0:22:48]} 30. Bxd6 {[%clk 0:23:21]} Re8 {[%clk 0:22:27]} 31. Be5 {[%clk 0:22:33]}
+Nxd5 {[%clk 0:22:19]} 32. Bd4 {[%clk 0:22:21]} Nc7 {[%clk 0:21:57]} 33. Ra2
+{[%clk 0:22:14]} Ne6 {[%clk 0:21:51]} 34. Be3 {[%clk 0:22:04]} Nd6 {[%clk
+0:21:44]} 35. Rc2 {[%clk 0:21:36]} Nf5 {[%clk 0:21:35]} 36. Rc3 {[%clk 0:21:32]}
+Nxe3 {[%clk 0:21:32]} 37. Rxe3 {[%clk 0:21:29]} Nc7 {[%clk 0:21:09]} 38. Rc3
+{[%clk 0:21:26]} Ne6 {[%clk 0:21:00]} 39. Re3 {[%clk 0:21:24]} Nc7 {[%clk
+0:20:57]} 40. Rc3 {[%clk 1:21:22]} Ne6 {[%clk 1:20:54]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.22"]
+[Round "4"]
+[White "Giri, Anish"]
+[Black "Ding, Liren"]
+[Result "1/2-1/2"]
+[Board "1"]
+[WhiteElo "2777"]
+[WhiteTitle "GM"]
+[WhiteCountry "NED"]
+[WhiteFideId "24116068"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "CHN"]
+[BlackFideId "8603677"]
+
+1. c4 {[%clk 1:59:50]} Nf6 {[%clk 1:59:37]} 2. Nf3 {[%clk 1:59:42]} e6 {[%clk
+1:58:55]} 3. b3 {[%clk 1:58:25]} d5 {[%clk 1:57:56]} 4. Bb2 {[%clk 1:57:48]} c5
+{[%clk 1:57:35]} 5. cxd5 {[%clk 1:56:35]} exd5 {[%clk 1:57:29]} 6. g3 {[%clk
+1:56:26]} Nc6 {[%clk 1:55:22]} 7. Bg2 {[%clk 1:56:01]} d4 {[%clk 1:54:19]} 8. O-O
+{[%clk 1:55:11]} Be7 {[%clk 1:53:43]} 9. Na3 {[%clk 1:54:47]} O-O {[%clk
+1:53:19]} 10. Nc4 {[%clk 1:54:07]} Be6 {[%clk 1:46:27]} 11. e3 {[%clk 1:53:00]}
+Rc8 {[%clk 1:41:16]} 12. exd4 {[%clk 1:46:40]} cxd4 {[%clk 1:41:11]} 13. Re1
+{[%clk 1:43:32]} Bd5 {[%clk 1:39:25]} 14. Nce5 {[%clk 1:37:16]} Nxe5 {[%clk
+1:29:42]} 15. Nxe5 {[%clk 1:35:39]} Re8 {[%clk 1:23:54]} 16. Bf3 {[%clk 1:16:02]}
+Bc5 {[%clk 1:17:35]} 17. Rc1 {[%clk 1:13:34]} Qd6 {[%clk 1:15:58]} 18. Nd3 {[%clk
+1:03:20]} Rxe1+ {[%clk 1:12:48]} 19. Nxe1 {[%clk 1:03:15]} Re8 {[%clk 1:12:39]}
+20. Nd3 {[%clk 1:02:53]} Bb6 {[%clk 1:10:18]} 21. Nf4 {[%clk 0:45:50]} Bxf3
+{[%clk 1:10:11]} 22. Qxf3 {[%clk 0:45:46]} Qd7 {[%clk 1:10:05]} 23. h4 {[%clk
+0:38:44]} h6 {[%clk 1:09:31]} 24. Ng2 {[%clk 0:31:41]} Ng4 {[%clk 1:06:35]} 25.
+Re1 {[%clk 0:22:09]} Ne5 {[%clk 1:00:09]} 26. Qe4 {[%clk 0:22:06]} Re6 {[%clk
+0:50:44]} 27. Ba1 {[%clk 0:21:22]} Ng4 {[%clk 0:37:15]} 28. Qd3 {[%clk 0:20:57]}
+Ne5 {[%clk 0:31:12]} 29. Qe4 {[%clk 0:20:55]} g6 {[%clk 0:29:11]} 30. Rf1 {[%clk
+0:15:55]} f5 {[%clk 0:26:51]} 31. Qf4 {[%clk 0:15:52]} Qd5 {[%clk 0:15:25]} 32.
+f3 {[%clk 0:14:09]} Kg7 {[%clk 0:15:07]} 33. g4 {[%clk 0:11:50]} Rf6 {[%clk
+0:12:40]} 34. g5 {[%clk 0:10:11]} hxg5 {[%clk 0:12:35]} 35. hxg5 {[%clk 0:10:08]}
+Re6 {[%clk 0:11:58]} 36. Qg3 {[%clk 0:08:20]} Nd3 {[%clk 0:10:58]} 37. Nf4 {[%clk
+0:07:10]} Nxf4 {[%clk 0:10:54]} 38. Qxf4 {[%clk 0:07:09]} Kf7 {[%clk 0:10:19]}
+39. Qh4 {[%clk 0:05:35]} Ke7 {[%clk 0:06:53]} 40. Qh7+ {[%clk 1:00:53]} Kd6
+{[%clk 1:05:59]} 41. Bb2 {[%clk 0:56:10]} f4 {[%clk 1:00:11]} 42. Kh1 {[%clk
+0:42:38]} Qxg5 {[%clk 0:43:15]} 43. Ba3+ {[%clk 0:33:32]} Kc6 {[%clk 0:43:05]}
+44. Rc1+ {[%clk 0:28:40]} Kb5 {[%clk 0:42:20]} 45. Qxb7 {[%clk 0:26:57]} Qh4+
+{[%clk 0:42:07]} 46. Kg1 {[%clk 0:26:53]} Re1+ {[%clk 0:41:56]} 47. Rxe1 {[%clk
+0:26:50]} Qxe1+ {[%clk 0:41:55]} 48. Kg2 {[%clk 0:26:29]} Qxd2+ {[%clk 0:41:27]}
+49. Kh3 {[%clk 0:25:29]} Qc2 {[%clk 0:41:12]} 50. Qd5+ {[%clk 0:12:24]} Ka6
+{[%clk 0:41:10]} 51. Bd6 {[%clk 0:10:06]} Qc8+ {[%clk 0:32:55]} 52. Kg2 {[%clk
+0:09:51]} Qc2+ {[%clk 0:24:39]} 53. Kh3 {[%clk 0:09:50]} Qc1 {[%clk 0:24:21]} 54.
+Kg4 {[%clk 0:07:52]} Qg1+ {[%clk 0:19:33]} 55. Kxf4 {[%clk 0:07:44]} Qh2+ {[%clk
+0:19:17]} 56. Kg4 {[%clk 0:01:43]} Qh5+ {[%clk 0:19:02]} 57. Qxh5 {[%clk
+0:01:42]} gxh5+ {[%clk 0:18:57]} 58. Kxh5 {[%clk 0:01:33]} d3 {[%clk 0:18:53]}
+59. Bf4 {[%clk 0:01:31]} Ba5 {[%clk 0:18:39]} 60. Kg4 {[%clk 0:16:53]} Kb5 {[%clk
+0:31:38]} 61. Kf5 {[%clk 0:14:53]} d2 {[%clk 0:27:05]} 62. Bxd2 {[%clk 0:15:15]}
+Bxd2 {[%clk 0:27:34]} 63. f4 {[%clk 0:13:25]} Kb4 {[%clk 0:06:55]} 64. Ke4 {[%clk
+0:13:28]} Kc5 {[%clk 0:04:56]} 65. Ke5 {[%clk 0:13:03]} Kc6 {[%clk 0:03:24]} 66.
+f5 {[%clk 0:13:04]} Bb4 {[%clk 0:02:43]} 67. Ke6 {[%clk 0:12:15]} Ba3 {[%clk
+0:03:03]} 68. f6 {[%clk 0:10:45]} a5 {[%clk 0:02:43]} 69. Kf7 {[%clk 0:07:31]}
+Kd7 {[%clk 0:02:20]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.22"]
+[Round "4"]
+[White "Karjakin, Sergey"]
+[Black "Navara, David"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "RUS"]
+[WhiteFideId "14109603"]
+[BlackElo "2745"]
+[BlackTitle "GM"]
+[BlackCountry "CZE"]
+[BlackFideId "309095"]
+
+1. e4 {[%clk 1:59:58]} c6 {[%clk 1:59:56]} 2. d4 {[%clk 1:59:37]} d5 {[%clk
+1:59:51]} 3. e5 {[%clk 1:59:34]} Bf5 {[%clk 1:59:46]} 4. Nf3 {[%clk 1:59:30]} e6
+{[%clk 1:59:40]} 5. Be2 {[%clk 1:59:24]} c5 {[%clk 1:59:34]} 6. Be3 {[%clk
+1:59:10]} Qb6 {[%clk 1:59:19]} 7. Nc3 {[%clk 1:58:07]} Nc6 {[%clk 1:59:11]} 8.
+O-O {[%clk 1:57:17]} Qxb2 {[%clk 1:58:54]} 9. Qe1 {[%clk 1:57:09]} cxd4 {[%clk
+1:58:37]} 10. Bxd4 {[%clk 1:56:28]} Nxd4 {[%clk 1:58:24]} 11. Nxd4 {[%clk
+1:56:23]} Bb4 {[%clk 1:58:16]} 12. Ndb5 {[%clk 1:55:22]} Ba5 {[%clk 1:57:45]} 13.
+g4 {[%clk 1:54:36]} Bg6 {[%clk 1:55:29]} 14. Rb1 {[%clk 1:54:28]} Qxc2 {[%clk
+1:55:12]} 15. Rc1 {[%clk 1:54:22]} Qb2 {[%clk 1:54:36]} 16. f4 {[%clk 1:54:16]}
+Ne7 {[%clk 1:54:18]} 17. Nd6+ {[%clk 1:52:16]} Kf8 {[%clk 1:54:12]} 18. f5 {[%clk
+1:52:12]} exf5 {[%clk 1:54:04]} 19. gxf5 {[%clk 1:52:08]} Nxf5 {[%clk 1:53:51]}
+20. Nxf5 {[%clk 1:52:01]} Rc8 {[%clk 1:53:42]} 21. Bb5 {[%clk 1:48:26]} Bxf5
+{[%clk 1:52:08]} 22. e6 {[%clk 1:48:03]} f6 {[%clk 1:51:52]} 23. Rxf5 {[%clk
+1:42:08]} Bxc3 {[%clk 1:51:38]} 24. Rxc3 {[%clk 1:41:33]} Qxc3 {[%clk 1:51:33]}
+25. e7+ {[%clk 1:41:28]} Kf7 {[%clk 1:51:26]} 26. e8Q+ {[%clk 1:41:23]} Rhxe8
+{[%clk 1:51:16]} 27. Bxe8+ {[%clk 1:41:20]} Kf8 {[%clk 1:51:02]} 28. Qxc3 {[%clk
+1:41:14]} Rxc3 {[%clk 1:50:56]} 29. Ba4 {[%clk 1:41:09]} Rc5 {[%clk 1:50:24]} 30.
+Bb3 {[%clk 1:40:14]} Ke7 {[%clk 1:50:19]} 31. Rxd5 {[%clk 1:35:04]} Rxd5 {[%clk
+1:49:53]} 32. Bxd5 {[%clk 1:34:59]} b5 {[%clk 1:47:24]} 33. Kf2 {[%clk 1:34:50]}
+Kd6 {[%clk 1:46:26]} 34. Bg8 {[%clk 1:34:42]} h6 {[%clk 1:45:26]} 35. Ke3 {[%clk
+1:34:14]} Ke5 {[%clk 1:43:39]} 36. Bb3 {[%clk 1:32:00]} g5 {[%clk 1:40:31]} 37.
+Bd1 {[%clk 1:31:17]} f5 {[%clk 1:38:55]} 38. h3 {[%clk 1:31:10]} a5 {[%clk
+1:20:19]} 39. Bf3 {[%clk 1:30:24]} b4 {[%clk 1:18:51]} 40. Bd1 {[%clk 2:30:19]}
+Kd5 {[%clk 2:17:29]} 41. Kd3 {[%clk 2:29:56]} Ke5 {[%clk 2:15:08]} 42. Ke3 {[%clk
+2:29:52]} Kd5 {[%clk 2:14:20]} 43. Kd3 {[%clk 2:29:47]} Ke5 {[%clk 2:14:12]}
+1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.22"]
+[Round "4"]
+[White "Radjabov, Teimour"]
+[Black "Carlsen, Magnus"]
+[Result "1/2-1/2"]
+[Board "3"]
+[WhiteElo "2748"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13400924"]
+[WhiteEloChange "1"]
+[BlackElo "2843"]
+[BlackTitle "GM"]
+[BlackCountry "NOR"]
+[BlackFideId "1503014"]
+[BlackEloChange "-1"]
+
+1. d4 {[%clk 1:59:57]} d5 {[%clk 1:59:47]} 2. c4 {[%clk 1:59:53]} c6 {[%clk
+1:59:43]} 3. Nc3 {[%clk 1:59:21]} Nf6 {[%clk 1:59:26]} 4. e3 {[%clk 1:58:56]} e6
+{[%clk 1:58:48]} 5. Nf3 {[%clk 1:58:49]} Nbd7 {[%clk 1:58:39]} 6. Qc2 {[%clk
+1:56:59]} Bd6 {[%clk 1:58:22]} 7. b3 {[%clk 1:55:19]} O-O {[%clk 1:57:44]} 8. Be2
+{[%clk 1:55:13]} b6 {[%clk 1:57:07]} 9. O-O {[%clk 1:54:21]} Bb7 {[%clk 1:56:55]}
+10. Bb2 {[%clk 1:54:15]} Qe7 {[%clk 1:51:06]} 11. Rad1 {[%clk 1:52:13]} Rad8
+{[%clk 1:50:32]} 12. Rfe1 {[%clk 1:50:55]} Rfe8 {[%clk 1:50:19]} 13. e4 {[%clk
+1:46:40]} Nxe4 {[%clk 1:50:07]} 14. Nxe4 {[%clk 1:46:37]} dxe4 {[%clk 1:50:00]}
+15. Qxe4 {[%clk 1:46:33]} Bb4 {[%clk 1:49:49]} 16. Rf1 {[%clk 1:46:31]} Bd6
+{[%clk 1:49:38]} 17. Rfe1 {[%clk 1:46:29]} Bb4 {[%clk 1:49:31]} 18. Rf1 {[%clk
+1:46:27]} Bd6 {[%clk 1:49:25]} 19. Rfe1 {[%clk 1:46:25]} Bb4 {[%clk 1:49:17]}
+1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.22"]
+[Round "4"]
+[White "Topalov, Veselin"]
+[Black "Mamedyarov, Shakhriyar"]
+[Result "1-0"]
+[Board "4"]
+[WhiteElo "2749"]
+[WhiteTitle "GM"]
+[WhiteCountry "BUL"]
+[WhiteFideId "2900084"]
+[WhiteEloChange "6"]
+[BlackElo "2814"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401319"]
+[BlackEloChange "-6"]
+
+1. e4 {[%clk 1:59:57]} e5 {[%clk 1:59:41]} 2. Nf3 {[%clk 1:59:25]} Nc6 {[%clk
+1:59:34]} 3. Bb5 {[%clk 1:59:15]} a6 {[%clk 1:59:23]} 4. Ba4 {[%clk 1:59:11]} Nf6
+{[%clk 1:59:18]} 5. O-O {[%clk 1:59:04]} Nxe4 {[%clk 1:59:12]} 6. d4 {[%clk
+1:58:52]} b5 {[%clk 1:59:08]} 7. Bb3 {[%clk 1:58:47]} d5 {[%clk 1:59:05]} 8. dxe5
+{[%clk 1:58:38]} Be6 {[%clk 1:59:01]} 9. Be3 {[%clk 1:46:54]} Be7 {[%clk
+1:58:13]} 10. c3 {[%clk 1:43:08]} O-O {[%clk 1:57:59]} 11. Nbd2 {[%clk 1:37:51]}
+Nxd2 {[%clk 1:57:26]} 12. Qxd2 {[%clk 1:34:00]} Na5 {[%clk 1:56:53]} 13. Bc2
+{[%clk 1:29:49]} Nc4 {[%clk 1:55:57]} 14. Qd3 {[%clk 1:24:01]} g6 {[%clk
+1:55:39]} 15. Bh6 {[%clk 1:23:54]} Nxb2 {[%clk 1:40:16]} 16. Qe2 {[%clk 1:20:50]}
+Re8 {[%clk 1:33:52]} 17. Nd4 {[%clk 1:15:45]} Bd7 {[%clk 1:30:54]} 18. f4 {[%clk
+1:06:26]} c5 {[%clk 1:29:38]} 19. Nf3 {[%clk 1:03:42]} Qb6 {[%clk 1:14:02]} 20.
+Qf2 {[%clk 0:54:19]} d4 {[%clk 1:10:11]} 21. Bg5 {[%clk 0:47:32]} dxc3 {[%clk
+1:01:35]} 22. Qh4 {[%clk 0:35:38]} c4+ {[%clk 0:54:36]} 23. Kh1 {[%clk 0:35:34]}
+Bf8 {[%clk 0:54:11]} 24. f5 {[%clk 0:33:24]} Nd3 {[%clk 0:53:45]} 25. e6 {[%clk
+0:31:29]} Bxe6 {[%clk 0:53:27]} 26. fxe6 {[%clk 0:29:53]} Rxe6 {[%clk 0:52:45]}
+27. Rad1 {[%clk 0:22:41]} Rae8 {[%clk 0:46:42]} 28. Bxd3 {[%clk 0:22:15]} cxd3
+{[%clk 0:46:39]} 29. Rxd3 {[%clk 0:22:08]} Re4 {[%clk 0:25:29]} 30. Bf4 {[%clk
+0:21:20]} Be7 {[%clk 0:20:03]} 31. Qg3 {[%clk 0:18:54]} b4 {[%clk 0:11:41]} 32.
+Ng5 {[%clk 0:17:57]} Bxg5 {[%clk 0:11:16]} 33. Bxg5 {[%clk 0:17:50]} Qe6 {[%clk
+0:10:22]} 34. h3 {[%clk 0:14:40]} Qe5 {[%clk 0:08:16]} 35. Kh2 {[%clk 0:10:37]}
+Qxg3+ {[%clk 0:05:14]} 36. Kxg3 {[%clk 0:10:32]} h6 {[%clk 0:02:23]} 37. Bxh6
+{[%clk 0:09:48]} Re1 {[%clk 0:02:20]} 38. Rf6 {[%clk 0:05:00]} R1e6 {[%clk
+0:01:17]} 39. Rf2 {[%clk 0:03:29]} Re2 {[%clk 0:00:12]} 40. Rd5 {[%clk 1:03:06]}
+Rxf2 {[%clk 1:00:02]} 41. Kxf2 {[%clk 1:02:59]} f6 {[%clk 0:58:42]} 42. Be3
+{[%clk 1:01:31]} 1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.22"]
+[Round "4"]
+[White "Wojtaszek, Radoslaw"]
+[Black "Mamedov, Rauf"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2744"]
+[WhiteTitle "GM"]
+[WhiteCountry "POL"]
+[WhiteFideId "1118358"]
+[WhiteEloChange "-1"]
+[BlackElo "2704"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401653"]
+[BlackEloChange "1"]
+
+1. d4 {[%clk 1:59:57]} d5 {[%clk 1:59:53]} 2. c4 {[%clk 1:59:52]} e6 {[%clk
+1:59:51]} 3. Nf3 {[%clk 1:59:40]} c5 {[%clk 1:59:46]} 4. cxd5 {[%clk 1:59:04]}
+exd5 {[%clk 1:59:40]} 5. g3 {[%clk 1:55:16]} Nc6 {[%clk 1:59:31]} 6. Bg2 {[%clk
+1:55:11]} Nf6 {[%clk 1:59:25]} 7. O-O {[%clk 1:55:06]} Be7 {[%clk 1:59:21]} 8.
+dxc5 {[%clk 1:54:47]} Bxc5 {[%clk 1:59:04]} 9. Qc2 {[%clk 1:53:45]} Bb6 {[%clk
+1:58:25]} 10. Nc3 {[%clk 1:52:29]} O-O {[%clk 1:56:09]} 11. Bg5 {[%clk 1:46:27]}
+Be6 {[%clk 1:55:44]} 12. Na4 {[%clk 1:40:23]} h6 {[%clk 1:54:11]} 13. Nxb6 {[%clk
+1:37:20]} axb6 {[%clk 1:53:52]} 14. Bxf6 {[%clk 1:32:00]} Qxf6 {[%clk 1:53:30]}
+15. Qb3 {[%clk 1:28:59]} Ra6 {[%clk 1:45:04]} 16. Rac1 {[%clk 1:23:37]} d4 {[%clk
+1:38:55]} 17. Qb5 {[%clk 1:23:31]} Rxa2 {[%clk 1:38:42]} 18. Rc2 {[%clk 0:58:12]}
+d3 {[%clk 1:22:31]} 19. exd3 {[%clk 0:57:55]} Bg4 {[%clk 1:22:26]} 20. Qc4 {[%clk
+0:57:44]} Bxf3 {[%clk 1:22:02]} 21. Bxf3 {[%clk 0:57:31]} Ne5 {[%clk 1:20:11]}
+22. Qxa2 {[%clk 0:56:58]} Nxf3+ {[%clk 1:20:05]} 23. Kg2 {[%clk 0:45:12]} Nd4
+{[%clk 1:19:35]} 24. b4 {[%clk 0:44:57]} Qf3+ {[%clk 1:12:07]} 25. Kg1 {[%clk
+0:44:52]} Qxd3 {[%clk 0:56:32]} 26. Qc4 {[%clk 0:40:08]} Qe4 {[%clk 0:51:04]} 27.
+Rd1 {[%clk 0:39:13]} Nf3+ {[%clk 0:40:42]} 28. Kh1 {[%clk 0:38:56]} Nd4+ {[%clk
+0:40:37]} 29. Kg1 {[%clk 0:38:53]} Qxc2 {[%clk 0:40:28]} 30. Rxd4 {[%clk
+0:38:44]} Qxc4 {[%clk 0:39:47]} 31. Rxc4 {[%clk 0:38:40]} Rd8 {[%clk 0:38:54]}
+32. Kg2 {[%clk 0:34:35]} Kf8 {[%clk 0:38:26]} 33. h4 {[%clk 0:30:00]} Rd6 {[%clk
+0:37:02]} 34. Rc7 {[%clk 0:26:17]} Rd4 {[%clk 0:36:18]} 35. Rxb7 {[%clk 0:26:13]}
+Rxb4 {[%clk 0:36:16]} 36. h5 {[%clk 0:26:08]} Rb5 {[%clk 0:19:25]} 37. f4 {[%clk
+0:10:03]} f5 {[%clk 0:17:06]} 38. Kf2 {[%clk 0:08:46]} Rb3 {[%clk 0:16:26]} 39.
+Rd7 {[%clk 0:06:56]} Rb5 {[%clk 0:12:45]} 40. Ke3 {[%clk 1:04:28]} Rb3+ {[%clk
+1:11:06]} 41. Kf2 {[%clk 1:00:33]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.23"]
+[Round "5"]
+[White "Navara, David"]
+[Black "Topalov, Veselin"]
+[Result "0-1"]
+[Board "1"]
+[WhiteElo "2745"]
+[WhiteTitle "GM"]
+[WhiteCountry "CZE"]
+[WhiteFideId "309095"]
+[WhiteEloChange "-5"]
+[BlackElo "2749"]
+[BlackTitle "GM"]
+[BlackCountry "BUL"]
+[BlackFideId "2900084"]
+[BlackEloChange "5"]
+
+1. Nf3 {[%clk 1:59:57]} d5 {[%clk 1:59:18]} 2. g3 {[%clk 1:59:52]} c6 {[%clk
+1:57:13]} 3. Bg2 {[%clk 1:59:33]} Nf6 {[%clk 1:55:29]} 4. O-O {[%clk 1:59:15]}
+Bg4 {[%clk 1:55:23]} 5. d3 {[%clk 1:58:49]} Nbd7 {[%clk 1:53:47]} 6. c4 {[%clk
+1:54:30]} dxc4 {[%clk 1:50:42]} 7. dxc4 {[%clk 1:54:24]} e5 {[%clk 1:50:29]} 8.
+Qc2 {[%clk 1:52:32]} h6 {[%clk 1:49:21]} 9. Rd1 {[%clk 1:45:07]} Qc7 {[%clk
+1:48:24]} 10. Nc3 {[%clk 1:44:46]} Be6 {[%clk 1:38:58]} 11. b3 {[%clk 1:44:19]}
+Bc5 {[%clk 1:38:28]} 12. Na4 {[%clk 1:43:17]} Be7 {[%clk 1:37:02]} 13. Nh4 {[%clk
+1:41:32]} g6 {[%clk 1:30:45]} 14. h3 {[%clk 1:36:25]} Kf8 {[%clk 1:10:52]} 15.
+Bb2 {[%clk 1:25:33]} Re8 {[%clk 1:06:51]} 16. e4 {[%clk 1:19:58]} Kg8 {[%clk
+0:56:21]} 17. Rac1 {[%clk 1:14:27]} Kh7 {[%clk 0:53:56]} 18. Nf5 {[%clk 1:04:54]}
+Bf8 {[%clk 0:51:22]} 19. Ne3 {[%clk 1:04:43]} Nb6 {[%clk 0:43:20]} 20. Qc3 {[%clk
+0:49:45]} Nxa4 {[%clk 0:34:11]} 21. Qxe5 {[%clk 0:49:34]} Bd6 {[%clk 0:26:08]}
+22. Qxf6 {[%clk 0:46:25]} Nxb2 {[%clk 0:25:58]} 23. Qxb2 {[%clk 0:45:55]} Qe7
+{[%clk 0:20:05]} 24. Qc3 {[%clk 0:37:12]} Bb4 {[%clk 0:18:26]} 25. Qe5 {[%clk
+0:36:21]} Qg5 {[%clk 0:14:09]} 26. Qb2 {[%clk 0:33:47]} Rd8 {[%clk 0:11:01]} 27.
+a3 {[%clk 0:31:19]} Rxd1+ {[%clk 0:10:07]} 28. Rxd1 {[%clk 0:24:47]} Bc5 {[%clk
+0:10:03]} 29. Nf1 {[%clk 0:24:26]} Rd8 {[%clk 0:09:09]} 30. h4 {[%clk 0:23:08]}
+Qe7 {[%clk 0:09:05]} 31. Rxd8 {[%clk 0:22:59]} Qxd8 {[%clk 0:09:03]} 32. b4
+{[%clk 0:22:21]} Qd4 {[%clk 0:08:53]} 33. Qc2 {[%clk 0:22:10]} Be7 {[%clk
+0:08:32]} 34. c5 {[%clk 0:19:17]} a5 {[%clk 0:07:42]} 35. bxa5 {[%clk 0:14:23]}
+Bxc5 {[%clk 0:07:24]} 36. a4 {[%clk 0:14:17]} Kg7 {[%clk 0:06:31]} 37. Nh2 {[%clk
+0:13:21]} Bb3 {[%clk 0:05:35]} 38. Qe2 {[%clk 0:13:14]} Qxa4 {[%clk 0:04:18]} 39.
+Nf3 {[%clk 0:12:51]} Qa1+ {[%clk 0:03:58]} 40. Bf1 {[%clk 1:11:36]} Qc3 {[%clk
+1:02:35]} 41. Kg2 {[%clk 1:07:06]} Ba4 {[%clk 0:51:57]} 42. Qc4 {[%clk 0:59:15]}
+Qxc4 {[%clk 0:51:43]} 43. Bxc4 {[%clk 0:59:08]} Bc2 {[%clk 0:51:15]} 44. Nd2
+{[%clk 0:57:09]} Bb4 {[%clk 0:50:24]} 45. Bb3 {[%clk 0:56:59]} Bxb3 {[%clk
+0:49:43]} 46. Nxb3 {[%clk 0:56:53]} c5 {[%clk 0:49:29]} 47. Kf3 {[%clk 0:53:49]}
+c4 {[%clk 0:49:22]} 48. Nd4 {[%clk 0:53:28]} Bxa5 {[%clk 0:49:18]} 49. Nb5 {[%clk
+0:52:08]} c3 {[%clk 0:41:45]} 50. Nd4 {[%clk 0:51:07]} b5 {[%clk 0:40:08]} 51.
+Ke2 {[%clk 0:48:42]} b4 {[%clk 0:39:34]} 52. f4 {[%clk 0:46:46]} Bb6 {[%clk
+0:39:26]} 53. Nb3 {[%clk 0:46:39]} h5 {[%clk 0:39:17]} 0-1
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.23"]
+[Round "5"]
+[White "Mamedyarov, Shakhriyar"]
+[Black "Giri, Anish"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2814"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401319"]
+[WhiteEloChange "-1"]
+[BlackElo "2777"]
+[BlackTitle "GM"]
+[BlackCountry "NED"]
+[BlackFideId "24116068"]
+[BlackEloChange "1"]
+
+1. d4 {[%clk 1:59:41]} d5 {[%clk 1:59:55]} 2. c4 {[%clk 1:59:33]} e6 {[%clk
+1:59:52]} 3. Nf3 {[%clk 1:58:56]} Nf6 {[%clk 1:59:47]} 4. Nc3 {[%clk 1:58:25]}
+Be7 {[%clk 1:59:42]} 5. Bf4 {[%clk 1:56:05]} O-O {[%clk 1:59:30]} 6. e3 {[%clk
+1:56:03]} Nbd7 {[%clk 1:59:19]} 7. Qc2 {[%clk 1:50:41]} c5 {[%clk 1:58:04]} 8.
+Rd1 {[%clk 1:50:28]} cxd4 {[%clk 1:53:59]} 9. Rxd4 {[%clk 1:49:58]} Qa5 {[%clk
+1:53:34]} 10. Bg3 {[%clk 1:29:23]} Nb6 {[%clk 1:39:40]} 11. Nd2 {[%clk 1:25:28]}
+dxc4 {[%clk 1:35:57]} 12. Bxc4 {[%clk 1:25:19]} Nxc4 {[%clk 1:35:50]} 13. Nxc4
+{[%clk 1:25:16]} Qa6 {[%clk 1:35:38]} 14. O-O {[%clk 1:22:51]} Rd8 {[%clk
+1:34:54]} 15. Rxd8+ {[%clk 1:14:04]} Bxd8 {[%clk 1:34:51]} 16. Ne5 {[%clk
+1:13:54]} Bd7 {[%clk 1:32:17]} 17. Nxd7 {[%clk 1:13:18]} Nxd7 {[%clk 1:31:57]}
+18. Rd1 {[%clk 1:13:17]} Nf6 {[%clk 1:29:44]} 19. Qd3 {[%clk 1:06:41]} Qxd3
+{[%clk 1:26:00]} 20. Rxd3 {[%clk 1:06:38]} Rc8 {[%clk 1:21:35]} 21. f3 {[%clk
+1:05:56]} Kf8 {[%clk 1:14:54]} 22. Kf1 {[%clk 1:05:17]} a6 {[%clk 1:13:51]} 23.
+Ke2 {[%clk 1:05:11]} Ke8 {[%clk 1:13:26]} 24. Rd4 {[%clk 0:55:59]} Be7 {[%clk
+1:10:58]} 25. Bd6 {[%clk 0:54:55]} Nd5 {[%clk 1:08:04]} 26. Bxe7 {[%clk 0:48:35]}
+Nxc3+ {[%clk 1:07:50]} 27. bxc3 {[%clk 0:48:30]} Kxe7 {[%clk 1:07:48]} 28. Kd3
+{[%clk 0:40:25]} Rc5 {[%clk 0:50:44]} 29. Rb4 {[%clk 0:38:47]} b5 {[%clk
+0:50:36]} 30. c4 {[%clk 0:38:36]} Kd6 {[%clk 0:50:21]} 31. cxb5 {[%clk 0:38:29]}
+axb5 {[%clk 0:50:20]} 32. a4 {[%clk 0:38:22]} Rd5+ {[%clk 0:50:18]} 33. Ke2
+{[%clk 0:38:09]} bxa4 {[%clk 0:50:15]} 34. Rxa4 {[%clk 0:38:05]} Rc5 {[%clk
+0:50:00]} 35. Ra6+ {[%clk 0:37:56]} Ke7 {[%clk 0:49:51]} 36. Ra4 {[%clk 0:37:50]}
+Rc2+ {[%clk 0:49:46]} 37. Kf1 {[%clk 0:37:46]} Rc1+ {[%clk 0:49:44]} 38. Kf2
+{[%clk 0:37:40]} Rc2+ {[%clk 0:49:43]} 39. Kf1 {[%clk 0:37:32]} Rc1+ {[%clk
+0:49:42]} 40. Kf2 {[%clk 1:37:27]} Rc2+ {[%clk 1:49:41]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.23"]
+[Round "5"]
+[White "Carlsen, Magnus"]
+[Black "Wojtaszek, Radoslaw"]
+[Result "1-0"]
+[Board "3"]
+[WhiteElo "2843"]
+[WhiteTitle "GM"]
+[WhiteCountry "NOR"]
+[WhiteFideId "1503014"]
+[WhiteEloChange "4"]
+[BlackElo "2744"]
+[BlackTitle "GM"]
+[BlackCountry "POL"]
+[BlackFideId "1118358"]
+[BlackEloChange "-4"]
+
+1. e4 {[%clk 1:59:56]} c5 {[%clk 1:59:57]} 2. Nc3 {[%clk 1:59:46]} d6 {[%clk
+1:59:52]} 3. d4 {[%clk 1:59:36]} cxd4 {[%clk 1:59:42]} 4. Qxd4 {[%clk 1:59:30]}
+Nc6 {[%clk 1:58:04]} 5. Qd2 {[%clk 1:59:23]} Nf6 {[%clk 1:56:07]} 6. b3 {[%clk
+1:58:47]} e6 {[%clk 1:54:03]} 7. Bb2 {[%clk 1:58:25]} a6 {[%clk 1:53:44]} 8.
+O-O-O {[%clk 1:53:33]} b5 {[%clk 1:52:07]} 9. f3 {[%clk 1:51:56]} h5 {[%clk
+1:44:11]} 10. Nh3 {[%clk 1:48:46]} Be7 {[%clk 1:38:37]} 11. Ng5 {[%clk 1:47:54]}
+h4 {[%clk 1:37:17]} 12. f4 {[%clk 1:44:33]} Bb7 {[%clk 1:32:57]} 13. Kb1 {[%clk
+1:43:25]} Rc8 {[%clk 1:31:50]} 14. Be2 {[%clk 1:38:28]} Qc7 {[%clk 1:17:53]} 15.
+Rhe1 {[%clk 1:33:05]} Nh7 {[%clk 0:45:02]} 16. Nxh7 {[%clk 1:25:00]} Rxh7 {[%clk
+0:44:58]} 17. g4 {[%clk 1:17:33]} hxg3 {[%clk 0:36:54]} 18. hxg3 {[%clk 1:17:30]}
+Bf6 {[%clk 0:35:00]} 19. Bd3 {[%clk 1:15:07]} Rh8 {[%clk 0:33:13]} 20. g4 {[%clk
+1:12:38]} Nd4 {[%clk 0:24:28]} 21. Re3 {[%clk 1:07:47]} Kf8 {[%clk 0:24:24]} 22.
+Ne2 {[%clk 0:53:13]} Nxe2 {[%clk 0:24:19]} 23. Rxe2 {[%clk 0:53:06]} Bc3 {[%clk
+0:19:20]} 24. Bxc3 {[%clk 0:51:13]} Qxc3 {[%clk 0:19:16]} 25. Qe3 {[%clk
+0:50:56]} Rc5 {[%clk 0:16:18]} 26. e5 {[%clk 0:47:46]} dxe5 {[%clk 0:11:50]} 27.
+fxe5 {[%clk 0:47:32]} Rh1 {[%clk 0:07:40]} 28. Rxh1 {[%clk 0:46:44]} Bxh1 {[%clk
+0:07:37]} 29. Rh2 {[%clk 0:45:30]} Rxe5 {[%clk 0:06:36]} 30. Rh8+ {[%clk
+0:45:25]} Ke7 {[%clk 0:06:33]} 31. Qa7+ {[%clk 0:45:15]} 1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.23"]
+[Round "5"]
+[White "Mamedov, Rauf"]
+[Black "Karjakin, Sergey"]
+[Result "1/2-1/2"]
+[Board "4"]
+[WhiteElo "2704"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401653"]
+[WhiteEloChange "1"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "RUS"]
+[BlackFideId "14109603"]
+[BlackEloChange "-1"]
+
+1. e4 {[%clk 1:59:55]} c5 {[%clk 1:59:36]} 2. Nf3 {[%clk 1:58:46]} d6 {[%clk
+1:59:31]} 3. Bb5+ {[%clk 1:58:27]} Nd7 {[%clk 1:58:58]} 4. O-O {[%clk 1:51:13]}
+a6 {[%clk 1:56:13]} 5. Bd3 {[%clk 1:50:45]} Ngf6 {[%clk 1:56:06]} 6. Re1 {[%clk
+1:50:35]} b5 {[%clk 1:54:47]} 7. c3 {[%clk 1:41:23]} Bb7 {[%clk 1:53:49]} 8. Bc2
+{[%clk 1:40:46]} c4 {[%clk 1:52:23]} 9. a4 {[%clk 1:35:04]} e6 {[%clk 1:51:24]}
+10. axb5 {[%clk 1:31:35]} axb5 {[%clk 1:51:19]} 11. Rxa8 {[%clk 1:31:32]} Qxa8
+{[%clk 1:51:12]} 12. Na3 {[%clk 1:31:28]} Bxe4 {[%clk 1:49:15]} 13. Bxe4 {[%clk
+1:29:10]} Nxe4 {[%clk 1:48:54]} 14. d3 {[%clk 1:29:06]} cxd3 {[%clk 1:48:47]} 15.
+Nxb5 {[%clk 1:28:29]} Qb7 {[%clk 1:48:25]} 16. c4 {[%clk 1:26:46]} d5 {[%clk
+1:46:33]} 17. cxd5 {[%clk 1:20:32]} exd5 {[%clk 1:46:04]} 18. Qb3 {[%clk
+1:18:27]} Nc5 {[%clk 1:41:03]} 19. Qxd5 {[%clk 1:17:25]} Qxd5 {[%clk 1:40:38]}
+20. Nc7+ {[%clk 1:17:14]} Kd7 {[%clk 1:40:34]} 21. Nxd5 {[%clk 1:17:10]} Bd6
+{[%clk 1:40:17]} 22. b4 {[%clk 1:15:48]} Nb3 {[%clk 1:38:41]} 23. Rxe4 {[%clk
+1:15:42]} Nxc1 {[%clk 1:38:36]} 24. Rc4 {[%clk 1:15:22]} Ne2+ {[%clk 1:36:57]}
+25. Kf1 {[%clk 1:12:58]} Rb8 {[%clk 1:36:42]} 26. Ne1 {[%clk 1:11:41]} Nf4 {[%clk
+1:36:09]} 27. Nxf4 {[%clk 1:10:04]} d2 {[%clk 1:36:04]} 28. Ke2 {[%clk 1:09:50]}
+dxe1B {[%clk 1:35:53]} 29. Kxe1 {[%clk 1:09:47]} Rxb4 {[%clk 1:35:06]} 30. Rxb4
+{[%clk 1:09:43]} Bxb4+ {[%clk 1:35:03]} 31. Ke2 {[%clk 1:09:40]} Bd6 {[%clk
+1:34:56]} 32. Kf3 {[%clk 1:09:15]} Bb4 {[%clk 1:34:44]} 33. Ke2 {[%clk 1:08:52]}
+Bd6 {[%clk 1:34:39]} 34. Kf3 {[%clk 1:08:50]} Bb4 {[%clk 1:34:34]} 35. Ke2 {[%clk
+1:08:48]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.23"]
+[Round "5"]
+[White "Ding, Liren"]
+[Black "Radjabov, Teimour"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "CHN"]
+[WhiteFideId "8603677"]
+[BlackElo "2748"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13400924"]
+
+1. d4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:57]} 2. c4 {[%clk 1:59:50]} e6 {[%clk
+1:59:54]} 3. Nf3 {[%clk 1:59:31]} d5 {[%clk 1:59:51]} 4. Nc3 {[%clk 1:59:25]} Be7
+{[%clk 1:59:32]} 5. Bf4 {[%clk 1:59:04]} O-O {[%clk 1:59:26]} 6. e3 {[%clk
+1:58:59]} Nbd7 {[%clk 1:59:20]} 7. c5 {[%clk 1:57:35]} Nh5 {[%clk 1:59:13]} 8.
+Bd3 {[%clk 1:56:29]} Nxf4 {[%clk 1:58:48]} 9. exf4 {[%clk 1:56:24]} b6 {[%clk
+1:58:33]} 10. b4 {[%clk 1:56:15]} a5 {[%clk 1:58:01]} 11. a3 {[%clk 1:56:10]} c6
+{[%clk 1:57:24]} 12. O-O {[%clk 1:56:04]} Qc7 {[%clk 1:57:15]} 13. g3 {[%clk
+1:55:42]} Ba6 {[%clk 1:52:51]} 14. Qe2 {[%clk 1:51:08]} Bxd3 {[%clk 1:49:45]} 15.
+Qxd3 {[%clk 1:48:14]} Ra7 {[%clk 1:45:33]} 16. Rfc1 {[%clk 1:47:32]} Rfa8 {[%clk
+1:40:03]} 17. cxb6 {[%clk 1:18:46]} Qxb6 {[%clk 1:39:43]} 18. b5 {[%clk 1:18:43]}
+a4 {[%clk 1:35:03]} 19. f5 {[%clk 1:15:02]} c5 {[%clk 1:22:04]} 20. fxe6 {[%clk
+0:53:43]} fxe6 {[%clk 1:20:40]} 21. dxc5 {[%clk 0:50:27]} Nxc5 {[%clk 1:18:34]}
+22. Qe3 {[%clk 0:48:14]} Rb7 {[%clk 1:08:36]} 23. Rab1 {[%clk 0:45:49]} Nb3
+{[%clk 0:56:46]} 24. Qxb6 {[%clk 0:42:00]} Rxb6 {[%clk 0:56:33]} 25. Rc2 {[%clk
+0:37:23]} Bf6 {[%clk 0:51:07]} 26. Nxa4 {[%clk 0:33:49]} Rxb5 {[%clk 0:50:50]}
+27. Nc3 {[%clk 0:33:26]} Rb7 {[%clk 0:45:01]} 28. Ne2 {[%clk 0:31:04]} Rab8
+{[%clk 0:39:47]} 29. Nf4 {[%clk 0:24:35]} Nd4 {[%clk 0:30:08]} 30. Rxb7 {[%clk
+0:24:34]} Nxf3+ {[%clk 0:30:02]} 31. Kg2 {[%clk 0:24:33]} Ne1+ {[%clk 0:29:51]}
+32. Kf1 {[%clk 0:24:31]} Rxb7 {[%clk 0:29:47]} 33. Kxe1 {[%clk 0:24:30]} Kf7
+{[%clk 0:29:36]} 34. a4 {[%clk 0:19:51]} Ra7 {[%clk 0:28:27]} 35. Ra2 {[%clk
+0:19:13]} g5 {[%clk 0:28:23]} 36. Nd3 {[%clk 0:18:58]} Ke7 {[%clk 0:28:21]} 37.
+f4 {[%clk 0:17:38]} gxf4 {[%clk 0:26:31]} 38. gxf4 {[%clk 0:17:37]} Kd6 {[%clk
+0:26:20]} 39. Ke2 {[%clk 0:17:33]} Bc3 {[%clk 0:25:05]} 40. Ke3 {[%clk 1:17:19]}
+Ba5 {[%clk 0:25:05]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.25"]
+[Round "6"]
+[White "Ding, Liren"]
+[Black "Mamedyarov, Shakhriyar"]
+[Result "1/2-1/2"]
+[Board "1"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "CHN"]
+[WhiteFideId "8603677"]
+[WhiteEloChange "1"]
+[BlackElo "2814"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401319"]
+[BlackEloChange "-1"]
+
+1. c4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:55]} 2. Nc3 {[%clk 1:59:44]} e6 {[%clk
+1:59:17]} 3. Nf3 {[%clk 1:55:13]} d5 {[%clk 1:59:07]} 4. d4 {[%clk 1:55:08]} Be7
+{[%clk 1:58:38]} 5. Bg5 {[%clk 1:54:27]} O-O {[%clk 1:58:14]} 6. e3 {[%clk
+1:54:20]} Nbd7 {[%clk 1:58:04]} 7. Be2 {[%clk 1:53:08]} h6 {[%clk 1:57:30]} 8.
+Bh4 {[%clk 1:52:57]} c5 {[%clk 1:57:16]} 9. cxd5 {[%clk 1:51:18]} Nxd5 {[%clk
+1:57:11]} 10. Bxe7 {[%clk 1:51:03]} Nxe7 {[%clk 1:57:08]} 11. O-O {[%clk
+1:50:37]} cxd4 {[%clk 1:56:21]} 12. Nxd4 {[%clk 1:47:07]} Nf6 {[%clk 1:55:59]}
+13. Qb3 {[%clk 1:44:42]} Qa5 {[%clk 1:55:52]} 14. a3 {[%clk 1:41:32]} Rd8 {[%clk
+1:42:07]} 15. Qb4 {[%clk 1:39:06]} Qxb4 {[%clk 1:40:55]} 16. axb4 {[%clk
+1:38:42]} Nc6 {[%clk 1:37:17]} 17. Nc2 {[%clk 1:20:17]} Rd2 {[%clk 1:32:13]} 18.
+Rfc1 {[%clk 1:15:10]} Nd5 {[%clk 1:31:16]} 19. Nxd5 {[%clk 1:11:15]} exd5 {[%clk
+1:30:31]} 20. b5 {[%clk 1:10:37]} Rxe2 {[%clk 1:27:08]} 21. bxc6 {[%clk 1:10:23]}
+d4 {[%clk 1:27:02]} 22. exd4 {[%clk 1:01:29]} bxc6 {[%clk 1:26:21]} 23. Kf1
+{[%clk 1:00:59]} Re4 {[%clk 1:20:53]} 24. f3 {[%clk 0:59:07]} Rh4 {[%clk
+1:19:42]} 25. Nb4 {[%clk 0:58:08]} Bd7 {[%clk 1:18:57]} 26. Nxc6 {[%clk 0:57:58]}
+Bxc6 {[%clk 1:18:54]} 27. Rxc6 {[%clk 0:57:54]} Rxd4 {[%clk 1:18:50]} 28. Rc2
+{[%clk 0:57:19]} a5 {[%clk 1:18:04]} 29. b3 {[%clk 0:57:16]} Rb4 {[%clk 1:17:59]}
+30. Ra3 {[%clk 0:57:11]} Rab8 {[%clk 1:17:50]} 31. Rxa5 {[%clk 0:57:06]} Rxb3
+{[%clk 1:17:47]} 32. Kf2 {[%clk 0:57:03]} Rb2 {[%clk 1:17:42]} 33. Rxb2 {[%clk
+0:57:01]} Rxb2+ {[%clk 1:17:38]} 34. Kf1 {[%clk 0:56:59]} Rb1+ {[%clk 1:17:34]}
+35. Kf2 {[%clk 0:56:58]} Rb2+ {[%clk 1:17:29]} 36. Kf1 {[%clk 0:56:56]} Rb1+
+{[%clk 1:17:25]} 37. Kf2 {[%clk 0:56:54]} Rb2+ {[%clk 1:17:21]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.25"]
+[Round "6"]
+[White "Giri, Anish"]
+[Black "Navara, David"]
+[Result "1-0"]
+[Board "2"]
+[WhiteElo "2777"]
+[WhiteTitle "GM"]
+[WhiteCountry "NED"]
+[WhiteFideId "24116068"]
+[WhiteEloChange "5"]
+[BlackElo "2745"]
+[BlackTitle "GM"]
+[BlackCountry "CZE"]
+[BlackFideId "309095"]
+[BlackEloChange "-5"]
+
+1. e4 {[%clk 1:59:56]} c6 {[%clk 1:59:55]} 2. d4 {[%clk 1:59:51]} d5 {[%clk
+1:59:51]} 3. e5 {[%clk 1:59:47]} Bf5 {[%clk 1:59:46]} 4. Nf3 {[%clk 1:59:41]} e6
+{[%clk 1:59:41]} 5. Be2 {[%clk 1:59:37]} c5 {[%clk 1:59:30]} 6. Be3 {[%clk
+1:59:12]} Qb6 {[%clk 1:59:16]} 7. Nc3 {[%clk 1:58:59]} Nc6 {[%clk 1:59:03]} 8.
+Na4 {[%clk 1:58:47]} Qa5+ {[%clk 1:58:50]} 9. c3 {[%clk 1:58:42]} cxd4 {[%clk
+1:58:40]} 10. Nxd4 {[%clk 1:58:10]} Nxd4 {[%clk 1:58:30]} 11. Bxd4 {[%clk
+1:58:06]} Ne7 {[%clk 1:57:40]} 12. O-O {[%clk 1:55:17]} Nc6 {[%clk 1:55:18]} 13.
+b4 {[%clk 1:55:04]} Qc7 {[%clk 1:52:16]} 14. Rc1 {[%clk 1:54:39]} Be7 {[%clk
+1:49:25]} 15. g4 {[%clk 1:54:09]} Be4 {[%clk 1:48:28]} 16. f3 {[%clk 1:54:00]}
+Bg6 {[%clk 1:48:20]} 17. f4 {[%clk 1:53:56]} Be4 {[%clk 1:47:27]} 18. Nc5 {[%clk
+1:53:21]} a5 {[%clk 1:42:20]} 19. Be3 {[%clk 1:49:33]} axb4 {[%clk 1:39:30]} 20.
+cxb4 {[%clk 1:39:54]} Ra3 {[%clk 1:25:25]} 21. Bf2 {[%clk 1:24:44]} Bxc5 {[%clk
+1:23:53]} 22. Bxc5 {[%clk 1:18:55]} Rxa2 {[%clk 1:23:32]} 23. b5 {[%clk 1:15:19]}
+Bc2 {[%clk 1:19:43]} 24. b6 {[%clk 1:05:17]} Bxd1 {[%clk 1:17:40]} 25. bxc7
+{[%clk 1:05:15]} Kd7 {[%clk 1:17:29]} 26. Bxd1 {[%clk 1:05:11]} Kxc7 {[%clk
+1:16:56]} 27. Bd6+ {[%clk 1:00:47]} Kd7 {[%clk 1:16:35]} 28. Rb1 {[%clk 1:00:35]}
+1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.25"]
+[Round "6"]
+[White "Karjakin, Sergey"]
+[Black "Carlsen, Magnus"]
+[Result "1/2-1/2"]
+[Board "3"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "RUS"]
+[WhiteFideId "14109603"]
+[WhiteEloChange "1"]
+[BlackElo "2843"]
+[BlackTitle "GM"]
+[BlackCountry "NOR"]
+[BlackFideId "1503014"]
+[BlackEloChange "-1"]
+
+1. e4 {[%clk 1:59:58]} e5 {[%clk 1:59:18]} 2. Nf3 {[%clk 1:59:51]} Nc6 {[%clk
+1:59:12]} 3. Bb5 {[%clk 1:59:47]} a6 {[%clk 1:58:54]} 4. Ba4 {[%clk 1:59:43]} Nf6
+{[%clk 1:58:46]} 5. O-O {[%clk 1:59:38]} Be7 {[%clk 1:58:36]} 6. Re1 {[%clk
+1:59:32]} b5 {[%clk 1:58:25]} 7. Bb3 {[%clk 1:59:29]} O-O {[%clk 1:58:13]} 8. c3
+{[%clk 1:59:23]} d5 {[%clk 1:58:04]} 9. exd5 {[%clk 1:59:15]} Nxd5 {[%clk
+1:57:56]} 10. Nxe5 {[%clk 1:59:04]} Nxe5 {[%clk 1:57:47]} 11. Rxe5 {[%clk
+1:59:00]} c6 {[%clk 1:57:35]} 12. d3 {[%clk 1:58:48]} Bd6 {[%clk 1:57:24]} 13.
+Re1 {[%clk 1:58:39]} Bf5 {[%clk 1:57:13]} 14. Qf3 {[%clk 1:58:31]} Qh4 {[%clk
+1:56:51]} 15. g3 {[%clk 1:58:22]} Qh3 {[%clk 1:56:38]} 16. Be3 {[%clk 1:57:55]}
+Bxd3 {[%clk 1:56:28]} 17. Nd2 {[%clk 1:57:48]} Qf5 {[%clk 1:56:08]} 18. Bd4
+{[%clk 1:57:30]} Rfe8 {[%clk 1:55:34]} 19. a4 {[%clk 1:57:06]} Kf8 {[%clk
+1:45:30]} 20. h4 {[%clk 1:56:08]} h6 {[%clk 1:35:08]} 21. Qxf5 {[%clk 1:41:56]}
+Bxf5 {[%clk 1:32:27]} 22. Rxe8+ {[%clk 1:41:30]} Rxe8 {[%clk 1:32:23]} 23. axb5
+{[%clk 1:41:24]} axb5 {[%clk 1:32:14]} 24. Ra6 {[%clk 1:41:16]} Ne7 {[%clk
+1:29:07]} 25. Be3 {[%clk 1:31:51]} Kg8 {[%clk 1:23:49]} 26. Ba2 {[%clk 1:18:57]}
+Rd8 {[%clk 1:12:12]} 27. Bb6 {[%clk 1:06:55]} Re8 {[%clk 1:11:30]} 28. Be3 {[%clk
+1:00:14]} Rd8 {[%clk 1:11:23]} 29. Bb6 {[%clk 0:57:35]} Re8 {[%clk 1:11:16]} 30.
+Be3 {[%clk 0:57:05]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.25"]
+[Round "6"]
+[White "Topalov, Veselin"]
+[Black "Mamedov, Rauf"]
+[Result "1/2-1/2"]
+[Board "4"]
+[WhiteElo "2749"]
+[WhiteTitle "GM"]
+[WhiteCountry "BUL"]
+[WhiteFideId "2900084"]
+[WhiteEloChange "-1"]
+[BlackElo "2704"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401653"]
+[BlackEloChange "1"]
+
+1. e4 {[%clk 1:59:52]} c5 {[%clk 1:59:57]} 2. Nf3 {[%clk 1:59:47]} Nc6 {[%clk
+1:59:53]} 3. d4 {[%clk 1:59:41]} cxd4 {[%clk 1:59:50]} 4. Nxd4 {[%clk 1:59:35]}
+Nf6 {[%clk 1:59:33]} 5. Nc3 {[%clk 1:59:30]} e5 {[%clk 1:59:30]} 6. Ndb5 {[%clk
+1:59:12]} d6 {[%clk 1:59:27]} 7. Bg5 {[%clk 1:58:55]} a6 {[%clk 1:59:23]} 8. Na3
+{[%clk 1:58:49]} b5 {[%clk 1:59:21]} 9. Bxf6 {[%clk 1:58:35]} gxf6 {[%clk
+1:59:18]} 10. Nd5 {[%clk 1:58:10]} f5 {[%clk 1:59:13]} 11. Bd3 {[%clk 1:56:39]}
+Be6 {[%clk 1:57:46]} 12. O-O {[%clk 1:56:28]} Bxd5 {[%clk 1:57:42]} 13. exd5
+{[%clk 1:56:21]} Ne7 {[%clk 1:57:40]} 14. Re1 {[%clk 1:52:27]} Bg7 {[%clk
+1:56:41]} 15. c3 {[%clk 1:52:21]} O-O {[%clk 1:54:28]} 16. Nc2 {[%clk 1:50:04]}
+Re8 {[%clk 1:49:45]} 17. Qh5 {[%clk 1:43:07]} e4 {[%clk 1:49:25]} 18. Bf1 {[%clk
+1:43:03]} Nxd5 {[%clk 1:49:24]} 19. Qxf5 {[%clk 1:42:56]} Re5 {[%clk 1:49:21]}
+20. Qh3 {[%clk 1:42:50]} Qb6 {[%clk 1:49:17]} 21. Rad1 {[%clk 1:27:56]} Rae8
+{[%clk 1:39:41]} 22. Rxe4 {[%clk 1:22:21]} Rxe4 {[%clk 1:39:16]} 23. Rxd5 {[%clk
+1:22:15]} h6 {[%clk 1:14:39]} 24. Qd3 {[%clk 1:16:30]} R8e6 {[%clk 1:09:08]} 25.
+g3 {[%clk 1:08:53]} R4e5 {[%clk 0:57:58]} 26. Bg2 {[%clk 0:52:17]} b4 {[%clk
+0:35:32]} 27. cxb4 {[%clk 0:45:12]} Re2 {[%clk 0:33:55]} 28. Rf5 {[%clk 0:43:31]}
+Qc7 {[%clk 0:30:21]} 29. Ne3 {[%clk 0:42:11]} Qc1+ {[%clk 0:27:58]} 30. Bf1
+{[%clk 0:30:53]} Rxb2 {[%clk 0:26:31]} 31. a3 {[%clk 0:22:20]} Ra2 {[%clk
+0:19:03]} 32. Qd5 {[%clk 0:14:30]} Rxa3 {[%clk 0:13:54]} 33. Kg2 {[%clk 0:11:32]}
+Raxe3 {[%clk 0:08:46]} 34. fxe3 {[%clk 0:11:27]} Qxe3 {[%clk 0:08:24]} 35. Bxa6
+{[%clk 0:10:37]} Qe4+ {[%clk 0:07:18]} 36. Qxe4 {[%clk 0:08:56]} Rxe4 {[%clk
+0:07:14]} 37. Rb5 {[%clk 0:07:58]} Kf8 {[%clk 0:04:32]} 38. Bb7 {[%clk 0:06:33]}
+Re2+ {[%clk 0:04:28]} 39. Kh3 {[%clk 0:05:29]} Bd4 {[%clk 0:03:02]} 40. Bf3
+{[%clk 1:03:21]} Rb2 {[%clk 1:02:40]} 41. Rd5 {[%clk 0:58:53]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.25"]
+[Round "6"]
+[White "Radjabov, Teimour"]
+[Black "Wojtaszek, Radoslaw"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2748"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13400924"]
+[BlackElo "2744"]
+[BlackTitle "GM"]
+[BlackCountry "POL"]
+[BlackFideId "1118358"]
+
+1. e4 {[%clk 1:59:56]} c5 {[%clk 1:59:57]} 2. Nf3 {[%clk 1:59:48]} d6 {[%clk
+1:59:52]} 3. d4 {[%clk 1:59:38]} cxd4 {[%clk 1:59:47]} 4. Nxd4 {[%clk 1:59:33]}
+Nf6 {[%clk 1:59:40]} 5. Nc3 {[%clk 1:59:26]} a6 {[%clk 1:59:33]} 6. Bg5 {[%clk
+1:58:54]} e6 {[%clk 1:59:14]} 7. f4 {[%clk 1:58:26]} Qb6 {[%clk 1:58:09]} 8. Qd2
+{[%clk 1:56:23]} Qxb2 {[%clk 1:57:54]} 9. Rb1 {[%clk 1:56:17]} Qa3 {[%clk
+1:57:49]} 10. e5 {[%clk 1:55:41]} h6 {[%clk 1:55:25]} 11. Bh4 {[%clk 1:55:10]}
+dxe5 {[%clk 1:55:13]} 12. fxe5 {[%clk 1:55:05]} g5 {[%clk 1:52:38]} 13. exf6
+{[%clk 1:39:21]} gxh4 {[%clk 1:52:14]} 14. Be2 {[%clk 1:39:14]} Qa5 {[%clk
+1:48:05]} 15. O-O {[%clk 1:38:40]} Nd7 {[%clk 1:47:56]} 16. Kh1 {[%clk 1:38:08]}
+Qg5 {[%clk 1:47:29]} 17. Qe1 {[%clk 1:30:01]} Nxf6 {[%clk 1:32:17]} 18. Nf3
+{[%clk 1:28:52]} Qg7 {[%clk 1:29:44]} 19. Ne5 {[%clk 1:27:07]} Be7 {[%clk
+1:24:10]} 20. Na4 {[%clk 1:21:51]} O-O {[%clk 1:18:55]} 21. Nb6 {[%clk 1:21:18]}
+Rb8 {[%clk 1:18:48]} 22. Rb3 {[%clk 1:07:01]} Ne4 {[%clk 1:05:49]} 23. Ned7
+{[%clk 0:57:47]} Bxd7 {[%clk 1:05:24]} 24. Nxd7 {[%clk 0:57:43]} Qg5 {[%clk
+0:53:25]} 25. Nxb8 {[%clk 0:46:32]} Rxb8 {[%clk 0:53:00]} 26. Bh5 {[%clk
+0:45:45]} Nd2 {[%clk 0:41:16]} 27. Rxf7 {[%clk 0:44:03]} Nxb3 {[%clk 0:40:44]}
+28. Qxe6 {[%clk 0:43:51]} Kh8 {[%clk 0:39:45]} 29. Rxe7 {[%clk 0:43:13]} Rf8
+{[%clk 0:38:13]} 30. Kg1 {[%clk 0:41:50]} Qxh5 {[%clk 0:36:13]} 31. cxb3 {[%clk
+0:41:11]} Qd1+ {[%clk 0:35:59]} 32. Qe1 {[%clk 0:41:07]} Qd4+ {[%clk 0:35:49]}
+33. Qe3 {[%clk 0:38:50]} Qd1+ {[%clk 0:35:42]} 34. Qe1 {[%clk 0:38:48]} Qd4+
+{[%clk 0:35:37]} 35. Qe3 {[%clk 0:38:44]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.26"]
+[Round "7"]
+[White "Navara, David"]
+[Black "Ding, Liren"]
+[Result "0-1"]
+[Board "1"]
+[WhiteElo "2745"]
+[WhiteTitle "GM"]
+[WhiteCountry "CZE"]
+[WhiteFideId "309095"]
+[WhiteEloChange "-5"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "CHN"]
+[BlackFideId "8603677"]
+[BlackEloChange "5"]
+
+1. e4 {[%clk 1:59:58]} e5 {[%clk 1:59:53]} 2. Nf3 {[%clk 1:59:52]} Nc6 {[%clk
+1:59:48]} 3. Bb5 {[%clk 1:59:36]} a6 {[%clk 1:59:40]} 4. Ba4 {[%clk 1:59:30]} Nf6
+{[%clk 1:59:29]} 5. O-O {[%clk 1:59:21]} Be7 {[%clk 1:59:20]} 6. Re1 {[%clk
+1:56:26]} b5 {[%clk 1:59:12]} 7. Bb3 {[%clk 1:56:21]} O-O {[%clk 1:59:04]} 8. a3
+{[%clk 1:56:13]} d6 {[%clk 1:57:36]} 9. c3 {[%clk 1:56:07]} Na5 {[%clk 1:55:09]}
+10. Ba2 {[%clk 1:55:04]} c5 {[%clk 1:51:52]} 11. d4 {[%clk 1:54:45]} c4 {[%clk
+1:42:45]} 12. Bg5 {[%clk 1:53:06]} h6 {[%clk 1:31:28]} 13. Bh4 {[%clk 1:50:34]}
+Bg4 {[%clk 1:30:52]} 14. h3 {[%clk 1:46:00]} Bxf3 {[%clk 1:25:04]} 15. Qxf3
+{[%clk 1:45:40]} Nc6 {[%clk 1:23:25]} 16. d5 {[%clk 1:40:55]} Na5 {[%clk
+1:22:32]} 17. Bxf6 {[%clk 1:38:01]} Bxf6 {[%clk 1:22:29]} 18. Nd2 {[%clk
+1:37:35]} Bg5 {[%clk 1:16:59]} 19. Nf1 {[%clk 1:29:20]} g6 {[%clk 1:16:40]} 20.
+a4 {[%clk 1:25:55]} Qe7 {[%clk 1:07:52]} 21. Bb1 {[%clk 1:22:06]} Nb3 {[%clk
+1:07:17]} 22. Ra2 {[%clk 1:17:23]} Nc5 {[%clk 1:04:13]} 23. Bc2 {[%clk 1:17:00]}
+Rfb8 {[%clk 1:04:09]} 24. g3 {[%clk 1:14:35]} h5 {[%clk 1:03:40]} 25. h4 {[%clk
+1:14:28]} Bh6 {[%clk 1:03:36]} 26. axb5 {[%clk 1:13:47]} axb5 {[%clk 1:03:33]}
+27. Rea1 {[%clk 1:13:35]} Rxa2 {[%clk 1:02:45]} 28. Rxa2 {[%clk 1:13:29]} Kg7
+{[%clk 1:01:18]} 29. Qe2 {[%clk 1:08:59]} Rb7 {[%clk 0:56:25]} 30. Qe1 {[%clk
+1:05:27]} Qc7 {[%clk 0:48:03]} 31. Kg2 {[%clk 0:59:49]} Qb6 {[%clk 0:47:48]} 32.
+Kf3 {[%clk 0:58:06]} Rc7 {[%clk 0:44:36]} 33. Kg2 {[%clk 0:56:25]} b4 {[%clk
+0:38:18]} 34. cxb4 {[%clk 0:52:36]} Nd3 {[%clk 0:37:58]} 35. Bxd3 {[%clk
+0:52:25]} cxd3 {[%clk 0:37:55]} 36. Ra1 {[%clk 0:51:44]} Rc2 {[%clk 0:37:19]} 0-1
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.26"]
+[Round "7"]
+[White "Wojtaszek, Radoslaw"]
+[Black "Karjakin, Sergey"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2744"]
+[WhiteTitle "GM"]
+[WhiteCountry "POL"]
+[WhiteFideId "1118358"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "RUS"]
+[BlackFideId "14109603"]
+
+1. d4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:54]} 2. c4 {[%clk 1:59:54]} e6 {[%clk
+1:59:51]} 3. g3 {[%clk 1:59:46]} Bb4+ {[%clk 1:59:19]} 4. Nd2 {[%clk 1:59:38]} c5
+{[%clk 1:57:06]} 5. a3 {[%clk 1:59:16]} Bxd2+ {[%clk 1:57:01]} 6. Qxd2 {[%clk
+1:59:09]} cxd4 {[%clk 1:56:56]} 7. Nf3 {[%clk 1:58:54]} d5 {[%clk 1:56:29]} 8.
+Bg2 {[%clk 1:58:17]} dxc4 {[%clk 1:56:04]} 9. Qxd4 {[%clk 1:57:45]} Qxd4 {[%clk
+1:55:58]} 10. Nxd4 {[%clk 1:57:34]} O-O {[%clk 1:55:51]} 11. Be3 {[%clk 1:57:10]}
+Nd5 {[%clk 1:55:11]} 12. Rc1 {[%clk 1:56:39]} Nxe3 {[%clk 1:42:09]} 13. fxe3
+{[%clk 1:56:13]} Nd7 {[%clk 1:42:07]} 14. Rxc4 {[%clk 1:55:55]} Nf6 {[%clk
+1:42:02]} 15. O-O {[%clk 1:55:05]} Rd8 {[%clk 1:33:56]} 16. Rc7 {[%clk 1:39:31]}
+Rb8 {[%clk 1:29:35]} 17. b4 {[%clk 1:21:22]} Rd7 {[%clk 1:14:53]} 18. Rc4 {[%clk
+1:12:43]} Rd8 {[%clk 1:12:20]} 19. Rc7 {[%clk 1:12:28]} e5 {[%clk 0:50:33]} 20.
+Nb5 {[%clk 1:06:50]} Bg4 {[%clk 0:48:05]} 21. Re1 {[%clk 0:49:31]} a6 {[%clk
+0:38:25]} 22. Nc3 {[%clk 0:49:13]} Rbc8 {[%clk 0:37:57]} 23. Rxc8 {[%clk
+0:48:08]} Rxc8 {[%clk 0:30:49]} 24. Na4 {[%clk 0:45:56]} Rc7 {[%clk 0:30:45]} 25.
+h3 {[%clk 0:31:02]} Bc8 {[%clk 0:28:11]} 26. Nb6 {[%clk 0:24:06]} Be6 {[%clk
+0:26:41]} 27. a4 {[%clk 0:21:24]} h5 {[%clk 0:16:25]} 28. a5 {[%clk 0:18:37]} g6
+{[%clk 0:12:19]} 29. Kf2 {[%clk 0:13:51]} Kg7 {[%clk 0:12:01]} 30. Rd1 {[%clk
+0:12:39]} Bf5 {[%clk 0:10:41]} 31. Rd6 {[%clk 0:11:24]} Be6 {[%clk 0:09:54]} 32.
+Rd1 {[%clk 0:09:52]} g5 {[%clk 0:08:54]} 33. Ke1 {[%clk 0:08:27]} Kf8 {[%clk
+0:04:35]} 34. h4 {[%clk 0:06:06]} gxh4 {[%clk 0:02:36]} 35. gxh4 {[%clk 0:06:03]}
+Ke7 {[%clk 0:02:32]} 36. e4 {[%clk 0:03:40]} Nd7 {[%clk 0:01:34]} 37. Nd5+ {[%clk
+0:02:47]} Bxd5 {[%clk 0:01:32]} 38. Rxd5 {[%clk 0:02:43]} Rc4 {[%clk 0:00:50]}
+39. Bh3 {[%clk 0:01:50]} Nf6 {[%clk 0:00:35]} 40. Rxe5+ {[%clk 1:01:07]} Kd6
+{[%clk 1:00:34]} 41. Rf5 {[%clk 0:57:28]} Nxe4 {[%clk 0:59:54]} 42. Kd1 {[%clk
+0:57:15]} Nc3+ {[%clk 0:52:55]} 43. Ke1 {[%clk 0:51:37]} Rxh4 {[%clk 0:41:06]}
+44. Bg2 {[%clk 0:48:58]} Rxb4 {[%clk 0:40:41]} 45. Rxf7 {[%clk 0:48:19]} Nd5
+{[%clk 0:40:32]} 46. Rh7 {[%clk 0:43:00]} Rb5 {[%clk 0:39:51]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.26"]
+[Round "7"]
+[White "Carlsen, Magnus"]
+[Black "Topalov, Veselin"]
+[Result "1-0"]
+[Board "3"]
+[WhiteElo "2843"]
+[WhiteTitle "GM"]
+[WhiteCountry "NOR"]
+[WhiteFideId "1503014"]
+[WhiteEloChange "4"]
+[BlackElo "2749"]
+[BlackTitle "GM"]
+[BlackCountry "BUL"]
+[BlackFideId "2900084"]
+[BlackEloChange "-4"]
+
+1. c4 {[%clk 1:59:38]} Nf6 {[%clk 1:58:03]} 2. Nc3 {[%clk 1:59:26]} e5 {[%clk
+1:57:57]} 3. Nf3 {[%clk 1:59:17]} Nc6 {[%clk 1:57:53]} 4. e3 {[%clk 1:59:09]} Bb4
+{[%clk 1:55:19]} 5. Qc2 {[%clk 1:58:33]} Bxc3 {[%clk 1:55:13]} 6. bxc3 {[%clk
+1:58:19]} d6 {[%clk 1:53:22]} 7. e4 {[%clk 1:57:21]} O-O {[%clk 1:49:59]} 8. g3
+{[%clk 1:55:56]} Ne8 {[%clk 1:37:10]} 9. Nh4 {[%clk 1:44:40]} Ne7 {[%clk
+1:36:22]} 10. d3 {[%clk 1:32:47]} f5 {[%clk 1:33:17]} 11. exf5 {[%clk 1:30:56]}
+Nxf5 {[%clk 1:32:43]} 12. Nxf5 {[%clk 1:30:45]} Bxf5 {[%clk 1:32:35]} 13. Bg2
+{[%clk 1:30:37]} c6 {[%clk 1:30:46]} 14. h3 {[%clk 1:22:46]} Nc7 {[%clk 1:29:41]}
+15. O-O {[%clk 1:22:02]} Ne6 {[%clk 1:28:43]} 16. Be3 {[%clk 1:19:07]} Nc5 {[%clk
+1:23:50]} 17. Rad1 {[%clk 1:17:58]} Qd7 {[%clk 1:23:07]} 18. Kh2 {[%clk 1:11:19]}
+Bg6 {[%clk 1:11:40]} 19. Rd2 {[%clk 0:59:36]} Rae8 {[%clk 1:08:55]} 20. Qd1
+{[%clk 0:59:08]} b6 {[%clk 0:56:19]} 21. Re1 {[%clk 0:55:29]} h6 {[%clk 0:48:13]}
+22. Bxc5 {[%clk 0:46:26]} dxc5 {[%clk 0:46:17]} 23. Re3 {[%clk 0:45:26]} Re6
+{[%clk 0:40:09]} 24. Kg1 {[%clk 0:43:17]} Rd6 {[%clk 0:29:22]} 25. h4 {[%clk
+0:42:00]} Rd8 {[%clk 0:27:05]} 26. Rxe5 {[%clk 0:40:43]} Bxd3 {[%clk 0:21:27]}
+27. Be4 {[%clk 0:24:13]} Bxc4 {[%clk 0:16:29]} 28. Rxd6 {[%clk 0:23:42]} Qxd6
+{[%clk 0:16:25]} 29. Re8+ {[%clk 0:23:34]} Rxe8 {[%clk 0:16:12]} 30. Qxd6 {[%clk
+0:23:28]} Rxe4 {[%clk 0:16:07]} 31. Qxc6 {[%clk 0:22:19]} Re1+ {[%clk 0:15:59]}
+32. Kh2 {[%clk 0:22:02]} Bxa2 {[%clk 0:14:20]} 33. g4 {[%clk 0:21:42]} Kh7 {[%clk
+0:11:39]} 34. f4 {[%clk 0:20:39]} h5 {[%clk 0:09:37]} 35. f5 {[%clk 0:13:46]}
+hxg4 {[%clk 0:07:33]} 36. h5 {[%clk 0:12:00]} Bf7 {[%clk 0:04:56]} 37. Qb7 {[%clk
+0:10:17]} Kg8 {[%clk 0:04:22]} 38. Qxa7 {[%clk 0:09:52]} Bxh5 {[%clk 0:02:57]}
+39. Qxb6 {[%clk 0:09:24]} c4 {[%clk 0:02:36]} 40. Qd8+ {[%clk 1:08:54]} Be8
+{[%clk 1:01:32]} 41. Kg3 {[%clk 1:05:26]} Kh7 {[%clk 0:40:17]} 42. Qc7 {[%clk
+1:00:21]} Kg8 {[%clk 0:39:23]} 43. Qxc4+ {[%clk 0:58:32]} Bf7 {[%clk 0:39:19]}
+44. Qd4 {[%clk 0:57:51]} Re8 {[%clk 0:29:45]} 45. c4 {[%clk 0:57:02]} Rf8 {[%clk
+0:29:30]} 46. c5 {[%clk 0:55:38]} Be8 {[%clk 0:29:25]} 47. Qd5+ {[%clk 0:54:57]}
+Kh7 {[%clk 0:28:09]} 48. Qe6 {[%clk 0:46:56]} Bb5 {[%clk 0:25:45]} 49. c6 {[%clk
+0:46:19]} Bxc6 {[%clk 0:24:56]} 50. Qg6+ {[%clk 0:46:14]} Kg8 {[%clk 0:23:46]}
+51. Qxc6 {[%clk 0:46:06]} Rf6 {[%clk 0:23:41]} 52. Qe8+ {[%clk 0:45:46]} Kh7
+{[%clk 0:23:36]} 53. Kxg4 {[%clk 0:45:40]} Rh6 {[%clk 0:23:13]} 54. Kf4 {[%clk
+0:45:30]} Rf6 {[%clk 0:22:58]} 55. Ke5 {[%clk 0:45:26]} Rh6 {[%clk 0:22:46]} 56.
+Qe6 {[%clk 0:44:42]} 1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.26"]
+[Round "7"]
+[White "Mamedov, Rauf"]
+[Black "Giri, Anish"]
+[Result "1/2-1/2"]
+[Board "4"]
+[WhiteElo "2704"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401653"]
+[WhiteEloChange "1"]
+[BlackElo "2777"]
+[BlackTitle "GM"]
+[BlackCountry "NED"]
+[BlackFideId "24116068"]
+[BlackEloChange "-1"]
+
+1. e4 {[%clk 1:59:55]} e5 {[%clk 1:59:57]} 2. Nf3 {[%clk 1:59:52]} Nf6 {[%clk
+1:59:54]} 3. Nxe5 {[%clk 1:58:01]} d6 {[%clk 1:59:49]} 4. Nf3 {[%clk 1:57:56]}
+Nxe4 {[%clk 1:59:45]} 5. Bd3 {[%clk 1:57:40]} Nf6 {[%clk 1:59:36]} 6. O-O {[%clk
+1:56:10]} Be7 {[%clk 1:59:28]} 7. c3 {[%clk 1:56:08]} O-O {[%clk 1:59:21]} 8. Bc2
+{[%clk 1:56:06]} Bg4 {[%clk 1:58:34]} 9. h3 {[%clk 1:51:05]} Bh5 {[%clk 1:58:25]}
+10. d4 {[%clk 1:47:34]} c6 {[%clk 1:43:36]} 11. Re1 {[%clk 1:43:02]} Na6 {[%clk
+1:43:00]} 12. Nbd2 {[%clk 1:39:51]} Qd7 {[%clk 1:42:11]} 13. Nf1 {[%clk 1:36:57]}
+Rae8 {[%clk 1:40:36]} 14. Ng3 {[%clk 1:32:38]} Bg6 {[%clk 1:40:28]} 15. Bxg6
+{[%clk 1:27:41]} hxg6 {[%clk 1:40:25]} 16. Qb3 {[%clk 1:27:37]} Bd8 {[%clk
+1:37:36]} 17. Bg5 {[%clk 1:21:36]} Nd5 {[%clk 1:29:36]} 18. Bxd8 {[%clk 1:04:43]}
+Rxd8 {[%clk 1:29:12]} 19. Ne4 {[%clk 1:04:22]} Rfe8 {[%clk 1:21:35]} 20. Qa3
+{[%clk 1:03:39]} Nf6 {[%clk 1:17:24]} 21. Nxf6+ {[%clk 0:49:47]} gxf6 {[%clk
+1:17:18]} 22. d5 {[%clk 0:49:46]} c5 {[%clk 1:13:13]} 23. Qb3 {[%clk 0:40:58]}
+Kg7 {[%clk 0:49:37]} 24. c4 {[%clk 0:35:10]} Rxe1+ {[%clk 0:46:29]} 25. Rxe1
+{[%clk 0:34:52]} Re8 {[%clk 0:46:17]} 26. a3 {[%clk 0:20:06]} Rxe1+ {[%clk
+0:45:02]} 27. Nxe1 {[%clk 0:20:03]} Nb8 {[%clk 0:44:49]} 28. Nc2 {[%clk 0:19:21]}
+Qe7 {[%clk 0:38:02]} 29. Qe3 {[%clk 0:17:15]} Qe5 {[%clk 0:36:45]} 30. Qb3 {[%clk
+0:15:30]} b6 {[%clk 0:33:16]} 31. Ne3 {[%clk 0:14:34]} f5 {[%clk 0:32:43]} 32.
+Qa4 {[%clk 0:13:17]} a6 {[%clk 0:25:41]} 33. b4 {[%clk 0:12:07]} f4 {[%clk
+0:20:06]} 34. Nf1 {[%clk 0:11:03]} Kf8 {[%clk 0:19:19]} 35. bxc5 {[%clk 0:09:11]}
+dxc5 {[%clk 0:19:16]} 36. Qb3 {[%clk 0:07:16]} Nd7 {[%clk 0:19:08]} 37. Qa4
+{[%clk 0:07:14]} Nb8 {[%clk 0:10:29]} 38. Qb3 {[%clk 0:07:13]} Nd7 {[%clk
+0:10:21]} 39. Qa4 {[%clk 0:07:12]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.26"]
+[Round "7"]
+[White "Mamedyarov, Shakhriyar"]
+[Black "Radjabov, Teimour"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2814"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401319"]
+[WhiteEloChange "-1"]
+[BlackElo "2748"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13400924"]
+[BlackEloChange "1"]
+
+1. d4 {[%clk 1:59:48]} Nf6 {[%clk 1:59:55]} 2. c4 {[%clk 1:59:46]} g6 {[%clk
+1:59:47]} 3. g3 {[%clk 1:59:42]} c6 {[%clk 1:59:23]} 4. Bg2 {[%clk 1:59:20]} d5
+{[%clk 1:59:13]} 5. b3 {[%clk 1:56:53]} Bg7 {[%clk 1:58:36]} 6. Nf3 {[%clk
+1:56:45]} O-O {[%clk 1:57:33]} 7. O-O {[%clk 1:56:25]} dxc4 {[%clk 1:55:20]} 8.
+bxc4 {[%clk 1:56:18]} c5 {[%clk 1:55:15]} 9. Bb2 {[%clk 1:56:07]} cxd4 {[%clk
+1:50:05]} 10. Nxd4 {[%clk 1:54:48]} Qb6 {[%clk 1:49:31]} 11. Qc1 {[%clk 1:53:49]}
+Bd7 {[%clk 1:45:20]} 12. Nd2 {[%clk 1:50:44]} Nc6 {[%clk 1:44:28]} 13. e3 {[%clk
+1:50:26]} Rac8 {[%clk 1:42:26]} 14. Bc3 {[%clk 1:45:32]} Nxd4 {[%clk 1:40:02]}
+15. exd4 {[%clk 1:44:43]} Bf5 {[%clk 1:39:43]} 16. Qa3 {[%clk 1:42:40]} Bd3
+{[%clk 1:36:02]} 17. Rfe1 {[%clk 1:40:35]} Bxc4 {[%clk 1:33:03]} 18. Nxc4 {[%clk
+1:40:25]} Rxc4 {[%clk 1:33:01]} 19. Rab1 {[%clk 1:40:17]} Qa6 {[%clk 1:32:49]}
+20. Qxa6 {[%clk 1:40:07]} bxa6 {[%clk 1:32:46]} 21. Bb4 {[%clk 1:40:01]} Rxd4
+{[%clk 1:31:08]} 22. Bxe7 {[%clk 1:39:35]} Re8 {[%clk 1:31:00]} 23. Bc5 {[%clk
+1:39:30]} Rxe1+ {[%clk 1:30:50]} 24. Rxe1 {[%clk 1:39:24]} Rd2 {[%clk 1:30:42]}
+25. Rb1 {[%clk 1:38:57]} Nd7 {[%clk 1:30:31]} 26. Bxa7 {[%clk 1:38:49]} Bd4
+{[%clk 1:30:27]} 27. Bxd4 {[%clk 1:38:41]} Rxd4 {[%clk 1:30:25]} 28. Bf1 {[%clk
+1:38:33]} Ra4 {[%clk 1:30:20]} 29. Rb7 {[%clk 1:38:23]} Nf8 {[%clk 1:30:14]} 30.
+Rb6 {[%clk 1:37:49]} Rxa2 {[%clk 1:30:09]} 31. Rxa6 {[%clk 1:37:44]} Rxa6 {[%clk
+1:30:05]} 32. Bxa6 {[%clk 1:37:39]} Ne6 {[%clk 1:30:00]} 33. Bf1 {[%clk 1:37:34]}
+Nf8 {[%clk 1:29:57]} 34. Ba6 {[%clk 1:37:30]} Ne6 {[%clk 1:29:54]} 35. Bf1 {[%clk
+1:37:25]} Nf8 {[%clk 1:29:52]} 36. Ba6 {[%clk 1:37:20]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.27"]
+[Round "8"]
+[White "Topalov, Veselin"]
+[Black "Wojtaszek, Radoslaw"]
+[Result "0-1"]
+[Board "1"]
+[WhiteElo "2749"]
+[WhiteTitle "GM"]
+[WhiteCountry "BUL"]
+[WhiteFideId "2900084"]
+[WhiteEloChange "-5"]
+[BlackElo "2744"]
+[BlackTitle "GM"]
+[BlackCountry "POL"]
+[BlackFideId "1118358"]
+[BlackEloChange "5"]
+
+1. e4 {[%clk 1:59:58]} e5 {[%clk 1:59:54]} 2. Nf3 {[%clk 1:59:53]} Nc6 {[%clk
+1:59:50]} 3. Bb5 {[%clk 1:59:45]} a6 {[%clk 1:59:46]} 4. Ba4 {[%clk 1:59:41]} Nf6
+{[%clk 1:59:41]} 5. O-O {[%clk 1:59:36]} Bc5 {[%clk 1:59:38]} 6. c3 {[%clk
+1:55:39]} O-O {[%clk 1:59:27]} 7. d4 {[%clk 1:54:02]} Ba7 {[%clk 1:59:11]} 8. Re1
+{[%clk 1:47:27]} b5 {[%clk 1:58:41]} 9. Bb3 {[%clk 1:46:43]} d6 {[%clk 1:58:34]}
+10. h3 {[%clk 1:44:28]} Bb7 {[%clk 1:58:28]} 11. a4 {[%clk 1:39:15]} Ne7 {[%clk
+1:48:36]} 12. Bc2 {[%clk 1:29:50]} Ng6 {[%clk 1:47:19]} 13. Na3 {[%clk 1:17:48]}
+c6 {[%clk 1:28:13]} 14. Bd3 {[%clk 1:16:05]} Re8 {[%clk 1:26:53]} 15. Nc2 {[%clk
+1:01:21]} h6 {[%clk 1:11:12]} 16. dxe5 {[%clk 0:55:32]} dxe5 {[%clk 1:09:40]} 17.
+Be3 {[%clk 0:55:26]} Bxe3 {[%clk 1:04:33]} 18. Nxe3 {[%clk 0:55:18]} Nf4 {[%clk
+1:03:48]} 19. Bc2 {[%clk 0:51:55]} Qc7 {[%clk 1:01:06]} 20. Nf5 {[%clk 0:41:10]}
+Rad8 {[%clk 0:58:43]} 21. Qc1 {[%clk 0:40:56]} Bc8 {[%clk 0:56:17]} 22. Nh2
+{[%clk 0:34:42]} Bxf5 {[%clk 0:53:00]} 23. exf5 {[%clk 0:34:35]} e4 {[%clk
+0:51:03]} 24. axb5 {[%clk 0:32:30]} axb5 {[%clk 0:49:36]} 25. Nf1 {[%clk
+0:23:57]} c5 {[%clk 0:46:02]} 26. b3 {[%clk 0:19:00]} Nd3 {[%clk 0:33:51]} 27.
+Bxd3 {[%clk 0:18:55]} exd3 {[%clk 0:33:47]} 28. Rxe8+ {[%clk 0:14:04]} Rxe8
+{[%clk 0:33:29]} 29. c4 {[%clk 0:12:46]} Re2 {[%clk 0:30:12]} 30. cxb5 {[%clk
+0:12:27]} Qe5 {[%clk 0:29:36]} 31. Ra8+ {[%clk 0:05:47]} Kh7 {[%clk 0:29:31]} 32.
+Qc4 {[%clk 0:05:43]} Qxf5 {[%clk 0:28:54]} 33. f3 {[%clk 0:05:36]} Rc2 {[%clk
+0:25:27]} 34. Qxf7 {[%clk 0:04:16]} Qg5 {[%clk 0:23:43]} 35. g4 {[%clk 0:03:46]}
+Qh4 {[%clk 0:22:59]} 0-1
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.27"]
+[Round "8"]
+[White "Ding, Liren"]
+[Black "Mamedov, Rauf"]
+[Result "1-0"]
+[Board "2"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "CHN"]
+[WhiteFideId "8603677"]
+[WhiteEloChange "4"]
+[BlackElo "2704"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401653"]
+[BlackEloChange "-4"]
+
+1. d4 {[%clk 1:59:51]} d5 {[%clk 1:59:49]} 2. c4 {[%clk 1:59:45]} e6 {[%clk
+1:59:37]} 3. Nf3 {[%clk 1:59:34]} c5 {[%clk 1:59:33]} 4. cxd5 {[%clk 1:59:11]}
+exd5 {[%clk 1:59:28]} 5. g3 {[%clk 1:58:39]} Nc6 {[%clk 1:59:20]} 6. Bg2 {[%clk
+1:58:25]} Nf6 {[%clk 1:59:16]} 7. O-O {[%clk 1:58:17]} Be7 {[%clk 1:59:13]} 8.
+Nc3 {[%clk 1:57:36]} O-O {[%clk 1:59:07]} 9. Bg5 {[%clk 1:56:44]} c4 {[%clk
+1:59:03]} 10. e3 {[%clk 1:53:45]} Be6 {[%clk 1:46:02]} 11. b3 {[%clk 1:53:29]}
+cxb3 {[%clk 1:44:33]} 12. Qxb3 {[%clk 1:51:09]} Na5 {[%clk 1:37:49]} 13. Qb2
+{[%clk 1:47:49]} Ne4 {[%clk 1:24:54]} 14. Nxe4 {[%clk 1:32:55]} dxe4 {[%clk
+1:24:48]} 15. Bxe7 {[%clk 1:32:54]} Qxe7 {[%clk 1:24:43]} 16. Nd2 {[%clk
+1:32:52]} Nc4 {[%clk 1:01:41]} 17. Nxc4 {[%clk 1:32:47]} Bxc4 {[%clk 1:01:38]}
+18. Rfc1 {[%clk 1:32:34]} Rac8 {[%clk 1:01:11]} 19. a4 {[%clk 1:32:05]} g6 {[%clk
+0:49:17]} 20. a5 {[%clk 1:30:34]} Rc6 {[%clk 0:42:58]} 21. Bf1 {[%clk 1:29:18]}
+b5 {[%clk 0:36:07]} 22. axb6 {[%clk 1:24:20]} Rxb6 {[%clk 0:34:18]} 23. Qa3
+{[%clk 1:22:46]} Qxa3 {[%clk 0:34:14]} 24. Rxa3 {[%clk 1:22:43]} Bxf1 {[%clk
+0:34:10]} 25. Kxf1 {[%clk 1:22:38]} a6 {[%clk 0:32:28]} 26. Rc5 {[%clk 1:21:57]}
+f5 {[%clk 0:25:52]} 27. h3 {[%clk 1:18:46]} Rff6 {[%clk 0:23:38]} 28. Kg2 {[%clk
+1:13:15]} h5 {[%clk 0:20:31]} 29. Raa5 {[%clk 1:02:52]} Kg7 {[%clk 0:19:32]} 30.
+Rc7+ {[%clk 1:02:45]} Rf7 {[%clk 0:16:51]} 31. Rc8 {[%clk 1:02:26]} h4 {[%clk
+0:14:55]} 32. Re8 {[%clk 0:55:40]} hxg3 {[%clk 0:12:51]} 33. Kxg3 {[%clk
+0:53:58]} Rb3 {[%clk 0:11:18]} 34. Kg2 {[%clk 0:51:43]} Rb2 {[%clk 0:10:47]} 35.
+Rxa6 {[%clk 0:48:57]} f4 {[%clk 0:10:39]} 36. exf4 {[%clk 0:48:49]} Rxf4 {[%clk
+0:10:09]} 37. Ra7+ {[%clk 0:48:43]} Kh6 {[%clk 0:10:08]} 38. Kg3 {[%clk 0:47:21]}
+Rf6 {[%clk 0:05:09]} 39. h4 {[%clk 0:45:00]} g5 {[%clk 0:05:05]} 40. Rh8+ {[%clk
+1:44:23]} Kg6 {[%clk 1:05:07]} 41. Rg8+ {[%clk 1:43:49]} Kf5 {[%clk 1:01:23]} 42.
+Rxg5+ {[%clk 1:42:27]} 1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.27"]
+[Round "8"]
+[White "Giri, Anish"]
+[Black "Carlsen, Magnus"]
+[Result "0-1"]
+[Board "3"]
+[WhiteElo "2777"]
+[WhiteTitle "GM"]
+[WhiteCountry "NED"]
+[WhiteFideId "24116068"]
+[WhiteEloChange "-4"]
+[BlackElo "2843"]
+[BlackTitle "GM"]
+[BlackCountry "NOR"]
+[BlackFideId "1503014"]
+[BlackEloChange "4"]
+
+1. c4 {[%clk 1:59:58]} e5 {[%clk 1:59:55]} 2. Nc3 {[%clk 1:59:23]} Nf6 {[%clk
+1:59:47]} 3. Nf3 {[%clk 1:59:19]} Nc6 {[%clk 1:59:39]} 4. g3 {[%clk 1:59:13]} d5
+{[%clk 1:59:28]} 5. cxd5 {[%clk 1:59:09]} Nxd5 {[%clk 1:59:19]} 6. Bg2 {[%clk
+1:59:06]} Nb6 {[%clk 1:59:01]} 7. O-O {[%clk 1:57:55]} Be7 {[%clk 1:58:54]} 8. a3
+{[%clk 1:57:46]} a5 {[%clk 1:57:25]} 9. d3 {[%clk 1:49:30]} O-O {[%clk 1:56:27]}
+10. Be3 {[%clk 1:49:09]} Be6 {[%clk 1:55:56]} 11. Rc1 {[%clk 1:43:17]} a4 {[%clk
+1:55:37]} 12. Nd2 {[%clk 1:36:49]} f5 {[%clk 1:43:13]} 13. Bxb6 {[%clk 1:23:36]}
+cxb6 {[%clk 1:42:49]} 14. Nxa4 {[%clk 1:22:14]} Bg5 {[%clk 1:41:48]} 15. Nc3
+{[%clk 0:51:25]} e4 {[%clk 1:41:08]} 16. Kh1 {[%clk 0:50:59]} Qd7 {[%clk
+1:32:30]} 17. Rb1 {[%clk 0:46:40]} Rad8 {[%clk 1:30:25]} 18. Nc4 {[%clk 0:43:28]}
+Qf7 {[%clk 1:28:20]} 19. b3 {[%clk 0:41:25]} exd3 {[%clk 1:24:02]} 20. exd3
+{[%clk 0:41:07]} f4 {[%clk 1:23:41]} 21. Ne4 {[%clk 0:34:22]} Be7 {[%clk
+1:21:48]} 22. gxf4 {[%clk 0:34:09]} Qxf4 {[%clk 1:19:37]} 23. a4 {[%clk 0:33:35]}
+Nb4 {[%clk 1:12:27]} 24. Qe2 {[%clk 0:30:24]} Qh6 {[%clk 1:00:59]} 25. Rbd1
+{[%clk 0:26:50]} Nd5 {[%clk 1:00:18]} 26. Rg1 {[%clk 0:26:18]} Kh8 {[%clk
+0:57:15]} 27. Bf1 {[%clk 0:20:55]} Rf4 {[%clk 0:54:50]} 28. Ne5 {[%clk 0:18:08]}
+Rdf8 {[%clk 0:53:51]} 29. f3 {[%clk 0:17:15]} Rh4 {[%clk 0:50:59]} 30. d4 {[%clk
+0:12:06]} Nf4 {[%clk 0:45:47]} 31. Qd2 {[%clk 0:12:01]} Bxb3 {[%clk 0:42:16]} 32.
+Rb1 {[%clk 0:11:54]} Bxa4 {[%clk 0:36:54]} 33. Bb5 {[%clk 0:11:48]} Bxb5 {[%clk
+0:36:38]} 34. Rxb5 {[%clk 0:11:47]} Qe6 {[%clk 0:35:51]} 35. Qb2 {[%clk 0:08:54]}
+Bd8 {[%clk 0:33:26]} 36. Ng5 {[%clk 0:08:17]} Qe8 {[%clk 0:31:08]} 37. Rb3 {[%clk
+0:06:33]} Bxg5 {[%clk 0:29:25]} 38. Rxg5 {[%clk 0:06:32]} Ne6 {[%clk 0:29:14]}
+39. Rg4 {[%clk 0:06:10]} Rxg4 {[%clk 0:28:48]} 40. fxg4 {[%clk 1:05:17]} Qd8
+{[%clk 1:28:36]} 41. Rh3 {[%clk 0:36:09]} Qd5+ {[%clk 1:19:59]} 42. Kg1 {[%clk
+0:36:04]} Qe4 {[%clk 1:15:37]} 43. Qb4 {[%clk 0:34:32]} Rf6 {[%clk 1:13:54]} 0-1
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.27"]
+[Round "8"]
+[White "Mamedyarov, Shakhriyar"]
+[Black "Navara, David"]
+[Result "1-0"]
+[Board "4"]
+[WhiteElo "2814"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401319"]
+[WhiteEloChange "4"]
+[BlackElo "2745"]
+[BlackTitle "GM"]
+[BlackCountry "CZE"]
+[BlackFideId "309095"]
+[BlackEloChange "-4"]
+
+1. d4 {[%clk 1:59:57]} Nf6 {[%clk 1:59:54]} 2. c4 {[%clk 1:59:52]} g6 {[%clk
+1:59:49]} 3. Nc3 {[%clk 1:59:37]} d5 {[%clk 1:59:44]} 4. Nf3 {[%clk 1:59:33]} Bg7
+{[%clk 1:59:37]} 5. h4 {[%clk 1:59:30]} dxc4 {[%clk 1:51:50]} 6. e4 {[%clk
+1:59:08]} c5 {[%clk 1:51:40]} 7. d5 {[%clk 1:59:03]} b5 {[%clk 1:51:33]} 8. h5
+{[%clk 1:58:59]} O-O {[%clk 1:46:03]} 9. hxg6 {[%clk 1:55:19]} fxg6 {[%clk
+1:45:54]} 10. d6 {[%clk 1:55:07]} exd6 {[%clk 1:41:32]} 11. Nxb5 {[%clk 1:45:01]}
+d5 {[%clk 1:40:00]} 12. Nc3 {[%clk 1:25:50]} Re8 {[%clk 1:31:22]} 13. Be3 {[%clk
+0:59:34]} d4 {[%clk 1:20:24]} 14. e5 {[%clk 0:58:06]} Ba6 {[%clk 1:06:47]} 15.
+Qa4 {[%clk 0:48:49]} Qd7 {[%clk 0:55:13]} 16. Bxc4+ {[%clk 0:41:50]} Bxc4 {[%clk
+0:54:57]} 17. Qxc4+ {[%clk 0:41:48]} Qe6 {[%clk 0:54:44]} 18. Qxe6+ {[%clk
+0:41:04]} Rxe6 {[%clk 0:54:38]} 19. exf6 {[%clk 0:41:02]} Bxf6 {[%clk 0:54:24]}
+20. Nd5 {[%clk 0:38:56]} Bd8 {[%clk 0:54:01]} 21. O-O-O {[%clk 0:35:38]} dxe3
+{[%clk 0:53:35]} 22. Nxe3 {[%clk 0:35:17]} Nc6 {[%clk 0:49:37]} 23. Rd7 {[%clk
+0:34:44]} Be7 {[%clk 0:48:52]} 24. Rxh7 {[%clk 0:33:06]} Rb8 {[%clk 0:41:00]} 25.
+Rc7 {[%clk 0:29:09]} Bf6 {[%clk 0:39:16]} 26. Rb7 {[%clk 0:28:37]} Nb4 {[%clk
+0:36:42]} 27. Rxb8+ {[%clk 0:23:53]} Kxh7 {[%clk 0:36:33]} 28. Rb7+ {[%clk
+0:23:48]} Kg8 {[%clk 0:28:50]} 29. Rxa7 {[%clk 0:21:32]} Nd3+ {[%clk 0:26:36]}
+30. Kb1 {[%clk 0:13:01]} Bxb2 {[%clk 0:12:53]} 31. a4 {[%clk 0:07:31]} Bd4 {[%clk
+0:06:16]} 32. Kc2 {[%clk 0:06:31]} Nb4+ {[%clk 0:04:21]} 33. Kd2 {[%clk 0:06:25]}
+Bxe3+ {[%clk 0:04:15]} 34. fxe3 {[%clk 0:06:22]} Nd5 {[%clk 0:04:01]} 35. a5
+{[%clk 0:05:29]} c4 {[%clk 0:03:30]} 36. Rd7 {[%clk 0:05:04]} Nf6 {[%clk
+0:01:53]} 37. Rd8+ {[%clk 0:03:43]} Kg7 {[%clk 0:01:48]} 38. Kc3 {[%clk 0:03:38]}
+Rc6 {[%clk 0:01:32]} 39. Ne5 {[%clk 0:00:55]} Ne4+ {[%clk 0:01:24]} 40. Kd4
+{[%clk 1:00:42]} c3 {[%clk 1:01:19]} 41. Kxe4 {[%clk 1:00:18]} Rc4+ {[%clk
+1:00:54]} 42. Kf3 {[%clk 1:00:08]} 1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.27"]
+[Round "8"]
+[White "Radjabov, Teimour"]
+[Black "Karjakin, Sergey"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2748"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13400924"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "RUS"]
+[BlackFideId "14109603"]
+
+1. d4 {[%clk 1:59:54]} Nf6 {[%clk 1:59:52]} 2. c4 {[%clk 1:59:47]} e6 {[%clk
+1:59:49]} 3. Nf3 {[%clk 1:59:37]} d5 {[%clk 1:59:46]} 4. Nc3 {[%clk 1:59:14]} c6
+{[%clk 1:59:28]} 5. e3 {[%clk 1:57:22]} Nbd7 {[%clk 1:59:22]} 6. Bd3 {[%clk
+1:54:27]} dxc4 {[%clk 1:58:34]} 7. Bxc4 {[%clk 1:54:22]} b5 {[%clk 1:58:30]} 8.
+Bd3 {[%clk 1:53:55]} Bb7 {[%clk 1:57:34]} 9. O-O {[%clk 1:52:00]} a6 {[%clk
+1:57:07]} 10. e4 {[%clk 1:46:18]} c5 {[%clk 1:56:39]} 11. d5 {[%clk 1:46:05]} c4
+{[%clk 1:56:34]} 12. Bc2 {[%clk 1:45:33]} Qc7 {[%clk 1:56:31]} 13. dxe6 {[%clk
+1:40:33]} fxe6 {[%clk 1:54:59]} 14. Ne2 {[%clk 1:40:01]} Nc5 {[%clk 1:50:29]} 15.
+Bf4 {[%clk 1:37:18]} Qd7 {[%clk 1:48:59]} 16. Qxd7+ {[%clk 1:34:48]} Nfxd7 {[%clk
+1:48:45]} 17. Ned4 {[%clk 1:34:13]} Be7 {[%clk 1:44:24]} 18. b4 {[%clk 1:28:24]}
+cxb3 {[%clk 1:42:50]} 19. axb3 {[%clk 1:27:11]} b4 {[%clk 1:42:42]} 20. Rfe1
+{[%clk 1:21:30]} O-O {[%clk 1:33:33]} 21. Bc7 {[%clk 1:13:17]} g6 {[%clk
+1:31:47]} 22. Rad1 {[%clk 1:06:55]} Rac8 {[%clk 1:26:21]} 23. Ba5 {[%clk
+1:06:34]} Rfe8 {[%clk 1:25:06]} 24. Re3 {[%clk 0:55:37]} e5 {[%clk 1:19:39]} 25.
+Ne2 {[%clk 0:55:18]} Nf6 {[%clk 1:19:21]} 26. Bxb4 {[%clk 0:53:43]} Ncxe4 {[%clk
+1:18:15]} 27. Bxe4 {[%clk 0:53:08]} Nxe4 {[%clk 1:17:59]} 28. Bxe7 {[%clk
+0:53:05]} Rxe7 {[%clk 1:17:53]} 29. Ng3 {[%clk 0:52:56]} Nxg3 {[%clk 1:16:53]}
+30. hxg3 {[%clk 0:52:41]} Bxf3 {[%clk 1:16:48]} 31. gxf3 {[%clk 0:52:31]} Rc5
+{[%clk 1:15:18]} 32. b4 {[%clk 0:52:14]} Rb5 {[%clk 1:15:12]} 33. Ra1 {[%clk
+0:52:10]} Re6 {[%clk 1:15:04]} 34. Rea3 {[%clk 0:52:07]} Rxb4 {[%clk 1:14:59]}
+35. Rxa6 {[%clk 0:52:03]} Rxa6 {[%clk 1:14:53]} 36. Rxa6 {[%clk 0:52:00]} Rb5
+{[%clk 1:14:45]} 37. Ra8+ {[%clk 0:51:56]} Kg7 {[%clk 1:14:41]} 38. Ra7+ {[%clk
+0:51:53]} Kg8 {[%clk 1:14:37]} 39. Ra8+ {[%clk 0:51:50]} Kg7 {[%clk 1:14:32]} 40.
+Ra7+ {[%clk 1:51:47]} Kg8 {[%clk 2:14:28]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.28"]
+[Round "9"]
+[White "Mamedov, Rauf"]
+[Black "Mamedyarov, Shakhriyar"]
+[Result "1/2-1/2"]
+[Board "1"]
+[WhiteElo "2704"]
+[WhiteTitle "GM"]
+[WhiteCountry "AZE"]
+[WhiteFideId "13401653"]
+[WhiteEloChange "2"]
+[BlackElo "2814"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13401319"]
+[BlackEloChange "-2"]
+
+1. e4 {[%clk 1:59:56]} e5 {[%clk 1:59:48]} 2. Nf3 {[%clk 1:59:48]} Nc6 {[%clk
+1:59:40]} 3. Bb5 {[%clk 1:59:42]} Nf6 {[%clk 1:59:34]} 4. O-O {[%clk 1:51:28]}
+Nxe4 {[%clk 1:58:45]} 5. Re1 {[%clk 1:51:20]} Nd6 {[%clk 1:58:40]} 6. Nxe5 {[%clk
+1:51:17]} Be7 {[%clk 1:58:25]} 7. Bf1 {[%clk 1:51:08]} Nxe5 {[%clk 1:58:17]} 8.
+Rxe5 {[%clk 1:51:00]} O-O {[%clk 1:58:13]} 9. Nc3 {[%clk 1:46:19]} Ne8 {[%clk
+1:57:24]} 10. Nd5 {[%clk 1:46:08]} Bd6 {[%clk 1:57:20]} 11. Re1 {[%clk 1:46:05]}
+c6 {[%clk 1:57:16]} 12. Ne3 {[%clk 1:46:01]} Bc7 {[%clk 1:57:12]} 13. Nf5 {[%clk
+1:45:58]} d5 {[%clk 1:57:04]} 14. Ne7+ {[%clk 1:45:54]} Kh8 {[%clk 1:57:00]} 15.
+Nxc8 {[%clk 1:45:50]} Rxc8 {[%clk 1:56:56]} 16. d3 {[%clk 1:44:30]} Nf6 {[%clk
+1:54:28]} 17. Qf3 {[%clk 1:41:39]} Qd7 {[%clk 1:53:26]} 18. g3 {[%clk 1:40:32]}
+Ng4 {[%clk 1:52:46]} 19. d4 {[%clk 1:38:17]} Rce8 {[%clk 1:50:17]} 20. Bd2 {[%clk
+1:35:33]} f5 {[%clk 1:48:42]} 21. Rxe8 {[%clk 1:34:27]} Rxe8 {[%clk 1:48:12]} 22.
+Re1 {[%clk 1:34:22]} Rxe1 {[%clk 1:45:21]} 23. Bxe1 {[%clk 1:34:14]} Qe6 {[%clk
+1:45:08]} 24. Qe2 {[%clk 1:31:36]} Qd7 {[%clk 1:45:03]} 25. Qf3 {[%clk 1:31:19]}
+Qe6 {[%clk 1:44:58]} 26. Qe2 {[%clk 1:31:16]} Qd7 {[%clk 1:44:56]} 27. Qf3 {[%clk
+1:31:11]} Qe6 {[%clk 1:44:53]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.28"]
+[Round "9"]
+[White "Wojtaszek, Radoslaw"]
+[Black "Giri, Anish"]
+[Result "1/2-1/2"]
+[Board "2"]
+[WhiteElo "2744"]
+[WhiteTitle "GM"]
+[WhiteCountry "POL"]
+[WhiteFideId "1118358"]
+[BlackElo "2777"]
+[BlackTitle "GM"]
+[BlackCountry "NED"]
+[BlackFideId "24116068"]
+
+1. d4 {[%clk 1:59:57]} d5 {[%clk 1:59:58]} 2. c4 {[%clk 1:59:51]} e6 {[%clk
+1:59:55]} 3. Nf3 {[%clk 1:59:41]} Nf6 {[%clk 1:59:51]} 4. g3 {[%clk 1:59:34]} Be7
+{[%clk 1:59:43]} 5. Bg2 {[%clk 1:59:26]} O-O {[%clk 1:59:38]} 6. O-O {[%clk
+1:59:15]} dxc4 {[%clk 1:59:34]} 7. Qc2 {[%clk 1:58:43]} a6 {[%clk 1:59:30]} 8. a4
+{[%clk 1:58:37]} Bd7 {[%clk 1:59:26]} 9. Bg5 {[%clk 1:55:36]} Bc6 {[%clk
+1:59:17]} 10. Rd1 {[%clk 1:55:31]} b5 {[%clk 1:59:03]} 11. Bxf6 {[%clk 1:54:52]}
+Bxf6 {[%clk 1:59:00]} 12. Nc3 {[%clk 1:54:45]} Qe8 {[%clk 1:58:56]} 13. d5 {[%clk
+1:53:47]} exd5 {[%clk 1:58:50]} 14. Nd4 {[%clk 1:53:41]} Qe5 {[%clk 1:58:42]} 15.
+e4 {[%clk 1:48:37]} dxe4 {[%clk 1:58:35]} 16. axb5 {[%clk 1:25:57]} axb5 {[%clk
+1:53:15]} 17. Nxc6 {[%clk 1:24:13]} Nxc6 {[%clk 1:53:08]} 18. Rxa8 {[%clk
+1:24:09]} Rxa8 {[%clk 1:53:03]} 19. Qxe4 {[%clk 1:24:02]} Qxe4 {[%clk 1:45:07]}
+20. Bxe4 {[%clk 1:23:36]} Ra6 {[%clk 1:44:53]} 21. Nxb5 {[%clk 1:23:31]} Ne5
+{[%clk 1:37:38]} 22. Nxc7 {[%clk 1:23:21]} Ra2 {[%clk 1:34:56]} 23. Rb1 {[%clk
+1:13:25]} Nd7 {[%clk 1:29:20]} 24. Bc6 {[%clk 1:12:14]} Nc5 {[%clk 1:24:52]} 25.
+Bd5 {[%clk 1:11:27]} Rxb2 {[%clk 1:21:42]} 26. Rxb2 {[%clk 1:10:48]} Bxb2 {[%clk
+1:21:38]} 27. Bxc4 {[%clk 1:10:43]} Be5 {[%clk 1:21:34]} 28. Na6 {[%clk 1:10:27]}
+Nxa6 {[%clk 1:21:31]} 29. Bxa6 {[%clk 1:10:24]} Bd6 {[%clk 1:21:27]} 30. Bb5
+{[%clk 1:10:19]} Be5 {[%clk 1:21:26]} 31. Ba6 {[%clk 1:10:14]} Bd6 {[%clk
+1:21:25]} 32. Bb5 {[%clk 1:10:09]} Be5 {[%clk 1:21:23]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.28"]
+[Round "9"]
+[White "Carlsen, Magnus"]
+[Black "Ding, Liren"]
+[Result "1/2-1/2"]
+[Board "3"]
+[WhiteElo "2843"]
+[WhiteTitle "GM"]
+[WhiteCountry "NOR"]
+[WhiteFideId "1503014"]
+[WhiteEloChange "-1"]
+[BlackElo "2778"]
+[BlackTitle "GM"]
+[BlackCountry "CHN"]
+[BlackFideId "8603677"]
+[BlackEloChange "1"]
+
+1. e4 {[%clk 1:59:58]} e5 {[%clk 1:59:54]} 2. Nf3 {[%clk 1:59:51]} Nc6 {[%clk
+1:59:51]} 3. Nc3 {[%clk 1:59:39]} Nf6 {[%clk 1:59:44]} 4. Bb5 {[%clk 1:59:29]}
+Nd4 {[%clk 1:58:33]} 5. Nxd4 {[%clk 1:59:11]} exd4 {[%clk 1:58:26]} 6. e5 {[%clk
+1:58:57]} dxc3 {[%clk 1:58:09]} 7. exf6 {[%clk 1:58:48]} Qxf6 {[%clk 1:57:52]} 8.
+Qe2+ {[%clk 1:58:34]} Qe7 {[%clk 1:56:53]} 9. dxc3 {[%clk 1:58:21]} Qxe2+ {[%clk
+1:56:31]} 10. Kxe2 {[%clk 1:58:12]} Bc5 {[%clk 1:55:36]} 11. Be3 {[%clk 1:57:48]}
+Bxe3 {[%clk 1:55:31]} 12. Kxe3 {[%clk 1:57:42]} c6 {[%clk 1:54:23]} 13. Bd3
+{[%clk 1:57:32]} d5 {[%clk 1:54:20]} 14. Rae1 {[%clk 1:56:14]} Ke7 {[%clk
+1:52:07]} 15. c4 {[%clk 1:55:50]} dxc4 {[%clk 1:50:58]} 16. Bxc4 {[%clk 1:55:17]}
+Rd8 {[%clk 1:50:20]} 17. Rd1 {[%clk 1:54:44]} Be6 {[%clk 1:50:10]} 18. Bxe6
+{[%clk 1:54:35]} Kxe6 {[%clk 1:50:07]} 19. Rhe1 {[%clk 1:54:22]} Rxd1 {[%clk
+1:49:09]} 20. Rxd1 {[%clk 1:54:20]} Re8 {[%clk 1:49:03]} 21. f4 {[%clk 1:53:52]}
+f5 {[%clk 1:48:52]} 22. Kf3 {[%clk 1:53:41]} Re7 {[%clk 1:48:23]} 23. Re1+ {[%clk
+1:53:33]} Kf6 {[%clk 1:48:20]} 24. Rd1 {[%clk 1:53:26]} Ke6 {[%clk 1:48:16]} 25.
+Re1+ {[%clk 1:53:19]} Kf6 {[%clk 1:48:15]} 26. Rd1 {[%clk 1:53:03]} Ke6 {[%clk
+1:48:12]} 27. Re1+ {[%clk 1:52:55]} 1/2-1/2
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.28"]
+[Round "9"]
+[White "Karjakin, Sergey"]
+[Black "Topalov, Veselin"]
+[Result "1-0"]
+[Board "4"]
+[WhiteElo "2778"]
+[WhiteTitle "GM"]
+[WhiteCountry "RUS"]
+[WhiteFideId "14109603"]
+[WhiteEloChange "5"]
+[BlackElo "2749"]
+[BlackTitle "GM"]
+[BlackCountry "BUL"]
+[BlackFideId "2900084"]
+[BlackEloChange "-5"]
+
+1. e4 {[%clk 1:59:58]} e5 {[%clk 1:59:55]} 2. Nf3 {[%clk 1:59:39]} Nc6 {[%clk
+1:59:28]} 3. Bc4 {[%clk 1:59:01]} Bc5 {[%clk 1:59:18]} 4. d3 {[%clk 1:58:57]} Nf6
+{[%clk 1:59:11]} 5. Nc3 {[%clk 1:58:51]} d6 {[%clk 1:58:33]} 6. Na4 {[%clk
+1:57:45]} Bb6 {[%clk 1:58:10]} 7. a3 {[%clk 1:52:04]} O-O {[%clk 1:55:59]} 8. O-O
+{[%clk 1:51:41]} Ne7 {[%clk 1:53:26]} 9. Nxb6 {[%clk 1:41:54]} axb6 {[%clk
+1:53:21]} 10. Bg5 {[%clk 1:41:18]} Be6 {[%clk 1:38:56]} 11. Bxf6 {[%clk 1:35:53]}
+gxf6 {[%clk 1:38:51]} 12. Nh4 {[%clk 1:35:38]} d5 {[%clk 1:23:37]} 13. exd5
+{[%clk 1:34:52]} Nxd5 {[%clk 1:23:27]} 14. d4 {[%clk 1:13:39]} c6 {[%clk
+1:18:50]} 15. Re1 {[%clk 1:03:14]} b5 {[%clk 1:07:05]} 16. Bxd5 {[%clk 1:02:03]}
+cxd5 {[%clk 1:07:02]} 17. Qh5 {[%clk 0:59:22]} e4 {[%clk 0:53:51]} 18. f3 {[%clk
+0:56:14]} b4 {[%clk 0:44:00]} 19. fxe4 {[%clk 0:40:09]} dxe4 {[%clk 0:42:33]} 20.
+Rxe4 {[%clk 0:39:58]} Ra5 {[%clk 0:38:54]} 21. Qh6 {[%clk 0:32:44]} Qd5 {[%clk
+0:34:55]} 22. Rf4 {[%clk 0:31:41]} bxa3 {[%clk 0:28:53]} 23. bxa3 {[%clk
+0:30:56]} Qg5 {[%clk 0:27:01]} 24. Qxf6 {[%clk 0:30:48]} Qxf6 {[%clk 0:26:57]}
+25. Rxf6 {[%clk 0:30:44]} Rc8 {[%clk 0:26:44]} 26. Rf2 {[%clk 0:30:23]} b5 {[%clk
+0:25:52]} 27. Rd2 {[%clk 0:27:55]} b4 {[%clk 0:20:36]} 28. a4 {[%clk 0:27:50]}
+Bd7 {[%clk 0:18:18]} 29. Kf2 {[%clk 0:24:09]} Rxa4 {[%clk 0:17:36]} 30. Rb1
+{[%clk 0:24:08]} Rc4 {[%clk 0:14:26]} 31. Rb2 {[%clk 0:23:55]} Kf8 {[%clk
+0:11:39]} 32. g3 {[%clk 0:23:54]} Bh3 {[%clk 0:10:55]} 33. Nf3 {[%clk 0:19:08]}
+f6 {[%clk 0:10:37]} 34. Ke3 {[%clk 0:17:49]} Bg4 {[%clk 0:06:28]} 35. Ne1 {[%clk
+0:17:34]} Ke7 {[%clk 0:04:32]} 36. Ng2 {[%clk 0:15:17]} Bh3 {[%clk 0:03:59]} 37.
+Nf4 {[%clk 0:15:02]} Be6 {[%clk 0:03:14]} 38. d5 {[%clk 0:09:54]} Bf5 {[%clk
+0:02:27]} 39. d6+ {[%clk 0:09:12]} Kd8 {[%clk 0:01:00]} 40. Nd5 {[%clk 1:09:04]}
+Ra3+ {[%clk 1:00:21]} 41. Kf2 {[%clk 1:01:08]} Be4 {[%clk 1:00:14]} 42. Nb6
+{[%clk 0:53:26]} Rc5 {[%clk 0:43:38]} 43. Rxb4 {[%clk 0:52:50]} Rh5 {[%clk
+0:42:11]} 44. Ke1 {[%clk 0:50:43]} Bc6 {[%clk 0:40:46]} 45. Re2 {[%clk 0:46:02]}
+Ra6 {[%clk 0:39:05]} 46. c4 {[%clk 0:31:44]} Ra1+ {[%clk 0:35:03]} 47. Kd2 {[%clk
+0:31:27]} Rf5 {[%clk 0:33:41]} 48. Re7 {[%clk 0:26:12]} Ra2+ {[%clk 0:26:24]} 49.
+Kc3 {[%clk 0:25:22]} 1-0
+
+[Event "Shamkir Chess"]
+[Site "chess24.com"]
+[Date "2018.04.28"]
+[Round "9"]
+[White "Navara, David"]
+[Black "Radjabov, Teimour"]
+[Result "1/2-1/2"]
+[Board "5"]
+[WhiteElo "2745"]
+[WhiteTitle "GM"]
+[WhiteCountry "CZE"]
+[WhiteFideId "309095"]
+[BlackElo "2748"]
+[BlackTitle "GM"]
+[BlackCountry "AZE"]
+[BlackFideId "13400924"]
+
+1. e4 {[%clk 1:59:58]} c5 {[%clk 1:59:58]} 2. Nf3 {[%clk 1:59:53]} Nc6 {[%clk
+1:59:55]} 3. Nc3 {[%clk 1:59:46]} e5 {[%clk 1:59:52]} 4. Bc4 {[%clk 1:59:40]} Be7
+{[%clk 1:59:46]} 5. d3 {[%clk 1:58:37]} Nf6 {[%clk 1:59:36]} 6. Ng5 {[%clk
+1:57:48]} O-O {[%clk 1:59:24]} 7. f4 {[%clk 1:57:36]} exf4 {[%clk 1:58:15]} 8.
+Bxf4 {[%clk 1:56:35]} d5 {[%clk 1:52:20]} 9. exd5 {[%clk 1:56:15]} Nd4 {[%clk
+1:51:34]} 10. Nge4 {[%clk 1:53:08]} b5 {[%clk 1:44:02]} 11. d6 {[%clk 1:53:03]}
+Nxe4 {[%clk 1:40:54]} 12. dxe7 {[%clk 1:52:56]} Qxe7 {[%clk 1:40:46]} 13. Nxe4
+{[%clk 1:52:40]} bxc4 {[%clk 1:40:43]} 14. O-O {[%clk 1:52:36]} cxd3 {[%clk
+1:27:01]} 15. cxd3 {[%clk 1:52:28]} Rd8 {[%clk 1:26:54]} 16. Qh5 {[%clk 1:41:46]}
+Bf5 {[%clk 1:22:48]} 17. Rae1 {[%clk 1:41:40]} Bg6 {[%clk 1:17:39]} 18. Qxc5
+{[%clk 1:40:01]} Qxc5 {[%clk 1:13:37]} 19. Nxc5 {[%clk 1:39:54]} Rac8 {[%clk
+1:13:17]} 20. Nb7 {[%clk 1:34:39]} Rd7 {[%clk 1:09:51]} 21. Nc5 {[%clk 1:27:06]}
+Rdd8 {[%clk 1:09:33]} 22. Nb7 {[%clk 1:26:22]} Rd7 {[%clk 1:09:29]} 23. Nc5
+{[%clk 1:25:58]} 1/2-1/2
