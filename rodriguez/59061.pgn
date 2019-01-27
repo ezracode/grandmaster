@@ -1,0 +1,5527 @@
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Cuellar, Diego"]
+[Black "M, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2109"]
+[BlackElo "0"]
+[PlyCount "71"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Be3 Qf6 6.c3 Nge7 7.Bc4 Bxd4 8.cxd4 d6
+9.Nc3 O-O 10.O-O Qg6 11.f4 Na5 12.Be2 f5 13.e5 d5 14.b3 a6 15.Bc1 b5 16.Ba3 Nac6
+17.Bc5 Bd7 18.a4 b4 19.Na2 a5 20.Rc1 Qe6 21.Bb5 Rfc8 22.Qf3 Ng6 23.Rc2 Nd8
+24.Bd3 c6 25.Qh5 Qf7 26.Qh3 Qe6 27.Nc1 Nb7 28.Ne2 Nxc5 29.dxc5 Qf7 30.Nd4 Ne7
+31.g4 fxg4 32.Qxh7+ Kf8 33.f5 Qg8 34.f6 gxf6 35.Qh6+ Qg7 36.Rxf6+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Gomez Vazquez, Carlos"]
+[Black "Ruiz C, Joshua D"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2148"]
+[PlyCount "86"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.Bc4 Bd7 10.O-O-O Rc8 11.h4 Nxd4 12.Bd3 Nc6 13.h5 Ne5 14.Be2 Be6 15.Bh6 Qa5
+16.Bxg7 Kxg7 17.hxg6 fxg6 18.Kb1 b5 19.a3 b4 20.Nd5 Bxd5 21.exd5 Nc4 22.Qd4 Qc5
+23.Qxc5 Rxc5 24.axb4 Rc7 25.Rd3 Rb8 26.Kc1 Rxb4 27.Rh4 Ra4 28.c3 Nxb2 29.Rdd4
+Rxd4 30.Rxd4 Rb7 31.c4 Na4 32.g4 Nc5 33.Kc2 a5 34.Rd1 a4 35.Ra1 h5 36.Bd1 h4
+37.Kc3 a3 38.Ra2 Rb1 39.Kc2 Rb2+ 40.Rxb2 axb2 41.Kxb2 h3 42.f4 Nd3+ 43.Kc3 Ne1 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Novoa, Fernando"]
+[Black "Cortez Olavarria, Victor Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2044"]
+[BlackElo "0"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 c5 3.d5 g6 4.Nc3 d6 5.e4 Nbd7 6.Nf3 Bg7 7.h3 a6 8.a4 a5 9.Bd3 O-O
+10.Bf4 Nh5 11.Bh2 Nhf6 12.O-O Ne8 13.Nd2 Ne5 14.Be2 Nc7 15.f4 Nd7 16.Nf3 Nb6
+17.Bd3 f5 18.e5 e6 19.Qb3 Na6 20.Rac1 Nb4 21.Be2 exd5 22.cxd5 Re8 23.Rfe1 Kh8
+24.Ng5 Re7 25.Nb5 h6 26.exd6 hxg5 27.dxe7 Qxe7 28.Bf3 Qd8 29.fxg5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Londono Lopez, David"]
+[Black "Diaz, Cristian Camilo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1964"]
+[PlyCount "95"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 d5 5.Bg5 c5 6.Nf3 h6 7.Bh4 g5 8.Bg3 g4 9.Ne5
+cxd4 10.Qa4+ Nc6 11.Nxc6 Bxc3+ 12.bxc3 bxc6 13.cxd4 Bd7 14.c5 Ne4 15.e3 f6
+16.Bd3 h5 17.Bxe4 dxe4 18.Bd6 Kf7 19.O-O Qe8 20.Rab1 Bc8 21.Qc2 Ba6 22.Qxe4 Qd7
+23.Rfc1 Bb5 24.Rb4 a5 25.Rb2 Ra6 26.f3 gxf3 27.Qxf3 Raa8 28.Rf2 Qd8 29.Qf4 Rh7
+30.Be5 f5 31.e4 Qd7 32.exf5 exf5 33.Qxf5+ Qxf5 34.Rxf5+ Ke7 35.Re1 Kd7 36.Rf6
+Re8 37.Rd6+ Kc8 38.Rf6 Kb7 39.Re4 Bc4 40.a3 Bd5 41.Re2 Ka6 42.Rb2 Rg8 43.Rb6+
+Ka7 44.Rf2 h4 45.Rfb2 Ka8 46.h3 Rf7 47.Kh2 Rf1 48.Ra6# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Posada, Juan Manuel"]
+[Black "Roman Sanchez, Eduardo Zosimo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2023"]
+[BlackElo "0"]
+[PlyCount "79"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 Nf6 6.Be3 d6 7.h3 Qb6 8.Rb1 e6 9.Qd2
+Bd7 10.f4 h5 11.Nf3 O-O-O 12.b4 Nh7 13.bxc5 Bxc3 14.cxb6 Bxd2+ 15.Nxd2 a6 16.Nc4
+Be8 17.e5 d5 18.Nd6+ Kb8 19.c4 d4 20.Bd2 f6 21.O-O fxe5 22.Bxc6 Rxd6 23.Bxe8
+Rxe8 24.fxe5 Rd7 25.h4 Kc8 26.Bb4 g5 27.hxg5 Nxg5 28.Kg2 Nf7 29.Rbe1 Nd8 30.Re4
+Nc6 31.Bc5 a5 32.a3 Red8 33.Rff4 a4 34.Rh4 Na5 35.Rxd4 Nb3 36.Rxd7 Rxd7 37.Bd6
+Rh7 38.c5 Nc1 39.Rxa4 Nxd3 40.c6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Blandon, Luis Guillermo"]
+[Black "Echavarria, Juan"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1974"]
+[BlackElo "0"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.O-O-O Bd7 10.h4 a6 11.g4 Rc8 12.h5 Ne5 13.Bh6 Bxh6 14.Qxh6 Bxg4 15.hxg6 fxg6
+16.fxg4 Nexg4 17.Qh4 Qa5 18.Bh3 Rxc3 19.Bxg4 Re3 20.Be6+ Kh8 21.Rdf1 Rxe4
+22.Qxh7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Gonzalez, Andres Felipe"]
+[Black "Rosero, Jefferson"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1962"]
+[BlackElo "0"]
+[PlyCount "67"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 e6 4.O-O Nge7 5.d3 a6 6.Ba4 b5 7.Bb3 Ng6 8.Re1 d6 9.a4
+Bb7 10.Na3 Na7 11.Bg5 Be7 12.Bxe7 Qxe7 13.c3 O-O 14.axb5 axb5 15.d4 Rfd8 16.d5
+Qd7 17.c4 b4 18.Nb5 Nxb5 19.cxb5 e5 20.Bc4 Ne7 21.Rxa8 Rxa8 22.b3 Nc8 23.Nh4 g6
+24.h3 Ra5 25.Qd3 Na7 26.Nf3 Nxb5 27.Bxb5 Qxb5 28.Qxb5 Rxb5 29.Nd2 Kf8 30.Nc4 Ke7
+31.Ra1 Bc8 32.Ra8 Kd7 33.Rxc8 Rb7 34.Ra8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Villar Saldana, Jhonatan Junior"]
+[Black "Gomez, Cristian David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1955"]
+[PlyCount "85"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 b6 3.Nc3 Bb7 4.Nf3 d5 5.Bg5 e6 6.e3 Be7 7.cxd5 Nxd5 8.Bxe7 Qxe7
+9.Qa4+ Bc6 10.Bb5 Bxb5 11.Qxb5+ c6 12.Nxd5 exd5 13.Qa4 b5 14.Qa5 O-O 15.O-O Qb7
+16.Ne5 f6 17.Nd3 Qb6 18.Qb4 a5 19.Qd6 Na6 20.Rac1 Rac8 21.Rc2 Rc7 22.Rfc1 Rfc8
+23.a3 b4 24.Nf4 bxa3 25.bxa3 Nb8 26.Nxd5 Qb7 27.Nxc7 Qxc7 28.Qxc7 Rxc7 29.d5 Kf7
+30.dxc6 Ke6 31.Rc5 a4 32.R5c4 Kd5 33.Rxa4 Rxc6 34.Rd4+ Ke6 35.Rxc6+ Nxc6 36.Ra4
+Kd5 37.Kf1 Kc5 38.Ke2 Kb5 39.Ra8 g6 40.Rh8 h5 41.Rh6 Ne7 42.Rh7 Nf5 43.Rf7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Moreno Lozano, David"]
+[Black "Polo, John Alexander"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1931"]
+[BlackElo "0"]
+[PlyCount "51"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Bc4 Nf6 5.O-O d6 6.Nxd4 Nxd4 7.Qxd4 Be7 8.Nc3 Bd7
+9.h3 O-O 10.Be3 Bc6 11.f4 Nd7 12.e5 dxe5 13.fxe5 Bg5 14.e6 Bxe3+ 15.Qxe3 fxe6
+16.Qxe6+ Kh8 17.Nd5 Bxd5 18.Bxd5 c6 19.Bb3 Rxf1+ 20.Rxf1 Nc5 21.Qe3 Nxb3 22.Qxb3
+b6 23.Rf7 Qd5 24.Qxd5 cxd5 25.Rd7 h6 26.Rxd5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Mayorquin, Nicolas"]
+[Black "Rios, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1889"]
+[BlackElo "0"]
+[PlyCount "74"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 Qc7 6.a4 e6 7.f4 Bb4 8.Nxc6 bxc6
+9.Qd4 Bxc3+ 10.Qxc3 Nf6 11.Bd3 O-O 12.O-O Qb6+ 13.Kh1 d5 14.e5 Ng4 15.Qe1 f5
+16.h3 Nh6 17.a5 Qd8 18.Ra3 c5 19.c4 d4 20.b4 Rb8 21.bxc5 Qc7 22.Ra2 Rb3 23.Qd1
+Rb8 24.Qd2 Rd8 25.Ba3 Qc6 26.Be2 Bb7 27.Bf3 Qc7 28.c6 Bxc6 29.Bd6 Rxd6 30.exd6
+Qxd6 31.Bxc6 Qxc6 32.Qxd4 Nf7 33.Rb2 Rf8 34.Qc3 Nd6 35.Rd1 Qc7 36.Qe5 Ne8
+37.Qxe6+ Kh8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Hernandez Amura, Gilberto"]
+[Black "Becerra, Manuel Santiago"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1864"]
+[BlackElo "0"]
+[PlyCount "49"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d3 d5 3.Qe2 Nc6 4.Nf3 Nge7 5.g3 dxe4 6.dxe4 Nd4 7.Nxd4 Qxd4 8.c3 Qd6
+9.Bg2 Nc6 10.O-O Bd7 11.Nd2 O-O-O 12.Nc4 Qe7 13.e5 f6 14.f4 b5 15.Na3 fxe5
+16.Nxb5 Kb8 17.fxe5 Qc5+ 18.Be3 Qxe5 19.Bxc6 Bc5 20.Nd4 Bc8 21.Qb5+ Bb6 22.Qxe5
+Ba6 23.Rf7 g6 24.a4 h5 25.a5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Estevez, Carlos Ariel"]
+[Black "Valencia, Nicolas"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1825"]
+[BlackElo "0"]
+[PlyCount "38"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 f6 6.exf6 Nxf6 7.Bd3 c4 8.Bc2 Bd6 9.O-O
+O-O 10.Bg5 b6 11.Bh4 Qe7 12.Re1 e5 13.dxe5 Nxe5 14.Nxe5 Bxe5 15.f4 Bg4 16.Qxg4
+Nxg4 17.Bxe7 Rxf4 18.h3 Re8 19.Bb4 Ne3 {ilegible} 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Agudelo, Pedro Luis"]
+[Black "Valenzuela Martinez, Hermes"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1823"]
+[PlyCount "117"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.exd5 exd5 4.Nf3 Nf6 5.Be2 Bd6 6.Nc3 c6 7.Bg5 h6 8.Bh4 Bf5
+9.Ne5 Nbd7 10.Bxf6 Qxf6 11.Nxd7 Bxd7 12.Bg4 Qe7+ 13.Be2 Qg5 14.g3 Bh3 15.f4 Qe7
+16.Qd2 g5 17.O-O-O O-O-O 18.Kb1 gxf4 19.gxf4 Qf6 20.Qe3 Bf5 21.Rhf1 Rde8 22.Qd2
+Rhg8 23.Bd3 Bh3 24.Rf2 Kb8 25.Ne2 Rg2 26.Rxg2 Bxg2 27.Rg1 Bf3 28.Rf1 Bxe2
+29.Bxe2 Qh4 30.Bd3 Bxf4 31.Qb4 Bxh2 32.a4 Re7 33.Rh1 Re8 34.Ba6 b6 35.a5 Kc7
+36.Bd3 c5 37.axb6+ axb6 38.Qa4 Re1+ 39.Rxe1 Qxe1+ 40.Ka2 Qa5 41.Qxa5 bxa5
+42.dxc5 Kc6 43.Ka3 Kxc5 44.Ka4 Bc7 45.Kb3 Kd4 46.Ka4 Kc5 47.Kb3 h5 48.Bf5 Be5
+49.Ka3 h4 50.b3 Bc3 51.Ka4 Kd4 52.Kb5 Ke5 53.Bh3 f5 54.Kc6 d4 55.Bg2 d3 56.cxd3
+Kd4 57.Bf1 f4 58.Kd6 f3 59.Ke6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Cortez, "]
+[Black "Gotz, Klaus Seiji Furucho"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1909"]
+[PlyCount "59"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 e6 3.f4 d5 4.exd5 exd5 5.Nf3 Nf6 6.d4 Be7 7.Be3 cxd4 8.Nxd4 O-O
+9.Be2 Nc6 10.Bf3 Re8 11.O-O Bc5 12.Bf2 Ne4 13.Bxe4 dxe4 14.Nxc6 Bxf2+ 15.Rxf2
+Qxd1+ 16.Rxd1 bxc6 17.Nxe4 Bg4 18.Rd4 Bf5 19.Nd6 Re1+ 20.Rf1 Rxf1+ 21.Kxf1 Bxc2
+22.Rd2 Bb1 23.a3 Rd8 24.Ke2 Kf8 25.Ke3 Ke7 26.Ne4 Rxd2 27.Nxd2 Bg6 28.Kd4 Kd6
+29.g3 Kc7 30.Nf3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Paredes Lagos, Anthony Javier"]
+[Black "Obando Guzman, Soren"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1730"]
+[BlackElo "0"]
+[PlyCount "65"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.g3 Nf6 3.Bg2 Nc6 4.Nc3 d6 5.d3 Be6 6.Nd5 Be7 7.b4 a6 8.Bd2 O-O 9.a4
+Qd7 10.b5 axb5 11.Nxe7+ Qxe7 12.axb5 Rxa1 13.Qxa1 Nd4 14.Qb2 c5 15.bxc6 Nxc6
+16.e4 Qc7 17.Ne2 Nd7 18.O-O Nc5 19.Nc1 f5 20.Be3 Qd7 21.Bxc5 dxc5 22.exf5 Bxf5
+23.Qb6 Bh3 24.Qxc5 Nd4 25.Qxe5 Nf3+ 26.Bxf3 Bxf1 27.Bd5+ Kh8 28.Kxf1 Qh3+ 29.Kg1
+Qg4 30.f3 Qg6 31.Kg2 Re8 32.Qf4 Qb6 33.Ne2 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Armas Lopes, Victor"]
+[Black "Arias Monsalve, Andres Felipe"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "61"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 Nc6 3.d4 cxd4 4.cxd4 e6 5.Nc3 a6 6.Nf3 d5 7.exd5 exd5 8.Be2 Nge7
+9.O-O g6 10.Bf4 Bg7 11.Re1 O-O 12.h3 Re8 13.Qb3 Nxd4 14.Nxd4 Bxd4 15.Red1 Qb6
+16.Qxb6 Bxb6 17.Bf3 d4 18.Ne4 Nd5 19.Nd6 Nxf4 20.Nxe8 Bf5 21.Nf6+ Kg7 22.Nd5
+Nxd5 23.Bxd5 Re8 24.g4 Bd7 25.Re1 Rxe1+ 26.Rxe1 d3 27.Rd1 Bb5 28.Be4 Bd4 29.b3
+Kf6 30.a4 Bd7 31.Rxd3 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "Gonzalez L, Nicolas Mateo"]
+[Black "Gontijo Chiari, Arthur"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2034"]
+[PlyCount "52"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3 e5 7.Nb3 Be7 8.Be2 O-O
+9.O-O Nbd7 10.f4 b5 11.Bf3 Bb7 12.Nd2 Rc8 13.f5 b4 14.Ne2 d5 15.Ng3 Bc5 16.Bxc5
+Nxc5 17.Qe2 dxe4 18.Ndxe4 Ncxe4 19.Nxe4 Nxe4 20.Bxe4 Qd4+ 21.Kh1 Qxe4 22.Qxe4
+Bxe4 23.Rac1 Rfd8 24.Rfe1 Bxf5 25.Rxe5 Bxc2 26.Ree1 g6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.03"]
+[Round "1"]
+[Board "1"]
+[White "G, "]
+[Black "Duran, Mateo Andres"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1879"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Bc4 Bg7 7.O-O O-O 8.h3 Nc6
+9.Be3 Bd7 10.Qd2 Rc8 11.Be2 Ne5 12.f4 Nc4 13.Bxc4 Rxc4 14.f5 a6 15.Rae1 b5 16.a3
+Qa8 17.Bf2 Qb7 18.g4 h5 19.g5 Nh7 20.Nd5 Re8 21.b3 Rcc8 22.Bg3 Bxd4+ 23.Qxd4
+Rxc2 24.f6 e5 25.Qd3 Rc6 26.h4 Kf8 27.Ne7 Rc7 28.Qxd6 Rc2 29.Nf5+ Kg8 30.Nh6+
+Kh8 31.Nxf7+ Kg8 32.Nh6+ Kh8 33.Bxe5 Rxe5 34.Qxe5 Qb6+ 35.Kh1 Nf8 36.Qe7 Ne6
+37.f7 Rf2 38.Qe8+ Bxe8 39.fxe8=Q+ Nf8 40.Qe5+ Kh7 41.Qe7+ Kh8 42.Rxf2 Qxf2
+43.Qf6+ Qxf6 44.gxf6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Ruiz C, Joshua D"]
+[Black "Rojas Menor, Walter Alejandro"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2148"]
+[BlackElo "1900"]
+[PlyCount "65"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 g6 2.d4 Bg7 3.Nc3 c6 4.h3 d5 5.Nf3 dxe4 6.Nxe4 Nf6 7.Nxf6+ exf6 8.Bc4 O-O
+9.O-O Nd7 10.Bb3 Nb6 11.c4 Be6 12.Qe2 Re8 13.Be3 Qd7 14.Rfd1 Rad8 15.Rac1 g5
+16.Ne1 h6 17.Nd3 Bxh3 18.gxh3 Qxh3 19.Ne1 Re4 20.f3 Qg3+ 21.Qg2 Qxg2+ 22.Nxg2
+Re7 23.d5 Red7 24.Bxb6 axb6 25.Ne3 Bf8 26.Nf5 b5 27.dxc6 Rxd1+ 28.Rxd1 Rxd1+
+29.Bxd1 bxc6 30.cxb5 cxb5 31.a3 Bc5+ 32.Kg2 h5 33.b4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Castro, Jairo Antonio"]
+[Black "Cuellar, Diego"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1896"]
+[BlackElo "2109"]
+[PlyCount "88"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Bc4 Nc6 3.Nf3 Bc5 4.d3 Nf6 5.Bb3 d6 6.c3 a6 7.Nbd2 Ba7 8.h3 h6 9.Nf1
+Be6 10.Bc2 Qd7 11.Ng3 O-O-O 12.Qe2 Rde8 13.b4 g5 14.a4 g4 15.b5 Nb8 16.Ng1 d5
+17.h4 Qd6 18.Ba3 Bc5 19.Bxc5 Qxc5 20.Qd2 Rd8 21.exd5 Qxd5 22.Rh2 axb5 23.axb5
+Qxb5 24.Rb1 Qa5 25.Rb4 Qa1+ 26.Rb1 Qa6 27.Rb4 Nd5 28.Ra4 Qc6 29.N1e2 f5 30.Rc4
+Qd6 31.Ra4 Nb6 32.Ra1 Nc6 33.Rh1 Qe7 34.Qc1 f4 35.Ne4 Bf5 36.Qa3 Qxa3 37.Rxa3
+Bxe4 38.dxe4 Nc4 39.Ra1 h5 40.Bb3 N6a5 41.Ba4 Rh6 42.f3 g3 43.Bb5 Ne3 44.Rb1
+Nxg2+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Sosa, Tomas"]
+[Black "Mayorquin, Nicolas"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2075"]
+[BlackElo "1889"]
+[PlyCount "108"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be2 e6 7.O-O Qc7 8.f4 b5 9.a3
+Bb7 10.Bf3 Nbd7 11.Qe2 Be7 12.g4 Nb6 13.g5 Nfd7 14.a4 b4 15.Na2 d5 16.a5 dxe4
+17.Bxe4 Nd5 18.c4 bxc3 19.bxc3 Nc5 20.Bg2 Bd6 21.Rb1 O-O 22.Bd2 Rab8 23.Qg4 Ba8
+24.Qh4 Rxb1 25.Rxb1 Nxf4 26.Bxa8 Rxa8 27.Rf1 Ng6 28.Qf2 Ne4 29.Qg2 Bxh2+ 30.Qxh2
+Qxh2+ 31.Kxh2 Nxd2 32.Rd1 Ne4 33.Nf3 h5 34.gxh6 gxh6 35.Rb1 Rd8 36.Nb4 Rd6 37.c4
+Nc5 38.Kg3 Kg7 39.Nc2 Rd3 40.Nce1 Ra3 41.Rb6 Rxa5 42.Nc2 Ra2 43.Ncd4 Ne4+ 44.Kh3
+h5 45.Rb7 Kf6 46.Rb1 Ne5 47.Rf1 Ra3 48.Kg2 Nxf3 49.Nxf3 Ra2+ 50.Kh3 Rf2 51.Rxf2
+Nxf2+ 52.Kg3 Nd3 53.Nd4 Ke5 54.Nb3 Ke4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Hernandez Amura, Gilberto"]
+[Black "Barros Rivadeneira, Cristhian"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1864"]
+[BlackElo "2049"]
+[PlyCount "61"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.Bxc6 bxc6 5.O-O Bg7 6.d3 Nf6 7.c4 O-O 8.Nc3 d5 9.e5
+Nd7 10.Re1 e6 11.Rb1 Nb6 12.b3 Qc7 13.Qe2 Rd8 14.Ba3 Nd7 15.Na4 Qa5 16.Qe3 Bf8
+17.h4 h5 18.Ng5 Bg7 19.f4 Bf8 20.f5 Nb6 21.fxg6 fxg6 22.Qf4 Rd7 23.Rf1 Bg7
+24.Nxe6 Nxa4 25.bxa4 Qc3 26.Nxg7 Rxg7 27.Bb2 Qxd3 28.e6 d4 29.Qf8+ Kh7 30.Rbe1
+Rb8 31.Rf7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Villamil, Nahum Jose"]
+[Black "Novoa, Fernando"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1839"]
+[BlackElo "2044"]
+[PlyCount "76"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4 O-O 8.Bb3 a5
+9.O-O a4 10.Bc4 Ne5 11.Be2 d5 12.exd5 Nxd5 13.Nxd5 Qxd5 14.Nf5 Nf3+ 15.Bxf3 Qxf5
+16.c3 Qb5 17.Qd2 Bf5 18.Rad1 Rac8 19.Be2 Qc6 20.Bh6 Bxh6 21.Qxh6 Rcd8 22.h4 Be4
+23.f3 Bd5 24.h5 Qb6+ 25.Kh2 Qxb2 26.hxg6 fxg6 27.Qe3 Bf7 28.Kg3 Qxa2 29.Bd3 Qe6
+30.Qf4 Qd6 31.Qxd6 Rxd6 32.Bc2 Rxd1 33.Rxd1 a3 34.Ra1 a2 35.Bd3 Rd8 36.Bf1 Bb3
+37.Be2 Rd2 38.Bb5 Kg7 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Valenzuela Martinez, Hermes"]
+[Black "Posada, Juan Manuel"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1823"]
+[BlackElo "2023"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d6 2.Bg5 g6 3.Nf3 Bg7 4.e3 c5 5.c3 cxd4 6.exd4 Bf5 7.Bd3 Bxd3 8.Qxd3 Nf6
+9.Nbd2 Nbd7 10.O-O O-O 11.Rfe1 Rc8 12.Ne4 h6 13.Nxf6+ Nxf6 14.Bxf6 Bxf6 15.Qb5
+Qc7 16.h4 a6 17.Qd5 Kh7 18.h5 Qc6 19.hxg6+ fxg6 20.Qxc6 Rxc6 21.Re3 b5 22.a3
+Rfc8 23.g3 a5 24.Nd2 R8c7 25.Nb3 Ra6 26.Re6 Kg7 27.Nc5 Raa7 28.Ne4 Kf7 29.Rxf6+
+exf6 30.Nxd6+ Ke6 31.Nxb5 Kd5 32.b3 Rab7 33.c4+ Ke4 34.Re1+ Kd3 35.Re3+ Kc2
+36.Nxc7 Rxc7 37.c5 f5 38.b4 axb4 39.axb4 g5 40.d5 f4 41.gxf4 gxf4 42.Rf3 Rg7+
+43.Kh2 Rg5 44.c6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Rodriguez Velasco, German Enrique"]
+[Black "Parra, Brayan"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2014"]
+[BlackElo "1797"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 b5 6.Bb3 d6 7.c3 Be7 8.O-O O-O 9.h3
+Na5 10.Bc2 c5 11.Nbd2 Qc7 12.Re1 Re8 13.b4 Nc6 14.a3 Bf8 15.Bb3 a5 16.Rb1 cxb4
+17.axb4 a4 18.Ba2 Be6 19.Bxe6 Rxe6 20.Qc2 d5 21.Qa2 d4 22.cxd4 Nxb4 23.Rxb4 Bxb4
+24.dxe5 Rc6 25.Qb1 Nd7 26.d4 a3 27.Qa2 Bc3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Paredes Lagos, Anthony Javier"]
+[Black "Blandon, Luis Guillermo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1730"]
+[BlackElo "1974"]
+[PlyCount "80"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 c5 2.g3 Nc6 3.Nc3 g6 4.Bg2 Bg7 5.e3 d6 6.Nge2 e5 7.d3 f5 8.Rb1 Nf6 9.a3 Be6
+10.Nd5 Bxd5 11.cxd5 Ne7 12.e4 O-O 13.O-O Rc8 14.Bg5 h6 15.Bxf6 Bxf6 16.f4 Rc7
+17.Qd2 Kh7 18.fxe5 Bxe5 19.d4 cxd4 20.Nxd4 Rc4 21.Ne6 Qb6+ 22.Qf2 Qxf2+ 23.Rxf2
+Rfc8 24.g4 f4 25.g5 Rc1+ 26.Rxc1 Rxc1+ 27.Bf1 hxg5 28.Nxg5+ Kg7 29.Ne6+ Kf6
+30.h4 Re1 31.Kg2 Rxe4 32.Bd3 Re3 33.Bc4 Nf5 34.Nxf4 Re4 35.Nxg6 Rxc4 36.h5 Kg5
+37.Nxe5 dxe5 38.h6 Nxh6 39.d6 Rd4 40.Re2 Ng4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Leon Magallanes, Isaac"]
+[Black "Munoz, Camilo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1929"]
+[BlackElo "0"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.Nf3 Nc6 3.g3 h6 4.Bg2 Nf6 5.O-O Bg4 6.Ne5 Qd6 7.Nxg4 Nxg4 8.e4 Nf6
+9.e5 Nxe5 10.dxe5 Qxe5 11.Re1 Qd6 12.Bf4 Qd7 13.c4 O-O-O 14.cxd5 Nxd5 15.Qb3 e6
+16.Nc3 c6 17.Red1 Bd6 18.Bxd6 Qxd6 19.Rac1 Kb8 20.Ne4 Qb4 21.Rxd5 Qxb3 22.Rxd8+
+Rxd8 23.axb3 Kc7 24.b4 b6 25.b5 c5 {ilegible} 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Gotz, Klaus Seiji Furucho"]
+[Black "Villar Saldana, Jhonatan Junior"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1909"]
+[BlackElo "0"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 d5 3.Nc3 h6 4.Nf3 e6 5.Bf4 Bb4 6.Qa4+ Nc6 7.e3 Bd7 8.Qc2 O-O 9.Bd3
+Be7 10.a3 dxc4 11.Bxc4 Bd6 12.Bg3 Bxg3 13.hxg3 Nh7 14.Bd3 f5 15.O-O Nf6 16.b4 a6
+17.Rac1 Rc8 18.Na4 a5 19.b5 Na7 20.Qb3 Kh8 21.Ne5 Re8 22.Nf7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Torres Rojas, Yuber Andres"]
+[Black "Cortez, "]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "0"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.Nc3 Nf6 5.d3 d6 6.h3 h6 7.Be3 Bb6 8.O-O Be6 9.Bb3
+O-O 10.Nh2 d5 11.Bxb6 axb6 12.f4 dxe4 13.Bxe6 Qd4+ 14.Kh1 fxe6 15.Nb5 Qd7
+16.dxe4 Qxd1 17.Rfxd1 Nxe4 18.Re1 Ng3+ 19.Kg1 Rf7 20.fxe5 Rd8 21.Nf3 Nf5 22.Rad1
+Rxd1 23.Rxd1 Kf8 24.Nfd4 Ncxd4 25.Nxd4 Nxd4 26.Rxd4 Ke7 27.c4 Rf5 28.Re4 Kd7
+29.a4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Diaz, Cristian Camilo"]
+[Black "Gomez Vazquez, Carlos"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1964"]
+[BlackElo "0"]
+[PlyCount "77"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.O-O-O Bd7 10.Kb1 Rc8 11.g4 Nxd4 12.Bxd4 Be6 13.h4 Qa5 14.Nd5 Qd8 15.Nxf6+ Bxf6
+16.Bxf6 exf6 17.Bd3 Kg7 18.Rh2 Rc5 19.Rdh1 h6 20.Be2 Qa5 21.Qxa5 Rxa5 22.b3 d5
+23.exd5 Rxd5 24.Bd3 Rfd8 25.Rd2 a5 26.Kb2 R5d6 27.Rhd1 f5 28.g5 f4 29.c4 a4
+30.Kc3 b5 31.cxb5 axb3 32.axb3 hxg5 33.hxg5 Rc8+ 34.Bc4 Rxd2 35.Rxd2 Rc5 36.Kb4
+Rxg5 37.Bxe6 fxe6 38.b6 Rh5 39.Rd8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Gomez, Cristian David"]
+[Black "Gonzalez L, Nicolas Mateo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1955"]
+[BlackElo "0"]
+[PlyCount "91"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.Nc3 Nc6 3.e3 Nf6 4.h3 d5 5.Nf3 e4 6.cxd5 Nxd5 7.Nxe4 Bf5 8.Ng3 Bg6
+9.a3 Bd6 10.Bc4 Bxg3 11.fxg3 Nb6 12.Be2 Qd6 13.Kf2 O-O-O 14.Rf1 Ne5 15.Nxe5 Qxe5
+16.g4 f5 17.gxf5 Bxf5 18.Bg4 Rhf8 19.Bxf5+ Rxf5+ 20.Kg1 Rg5 21.Qf3 Nc4 22.d4 Qe6
+23.e4 Rb5 24.a4 Rb6 25.b3 Na5 26.d5 Qd6 27.Ba3 Qe5 28.Rab1 Re8 29.Qg4+ Kb8
+30.Bb2 Qd6 31.Qxg7 Rxb3 32.Be5 Qb6+ 33.Bd4 Qd6 34.Rbc1 Rg3 35.e5 Rxg7 36.exd6
+Rd7 37.dxc7+ Kc8 38.Bxa7 Rxd5 39.Rf7 Nc6 40.Bb6 Rd7 41.Rxd7 Kxd7 42.Rd1+ Kc8
+43.a5 Rf8 44.Rd6 Rg8 45.a6 bxa6 46.Rxc6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Hernandez Torres, Alex Daniel"]
+[Black "M, "]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1926"]
+[BlackElo "0"]
+[PlyCount "44"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.Nc3 Nf6 5.d3 h6 6.Be3 Bb6 7.Qd2 d6 8.O-O-O Be6
+9.Bb3 d5 10.exd5 Nxd5 11.Nxd5 Bxd5 12.Qe2 Bxb3 13.cxb3 Qe7 14.Rhe1 f6 15.Kb1
+O-O-O 16.Bxb6 cxb6 17.Rc1 Kb8 18.Rc3 Qd6 19.Rd1 Nd4 20.Nxd4 Qxd4 21.Qe3 Rhe8
+22.Rc4 Qd5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Duran, Mateo Andres"]
+[Black "Obando Guzman, Soren"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1879"]
+[BlackElo "0"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 d6 6.Be3 a6 7.f3 e5 8.Nb3 Be7 9.Qd2
+Qc7 10.O-O-O Be6 11.Kb1 O-O 12.g4 b5 13.h4 Rfb8 14.h5 Bc4 15.g5 Nd7 16.Nd5 Qd8
+17.Nxe7+ Nxe7 18.Qxd6 Bxb3 19.cxb3 Rb7 20.Bh3 Rc8 21.Bxd7 Rcc7 22.Bg4 Qxd6
+23.Rxd6 Rb8 24.Rhd1 Nc6 25.Bb6 Rcb7 26.Rxc6 Rxb6 27.Rxb6 Rxb6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Ospina Escobar, Juan Pablo"]
+[Black "Palacios Llancari, Jose Wilfred"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1875"]
+[BlackElo "0"]
+[PlyCount "105"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e5 5.Nb5 d6 6.N1c3 a6 7.Na3 b5 8.Nd5 Nf6 9.c4
+b4 10.Nc2 Nxe4 11.Ncxb4 Nxb4 12.Nxb4 Qb6 13.Nd3 Be7 14.c5 Nxc5 15.Nxc5 Qxc5
+16.Be3 Qb4+ 17.Qd2 Qxd2+ 18.Bxd2 O-O 19.Bb4 Rb8 20.Ba3 Re8 21.O-O-O Bf5 22.Bd3
+e4 23.Bc2 Rbc8 24.Rd5 Be6 25.Rd4 Bxa2 26.Kd1 Rc4 27.Rxc4 Bxc4 28.Re1 d5 29.Ba4
+Bb5 30.Bxb5 axb5 31.Bxe7 Rxe7 32.Kd2 Rc7 33.Ra1 f5 34.Ra5 Kf7 35.Rxb5 Ke6 36.b4
+d4 37.Rb6+ Ke5 38.Rb5+ Kf4 39.g3+ Kg4 40.h3+ Kg5 41.h4+ Kg4 42.Rc5 Rd7 43.b5 g6
+44.b6 Rb7 45.Rb5 Kf3 46.Ke1 d3 47.Rb3 h6 48.Kf1 f4 49.Rb4 fxg3 50.fxg3 e3
+51.Rf4+ Kxg3 52.Rf6 Kxh4 53.Rxg6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Polo, John Alexander"]
+[Black "Agudelo, Pedro Luis"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "104"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 d6 5.d4 exd4 6.Nxd4 Bd7 7.f3 Nxd4 8.Bxd7+ Qxd7
+9.Qxd4 c5 10.Qa4 Qxa4 11.Nxa4 Be7 12.Be3 O-O 13.O-O Nd7 14.Nc3 Bf6 15.Bd2 Bd4+
+16.Kh1 Ne5 17.b3 Nc6 18.Rad1 Nb4 19.Ne2 Nxc2 20.Nxd4 Nxd4 21.Be3 Rad8 22.Bxd4
+cxd4 23.Rxd4 Rd7 24.Rfd1 Rfd8 25.e5 d5 26.g3 Kf8 27.Kg2 Ke7 28.f4 Ke6 29.Kf3 Rc7
+30.R1d2 h6 31.Ke3 g5 32.Kf3 Rcd7 33.Kg4 gxf4 34.gxf4 f5+ 35.Kh5 Rg7 36.h3 Rg3
+37.R2d3 Rxd3 38.Rxd3 d4 39.Kh4 Kd5 40.Kg3 Ke4 41.Rf3 d3 42.e6 d2 43.e7 Re8
+44.Rf1 Ke3 45.Kg2 Rg8+ 46.Kh2 Ke2 47.Rg1 Re8 48.Rg2+ Kd3 49.Rg3+ Kc2 50.Rg2 Kc1
+51.Rxd2 Kxd2 52.a4 Rxe7 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Arias Monsalve, Andres Felipe"]
+[Black "Rios, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "41"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 d6 7.Re1 Na5 8.c3 c5 9.d4
+exd4 10.cxd4 c4 11.Bc2 Be7 12.Qe2 O-O 13.e5 dxe5 14.dxe5 Nd7 15.Qe4 f5 16.exf6
+Rxf6 17.Qxh7+ Kf7 18.Ng5+ Ke8 19.Bg6+ Rxg6 20.Qxg6+ Kf8 21.Qf7# 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Becerra, Manuel Santiago"]
+[Black "Rodriguez, Barragan Luis E"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "55"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Nf3 g6 3.c4 Bg7 4.g3 O-O 5.Bg2 d6 6.O-O Nbd7 7.Nc3 e5 8.Qc2 exd4
+9.Nxd4 Nb6 10.Qd3 Nfd7 11.Bf4 Nc5 12.Qd1 Nxc4 13.b3 Nb6 14.Rc1 a6 15.b4 Ne6
+16.Be3 d5 17.Nxe6 fxe6 18.Bd4 Bxd4 19.Qxd4 c6 20.Rfd1 Nc4 21.e4 Qf6 22.Qxf6 Rxf6
+23.exd5 exd5 24.Nxd5 cxd5 25.Bxd5+ Be6 26.Rxc4 Bxd5 27.Rxd5 Raf8 28.f4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Roman Sanchez, Eduardo Zosimo"]
+[Black "Bocanegra Acosta, Erick"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "68"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Be3 Bg7 6.c3 Nf6 7.Nd2 O-O 8.f3 d5 9.Be2
+e5 10.Nxc6 bxc6 11.Bg5 Qb6 12.Qb3 Be6 13.Qxb6 axb6 14.a3 h6 15.Bh4 Nh5 16.O-O
+Nf4 17.Bd1 d4 18.cxd4 exd4 19.Bg3 Nd3 20.b4 Nb2 21.Bd6 Rfe8 22.e5 Nc4 23.Nxc4
+Bxc4 24.Re1 d3 25.f4 Bf8 26.Bc7 Bxb4 27.Re4 Bc5+ 28.Kh1 Bd5 29.Re1 Rac8 30.Bd6
+Bxd6 31.Bg4 Rcd8 32.exd6 Rxe1+ 33.Rxe1 Rxd6 34.Rd1 Bc4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Garcia Talledo, Gonzalo"]
+[Black "Diaz Herrera, Leider Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1942"]
+[PlyCount "56"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.Nf3 Nf6 2.g3 g6 3.c4 Bg7 4.Bg2 c6 5.O-O d5 6.d4 Bf5 7.Nc3 e6 8.Nh4 O-O 9.Nxf5
+gxf5 10.Bg5 Nbd7 11.Qd2 Re8 12.Bh6 Ne4 13.Nxe4 fxe4 14.Bxg7 Kxg7 15.h4 f5 16.Qf4
+Rf8 17.Rac1 h6 18.Rc3 Qb8 19.Qd2 Nf6 20.Kh1 Ng4 21.Qf4 Qxf4 22.gxf4 Kf7 23.Rb3
+Rab8 24.cxd5 exd5 25.f3 Nf6 26.fxe4 dxe4 27.Bh3 Ke6 28.Rg1 Rg8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "Torres Lopez-Yañez, Carlos David"]
+[Black "Gomez, Luis Miguel"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "44"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4 Bb4+ 7.Bd2 Nxe4 8.Bxb4
+Nxb4 9.Qb3 d5 10.Qxb4 dxc4 11.O-O Qd5 12.Re1 Be6 13.Nc3 Nxc3 14.bxc3 O-O-O
+15.Re5 Qc6 16.Rb1 Rd5 17.Ree1 a6 18.a4 h6 19.Ne5 Qb6 20.Qa3 Qa5 21.Nxc4 Bf5
+22.Rb2 Re5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "2"]
+[Board "1"]
+[White "G, "]
+[Black "Gonzalez, Andres Felipe"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1962"]
+[PlyCount "82"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 g6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Bg7 6.Be3 Nf6 7.Be2 O-O 8.O-O d5
+9.exd5 Nxd5 10.Nxd5 Qxd5 11.Nxc6 bxc6 12.Bf3 Qc4 13.c3 Ba6 14.Re1 Rfd8 15.Qb3
+Rab8 16.Qa3 Bc8 17.Qxe7 Be6 18.Qa3 Bf8 19.Qa5 Rd7 20.b3 Rb5 21.bxc4 Rxa5 22.Bxc6
+Rc7 23.Bb5 Bxc4 24.Bxc4 Rxc4 25.Bd4 Rc8 26.Kf1 Bg7 27.Re2 a6 28.Rb1 Rd5 29.Rb6
+Bxd4 30.cxd4 Rxd4 31.Rxa6 Rc1+ 32.Re1 Rc2 33.a4 Kg7 34.Ra7 Rdd2 35.Ree7 Rxf2+
+36.Ke1 Ra2 37.a5 Rf5 38.a6 Rf6 39.Rab7 Rfxa6 40.h3 Ra1+ 41.Ke2 R6a2+ 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Mayorquin, Nicolas"]
+[Black "Ruiz C, Joshua D"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1889"]
+[BlackElo "2148"]
+[PlyCount "74"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.g3 e5 7.Nde2 Be7 8.Bg2 O-O 9.h3
+b5 10.O-O Bb7 11.g4 Nbd7 12.Ng3 Nb6 13.Nd5 Nfxd5 14.exd5 Bg5 15.Nf5 Bxc1 16.Rxc1
+g6 17.Ne3 Rc8 18.Qd3 Na4 19.c4 Nxb2 20.Qb3 Na4 21.cxb5 Nc5 22.Qb1 axb5 23.Rfd1
+Qa5 24.Bf1 Ba6 25.Nc2 f5 26.Nb4 fxg4 27.Nc6 Qc7 28.hxg4 Rf4 29.Be2 Rcf8 30.Rf1
+Qf7 31.f3 Kg7 32.Rcd1 Qf6 33.Kg2 Qh4 34.Nb4 h5 35.Nd3 Nxd3 36.Qxd3 hxg4 37.Rh1
+gxf3+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Cuellar, Diego"]
+[Black "Leon Magallanes, Isaac"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2109"]
+[BlackElo "1929"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 e6 3.Nf3 a6 4.d4 cxd4 5.Nxd4 d6 6.Be3 Nf6 7.g4 h6 8.h4 e5 9.Nf5 g6
+10.Nxh6 Bxh6 11.Bxh6 Bxg4 12.Qd2 Bf3 13.Rh3 Bxe4 14.Bg5 Bc6 15.O-O-O Nbd7
+16.Qxd6 Qe7 17.Qxe7+ Kxe7 18.Rxd7+ Bxd7 19.Rf3 Bf5 20.Nd5+ Ke6 21.Nxf6 Rac8
+22.c3 Rc6 23.Re3 b5 24.f4 e4 25.Be2 Kd6 26.Nxe4+ Bxe4 27.Rxe4 Kc5 28.f5 Kd6
+29.Be7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Palacios Llancari, Jose Wilfred"]
+[Black "Gontijo Chiari, Arthur"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2034"]
+[PlyCount "60"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be2 e5 7.Nb3 Be7 8.Be3 O-O 9.a4
+b6 10.f4 Nbd7 11.O-O Bb7 12.Bf3 Rc8 13.Qd2 exf4 14.Bxf4 Ne5 15.Bxe5 dxe5 16.Qe2
+Qc7 17.Kh1 h6 18.Rac1 Rfd8 19.Nd5 Nxd5 20.exd5 Bg5 21.d6 Rxd6 22.Bxb7 Qxb7
+23.Rcd1 Re6 24.c3 Rce8 25.Nd2 Bxd2 26.Rxd2 e4 27.Rdd1 e3 28.Kg1 a5 29.h3 Qc7
+30.c4 Re4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Blandon, Luis Guillermo"]
+[Black "Hernandez Amura, Gilberto"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1974"]
+[BlackElo "1864"]
+[PlyCount "49"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 e6 3.c3 Nc6 4.d4 cxd4 5.cxd4 d5 6.e5 Bb4+ 7.Bd2 Bxd2+ 8.Qxd2 Nge7
+9.Bd3 Bd7 10.Nc3 Nc8 11.Qf4 f6 12.Qg4 O-O 13.O-O f5 14.Qf4 Nb6 15.g4 Ne7 16.g5
+Rc8 17.Rac1 Na4 18.Nxa4 Rxc1 19.Qxc1 Bxa4 20.Qc5 b6 21.Qb4 Be8 22.Qd2 Bh5 23.Ne1
+f4 24.h4 Nc6 25.Ng2 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Gonzalez, Andres Felipe"]
+[Black "Valenzuela Martinez, Hermes"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1962"]
+[BlackElo "1823"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 f6 6.g3 cxd4 7.cxd4 Bb4+ 8.Bd2 Qb6 9.Bxb4
+Qxb4+ 10.Qd2 Qxd2+ 11.Kxd2 fxe5 12.dxe5 Nh6 13.Nc3 O-O 14.Bg2 Ng4 15.Rhf1 Ngxe5
+16.Nxe5 Nxe5 17.h3 Bd7 18.b3 Nf3+ 19.Bxf3 Rxf3 20.Rac1 Raf8 21.Nd1 Rxg3 22.fxg3
+Rxf1 23.a3 Bc6 24.a4 Rf3 25.Rc3 Rxc3 26.Kxc3 e5 27.Nf2 Kf7 28.h4 Ke6 29.Kd3 Bd7
+30.Nd1 Kd6 31.Nf2 h5 32.a5 Kc5 33.Ke3 Bf5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Diaz Herrera, Leider Andres"]
+[Black "Londono Lopez, David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1942"]
+[BlackElo "0"]
+[PlyCount "113"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.f3 e6 7.Be3 Be7 8.Qd2 Qc7 9.g4
+Nc6 10.h4 b5 11.h5 Bb7 12.O-O-O Ne5 13.g5 Nfd7 14.f4 Nc4 15.Bxc4 Qxc4 16.Qd3 Rc8
+17.Rhe1 Qxd3 18.Rxd3 b4 19.Nce2 Bxe4 20.Rd2 Nc5 21.Kb1 Kd7 22.Ng3 d5 23.Nxe6
+fxe6 24.Bxc5 Bxc2+ 25.Rxc2 Rxc5 26.Rce2 Rhc8 27.Rxe6 Rc1+ 28.Rxc1 Rxc1+ 29.Kxc1
+Kxe6 30.Kd2 h6 31.f5+ Ke5 32.f6 gxf6 33.gxh6 f5 34.h7 Bf6 35.h6 f4 36.Nh5 Bh8
+37.Ng7 Kf6 38.Ne8+ Kg6 39.Nc7 Kxh7 40.Nxd5 a5 41.b3 Kxh6 42.Nxf4 Kg5 43.Nd5 Be5
+44.Kd3 Kf5 45.Kc4 Ke6 46.Nb6 Bd6 47.Kb5 Kf5 48.Nc4 Be7 49.Nxa5 Ke4 50.Nc6 Bd6
+51.Nxb4 Kd4 52.Nc6+ Kd5 53.b4 Ke6 54.Kb6 Kd7 55.Kb7 Bxb4 56.Nxb4 Kd6 57.a4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Parra, Brayan"]
+[Black "Velasco, Ricardo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1797"]
+[BlackElo "2008"]
+[PlyCount "92"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.Bd3 c5 6.c3 Nc6 7.Ne2 cxd4 8.cxd4 f6
+9.exf6 Nxf6 10.O-O Bd6 11.f4 Bd7 12.a3 Qb6 13.Nf3 Rc8 14.Kh1 O-O 15.b4 Ne7
+16.Qe1 Nf5 17.h3 Bb8 18.Bd2 Nd6 19.Ne5 Bb5 20.Bxb5 Nxb5 21.Be3 Bxe5 22.fxe5 Ne4
+23.Rxf8+ Rxf8 24.a4 Nc7 25.Rc1 Ne8 26.Rc8 Qa6 27.a5 Qxe2 28.Qxe2 Ng3+ 29.Kh2
+Nxe2 30.Rb8 Nf6 31.Rxf8+ Kxf8 32.exf6 gxf6 33.g4 a6 34.Kg2 Nc3 35.Kf3 Nb5 36.Ke2
+Na7 37.Kd3 Nc6 38.Kc3 Ke7 39.Bf2 Kf7 40.Be3 Kg6 41.h4 h5 42.g5 fxg5 43.Bxg5 Kf5
+44.Bd2 Ke4 45.Bg5 Kf3 46.b5 axb5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Fuentes Parra, Victor Ignacio"]
+[Black "Armas Lopes, Victor"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1978"]
+[BlackElo "0"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 d5 3.exd5 Qxd5 4.d4 cxd4 5.cxd4 Nc6 6.Be3 e5 7.dxe5 Qxd1+ 8.Kxd1
+Nxe5 9.Nc3 a6 10.f4 Ng4 11.Bb6 Be6 12.Bd3 N8f6 13.h3 Nh6 14.g4 Nd7 15.Bd4 O-O-O
+16.Nf3 Nc5 17.Be2 Nxg4 18.hxg4 Bxg4 19.Nd2 Bf5 20.Be3 Bd6 21.Nd5 Kb8 22.Bf3 Rhe8
+23.Bxc5 Bxc5 24.b3 Rd7 25.Re1 Rxe1+ 26.Kxe1 Be6 27.Nb1 Be3 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Sanchez, Sandoval Gonzalo"]
+[Black "Cisneros Avendano, Diego"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1965"]
+[BlackElo "1813"]
+[PlyCount "51"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Qc7 7.Qg4 f5 8.Qg3 Ne7
+9.Qxg7 Rg8 10.Qxh7 cxd4 11.Ne2 Nbc6 12.Qh5+ Ng6 13.Kd1 dxc3 14.Nf4 Ncxe5 15.Bb5+
+Kf7 16.Nh3 Bd7 17.Ng5+ Ke7 18.Qh7+ Kd6 19.a4 Nc4 20.Nf7+ Kc5 21.Nh6 Kd6 22.Nxg8
+Bxb5 23.Qxc7+ Kxc7 24.axb5 Rxg8 25.g3 Kb6 26.Be3+ {tiempo} 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Suarez Pinto, Sergio Rafael"]
+[Black "Gotz, Klaus Seiji Furucho"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1737"]
+[BlackElo "1909"]
+[PlyCount "64"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.Bc4 O-O 8.f3 Nc6
+9.Qd2 Bd7 10.O-O-O Rc8 11.Bb3 Ne5 12.Kb1 Re8 13.h4 h5 14.Bg5 Nc4 15.Bxc4 Rxc4
+16.Qe3 Qa5 17.Nb3 Qa6 18.Qd3 b5 19.Rhe1 Rec8 20.Rc1 b4 21.Nd5 Nxd5 22.Qxd5 Be6
+23.Qd3 Kf8 24.Qd2 Qb6 25.Bh6 a5 26.Bxg7+ Kxg7 27.Qe3 Qxe3 28.Rxe3 a4 29.Na1 Rd4
+30.Rd3 Rxd3 31.cxd3 Bxa2+ 32.Kxa2 Rxc1 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Pichot, Alan"]
+[Black "Paredes Lagos, Anthony Javier"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2243"]
+[BlackElo "1730"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Bd3 b6 6.Nf3 Bb7 7.Qe2 Nbd7 8.O-O Bd6
+9.Nxd6+ cxd6 10.Bf4 Qe7 11.Ba6 Bc6 12.Rae1 O-O 13.c4 Nb8 14.d5 Ba4 15.b3 e5
+16.Bg5 Nxa6 17.bxa4 h6 18.Bh4 Rfe8 19.Rc1 Qd8 20.Qc2 Nc5 21.Rfe1 g6 22.Rcd1 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Agudelo, Pedro Luis"]
+[Black "Sosa, Tomas"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2075"]
+[PlyCount "86"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.Bb5+ Bd7 4.Bxd7+ Qxd7 5.d4 cxd4 6.Nxd4 Nf6 7.Nc3 g6 8.O-O Bg7
+9.Bg5 Nc6 10.Nxc6 bxc6 11.Qd2 h6 12.Bf4 g5 13.Bg3 Rb8 14.Rab1 Nh5 15.Qe2 Nxg3
+16.fxg3 O-O 17.Nd1 Qe6 18.b3 a5 19.Nf2 a4 20.Qg4 Qxg4 21.Nxg4 Rb4 22.Rfe1 axb3
+23.Rxb3 Rc4 24.Re2 f5 25.Nf2 fxe4 26.h3 Bd4 27.a3 Rxf2 28.Rxf2 Rxc2 29.Rb8+ Kh7
+30.Rbf8 Rc1+ 31.Kh2 Bxf2 32.Rxf2 Kg7 33.Ra2 Rc5 34.Kg1 d5 35.Kf2 Kf6 36.a4 Ra5
+37.Rc2 Rxa4 38.Rxc6+ Ke5 39.Rxh6 Ra2+ 40.Kf1 e3 41.Rh5 Ke4 42.Rxg5 d4 43.Rg7
+Ra1+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Barros Rivadeneira, Cristhian"]
+[Black "Arias Monsalve, Andres Felipe"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "0"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Nc3 Bc5 4.Nxe5 Bxf2+ 5.Kxf2 Nxe5 6.d4 Ng6 7.Bc4 d6 8.Rf1 Be6
+9.Qd3 Qe7 10.Kg1 O-O-O 11.Bd2 f6 12.b4 Bxc4 13.Qxc4 Qd7 14.a4 N8e7 15.Qd3 d5
+16.Be3 dxe4 17.Nxe4 Nd5 18.Nc5 Qd6 19.a5 Nxe3 20.Qxe3 Qxd4 21.Qxd4 Rxd4 22.Ne6
+Rxb4 23.Nxg7 Rb2 24.Rf2 Ne7 25.Nh5 Nd5 26.h3 Ne3 27.Re1 Nc4 28.Nxf6 Nxa5 29.Re7
+Rb1+ 30.Kh2 Rf8 31.Rd2 Nc6 32.Rxh7 a5 33.Nd5 Rd8 34.c4 Kb8 35.Ra2 Rc1 36.Ra4
+Rxd5 37.cxd5 b5 38.Ra2 Nd4 39.Rxa5 Kb7 40.d6 b4 41.d7 Nc6 42.Rb5+ Ka6 43.Rxb4
+Nxb4 44.d8=Q 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Posada, Juan Manuel"]
+[Black "Becerra, Manuel Santiago"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2023"]
+[BlackElo "0"]
+[PlyCount "37"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.exd5 exd5 4.Bd3 Bd6 5.Qf3 Nc6 6.c3 Nge7 7.Ne2 O-O 8.O-O Ng6
+9.Qh5 Be6 10.Bf4 Be7 11.Nd2 Qd7 12.h3 f5 13.Nf3 Bf7 14.Bxf5 Be6 15.Bxg6 hxg6
+16.Qxg6 Rf6 17.Qg3 Bf5 18.Nh4 Re6 19.Nxf5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Bocanegra Acosta, Erick"]
+[Black "Diaz, Cristian Camilo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1964"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bc4 e6 7.Bb3 Nbd7 8.Be3 b5 9.f3
+Bb7 10.Qe2 Nc5 11.O-O-O Be7 12.g4 Nfd7 13.Rhg1 Rc8 14.g5 Qa5 15.h4 g6 16.h5 e5
+17.Nf5 gxf5 18.exf5 b4 19.Bxf7+ Kxf7 20.Qc4+ Ke8 21.f6 Nb6 22.Qg4 bxc3 23.g6
+Qxa2 24.f7+ Kd8 25.bxc3 Nb3+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Roman Sanchez, Wilder Xavier"]
+[Black "Gomez, Cristian David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1955"]
+[PlyCount "69"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nf3 Bg7 4.g3 c6 5.Bg2 d5 6.O-O dxc4 7.Na3 Be6 8.Ne5 Nh5 9.f4
+Bxe5 10.fxe5 O-O 11.e4 Qb6 12.Rf2 Rd8 13.Be3 Nd7 14.Qe2 Qa5 15.Nxc4 Qb5 16.b3
+Nb6 17.Rc1 Nxc4 18.bxc4 Qa5 19.d5 Bd7 20.Qf3 Be8 21.e6 f6 22.g4 Ng7 23.g5 f5
+24.Bd4 Nxe6 25.Bb2 Nxg5 26.Qg3 Nf7 27.exf5 Rd6 28.Qe3 Qd8 29.Qd4 Rf6 30.fxg6
+Rxg6 31.Rcf1 Rf6 32.Rxf6 exf6 33.Rxf6 Qb6 34.c5 Qa5 35.Rxf7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Moreno Lozano, David"]
+[Black "Echavarria, Juan"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1931"]
+[BlackElo "0"]
+[PlyCount "55"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 Nc6 8.Qd2 Bd7
+9.O-O-O a6 10.g4 Qa5 11.Nb3 Qc7 12.Bh6 O-O 13.h4 Ne5 14.Be2 Rac8 15.Bxg7 Kxg7
+16.h5 Rh8 17.h6+ Kf8 18.g5 Ne8 19.Kb1 Be6 20.f4 Nc4 21.Bxc4 Bxc4 22.f5 b5
+23.fxg6 hxg6 24.Qd4 Rh7 25.Rd2 a5 26.Nd5 Bxd5 27.Qxd5 a4 28.Nd4 {ilegible} 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Rojas Menor, Walter Alejandro"]
+[Black "G, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1900"]
+[BlackElo "0"]
+[PlyCount "33"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Nf3 e6 3.Bf4 Be7 4.Nbd2 d6 5.e4 O-O 6.Bd3 Nbd7 7.O-O c5 8.c3 Qc7 9.h3
+e5 10.Bh2 a6 11.dxe5 Nxe5 12.Nxe5 dxe5 13.Nc4 Nd7 14.f4 Bd6 15.Be2 Be7 16.fxe5
+Rd8 17.e6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Rosero, Jefferson"]
+[Black "Castro, Jairo Antonio"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1896"]
+[PlyCount "76"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.f3 Bg7 7.Be3 Nc6 8.Qd2 O-O
+9.O-O-O Nxd4 10.Bxd4 Be6 11.g4 Qa5 12.Kb1 Rfc8 13.Nd5 Qxd2 14.Nxf6+ Bxf6 15.Rxd2
+Bxd4 16.Rxd4 Rc5 17.h4 Rac8 18.c3 a5 19.Rg1 b5 20.f4 b4 21.f5 Bc4 22.cxb4 axb4
+23.Bxc4 Rxc4 24.Rgd1 Kf8 25.b3 Rxd4 26.Rxd4 Rb8 27.Rc4 Ke8 28.Rc7 Kd8 29.Ra7 Rb5
+30.f6 Re5 31.Rxe7 Rxe7 32.fxe7+ Kxe7 33.Kc2 Ke6 34.Kd3 d5 35.Kd4 dxe4 36.Kxe4
+f5+ 37.gxf5+ gxf5+ 38.Kf4 Kf6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Villar Saldana, Jhonatan Junior"]
+[Black "Villamil, Nahum Jose"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1839"]
+[PlyCount "86"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4 Bg7 5.h3 c5 6.dxc5 Qa5 7.cxd5 Nxd5 8.Qxd5 Bxc3+
+9.Bd2 Be6 10.Bxc3 Qxc3+ 11.bxc3 Bxd5 12.f3 Nd7 13.e4 Bc6 14.Ne2 e5 15.c4 Nxc5
+16.Nc3 Ne6 17.Nd5 O-O 18.Bd3 Rfd8 19.O-O Bxd5 20.cxd5 Nf4 21.Rfd1 Rac8 22.Rab1
+Rc7 23.Rd2 h5 24.Rbd1 Kf8 25.Bf1 h4 26.Rb2 Ke7 27.Rdb1 b6 28.Rd1 Kd6 29.a4 Rc5
+30.Bb5 Rdc8 31.Bc6 Nh5 32.Rdd2 Rc1+ 33.Kf2 Ng3 34.Rdc2 Rf1+ 35.Ke3 f5 36.Rc4 Ra1
+37.Rbc2 Rd8 38.exf5 gxf5 39.f4 Re1+ 40.Kf2 Rf1+ 41.Ke3 exf4+ 42.Rxf4 Re1+ 43.Kf2
+Rf1+ 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Estevez, Carlos Ariel"]
+[Black "Garcia Talledo, Gonzalo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1825"]
+[BlackElo "0"]
+[PlyCount "27"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.Be2 O-O 8.O-O Nc6
+9.Nb3 a5 10.a4 Be6 11.f4 Qd7 12.Nd4 Bg4 13.Bxg4 Nxg4 14.Qf3 {ilegible} 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Hernandez Torres, Alex Daniel"]
+[Black "Torres Lopez-Yañez, Carlos David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1926"]
+[BlackElo "0"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.exd5 exd5 4.Nf3 Bd6 5.Nc3 Ne7 6.Be3 Nbc6 7.Qd2 Bf5 8.Bb5 Qd7
+9.O-O-O O-O-O 10.h3 h5 11.Bf4 f6 12.Rhe1 g5 13.Bxd6 Qxd6 14.Re3 Ng6 15.Bxc6 Qxc6
+16.Ne2 g4 17.hxg4 hxg4 18.Ne1 Rde8 19.Rc3 Qd6 20.Ra3 a6 21.Ng3 Bd7 22.Ne2 f5
+23.g3 Rh2 24.Nd3 Bb5 25.Nc3 Qe7 26.Rf1 Bxd3 27.Qxd3 Rxf2 28.Rxf2 Qe1+ 29.Nd1 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Munoz, Camilo"]
+[Black "Ospina Escobar, Juan Pablo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1875"]
+[PlyCount "86"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Nxc6 bxc6 7.Be3 d6 8.Bd3 Nf6
+9.Qc1 O-O 10.Bh6 d5 11.Bxg7 Kxg7 12.f3 Qa5 13.Qd2 Rb8 14.O-O-O d4 15.Ne2 Qxa2
+16.Qf4 Qxb2+ 17.Kd2 Qb4+ 18.Kc1 Be6 19.e5 Nd5 20.Qxd4 Qxd4 21.Nxd4 Rfc8 22.Nxe6+
+fxe6 23.Bc4 a5 24.Kd2 Kf7 25.Rb1 a4 26.c3 Nb6 27.Ba2 Nd7 28.Rxb8 Rxb8 29.Rb1
+Rxb1 30.Bxb1 Nxe5 31.Kc2 Nc4 32.Kd3 Nd6 33.Ba2 Nb5 34.c4 Na7 35.Kc3 c5 36.Kb2
+Nc8 37.Ka3 Nb6 38.Kb2 Kf6 39.Kc3 Ke5 40.Kd3 h6 41.Ke3 Na8 42.Kd3 Nc7 43.Ke3 Na6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Obando Guzman, Soren"]
+[Black "Carlos Inga, Augusto "]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "91"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 d6 3.Bc4 Bg4 4.Nc3 Nc6 5.d3 Nd4 6.h3 Bxf3 7.gxf3 Nf6 8.Bg5 Be7
+9.h4 h6 10.Be3 Nh5 11.Bxd4 exd4 12.Nd5 Bxh4 13.f4 g6 14.f5 Bg5 15.fxg6 fxg6
+16.Rxh5 c6 17.Qg4 cxd5 18.Qe6+ Qe7 19.Qxg6+ Kd7 20.Qf5+ Qe6 21.Qxe6+ Kxe6
+22.Bxd5+ Kd7 23.Rb1 Rab8 24.c3 Rhf8 25.cxd4 Rf3 26.Ke2 Rbf8 27.Rh2 h5 28.e5 R3f5
+29.e6+ Ke7 30.Bc4 h4 31.d5 h3 32.Rf1 Rf3 33.b4 Bf4 34.Kxf3 Bxh2+ 35.Kg4 Kf6
+36.Kxh3 Be5 37.f4 Bd4 38.Kg4 Be3 39.f5 a6 40.Kf3 Bd2 41.Ke4 Bxb4 42.Rh1 Bd2
+43.Rh7 b5 44.Bb3 Kg5 45.Rf7 Rh8 46.e7 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "Cortez, "]
+[Black "Rodriguez Velasco, German Enrique"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2014"]
+[PlyCount "83"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 e6 5.a3 a6 6.b3 Nbd7 7.g3 b5 8.c5 Qc7 9.Bf4 Qd8
+10.Bg2 Be7 11.O-O Nh5 12.Bd2 O-O 13.e4 f5 14.exf5 exf5 15.Re1 Nhf6 16.Ng5 Nb8
+17.Bf4 Ne4 18.Ngxe4 fxe4 19.f3 exf3 20.Bxf3 Bf5 21.Bg4 Nd7 22.Bxf5 Rxf5 23.Qd3
+Rf7 24.Re6 Bf6 25.Rxc6 Rc8 26.Rxc8 Qxc8 27.Nxd5 Bd8 28.Re1 Nf8 29.Bd6 Qd7 30.Qe4
+a5 31.Nf4 Bf6 32.d5 g5 33.Nd3 Bc3 34.Rf1 Rxf1+ 35.Kxf1 Qh3+ 36.Kg1 Qh5 37.g4 Qh6
+38.Bg3 Qa6 39.c6 b4 40.a4 Qb6+ 41.Kg2 Ng6 42.c7 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.04"]
+[Round "3"]
+[Board "1"]
+[White "M, "]
+[Black "Torres Rojas, Yuber Andres"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2049"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 e6 2.Nf3 d5 3.Bg5 Nf6 4.e3 c5 5.c3 c4 6.Nbd2 Be7 7.Qc2 b5 8.Be2 h6 9.Bxf6
+Bxf6 10.Ne5 Bxe5 11.dxe5 Nc6 12.f4 a5 13.a3 Bd7 14.O-O O-O 15.Nf3 f5 16.Nd4 Rb8
+17.Nxc6 Bxc6 18.g4 Qh4 19.gxf5 Rxf5 20.Bf3 g5 21.Qg2 Kh8 22.Qg3 Qxg3+ 23.hxg3
+gxf4 24.exf4 Bd7 25.Kf2 b4 26.axb4 axb4 27.Ra7 Rf7 28.Rfa1 Be8 29.Ra8 Rfb7
+30.R1a2 Bf7 31.Rxb8+ Rxb8 32.Bd1 bxc3 33.bxc3 Rb1 34.Bc2 Rb6 35.Ke3 Kg7 36.Kd4
+Rb5 37.g4 h5 38.g5 Rb7 39.f5 h4 40.f6+ Kf8 41.Ra8+ Be8 42.Bg6 Rf7 43.Bxf7 Kxf7
+44.g6+ 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Ruiz C, Joshua D"]
+[Black "Diaz Herrera, Leider Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2148"]
+[BlackElo "1942"]
+[PlyCount "73"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 Qc7 6.f4 d6 7.Qf3 b5 8.Bd3 Bb7 9.O-O
+Nf6 10.a3 Nbd7 11.Bd2 g6 12.Rae1 Bg7 13.Nb3 O-O 14.Qh3 h5 15.Qg3 Nc5 16.h3 Nxd3
+17.cxd3 d5 18.e5 Nd7 19.d4 Nb6 20.Nc5 Nd7 21.Nxd7 Qxd7 22.Qe3 f5 23.exf6 Rxf6
+24.Ne2 Rc8 25.Nc1 Rc6 26.Nd3 Rf8 27.Bb4 Re8 28.Ne5 Bxe5 29.fxe5 Qg7 30.Rf6 a5
+31.Bxa5 Rf8 32.Rxf8+ Kxf8 33.Rf1+ Kg8 34.Rf6 Bc8 35.Qg5 Kh7 36.Bb4 Rc7 37.Bf8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Gontijo Chiari, Arthur"]
+[Black "Cuellar, Diego"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2034"]
+[BlackElo "2109"]
+[PlyCount "90"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 b5 6.Bb3 Be7 7.O-O d6 8.a4 Bd7 9.Nc3
+Na5 10.Ba2 O-O 11.axb5 axb5 12.Ne2 c5 13.Ng3 Qc7 14.Bg5 h6 15.Bxf6 Bxf6 16.Bd5
+Nc6 17.c3 g6 18.Rxa8 Rxa8 19.Qb3 Be8 20.h3 Qa5 21.Ne1 Qa4 22.Nc2 Qxb3 23.Bxb3
+Ne7 24.Ra1 Rxa1+ 25.Nxa1 Bg5 26.Ne2 Nc8 27.Nc2 Nb6 28.Na3 Kf8 29.g3 Bd2 30.Nb1
+Bg5 31.Na3 Bc6 32.f3 f5 33.Kf2 fxe4 34.dxe4 h5 35.h4 Be7 36.Kg2 c4 37.Bc2 Kf7
+38.b4 g5 39.hxg5 Bxg5 40.Kf2 h4 41.gxh4 Bxh4+ 42.Kg2 Kf6 43.Kh3 Be1 44.Kg4 d5
+45.exd5 Nxd5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Valenzuela Martinez, Hermes"]
+[Black "Novoa, Fernando"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1823"]
+[BlackElo "2044"]
+[PlyCount "104"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 g6 2.Nf3 Nf6 3.Bg5 Bg7 4.Nbd2 d5 5.e3 Nbd7 6.c3 O-O 7.Bd3 c5 8.O-O b6 9.e4
+cxd4 10.Nxd4 Nc5 11.Bc2 dxe4 12.Bxf6 exf6 13.Nxe4 f5 14.Nxc5 bxc5 15.Nb3 Qc7
+16.Qd5 Rb8 17.Rab1 c4 18.Qc5 Qf4 19.g3 Qf3 20.Nd2 Qe2 21.Qe3 Qxe3 22.fxe3 Be6
+23.Rfe1 Bh6 24.Nf3 Rfd8 25.Nd4 Rb6 26.e4 fxe4 27.Bxe4 Bg7 28.Red1 Bg4 29.Nf3
+Rxd1+ 30.Rxd1 Rxb2 31.Rd8+ Bf8 32.Ne5 Be6 33.Bd5 Rd2 34.Nd7 Bxd5 35.Nf6+ Kg7
+36.Rxd5 Rxd5 37.Nxd5 Bc5+ 38.Kg2 f5 39.Kf3 g5 40.Ne3 Bxe3 41.Kxe3 g4 42.Kd4 h5
+43.Ke5 Kg6 44.Ke6 h4 45.Ke5 hxg3 46.hxg3 Kg5 47.a3 a6 48.a4 a5 49.Kd4 f4
+50.gxf4+ Kxf4 51.Kxc4 g3 52.Kb5 g2 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Velasco, Ricardo"]
+[Black "Sanchez, Sandoval Gonzalo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2008"]
+[BlackElo "1965"]
+[PlyCount "155"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bc4 Qb6 7.Nb3 e6 8.O-O a6 9.a4
+Qc7 10.Be2 b6 11.f4 Be7 12.Be3 O-O 13.Bf3 Bb7 14.Qe2 Rab8 15.Rad1 Na5 16.Nd4 Nc4
+17.Bc1 Rfe8 18.Qd3 Bf8 19.b3 Na5 20.f5 Nd7 21.fxe6 fxe6 22.Nde2 Nc6 23.Nf4 Nce5
+24.Qd2 b5 25.axb5 axb5 26.Kh1 Ba6 27.Rf2 b4 28.Nce2 Nxf3 29.gxf3 Rbc8 30.Nd4 Nc5
+31.Qxb4 Qa7 32.Nh3 d5 33.Qe1 dxe4 34.fxe4 Nxe4 35.Rg2 Nc3 36.Rdd2 Bb7 37.Qe5
+Bxg2+ 38.Rxg2 Qc5 39.Qxc5 Rxc5 40.Bb2 Nd1 41.Bc1 Rd5 42.Rd2 Ne3 43.Nf4 Ra5
+44.Rd3 Ra1 45.Rxe3 Rxc1+ 46.Kg2 e5 47.Nfe2 Ra1 48.Nc6 Ra2 49.c3 e4 50.b4 Re6
+51.Ncd4 Rg6+ 52.Kf2 Rf6+ 53.Kg2 Rg6+ 54.Kf2 Rh6 55.Kg2 Bd6 56.h3 Rg6+ 57.Kf2
+Rf6+ 58.Kg2 Rg6+ 59.Kf2 Ra8 60.Rxe4 Rf8+ 61.Ke3 Bg3 62.c4 Bf2+ 63.Kd3 Bxd4
+64.Kxd4 Rd8+ 65.Kc5 Rc8+ 66.Kb5 Rb8+ 67.Ka5 Rf6 68.c5 Rf1 69.Ka4 Ra1+ 70.Kb3
+Rb1+ 71.Kc3 Ra1 72.h4 Ra3+ 73.Kc4 Ra4 74.Kb3 Ra6 75.Nd4 Rb7 76.Kc4 Kf7 77.b5 Ra8
+78.c6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Fonseca Manrique, Enrique"]
+[Black "Fuentes Parra, Victor Ignacio"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1915"]
+[BlackElo "1978"]
+[PlyCount "63"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.Bd2 Bxc3 6.Bxc3 cxd4 7.Qxd4 Ne7 8.O-O-O a6
+9.Nf3 Nbc6 10.Qg4 g6 11.h4 h5 12.Qf4 Nf5 13.Bd3 Qe7 14.Bxf5 gxf5 15.Nd4 Qc7
+16.Rhe1 Bd7 17.Qg5 Nxd4 18.Rxd4 a5 19.Rxd5 exd5 20.e6 Bxe6 21.Bxh8 Kd7 22.Be5
+Qc4 23.b3 Qc5 24.Qd2 b5 25.Bd4 Qc7 26.Re3 Qh2 27.g3 f4 28.Rc3 Qh1+ 29.Kb2 fxg3
+30.Qf4 Rc8 31.Rxc8 Kxc8 32.Bb6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Gotz, Klaus Seiji Furucho"]
+[Black "Blandon, Luis Guillermo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1909"]
+[BlackElo "1974"]
+[PlyCount "41"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 e5 3.dxe5 d4 4.a3 Nc6 5.Nf3 Bf5 6.e3 dxe3 7.Qxd8+ Rxd8 8.Bxe3 Bg4
+9.Nbd2 Nge7 10.Bg5 h6 11.Bxe7 Kxe7 12.h3 Bxf3 13.Nxf3 Ke6 14.Be2 Nxe5 15.Nxe5
+Kxe5 16.Bf3 c6 17.O-O Bd6 18.Rfe1+ Kf6 19.Rad1 Be5 20.b3 Rhe8 21.Kf1 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Sosa, Tomas"]
+[Black "Hernandez Amura, Gilberto"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2075"]
+[BlackElo "1864"]
+[PlyCount "77"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Nb3 Nf6 7.Bd3 a6 8.O-O Be7
+9.f4 d6 10.Qf3 O-O 11.Kh1 b5 12.Bd2 Bb7 13.Rae1 Rad8 14.Qh3 e5 15.Nd5 Qd7 16.Qe3
+Nh5 17.Qf3 Nxf4 18.Nxf4 exf4 19.Qxf4 Bf6 20.Qg3 Be5 21.Qh4 Qe7 22.Bg5 f6 23.Be3
+Bc8 24.c3 Be6 25.Nd4 Bxd4 26.cxd4 Nb4 27.Bb1 Bc4 28.Rf3 Bd3 29.Bd2 Bxb1 30.Bxb4
+a5 31.Bxa5 Ra8 32.Bb4 g5 33.Qg3 Bxe4 34.Rfe3 f5 35.Bxd6 Qg7 36.Bxf8 Kxf8 37.Qd6+
+Kg8 38.Rxe4 fxe4 39.Qd5+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Duran, Mateo Andres"]
+[Black "Barros Rivadeneira, Cristhian"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1879"]
+[BlackElo "2049"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.f4 Nf6 2.Nf3 c5 3.b3 g6 4.Bb2 Bg7 5.e3 O-O 6.Be2 Nc6 7.O-O d6 8.c4 d5 9.cxd5
+Nxd5 10.Bxg7 Kxg7 11.Nc3 e6 12.Rc1 b6 13.Nxd5 Qxd5 14.Bc4 Qd6 15.Qc2 Bb7 16.Ng5
+Nb4 17.Qb2+ Kg8 18.a3 Nd3 19.Bxd3 Qxd3 20.Rf2 Rad8 21.Rc3 Qb5 22.Nf3 Bxf3
+23.gxf3 Rd5 24.Kg2 Rfd8 25.Kg1 Rd3 26.Qc2 Rxc3 27.dxc3 Rd3 28.a4 Qd7 29.Kg2 Rxe3
+30.Rd2 Qc7 31.c4 Qxf4 32.Qd1 Kg7 33.Kf2 Rxf3+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Estevez, Carlos Ariel"]
+[Black "Posada, Juan Manuel"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1825"]
+[BlackElo "2023"]
+[PlyCount "56"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.Qe2 Qe7 6.d3 Nf6 7.Qxe7+ Bxe7 8.Nc3 Nc6
+9.Be2 Nb4 10.Bd1 Bg4 11.Nd4 c5 12.Ndb5 Bxd1 13.Kxd1 Kd7 14.Bg5 h6 15.Bf4 a6
+16.Na3 b5 17.Ne4 Nxe4 18.dxe4 Bf6 19.Kc1 Rhe8 20.f3 Be5 21.Be3 f5 22.c3 Nd3+
+23.Kc2 fxe4 24.g3 c4 25.b3 cxb3+ 26.axb3 Rac8 27.Nb1 Nb4+ 28.Kd2 exf3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Diaz, Cristian Camilo"]
+[Black "Parra, Brayan"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1964"]
+[BlackElo "1797"]
+[PlyCount "72"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3
+Na5 10.Bc2 c5 11.d4 Qc7 12.d5 Bd7 13.b3 c4 14.b4 Nb7 15.Be3 a5 16.a3 axb4
+17.cxb4 Ra6 18.Nc3 Rfa8 19.Bc1 Bf8 20.Bb2 g6 21.Qc1 h6 22.Bd1 Nh5 23.Ne2 Kh7
+24.Nh2 Qb6 25.Qc3 Bg7 26.g4 Nf6 27.Ng3 Qd8 28.Kg2 Qc8 29.Rf1 h5 30.f3 R6a7
+31.Be2 Ne8 32.Rf2 h4 33.Ngf1 Nd8 34.Qe3 f6 35.f4 Nf7 36.f5 g5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Echavarria, Juan"]
+[Black "Rojas Menor, Walter Alejandro"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1900"]
+[PlyCount "86"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 e6 3.Nc3 d5 4.Bg5 Nbd7 5.e3 c6 6.Nf3 Bb4 7.a3 Bxc3+ 8.bxc3 Qa5
+9.Qb3 Ne4 10.Qb4 Qxb4 11.cxb4 f6 12.Bf4 g5 13.Bg3 h5 14.h3 Nxg3 15.fxg3 Kf7
+16.Nd2 f5 17.Be2 Kg6 18.Kf2 Rf8 19.h4 g4 20.c5 Nf6 21.Rhf1 Bd7 22.a4 Rae8
+23.Rae1 e5 24.Bd1 Rf7 25.Bc2 Rfe7 26.Bb1 b6 27.Bc2 Nh7 28.Bd3 Nf8 29.Nb3 Nh7
+30.Nd2 Kg7 31.Nb3 Nf6 32.Nd2 Bc8 33.a5 bxc5 34.bxc5 Ne4+ 35.Nxe4 fxe4 36.Bc2 Ba6
+37.Rh1 exd4 38.exd4 e3+ 39.Kg1 e2 40.Kh2 Bb5 41.Rhg1 a6 42.Rc1 Re3 43.Rge1 Rf8
+{ilegible} 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Leon Magallanes, Isaac"]
+[Black "Londono Lopez, David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1929"]
+[BlackElo "0"]
+[PlyCount "79"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.Nf3 Nf6 2.d4 g6 3.c4 d5 4.cxd5 Nxd5 5.e4 Nf6 6.Nc3 Bg7 7.Bc4 O-O 8.h3 Nfd7
+9.Be3 Nb6 10.Bb3 Nc6 11.O-O h6 12.Qd2 Kh7 13.Ne2 g5 14.d5 Ne5 15.Nxe5 Bxe5 16.f4
+gxf4 17.Bxf4 Qd6 18.Rac1 Bd7 19.Nd4 a6 20.Kh1 Rac8 21.Be3 Qg6 22.Nf3 Bg3 23.Bf4
+Rg8 24.Ne5 Bxf4 25.Rxf4 Qh5 26.Rxf7+ Rg7 27.Rxg7+ Kxg7 28.Nxd7 Nxd7 29.Bd1 Qf7
+30.Bg4 Rd8 31.Be6 Qf6 32.Rxc7 Ne5 33.Qc3 h5 34.Qg3+ Kh6 35.Qe3+ Kg7 36.Rc2 Nc4
+37.Rxc4 Qf1+ 38.Kh2 Qxc4 39.Qg5+ Kf8 40.Qh6+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Castro, Jairo Antonio"]
+[Black "Roman Sanchez, Wilder Xavier"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1896"]
+[BlackElo "0"]
+[PlyCount "84"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.Bd3 c5 6.c3 Nc6 7.Ne2 Be7 8.Nf3 O-O 9.O-O
+f6 10.exf6 Bxf6 11.Qc2 g6 12.Re1 e5 13.dxe5 Ndxe5 14.Nxe5 Nxe5 15.Bh6 Rf7 16.Ng3
+c4 17.Be2 Bg5 18.Bxg5 Qxg5 19.Rad1 Be6 20.Qd2 Qf6 21.f3 Re8 22.Qd4 Qg5 23.Qxa7
+b5 24.Qc5 h5 25.Rf1 Ref8 26.Qd6 Re8 27.Qb6 Rf4 28.Qd6 h4 29.Nh1 h3 30.g3 Rxf3
+31.Qb6 Qe3+ 32.Qxe3 Rxe3 33.Rfe1 Bf5 34.Kf2 Re4 35.Kf1 Rxe2 36.Kxe2 Bg4+ 37.Kf1
+Bxd1 38.Rxd1 Nf3 39.Nf2 Nxh2+ 40.Kg1 Nf3+ 41.Kh1 Re2 42.Rf1 Nd2 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Palacios Llancari, Jose Wilfred"]
+[Black "Mayorquin, Nicolas"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1889"]
+[PlyCount "72"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be2 e6 7.O-O Qc7 8.Kh1 b5 9.a3
+Bb7 10.Re1 Nxe4 11.Nxe4 Bxe4 12.Bxb5+ axb5 13.Rxe4 Qb7 14.Re1 Be7 15.Qe2 b4
+16.Qb5+ Qxb5 17.Nxb5 O-O 18.a4 Nc6 19.Be3 d5 20.Bd4 Nxd4 21.Nxd4 Bf6 22.c3 bxc3
+23.bxc3 Rfc8 24.Rec1 h6 25.Nb5 Ra5 26.Ra3 Rc4 27.Rca1 Kh7 28.g3 Kg6 29.Kg2 Be7
+30.R3a2 Bc5 31.f3 e5 32.Rd1 d4 33.cxd4 exd4 34.Raa1 Bb4 35.Kf2 d3 36.Ke3 d2 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Suarez Pinto, Sergio Rafael"]
+[Black "Hernandez Torres, Alex Daniel"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1737"]
+[BlackElo "1926"]
+[PlyCount "91"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.c3 d6 5.d4 exd4 6.cxd4 Bb4+ 7.Bd2 Bxd2+ 8.Nbxd2
+Bd7 9.O-O Nf6 10.Re1 O-O 11.Nf1 a6 12.Bc4 Bg4 13.d5 Ne5 14.Be2 Ng6 15.h3 Bd7
+16.Ng3 Re8 17.Bc4 Ne5 18.Nxe5 dxe5 19.Rc1 Rc8 20.b4 c6 21.dxc6 Bxc6 22.Qb3 Rf8
+23.a4 b5 24.axb5 Bxb5 25.Bxb5 Rxc1 26.Rxc1 axb5 27.Rc5 Qd4 28.Rxb5 Nxe4 29.Nxe4
+Qxe4 30.Qc3 f6 31.Rc5 h6 32.b5 Kh7 33.Qc2 Qxc2 34.Rxc2 Rb8 35.Rb2 Kg6 36.Kf1 Kf5
+37.Ke2 Ke4 38.b6 Rb7 39.f3+ Kd4 40.Kf2 Kc5 41.Ke3 f5 42.g4 g6 43.h4 h5 44.gxh5
+gxh5 45.Rg2 Rxb6 46.Rg5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Villamil, Nahum Jose"]
+[Black "Paredes Lagos, Anthony Javier"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1839"]
+[BlackElo "1730"]
+[PlyCount "71"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.h4 Nc6 7.Qg4 h5 8.Qd1 a6 9.Be2
+Bxg5 10.hxg5 Qxg5 11.Nh3 Qh4 12.Qd3 Qxd4 13.Qg3 Qxe5 14.f4 Qf6 15.O-O-O Nd4
+16.Rhe1 Nxe2+ 17.Rxe2 c6 18.Rxd5 h4 19.Qg4 Qh6 20.Rd1 Nf6 21.Qf3 Qh5 22.Qf2 Bd7
+23.f5 O-O 24.Rh1 Ng4 25.Qe1 Qh6+ 26.Kb1 exf5 27.Nf2 Rae8 28.b3 Rxe2 29.Nxe2 Nxf2
+30.Qxf2 g5 31.g3 h3 32.Qd4 Be6 33.Ng1 g4 34.Qf2 Rd8 35.Nxh3 gxh3 36.Qb6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Cisneros Avendano, Diego"]
+[Black "Villar Saldana, Jhonatan Junior"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1813"]
+[BlackElo "0"]
+[PlyCount "53"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 d5 3.Nf3 g6 4.e3 Bg7 5.Nc3 O-O 6.Bd2 Nc6 7.Rc1 a6 8.a3 Re8 9.cxd5
+Nxd5 10.Bc4 Nb6 11.Ba2 Bg4 12.h3 Bxf3 13.Qxf3 e6 14.Ne4 Qe7 15.O-O Rab8 16.Rc2
+Rec8 17.Rfc1 Kh8 18.Be1 Na8 19.Nc5 Nd8 20.Bb4 Qe8 21.Ne4 c6 22.Nf6 Bxf6 23.Qxf6+
+Kg8 24.Bd6 Nb6 25.Be5 Kf8 26.Bf4 Qe7 27.Bg5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Rodriguez Velasco, German Enrique"]
+[Black "Armas Lopes, Victor"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2014"]
+[BlackElo "0"]
+[PlyCount "68"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3 e5 7.Nb3 Be6 8.f3 Nbd7
+9.Qd2 Be7 10.g4 h6 11.O-O-O b5 12.h4 Nb6 13.Na5 Nc4 14.Nxc4 bxc4 15.Nd5 Nxd5
+16.exd5 Bd7 17.Bxc4 Bxh4 18.g5 hxg5 19.Rdg1 f6 20.Qb4 Qc7 21.Bd3 Rb8 22.Bg6+ Ke7
+23.Qd2 Qc4 24.Kb1 a5 25.Rg2 Bf2 26.Rgh2 Bxe3 27.Qxe3 Rxh2 28.Rxh2 Qf1+ 29.Qc1
+Qxc1+ 30.Kxc1 f5 31.Rh7 Kf6 32.Bh5 Rd8 33.c4 g4 34.fxg4 fxg4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Gomez, Cristian David"]
+[Black "G, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1955"]
+[BlackElo "0"]
+[PlyCount "96"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.Nc3 Nf6 3.e3 g6 4.d4 exd4 5.exd4 Bg7 6.Nf3 O-O 7.Be2 d6 8.h3 Re8 9.Be3
+Nc6 10.d5 Ne7 11.O-O Nf5 12.Bg5 h6 13.Bf4 Ne4 14.Rc1 Nxc3 15.bxc3 Bd7 16.Qd2 Kh7
+17.Bd3 Nh4 18.Nxh4 Qxh4 19.Bg3 Qf6 20.Qf4 Qxf4 21.Bxf4 Be5 22.Be3 f5 23.Bd4 c5
+24.dxc6 Bxc6 25.Rfe1 Re7 26.f4 Bxd4+ 27.cxd4 Rae8 28.Rxe7+ Rxe7 29.d5 Ba4 30.Kf2
+Kg7 31.Rb1 b6 32.Rb4 Bd1 33.Rb1 Ba4 34.g4 fxg4 35.hxg4 Bd7 36.Kf3 Ba4 37.Rg1 Kf6
+38.Rh1 Kg7 39.f5 g5 40.f6+ Kxf6 41.Rxh6+ Ke5 42.Rg6 Bd1+ 43.Kf2 Kd4 44.Bf1 Bxg4
+45.Rxg5 Bd1 46.Rg6 Kc5 47.Rf6 Bg4 48.Kg3 Be2 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Cortez Olavarria, Victor Andres"]
+[Black "Valencia, Nicolas"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.Nf3 Nc6 3.d4 d5 4.exd5 exd5 5.Bb5 Bd7 6.Nc3 Bb4 7.Bd2 Nge7 8.a3 Ba5
+9.h3 a6 10.Ba4 Nf5 11.Ne2 Bxd2+ 12.Qxd2 b5 13.Bb3 Be6 14.c3 Nd6 15.Nf4 Qe7
+16.O-O O-O-O 17.Nxd5 Bxd5 18.Bxd5 Ne4 19.Bxe4 Qxe4 20.Qe3 Rhe8 21.Qxe4 Rxe4
+22.Rfe1 f5 23.Rxe4 fxe4 24.Ng5 h6 25.Nxe4 Re8 26.f3 g5 27.Re1 Kd7 28.Nf6+ Kd6
+29.Nxe8+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Ospina Escobar, Juan Pablo"]
+[Black "Garcia Talledo, Gonzalo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1875"]
+[BlackElo "0"]
+[PlyCount "98"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.Be2 O-O 8.f3 Nc6
+9.Qd2 Nxd4 10.Bxd4 Be6 11.Nd5 Nxd5 12.exd5 Bxd4 13.Qxd4 Qa5+ 14.Qd2 Qxd5 15.Qxd5
+Bxd5 16.O-O-O Be6 17.Bd3 Rac8 18.Kb1 Rc5 19.Rhe1 Rh5 20.h3 Rc8 21.Re3 Re5
+22.Rxe5 dxe5 23.Be4 Rc7 24.g4 b5 25.Rd8+ Kg7 26.Bd3 Bc4 27.Bxc4 Rxc4 28.Kc1 Rf4
+29.Rd3 Kf6 30.h4 h5 31.b3 hxg4 32.fxg4 Rxg4 33.Rh3 g5 34.hxg5+ Kxg5 35.Re3 Kf4
+36.Rh3 f5 37.c4 bxc4 38.bxc4 e4 39.c5 e3 40.Kd1 Ke4 41.c6 Rg6 42.Rh7 Rxc6
+43.Rxe7+ Kf3 44.Re5 f4 45.a4 Kf2 46.a5 f3 47.Rxe3 Kxe3 48.a6 Rc5 49.Ke1 Rc1# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Rodriguez, Barragan Luis E"]
+[Black "Agudelo, Pedro Luis"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "78"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 e6 2.c4 c5 3.d5 d6 4.Nc3 Nf6 5.g3 Be7 6.Bg2 e5 7.e4 O-O 8.Nge2 Ne8 9.O-O f5
+10.f4 fxe4 11.Nxe4 Nd7 12.N2c3 exf4 13.Bxf4 Ne5 14.Bxe5 dxe5 15.Qh5 Nd6 16.Nxd6
+Bxd6 17.Rxf8+ Qxf8 18.Rf1 Qe7 19.Be4 g6 20.Bxg6 hxg6 21.Qxg6+ Qg7 22.Qxd6 Bh3
+23.Rf6 Rf8 24.Rxf8+ Qxf8 25.Qxf8+ Kxf8 26.Kf2 Kf7 27.Nb5 Kf6 28.Nxa7 e4 29.Nb5
+Bd7 30.Nd6 Ke5 31.Nxb7 Kd4 32.Nxc5 Kxc5 33.Ke3 Bf5 34.b3 Kb4 35.Kf4 e3 36.Kxe3
+Ka3 37.Kf4 Bd7 38.c5 Kb4 39.c6 Be8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Arias Monsalve, Andres Felipe"]
+[Black "Gomez, Luis Miguel"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "37"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 4.O-O Bd7 5.c3 Nf6 6.Re1 a6 7.Ba4 Be7 8.h3 O-O 9.d4
+b5 10.Bc2 Re8 11.Qd3 Na5 12.dxe5 dxe5 13.Nxe5 h6 14.Nxd7 Nxd7 15.e5 g6 16.e6 Nc5
+17.exf7+ Kf8 18.Bxh6+ Kxf7 19.Qxg6# 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Becerra, Manuel Santiago"]
+[Black "Torres Lopez-Yañez, Carlos David"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "58"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.Bd3 c5 6.c3 Nc6 7.Ne2 cxd4 8.cxd4 f6 9.Nf4
+Qe7 10.Qh5+ Qf7 11.Bg6 hxg6 12.Qxh8 Nxd4 13.O-O fxe5 14.Nh3 Nc5 15.b3 Bd7 16.Qh4
+Bb5 17.Rd1 Be2 18.Re1 Nd3 19.f3 Nxe1 20.Qxe1 Bb4 21.a3 Bc3 22.Ra2 Qf5 23.Qf2 Rc8
+24.g4 Qd3 25.Ng5 Bxd2 26.Bxd2 Qb1+ 27.Kg2 Qxa2 28.f4 Qxd2 29.fxe5 Qxg5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Yate Baron, Andres Steven"]
+[Black "Bocanegra Acosta, Erick"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "42"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nb3 Bg7 6.Nc3 Nf6 7.g4 d6 8.h3 O-O 9.Be3
+a6 10.Qd2 d5 11.exd5 Ne5 12.f4 Nf3+ 13.Kf2 Nxd2 14.Bxd2 Nxd5 15.Be2 Qb6+ 16.Kf3
+Nxc3 17.Bxc3 Bxc3 18.bxc3 Qc6+ 19.Kf2 Qxc3 20.Bd3 Be6 21.Rab1 Rfd8 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Rosero, Jefferson"]
+[Black "Gonzalez L, Nicolas Mateo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "30"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e6 5.Nc3 Nf6 6.Bc4 Bb4 7.Bg5 h6 8.Bxf6 Qxf6
+9.Nde2 a6 10.a4 O-O 11.O-O Qg6 12.f4 f5 13.exf5 Qxf5 14.Ng3 Qc5+ 15.Kh1 Qxc4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Torres Rojas, Yuber Andres"]
+[Black "Roman Sanchez, Eduardo Zosimo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "0"]
+[PlyCount "78"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Bc4 Nc6 3.Nf3 d6 4.Nc3 Bg4 5.d3 Bxf3 6.Qxf3 Ne5 7.Bb5+ Nd7 8.O-O a6
+9.Ba4 b5 10.Bb3 Ne5 11.Qe2 Nf6 12.f4 Nc6 13.e5 Nd4 14.Qd1 Nxb3 15.axb3 Nd7 16.d4
+cxd4 17.Qxd4 Qb6 18.Qxb6 Nxb6 19.Be3 b4 20.Bxb6 bxc3 21.bxc3 Kd7 22.c4 g6 23.b4
+Bg7 24.Rad1 Kc6 25.c5 dxe5 26.fxe5 Bxe5 27.Rxf7 Bf6 28.c4 Rae8 29.Re1 Bd4+
+30.Kf1 Rhf8 31.Rexe7 Rxe7 32.Rxf8 Bc3 33.b5+ axb5 34.cxb5+ Kxb5 35.Rf3 Bd4
+36.Rb3+ Kc6 37.Rf3 Bxc5 38.Bxc5 Kxc5 39.Kf2 Kd4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Polo, John Alexander"]
+[Black "Gomez Vazquez, Carlos"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "58"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.f3 Bg7 7.Be3 O-O 8.Qd2 Nc6 9.g4
+Nxd4 10.Bxd4 Be6 11.h4 Qa5 12.g5 Nd7 13.Bxg7 Kxg7 14.a3 Ne5 15.Be2 Rac8 16.O-O-O
+Bc4 17.Nd5 Qd8 18.Bxc4 Nxc4 19.Qh2 e6 20.Nc3 Qb6 21.b3 Qe3+ 22.Kb1 Nxa3+ 23.Ka2
+Qxc3 24.Qd2 Nb5 25.Rhg1 Rc6 26.Qxc3+ Nxc3+ 27.Kb2 Nxd1+ 28.Rxd1 b5 29.f4 Rfc8 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "Cortez, "]
+[Black "Gonzalez, Andres Felipe"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1962"]
+[PlyCount "100"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 O-O 5.e4 d6 6.g3 e5 7.Bg2 Nc6 8.dxe5 Nxe5
+9.Nxe5 dxe5 10.O-O Be6 11.b3 c6 12.Bb2 Qe7 13.Qc2 Rfd8 14.Ne2 Ne8 15.Kh1 Nd6
+16.f4 Bg4 17.fxe5 Bxe5 18.Bxe5 Qxe5 19.Nf4 Re8 20.Rae1 Rad8 21.h3 Bc8 22.Kh2 h5
+23.Nd3 Qd4 24.Nf4 Qe5 25.a4 b6 26.Qf2 Qc3 27.Re3 Qd4 28.Qf3 Qe5 29.Kh1 Nf5
+30.Rd3 Nd4 31.Qf2 Ne6 32.Rxd8 Rxd8 33.Nxe6 Qxe6 34.Qe2 Bb7 35.Kh2 c5 36.Bf3 Qe5
+37.Kg2 Qc3 38.Rd1 Rxd1 39.Qxd1 Qe3 40.Qd8+ Kg7 41.Qc7 Qd2+ 42.Kf1 Qc1+ 43.Kg2
+Qd2+ 44.Kf1 Qd3+ 45.Kf2 Qd4+ 46.Kf1 Bxe4 47.Bxe4 Qxe4 48.Qd6 Qb1+ 49.Ke2 Qxb3
+50.Qe5+ Kh7 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.05"]
+[Round "4"]
+[Board "1"]
+[White "M, "]
+[Black "Pichot, Alan"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2243"]
+[PlyCount "71"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Nf3 g6 3.Bg5 Bg7 4.Nbd2 O-O 5.e4 d6 6.Bd3 Nc6 7.O-O e5 8.c3 h6 9.Be3
+Ng4 10.h3 Nxe3 11.fxe3 Qe7 12.Qe2 f5 13.Qf2 Bf6 14.Kh2 Kg7 15.d5 Nd8 16.Rg1 h5
+17.exf5 gxf5 18.e4 Bg5 19.Qg3 Kh6 20.Qxg5+ Qxg5 21.Nxg5 Kxg5 22.exf5 Bxf5
+23.Bxf5 Rxf5 24.Ne4+ Kh6 25.Rgf1 Rf7 26.Rxf7 Nxf7 27.Rf1 Kg7 28.g4 hxg4 29.hxg4
+a5 30.a4 Ra6 31.Rf2 c6 32.Rd2 c5 33.Kg3 Ra8 34.c4 Ra6 35.b3 Ra8 36.Rd3 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Cuellar, Diego"]
+[Black "Ruiz C, Joshua D"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2109"]
+[BlackElo "2148"]
+[PlyCount "46"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 d6 3.f4 g6 4.Nf3 Bg7 5.Bb5+ Bd7 6.Bc4 Nc6 7.O-O Nh6 8.d3 O-O 9.Qe1
+Na5 10.Bb3 Nxb3 11.axb3 e6 12.f5 exf5 13.Bf4 Be6 14.h3 f6 15.Qd2 Nf7 16.exf5
+Bxf5 17.d4 b6 18.Rfe1 Re8 19.Rxe8+ Qxe8 20.Nd5 Qe4 21.c4 g5 22.Bg3 Kh8 23.Qc3
+Bf8 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Novoa, Fernando"]
+[Black "Velasco, Ricardo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2044"]
+[BlackElo "2008"]
+[PlyCount "53"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3 dxc4 6.Qxc4 O-O 7.e4 Na6 8.Be2 c5 9.d5
+e6 10.Bg5 exd5 11.exd5 b5 12.Qxb5 Rb8 13.Qa4 Qb6 14.O-O Qxb2 15.Rab1 Qxc3 16.Bd2
+Bd7 17.Qxa6 Qc2 18.Rxb8 Rxb8 19.Qxa7 Re8 20.Rc1 Qb2 21.Bd3 Rb8 22.Rb1 Qxb1+
+23.Bxb1 Rxb1+ 24.Be1 Bg4 25.Kf1 Bf8 26.Ne5 Nd7 27.Nxg4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Barros Rivadeneira, Cristhian"]
+[Black "Fonseca Manrique, Enrique"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "1915"]
+[PlyCount "69"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Bg5 a6 8.Na3 b5
+9.Nd5 Be7 10.Bxf6 Bxf6 11.c3 Ne7 12.Nc2 Bb7 13.Nce3 Bg5 14.Nxe7 Bxe3 15.Nd5 Ba7
+16.Qd3 O-O 17.f3 Bxd5 18.Qxd5 Qg5 19.Qd2 Be3 20.Qd3 f5 21.exf5 Rae8 22.Qe4 d5
+23.Qxd5+ Kh8 24.Qe4 Rd8 25.Rd1 Rxd1+ 26.Kxd1 Rd8+ 27.Kc2 Bc1 28.f4 Bxf4 29.Bd3
+Qf6 30.g3 Bh6 31.Re1 Re8 32.h4 Kg8 33.a4 bxa4 34.Qxa4 Ra8 35.Qa5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Diaz Herrera, Leider Andres"]
+[Black "Sosa, Tomas"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1942"]
+[BlackElo "2075"]
+[PlyCount "38"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.f3 e5 7.Nb3 Be7 8.Be3 O-O
+9.Qd2 a5 10.Na4 Be6 11.Bb6 Qb8 12.c4 Nd7 13.Be3 Rc8 14.Rc1 b6 15.Be2 Nb4 16.a3
+Na2 17.Ra1 b5 18.Rxa2 bxa4 19.Nxa5 Bd8 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Rojas Menor, Walter Alejandro"]
+[Black "Gontijo Chiari, Arthur"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1900"]
+[BlackElo "2034"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Nf3 e6 3.Bf4 c5 4.c3 b6 5.Nbd2 Bb7 6.e3 Be7 7.Bd3 d5 8.O-O O-O 9.h3
+Nc6 10.Qe2 Bd6 11.Be5 Bxe5 12.Nxe5 Nxe5 13.dxe5 Nd7 14.f4 f6 15.Qh5 f5 16.Kh2
+Qe8 17.Qh4 Qd8 18.Qh5 Qe8 19.Qh4 Qd8 20.Qf2 Qe7 21.Rg1 Kh8 22.g4 fxg4 23.Rxg4
+Nxe5 24.Qe2 Nxg4+ 25.Qxg4 e5 26.Qh5 e4 27.Be2 d4 28.Nc4 dxe3 29.Ne5 Qf6 30.Re1
+Rad8 31.Bc4 Rd2+ 32.Kg1 e2 33.Rc1 Rd1+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Posada, Juan Manuel"]
+[Black "Leon Magallanes, Isaac"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2023"]
+[BlackElo "1929"]
+[PlyCount "61"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.Nc3 Bb4 3.Nd5 Ba5 4.g3 c6 5.Nc3 Nf6 6.Bg2 O-O 7.Nf3 e4 8.Nd4 d5 9.cxd5
+cxd5 10.O-O Bb6 11.Nb3 Re8 12.d3 Nc6 13.Bg5 Bf5 14.Bxf6 Qxf6 15.a4 Qd8 16.d4 Be6
+17.Qd2 Rc8 18.Rad1 Na5 19.Nc5 Bxc5 20.dxc5 Nb3 21.Qf4 Nxc5 22.b4 Na6 23.Nxe4 Rc4
+24.Qd2 Nxb4 25.Ng5 Nc6 26.e4 dxe4 27.Qb2 Qxg5 28.Qxb7 Qe7 29.Qb5 Rb8 30.Qh5 Rxa4
+31.Rc1 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Blandon, Luis Guillermo"]
+[Black "Valenzuela Martinez, Hermes"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1974"]
+[BlackElo "1823"]
+[PlyCount "81"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 f6 6.Bd3 cxd4 7.cxd4 Bb4+ 8.Nc3 f5 9.O-O
+Nge7 10.Ne2 Ng6 11.g3 O-O 12.h4 Be7 13.a3 Bd7 14.Be3 Rc8 15.b4 a6 16.Qd2 Be8
+17.Kg2 h5 18.Nfg1 Ncxe5 19.dxe5 Nxe5 20.Nd4 Bd7 21.Ngf3 Ng4 22.Bf4 Bf6 23.Rae1
+Qb6 24.Bb1 Rfe8 25.Be5 Rc4 26.Bxf6 gxf6 27.Ba2 Rc7 28.Nxf5 Bb5 29.Nh6+ Nxh6
+30.Qxh6 Bxf1+ 31.Kxf1 Rg7 32.Qxf6 Rf7 33.Qg6+ Kf8 34.Qxh5 Rd8 35.Kg2 a5 36.bxa5
+Qb2 37.Rxe6 Rc8 38.Bxd5 Rc2 39.Qh6+ Qg7 40.Qxg7+ Rxg7 41.Ne5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Gonzalez, Andres Felipe"]
+[Black "Gotz, Klaus Seiji Furucho"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1962"]
+[BlackElo "1909"]
+[PlyCount "122"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Qxd4 Nc6 5.Bb5 Bd7 6.Bxc6 bxc6 7.c4 c5 8.Qd2 Nf6
+9.Nc3 g6 10.b3 Bg7 11.Bb2 O-O 12.O-O Ng4 13.Nd5 Bxb2 14.Qxb2 e6 15.Nc3 Bc6
+16.Rad1 Qe7 17.h3 Nf6 18.e5 dxe5 19.Nxe5 Qb7 20.f3 h5 21.Qf2 Rac8 22.Rd2 Qe7
+23.Rfd1 Rc7 24.Qg3 Rfc8 25.Rd6 Kg7 26.Nxc6 Rxc6 27.Rxc6 Rxc6 28.Qe5 Kh7 29.Nb5
+a6 30.Nc3 Nd7 31.Qe3 Rd6 32.Rxd6 Qxd6 33.Ne4 Qe5 34.Ng5+ Kg7 35.Qxe5+ Nxe5
+36.Ne4 Nd7 37.Kf2 f5 38.Nd6 Kf6 39.Ne8+ Ke5 40.Nc7 Nb8 41.Na8 Kd6 42.Nb6 Nc6
+43.Na4 e5 44.Ke3 Nb4 45.Nc3 a5 46.g4 hxg4 47.hxg4 Ke6 48.Na4 Kd6 49.Nc3 Nc2+
+50.Kf2 Kc6 51.gxf5 gxf5 52.Nd5 Nb4 53.Ne7+ Kd7 54.Nxf5 Nxa2 55.Ke3 Nc1 56.Ke4
+Ke6 57.Ng7+ Kf6 58.Ne8+ Ke6 59.Nc7+ Kd6 60.Nb5+ Ke6 61.Nc7+ Kf6 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Roman Sanchez, Wilder Xavier"]
+[Black "Fuentes Parra, Victor Ignacio"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1978"]
+[PlyCount "98"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.g3 Nbd7 6.cxd5 exd5 7.Bg2 Bd6 8.O-O O-O
+9.Re1 Re8 10.Nh4 Nf8 11.e4 dxe4 12.Nxe4 Nxe4 13.Bxe4 Be6 14.Bd2 Be7 15.Nf3 Bf6
+16.Bc3 Bd5 17.Nd2 Ne6 18.Qg4 Ng5 19.h4 Nxe4 20.Nxe4 Bxe4 21.Rxe4 Rxe4 22.Qxe4
+Qd7 23.Re1 Rd8 24.a3 h6 25.Rd1 Qd5 26.Qxd5 Rxd5 27.Rd2 c5 28.dxc5 Rxd2 29.Bxd2
+Bxb2 30.a4 Bd4 31.Bb4 f6 32.Kg2 Kf7 33.g4 Ke6 34.f3 Kd5 35.c6 bxc6 36.Bf8 f5
+37.gxf5 c5 38.Kg3 Bf6 39.Kg4 c4 40.Kh5 c3 41.Kg6 c2 42.Ba3 Kc4 43.Bc1 Bd4 44.h5
+Kd3 45.a5 a6 46.Kf7 Ke2 47.f6 Bxf6 48.Bxh6 gxh6 49.Kxf6 Kxf3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Parra, Brayan"]
+[Black "Sanchez, Sandoval Gonzalo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1797"]
+[BlackElo "1965"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.c3 Nf6 4.h3 Nc6 5.Bd3 g6 6.O-O Bg7 7.Re1 O-O 8.Bf1 Qc7 9.d4
+e5 10.Na3 a6 11.Nc2 h6 12.a4 g5 13.Rb1 Ne7 14.b4 b6 15.Na3 Bb7 16.Bd3 Ng6 17.g3
+Qd7 18.Kg2 g4 19.hxg4 Qxg4 20.Qe2 Nh5 21.Kh2 Bc8 22.bxc5 Qh3+ 23.Kg1 Bg4 24.d5
+Nhf4 25.Qf1 Bxf3 26.Qxh3 Nxh3+ 27.Kf1 bxc5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Armas Lopes, Victor"]
+[Black "Diaz, Cristian Camilo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1964"]
+[PlyCount "64"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 d6 3.d4 Nf6 4.Bd3 Nc6 5.Ne2 g6 6.O-O Bg7 7.h3 O-O 8.Be3 Nd7 9.Bb5
+e5 10.dxc5 dxc5 11.Bxc6 bxc6 12.Re1 Qc7 13.Qc2 Rd8 14.c4 Qb6 15.b3 Nf8 16.Nbc3
+Ne6 17.Na4 Qa5 18.Qc3 Qxc3 19.Nexc3 Rd3 20.Rac1 Bf8 21.f3 Ba6 22.Kf2 Rad8
+23.Rcd1 Rxd1 24.Rxd1 Nd4 25.Ne2 f6 26.Bc1 f5 27.exf5 gxf5 28.Ba3 Bh6 29.Bxc5
+Be3+ 30.Kf1 Rd7 31.Bxd4 Bc8 32.Nc5 Rd6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Mayorquin, Nicolas"]
+[Black "Cisneros Avendano, Diego"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1889"]
+[BlackElo "1813"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Qc7 7.Qg4 f5 8.Qg3 cxd4
+9.cxd4 Ne7 10.c3 O-O 11.Ne2 Ng6 12.h4 Rf7 13.h5 Nf8 14.Nf4 b6 15.a4 Ba6 16.Bxa6
+Nxa6 17.Ba3 Qc6 18.O-O Rc8 19.Rfc1 Nb8 20.Bd6 Qe8 21.Rc2 Nc6 22.Re2 Rb7 23.Rae1
+Nd8 24.Qf3 Qc6 25.Re3 Nf7 26.Ba3 Ng5 27.Qg3 h6 28.f3 Qxa4 29.Bxf8 Kxf8 30.Ng6+
+Kg8 31.Qh4 Qe8 32.g4 f4 33.Rd3 Qb5 34.Red1 Qb3 35.Qe1 Rbc7 36.Qd2 Rf7 37.Rc1 Qc4
+38.Rb1 b5 39.Rb4 Qc6 40.Qb2 Rb8 41.Qa3 a6 42.Kg2 Qb6 43.Rb2 Qc6 44.Ne7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Hernandez Amura, Gilberto"]
+[Black "Palacios Llancari, Jose Wilfred"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1864"]
+[BlackElo "0"]
+[PlyCount "58"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 e6 4.Bxc6 bxc6 5.d3 Nf6 6.e5 Nd5 7.c4 Nb6 8.O-O Be7
+9.Nc3 O-O 10.Be3 f6 11.exf6 Bxf6 12.Bxc5 d6 13.Be3 d5 14.c5 Nd7 15.d4 Rb8 16.Rb1
+e5 17.dxe5 Nxe5 18.Nxe5 Bxe5 19.Bd4 Bf6 20.b4 Bf5 21.Rb2 a5 22.a3 axb4 23.axb4
+Re8 24.f3 Be5 25.Bxe5 Rxe5 26.Ne2 d4 27.Nxd4 Rd5 28.Qb3 Qf6 29.Nxf5 Qxf5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Paredes Lagos, Anthony Javier"]
+[Black "Gomez, Cristian David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1730"]
+[BlackElo "1955"]
+[PlyCount "81"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 c5 2.g3 g6 3.Bg2 Bg7 4.Nc3 Nc6 5.e3 d6 6.Nge2 e5 7.a3 f5 8.d3 Nf6 9.Nd5 O-O
+10.O-O Be6 11.Nec3 Rc8 12.Rb1 Bxd5 13.Nxd5 Nxd5 14.Bxd5+ Kh8 15.b4 cxb4 16.axb4
+Rc7 17.Qa4 Qb8 18.b5 Ne7 19.Bg2 Rd8 20.b6 axb6 21.Rxb6 d5 22.Ba3 Nc8 23.Re6 Bf8
+24.Bxf8 Rxf8 25.Qb4 Rcf7 26.Bxd5 Rf6 27.Rxf6 Rxf6 28.Qxb7 Qxb7 29.Bxb7 Ne7
+30.Rb1 Rd6 31.Rb3 Ng8 32.c5 Rd8 33.c6 Ne7 34.Ra3 Kg7 35.c7 Rf8 36.Ra8 Rxa8
+37.Bxa8 Kf6 38.Bb7 Ke6 39.c8=Q+ Nxc8 40.Bxc8+ Kd5 41.Kf1 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Pichot, Alan"]
+[Black "Cortez Olavarria, Victor Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2243"]
+[BlackElo "0"]
+[PlyCount "47"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 c6 6.Bc4 e6 7.Bd2 Qc7 8.a4 Nbd7
+9.O-O Bd6 10.Qe2 O-O 11.Rfe1 h6 12.Ne5 Nd5 13.Qh5 f5 14.Bxd5 exd5 15.Bf4 Nf6
+16.Qg6 Kh8 17.f3 b6 18.Rad1 Bxe5 19.dxe5 Nh7 20.Ne2 Qd7 21.Nd4 c5 22.e6 Qxa4
+23.Nxf5 Rg8 24.Be5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Moreno Lozano, David"]
+[Black "Cortez, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1931"]
+[BlackElo "0"]
+[PlyCount "37"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Bc4 d6 5.Nxd4 Nxd4 6.Qxd4 Be6 7.Nc3 Nf6 8.Bg5 Be7
+9.O-O-O O-O 10.Rhe1 h6 11.Bh4 Qd7 12.e5 Ne8 13.Nd5 Bxh4 14.Qxh4 b5 15.Ne7+ Kh7
+16.Bxe6 fxe6 17.Qe4+ Kh8 18.Ng6+ Kg8 19.Nxf8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Hernandez Torres, Alex Daniel"]
+[Black "Echavarria, Juan"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1926"]
+[BlackElo "0"]
+[PlyCount "55"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Bc4 Bg7 7.h3 Nc6 8.Be3 Bd7
+9.Qd3 Rc8 10.Bb3 h5 11.O-O-O Na5 12.Kb1 Nxb3 13.Nxb3 a5 14.Qd2 Rc6 15.Na4 Ra6
+16.Nb6 a4 17.Nxd7 Nxd7 18.Nc1 Nb6 19.Bd4 Bxd4 20.Qxd4 Rg8 21.e5 Nc8 22.Rhe1 b5
+23.Nd3 Qb6 24.Qxb6 Rxb6 25.exd6 Rxd6 26.Nb4 Kd8 27.c3 e6 28.Nd3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Bocanegra Acosta, Erick"]
+[Black "Castro, Jairo Antonio"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1896"]
+[PlyCount "59"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 Nc6 8.Qd2 O-O
+9.O-O-O Nxd4 10.Bxd4 Be6 11.Kb1 a6 12.g4 b5 13.h4 Qc7 14.h5 Rac8 15.Qh2 Rfd8
+16.hxg6 fxg6 17.Nd5 Bxd5 18.exd5 Rf8 19.Bd3 Rf7 20.Qh4 Kf8 21.Bxf6 Bxf6 22.g5
+Be5 23.f4 Bg7 24.Qg4 Bd4 25.Qe6 Bxb2 26.f5 Be5 27.fxg6 hxg6 28.Rdf1 Rf5 29.Rxf5+
+gxf5 30.g6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Gomez Vazquez, Carlos"]
+[Black "Torres Rojas, Yuber Andres"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2049"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 4.c3 Bd7 5.O-O Nf6 6.Re1 Be7 7.d4 exd4 8.cxd4 O-O
+9.Nc3 Bg4 10.Be3 d5 11.exd5 Nxd5 12.Bxc6 bxc6 13.h3 Bh5 14.g4 Bg6 15.Ne5 Nxc3
+16.bxc3 Qd6 17.Bf4 Bd8 18.Bg3 Qf6 19.Nd7 Qg5 20.Nxf8 Kxf8 21.h4 Qd5 22.h5 Be4
+23.Qe2 f5 24.gxf5 Qxf5 25.Qxe4 Qh3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Rodriguez, Barragan Luis E"]
+[Black "Suarez Pinto, Sergio Rafael"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1737"]
+[PlyCount "67"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.Nf3 Nf6 3.g3 c6 4.Bg2 Bf5 5.c4 e6 6.Qb3 Qc8 7.O-O Nbd7 8.Bf4 Be7 9.Nc3
+O-O 10.Ne5 Nxe5 11.Bxe5 Qd7 12.Rfe1 Rfd8 13.Rad1 h6 14.e4 dxe4 15.Nxe4 Bxe4
+16.Bxe4 Nxe4 17.Rxe4 b6 18.Ree1 Bd6 19.Qf3 Bxe5 20.dxe5 Qc7 21.Qf4 Rxd1 22.Rxd1
+Rd8 23.Rd6 c5 24.Qd2 Rxd6 25.exd6 Qd7 26.a3 Kf8 27.b4 Ke8 28.Qf4 f6 29.b5 Kf7
+30.Qd2 Ke8 31.Qd3 Qb7 32.Qg6+ Kf8 33.Qg4 f5 34.Qd1 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Torres Lopez-Yañez, Carlos David"]
+[Black "Arias Monsalve, Andres Felipe"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Be7 6.e5 Ng4 7.Re1 d6 8.e6 Bxe6
+9.Nxd4 Nxd4 10.Qxd4 Bf6 11.Qxg4 O-O 12.Bxe6 fxe6 13.Qxe6+ Kh8 14.Qc4 Re8
+15.Rxe8+ Qxe8 16.Nc3 Qe1+ 17.Qf1 Qxf1+ 18.Kxf1 Bxc3 19.bxc3 Re8 20.Be3 a6 21.Rb1
+b5 22.c4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Villar Saldana, Jhonatan Junior"]
+[Black "Martinez Baquero, Hugo  Esteban"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "65"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 e6 3.a3 c6 4.Nc3 Nf6 5.Bg5 Be7 6.Nf3 Nbd7 7.e3 O-O 8.Bd3 Qc7 9.O-O
+dxc4 10.Bxc4 b5 11.Bd3 a6 12.Qc2 h6 13.Bh4 Bb7 14.e4 e5 15.Rac1 Rac8 16.Rfe1
+Rfd8 17.dxe5 Nxe5 18.Nxe5 Qxe5 19.Bg3 Qd4 20.Rcd1 Qb6 21.Qe2 c5 22.e5 Nd5 23.Qe4
+g6 24.e6 Qxe6 25.Qxe6 fxe6 26.Rxe6 Nxc3 27.bxc3 Kf7 28.Rb6 Be4 29.Be2 Rxd1+
+30.Bxd1 Rd8 31.Bg4 Bf5 32.Bf3 Be4 33.Bg4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Rios Franco, Juan Pablo"]
+[Black "Ospina Escobar, Juan Pablo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1875"]
+[PlyCount "60"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 c6 3.Bf4 Nf6 4.Nc3 e6 5.a3 Nbd7 6.e3 c5 7.Nf3 cxd4 8.exd4 dxc4
+9.Qa4 Be7 10.Nb5 Nd5 11.Qxc4 O-O 12.Nc7 Nxc7 13.Bxc7 Qe8 14.Bd3 Nf6 15.O-O Bd7
+16.Be5 Nd5 17.Qc2 f5 18.Rfe1 Bb5 19.Qb3 Bxd3 20.Qxd3 Bf6 21.Bxf6 Nxf6 22.Ng5 Ne4
+23.Nxe4 fxe4 24.Qxe4 Rd8 25.Qxe6+ Qxe6 26.Rxe6 Rxd4 27.Re2 Rfd8 28.h3 Rd2
+29.Rxd2 Rxd2 30.b4 Rb2 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Agudelo, Pedro Luis"]
+[Black "Obando Guzman, Soren"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "71"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 d6 6.Be3 e5 7.Nxc6 bxc6 8.Qd2 Be7
+9.Bc4 O-O 10.O-O Be6 11.Bb3 d5 12.Bg5 d4 13.Bxf6 dxc3 14.Qxd8 Bxd8 15.Bxd8 Raxd8
+16.bxc3 Rd2 17.Rfd1 Rfd8 18.Rxd2 Rxd2 19.Kf1 Bxb3 20.cxb3 a5 21.Ke1 Rc2 22.c4 g6
+23.Kf1 a4 24.g3 Kg7 25.Kg2 Kf6 26.h4 h5 27.bxa4 Rxc4 28.a5 Ra4 29.Rc1 Rxa5
+30.Rxc6+ Kg7 31.Rc2 Ra4 32.Re2 Kf6 33.f4 Ke6 34.fxe5 Kxe5 35.Rf2 Kxe4 36.Rf4+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Roman Sanchez, Eduardo Zosimo"]
+[Black "Becerra, Manuel Santiago"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "75"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nd2 c5 4.c3 Qb6 5.Qb3 Nc6 6.Ngf3 Nf6 7.e5 Nd7 8.Bb5 Na5
+9.Bxd7+ Bxd7 10.Qxb6 axb6 11.O-O c4 12.b4 Nb3 13.Nxb3 cxb3 14.a3 Bb5 15.Re1 Bc4
+16.Rb1 Be7 17.g3 Kd7 18.Nd2 Bg5 19.f4 Be7 20.Nxb3 Bd3 21.Ra1 Rhc8 22.Bb2 g5
+23.Nc1 Bb5 24.Ne2 g4 25.Nc1 Rc7 26.Nb3 Rcc8 27.Nd2 h5 28.Kf2 h4 29.Rh1 h3 30.Nf1
+Re8 31.Ne3 Kc7 32.f5 Kd7 33.Ke1 Bd8 34.f6 Ra7 35.Rd1 Ra8 36.Rd2 Bc7 37.Rf2 Rg8
+38.Rf4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Gomez, Luis Miguel"]
+[Black "Yate Baron, Andres Steven"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "82"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Bg5 Bg7 7.Nf3 Bd7 8.Bc4 Qb6
+9.Rb1 O-O 10.O-O Nc6 11.Nd5 Qc5 12.Qd3 Rfe8 13.Bb5 Rac8 14.b4 Nxb4 15.Rxb4 Nxd5
+16.exd5 Bf5 17.Qc4 Qxc4 18.Rxc4 Rxc4 19.Bxc4 Bxc2 20.Rc1 Be4 21.Re1 f5 22.Bb5
+Rc8 23.Bxe7 Bxd5 24.Bxd6 Bf7 25.a4 a6 26.Be2 Re8 27.Kf1 Bb3 28.Bc4+ Bxc4+ 29.Kg1
+Rxe1+ 30.Nxe1 Bb3 31.Nd3 Bxa4 32.Nc5 Bc6 33.f4 Bf8 34.Bxf8 Kxf8 35.Kf2 Ke7
+36.Ke3 Kd6 37.Nb3 Ba4 38.Na5 Bc6 39.Kd3 Kc5 40.Nb3+ Kb4 41.Nd4 a5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Gonzalez L, Nicolas Mateo"]
+[Black "Villamil, Nahum Jose"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1839"]
+[PlyCount "69"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 Nf6 4.Nc3 cxd4 5.Nxd4 g6 6.Be3 Bg7 7.Be2 Nc6 8.O-O O-O
+9.Qd2 Ng4 10.Bxg4 Bxg4 11.Nxc6 bxc6 12.f4 Be6 13.f5 Bc4 14.Rf3 d5 15.Bh6 dxe4
+16.Nxe4 Qxd2 17.Nxd2 Bd5 18.Bxg7 Kxg7 19.Re3 Rab8 20.c4 Rxb2 21.cxd5 Rxd2
+22.dxc6 Rc2 23.Rxe7 Rxc6 24.fxg6 hxg6 25.Rxa7 Kh6 26.a4 Rc2 27.Rf1 f5 28.Rf2
+Rc1+ 29.Rf1 Rc2 30.Rf2 Rc3 31.h3 Re8 32.g4 fxg4 33.hxg4 Re4 34.Rg2 Ra3 35.g5+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "Valencia, Nicolas"]
+[Black "Carlos Inga, Augusto "]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.f4 Nc6 2.Nf3 d5 3.e3 Nf6 4.d4 Bg4 5.Nbd2 e6 6.Bd3 Bd6 7.O-O Qd7 8.Qe1 O-O-O
+9.Ne5 Qe8 10.h3 Bh5 11.a3 Bg6 12.b4 a6 13.Ndf3 Ne4 14.Nxc6 Qxc6 15.Ne5 Bxe5
+16.fxe5 Bf5 17.Rf3 g5 18.Qf1 Qd7 19.g4 Bg6 20.c4 h5 21.c5 hxg4 22.hxg4 Rh4
+23.Qg2 Rdh8 24.Kf1 Rh1+ 25.Ke2 R8h2 26.Qxh2 Rxh2+ 27.Kd1 Nc3+ 28.Ke1 Bxd3 29.Rg3
+0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "G, "]
+[Black "Rosero, Jefferson"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "31"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Nd5 Nxd5 8.exd5 Nb8
+9.c4 Be7 10.Be3 O-O 11.Bd3 a6 12.Nc3 f5 13.O-O Nd7 14.f3 Nc5 15.Be2 a5 16.b3 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "5"]
+[Board "1"]
+[White "M, "]
+[Black "Estevez, Carlos Ariel"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1825"]
+[PlyCount "76"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 c6 3.Nc3 Nf6 4.Bg5 e6 5.Nf3 Be7 6.e3 Nbd7 7.Qc2 O-O 8.Bd3 dxc4
+9.Bxc4 b5 10.Bd3 a6 11.O-O Bb7 12.Ne4 Nxe4 13.Bxe7 Qxe7 14.Bxe4 f5 15.Bd3 Rac8
+16.Qe2 c5 17.dxc5 Rxc5 18.a4 Rb8 19.axb5 axb5 20.Nd4 b4 21.Bc4 Nf8 22.f3 Rbc8
+23.b3 Bd5 24.Bxd5 Rxd5 25.Ra4 Ng6 26.Qa6 Rc3 27.Re1 Ne5 28.Rxb4 Nd3 29.Rb8+ Kf7
+30.Rd1 Nc5 31.Qc8 Rxb3 32.Qg8+ Kg6 33.Re8 Qf6 34.Re1 Rb2 35.Nxe6 Rdd2 36.Nf4+
+Kh6 37.Rb8 Rbc2 38.Ra1 Qxa1+ 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Ruiz C, Joshua D"]
+[Black "Novoa, Fernando"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2148"]
+[BlackElo "2044"]
+[PlyCount "113"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 d6 2.d4 Nf6 3.Nc3 e5 4.dxe5 dxe5 5.Qxd8+ Kxd8 6.Bc4 Ke8 7.Bd2 c6 8.Nf3 Bd6
+9.O-O-O Bc7 10.a3 Nbd7 11.Nh4 g6 12.h3 h6 13.Rhe1 Kf8 14.Kb1 Kg7 15.Bc1 a6
+16.Ba2 b5 17.Nf3 Re8 18.g4 Nh7 19.Ne2 Nc5 20.Ng3 a5 21.Be3 Ne6 22.Ne2 Nhf8
+23.Nc1 Nd7 24.Nd3 f6 25.h4 g5 26.h5 Bb6 27.Bxe6 Rxe6 28.Bxb6 Nxb6 29.Nc5 Re7
+30.Nh2 Nd7 31.Nxd7 Rxd7 32.Rxd7+ Bxd7 33.Rd1 Rd8 34.Nf1 Kf7 35.Ne3 Ke7 36.a4 Be6
+37.Rxd8 Kxd8 38.f3 Kd7 39.Kc1 Kd6 40.Kd2 Kc5 41.Kc3 b4+ 42.Kd3 Bc8 43.c3 Be6
+44.Kc2 Bd7 45.Ng2 Bc8 46.Ne1 Ba6 47.Kd2 Bc4 48.Nc2 bxc3+ 49.bxc3 Be6 50.Ne3 Bc8
+51.Kc2 Bd7 52.Kd3 Bc8 53.Nf5 Ba6+ 54.Kd2 Bc4 55.Nxh6 Be6 56.Nf5 Kc4 57.Ne7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Sosa, Tomas"]
+[Black "Cuellar, Diego"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2075"]
+[BlackElo "2109"]
+[PlyCount "31"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 a6 6.Bb3 d6 7.Nbd2 Ba7 8.Nf1 Be6 9.Ng3
+Qe7 10.Be3 O-O 11.O-O Rfd8 12.Re1 Bxe3 13.Rxe3 Na5 14.h3 g6 15.Ng5 Bxb3 16.axb3
+{ilegible} 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Leon Magallanes, Isaac"]
+[Black "Barros Rivadeneira, Cristhian"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1929"]
+[BlackElo "2049"]
+[PlyCount "44"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Bg5 g6 3.Bxf6 exf6 4.e3 Bg7 5.g3 O-O 6.Bg2 d5 7.Ne2 c6 8.O-O Be6
+9.Nd2 f5 10.c3 Nd7 11.b3 Nf6 12.Re1 Rc8 13.Rc1 b6 14.b4 Ne4 15.f3 Nd6 16.Nf4 Bh6
+17.Nd3 Re8 18.f4 Bf8 19.Bf3 f6 20.Nb2 Ne4 21.a3 Nxd2 22.Qxd2 b5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Gontijo Chiari, Arthur"]
+[Black "Blandon, Luis Guillermo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2034"]
+[BlackElo "1974"]
+[PlyCount "69"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d3 Bc5 5.O-O Nd4 6.Nxd4 Bxd4 7.c3 Bb6 8.d4 Qe7
+9.Bg5 c6 10.Bc4 h6 11.Bh4 d6 12.Bxf6 Qxf6 13.d5 O-O 14.Na3 Qg6 15.Qd3 Kh8
+16.dxc6 bxc6 17.Rad1 Bg4 18.Rd2 Rad8 19.Kh1 f5 20.exf5 Bxf5 21.Qg3 Qxg3 22.hxg3
+d5 23.Bb3 d4 24.Nc4 Bc7 25.Re1 dxc3 26.Rxd8 Rxd8 27.bxc3 e4 28.Bc2 Re8 29.Kh2
+Re6 30.Rd1 Rf6 31.Ne3 Be6 32.Bxe4 Rxf2 33.Bxc6 Rxa2 34.Bd5 Bc8 35.Bxa2 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Velasco, Ricardo"]
+[Black "Mayorquin, Nicolas"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2008"]
+[BlackElo "1889"]
+[PlyCount "94"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bc4 e6 7.Bb3 Qc7 8.g4 b5 9.g5
+b4 10.Ncb5 axb5 11.gxf6 gxf6 12.Qh5 Qc5 13.Qxc5 dxc5 14.Nxb5 Ra5 15.c4 Bd7
+16.Be3 Bxb5 17.cxb5 Nd7 18.Bc4 Nb6 19.Be2 b3 20.a3 Na4 21.Rb1 f5 22.exf5 Bg7
+23.Bc1 exf5 24.Rg1 Bd4 25.Rg3 Kd7 26.Rxb3 Re8 27.Kf1 Nb6 28.Bd2 Ra4 29.Rh3 Nc4
+30.Bc1 Nd6 31.Rxh7 Ne4 32.Bf3 Ke6 33.Bxe4 fxe4 34.b3 Ra5 35.a4 c4 36.Bd2 c3
+37.Be3 Bxe3 38.fxe3 Rd8 39.Rc1 Rd3 40.Kf2 Ra8 41.Rc2 Rad8 42.Kg3 Rxe3+ 43.Kf4
+Red3 44.h4 f5 45.Rh6+ Kd5 46.Kg5 Rg3+ 47.Kf4 Rdg8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Fuentes Parra, Victor Ignacio"]
+[Black "Hernandez Amura, Gilberto"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1978"]
+[BlackElo "1864"]
+[PlyCount "64"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nf3 e6 6.cxd4 d6 7.Nc3 Nxc3 8.bxc3 Qc7
+9.Qc2 Nc6 10.exd6 Bxd6 11.Bd3 b6 12.Bxh7 Bb7 13.Bd3 O-O-O 14.h3 Na5 15.Rb1 Bxf3
+16.gxf3 Kb8 17.Ba6 e5 18.d5 Bc5 19.c4 Rhe8 20.Bb5 Re7 21.Qe4 Nb7 22.Bc6 Na5
+23.Bb5 Bd4 24.Qd3 Qd6 25.Be3 Bc5 26.Bxc5 Qxc5 27.O-O Rd6 28.Ba6 Rg6+ 29.Kh2 Qd6
+30.Qe3 Nb7 31.Bxb7 Rxb7 32.Rg1 Rxg1 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Sanchez, Sandoval Gonzalo"]
+[Black "Paredes Lagos, Anthony Javier"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1965"]
+[BlackElo "1730"]
+[PlyCount "65"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5 Nfd7 5.Nce2 c5 6.f4 Nc6 7.Nf3 Qb6 8.c3 h6 9.a3 c4
+10.g4 h5 11.gxh5 Rxh5 12.f5 Na5 13.fxe6 fxe6 14.Ng3 Rh8 15.Ng5 Be7 16.Nh5 Rg8
+17.Bh3 Nf8 18.O-O Nc6 19.Kh1 Bd7 20.Nf7 Nd8 21.Qf3 Bc8 22.Nxd8 Kxd8 23.Qf7 Rh8
+24.Qxg7 Rxh5 25.Rxf8+ Kd7 26.Rf7 Rxh3 27.Rxe7+ Kc6 28.Qg4 Rd3 29.Re8 Kd7 30.Rf8
+Qb3 31.Bg5 Qxb2 32.Raf1 Qb6 33.Rd8+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Fonseca Manrique, Enrique"]
+[Black "Gonzalez, Andres Felipe"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1915"]
+[BlackElo "1962"]
+[PlyCount "89"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 g6 3.f4 Bg7 4.Nf3 Nc6 5.Bb5 Nd4 6.O-O Nxb5 7.Nxb5 d5 8.exd5 a6
+9.Nc3 Nf6 10.d4 c4 11.Qe2 b5 12.a4 b4 13.Na2 a5 14.Qxc4 O-O 15.Re1 Nxd5 16.c3
+Be6 17.Ng5 Nxf4 18.Nxe6 Nxe6 19.d5 Rc8 20.Qb3 Nc5 21.Qc4 b3 22.Be3 bxa2 23.Bxc5
+Qc7 24.b4 axb4 25.cxb4 Bxa1 26.Rxa1 Qe5 27.Rxa2 Rfd8 28.Re2 Qa1+ 29.Kf2 Qxa4
+30.Rxe7 Rd7 31.d6 Rxe7 32.dxe7 Qe8 33.Qh4 h5 34.Qf4 Rc6 35.Qd4 Rc8 36.Qe5 Rc6
+37.Qd5 Kg7 38.Qd8 Rc8 39.Qxe8 Rxe8 40.b5 f5 41.b6 Kf7 42.Bd6 Ke6 43.Bc7 Kd7
+44.Bd8 Kc6 45.h4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Gotz, Klaus Seiji Furucho"]
+[Black "Armas Lopes, Victor"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1909"]
+[BlackElo "0"]
+[PlyCount "85"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Bf4 Nc6 5.Nf3 Bb4+ 6.Nbd2 Qe7 7.e3 Ngxe5 8.Nxe5
+Nxe5 9.Be2 O-O 10.O-O d6 11.Nb3 b6 12.Nd4 Bc5 13.a3 Bxd4 14.Qxd4 Bb7 15.b4 Ng6
+16.Bg3 Rad8 17.Rfd1 Rfe8 18.Rac1 Nf8 19.Qb2 Ne6 20.Bd3 Ra8 21.f3 a5 22.e4 Qg5
+23.Bf1 axb4 24.axb4 Qe3+ 25.Bf2 Qa3 26.Rd2 Ra4 27.c5 dxc5 28.Bb5 Rea8 29.Bxa4
+Qxa4 30.bxc5 b5 31.c6 Bc8 32.h3 h6 33.Rb1 Rb8 34.Rc2 Ra8 35.Rcc1 Qa2 36.Qxa2
+Rxa2 37.Ra1 Ra4 38.Rxa4 bxa4 39.Ra1 Ba6 40.Rxa4 Bb5 41.Ra7 Bxc6 42.Bg3 Nd4
+43.Rxc7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Pichot, Alan"]
+[Black "Estevez, Carlos Ariel"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2243"]
+[BlackElo "1825"]
+[PlyCount "63"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.h3 d6 9.c3
+Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 Bd7 13.d5 Rac8 14.Qe2 Nb7 15.b3 h6 16.c4 b4
+17.Nf1 Rfe8 18.Ng3 Kh7 19.Nh2 Bf8 20.Qf3 Qd8 21.Ng4 Nxg4 22.hxg4 f6 23.Nf5 Bxf5
+24.gxf5 Qd7 25.g4 Nd8 26.Qh3 Qf7 27.g5 Qg8 28.Re3 Qh8 29.Rg3 Kg8 30.gxf6 Nf7
+31.fxg7 Bxg7 32.f6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Bocanegra Acosta, Erick"]
+[Black "Posada, Juan Manuel"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2023"]
+[PlyCount "142"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.O-O-O Nxd4 10.Bxd4 Be6 11.Kb1 Qc7 12.g4 Rfc8 13.h4 Qa5 14.Nd5 Qxd2 15.Nxf6+
+Bxf6 16.Rxd2 Kg7 17.Bxf6+ Kxf6 18.Rd4 h6 19.Be2 Ke5 20.c3 g5 21.Rb4 b6 22.h5 Rc5
+23.a3 Rac8 24.Kc2 Kf4 25.Kd2 Bc4 26.Bxc4 Rxc4 27.Rxc4 Rxc4 28.Ke2 b5 29.Rd1 a5
+30.Rd5 Rc5 31.Rd4 Ke5 32.Kd3 e6 33.b4 axb4 34.axb4 Rc6 35.c4 Ra6 36.cxb5 Ra3+
+37.Kc4 Ra8 38.Rd3 Rc8+ 39.Kb3 Rb8 40.Kc4 Rc8+ 41.Kb3 f6 42.b6 Rb8 43.Ka4 Rxb6
+44.Ka5 Rb8 45.b5 d5 46.exd5 exd5 47.Ka6 Rc8 48.Kb7 Rc1 49.b6 d4 50.Kb8 Kd5
+51.Ra3 Kc4 52.b7 d3 53.Ka8 Rb1 54.b8=Q Rxb8+ 55.Kxb8 d2 56.Ra1 Kd3 57.Kc7 Ke2
+58.Ra2 Ke1 59.Ra1+ d1=Q 60.Rxd1+ Kxd1 61.Kd6 Ke2 62.Ke6 Kxf3 63.Kxf6 Kxg4 64.Kg6
+Kf4 65.Kxh6 g4 66.Kg7 g3 67.h6 g2 68.h7 g1=Q+ 69.Kf7 Qa7+ 70.Kg8 Kg5 71.h8=N Kf6
+0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Valenzuela Martinez, Hermes"]
+[Black "Diaz Herrera, Leider Andres"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1823"]
+[BlackElo "1942"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.Nf3 c6 3.Bg5 Nf6 4.e3 Bf5 5.Bd3 Bg6 6.Bxg6 fxg6 7.Nbd2 e6 8.Ne5 Bd6
+9.f4 Nbd7 10.c3 Qb6 11.Qc2 O-O 12.O-O Rac8 13.b4 Qc7 14.Rf3 Be7 15.Raf1 Qd8
+16.g4 Qe8 17.h3 Ra8 18.Rg3 Nxe5 19.dxe5 Nd7 20.Nf3 c5 21.a3 a5 22.e4 Nb6 23.exd5
+axb4 24.axb4 Nxd5 25.Bxe7 Qxe7 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Roman Sanchez, Wilder Xavier"]
+[Black "Moreno Lozano, David"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1931"]
+[PlyCount "68"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 Be7 6.e3 Bf5 7.Qb3 b6 8.Bxf6 Bxf6
+9.Nxd5 O-O 10.Nxf6+ Qxf6 11.Bd3 Qg6 12.O-O-O Bxd3 13.Qxd3 Qxg2 14.Ne2 Nd7
+15.Rhg1 Qc6+ 16.Kb1 Nf6 17.Nc3 Rad8 18.Qb5 Qd6 19.Qg5 Ne8 20.Ne4 f6 21.Qh4 Qe6
+22.Rg3 c5 23.Nc3 cxd4 24.exd4 Rf7 25.Qf4 Qd6 26.Ne2 Rfd7 27.Qg4 Qe7 28.Re3 Qf7
+29.Ng3 Nc7 30.Nf5 Kf8 31.Rde1 Re8 32.Rxe8+ Nxe8 33.Qf4 Qd5 34.f3 Nd6 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Torres Lopez-Yañez, Carlos David"]
+[Black "Rojas Menor, Walter Alejandro"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1900"]
+[PlyCount "62"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 g6 2.d4 Bg7 3.Nc3 c6 4.Nf3 d5 5.e5 h5 6.Be3 Bf5 7.Bd3 Nh6 8.Qd2 Bxd3 9.Bxh6
+Bxh6 10.Qxd3 e6 11.Ne2 Nd7 12.Qb3 Nb6 13.a4 a5 14.Qd3 Qc7 15.b3 O-O-O 16.O-O g5
+17.b4 g4 18.Nd2 Bxd2 19.Qxd2 Nc4 20.Qc3 Kd7 21.Rfb1 b6 22.Qg3 Kc8 23.bxa5 Nxa5
+24.Qf4 Nc4 25.Rb3 Qe7 26.Nc3 Kc7 27.Nb1 Ra8 28.Nd2 b5 29.Nxc4 dxc4 30.Rba3 Ra5
+31.f3 Rg8 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Diaz, Cristian Camilo"]
+[Black "Rodriguez, Barragan Luis E"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1964"]
+[BlackElo "0"]
+[PlyCount "60"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 g6 5.c4 Nb6 6.Nc3 Bg7 7.Be2 Nc6 8.exd6 cxd6
+9.O-O O-O 10.Bf4 e5 11.Bg5 f6 12.Be3 Bg4 13.dxe5 dxe5 14.Qxd8 Rfxd8 15.Bxb6 axb6
+16.Nd5 e4 17.Nd4 Nxd4 18.Bxg4 f5 19.Bd1 b5 20.Nc7 Rac8 21.Nxb5 Nxb5 22.cxb5 Bxb2
+23.Rb1 Bd4 24.Bb3+ Kg7 25.g3 e3 26.fxe3 Bxe3+ 27.Kg2 Rd2+ 28.Kf3 Bb6 29.Kf4 Rc3
+30.Rh1 Kf6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Duran, Mateo Andres"]
+[Black "Gonzalez L, Nicolas Mateo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1879"]
+[BlackElo "0"]
+[PlyCount "83"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e6 5.b3 Nf6 6.Nxc6 bxc6 7.Bd3 Bc5 8.Bb2 O-O
+9.O-O d5 10.e5 Nd7 11.Kh1 f6 12.exf6 Nxf6 13.Qe2 Bd6 14.Nd2 Qc7 15.h3 e5 16.c3
+a5 17.a3 e4 18.Bb1 Ba6 19.c4 Be5 20.Bxe5 Qxe5 21.Ba2 d4 22.Rfe1 Rfe8 23.Qd1 Rad8
+24.Nf1 Qc5 25.Bb1 d3 26.Re3 Qd4 27.Ra2 a4 28.bxa4 Bxc4 29.Rd2 Nd5 30.Rg3 Nc3
+31.Qe1 Rb8 32.Bc2 Rb2 33.Rgxd3 Bxd3 34.Rxd3 Qxf2 35.Qxf2 exd3 36.Qd4 Rxc2
+37.Qxd3 Ree2 38.Ne3 Red2 39.Qc4+ Kf8 40.Nxc2 Rxc2 41.Qc5+ Ke8 42.Qxc6+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Cisneros Avendano, Diego"]
+[Black "Garcia Talledo, Gonzalo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1813"]
+[BlackElo "0"]
+[PlyCount "41"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 c5 4.d5 Bxc3+ 5.bxc3 f5 6.Bf4 d6 7.h4 Nf6 8.e3 Qa5 9.Qc2
+Nbd7 10.Nf3 Nb6 11.Nd2 Bd7 12.Be2 O-O-O 13.f3 Qa4 14.Qb3 h6 15.O-O-O Qa5 16.Kb2
+Qa6 17.Qa3 Na4+ 18.Kc2 Nxd5 19.cxd5 Qxe2 20.c4 Nb6 21.Kc3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Rodriguez Velasco, German Enrique"]
+[Black "Gomez Vazquez, Carlos"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2014"]
+[BlackElo "0"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.Bc4 Bd7 10.Bb3 Rc8 11.O-O-O Ne5 12.h4 Nc4 13.Bxc4 Rxc4 14.g4 a6 15.h5 b5
+16.hxg6 fxg6 17.Nd5 Nxd5 18.exd5 Bxd4 19.Bxd4 Rxf3 20.Qh6 Rf7 21.Qxg6+ Kf8
+22.Rxh7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Gomez, Cristian David"]
+[Black "Cortez, "]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1955"]
+[BlackElo "0"]
+[PlyCount "42"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.e5 Ng8 7.cxd4 Bb4+ 8.Nc3 d5
+9.Bb5 Nge7 10.Bg5 O-O 11.Bxc6 bxc6 12.O-O Ba6 13.Re1 Qd7 14.e6 fxe6 15.Ne5 Qe8
+16.a3 Bd6 17.Bxe7 Bxe7 18.Qg4 Bd6 19.Nf3 Rf6 20.Qg5 Bc8 21.h3 h6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Suarez Pinto, Sergio Rafael"]
+[Black "M, "]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1737"]
+[BlackElo "0"]
+[PlyCount "53"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be2 e6 7.O-O Be7 8.Kh1 Qc7 9.f4
+b5 10.a3 Bb7 11.Bf3 O-O 12.Be3 Nbd7 13.Nb3 Rfd8 14.Qe2 Rac8 15.Rad1 Nf8 16.Qf2
+N6d7 17.Rd2 Bf6 18.Bd4 Ng6 19.g3 Bxd4 20.Rxd4 e5 21.fxe5 dxe5 22.Rd2 Nf6 23.Rfd1
+Ba8 24.Kg2 h5 25.h3 Rxd2 26.Rxd2 Rd8 27.h4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Roman Sanchez, Eduardo Zosimo"]
+[Black "Agudelo, Pedro Luis"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "79"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 d5 6.exd5 Nxd5 7.b4 Bb6 8.Qb3 Be6
+9.Ng5 a5 10.Nxe6 fxe6 11.b5 a4 12.Qc2 Nce7 13.O-O O-O 14.Bg5 Rf5 15.Bh4 Qd7
+16.Nd2 g5 17.Bg3 h5 18.Rae1 Raf8 19.Nb1 Ng6 20.d4 exd4 21.cxd4 h4 22.Be5 Nxe5
+23.Rxe5 Bxd4 24.Rxf5 Rxf5 25.Qxa4 Nb6 26.Bxe6+ Qxe6 27.Qxd4 Nd5 28.a4 Nf4
+29.Qd8+ Kg7 30.Qxc7+ Rf7 31.Qc3+ Kg8 32.Kh1 h3 33.gxh3 Qe4+ 34.f3 Qe2 35.Rg1
+Nxh3 36.Qc8+ Kg7 37.Qxh3 Rxf3 38.Rxg5+ Kf6 39.Qh6+ Kf7 40.Qg7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Arias Monsalve, Andres Felipe"]
+[Black "Rosero, Jefferson"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "48"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.d3 Bg7 5.Bg2 e6 6.Nge2 Nge7 7.Be3 d6 8.Qd2 Nd4 9.f4
+Qa5 10.O-O Nec6 11.a3 Rb8 12.Rae1 O-O 13.Nc1 b5 14.e5 b4 15.Bxd4 Nxd4 16.N3e2
+dxe5 17.axb4 cxb4 18.fxe5 Qxe5 19.c3 bxc3 20.bxc3 Nf5 21.Qa2 Bb7 22.Qxa7 Bxg2
+23.Nf4 Qxc3 24.Nxg2 Bd4+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Yate Baron, Andres Steven"]
+[Black "Ospina Escobar, Juan Pablo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1875"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Nb3 d6 7.Be3 Nf6 8.Qd2 Ng4
+9.O-O-O Nxe3 10.Qxe3 O-O 11.Be2 Be6 12.Nd5 Rc8 13.Bd3 Ne5 14.h3 Bxd5 15.exd5
+Nxd3+ 16.Qxd3 Qb6 17.Qe2 Rc7 18.Rhf1 a5 19.Qe4 Bf6 20.Qe3 Qb4 21.Qd2 Rfc8 22.c3
+Qb6 23.Qe3 Rxc3+ 24.bxc3 Rxc3+ 25.Qxc3 Bxc3 26.Rd3 Bf6 27.Kd1 a4 28.Nc1 Bd4
+29.Rd2 Bb2 30.Nd3 Bc3 31.Rc2 Qd4 32.Rxc3 Qxc3 33.Ke2 Qc2+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Villamil, Nahum Jose"]
+[Black "Rios Franco, Juan Pablo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1839"]
+[BlackElo "0"]
+[PlyCount "53"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 g6 6.Be3 b5 7.Nd5 e6 8.Nxc6 dxc6
+9.Bb6 Qd7 10.Nc7+ Ke7 11.Bc5+ Kd8 12.Bxf8 Kxc7 13.Bg7 Qe7 14.Bxh8 f6 15.e5 fxe5
+16.Bxe5+ Kb6 17.Qd4+ Kb7 18.O-O-O c5 19.Qe4+ Kb6 20.Rd6+ Ka7 21.Qc6 Rb8 22.Qxc5+
+Ka8 23.Rc6 Qxc5 24.Rxc5 Rb7 25.Rxc8+ Ka7 26.Bd4+ Rb6 27.Rxg8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Torres Rojas, Yuber Andres"]
+[Black "Gomez, Luis Miguel"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "0"]
+[PlyCount "51"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bc4 Bc5 5.d3 d6 6.Bg5 Be6 7.Bd5 Bd7 8.h3 Qe7 9.Bb3
+Be6 10.Bd5 Qd7 11.Bxf6 gxf6 12.a3 f5 13.exf5 Bxf5 14.b4 Bb6 15.Ne4 Bxe4 16.dxe4
+O-O-O 17.c3 Rdf8 18.a4 a6 19.b5 Ne7 20.bxa6 bxa6 21.a5 Ba7 22.Rb1 c6 23.Bc4 Kd8
+24.Bxa6 d5 25.Rb7 Qe6 26.Rxa7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Becerra, Manuel Santiago"]
+[Black "Valencia, Nicolas"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "53"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 b6 2.d3 Bb7 3.Nd2 d6 4.Ngf3 Nd7 5.g3 e5 6.Bh3 g6 7.O-O Bg7 8.Re1 Ne7 9.Nf1
+Nf6 10.Bd2 O-O 11.Ne3 h6 12.Bg2 g5 13.h4 Nh7 14.hxg5 hxg5 15.Ng4 f5 16.Ngh2 f4
+17.Ng4 d5 18.Nfxe5 Bxe5 19.Nxe5 dxe4 20.dxe4 Qd6 21.Bc3 Rad8 22.Qh5 fxg3 23.fxg3
+Qc5+ 24.Kh2 Qf2 25.Ng6 Qf7 26.Nxe7+ Qxe7 27.Qg6+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Cortez Olavarria, Victor Andres"]
+[Black "Villar Saldana, Jhonatan Junior"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "76"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.c3 d5 4.exd5 Qxd5 5.d4 cxd4 6.Nxd4 Bd7 7.Be2 Qxg2 8.Bf3 Qg6
+9.Be3 e5 10.Bxc6 Bxc6 11.Nxc6 Qxc6 12.Rg1 g6 13.Nd2 Bg7 14.Qb3 Nf6 15.O-O-O O-O
+16.Nc4 Qc7 17.Na3 a6 18.Bb6 Qe7 19.Nc4 Rac8 20.Rge1 Nd7 21.Bd4 b5 22.Nb6 Nxb6
+23.Bxb6 Qf6 24.Be3 Rfd8 25.Qa3 Bf8 26.Rxd8 Rxd8 27.Qb3 Bg7 28.Qb4 Qd6 29.Qa5 h5
+30.a3 Kh7 31.Bb6 Qd2+ 32.Kb1 Qxe1+ 33.Ka2 Rd6 34.Be3 Qd1 35.Qc7 Qd5+ 36.Ka1 Rd7
+37.Qb6 Qb3 38.Bc1 Bh6 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.06"]
+[Round "6"]
+[Board "1"]
+[White "Obando Guzman, Soren"]
+[Black "G, "]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "56"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.e5 Ng4 7.cxd4 Bb4+ 8.Nc3 d5
+9.Bd3 h5 10.h3 Nh6 11.O-O Be6 12.Bg5 Be7 13.Bxe7 Qxe7 14.Bb5 Ng4 15.Bxc6+ bxc6
+16.Qa4 Bd7 17.Qa6 Rh6 18.Qb7 Qd8 19.hxg4 hxg4 20.Nh2 Qh4 21.Qxa8+ Ke7 22.f3
+Qxh2+ 23.Kf2 gxf3 24.Kxf3 Bg4+ 25.Kxg4 Rg6+ 26.Kf3 Qxg2+ 27.Ke3 Rg3+ 28.Kf4 Rg4+
+
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Gontijo Chiari, Arthur"]
+[Black "Ruiz C, Joshua D"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2034"]
+[BlackElo "2148"]
+[PlyCount "74"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3 e5 7.Nb3 Be6 8.f3 Be7 9.Qd2
+h5 10.O-O-O Nbd7 11.h3 b5 12.Bd3 h4 13.f4 b4 14.Ne2 a5 15.Kb1 Qc7 16.g4 Qb7
+17.fxe5 dxe5 18.Bg5 a4 19.Nbc1 Nc5 20.Bxf6 Bxf6 21.Qe3 Be7 22.Rhf1 O-O 23.g5 b3
+24.cxb3 axb3 25.a3 Rfb8 26.Nc3 Na4 27.Nxa4 Rxa4 28.g6 Bxa3 29.gxf7+ Bxf7 30.Rxf7
+Qxf7 31.bxa3 b2 32.Na2 Rxa3 33.Bc4 Rxe3 34.Bxf7+ Kxf7 35.Rg1 Rxh3 36.Rf1+ Ke6
+37.Rg1 g5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Cuellar, Diego"]
+[Black "Velasco, Ricardo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2109"]
+[BlackElo "2008"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 b6 5.Nf3 Qd7 6.a3 Bf8 7.h4 Ba6 8.Bxa6 Nxa6 9.Ne2
+c5 10.c3 Ne7 11.h5 h6 12.Kf1 cxd4 13.cxd4 O-O-O 14.g3 Kb7 15.Kg2 Rc8 16.Bd2 Nc7
+17.a4 Nc6 18.Qb3 a5 19.Nc1 Na6 20.Qb5 Ncb8 21.Qxd7+ Nxd7 22.Nd3 Be7 23.Rac1 Nab8
+24.Rxc8 Rxc8 25.g4 Nc6 26.Re1 Nb4 27.Nxb4 axb4 28.Kf1 Ra8 29.b3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Barros Rivadeneira, Cristhian"]
+[Black "Gotz, Klaus Seiji Furucho"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "1909"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.Bc4 Bd7 10.O-O-O Rc8 11.Bb3 Ne5 12.h4 h5 13.Bg5 Rc5 14.g4 hxg4 15.h5 Nxh5
+16.Nd5 Re8 17.f4 Nc4 18.Qd3 b5 19.f5 Ne5 20.Qe2 Nc4 21.Qxg4 Rxd5 22.exd5 Bxd4
+23.Qxd4 Bxf5 24.Bxc4 bxc4 25.Rxh5 gxh5 26.Bh6 f6 27.Rg1+ Kh7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Novoa, Fernando"]
+[Black "Leon Magallanes, Isaac"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2044"]
+[BlackElo "1929"]
+[PlyCount "65"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 Nbd7 7.Qd2 c6 8.f3 a5 9.Nh3
+Ne8 10.Nf2 f6 11.Be3 e5 12.d5 Qe7 13.g4 f5 14.gxf5 gxf5 15.exf5 Ndf6 16.O-O-O
+Bxf5 17.Rhg1 cxd5 18.cxd5 Rc8 19.Bd3 Qd7 20.Rg5 Bxd3 21.Qxd3 b5 22.Kb1 b4
+23.Nce4 Kh8 24.Rdg1 Bh6 25.R5g2 Bxe3 26.Qxe3 Nxd5 27.Qh6 Qf7 28.Nxd6 Nxd6
+29.Qxd6 Rc7 30.Rg5 Re7 31.Ne4 Nf4 32.Rxe5 Rxe5 33.Qxe5+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Sanchez, Sandoval Gonzalo"]
+[Black "Fonseca Manrique, Enrique"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1965"]
+[BlackElo "1915"]
+[PlyCount "29"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.e5 Qe7 7.Qe2 Nd5 8.c4 Ba6
+9.g3 O-O-O 10.b3 f6 11.Bb2 Re8 12.Qd2 Nb6 13.Bg2 fxe5 14.O-O Qb4 15.Qg5
+{ilegible} 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Blandon, Luis Guillermo"]
+[Black "Pichot, Alan"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1974"]
+[BlackElo "2243"]
+[PlyCount "73"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.c3 Nf6 5.Qe2 d6 6.O-O Bg7 7.h3 O-O 8.Rd1 Bd7 9.d4
+cxd4 10.cxd4 d5 11.e5 Ne4 12.Nc3 Nxc3 13.bxc3 Na5 14.Bd3 Rc8 15.Bd2 Nc4 16.Be1
+Bb5 17.a4 Ba6 18.Rdb1 f6 19.exf6 exf6 20.Nd2 Re8 21.Qf1 Qd7 22.Nb3 b6 23.a5 bxa5
+24.Nxa5 Bb5 25.Nxc4 dxc4 26.Be2 a6 27.Bf3 Bh6 28.g3 Qd6 29.Qg2 Re7 30.Kf1 Rce8
+31.h4 Kg7 32.Ra2 Qe6 33.Re2 Qf5 34.Rd1 Rxe2 35.Bxe2 Ba4 36.Qb7+ Kh8 37.Ra1 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Rodriguez, Barragan Luis E"]
+[Black "Sosa, Tomas"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2075"]
+[PlyCount "133"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Be3 e5 7.Nge2 Nh5 8.g4 Nf4 9.Nxf4
+exf4 10.Bxf4 f5 11.gxf5 gxf5 12.Qd2 Nc6 13.O-O-O Qh4 14.Rg1 Kh8 15.Nb5 Rf7 16.c5
+fxe4 17.Bg5 Qh5 18.fxe4 Bg4 19.Re1 Raf8 20.h3 Bf3 21.Bc4 a6 22.Bxf7 Qxf7 23.Nc3
+Qh5 24.cxd6 cxd6 25.Rg3 Nxd4 26.Be3 Nc6 27.Rxg7 Kxg7 28.Bh6+ Qxh6 29.Rg1+ Qg6
+30.Rxg6+ hxg6 31.Qxd6 Rf7 32.e5 Bg2 33.e6 Re7 34.Nd5 Bxd5 35.Qxd5 Kf6 36.Qb3 Ne5
+37.Qd5 Nc6 38.Kd2 Rxe6 39.Qf3+ Kg7 40.a3 Rf6 41.Qb3 Rf2+ 42.Ke1 Rf7 43.Qb6 Rd7
+44.b4 Kf7 45.a4 Ne5 46.b5 axb5 47.Qxb5 Re7 48.Kf2 Kf6 49.Kg3 Kf5 50.Qb1+ Kf6
+51.Qb2 Kf5 52.Qf2+ Ke6 53.Qb6+ Kf5 54.h4 Rf7 55.a5 Re7 56.Qb1+ Kf6 57.Kf4 Kf7
+58.Qb3+ Kf6 59.Qc3 Kf7 60.Kg5 Kg7 61.Qd4 Kf7 62.Qf4+ Ke8 63.Qf6 Kd7 64.Qb6 Ke8
+65.Qb5+ Kf7 66.Qd5+ Kg7 67.Qb5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Posada, Juan Manuel"]
+[Black "Fuentes Parra, Victor Ignacio"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "2023"]
+[BlackElo "1978"]
+[PlyCount "58"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.exd5 exd5 4.Bd3 Bd6 5.Qf3 Ne7 6.Ne2 Nbc6 7.c3 Be6 8.Bf4 Qd7
+9.h3 O-O-O 10.Na3 Bxa3 11.bxa3 f6 12.Bg3 Bf5 13.Rb1 Na5 14.O-O Bxd3 15.Qxd3 Nc4
+16.Rb3 Qf5 17.Qd1 g5 18.Nc1 b6 19.Nd3 Nc6 20.a4 a5 21.Rb5 Rhe8 22.Nb2 Nxb2
+23.Rxb2 Qd7 24.Qd3 Nb8 25.Rfb1 Re6 26.Rb5 f5 27.Be5 Qf7 28.Qf3 Qd7 29.R5b3 Rg6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Hernandez Amura, Gilberto"]
+[Black "Gonzalez, Andres Felipe"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1864"]
+[BlackElo "1962"]
+[PlyCount "83"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 g6 3.f4 Bg7 4.Nf3 Nc6 5.Bc4 e6 6.O-O Nge7 7.Qe1 Nd4 8.Nxd4 cxd4
+9.Nd1 d5 10.exd5 Nxd5 11.f5 O-O 12.Bxd5 Qxd5 13.f6 Bh8 14.d3 e5 15.Qh4 Qe6
+16.Bg5 Qg4 17.Qxg4 Bxg4 18.Nf2 Bf5 19.g4 Bd7 20.h3 Rfc8 21.Rac1 Rc6 22.Ne4 Rac8
+23.c4 dxc3 24.bxc3 Be6 25.c4 b5 26.cxb5 Rxc1 27.Rxc1 Rxc1+ 28.Bxc1 Bxa2 29.Be3
+Bb1 30.Bxa7 Bxd3 31.Nd6 Bxf6 32.b6 Be7 33.Nb7 Ba6 34.Na5 Bc5+ 35.Kg2 f5 36.gxf5
+gxf5 37.Nb3 Bd4 38.Nxd4 exd4 39.Kf2 Kf7 40.b7 Bxb7 41.Bxd4 Kg6 42.Kg3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Diaz Herrera, Leider Andres"]
+[Black "G, "]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1942"]
+[BlackElo "0"]
+[PlyCount "49"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 d6 3.d4 cxd4 4.cxd4 Nf6 5.Nc3 g6 6.Bc4 Bg7 7.Nf3 O-O 8.O-O Bg4 9.h3
+Bxf3 10.Qxf3 Nc6 11.Rd1 Qb6 12.Ne2 Rac8 13.b3 e5 14.d5 Na5 15.Bd3 Qd8 16.Be3 b6
+17.Rac1 Rxc1 18.Rxc1 Nb7 19.b4 Qb8 20.Bg5 Nd7 21.Bb5 f6 22.Bd2 Rd8 23.Qc3 Nf8
+24.Qc7 Qxc7 25.Rxc7 {tiempo} 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Moreno Lozano, David"]
+[Black "Palacios Llancari, Jose Wilfred"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1931"]
+[BlackElo "0"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 e6 4.O-O Nge7 5.c3 a6 6.Ba4 b5 7.Bc2 d5 8.exd5 Nxd5 9.d4
+Be7 10.a4 Rb8 11.axb5 axb5 12.Re1 O-O 13.Qd3 f5 14.Nbd2 c4 15.Qf1 Bf6 16.Ne5
+Bxe5 17.dxe5 Qb6 18.Nf3 f4 19.Bd2 Bd7 20.b3 Na5 21.Nd4 Nc6 22.Nxc6 Qxc6 23.bxc4
+Qxc4 24.Ra7 Qc6 25.Qd3 g6 26.Bb3 Bc8 27.Bc2 Rb7 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Rojas Menor, Walter Alejandro"]
+[Black "Roman Sanchez, Wilder Xavier"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1900"]
+[BlackElo "0"]
+[PlyCount "55"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 c5 2.e3 d5 3.Nf3 Nf6 4.c3 Nc6 5.Bd3 Bg4 6.Nbd2 e6 7.Qa4 c4 8.Be2 Qc7 9.O-O
+a6 10.Qd1 Bd6 11.h3 Bf5 12.Nh4 Bg6 13.Nxg6 hxg6 14.f4 Ne7 15.Nf3 Ne4 16.Bd2 Nf5
+17.Qc2 g5 18.Ne5 Bxe5 19.fxe5 Nfg3 20.Rfe1 Nxe2+ 21.Rxe2 g4 22.b3 gxh3 23.gxh3
+Rxh3 24.Rg2 O-O-O 25.Kf1 Rdh8 26.Re1 Rh2 27.Rxh2 Rxh2 28.Kg1 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Mayorquin, Nicolas"]
+[Black "Torres Lopez-Yañez, Carlos David"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1889"]
+[BlackElo "0"]
+[PlyCount "38"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 Ne7 5.a3 Bxc3+ 6.bxc3 c5 7.Qg4 Qc7 8.Bd3 cxd4
+9.Ne2 dxc3 10.Qxg7 Rg8 11.Qxh7 Qxe5 12.Bf4 Qf6 13.Bg3 Rh8 14.Bh4 Qxh4 15.Qg7 Rg8
+16.Qxc3 Rxg2 17.Ng3 Qg4 18.Qh8+ Kd7 19.Rf1 Nbc6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Paredes Lagos, Anthony Javier"]
+[Black "Duran, Mateo Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1730"]
+[BlackElo "1879"]
+[PlyCount "76"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.Nc3 Nf6 3.g3 Nc6 4.Bg2 Bc5 5.e3 d6 6.Nge2 O-O 7.O-O Bg4 8.h3 Bh5 9.a3
+Bb6 10.b4 Rb8 11.Rb1 Bg6 12.d3 Re8 13.a4 a5 14.Ba3 axb4 15.Bxb4 Qd7 16.Nd5 Nxd5
+17.cxd5 Ne7 18.a5 Ba7 19.Kh2 Kh8 20.e4 Rf8 21.f4 f6 22.d4 exd4 23.Nxd4 Nxd5
+24.Nc2 Nxb4 25.Nxb4 Rfe8 26.f5 Bf7 27.Qd3 Re5 28.Qd2 Qd8 29.a6 Qd7 30.axb7 Rxb7
+31.Nd3 Reb5 32.Ra1 Qc8 33.Nf4 Qd7 34.Rfc1 Rb3 35.Rc3 Rxc3 36.Qxc3 Qe7 37.Qa3 Kg8
+38.Rc1 Bd4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Armas Lopes, Victor"]
+[Black "Valenzuela Martinez, Hermes"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1823"]
+[PlyCount "153"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.exd5 exd5 4.Nf3 Nf6 5.Bd3 Bd6 6.O-O O-O 7.h3 h6 8.Re1 Re8
+9.Rxe8+ Qxe8 10.Be3 c6 11.Nbd2 Ne4 12.c4 Nd7 13.Qb3 Nxd2 14.Nxd2 dxc4 15.Nxc4
+Bc7 16.Bd2 b5 17.Ne3 Nf6 18.d5 cxd5 19.Nxd5 Nxd5 20.Qxd5 Be6 21.Qe4 f5 22.Qe2
+Bd7 23.Re1 Qxe2 24.Rxe2 Kf7 25.Bb4 Re8 26.Rd2 a5 27.Bc4+ Be6 28.Rd7+ Kg6 29.Rxc7
+Bxc4 30.Bxa5 Bxa2 31.Bc3 Bf7 32.Rb7 Rd8 33.Rxb5 Rd1+ 34.Kh2 Bd5 35.Rb6+ Kf7
+36.Ra6 Be6 37.Ra7+ Rd7 38.Ra5 Rd5 39.Ra6 Bc8 40.Rb6 Rc5 41.Kg3 Rc4 42.Be5 Re4
+43.Bd6 Rd4 44.b4 g5 45.Kh2 Bd7 46.Bc5 Rh4 47.Rd6 Be6 48.b5 Rc4 49.Ba7 Ke7 50.Rd2
+Rc7 51.Bd4 Bc4 52.b6 Rd7 53.Bc5+ Ke8 54.Rc2 Ba6 55.Ra2 Bb7 56.f3 Bd5 57.Re2+ Kf7
+58.Re5 Be6 59.Bf2 Kf6 60.Rc5 Rb7 61.Ra5 h5 62.Bd4+ Kg6 63.Rb5 g4 64.hxg4 fxg4
+65.fxg4 hxg4 66.Be5 Bd7 67.Rb4 Bc6 68.Bc7 Kf7 69.Kg3 Bd5 70.Rb5 Ke6 71.Rxd5 Kxd5
+72.Kxg4 Ke6 73.Kg5 Kf7 74.Kh6 Kg8 75.g4 Kh8 76.g5 Kg8 77.Kg6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Estevez, Carlos Ariel"]
+[Black "Martinez Baquero, Hugo  Esteban"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1825"]
+[BlackElo "0"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O a6 5.Ba4 d6 6.Re1 b5 7.Bb3 Be7 8.h3 O-O 9.c3
+Na5 10.Bc2 c5 11.d3 Ne8 12.Nbd2 f5 13.exf5 Bxf5 14.Ne4 c4 15.d4 d5 16.Ng3 Bxc2
+17.Qxc2 e4 18.Ne5 Qc7 19.Qe2 Nf6 20.Nf5 Bd6 21.f4 exf3 22.Qxf3 Bxe5 23.Rxe5 Nc6
+24.Re6 Rae8 25.Rxe8 Nxe8 26.Qxd5+ Qf7 27.Qxf7+ Rxf7 28.Ng3 Nf6 29.Bg5 Nd5 30.Re1
+b4 31.Re6 Rc7 32.Rd6 bxc3 33.bxc3 Nxc3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Parra, Brayan"]
+[Black "Roman Sanchez, Eduardo Zosimo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1797"]
+[BlackElo "0"]
+[PlyCount "69"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.c3 Nf6 4.h3 Bd7 5.Bd3 Bc6 6.Qe2 Nbd7 7.Bc2 e6 8.O-O Be7 9.Rd1
+O-O 10.d4 Qc7 11.Bf4 Rad8 12.d5 exd5 13.exd5 Nxd5 14.Rxd5 Bxd5 15.Qxe7 Bxf3
+16.gxf3 Qb6 17.Qh4 g6 18.b3 Rfe8 19.Nd2 d5 20.Bd3 Qf6 21.Qxf6 Nxf6 22.Bg5 Rd6
+23.Kf1 Nh5 24.Re1 Rxe1+ 25.Kxe1 Re6+ 26.Kd1 f6 27.Be3 b6 28.Nb1 Rd6 29.Na3 Kf7
+30.Nc2 Ng7 31.a4 Ne6 32.Ke2 Ke7 33.h4 f5 34.Ne1 Kf6 35.f4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Rosero, Jefferson"]
+[Black "Bocanegra Acosta, Erick"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "55"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4 Bg7 6.Be3 Nf6 7.Nc3 O-O 8.Be2 d6
+9.O-O Bd7 10.f4 Nxd4 11.Bxd4 Bc6 12.Bf3 a5 13.Nd5 Nd7 14.Bxg7 Kxg7 15.Qd4+ Kg8
+16.Rad1 Bxd5 17.Qxd5 Qb6+ 18.Kh1 Nc5 19.Qd2 Qb4 20.Qe2 Na4 21.Rd2 Rac8 22.a3 Qb6
+23.f5 Nc5 24.e5 Nb3 25.Rd5 Qc7 26.exd6 exd6 27.Rd3 Qxc4 28.Bd5 {ilegible} 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Villar Saldana, Jhonatan Junior"]
+[Black "Hernandez Torres, Alex Daniel"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1926"]
+[PlyCount "48"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 Bf5 5.e3 dxc4 6.Bxc4 Nbd7 7.Qb3 e6 8.Qxb7 c5
+9.O-O Qc8 10.Qxc8+ Rxc8 11.Bb5 cxd4 12.Nxd4 Bg6 13.Nc6 a6 14.Ba4 Bc2 15.Bxc2
+Rxc6 16.e4 Bb4 17.Bd2 Ke7 18.a3 Bc5 19.Rad1 Bd4 20.h3 Rb8 21.Rb1 Nb6 22.Rfc1 Nc4
+23.Ne2 Nxd2 24.Nxd4 Rc4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Ospina Escobar, Juan Pablo"]
+[Black "Suarez Pinto, Sergio Rafael"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1875"]
+[BlackElo "1737"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4 Bb4+ 7.Bd2 Bxd2+ 8.Nbxd2
+d5 9.exd5 Nxd5 10.O-O O-O 11.Re1 Nb6 12.Qb3 Bg4 13.Qc3 Nxc4 14.Qxc4 Qd7 15.h3
+Bh5 16.Qc5 Bxf3 17.Nxf3 Rad8 18.Rad1 Qd5 19.Qc3 Rd7 20.Qe3 Rfd8 21.Rd2 h6
+22.Red1 g6 23.Ne5 Rd6 24.Nxc6 Rxc6 25.Qe5 Qxe5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Becerra, Manuel Santiago"]
+[Black "Torres Rojas, Yuber Andres"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2049"]
+[PlyCount "80"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 e6 2.Nf3 d5 3.g3 c5 4.Bg2 Nc6 5.Bf4 Nf6 6.O-O c4 7.Nc3 Bd6 8.Ne5 O-O 9.Nb5
+Bb8 10.Nxc6 bxc6 11.Bxb8 Rxb8 12.Nxa7 Bb7 13.b4 Ra8 14.Nxc6 Bxc6 15.c3 Ba4
+16.Qc1 Ne8 17.e4 Nc7 18.f4 f5 19.exd5 exd5 20.Re1 Rc8 21.Re5 Ra8 22.Re1 Re8
+23.Re5 Rxe5 24.fxe5 g5 25.Qe3 Bd7 26.Qe2 Kg7 27.Re1 Be6 28.Ra1 Nb5 29.Qd2 Ra3
+30.Qb2 Rxc3 31.a4 Rb3 32.Qd2 Rd3 33.Qf2 Nxd4 34.Bf1 Nf3+ 35.Kh1 Rb3 36.a5 d4
+37.a6 Qa8 38.Bg2 Bd5 39.Bxf3 Rxf3 40.Qxf3 Bxf3+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Castellanos, Camilo Andres"]
+[Black "Gomez, Cristian David"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1955"]
+[PlyCount "26"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 e6 3.Bc4 Nc6 4.Nf3 d6 5.d3 Be7 6.Bb5 Bd7 7.Bxc6 Bxc6 8.Be3 Nf6
+9.Qd2 d5 10.Bg5 dxe4 11.Bxf6 exf3 12.gxf3 Bxf6 13.Rg1 Bxf3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Castro, Jairo Antonio"]
+[Black "Munoz, Camilo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1896"]
+[BlackElo "0"]
+[PlyCount "38"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Bc4 Nc6 3.d3 Nf6 4.Nf3 h6 5.c3 d5 6.exd5 Nxd5 7.Qb3 Na5 8.Qa4+ c6
+9.Nxe5 Nxc4 10.Qxc4 Bd6 11.Nf3 O-O 12.O-O Be6 13.Qa4 Qc7 14.h3 Rfe8 15.g4 Nf6
+16.d4 b6 17.Be3 c5 18.d5 Qd7 19.Qxd7 Bxd7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Agudelo, Pedro Luis"]
+[Black "Yate Baron, Andres Steven"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "41"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Bb5+ Bd7 6.Bxd7+ Nbxd7 7.Nc3 g6 8.Be3
+Bg7 9.Qd2 O-O 10.Bh6 Qb6 11.Bxg7 Kxg7 12.O-O a6 13.b3 Rac8 14.Nd5 Nxd5 15.exd5
+Nf6 16.c4 Rfe8 17.Qe3 Qc5 18.Rfd1 Ng4 19.Qg5 Nh6 20.Re1 f6 21.Ne6+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Carlos Inga, Augusto "]
+[Black "Arias Monsalve, Andres Felipe"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "70"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 Be7 7.c3 d6 8.h3 O-O 9.d3
+Be6 10.Bxe6 fxe6 11.Re1 Nd7 12.d4 exd4 13.cxd4 Bf6 14.Be3 Ne7 15.Qb3 Kh8 16.Qxe6
+Nc8 17.Ng5 Bxg5 18.Bxg5 Qxg5 19.Qxd7 Qf4 20.f3 Qg3 21.Nd2 Qf4 22.Nb3 Qg3 23.Qxc7
+Ra7 24.Qc2 Raf7 25.Re3 Ne7 26.Qf2 Qf4 27.Rae1 Kg8 28.Nc1 d5 29.Nd3 Qd6 30.e5 Qb6
+31.Nc5 Qa5 32.Ra3 Qb4 33.Nd3 Qxa3 34.bxa3 Nc6 35.Nc5 Ne7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Gomez, Luis Miguel"]
+[Black "Rodriguez Velasco, German Enrique"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "2014"]
+[PlyCount "54"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.Nf3 c5 2.g3 d5 3.Bg2 Nc6 4.c4 d4 5.d3 Nf6 6.O-O e5 7.e3 Bg4 8.exd4 Nxd4 9.Re1
+Bd6 10.Nbd2 O-O 11.h3 Bh5 12.Qa4 Qb6 13.Nxd4 exd4 14.Ne4 Nxe4 15.Bxe4 f5 16.Bd5+
+Kh8 17.Qd7 f4 18.g4 Bg6 19.Re6 Rad8 20.Qxb7 Qxb7 21.Bxb7 Bxd3 22.b3 Rfe8
+23.Rxe8+ Rxe8 24.Bd2 Re2 25.Re1 Rxe1+ 26.Bxe1 Bb1 27.a4 Ba2 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Rios Franco, Juan Pablo"]
+[Black "Obando Guzman, Soren"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "84"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bf4 Bb4 5.Qa4+ Nc6 6.a3 Bxc3+ 7.bxc3 Bd7 8.Qc2 Na5
+9.cxd5 Nxd5 10.Bd2 Nc4 11.Bc1 b5 12.e4 Ndb6 13.Nf3 c6 14.Nd2 Nxd2 15.Bxd2 O-O
+16.e5 f6 17.Bd3 f5 18.g4 Qh4 19.g5 Nd5 20.Qc1 f4 21.Qc2 Be8 22.g6 h6 23.a4 a6
+24.axb5 cxb5 25.Ra5 Bc6 26.Qa2 Bb7 27.Bc1 Nxc3 28.Qxe6+ Kh8 29.Bb2 Bxh1 30.Bxc3
+Qxh2 31.Ke2 f3+ 32.Ke1 Qg1+ 33.Kd2 Qxf2+ 34.Kd1 Qe3 35.Kc2 f2 36.Qg4 f1=Q
+37.Bxf1 Be4+ 38.Kb3 Rac8 39.Rxa6 Qxc3+ 40.Ka2 Bb1+ 41.Kxb1 Rxf1+ 42.Ka2 Ra1# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Polo, John Alexander"]
+[Black "Valencia, Nicolas"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "74"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nd2 c5 4.c3 Qb6 5.exd5 exd5 6.Ngf3 Bd6 7.Bd3 Nc6 8.dxc5 Bxc5
+9.Qe2+ Nge7 10.Nb3 Bd6 11.Be3 Qc7 12.Nfd4 Bxh2 13.Nxc6 bxc6 14.Bc5 Bd6 15.Bxd6
+Qxd6 16.Kd2 h6 17.Rae1 c5 18.Kc2 c4 19.Bxc4 dxc4 20.Nd2 Qg6+ 21.Kc1 Be6 22.Nxc4
+Qg5+ 23.Kc2 Bxc4 24.Qxc4 O-O 25.Qh4 Qxh4 26.Rxh4 Ng6 27.Rhe4 a5 28.Rd4 Rfd8
+29.Red1 Rxd4 30.Rxd4 Re8 31.Kd3 Re1 32.Rd8+ Kh7 33.Kc4 Re2 34.Ra8 Rxb2 35.Rxa5
+Rxf2 36.Ra8 Rxg2 37.a4 Rc2 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "Gonzalez L, Nicolas Mateo"]
+[Black "Diaz, Cristian Camilo"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1964"]
+[PlyCount "51"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3 Ng4 7.Qd2 Nxe3 8.Qxe3 e6
+9.f4 Be7 10.Bd3 Nd7 11.O-O Bf6 12.Nf3 Qc7 13.f5 O-O 14.fxe6 fxe6 15.Ng5 Ne5
+16.Rad1 Ng4 17.Qh3 Qc5+ 18.Kh1 Qxg5 19.e5 dxe5 20.Ne4 Qh6 21.Qxg4 b5 22.Nxf6+
+Rxf6 23.Rxf6 Qxf6 24.Qe4 Ra7 25.Qxh7+ Kf8 26.Rf1 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "7"]
+[Board "1"]
+[White "M, "]
+[Black "Villamil, Nahum Jose"]
+[Result "*"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1839"]
+[PlyCount "96"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Be3 c5 8.Bc4 Nc6
+9.Ne2 O-O 10.Rc1 Na5 11.Bb3 b6 12.Bd5 Bb7 13.Bxb7 Nxb7 14.O-O Qc7 15.f4 e6 16.f5
+exf5 17.exf5 Qe7 18.Bd2 Nd6 19.fxg6 hxg6 20.dxc5 bxc5 21.Ng3 Nc4 22.Re1 Qd7
+23.Bf4 Qxd1 24.Rexd1 Rfd8 25.Ne4 Rxd1+ 26.Rxd1 Nb2 27.Rd5 c4 28.Be5 Bxe5 29.Rxe5
+Nd3 30.Re7 Kf8 31.Rd7 Re8 32.Rd4 f5 33.Nd2 Re2 34.Nf1 Ne5 35.Rd2 Re1 36.Rd4 Rc1
+37.h3 Rxc3 38.Rd5 Nd3 39.Nd2 Nf4 40.Rc5 Rc2 41.Nxc4 Rxg2+ 42.Kf1 Rxa2 43.Ne5 Kg7
+44.Rc6 Ra5 45.Nc4 Ra2 46.Ne5 a5 47.Ra6 a4 48.Ke1 Re2+ 
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Ruiz C, Joshua D"]
+[Black "Barros Rivadeneira, Cristhian"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2148"]
+[BlackElo "2049"]
+[PlyCount "73"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4 Bg7 6.Be3 d6 7.Nc3 Nf6 8.Be2 O-O
+9.O-O Bd7 10.f3 a6 11.Qd2 Rc8 12.Rfc1 Nxd4 13.Bxd4 Be6 14.b3 Nd7 15.Bxg7 Kxg7
+16.Rab1 Qa5 17.Kh1 Kg8 18.a3 Qc5 19.Bf1 Rfd8 20.Ne2 Qf2 21.Qd1 Ne5 22.Nd4 Nc6
+23.Nxe6 fxe6 24.Rc2 Qe3 25.Rd2 e5 26.Rd3 Qb6 27.Qd2 Kg7 28.h4 Qb4 29.Qg5 h6
+30.Qg4 Qb6 31.h5 g5 32.Qe6 Rh8 33.Qg6+ Kf8 34.g3 Rc7 35.Bh3 Nd8 36.f4 Nf7 37.Be6
+1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Novoa, Fernando"]
+[Black "Cuellar, Diego"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2044"]
+[BlackElo "2109"]
+[PlyCount "109"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.Nf3 Nf6 3.c4 c6 4.Qc2 e6 5.g3 dxc4 6.Qxc4 b5 7.Qb3 Nbd7 8.Bg2 Bb7
+9.O-O Qb6 10.Nc3 a6 11.a4 c5 12.dxc5 Nxc5 13.Qc2 b4 14.a5 Qa7 15.Na4 Be4 16.Qc4
+Bd5 17.Qf4 Nxa4 18.Rxa4 Bc6 19.Ra1 Qb7 20.Nh4 Bxg2 21.Nxg2 Rd8 22.Qc4 Rc8 23.Qb3
+Be7 24.Nf4 O-O 25.Nd3 h6 26.Bf4 Rfd8 27.Rfc1 Nd5 28.Bd2 Qb5 29.Qa4 Rxc1+ 30.Bxc1
+Qc4 31.Bd2 h5 32.Qd1 h4 33.Kg2 Qd4 34.Qf1 e5 35.f3 e4 36.fxe4 Ne3+ 37.Bxe3 Qxe3
+38.Rd1 Qxe4+ 39.Qf3 h3+ 40.Kxh3 Qxf3 41.exf3 Kf8 42.Nf2 Rxd1 43.Nxd1 Bd8 44.Nf2
+Bxa5 45.Nd3 Ke8 46.Kg4 b3 47.Nc5 Bc3 48.Nxa6 Bd4 49.Kf5 g6+ 50.Ke4 Bxb2 51.Nc5
+f5+ 52.Kd5 Kf7 53.Nxb3 Bf6 54.Nc5 Bg5 55.h3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Pichot, Alan"]
+[Black "Sanchez, Sandoval Gonzalo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2243"]
+[BlackElo "1965"]
+[PlyCount "35"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 Nf6 4.dxc5 Qa5+ 5.Bd2 Qxc5 6.Nc3 a6 7.Bd3 g6 8.O-O Bg7
+9.Na4 Qc7 10.c4 Nbd7 11.Rc1 O-O 12.b4 Ne5 13.Nxe5 dxe5 14.c5 Rd8 15.Qe2 Qd7
+16.Nb2 Nxe4 17.Qxe4 f5 18.Qc4+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Velasco, Ricardo"]
+[Black "Gontijo Chiari, Arthur"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2008"]
+[BlackElo "2034"]
+[PlyCount "53"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Qxd4 Nc6 5.Bb5 Bd7 6.Bxc6 Bxc6 7.Nc3 Nf6 8.Bg5 e6
+9.O-O-O Be7 10.Rhe1 O-O 11.Kb1 h6 12.Bh4 Re8 13.Bg3 d5 14.Ne5 Nxe4 15.Nxe4 dxe4
+16.Nxc6 bxc6 17.Qxe4 Qb6 18.Re2 Bf6 19.c4 Rad8 20.Rdd2 Qb4 21.Bf4 c5 22.a3 Qb6
+23.Be5 Bxe5 24.Qxe5 Qc6 25.f3 Rd7 26.Rxd7 Qxd7 27.Ka2 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Fuentes Parra, Victor Ignacio"]
+[Black "Diaz Herrera, Leider Andres"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1978"]
+[BlackElo "1942"]
+[PlyCount "31"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 e6 3.d4 d5 4.e5 Nc6 5.Nf3 Bd7 6.a3 Nge7 7.h4 cxd4 8.cxd4 a6 9.Bd3
+Nf5 10.Bxf5 exf5 11.Bg5 Be7 12.Bxe7 Qxe7 13.O-O O-O 14.Nc3 Be6 15.Qb3 Rfd8
+16.Rac1 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Sosa, Tomas"]
+[Black "Paredes Lagos, Anthony Javier"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2075"]
+[BlackElo "1730"]
+[PlyCount "100"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.Nf3 d5 3.Nc3 c5 4.Bb5+ Nc6 5.exd5 exd5 6.d4 Be6 7.O-O Nf6 8.Re1 h6
+9.Ne5 Rc8 10.dxc5 Bxc5 11.Nd3 Bd6 12.Nf4 Bxf4 13.Bxf4 O-O 14.Bd3 Nb4 15.Ne2 Bg4
+16.c3 Nxd3 17.Qxd3 Re8 18.Nd4 a6 19.f3 Be6 20.Re2 Nh5 21.Be5 Qg5 22.Rae1 Nf4
+23.Bxf4 Qxf4 24.Nxe6 fxe6 25.Rxe6 Rxe6 26.Qxd5 Kh8 27.Qxe6 Rg8 28.Qe3 Qf5 29.Qd2
+b5 30.Re4 Qf6 31.Qd4 Qf7 32.b3 a5 33.h3 a4 34.bxa4 Qxa2 35.axb5 Qb1+ 36.Kh2 Qxb5
+37.Re6 Qh5 38.Qe5 Qxe5+ 39.Rxe5 Rc8 40.Re3 g5 41.Kg3 Rc4 42.Kf2 Kg7 43.Ke2 Kf6
+44.Kd3 Ra4 45.Re4 Ra2 46.Re2 Ra4 47.c4 Kf5 48.c5 h5 49.c6 Ra7 50.Kd4 Kf4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Leon Magallanes, Isaac"]
+[Black "Armas Lopes, Victor"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1929"]
+[BlackElo "0"]
+[PlyCount "99"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.Nf3 d5 2.d4 Nf6 3.g3 c6 4.Bg2 Bg4 5.Ne5 Bh5 6.Nd2 Nbd7 7.Nd3 Bg6 8.Nf4 e6
+9.O-O Bd6 10.Nxg6 fxg6 11.e4 dxe4 12.Nxe4 Nxe4 13.Bxe4 Nf6 14.Bg2 O-O 15.Re1 Re8
+16.Qd3 Qd7 17.Bh3 Qf7 18.f4 Nd7 19.Qb3 Nf8 20.Be3 Re7 21.Re2 Rae8 22.Rae1 b6
+23.Qc4 Rc7 24.Bf2 b5 25.Qb3 Rce7 26.a4 a6 27.axb5 axb5 28.Bg2 Rc8 29.Ra1 Nd7
+30.Rae1 Nf8 31.c4 Qf5 32.c5 Bb8 33.d5 cxd5 34.Bxd5 Rce8 35.Be4 Qg4 36.Bf3 Qf5
+37.Qxb5 e5 38.Bd5+ Kh8 39.Bc6 Rd8 40.fxe5 Rxe5 41.b4 Ne6 42.Rxe5 Bxe5 43.Be4 Qh5
+44.Qe2 Nd4 45.Qxh5 gxh5 46.Bg2 Bf6 47.Be4 Be5 48.Kg2 Nb5 49.Bc6 Na3 50.Rxe5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Fonseca Manrique, Enrique"]
+[Black "Rodriguez, Barragan Luis E"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1915"]
+[BlackElo "0"]
+[PlyCount "35"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 Nf6 2.e5 Nd5 3.c4 Nb6 4.c5 Nd5 5.Nc3 Nxc3 6.dxc3 d6 7.Bc4 e6 8.cxd6 cxd6
+9.exd6 Bxd6 10.Be3 O-O 11.Qe2 a6 12.Nf3 b5 13.Bd3 Bb7 14.Rd1 Qc7 15.Bxh7+ Kxh7
+16.Ng5+ Kg8 17.Qh5 Re8 18.Rxd6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Gotz, Klaus Seiji Furucho"]
+[Black "Roman Sanchez, Wilder Xavier"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1909"]
+[BlackElo "0"]
+[PlyCount "65"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 Nbd7 7.Qd2 c5 8.d5 Re8 9.f4
+a6 10.Nf3 Qc7 11.O-O b5 12.cxb5 axb5 13.Bxb5 Rb8 14.a4 Qb6 15.Bh4 Ba6 16.Rfe1
+Bxb5 17.axb5 Ra8 18.h3 c4+ 19.Bf2 Nc5 20.Qe2 Nh5 21.g3 Rxa1 22.Rxa1 Bxc3 23.bxc3
+Qxb5 24.Nd4 Qd7 25.Kh2 Nd3 26.Nc6 Rc8 27.Ra7 Rc7 28.Ra8+ Kg7 29.Bd4+ f6 30.Rd8
+Qxd8 31.Nxd8 Rc8 32.Nc6 Rc7 33.Qd2 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Torres Lopez-Yañez, Carlos David"]
+[Black "Hernandez Amura, Gilberto"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1864"]
+[PlyCount "91"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 e6 3.c3 Nf6 4.e5 Nd5 5.d4 cxd4 6.cxd4 d6 7.Nc3 Nxc3 8.bxc3 Qc7
+9.Qb3 Nc6 10.exd6 Bxd6 11.Bd3 b6 12.O-O O-O 13.h3 Bb7 14.Ng5 h6 15.Nxe6 Na5
+16.Nxc7 Nxb3 17.Nxa8 Nxa1 18.Nxb6 axb6 19.Bb2 Rc8 20.Rxa1 Bd5 21.a4 Bc4 22.Be4
+g6 23.g3 f5 24.Bf3 Rb8 25.Ba3 Bxa3 26.Rxa3 Re8 27.a5 Re1+ 28.Kg2 bxa5 29.Rxa5
+Rc1 30.Rc5 Bf1+ 31.Kh2 Rc2 32.Bd5+ Kg7 33.Rc7+ Kh8 34.c4 Rd2 35.Bf7 Kg7 36.Be8+
+Kf6 37.Rc6+ Ke7 38.Bxg6 Bd3 39.g4 Be4 40.d5 Rxf2+ 41.Kg3 Rf3+ 42.Kh4 Rf4 43.Re6+
+Kf8 44.Kh5 Rf3 45.h4 Bd3 46.Kxh6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Cisneros Avendano, Diego"]
+[Black "Posada, Juan Manuel"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1813"]
+[BlackElo "2023"]
+[PlyCount "94"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 c5 8.Ne2 Nc6
+9.Be3 O-O 10.O-O Na5 11.Bd3 cxd4 12.cxd4 b6 13.Rc1 Bb7 14.Qd2 Qd7 15.Bh6 Bxh6
+16.Qxh6 Rac8 17.Qe3 Qa4 18.Bb1 Nc4 19.Qg5 f6 20.Qh6 Nd6 21.Nf4 Rxc1 22.Rxc1 Nf7
+23.Qh3 Qxd4 24.Ne6 Qd2 25.Rf1 Rc8 26.Qa3 Nd6 27.g3 Kf7 28.Qb3 Qc3 29.Nd8+ Kg7
+30.Ne6+ Kg8 31.Qa4 Qc6 32.Qxc6 Bxc6 33.Rc1 Bd7 34.Rxc8+ Bxc8 35.Nd4 Bb7 36.f3
+Kf7 37.Bd3 Ke8 38.Kf2 Kd7 39.Ke3 e5 40.Ne2 Kc6 41.f4 Kc5 42.h4 Kb4 43.g4 g5
+44.hxg5 exf4+ 45.Kxf4 fxg5+ 46.Kxg5 Nxe4+ 47.Bxe4 Bxe4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Rodriguez Velasco, German Enrique"]
+[Black "Moreno Lozano, David"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2014"]
+[BlackElo "1931"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e5 5.Nb3 Nf6 6.Bg5 h6 7.Bh4 g5 8.Bg3 Nxe4
+9.Bc4 Nf6 10.Nc3 Bb4 11.h4 g4 12.a3 Bxc3+ 13.bxc3 d5 14.Be2 h5 15.O-O Ne4 16.Bd3
+O-O 17.Qe1 f5 18.Rd1 Qe7 19.Bxe4 dxe4 20.f4 exf3 21.gxf3 f4 22.fxg4 fxg3
+23.Rxf8+ Kxf8 24.gxh5 Qxh4 25.Qf1+ Ke7 26.Rd2 Qxh5 27.Qd3 Qh6 28.Na5 Bf5 29.Qd5
+Qe6 30.Qc5+ Kf7 31.Nxb7 Ne7 32.Rd8 Rc8 33.Nd6+ Kg6 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Palacios Llancari, Jose Wilfred"]
+[Black "Blandon, Luis Guillermo"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1974"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 Nc6 8.Qd2 O-O
+9.Bc4 Nd7 10.O-O-O Nb6 11.Bb3 Na5 12.Qe2 Bd7 13.h4 Rc8 14.g4 Nbc4 15.h5 Nxb3+
+16.cxb3 Nxe3 17.Qxe3 Qb6 18.Kb1 Bc6 19.hxg6 fxg6 20.Nd5 Bxd5 21.exd5 Be5 22.Qh6
+Rf7 23.Qe3 Rf4 24.Nc2 Rxc2 25.Rd4 Rxb2+ 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Gonzalez, Andres Felipe"]
+[Black "Bocanegra Acosta, Erick"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1962"]
+[BlackElo "0"]
+[PlyCount "52"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.c3 Bg7 5.d4 cxd4 6.cxd4 Nf6 7.Nc3 d5 8.e5 Ne4
+9.Bxc6+ bxc6 10.O-O O-O 11.Nxe4 dxe4 12.Ng5 Qd5 13.Re1 Rd8 14.Nxe4 Bxe5 15.Ng3
+Qxd4 16.Qxd4 Bxd4 17.Rxe7 Be6 18.Bg5 Rd5 19.h4 Bxb2 20.Rb1 Rb5 21.a4 Rb3 22.Ne4
+Bf6 23.Rxb3 Bxe7 24.Rb7 Bxg5 25.hxg5 Bd5 26.Nf6+ Kg7 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Hernandez Torres, Alex Daniel"]
+[Black "Londono Lopez, David"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1926"]
+[BlackElo "0"]
+[PlyCount "96"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 e6 5.Nc3 Nf6 6.f3 Bb4 7.Nb3 d5 8.Bd2 dxe4
+9.Nxe4 Nxe4 10.fxe4 Qh4+ 11.Ke2 Qxe4+ 12.Be3 e5 13.h3 Bf5 14.Qd3 Qxd3+ 15.cxd3
+Rd8 16.Rd1 Bg6 17.a3 Be7 18.Kf2 f5 19.Bc5 Rd5 20.Bxe7 Kxe7 21.Be2 Rhd8 22.Rd2 f4
+23.Rhd1 Nd4 24.Nxd4 Rxd4 25.Ke1 Bf7 26.Rc1 Kf6 27.Rdd1 Bb3 28.Rd2 Ba4 29.Rc4 Bc6
+30.Rxd4 Rxd4 31.Bf3 Bxf3 32.gxf3 Kg5 33.Kf2 Kh4 34.Kg2 h5 35.Kh2 g5 36.Kg2 g4
+37.hxg4 hxg4 38.Rd1 Kg5 39.fxg4 Kxg4 40.Kf2 e4 41.Rg1+ Kf5 42.dxe4+ Kxe4 43.Re1+
+Kf5 44.Ke2 Re4+ 45.Kf2 Rxe1 46.Kxe1 Ke4 47.Kf2 f3 48.b4 b5 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Valenzuela Martinez, Hermes"]
+[Black "Rojas Menor, Walter Alejandro"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1823"]
+[BlackElo "1900"]
+[PlyCount "93"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Nf3 e6 3.Bg5 d5 4.e3 Nbd7 5.Nbd2 Be7 6.Bd3 O-O 7.O-O h6 8.Bh4 c5 9.c3
+c4 10.Bc2 b5 11.Qe2 b4 12.e4 Re8 13.e5 Nh7 14.Bxe7 Qxe7 15.Ne1 Ndf8 16.f4 g6
+17.g4 bxc3 18.bxc3 Qh4 19.Qg2 Kh8 20.Rf3 h5 21.gxh5 gxh5 22.Nxc4 Ng6 23.Nd6 Re7
+24.Qg3 Qxg3+ 25.hxg3 Kg8 26.Nd3 Ba6 27.Nc5 Be2 28.Rf2 Bg4 29.Rb1 Nhf8 30.f5 exf5
+31.Bxf5 Bxf5 32.Nxf5 Rc7 33.Rb7 Rxb7 34.Nxb7 Rc8 35.Nc5 Rc7 36.Nh6+ Kg7 37.Nf5+
+Kg8 38.Nd6 Nxe5 39.Rf5 Ng4 40.Rxh5 Ne3 41.Re5 Nd1 42.Ne8 Rc8 43.Nf6+ Kg7 44.Nxd5
+Ne6 45.Ne7 Rc7 46.Rxe6 Rxc5 47.dxc5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Garcia Talledo, Gonzalo"]
+[Black "Mayorquin, Nicolas"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1889"]
+[PlyCount "66"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 c5 2.e4 cxd4 3.c3 dxc3 4.Nxc3 Nc6 5.Nf3 e6 6.Bc4 a6 7.O-O Qc7 8.Bb3 Nf6
+9.Re1 Bc5 10.Be3 Bxe3 11.Rxe3 Ng4 12.Re2 O-O 13.h3 Nge5 14.Nxe5 Qxe5 15.Re3 b5
+16.Qd2 Rd8 17.Ne2 Ne7 18.f4 Qc5 19.Kh1 Bb7 20.Rc1 Qb6 21.Bc2 d5 22.Qd4 Qxd4
+23.Nxd4 dxe4 24.Bxe4 Bxe4 25.Rxe4 Rac8 26.Rxc8 Rxc8 27.Re2 Nd5 28.g3 Kf8 29.Rc2
+Rxc2 30.Nxc2 Ke7 31.Kg2 Kd6 32.Kf3 Kc5 33.Ke4 Nb4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Duran, Mateo Andres"]
+[Black "Parra, Brayan"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1879"]
+[BlackElo "1797"]
+[PlyCount "86"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Be3 Qf6 6.c3 Nge7 7.Bc4 O-O 8.O-O Ne5
+9.Be2 N7c6 10.Nd2 Bb6 11.N2b3 d6 12.Kh1 Qg6 13.f3 Rd8 14.Qd2 Be6 15.Bg5 Re8
+16.Be3 Nc4 17.Bxc4 Bxc4 18.Rfd1 Ne5 19.Nc1 Qh5 20.Qf2 Be6 21.b3 Rad8 22.Nce2 Nc6
+23.Rdc1 Nb8 24.Qg3 Qg6 25.Qh4 Bxd4 26.cxd4 c6 27.Nf4 Qf6 28.Qxf6 gxf6 29.Nh5 Nd7
+30.Bf2 f5 31.Bh4 Rc8 32.Rf1 fxe4 33.fxe4 Bg4 34.Ng3 c5 35.h3 Be2 36.Nxe2 Rxe4
+37.Ng3 Rxh4 38.Nf5 Re4 39.Nxd6 Rce8 40.Nxe8 Rxe8 41.dxc5 Nxc5 42.Rfe1 Kf8
+43.Rxe8+ Kxe8 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Villamil, Nahum Jose"]
+[Black "Munoz, Camilo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1839"]
+[BlackElo "0"]
+[PlyCount "77"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Be7 5.Re1 d6 6.h3 a6 7.Ba4 O-O 8.c3 b5 9.Bb3
+Na5 10.Bc2 c5 11.d3 Ne8 12.a4 Bd7 13.Nbd2 f5 14.exf5 Bxf5 15.Ne4 c4 16.dxc4 bxc4
+17.Qd5+ Kh8 18.Nfg5 Bxe4 19.Bxe4 Nb3 20.Ne6 Nc7 21.Qxc4 Nxe6 22.Qxe6 Nc5 23.Qd5
+Nxe4 24.Qxe4 Qb6 25.Qe3 Qb3 26.Ra3 Qc2 27.Qe2 Qf5 28.Ra1 Rf6 29.Bd2 Raf8 30.Rf1
+d5 31.b4 Bd6 32.Qg4 Qd3 33.Be1 Rg6 34.Rd1 Qc2 35.Rd2 Qxa4 36.Qd1 Qd7 37.Kh1 e4
+38.Rxd5 Rf3 39.Rh5 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Roman Sanchez, Eduardo Zosimo"]
+[Black "Estevez, Carlos Ariel"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1825"]
+[PlyCount "178"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 d6 6.h3 O-O 7.Bg5 h6 8.Bh4 Be6 9.Bb5
+a6 10.Ba4 b5 11.Bc2 Re8 12.Nbd2 d5 13.Qe2 d4 14.O-O dxc3 15.bxc3 b4 16.c4 Bd4
+17.Rab1 Bc3 18.Nb3 Qe7 19.Rfd1 Rad8 20.Nbd2 Bc8 21.Nf1 a5 22.Ne3 Qd6 23.Nd5 Nxd5
+24.cxd5 g5 25.Bxg5 hxg5 26.dxc6 f6 27.Ba4 Ba6 28.Bb3+ Kg7 29.Bd5 Bb5 30.Nd2 Bxc6
+31.Nc4 Qc5 32.Bxc6 Qxc6 33.Nxa5 Qa6 34.Nb3 Qa7 35.Rbc1 Ra8 36.Rc2 Red8 37.Nc1
+Rd6 38.Qg4 Rh8 39.Qf5 Rh4 40.Ne2 Qa6 41.Nxc3 Rf4 42.Qxf4 gxf4 43.Nd5 Qa4
+44.Rxc7+ Kg6 45.Rd2 Qa5 46.Rcc2 Rd8 47.Rb2 Rb8 48.Ne7+ Kf7 49.Nc6 Qc7 50.Nxb8
+Qxb8 51.a3 b3 52.Rd1 Qb5 53.Kf1 Qa4 54.Rdb1 Qxa3 55.Rxb3 Qa6 56.Ke2 Qc8 57.Kf3
+Qa8 58.Rb7+ Kg6 59.Ke2 Qc8 60.Kf1 Qc3 61.R7b3 Qd4 62.Ke2 Qc5 63.R3b2 Qd4 64.Rd2
+Qc3 65.Rbd1 Qc5 66.Kf1 Qd4 67.Kg1 Kg5 68.Kh2 Kg6 69.g3 Kg5 70.Kg2 fxg3 71.Kxg3
+f5 72.exf5 Kxf5 73.Re2 Qf4+ 74.Kg2 Qg5+ 75.Kh2 Qf4+ 76.Kg1 Qg5+ 77.Kf1 Qh5
+78.Ke1 Qxh3 79.Kd2 Qh6+ 80.Re3 Qf4 81.Ke2 Qg4+ 82.Rf3+ Ke6 83.Re1 Kd5 84.Rd1 e4
+85.dxe4+ Kxe4 86.Rdd3 Ke5 87.Rc3 Kd4 88.Ra3 Qe4+ 89.Kd2 Qb7 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Torres Rojas, Yuber Andres"]
+[Black "Villar Saldana, Jhonatan Junior"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "0"]
+[PlyCount "123"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 d6 3.d4 exd4 4.Nxd4 Nf6 5.Nc3 h6 6.h3 Be7 7.Bd3 c5 8.Bb5+ Bd7
+9.Bxd7+ Qxd7 10.Nf5 O-O 11.O-O Nc6 12.f4 Rfe8 13.Be3 Bf8 14.Qf3 Nxe4 15.Nxh6+
+gxh6 16.Nxe4 Qe6 17.Qg4+ Qxg4 18.Nf6+ Kh8 19.Nxg4 f5 20.Kf2 fxg4 21.hxg4 Nb4
+22.Rac1 Nxa2 23.Rcd1 Nb4 24.Rd2 Rad8 25.c3 Nc6 26.Rd5 Rd7 27.Bxc5 Rde7 28.Ba3
+Re2+ 29.Kg3 R8e3+ 30.Kh2 Rc2 31.Rh5 Kh7 32.Rb5 b6 33.g5 Ree2 34.Rg1 Be7 35.gxh6
+Kxh6 36.Rd5 Rcd2 37.Rxd2 Rxd2 38.Re1 Kg6 39.Kg3 Rd5 40.Kf3 Rf5 41.g4 Rf7 42.Re6+
+Rf6 43.Re1 Bf8 44.g5 Rf7 45.Kg4 Re7 46.f5+ Kh7 47.Rxe7+ Bxe7 48.f6 Bf8 49.Kf5
+Ne5 50.b3 Ng6 51.c4 Nh4+ 52.Kg4 Ng2 53.Kh5 Nf4+ 54.Kg4 Ng2 55.Kf5 Nh4+ 56.Kg4
+Ng2 57.Bb4 Ne3+ 58.Kh5 Nd1 59.Bd2 d5 60.cxd5 a5 61.g6+ Kg8 62.f7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Gomez, Cristian David"]
+[Black "Carlos Inga, Augusto "]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1955"]
+[BlackElo "0"]
+[PlyCount "48"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.Nc3 Nc6 3.d3 Bc5 4.Nf3 f5 5.e4 f4 6.Be2 g5 7.Nxe5 Bxf2+ 8.Kxf2 Nxe5
+9.Bh5+ Ng6 10.b3 Nh6 11.Bb2 O-O 12.Bxg6 hxg6 13.h3 d6 14.Qc2 g4 15.hxg4 Nxg4+
+16.Kf3 Qg5 17.Nd5 c6 18.Rh8+ Kf7 19.Rxf8+ Kxf8 20.Nxf4 Nh2+ 21.Ke3 Qg3+ 22.Ke2
+Qxf4 23.Qc3 Bg4+ 24.Ke1 Qe3# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Suarez Pinto, Sergio Rafael"]
+[Black "Castro, Jairo Antonio"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1737"]
+[BlackElo "1896"]
+[PlyCount "104"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 Nc6 8.Qd2 O-O
+9.Bc4 Bd7 10.O-O-O Ne5 11.Bb3 Rc8 12.h4 Nc4 13.Bxc4 Rxc4 14.g4 Qa5 15.Nb3 Qc7
+16.h5 Rc8 17.Kb1 b5 18.Rc1 a5 19.hxg6 fxg6 20.Nd5 Nxd5 21.exd5 Ra8 22.Qh2 Kf7
+23.Qd2 a4 24.Nd4 Kg8 25.b3 Rc3 26.Ne2 b4 27.Nxc3 bxc3 28.Qd3 Qa5 29.Rh2 axb3
+30.cxb3 Qb4 31.Rcc2 Bb5 32.Qe4 Qxe4 33.fxe4 Bd3 34.Kc1 Be5 35.Rhf2 Bxe4 36.Rce2
+Bd3 37.Bg5 Bxe2 38.Rxe2 Ra5 39.Bxe7 Rxd5 40.Kc2 h5 41.gxh5 gxh5 42.a4 Kf7 43.Bd8
+Ke6 44.b4 Kd7 45.Bb6 h4 46.Be3 h3 47.Re1 h2 48.Rh1 Ke6 49.Rf1 Bf6 50.Bf4 Rf5
+51.Re1+ Kd7 52.Bg3 Rf3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Ospina Escobar, Juan Pablo"]
+[Black "Echavarria, Juan"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "1875"]
+[BlackElo "0"]
+[PlyCount "27"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Bc4 Nc6 3.Nf3 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4 Bb4+ 7.Bd2 Bxd2+ 8.Nbxd2
+d6 9.O-O O-O 10.Bb5 Bd7 11.Qb3 Rb8 12.Rfe1 Re8 13.e5 dxe5 14.dxe5 {ilegible} 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Rosero, Jefferson"]
+[Black "Agudelo, Pedro Luis"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "47"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 O-O 7.c3 b5 8.Bb3 Bb7 9.d4
+exd4 10.cxd4 d6 11.Bf4 Qd7 12.Nbd2 Nb4 13.Qe2 Qg4 14.Bg3 Nh5 15.a3 Nc6 16.Rac1
+Rac8 17.Qd3 Nxg3 18.hxg3 Bg5 19.Nxg5 Qxg5 20.f4 Qf6 21.Nf3 Na5 22.Bc2 Nc4 23.e5
+Qg6 24.Qxc4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "De La Cerda, Damian Josue"]
+[Black "Gomez Vazquez, Carlos"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "110"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 g6 3.Nc3 Bg7 4.d4 cxd4 5.Nxd4 Nc6 6.Be3 Nf6 7.Bb5 O-O 8.O-O Qc7
+9.Bxc6 bxc6 10.Rb1 d5 11.exd5 Nxd5 12.Nxd5 cxd5 13.c3 Rb8 14.Qd2 e5 15.Nb3 Rd8
+16.f4 d4 17.cxd4 exd4 18.Bf2 Be6 19.Rfc1 Qb6 20.Rd1 Bxb3 21.axb3 Qxb3 22.Qa5 Qb6
+23.Qa4 a5 24.Be1 Ra8 25.b4 axb4 26.Rxb4 Qf6 27.Qc2 Qxf4 28.Bf2 Qd6 29.Rc4 d3
+30.Qd2 Qe6 31.Rcc1 Ra2 32.Qg5 Bf6 33.Qb5 Qd5 34.Rc5 Qd7 35.Qb6 Rxf2 36.Kxf2 Bd4+
+37.Kf1 Bxc5 38.Qxc5 d2 39.Qe3 Qf5+ 40.Qf3 Qb5+ 41.Qe2 Qd5 42.Qf3 Qxf3+ 43.gxf3
+Kg7 44.Ke2 Kf6 45.Rxd2 Rxd2+ 46.Kxd2 Kg5 47.Ke2 Kh4 48.Kf2 Kh3 49.Kg1 f5 50.Kh1
+g5 51.Kg1 h5 52.Kh1 f4 53.Kg1 g4 54.fxg4 hxg4 55.Kh1 f3 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Cortez Olavarria, Victor Andres"]
+[Black "Martinez Baquero, Hugo  Esteban"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "38"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bd3 e6 7.Be3 Qc7 8.Qd2 Be7
+9.O-O-O Nbd7 10.f3 b5 11.g4 Nc5 12.Nce2 Bb7 13.Ng3 d5 14.g5 Nfd7 15.Nde2 Rc8
+16.h4 Nxd3+ 17.Qxd3 Ne5 18.Bd4 Nxd3+ 19.Rxd3 Qxc2# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Diaz, Cristian Camilo"]
+[Black "Becerra, Manuel Santiago"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1964"]
+[BlackElo "0"]
+[PlyCount "74"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.Nd2 c5 4.c3 Nc6 5.Ngf3 Nf6 6.e5 Nd7 7.Bd3 Qb6 8.Qa4 f6 9.exf6
+Nxf6 10.Ne5 cxd4 11.Nxc6 bxc6 12.cxd4 Bd7 13.O-O c5 14.dxc5 Bxc5 15.Qh4 Qb4
+16.Qg3 Qg4 17.Nf3 Qxg3 18.hxg3 Bd6 19.Re1 h6 20.Bf4 Bb4 21.Re2 O-O 22.a3 Bc5
+23.b4 Bb6 24.Ne5 Bd4 25.Rc1 Rac8 26.Rxc8 Bxc8 27.Nc6 Bb6 28.Bd6 Re8 29.Bg6 Ba6
+30.Rc2 Ra8 31.Nb8 Ng4 32.Nxa6 Rd8 33.Be7 Ra8 34.Bd6 Rd8 35.Bc7 Rc8 36.Bxb6 Rxc2
+37.Bxc2 axb6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Yate Baron, Andres Steven"]
+[Black "Castellanos, Camilo Andres"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "118"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 h6 4.d3 Nf6 5.Be3 d6 6.h3 Be7 7.Nbd2 Be6 8.Bb5 Qd7 9.c3
+O-O 10.d4 a6 11.Ba4 b5 12.Bc2 d5 13.Nxe5 Nxe5 14.dxe5 Nxe4 15.Nxe4 dxe4 16.Qxd7
+Bxd7 17.Bxe4 Rad8 18.Rd1 Be6 19.b3 Rxd1+ 20.Kxd1 a5 21.Bc6 b4 22.c4 Bg5 23.Bxg5
+hxg5 24.Ke2 Rb8 25.Rd1 Rb6 26.Be4 g6 27.Rd8+ Kg7 28.Ra8 Bd7 29.Rxa5 Re6 30.Rc5
+c6 31.Ke3 Re7 32.Kd4 Re6 33.Ra5 Kf8 34.Ra8+ Ke7 35.Rb8 c5+ 36.Kxc5 Rxe5+ 37.Kd4
+Ra5 38.Bb1 Ra6 39.Rxb4 Rd6+ 40.Ke3 Bc6 41.c5 Re6+ 42.Be4 f5 43.f3 fxe4 44.fxe4
+Kf6 45.g4 Ke5 46.Rb6 Kf6 47.Rb4 Re5 48.Kd3 Rxc5 49.Rc4 Rxc4 50.bxc4 Ke5 51.Kc3
+Bxe4 52.c5 Bg2 53.Kb4 Bxh3 54.Kb5 Bxg4 55.c6 Bc8 56.a4 Kd6 57.a5 g4 58.a6 Bxa6+
+59.Kxa6 Kxc6 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Obando Guzman, Soren"]
+[Black "Gomez, Luis Miguel"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "56"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Nxc6 Qf6 6.Qe2 Qxc6 7.Be3 Bxe3 8.Qxe3
+Qxc2 9.Qd4 Qc1+ 10.Ke2 Qh6 11.Nc3 Ne7 12.Nd5 Nc6 13.Qc3 O-O 14.Nxc7 Rb8 15.f3 b6
+16.Kf2 Bb7 17.Ba6 Bxa6 18.Nxa6 Rbc8 19.Qb3 Qd2+ 20.Kg3 Qg5+ 21.Kf2 Nd4 22.Qd3
+Rc2+ 23.Kf1 Qxg2+ 24.Ke1 Qxh1+ 25.Qf1 Nxf3+ 26.Kd1 Qxf1+ 27.Kxc2 Qc4+ 28.Kb1
+Nd2# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Valencia, Nicolas"]
+[Black "Gonzalez L, Nicolas Mateo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "45"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 e6 3.g3 Nf6 4.Bg2 Nc6 5.Nf3 Bd7 6.c5 Be7 7.Bf4 h6 8.O-O g5 9.Bd2
+Ne4 10.a3 f5 11.Ne5 Nxe5 12.dxe5 Bxc5 13.Nc3 Bd4 14.Rc1 Bc6 15.Bxg5 Qxg5 16.Qxd4
+Nd2 17.f4 Nb3 18.Qb4 Qe7 19.Qxb3 O-O-O 20.Nb5 Kb8 21.Rxc6 bxc6 22.Nd6+ Ka8
+23.Qb7# 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.07"]
+[Round "8"]
+[Board "1"]
+[White "Polo, John Alexander"]
+[Black "Rios Franco, Juan Pablo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "38"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 Qc7 6.Be3 b5 7.Bd3 Bb7 8.Qd2 Nc6 9.a3
+Nf6 10.f3 g6 11.Nxc6 Bxc6 12.Bd4 e5 13.Be3 Bg7 14.Bh6 O-O 15.Bxg7 Kxg7 16.g4
+Rfd8 17.h4 h5 18.gxh5 Nxh5 19.Rg1 Nf4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Ruiz C, Joshua D"]
+[Black "Pichot, Alan"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2148"]
+[BlackElo "2243"]
+[PlyCount "79"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Qb6 5.Nb3 Nf6 6.Nc3 e6 7.Bd3 a6 8.Bd2 Qc7
+9.f4 d6 10.Qf3 Be7 11.O-O O-O 12.Rae1 b5 13.Qh3 g6 14.Kh1 b4 15.Nd1 a5 16.c3 d5
+17.e5 Nd7 18.Bb1 Nc5 19.cxb4 axb4 20.Nxc5 Bxc5 21.Ne3 Bxe3 22.Rxe3 Ba6 23.Rfe1
+Qe7 24.Qh6 f5 25.exf6 Rxf6 26.Rg3 Raf8 27.Bxg6 Kh8 28.Qh5 e5 29.Rh3 Bc8 30.Qxh7+
+Qxh7 31.Rxh7+ Kg8 32.Bb1 e4 33.Rh5 Rd8 34.Kg1 Kf7 35.h3 Ke6 36.Bxe4 dxe4
+37.Rxe4+ Kf7 38.Bxb4 Be6 39.Bc3 Rf5 40.Rh7+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Cuellar, Diego"]
+[Black "Fuentes Parra, Victor Ignacio"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2109"]
+[BlackElo "1978"]
+[PlyCount "37"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e6 2.d4 d5 3.exd5 exd5 4.Nf3 Bd6 5.c4 dxc4 6.Bxc4 Nf6 7.O-O O-O 8.h3 h6
+9.Nc3 Nbd7 10.Re1 Nb6 11.Bb3 c6 12.Qd3 Qc7 13.Bxh6 Bf4 14.Bxf4 Qxf4 15.Bc2 Be6
+16.Ne4 Nbd7 17.Ne5 g6 18.Nxf6+ Nxf6 19.Nxg6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Sosa, Tomas"]
+[Black "Novoa, Fernando"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2075"]
+[BlackElo "2044"]
+[PlyCount "141"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 d5 3.exd5 Qxd5 4.d4 Nf6 5.Nf3 cxd4 6.cxd4 g6 7.Nc3 Qd8 8.Bc4 Bg7
+9.O-O O-O 10.h3 Nbd7 11.Re1 Ne8 12.Bg5 Ndf6 13.Ne5 Nd6 14.Bb3 Nf5 15.d5 Nd6
+16.Qf3 Bd7 17.Nc4 Nxc4 18.Bxc4 h6 19.Bh4 g5 20.Bg3 Ne8 21.Be5 Nd6 22.Bd3 f5
+23.Bxg7 Kxg7 24.Qe3 Rf7 25.Qe5+ Kg8 26.Ne2 Qf8 27.Nd4 Qg7 28.Rac1 Qxe5 29.Rxe5
+Rc8 30.Rxc8+ Bxc8 31.Ne6 Bxe6 32.Rxe6 Kg7 33.f4 Nc8 34.Kf2 Rf6 35.Re5 Rf7
+36.fxg5 hxg5 37.Rxf5 Nb6 38.Rxf7+ Kxf7 39.Kf3 Kf6 40.Ke4 Na4 41.b4 Nb6 42.g3 Nc8
+43.h4 Nd6+ 44.Kd4 gxh4 45.gxh4 Nf7 46.Ke4 Ne5 47.Be2 Nf7 48.Kf4 Nh6 49.Bd3 Nf7
+50.Bf5 Ne5 51.h5 Nf7 52.Be6 Nd6 53.a4 b6 54.a5 Nc4 55.a6 Nd6 56.Bd7 Nf7 57.Bf5
+Nd6 58.Be6 Nc4 59.b5 Nd6 60.Bd7 Nf7 61.Be8 Nd6 62.Bc6 Nf7 63.Bd7 Nd6 64.h6 Nf7
+65.h7 Nh8 66.Be8 Kg7 67.Ke5 Kf8 68.Bh5 Kg7 69.Ke6 Kxh7 70.Kxe7 Kg7 71.d6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Barros Rivadeneira, Cristhian"]
+[Black "Velasco, Ricardo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2049"]
+[BlackElo "2008"]
+[PlyCount "97"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6 6.Nf3 Nc6 7.O-O Be7 8.d3 Be6
+9.Bd2 O-O 10.a3 a5 11.Na4 Nxa4 12.Qxa4 Qd7 13.Rfc1 f6 14.Be3 Rfd8 15.Nd2 Bd5
+16.Ne4 Nb8 17.Qxd7 Rxd7 18.Bh3 c6 19.Bxd7 Nxd7 20.Nc5 Bxc5 21.Bxc5 a4 22.f3 Kf7
+23.Kf2 Ke6 24.e4 Bb3 25.d4 Rd8 26.Ke3 b6 27.Bxb6 Nxb6 28.Rxc6+ Rd6 29.d5+ Kd7
+30.Rac1 Rxc6 31.Rxc6 Nc8 32.h4 Nd6 33.Ra6 Nc8 34.f4 exf4+ 35.gxf4 Ne7 36.Ra7+
+Ke8 37.d6 Ng6 38.h5 Nf8 39.Rxg7 Bf7 40.h6 Be6 41.Ra7 Bd7 42.f5 Kf7 43.Kf4 Ke8
+44.e5 fxe5+ 45.Kxe5 Kf7 46.Rb7 Kg8 47.Kf6 Bc6 48.Rb8 Bd7 49.Ke7 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Gontijo Chiari, Arthur"]
+[Black "Fonseca Manrique, Enrique"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "2034"]
+[BlackElo "1915"]
+[PlyCount "102"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.O-O Nf6 5.d3 d6 6.c3 Bb6 7.Re1 O-O 8.Bg5 h6 9.Bh4
+g5 10.Bg3 Bg4 11.Nbd2 Ne7 12.h3 Bh5 13.Ba4 Ng6 14.Nf1 Nf4 15.Ne3 Bxf3 16.Qxf3
+Nxd3 17.Re2 Nf4 18.Bxf4 gxf4 19.Nf5 Kh7 20.Kh2 Ne8 21.Bxe8 Rxe8 22.g3 Qg5 23.h4
+fxg3+ 24.fxg3 Qf6 25.Rf1 Rg8 26.Ree1 Rg6 27.Qe2 Qe6 28.c4 Rag8 29.Rf3 Rg4
+30.Ref1 Kh8 31.b3 R8g6 32.Qd3 h5 33.Re1 Bc5 34.Ref1 Rg8 35.Qe2 a6 36.Qd3 b5
+37.cxb5 axb5 38.Ne3 Bxe3 39.Qxe3 Qg6 40.Qf2 Rxe4 41.Rf6 Qg7 42.Rxf7 Qg6 43.Rf6
+Qg7 44.Rf7 Qh6 45.Rxc7 Rd4 46.Qf6+ Qxf6 47.Rxf6 Rg7 48.Rh6+ Kg8 49.Rc8+ Kf7
+50.Rc7+ Kg8 51.Rc8+ Kf7 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Sanchez, Sandoval Gonzalo"]
+[Black "Gotz, Klaus Seiji Furucho"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1965"]
+[BlackElo "1909"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6
+9.Bc4 Bd7 10.h4 h5 11.O-O-O Rc8 12.Bb3 Ne5 13.Bg5 Rc5 14.Kb1 Re8 15.f4 Neg4
+16.e5 dxe5 17.Nf3 Qc7 18.fxe5 Nxe5 19.Bxf6 Bxf6 20.Nxe5 Qxe5 21.Qxd7 Rec8
+22.Rhe1 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Torres Lopez-Yañez, Carlos David"]
+[Black "Leon Magallanes, Isaac"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1929"]
+[PlyCount "78"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.c3 Nf6 4.Be2 Bd7 5.d3 Bc6 6.O-O Nbd7 7.h3 e6 8.Bg5 Be7 9.Nbd2
+O-O 10.Re1 Rc8 11.Bf1 h6 12.Bh4 b6 13.d4 d5 14.e5 Ne8 15.Bxe7 Qxe7 16.Bd3 Nc7
+17.Rc1 Rce8 18.g3 f5 19.Nh4 Qf7 20.f4 g5 21.Ng2 Qg7 22.Kh2 Kh8 23.fxg5 Rg8 24.g6
+Qxg6 25.Qf3 Qg5 26.Nf4 c4 27.Bc2 Re7 28.Rg1 Rf7 29.g4 Nxe5 30.dxe5 d4 31.Qf1
+fxg4 32.Rxg4 Qxe5 33.Nxc4 Qxf4+ 34.Rxf4 Rxf4 35.Qe2 Rg2+ 36.Qxg2 Bxg2 37.Kxg2
+dxc3 38.Ne5 cxb2 39.Rb1 Rd4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Posada, Juan Manuel"]
+[Black "Blandon, Luis Guillermo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "2023"]
+[BlackElo "1974"]
+[PlyCount "57"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Nc3 g6 4.Bc4 Bg7 5.O-O d6 6.h3 Nf6 7.d3 O-O 8.a3 h6 9.Be3
+Qc7 10.Qd2 Kh7 11.Nh2 a6 12.a4 e6 13.f4 Nb4 14.Bb3 d5 15.e5 Ng8 16.d4 c4 17.Ba2
+Rb8 18.Bb1 Ne7 19.Ne2 Nbc6 20.g4 b5 21.Ng3 b4 22.c3 Nf5 23.gxf5 exf5 24.h4 b3
+25.h5 Be6 26.Nf3 Ne7 27.Qh2 Rh8 28.hxg6+ Nxg6 29.Bxf5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Diaz Herrera, Leider Andres"]
+[Black "Rodriguez Velasco, German Enrique"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1942"]
+[BlackElo "2014"]
+[PlyCount "73"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.Nf3 Nf6 3.c4 c6 4.Nc3 e6 5.Bg5 Nbd7 6.e3 a6 7.a4 Bb4 8.Bd3 Qa5 9.Qc2
+Ne4 10.Rc1 Nxg5 11.c5 Bxc3+ 12.bxc3 Nxf3+ 13.gxf3 Nf6 14.Rb1 Rb8 15.e4 g6 16.e5
+Nh5 17.Rb6 Ra8 18.Kd2 Kd7 19.Rhb1 Kc7 20.R1b4 Rb8 21.Qb3 Rd8 22.Bxa6 Rd7 23.Bxb7
+Bxb7 24.Rxb7+ Rxb7 25.Rxb7+ Kd8 26.Rb6 Rc7 27.Qb4 Qxb4 28.cxb4 Kd7 29.Rb8 Ra7
+30.a5 Ng7 31.Rh8 Nf5 32.Rxh7 Ke7 33.Kc3 Rb7 34.Rh8 Ra7 35.Rb8 Ra6 36.Rb6 Rxb6
+37.cxb6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Paredes Lagos, Anthony Javier"]
+[Black "Gonzalez, Andres Felipe"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1730"]
+[BlackElo "1962"]
+[PlyCount "119"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.c4 g6 2.g3 Bg7 3.Bg2 Nf6 4.d4 O-O 5.Nc3 d6 6.e4 c6 7.Nge2 e5 8.d5 cxd5 9.cxd5
+a5 10.O-O Na6 11.a3 Nc5 12.Be3 Ng4 13.Bxc5 dxc5 14.h3 Nh6 15.Qb3 Qd6 16.Nb5 Qb6
+17.a4 Bd7 18.Nec3 Kh8 19.Rac1 f5 20.Kh2 f4 21.Ne2 Bxb5 22.axb5 a4 23.Qd3 c4
+24.Rxc4 Qxb5 25.Rc3 Qb6 26.g4 Rfc8 27.Qc2 Rxc3 28.Nxc3 a3 29.bxa3 Rxa3 30.Na4
+Qb4 31.Qc8+ Ng8 32.Nc5 Rc3 33.Qxb7 Qxc5 34.g5 Qe7 35.Qb2 Rd3 36.Qe2 Rd4 37.h4 h6
+38.Qg4 h5 39.Qc8 Qf8 40.Qe6 f3 41.Bh1 Qf4+ 42.Kg1 Rxe4 43.Qh3 Qg4+ 44.Qg3 Qxg3+
+45.fxg3 Rd4 46.Bxf3 e4 47.Bg2 Ne7 48.d6 Nf5 49.d7 Rxd7 50.Rc1 Nxg3 51.Rc8+ Kh7
+52.Bh3 Rd2 53.Bg2 e3 54.Re8 e2 55.Kf2 e1=Q+ 56.Kxe1 Rxg2 57.Rc8 Nf5 58.Kf1 Ne3+
+59.Ke1 Be5 60.Rh8+ 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Armas Lopes, Victor"]
+[Black "Moreno Lozano, David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1931"]
+[PlyCount "55"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.c3 d5 3.exd5 Qxd5 4.d4 cxd4 5.cxd4 Nc6 6.Nf3 e5 7.Nc3 Bb4 8.Bd2 Bxc3
+9.Bxc3 e4 10.Ne5 Nxe5 11.dxe5 Ne7 12.Qe2 O-O 13.Rd1 Qc6 14.Rd6 Qa4 15.Rd4 Qxa2
+16.Qxe4 Nc6 17.Bc4 Bf5 18.Bxa2 Bxe4 19.Rxe4 Rad8 20.O-O Rfe8 21.Rfe1 b5 22.h3 a5
+23.e6 Kf8 24.exf7 Rxe4 25.Rxe4 b4 26.Bxg7+ Kxg7 27.Re8 b3 28.f8=Q+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Bocanegra Acosta, Erick"]
+[Black "Mayorquin, Nicolas"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1889"]
+[PlyCount "110"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bc4 e6 7.Bg5 Be7 8.Bb3 Nc6
+9.Nxc6 bxc6 10.e5 Nd5 11.Bxe7 Qxe7 12.exd6 Qxd6 13.O-O O-O 14.Qf3 Bb7 15.Ne4 Qe7
+16.c4 Nc7 17.Bc2 f5 18.Nd2 Qb4 19.Qb3 a5 20.Nf3 Rfd8 21.Rfd1 Na6 22.Nd4 Nc5
+23.Qxb4 axb4 24.Nb3 Nxb3 25.Bxb3 c5 26.f3 Kf7 27.Re1 Rd2 28.Re5 Rxb2 29.Rae1 Ra6
+30.Rxc5 Kf6 31.Rce5 Bc8 32.c5 g5 33.Bc4 Rc6 34.Bb5 Rc7 35.Bc4 Re7 36.Bb3 Rd2
+37.c6 Rd6 38.Rb5 Rxc6 39.Rxb4 e5 40.h4 g4 41.fxg4 fxg4 42.a4 Bf5 43.a5 Ra6
+44.Rb5 Bd3 45.Rd5 e4 46.Rh5 Re5 47.Rh6+ Kg7 48.Rxa6 Bxa6 49.Kf2 Bd3 50.Kg3 e3
+51.Kxg4 e2 52.Kf3 Rxa5 53.Ke3 Ba6 54.Bc4 Re5+ 55.Kf4 Kf6 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Rodriguez, Barragan Luis E"]
+[Black "Duran, Mateo Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1879"]
+[PlyCount "61"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.Nf3 Nf6 3.c4 e6 4.g3 Be7 5.Bg2 O-O 6.O-O Nbd7 7.Nc3 b6 8.Ne5 Bb7
+9.cxd5 exd5 10.Qb3 c6 11.e4 dxe4 12.Nxe4 Nd5 13.Nc3 N7f6 14.Bg5 h6 15.Bxf6 Bxf6
+16.Nxd5 cxd5 17.Rac1 Qd6 18.f4 a6 19.Rc3 Rac8 20.Bh3 Rxc3 21.Qxc3 Be7 22.Rc1 f5
+23.a3 g6 24.Qb3 Kg7 25.Bg2 Rd8 26.Rc3 Rf8 27.Qc2 Bd8 28.Qe2 b5 29.Nf3 Rf7
+30.Qe5+ Bf6 31.Qxd6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Hernandez Amura, Gilberto"]
+[Black "Londono Lopez, David"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1864"]
+[BlackElo "0"]
+[PlyCount "39"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Bg5 d5 3.Bxf6 exf6 4.e3 Bd6 5.c4 c6 6.Nc3 Be6 7.c5 Bc7 8.Bd3 Nd7
+9.Nge2 O-O 10.O-O Re8 11.Qc2 h6 12.b4 b6 13.Qa4 Qc8 14.Ba6 b5 15.Bxc8 bxa4
+16.Bb7 Rab8 17.Bxc6 Rxb4 18.Bxd5 Bxd5 19.Nxd5 Rb7 20.c6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Roman Sanchez, Wilder Xavier"]
+[Black "Valenzuela Martinez, Hermes"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1823"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 e6 2.c4 f5 3.Nc3 d5 4.g3 Nf6 5.Bg2 c6 6.e3 Bd6 7.Nge2 Nbd7 8.c5 Bc7 9.b4
+Qe7 10.b5 g5 11.Qa4 cxb5 12.Nxb5 Bb8 13.Ba3 Qd8 14.Rc1 Kf7 15.O-O Nf8 16.Qb3 Bd7
+17.Nd6+ Bxd6 18.cxd6 Bc6 19.Nc3 Qd7 20.Rfe1 Ne8 21.f3 Nxd6 22.e4 Nc8 23.exf5
+exf5 24.f4 Ne6 25.Bxd5 Bxd5 26.Qxd5 Qxd5 27.Nxd5 Rd8 28.Rxe6 Rxd5 29.Re5 Nb6
+30.Rc7+ Rd7 31.Rxf5+ Ke6 32.Re5+ Kf6 33.fxg5+ Kg6 34.Rcc5 Rd6 35.Re7 Rxd4
+36.Re6+ Kf7 37.Rf6+ Ke8 38.Re5+ Kd8 39.Re7 Nd7 40.Rff7 Rc8 41.Rxh7 Rd1+ 42.Kg2
+Rc2+ 43.Kh3 Rxa2 44.g6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Estevez, Carlos Ariel"]
+[Black "Torres Rojas, Yuber Andres"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1825"]
+[BlackElo "2049"]
+[PlyCount "49"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 4.O-O Bg4 5.c3 Qf6 6.Be2 h6 7.d3 g5 8.Re1 Be7 9.Nbd2
+h5 10.Nf1 Bxf3 11.Bxf3 g4 12.Be2 Qg6 13.f4 f5 14.fxe5 dxe5 15.exf5 Qxf5 16.Ng3
+Qg6 17.Ne4 Nf6 18.Nxf6+ Bxf6 19.d4 O-O 20.Bd3 Qg7 21.Qb3+ Kh8 22.Qxb7 Ne7
+23.dxe5 Bxe5 24.Qb5 Rad8 25.Rxe5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Castro, Jairo Antonio"]
+[Black "Palacios Llancari, Jose Wilfred"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1896"]
+[BlackElo "0"]
+[PlyCount "47"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.Bxc6 dxc6 5.h3 Bg7 6.O-O e5 7.d3 Ne7 8.Be3 b6 9.c4
+O-O 10.Nc3 Qc7 11.Qc2 Be6 12.a3 f5 13.b3 Bd7 14.Bg5 Bc8 15.Be3 fxe4 16.dxe4 Bxh3
+17.gxh3 Rxf3 18.Kg2 Rf7 19.Rad1 Kh8 20.Rd3 Raf8 21.Rfd1 Qc8 22.Ne2 Ng8 23.Ng3
+Nf6 24.Qd2 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Gomez Vazquez, Carlos"]
+[Black "Villamil, Nahum Jose"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1839"]
+[PlyCount "59"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.Nf3 Nf6 2.g3 g6 3.Bg2 Bg7 4.c4 O-O 5.Nc3 d5 6.d4 c5 7.O-O cxd4 8.Nxd4 e5 9.Nc2
+d4 10.Nd5 Nbd7 11.e3 Nxd5 12.cxd5 Nb6 13.exd4 exd4 14.Nxd4 Nxd5 15.Re1 Nb6
+16.Nb5 Qxd1 17.Rxd1 Bg4 18.Re1 Rfe8 19.Be3 Rad8 20.Bxb6 axb6 21.h3 Bd7 22.Nd6
+Rxe1+ 23.Rxe1 Bc6 24.Nxb7 Bxb7 25.Bxb7 Bxb2 26.Re2 Bd4 27.Ba6 Bc5 28.Bc4 Kg7
+29.Kg2 h5 30.h4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Munoz, Camilo"]
+[Black "Cisneros Avendano, Diego"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1813"]
+[PlyCount "50"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 Nf6 2.Nf3 e6 3.Bg5 c5 4.e3 Nc6 5.c3 Qb6 6.Qc1 cxd4 7.exd4 Be7 8.Bd3 O-O
+9.O-O d5 10.Ne5 Qc7 11.f4 Ne8 12.Bxe7 Nxe7 13.Qc2 f5 14.Nd2 Nd6 15.Rf3 b5 16.Rh3
+a5 17.a3 Bd7 18.g4 Nc6 19.Ndf3 Nxe5 20.Nxe5 g6 21.g5 b4 22.cxb4 Qxc2 23.Bxc2
+Rfc8 24.Bd1 Be8 25.bxa5 Rxa5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Carlos Inga, Augusto "]
+[Black "Roman Sanchez, Eduardo Zosimo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "125"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Re8
+9.O-O-O Nc6 10.g4 Bd7 11.h4 Qa5 12.Nb3 Qc7 13.h5 Ne5 14.h6 Bh8 15.Be2 Rec8
+16.Bd4 Nc6 17.Be3 Ne5 18.Bd4 Nc6 19.Bxf6 exf6 20.Qxd6 Qxd6 21.Rxd6 Be8 22.Rhd1
+Rab8 23.a3 a6 24.Nd5 f5 25.Nb6 Rc7 26.gxf5 Be5 27.R6d5 Bf4+ 28.Kb1 Bxh6 29.Nd7
+Bxd7 30.Rxd7 Rxd7 31.Rxd7 gxf5 32.exf5 Re8 33.Bd3 Re7 34.Rxe7 Nxe7 35.Nc5 Bf4
+36.Nxb7 h5 37.c4 h4 38.f6 Nc6 39.Bf5 Nd4 40.Bg4 Be5 41.Nc5 Bxf6 42.Nd3 Bd8 43.f4
+f5 44.Bh3 Bc7 45.Kc1 Kf7 46.Kd2 Nf3+ 47.Ke3 Ng1 48.Bxf5 Kf6 49.Bg4 h3 50.Kf2 h2
+51.Kg2 Bxf4 52.Nxf4 Kg5 53.Kxh2 Kxg4 54.Kxg1 Kxf4 55.b4 Ke5 56.b5 axb5 57.cxb5
+Kd5 58.a4 Kc5 59.Kf2 Kb6 60.Ke3 Kb7 61.Kd4 Kb6 62.Kc4 Kb7 63.a5 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Echavarria, Juan"]
+[Black "Rosero, Jefferson"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "42"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 c5 2.Nf3 e6 3.c4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.e3 Be7 7.Be2 O-O 8.O-O b6 9.b3
+Bb7 10.Bb2 Rc8 11.Rc1 Bd6 12.Bf3 Bb8 13.Qe2 e5 14.Nf5 Re8 15.Ng3 a6 16.Rfd1 Qc7
+17.Nd5 Nxd5 18.cxd5 e4 19.Bg4 Nd4 20.exd4 Qd6 21.Qe3 g6 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Rojas Menor, Walter Alejandro"]
+[Black "Diaz, Cristian Camilo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "1900"]
+[BlackElo "1964"]
+[PlyCount "69"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nge2 e6 6.d3 Nge7 7.O-O O-O 8.Be3 Nd4 9.f4
+d5 10.Qd2 b6 11.e5 Nxe2+ 12.Nxe2 Rb8 13.c3 Ba6 14.Rfd1 Qc7 15.Rac1 Rfd8 16.d4
+Bxe2 17.Qxe2 c4 18.g4 b5 19.Rf1 Rb6 20.Rf3 Rdb8 21.Rcf1 b4 22.Bd2 a5 23.Qf2 Qd7
+24.Bh3 Qa4 25.f5 gxf5 26.gxf5 exf5 27.Bxf5 Nxf5 28.Rxf5 Qxa2 29.Rxf7 Rg6+ 30.Kh1
+Qxb2 31.e6 Qc2 32.e7 Qe4+ 33.Qf3 Qxf3+ 34.R1xf3 Re6 35.cxb4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Martinez Baquero, Hugo  Esteban"]
+[Black "Hernandez Torres, Alex Daniel"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1926"]
+[PlyCount "62"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.d4 d5 2.c4 c6 3.Nc3 Nf6 4.Bg5 Nbd7 5.Nf3 h6 6.Bh4 e6 7.Qc2 Be7 8.e3 Nb6 9.c5
+Nbd7 10.Bd3 b6 11.cxb6 axb6 12.O-O g5 13.Bg3 Rg8 14.Nb5 Bb7 15.Nc7+ Kf8 16.Nxa8
+Bxa8 17.Ne5 Nxe5 18.Bxe5 Bd6 19.f3 Bxe5 20.dxe5 Nd7 21.f4 gxf4 22.exf4 c5 23.Be2
+Qh4 24.Bb5 d4 25.Rf2 Ke7 26.Bd3 f5 27.Be2 Qh3 28.Bf1 Be4 29.Qd2 Nf8 30.g3 Rxg3+
+31.Bg2 Rg4 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Parra, Brayan"]
+[Black "Garcia Talledo, Gonzalo"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "1797"]
+[BlackElo "0"]
+[PlyCount "43"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 Nc6 8.Qd2 h5
+9.O-O-O Bd7 10.Kb1 a5 11.a4 Rc8 12.h3 Ne5 13.Ndb5 Nc4 14.Bxc4 Rxc4 15.b3 Rc8
+16.Bd4 O-O 17.g4 Kh7 18.Qf2 Bxb5 19.Nxb5 Nd7 20.Bxg7 Kxg7 21.gxh5 gxh5 22.Rhg1+ 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Arias Monsalve, Andres Felipe"]
+[Black "Gomez, Cristian David"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1955"]
+[PlyCount "72"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nc3 e6 3.g3 Nc6 4.d3 h6 5.Bg2 Be7 6.Be3 Nf6 7.f4 d5 8.Bd2 d4 9.Nce2 e5
+10.f5 b5 11.c3 dxc3 12.Nxc3 Qxd3 13.Nd5 O-O 14.Nxe7+ Nxe7 15.Bc3 Qxd1+ 16.Rxd1
+Nc6 17.b3 Bb7 18.Nh3 b4 19.Bb2 Nd4 20.Nf2 Rad8 21.O-O Rd7 22.Rfe1 Rfd8 23.Rc1
+Rc8 24.Nd3 Nxb3 25.Nxe5 Nxc1 26.Nxd7 Nxd7 27.Rxc1 c4 28.a3 c3 29.Ba1 a5 30.Kf2
+Nc5 31.Bf1 Bxe4 32.axb4 axb4 33.Bxc3 bxc3 34.Rxc3 Bxf5 35.Ke3 Re8+ 36.Kf4 Ne4 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Castellanos, Camilo Andres"]
+[Black "Ospina Escobar, Juan Pablo"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1875"]
+[PlyCount "60"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 Nc6 3.Nc3 g6 4.Bb5 Bg7 5.d3 a6 6.Bxc6 bxc6 7.Be3 Qb6 8.Na4 Qb4+
+9.c3 Qb5 10.Bxc5 d6 11.Be3 Nf6 12.Nd4 Qb7 13.O-O c5 14.Nf3 Qb5 15.b3 Ng4 16.c4
+Nxe3 17.fxe3 Qb7 18.Rc1 O-O 19.Qc2 Bg4 20.d4 Bxf3 21.Rxf3 cxd4 22.exd4 Bxd4+
+23.Kf1 Rac8 24.Qd3 Be5 25.h3 Qb4 26.Rf2 Qb7 27.Qd5 Qa7 28.Rfc2 Bf4 29.Rb1 Bg3
+30.b4 Qe3 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Gomez, Luis Miguel"]
+[Black "Suarez Pinto, Sergio Rafael"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "1737"]
+[PlyCount "70"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Qe2 b5 6.Bb3 Be7 7.c3 d6 8.O-O O-O 9.Rd1
+Na5 10.Bc2 c5 11.d3 Re8 12.Nbd2 Bf8 13.Nf1 g6 14.h3 Bg7 15.Bd2 Bd7 16.Be1 Nc6
+17.Ne3 [17.Ng3 Qc7] 17...Qc7 18.Bb3 Na5 19.Nd5 Nxd5 20.Bxd5 Bc6 21.c4 Bxd5
+22.cxd5 Nb7 23.Rdc1 Qd7 24.Bd2 Reb8 25.a3 a5 26.b3 a4 27.b4 Rc8 28.Ne1 Rc7
+29.Rc2 Rac8 30.Rac1 cxb4 31.Rxc7 Rxc7 32.Rxc7 Qxc7 33.Bxb4 Bf8 34.Nc2 f6 35.Ne1
+Kg7 1/2-1/2
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Agudelo, Pedro Luis"]
+[Black "Villar Saldana, Jhonatan Junior"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "87"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 a6 5.b3 Nf6 6.Nc3 Qa5 7.Bd2 Qb6 8.Nf3 Ng4
+9.Qe2 e6 10.O-O-O Qxf2 11.Be1 Qe3+ 12.Kb2 Nc6 13.Bg3 Qxe2 14.Bxe2 Nge5 15.Nxe5
+dxe5 16.Rd2 b5 17.Rhd1 Bc5 18.Nxb5 O-O 19.Nd6 a5 20.c3 Ba6 21.Bxa6 Rxa6 22.Nb7
+Be7 23.Rd7 Bf6 24.Rc7 Ne7 25.Nc5 Raa8 26.Nd7 Rfe8 27.Nxf6+ gxf6 28.Rdd7 Kf8
+29.Bh4 Rad8 30.Bxf6 Rxd7 31.Rxd7 Ng6 32.Rd8 Rxd8 33.Bxd8 a4 34.bxa4 Ke8 35.Bf6
+Nf4 36.g3 Nd3+ 37.Kc2 Nc5 38.Bxe5 Nxe4 39.Kb3 Nc5+ 40.Ka3 Kd7 41.a5 f5 42.a6 Kc6
+43.a7 Kb7 44.Kb4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Gonzalez L, Nicolas Mateo"]
+[Black "De La Cerda, Damian Josue"]
+[Result "0-1"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "126"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 c5 2.Nf3 g6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Bg7 6.Bc4 Nc6 7.O-O O-O 8.Re1 a6
+9.Bg5 b5 10.Bb3 Nxd4 11.Qxd4 d6 12.Rad1 Bb7 13.e5 dxe5 14.Qxe5 Nd5 15.Qg3 Bxc3
+16.bxc3 f6 17.Bf4 e5 18.Bc1 Rf7 19.c4 bxc4 20.Bxc4 Rd7 21.Rd2 Rc8 22.Bb3 Qa5
+23.Re3 Kg7 24.Red3 Rcd8 25.c4 Nb6 26.h3 Rxd3 27.Rxd3 Rxd3 28.Qxd3 Qe1+ 29.Qf1
+Qe4 30.f3 Qd4+ 31.Qf2 Qxf2+ 32.Kxf2 Bc6 33.c5 Nd5 34.Bxd5 Bxd5 35.a3 Kf7 36.Be3
+Ke6 37.Ke2 Bc4+ 38.Kf2 Kd5 39.g4 f5 40.Kg2 f4 41.Bg1 e4 42.fxe4+ Kxe4 43.h4 h6
+44.Kh3 Bf1+ 45.Kh2 Kf3 46.c6 Bb5 47.c7 Bd7 48.h5 gxh5 49.gxh5 Kg4 50.Bd4 Kxh5
+51.a4 Kg4 52.Kg2 h5 53.Bf6 h4 54.a5 h3+ 55.Kh2 Kf3 56.Bh4 Ke2 57.Bg5 f3 58.Bh4
+f2 59.Bxf2 Kxf2 60.Kh1 Kg3 61.c8=Q Bxc8 62.Kg1 h2+ 63.Kh1 Bb7# 0-1
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Rios Franco, Juan Pablo"]
+[Black "Obando Guzman, Soren"]
+[Result "1-0"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "51"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 h6 4.O-O Bc5 5.c3 Nf6 6.Re1 O-O 7.Nxe5 Nxe5 8.d4 Bd6
+9.dxe5 Bxe5 10.f4 d6 11.fxe5 dxe5 12.Qxd8 Rxd8 13.Nd2 c6 14.Nf3 Re8 15.b4 b5
+16.Bb3 Bg4 17.h3 Bh5 18.a4 Bxf3 19.gxf3 a6 20.axb5 axb5 21.Rxa8 Rxa8 22.Bb2 Nh5
+23.Rd1 Kh7 24.Bxf7 Ra7 25.Bxh5 g6 26.Bg4 1-0
+
+[Event "XXII Torneo Panamericano de la Juventud 2011  U-14
+[Site "Cali, Coliseo Cubierto Evangelista Mora"]
+[Date "2011.07.08"]
+[Round "9"]
+[Board "1"]
+[White "Yate Baron, Andres Steven"]
+[Black "Polo, John Alexander"]
+[Result "1/2-1/2"]
+[ECO "A00"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[PlyCount "76"]
+[EventDate "2011.07.03"]
+[EventRounds "9"]
+[EventCountry "COL"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 d6 6.Nbd2 Be6 7.Bb5 Bd7 8.O-O a6 9.Ba4
+d5 10.exd5 Nxd5 11.Ne4 Bb6 12.Bb3 Nf6 13.Nfg5 O-O 14.Nf3 Nxe4 15.dxe4 Bg4 16.Qe2
+Qf6 17.Bd1 Bxf3 18.Qxf3 Qxf3 19.Bxf3 Rfd8 20.b3 Rd3 21.Bb2 Rd2 22.Ba3 Rad8
+23.Rfd1 f6 24.Bg4 Bxf2+ 25.Kf1 Rxd1+ 26.Rxd1 Rxd1+ 27.Bxd1 Bb6 28.Bg4 Kf7 29.Bc8
+Nd8 30.Ke2 Kg6 31.Be7 Nc6 32.Bf8 Bg1 33.h3 Nd8 34.Be7 Nc6 35.Bb4 Nxb4 36.cxb4 b6
+37.Bxa6 Kg5 38.Kf3 Bd4 1/2-1/2
+
