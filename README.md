@@ -8,7 +8,7 @@ programa).
 A continuación un extracto de las primeras cinco jugadas de la partida número uno
 de 1996 entre Gary Kasparov y Deep Blue.
 
-1. e4 e5
+1. e4 c5
 2. c3 d5
 3. exd5 &#9819;xd5
 4. d4 &#9822;f6
