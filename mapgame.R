@@ -95,5 +95,8 @@ myBoard <- function(movetext){
             #black is moving
             i = 0
         }
+        #Adding current move
+        newboard = rbind(newboard, board)
     }
+    return newboard
 }
