@@ -3,10 +3,11 @@ if(!require(stringr)){
     library(stringr)
 }
 
-myBoard <- function(movetext){
-    moves <- unlist(strsplit(movetext)
+myBoard <- function(movetext) {
+    moves <- unlist(strsplit(movetext, " "))
 
-    newboard = data.frame()
+    newboard = data.frame(stringsAsFactors=FALSE)
+
     board = list (
         a8 = "41", b8 = "42", c8 = "43", d8 = "44", e8 = "45", f8 = "46", g8 = "47", h8 = "48", 
         a7 = "31", b7 = "32", c7 = "33", d7 = "34", e7 = "35", f7 = "36", g7 = "37", h7 = "38", 
@@ -18,42 +19,47 @@ myBoard <- function(movetext){
         a1 = "11", b1 = "12", c1 = "13", d1 = "14", e1 = "15", f1 = "16", g1 = "17", h1 = "18" 
     )
 
-    newboard = rbind(newboard, board)
+    newboard = rbind(newboard, board, stringsAsFactors=FALSE)
     i = 0
 
     for (move in moves) {
         i = i + 1
         #don't forget to review hierarchy and precedence of moves
-        if (str_detect(move, "[a-z][1-8]")) {
+        if (str_detect(move, "[a-h][1-8]")) {
             #pawn is moving
             rank = substr(move, nchar(move) - 1, nchar(move) - 1)
             file = substr(move, nchar(move), nchar(move))
+            current.move = move
             if (i == 2) {
                 #White pawns                    
-                previous.move = paste(rank, toString(strtoi(file) - 1))
-                pawnValue = strtoi(board[previous.move])
+                previous.move = paste(rank, toString(strtoi(file) - 1), sep = "")
+                pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 21 & pawnValue <= 28) {
-                    board[move] = board[previous.move]
-                    board[previous.move] = "00"
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
                 } else {
-                    previous.move = paste(rank, toString(strtoi(file) - 2))
-                    pawnValue = strtoi(board[previous.move])
-                    board[move] = board[previous.move]
-                    board[previous.move] = "00"
+                    previous.move = paste(rank, toString(strtoi(file) - 2), sep = "")
+                    pawnValue = strtoi(board[[previous.move]])
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
                 }
+                #Adding current move
+                newboard = rbind(newboard, board, stringsAsFactors=FALSE)
             } else if (i == 3) {
                 #Black pawns                    
-                previous.move = paste(rank, toString(strtoi(file) + 1))
-                pawnValue = strtoi(board[previous.move])
+                previous.move = paste(rank, toString(strtoi(file) + 1), sep = "")
+                pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 31 & pawnValue <= 38) {
-                    board[move] = board[previous.move]
-                    board[previous.move] = "00"
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
                 } else {
-                    previous.move = paste(rank, toString(strtoi(file) + 2))
-                    pawnValue = strtoi(board[previous.move])
-                    board[move] = board[previous.move]
-                    board[previous.move] = "00"
+                    previous.move = paste(rank, toString(strtoi(file) + 2), sep = "")
+                    pawnValue = strtoi(board[[previous.move]])
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
                 }
+                #Adding current move
+                newboard = rbind(newboard, board, stringsAsFactors=FALSE)
             }
         } else if (str_detect(move, "[a-h][x][a-h][1-8]")) {
             #pawn is capturing 
@@ -61,29 +67,34 @@ myBoard <- function(movetext){
             file = substr(move, nchar(move), nchar(move))
             previous.rank = substr(move, 1, 1)
             current.move = paste(rank, file)
-
             if (i == 2) {
                 #White pawns                    
                 previous.file = toString(strtoi(file) - 1)
-                previous.move = paste(previous.rank, previous.file)
-                pawnValue = strtoi(board[previous.move])
+                previous.move = paste(previous.rank, previous.file, sep = "")
+                pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 21 & pawnValue <= 28) {
-                    board[current.move] = board[previous.move]
-                    board[previous.move] = "00"
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
+
+                    #Adding current move
+                    newboard = rbind(newboard, board, stringsAsFactors=FALSE)
                 }
             } else if (i == 3) {
                 #Black pawns                    
                 previous.file = toString(strtoi(file) + 1)
-                previous.move = paste(previous.rank, previous.file)
-                pawnValue = strtoi(board[previous.move])
+                previous.move = paste(previous.rank, previous.file, sep = "")
+                pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 31 & pawnValue <= 38) {
-                    board[current.move] = board[previous.move]
-                    board[previous.move] = "00"
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
+
+                    #Adding current move
+                    newboard = rbind(newboard, board, stringsAsFactors=FALSE)
                 }
             }
-        } else if (str_detect(move, "[K|Q|R|B|N][a-h][1-8]"){
+        } else if (str_detect(move, "[K|Q|R|B|N][a-h][1-8]")) {
             #King, Queen, Rock, Bishop or Knight is moving
-        } else if (str_detect(move, "[K|Q|R|B|N][x][a-h][1-8]"){
+        } else if (str_detect(move, "[K|Q|R|B|N][x][a-h][1-8]")) {
             #King, Queen, Rock, Bishop or Knight is capturing
         } else if (move == "O-O") {
             #short castling
@@ -95,8 +106,7 @@ myBoard <- function(movetext){
             #black is moving
             i = 0
         }
-        #Adding current move
-        newboard = rbind(newboard, board)
     }
-    return newboard
+
+    return (newboard)
 }
