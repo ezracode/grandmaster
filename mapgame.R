@@ -23,9 +23,37 @@ myBoard <- function(movetext) {
     i = 0
 
     for (move in moves) {
+        print (move)
         i = i + 1
         #don't forget to review hierarchy and precedence of moves
-        if (str_detect(move, "[a-h][1-8]")) {
+        if (str_detect(move, "[a-h][x][a-h][1-8]")) {
+            #pawn is capturing 
+            rank = substr(move, nchar(move) - 1, nchar(move) - 1)
+            file = substr(move, nchar(move), nchar(move))
+            previous.rank = substr(move, 1, 1)
+            current.move = paste(rank, file, sep = "")
+            if (i == 2) {
+                #White pawns                    
+                previous.file = toString(strtoi(file) - 1)
+                previous.move = paste(previous.rank, previous.file, sep = "")
+                pawnValue = strtoi(board[[previous.move]])
+                if (pawnValue >= 21 & pawnValue <= 28) {
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
+                }
+            } else if (i == 3) {
+                #Black pawns                    
+                previous.file = toString(strtoi(file) + 1)
+                previous.move = paste(previous.rank, previous.file, sep = "")
+                pawnValue = strtoi(board[[previous.move]])
+                if (pawnValue >= 31 & pawnValue <= 38) {
+                    board[[current.move]] = board[[previous.move]]
+                    board[[previous.move]] = "00"
+                }
+            }
+            #Adding current move
+            newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+        } else if (str_detect(move, "[a-h][1-8]")) {
             #pawn is moving
             rank = substr(move, nchar(move) - 1, nchar(move) - 1)
             file = substr(move, nchar(move), nchar(move))
@@ -59,43 +87,15 @@ myBoard <- function(movetext) {
             }
             #Adding current move
             newboard = rbind(newboard, board, stringsAsFactors = FALSE)
-        } else if (str_detect(move, "[a-h][x][a-h][1-8]")) {
-            #pawn is capturing 
-            rank = substr(move, nchar(move) - 1, nchar(move) - 1)
-            file = substr(move, nchar(move), nchar(move))
-            previous.rank = substr(move, 1, 1)
-            current.move = paste(rank, file)
-            if (i == 2) {
-                #White pawns                    
-                previous.file = toString(strtoi(file) - 1)
-                previous.move = paste(previous.rank, previous.file, sep = "")
-                pawnValue = strtoi(board[[previous.move]])
-                if (pawnValue >= 21 & pawnValue <= 28) {
-                    board[[current.move]] = board[[previous.move]]
-                    board[[previous.move]] = "00"
-                }
-            } else if (i == 3) {
-                #Black pawns                    
-                previous.file = toString(strtoi(file) + 1)
-                previous.move = paste(previous.rank, previous.file, sep = "")
-                pawnValue = strtoi(board[[previous.move]])
-                if (pawnValue >= 31 & pawnValue <= 38) {
-                    board[[current.move]] = board[[previous.move]]
-                    board[[previous.move]] = "00"
-                }
-            }
-            #Adding current move
-            newboard = rbind(newboard, board, stringsAsFactors=FALSE)
-        } else if (str_detect(move, "[K|Q|R|B|N][a-h][1-8]")) {
-            #King, Queen, Rock, Bishop or Knight is moving
         } else if (str_detect(move, "[K|Q|R|B|N][x][a-h][1-8]")) {
             #King, Queen, Rock, Bishop or Knight is capturing
+        } else if (str_detect(move, "[K|Q|R|B|N][a-h][1-8]")) {
+            #King, Queen, Rock, Bishop or Knight is moving
         } else if (move == "O-O") {
             #short castling
         } else if (move == "O-O-O") {
             #long castling
         }
-
         if (i == 3) {
             #black is moving
             i = 0
