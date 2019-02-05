@@ -13,7 +13,7 @@ if (!require(dplyr)) {
     library(dplyr)
 }
 
-whiteDiagonals = list {
+whiteDiagonals = list (
     d1 = list("a2", "b1"),
     d2 = list("a4", "b3", "c2", "d1"),
     d3 = list("a6", "b5", "c4", "d3", "e2", "f1"),
@@ -23,13 +23,13 @@ whiteDiagonals = list {
     d7 = list("g8", "h7"),
     d8 = list("a6", "b7", "c8"),
     d9 = list("a4", "b5", "c6", "d7", "e8"),
-    d10 = list("a2", "b3", "c4", "d5", "e6", "f7", "g8")
-    d11 = list("b1", "c2", "d3", "e4", "f5", "g6", "h7")
+    d10 = list("a2", "b3", "c4", "d5", "e6", "f7", "g8"),
+    d11 = list("b1", "c2", "d3", "e4", "f5", "g6", "h7"),
     d12 = list("d1", "e2", "f3", "g4", "h5"),
     d13 = list("f1", "g2", "h3")
-}
+)
 
-blackDiagonals = list {
+blackDiagonals = list (
     d1 = list("a7", "b8"),
     d2 = list("a5", "b6", "c7", "d8"),
     d3 = list("a3", "b4", "c5", "d6", "e7", "f8"),
@@ -39,10 +39,31 @@ blackDiagonals = list {
     d7 = list("g1", "h2"),
     d8 = list("a3", "b2", "c1"),
     d9 = list("a5", "b4", "c3", "d2", "e1"),
-    d10 = list("a7", "b6", "c5", "d4", "e3", "f2", "g1")
-    d11 = list("b8", "c7", "d6", "e5", "F4", "g3", "h2")
+    d10 = list("a7", "b6", "c5", "d4", "e3", "f2", "g1"),
+    d11 = list("b8", "c7", "d6", "e5", "F4", "g3", "h2"),
     d12 = list("d8", "e7", "f6", "g5", "h4"),
     d13 = list("f8", "g7", "h6")
+)
+
+colorOfCell <- function(file, rank){
+#rank is a number, file is a letter
+#file even and rank even black - columna impar fila impar negro
+#file even and rank odd  white - columna impar fila par   blanco
+#file odd  and rank even white - columna par   fila impar blanco
+#file odd  and rank odd  black - columna par   fila par   negro
+    if (file %in% list("a", "c", "d", "g")) {
+        if( (strtoi(rank) %% 2) != 0 ) {
+            return ("B")
+        } else {
+            return ("W")
+        }
+    } else {
+        if( (strtoi(rank) %% 2) != 0 ) {
+            return ("W")
+        } else {
+            return ("B")
+        }
+    }
 }
 
 setOfPieces = list (
@@ -99,13 +120,13 @@ board = list (
     a1 = "11", b1 = "12", c1 = "13", d1 = "14", e1 = "15", f1 = "16", g1 = "17", h1 = "18" 
 )
 
-findRock <- function(prank, pfile, listOfRocks) {
+findRock <- function(pfile, prank, listOfRocks) {
     for (i in 1:nrow(listOfRocks)) {
         Rock <- listOfRocks[i, ]
         position = Rock[["current.position"]]    
-        rank = substr(position, nchar(position) - 1, nchar(position) - 1)
-        file = substr(position, nchar(position), nchar(position))
-        if (prank == rank | pfile == file) {
+        file = substr(position, nchar(position) - 1, nchar(position) - 1)
+        rank = substr(position, nchar(position), nchar(position))
+        if (pfile == file | prank == rank) {
             return(Rock)
         }
     } 
@@ -115,12 +136,10 @@ findRock <- function(prank, pfile, listOfRocks) {
 findBishop <- function(move, listOfBishops, diagonals) {
     for (i in 1:nrow(listOfBishops)){
         Bishop <- listOfBishops[i, ]
-        position = Rock[["current.position"]]    
-        rank = substr(position, nchar(position) - 1, nchar(position) - 1)
-        file = substr(position, nchar(position), nchar(position))
+        position = Bishop[["current.position"]]    
         for (row in diagonals) {
-            print(Row)
             if (move %in% row & position %in% row){
+                print ("encuentra la diagonal")    
                 return(Bishop)
             }
         }
@@ -141,14 +160,14 @@ myBoard <- function(movetext) {
         #don't forget to review hierarchy and precedence of moves
         if (str_detect(move, "[a-h][x][a-h][1-8]")) {
             #pawn is capturing 
-            rank = substr(move, nchar(move) - 1, nchar(move) - 1)
-            file = substr(move, nchar(move), nchar(move))
-            previous.rank = substr(move, 1, 1)
-            current.move = paste(rank, file, sep = "")
+            file = substr(move, nchar(move) - 1, nchar(move) - 1)
+            rank = substr(move, nchar(move), nchar(move))
+            previous.file = substr(move, 1, 1)
+            current.move = paste(file,rank, sep = "")
             if (i == 2) {
                 #White pawns                    
-                previous.file = toString(strtoi(file) - 1)
-                previous.move = paste(previous.rank, previous.file, sep = "")
+                previous.rank = toString(strtoi(rank) - 1)
+                previous.move = paste(previous.file, previous.rank, sep = "")
                 pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 21 & pawnValue <= 28) {
                     board[[current.move]] = board[[previous.move]]
@@ -156,8 +175,8 @@ myBoard <- function(movetext) {
                 }
             } else if (i == 3) {
                 #Black pawns                    
-                previous.file = toString(strtoi(file) + 1)
-                previous.move = paste(previous.rank, previous.file, sep = "")
+                previous.rank = toString(strtoi(rank) + 1)
+                previous.move = paste(previous.file, previous.rank, sep = "")
                 pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 31 & pawnValue <= 38) {
                     board[[current.move]] = board[[previous.move]]
@@ -173,10 +192,10 @@ myBoard <- function(movetext) {
             newboard = rbind(newboard, board, stringsAsFactors = FALSE)
         } else if (str_detect(move, "[K|Q|R|B|N][a-h][1-8]")) {
             #King, Queen, Rock, Bishop or Knight is moving
-            rank = substr(move, nchar(move) - 1, nchar(move) - 1)
-            file = substr(move, nchar(move), nchar(move))
+            file = substr(move, nchar(move) - 1, nchar(move) - 1)
+            rank = substr(move, nchar(move), nchar(move))
             piece = substr(move, 1, 1)
-            current.move = paste(rank, file, sep = "")
+            current.move = paste(file, rank, sep = "")
 
             if (piece == "R") {
                 #Rock is moving
@@ -194,7 +213,7 @@ myBoard <- function(movetext) {
                         select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
                         filter(kind == "R" & color == "B")
                 }
-                Rock = findRock(rank, file, listOfRocks)
+                Rock = findRock(file, rank, listOfRocks)
                 previous.move = Rock$current.position               
                 rockValue = strtoi(board[[previous.move]])
 
@@ -217,16 +236,22 @@ myBoard <- function(movetext) {
                         pieces %>% 
                         select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
                         filter(kind == "B" & color == "W")
-                    diagonals <- whiteDiagonals    
                 } else if (i == 3) {
                 #Black
                     listOfBishops <- 
                         pieces %>% 
                         select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
                         filter(kind == "B" & color == "B")
+                }
+
+                if (colorOfCell(file, rank) == "W") {
+                    diagonals <- whiteDiagonals
+                } else {
                     diagonals <- blackDiagonals
                 }
+
                 Bishop = findBishop(current.move, listOfBishops, diagonals)
+                print("sale de la funcion")
                 previous.move = Bishop$current.position               
                 rockValue = strtoi(board[[previous.move]])
 
@@ -243,31 +268,31 @@ myBoard <- function(movetext) {
             }
         } else if (str_detect(move, "[a-h][1-8]")) {
             #pawn is moving
-            rank = substr(move, nchar(move) - 1, nchar(move) - 1)
-            file = substr(move, nchar(move), nchar(move))
+            file = substr(move, nchar(move) - 1, nchar(move) - 1)
+            rank = substr(move, nchar(move), nchar(move))
             current.move = move
             if (i == 2) {
                 #White pawns                    
-                previous.move = paste(rank, toString(strtoi(file) - 1), sep = "")
+                previous.move = paste(file, toString(strtoi(rank) - 1), sep = "")
                 pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 21 & pawnValue <= 28) {
                     board[[current.move]] = board[[previous.move]]
                     board[[previous.move]] = "00"
                 } else {
-                    previous.move = paste(rank, toString(strtoi(file) - 2), sep = "")
+                    previous.move = paste(file, toString(strtoi(rank) - 2), sep = "")
                     pawnValue = strtoi(board[[previous.move]])
                     board[[current.move]] = board[[previous.move]]
                     board[[previous.move]] = "00"
                 }
             } else if (i == 3) {
                 #Black pawns                    
-                previous.move = paste(rank, toString(strtoi(file) + 1), sep = "")
+                previous.move = paste(file, toString(strtoi(rank) + 1), sep = "")
                 pawnValue = strtoi(board[[previous.move]])
                 if (pawnValue >= 31 & pawnValue <= 38) {
                     board[[current.move]] = board[[previous.move]]
                     board[[previous.move]] = "00"
                 } else {
-                    previous.move = paste(rank, toString(strtoi(file) + 2), sep = "")
+                    previous.move = paste(file, toString(strtoi(rank) + 2), sep = "")
                     pawnValue = strtoi(board[[previous.move]])
                     board[[current.move]] = board[[previous.move]]
                     board[[previous.move]] = "00"
