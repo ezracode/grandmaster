@@ -1,16 +1,48 @@
-if(!require(stringr)){
+if (!require(stringr)) {
     install.packages("stringr")
     library(stringr)
 }
 
-if(!require(rlist)){
+if (!require(rlist)) {
     install.packages("rlist")
     library(rlist)
 }
 
-if(!require(dplyr)){
+if (!require(dplyr)) {
     install.packages("dplyr")
     library(dplyr)
+}
+
+whiteDiagonals = list {
+    d1 = list("a2", "b1"),
+    d2 = list("a4", "b3", "c2", "d1"),
+    d3 = list("a6", "b5", "c4", "d3", "e2", "f1"),
+    d4 = list("a8", "b7", "c6", "d5", "e4", "f3", "g2", "h1"),
+    d5 = list("c8", "d7", "e6", "f5", "g4", "h3"),
+    d6 = list("e8", "f7", "g6", "h5"),
+    d7 = list("g8", "h7"),
+    d8 = list("a6", "b7", "c8"),
+    d9 = list("a4", "b5", "c6", "d7", "e8"),
+    d10 = list("a2", "b3", "c4", "d5", "e6", "f7", "g8")
+    d11 = list("b1", "c2", "d3", "e4", "f5", "g6", "h7")
+    d12 = list("d1", "e2", "f3", "g4", "h5"),
+    d13 = list("f1", "g2", "h3")
+}
+
+blackDiagonals = list {
+    d1 = list("a7", "b8"),
+    d2 = list("a5", "b6", "c7", "d8"),
+    d3 = list("a3", "b4", "c5", "d6", "e7", "f8"),
+    d4 = list("a1", "b2", "c3", "d4", "e5", "f6", "g7", "h8"),
+    d5 = list("c1", "d2", "e3", "f4", "g5", "h6"),
+    d6 = list("e1", "f2", "g3", "h4"),
+    d7 = list("g1", "h2"),
+    d8 = list("a3", "b2", "c1"),
+    d9 = list("a5", "b4", "c3", "d2", "e1"),
+    d10 = list("a7", "b6", "c5", "d4", "e3", "f2", "g1")
+    d11 = list("b8", "c7", "d6", "e5", "F4", "g3", "h2")
+    d12 = list("d8", "e7", "f6", "g5", "h4"),
+    d13 = list("f8", "g7", "h6")
 }
 
 setOfPieces = list (
@@ -68,13 +100,29 @@ board = list (
 )
 
 findRock <- function(prank, pfile, listOfRocks) {
-    for (i in 1:nrow(listOfRocks)){
+    for (i in 1:nrow(listOfRocks)) {
         Rock <- listOfRocks[i, ]
         position = Rock[["current.position"]]    
         rank = substr(position, nchar(position) - 1, nchar(position) - 1)
         file = substr(position, nchar(position), nchar(position))
-        if (prank == rank | pfile == file){
+        if (prank == rank | pfile == file) {
             return(Rock)
+        }
+    } 
+    return (NULL)
+}
+
+findBishop <- function(move, listOfBishops, diagonals) {
+    for (i in 1:nrow(listOfBishops)){
+        Bishop <- listOfBishops[i, ]
+        position = Rock[["current.position"]]    
+        rank = substr(position, nchar(position) - 1, nchar(position) - 1)
+        file = substr(position, nchar(position), nchar(position))
+        for (row in diagonals) {
+            print(Row)
+            if (move %in% row & position %in% row){
+                return(Bishop)
+            }
         }
     } 
     return (NULL)
@@ -125,16 +173,16 @@ myBoard <- function(movetext) {
             newboard = rbind(newboard, board, stringsAsFactors = FALSE)
         } else if (str_detect(move, "[K|Q|R|B|N][a-h][1-8]")) {
             #King, Queen, Rock, Bishop or Knight is moving
-
-            print("rock is moving")
             rank = substr(move, nchar(move) - 1, nchar(move) - 1)
             file = substr(move, nchar(move), nchar(move))
             piece = substr(move, 1, 1)
             current.move = paste(rank, file, sep = "")
 
-            if (piece == "R"){
+            if (piece == "R") {
+                #Rock is moving
+                print("Rock is moving")
                 if (i == 2){
-                #White
+                #White  
                     listOfRocks <- 
                         pieces %>% 
                         select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
@@ -148,6 +196,38 @@ myBoard <- function(movetext) {
                 }
                 Rock = findRock(rank, file, listOfRocks)
                 previous.move = Rock$current.position               
+                rockValue = strtoi(board[[previous.move]])
+
+                board[[current.move]] = board[[previous.move]]
+                board[[previous.move]] = "00"
+
+                #updating piece values
+                pieces$current.position[pieces$code == toString(rockValue)] <<- current.move
+                pieces$previous.position[pieces$code == toString(rockValue)] <<- previous.move
+                pieces$counter.of.moves[pieces$code == toString(rockValue)] <<- pieces$counter.of.moves[pieces$code == toString(rockValue)] + 1 
+
+                #Adding current move
+                newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+            } else if (piece == "B") {
+                #Bishop is moving
+                print("Bishop is moving")
+                if (i == 2){
+                #White  
+                    listOfBishops <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "B" & color == "W")
+                    diagonals <- whiteDiagonals    
+                } else if (i == 3) {
+                #Black
+                    listOfBishops <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "B" & color == "B")
+                    diagonals <- blackDiagonals
+                }
+                Bishop = findBishop(current.move, listOfBishops, diagonals)
+                previous.move = Bishop$current.position               
                 rockValue = strtoi(board[[previous.move]])
 
                 board[[current.move]] = board[[previous.move]]
