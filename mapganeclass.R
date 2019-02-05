@@ -3,6 +3,8 @@ if(!require(stringr)){
     library(stringr)
 }
 
+setClass("piece", slots = list(name = "character", current.position = "character", previouse.position = "character", counter.of.moves = "numeric"))
+
 myBoard <- function(movetext) {
     moves <- unlist(strsplit(movetext, " "))
 
