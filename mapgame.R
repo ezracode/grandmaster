@@ -213,6 +213,26 @@ findKnight <- function(pfile, prank, listOfKnights) {
     return (NULL)
 }
 
+findQueen <- function(pfile, prank, move, listOfQueens, diagonals) {
+    for (i in 1:nrow(listOfQueens)){
+        Queen <- listOfQueens[i, ]
+        position = Queen[["current.position"]]    
+
+        file = substr(position, nchar(position) - 1, nchar(position) - 1)
+        rank = substr(position, nchar(position), nchar(position))
+        if (pfile == file | prank == rank) {
+            return(Rock)
+        }
+
+        for (row in diagonals) {
+            if (move %in% row & position %in% row){
+                return(Queen)
+            }
+        }
+    } 
+    return (NULL)
+}
+
 myBoard <- function(movetext) {
     moves <- unlist(strsplit(movetext, " "))
 
@@ -357,6 +377,43 @@ myBoard <- function(movetext) {
                 pieces$current.position[pieces$code == toString(knightValue)] <<- current.move
                 pieces$previous.position[pieces$code == toString(knightValue)] <<- previous.move
                 pieces$counter.of.moves[pieces$code == toString(knightValue)] <<- pieces$counter.of.moves[pieces$code == toString(knightValue)] + 1 
+
+                #Adding current move
+                newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+            } else if (piece == "Q") {
+                #Queen is moving
+                print("Queen is moving")
+                if (i == 2){
+                #White  
+                    listOfQueens <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "Q" & color == "W")
+                } else if (i == 3) {
+                #Black
+                    listOfQueens <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "Q" & color == "B")
+                }
+
+                if (colorOfCell(file, rank) == "W") {
+                    diagonals <- whiteDiagonals
+                } else {
+                    diagonals <- blackDiagonals
+                }
+
+                Queen = findQueen(file, rank, current.move, listOfQueens, diagonals)
+                previous.move = Queen$current.position               
+                queenValue = strtoi(board[[previous.move]])
+
+                board[[current.move]] = board[[previous.move]]
+                board[[previous.move]] = "00"
+
+                #updating piece values
+                pieces$current.position[pieces$code == toString(quuenValue)] <<- current.move
+                pieces$previous.position[pieces$code == toString(queenValue)] <<- previous.move
+                pieces$counter.of.moves[pieces$code == toString(queenValue)] <<- pieces$counter.of.moves[pieces$code == toString(queenValue)] + 1 
 
                 #Adding current move
                 newboard = rbind(newboard, board, stringsAsFactors = FALSE)
