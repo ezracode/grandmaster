@@ -139,8 +139,74 @@ findBishop <- function(move, listOfBishops, diagonals) {
         position = Bishop[["current.position"]]    
         for (row in diagonals) {
             if (move %in% row & position %in% row){
-                print ("encuentra la diagonal")    
                 return(Bishop)
+            }
+        }
+    } 
+    return (NULL)
+}
+
+findKnight <- function(pfile, prank, listOfKnights) {
+    files = c("a", "b", "c", "d", "e", "f", "g")
+    pfilenumeric <- match(pfile, files)
+
+    for (i in 1:nrow(listOfKnights)) {
+        Knight <- listOfKnights[i, ]
+        position = Knight[["current.position"]]    
+
+        ## left and down
+        if ((pfilenumeric - 2) >= 1 & (strtoi(prank) - 1) >= 1) {
+            posiblePosition = paste(files[pfilenumeric - 2], toString(strtoi(prank) - 1), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+        if ((pfilenumeric - 1) >= 1 & (strtoi(prank) - 2) >= 1) {
+            posiblePosition = paste(files[pfilenumeric - 1], toString(strtoi(prank) - 2), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+
+        ## left and upper
+        if ((pfilenumeric - 2) >= 1 & (strtoi(prank) + 1) <= 8) {
+            posiblePosition = paste(files[pfilenumeric - 2], toString(strtoi(prank) + 1), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+        if ((pfilenumeric - 1) >= 1 & (strtoi(prank) + 2) <= 8) {
+            posiblePosition = paste(files[pfilenumeric - 1], toString(strtoi(prank) + 2), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+
+        ## right and upper
+        if ((pfilenumeric + 1) <= 8 & (strtoi(prank) + 2) <= 8) {
+            posiblePosition = paste(files[pfilenumeric + 1], toString(strtoi(prank) + 2), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+        if ((pfilenumeric + 2) <= 8 & (strtoi(prank) + 1) <= 8) {
+            posiblePosition = paste(files[pfilenumeric + 2], toString(strtoi(prank) + 1), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+
+        ## right and down
+        if ((pfilenumeric + 1) <= 8 & (strtoi(prank) - 2) >= 1) {
+            posiblePosition = paste(files[pfilenumeric + 1], toString(strtoi(prank) - 2), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
+            }
+        }
+        if ((pfilenumeric + 2) <= 8 & (strtoi(prank) - 1) >= 1) {
+            posiblePosition = paste(files[pfilenumeric + 2], toString(strtoi(prank) - 1), sep = "")
+            if (position == posiblePosition){
+                return(Knight)
             }
         }
     } 
@@ -251,17 +317,46 @@ myBoard <- function(movetext) {
                 }
 
                 Bishop = findBishop(current.move, listOfBishops, diagonals)
-                print("sale de la funcion")
                 previous.move = Bishop$current.position               
-                rockValue = strtoi(board[[previous.move]])
+                bishopValue = strtoi(board[[previous.move]])
 
                 board[[current.move]] = board[[previous.move]]
                 board[[previous.move]] = "00"
 
                 #updating piece values
-                pieces$current.position[pieces$code == toString(rockValue)] <<- current.move
-                pieces$previous.position[pieces$code == toString(rockValue)] <<- previous.move
-                pieces$counter.of.moves[pieces$code == toString(rockValue)] <<- pieces$counter.of.moves[pieces$code == toString(rockValue)] + 1 
+                pieces$current.position[pieces$code == toString(bishopValue)] <<- current.move
+                pieces$previous.position[pieces$code == toString(bishopValue)] <<- previous.move
+                pieces$counter.of.moves[pieces$code == toString(bishopValue)] <<- pieces$counter.of.moves[pieces$code == toString(bishopValue)] + 1 
+
+                #Adding current move
+                newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+            } else if (piece == "N") {
+                #Rock is moving
+                print("Knight is moving")
+                if (i == 2){
+                #White  
+                    listOfKnights <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "N" & color == "W")
+                } else if (i == 3) {
+                #Black
+                    listOfKnights <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "N" & color == "B")
+                }
+                Knight = findKnight(file, rank, listOfKnights)
+                previous.move = Knight$current.position               
+                knightValue = strtoi(board[[previous.move]])
+
+                board[[current.move]] = board[[previous.move]]
+                board[[previous.move]] = "00"
+
+                #updating piece values
+                pieces$current.position[pieces$code == toString(knightValue)] <<- current.move
+                pieces$previous.position[pieces$code == toString(knightValue)] <<- previous.move
+                pieces$counter.of.moves[pieces$code == toString(knightValue)] <<- pieces$counter.of.moves[pieces$code == toString(knightValue)] + 1 
 
                 #Adding current move
                 newboard = rbind(newboard, board, stringsAsFactors = FALSE)
