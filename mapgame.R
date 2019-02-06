@@ -40,7 +40,7 @@ blackDiagonals = list (
     d8 = list("a3", "b2", "c1"),
     d9 = list("a5", "b4", "c3", "d2", "e1"),
     d10 = list("a7", "b6", "c5", "d4", "e3", "f2", "g1"),
-    d11 = list("b8", "c7", "d6", "e5", "F4", "g3", "h2"),
+    d11 = list("b8", "c7", "d6", "e5", "f4", "g3", "h2"),
     d12 = list("d8", "e7", "f6", "g5", "h4"),
     d13 = list("f8", "g7", "h6")
 )
@@ -411,7 +411,7 @@ myBoard <- function(movetext) {
                 board[[previous.move]] = "00"
 
                 #updating piece values
-                pieces$current.position[pieces$code == toString(quuenValue)] <<- current.move
+                pieces$current.position[pieces$code == toString(queenValue)] <<- current.move
                 pieces$previous.position[pieces$code == toString(queenValue)] <<- previous.move
                 pieces$counter.of.moves[pieces$code == toString(queenValue)] <<- pieces$counter.of.moves[pieces$code == toString(queenValue)] + 1 
 
