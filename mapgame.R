@@ -221,7 +221,7 @@ findQueen <- function(pfile, prank, move, listOfQueens, diagonals) {
         file = substr(position, nchar(position) - 1, nchar(position) - 1)
         rank = substr(position, nchar(position), nchar(position))
         if (pfile == file | prank == rank) {
-            return(Rock)
+            return(Queen)
         }
 
         for (row in diagonals) {
