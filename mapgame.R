@@ -53,15 +53,15 @@ colorOfCell <- function(file, rank){
 #file odd  and rank odd  black - columna par   fila par   negro
     if (file %in% list("a", "c", "d", "g")) {
         if( (strtoi(rank) %% 2) != 0 ) {
-            return ("B")
-        } else {
             return ("W")
+        } else {
+            return ("B")
         }
     } else {
         if( (strtoi(rank) %% 2) != 0 ) {
-            return ("W")
-        } else {
             return ("B")
+        } else {
+            return ("W")
         }
     }
 }
@@ -137,6 +137,8 @@ findBishop <- function(move, listOfBishops, diagonals) {
     for (i in 1:nrow(listOfBishops)){
         Bishop <- listOfBishops[i, ]
         position = Bishop[["current.position"]]    
+        print (Bishop)
+        print (diagonals)
         for (row in diagonals) {
             if (move %in% row & position %in% row){
                 return(Bishop)
@@ -417,6 +419,36 @@ myBoard <- function(movetext) {
 
                 #Adding current move
                 newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+            } else if (piece == "K") {
+                #King is moving
+                print("King is moving")
+                if (i == 2){
+                #White  
+                    King <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "K" & color == "W")
+                } else if (i == 3) {
+                #Black
+                    King <- 
+                        pieces %>% 
+                        select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                        filter(kind == "K" & color == "B")
+                }
+
+                previous.move = King$current.position               
+                kingValue = strtoi(board[[previous.move]])
+
+                board[[current.move]] = board[[previous.move]]
+                board[[previous.move]] = "00"
+
+                #updating piece values
+                pieces$current.position[pieces$code == toString(kingValue)] <<- current.move
+                pieces$previous.position[pieces$code == toString(kingValue)] <<- previous.move
+                pieces$counter.of.moves[pieces$code == toString(kingValue)] <<- pieces$counter.of.moves[pieces$code == toString(kingValue)] + 1 
+
+                #Adding current move
+                newboard = rbind(newboard, board, stringsAsFactors = FALSE)
             }
         } else if (str_detect(move, "[a-h][1-8]")) {
             #pawn is moving
@@ -459,11 +491,89 @@ myBoard <- function(movetext) {
             newboard = rbind(newboard, board, stringsAsFactors = FALSE)
         } else if (str_detect(move, "[K|Q|R|B|N][x][a-h][1-8]")) {
             #King, Queen, Rock, Bishop or Knight is capturing
-        } else if (move == "O-O") {
-            #short castling
-        } else if (move == "O-O-O") {
-            #long castling
-        }
+        } else if (move == "O-O-O" | move == "O-O") {
+            if (i == 2){
+            #White  
+                if (move == "O-O") {
+                    kingMove = "g1"
+                    rockMove = "f1"    
+                    rockToMove = "18"
+                    print("short castling")
+
+                } else if (move == "O-O-O") {
+                    kingMove = "c1"
+                    rockMove = "d1"  
+                    rockToMove = "11"  
+                    print("long castling")
+                }
+
+                King <- 
+                    pieces %>% 
+                    select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                    filter(kind == "K" & color == "W")
+
+                Rock <- 
+                    pieces %>% 
+                    select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                    filter(kind == "R" & color == "W" & code == rockToMove)
+
+            } else if (i == 3) {
+            #Black
+                if (move == "O-O") {
+                    kingMove = "g8"
+                    rockMove = "f8"    
+                    rockToMove = "48"  
+                    print("short castling")
+                } else if (move == "O-O-O") {
+                    kingMove = "c8"
+                    rockMove = "d8"    
+                    rockToMove = "41"  
+                    print("long castling")
+                }
+
+                King <- 
+                    pieces %>% 
+                    select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                    filter(kind == "K" & color == "B")
+
+                Rock <- 
+                    pieces %>% 
+                    select(kind, color, named, code, current.position, previous.position, counter.of.moves) %>%
+                    filter(kind == "R" & color == "B" & code == rockToMove)
+            }
+
+            # King is moving
+            current.move = kingMove
+            previous.move = King$current.position               
+            kingValue = strtoi(board[[previous.move]])
+
+            board[[current.move]] = board[[previous.move]]
+            board[[previous.move]] = "00"
+
+            #updating piece values for King
+            pieces$current.position[pieces$code == toString(kingValue)] <<- current.move
+            pieces$previous.position[pieces$code == toString(kingValue)] <<- previous.move
+            pieces$counter.of.moves[pieces$code == toString(kingValue)] <<- pieces$counter.of.moves[pieces$code == toString(kingValue)] + 1 
+
+            #Adding current move for King
+            newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+
+            # Rock is moving
+            current.move = rockMove
+            previous.move = Rock$current.position               
+            rockValue = strtoi(board[[previous.move]])
+
+            board[[current.move]] = board[[previous.move]]
+            board[[previous.move]] = "00"
+
+            #updating piece values for Rock
+            pieces$current.position[pieces$code == toString(rockValue)] <<- current.move
+            pieces$previous.position[pieces$code == toString(rockValue)] <<- previous.move
+            pieces$counter.of.moves[pieces$code == toString(rockValue)] <<- pieces$counter.of.moves[pieces$code == toString(rockValue)] + 1 
+
+            #Adding current move for Rock
+            newboard = rbind(newboard, board, stringsAsFactors = FALSE)
+        } 
         if (i == 3) {
             #black is moving
             i = 0
