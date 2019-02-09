@@ -46,22 +46,22 @@ blackDiagonals = list (
 )
 
 colorOfCell <- function(file, rank){
-#rank is a number, file is a letter
+#file is a letter, rank is a number
 #file even and rank even black - columna impar fila impar negro
 #file even and rank odd  white - columna impar fila par   blanco
 #file odd  and rank even white - columna par   fila impar blanco
 #file odd  and rank odd  black - columna par   fila par   negro
-    if (file %in% list("a", "c", "d", "g")) {
+    if (file %in% list("a", "c", "e", "g")) {
         if( (strtoi(rank) %% 2) != 0 ) {
-            return ("W")
-        } else {
             return ("B")
+        } else {
+            return ("W")
         }
     } else {
         if( (strtoi(rank) %% 2) != 0 ) {
-            return ("B")
-        } else {
             return ("W")
+        } else {
+            return ("B")
         }
     }
 }
@@ -137,8 +137,6 @@ findBishop <- function(move, listOfBishops, diagonals) {
     for (i in 1:nrow(listOfBishops)){
         Bishop <- listOfBishops[i, ]
         position = Bishop[["current.position"]]    
-        print (Bishop)
-        print (diagonals)
         for (row in diagonals) {
             if (move %in% row & position %in% row){
                 return(Bishop)
