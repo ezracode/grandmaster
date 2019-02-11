@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tablero de Ajedrez</title>
+    </head>
+ 
+    <style>
+        p
+        {
+            font-size: 40px;
+            margin: 0;
+            text-align: center;
+        }
+        .white 
+        {
+            background-color: burlywood;
+            float: left;
+            height: 50px;
+            width: 50px;
+        }
+        .black
+        {
+            background-color: goldenrod;
+            float: left;
+            height: 50px;
+            width: 50px;
+        }
+        .rank
+        {
+            display: block;
+            float: left;
+            height: 50px;
+            width: 400px;
+        }
+        .board
+        {
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function dragstart(ev) {
+            // el elemento a arrastrar
+            ev.dataTransfer.setData("text", ev.target.id);     
+        }
+
+        function drop(ev) {
+            // obtenemos los datos
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+           
+            if (ev.target.hasChildNodes()) {
+                while (ev.target.firstChild) {
+                    ev.target.removeChild(ev.target.firstChild);
+                }
+            }
+
+            ev.target.appendChild(document.getElementById(data));
+        }   
+    </script>
+    <body>
+        <div class = "board">
+            <div class = "rank" name = "fila8">
+                <div class = "white" name = "a8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "41" draggable = "true" ondragstart = "dragstart(event)">&#9820;</p>
+                </div>
+                <div class = "black" name = "b8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "42" draggable = "true" ondragstart = "dragstart(event)">&#9822;</p>
+                </div>
+                <div class = "white" name = "c8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "43" draggable = "true" ondragstart = "dragstart(event)">&#9821;</p>
+                </div>
+                <div class = "black" name = "d8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "44" draggable = "true" ondragstart = "dragstart(event)">&#9819;</p>
+                </div>
+                <div class = "white" name = "e8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "45" draggable = "true" ondragstart = "dragstart(event)">&#9818;</p>
+                </div>
+                <div class = "black" name = "f8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "46" draggable = "true" ondragstart = "dragstart(event)">&#9821;</p>
+                </div>
+                <div class = "white" name = "g8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "47" draggable = "true" ondragstart = "dragstart(event)">&#9822;</p>
+                </div>
+                <div class = "black" name = "h8" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "48" draggable = "true" ondragstart = "dragstart(event)">&#9820;</p>
+                </div>
+            </div>
+            <div class = "rank" name = "fila7">
+                <div class = "black" name = "a7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "31" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "white" name = "b7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "32" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "black" name = "c7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "33" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "white" name = "d7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "34" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "black" name = "e7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "35" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "white" name = "f7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "36" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "black" name = "g7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "37" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+                <div class = "white" name = "h7" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "38" draggable = "true" ondragstart = "dragstart(event)">&#9823;</p>
+                </div>
+            </div>
+            <div class = "rank" name = "fila6">
+                <div class = "white" name = "c6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "b6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "c6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "d6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "e6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "f6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "g6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "h6" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+            </div>
+            <div class = "rank" name = "fila5">
+                <div class = "black" name = "a5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "b5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "c5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "d5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "e5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "f5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "g5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "h5" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+            </div>
+            <div class = "rank" name = "fila4">
+                <div class = "white" name = "a4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "b4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "c4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "d4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "e4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "f4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "g4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "h4" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+            </div>
+            <div class = "rank" name = "fila3">
+                <div class = "black" name = "a3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "b3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "c3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "d3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "e3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "f3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "black" name = "g3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div class = "white" name = "h3" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                </div>
+            </div>
+            <div class = "rank" name = "fila2">
+                <div class = "white" name = "a2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "21" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "black" name = "b2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "22" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "white" name = "c2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "23" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "black" name = "d2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "24" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "white" name = "e2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "25" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "black" name = "f2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "26" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "white" name = "g2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "27" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+                <div class = "black" name = "h2" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "28" draggable = "true" ondragstart = "dragstart(event)">&#9817;</p>
+                </div>
+            </div>
+            <div class = "rank" name = "fila1">
+                <div class = "black" name = "a1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "11" draggable = "true" ondragstart = "dragstart(event)">&#9814;</p>
+                </div>
+                <div class = "white" name = "b1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "12" draggable = "true" ondragstart = "dragstart(event)">&#9816;</p>
+                </div>
+                <div class = "black" name = "c1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "13" draggable = "true" ondragstart = "dragstart(event)">&#9815;</p>
+                </div>
+                <div class = "white" name = "d1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "14" draggable = "true" ondragstart = "dragstart(event)">&#9813;</p>
+                </div>
+                <div class = "black" name = "e1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "15"  draggable = "true" ondragstart = "dragstart(event)">&#9812;</p>
+                </div>
+                <div class = "white" name = "f1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "16"  draggable = "true" ondragstart = "dragstart(event)">&#9815;</p>
+                </div>
+                <div class = "black" name = "g1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "17" draggable = "true" ondragstart = "dragstart(event)">&#9816;</p>
+                </div>
+                <div class = "white" name = "h1" ondrop = "drop(event)" ondragover="allowDrop(event)">
+                    <p id = "18" draggable = "true" ondragstart = "dragstart(event)">&#9814;</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
