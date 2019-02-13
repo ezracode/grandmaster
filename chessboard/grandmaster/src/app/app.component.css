@@ -1,0 +1,40 @@
+p
+{
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+.white 
+{
+    background-color:#D7CCC8;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.black
+{
+    background-color:#795548;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.rank
+{
+    display: block;
+    float: left;
+    height: 50px;
+    width: 400px;
+}
+.board
+{
+    height: 400px;
+    width: 400px;
+}
+.white-piece
+{
+    color: white; 
+}
+.black-piece
+{   
+    color: black;
+}
