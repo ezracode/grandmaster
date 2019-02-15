@@ -9,12 +9,14 @@
 ## 22/01/2019
 
     Pantalla de tablero de ajedrez hecho en HTML5 y JavaScript client side sin servidor.
+    Estudio de los archivos PGN para observar la estructura de los archivos
 
 ## 01/02/2019
 
     Lectura de archivos PGN para crear dataset de juegos, hecho en R.
     Lectura de cada juego para crear nuevo dataset de cada jugada.  Se trabajó movimiento y captura sencilla de peon, hecho en R.
     Simulacion sencilla de las primeras cinco turnos de la partida numero uno entre Deep Blue y Garry Kasparovj, hecho con HTML5 y JavaScript.
+    Recopilacion de archivos PGN de varias jugadores.
 
 ## 08/02/2019
 
