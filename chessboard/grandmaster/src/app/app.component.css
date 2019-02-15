@@ -1,4 +1,4 @@
-p
+:host /deep/ p
 {
     font-size: 40px;
     margin: 0;
@@ -6,14 +6,14 @@ p
 }
 .white 
 {
-    background-color:#D7CCC8;
+    background-color: #03A9F4;
     float: left;
     height: 50px;
     width: 50px;
 }
 .black
 {
-    background-color:#795548;
+    background-color: #1976D2;
     float: left;
     height: 50px;
     width: 50px;
@@ -30,11 +30,15 @@ p
     height: 400px;
     width: 400px;
 }
-.white-piece
+:host /deep/ .white-piece
 {
     color: white; 
 }
-.black-piece
-{   
+:host /deep/ .black-piece
+{
     color: black;
+}
+.cdk-drag-preview
+{
+    display: none;
 }
