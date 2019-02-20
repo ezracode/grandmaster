@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
+import { PieceComponent } from './piece/piece.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PieceComponent
   ],
   imports: [
     BrowserModule,
