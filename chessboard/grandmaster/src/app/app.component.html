@@ -18,239 +18,239 @@
                 <div class = "blackcorner"></div>
             </div>    
             <div  class = "rank" name = "fila8">
-                <div class = "blackside"><p class="vertical-white-letter"><b>8</b></p></div>
-                <div cdkDropList [cdkDropListData] = "a8" class = "white" name = "a8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a8}} class="black-piece"></app-piece>
+                <div class = "blackside"><p class = "vertical-white-letter"><b>8</b></p></div>
+                <div cdkDropList [cdkDropListData] = "a8" class = "white" name = "a8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b8" class = "black" name = "b8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "b8" class = "black" name = "b8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c8" class = "white" name = "c8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "c8" class = "white" name = "c8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d8" class = "black" name = "d8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "d8" class = "black" name = "d8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e8" class = "white" name = "e8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "e8" class = "white" name = "e8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f8" class = "black" name = "f8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "f8" class = "black" name = "f8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g8" class = "white" name = "g8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "g8" class = "white" name = "g8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h8" class = "black" name = "h8" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h8}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "h8" class = "black" name = "h8" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h8" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "whiteside"></div>          
             </div>
             <div  class = "rank" name = "fila7">
-                <div class = "whiteside"><p class="vertical-white-letter"><b>7</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a7" class = "black" name = "a7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a7}} class="black-piece"></app-piece>
+                <div class = "whiteside"><p class = "vertical-white-letter"><b>7</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a7" class = "black" name = "a7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b7" class = "white" name = "b7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "b7" class = "white" name = "b7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c7" class = "black" name = "c7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "c7" class = "black" name = "c7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d7" class = "white" name = "d7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "d7" class = "white" name = "d7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e7" class = "black" name = "e7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "e7" class = "black" name = "e7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f7" class = "white" name = "f7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "f7" class = "white" name = "f7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g7" class = "black" name = "g7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "g7" class = "black" name = "g7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h7" class = "white" name = "h7" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h7}} class="black-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "h7" class = "white" name = "h7" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h7" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "blackside"></div>          
             </div>
             <div  class = "rank" name = "fila6">
-                <div class = "blackside"><p class="vertical-white-letter"><b>6</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a6" class = "white" name = "c6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a6}}></app-piece>
+                <div class = "blackside"><p class = "vertical-white-letter"><b>6</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a6" class = "white" name = "c6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b6" class = "black" name = "b6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "b6" class = "black" name = "b6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c6" class = "white" name = "c6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "c6" class = "white" name = "c6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d6" class = "black" name = "d6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "d6" class = "black" name = "d6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e6" class = "white" name = "e6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "e6" class = "white" name = "e6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f6" class = "black" name = "f6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "f6" class = "black" name = "f6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g6" class = "white" name = "g6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "g6" class = "white" name = "g6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h6" class = "black" name = "h6" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h6}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "h6" class = "black" name = "h6" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h6" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "whiteside"></div>          
             </div>
             <div  class = "rank" name = "fila5">
-                <div class = "whiteside"><p class="vertical-white-letter"><b>5</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a5" class = "black" name = "a5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a5}}></app-piece>
+                <div class = "whiteside"><p class = "vertical-white-letter"><b>5</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a5" class = "black" name = "a5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b5" class = "white" name = "b5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "b5" class = "white" name = "b5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c5" class = "black" name = "c5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "c5" class = "black" name = "c5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d5" class = "white" name = "d5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "d5" class = "white" name = "d5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e5" class = "black" name = "e5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "e5" class = "black" name = "e5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f5" class = "white" name = "f5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "f5" class = "white" name = "f5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g5" class = "black" name = "g5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "g5" class = "black" name = "g5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h5" class = "white" name = "h5" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h5}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "h5" class = "white" name = "h5" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h5" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "blackside"></div>          
             </div>
             <div  class = "rank" name = "fila4">
-                <div class = "blackside"><p class="vertical-white-letter"><b>4</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a4" class = "white" name = "a4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a4}}></app-piece>
+                <div class = "blackside"><p class = "vertical-white-letter"><b>4</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a4" class = "white" name = "a4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b4" class = "black" name = "b4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "b4" class = "black" name = "b4" (cdkDropListDropped) ="drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c4" class = "white" name = "c4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "c4" class = "white" name = "c4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d4" class = "black" name = "d4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "d4" class = "black" name = "d4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e4" class = "white" name = "e4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "e4" class = "white" name = "e4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f4" class = "black" name = "f4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "f4" class = "black" name = "f4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g4" class = "white" name = "g4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "g4" class = "white" name = "g4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h4" class = "black" name = "h4" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h4}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "h4" class = "black" name = "h4" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h4" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "whiteside"></div>          
             </div>
             <div  class = "rank" name = "fila3">
-                <div class = "whiteside"><p class="vertical-white-letter"><b>3</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a3" class = "black" name = "a3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a3}}></app-piece>
+                <div class = "whiteside"><p class = "vertical-white-letter"><b>3</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a3" class = "black" name = "a3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b3" class = "white" name = "b3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "b3" class = "white" name = "b3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c3" class = "black" name = "c3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "c3" class = "black" name = "c3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d3" class = "white" name = "d3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "d3" class = "white" name = "d3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e3" class = "black" name = "e3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "e3" class = "black" name = "e3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f3" class = "white" name = "f3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "f3" class = "white" name = "f3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g3" class = "black" name = "g3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "g3" class = "black" name = "g3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h3" class = "white" name = "h3" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h3}}></app-piece>
+                <div cdkDropList [cdkDropListData] = "h3" class = "white" name = "h3" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h3" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "blackside"></div>          
             </div>
             <div  class = "rank" name = "fila2">
-                <div class = "blackside"><p class="vertical-white-letter"><b>2</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a2" class = "white" name = "a2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a2}} class="white-piece"></app-piece>
+                <div class = "blackside"><p class = "vertical-white-letter"><b>2</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a2" class = "white" name = "a2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b2" class = "black" name = "b2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "b2" class = "black" name = "b2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c2" class = "white" name = "c2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "c2" class = "white" name = "c2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d2" class = "black" name = "d2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "d2" class = "black" name = "d2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e2" class = "white" name = "e2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "e2" class = "white" name = "e2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f2" class = "black" name = "f2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "f2" class = "black" name = "f2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g2" class = "white" name = "g2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "g2" class = "white" name = "g2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h2" class = "black" name = "h2" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h2}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "h2" class = "black" name = "h2" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h2" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "whiteside"></div>          
             </div>
             <div  class = "rank" name = "fila1">
-                <div class = "whiteside"><p class="vertical-white-letter"><b>1</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a1" class = "black" name = "a1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{a1}} class="white-piece"></app-piece>
+                <div class = "whiteside"><p class = "vertical-white-letter"><b>1</b></p></div>          
+                <div cdkDropList [cdkDropListData] = "a1" class = "black" name = "a1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of a1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "b1" class = "white" name = "b1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{b1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "b1" class = "white" name = "b1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of b1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "c1" class = "black" name = "c1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{c1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "c1" class = "black" name = "c1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of c1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "d1" class = "white" name = "d1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{d1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "d1" class = "white" name = "d1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of d1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "e1" class = "black" name = "e1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{e1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "e1" class = "black" name = "e1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of e1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "f1" class = "white" name = "f1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{f1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "f1" class = "white" name = "f1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of f1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "g1" class = "black" name = "g1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{g1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "g1" class = "black" name = "g1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of g1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
-                <div cdkDropList [cdkDropListData] = "h1" class = "white" name = "h1" (cdkDropListDropped)="drop($event)">
-                    <app-piece cdkDrag value={{h1}} class="white-piece"></app-piece>
+                <div cdkDropList [cdkDropListData] = "h1" class = "white" name = "h1" (cdkDropListDropped) = "drop($event)">
+                    <app-piece cdkDrag *ngFor = "let item of h1" value = "{{item.cvalue}}" class = "{{item.cssclass}}"></app-piece>
                 </div>
                 <div class = "blackside"></div>          
             </div>
             <div  class = "downborder" name = "downborder">
                 <div class = "blackcorner"></div>
-                <div class = "white"><p class="white-letter"><b>a</b></p></div>          
-                <div class = "black"><p class="white-letter"><b>b</b></p></div>
-                <div class = "white"><p class="white-letter"><b>c</b></p></div>          
-                <div class = "black"><p class="white-letter"><b>d</b></p></div>
-                <div class = "white"><p class="white-letter"><b>e</b></p></div> 
-                <div class = "black"><p class="white-letter"><b>f</b></p></div>
-                <div class = "white"><p class="white-letter"><b>g</b></p></div>          
-                <div class = "black"><p class="white-letter"><b>h</b></p></div>
+                <div class = "white"><p class = "white-letter"><b>a</b></p></div>          
+                <div class = "black"><p class = "white-letter"><b>b</b></p></div>
+                <div class = "white"><p class = "white-letter"><b>c</b></p></div>          
+                <div class = "black"><p class = "white-letter"><b>d</b></p></div>
+                <div class = "white"><p class = "white-letter"><b>e</b></p></div> 
+                <div class = "black"><p class = "white-letter"><b>f</b></p></div>
+                <div class = "white"><p class = "white-letter"><b>g</b></p></div>          
+                <div class = "black"><p class = "white-letter"><b>h</b></p></div>
                 <div class = "whitecorner"></div>          
              </div>    
         </div>

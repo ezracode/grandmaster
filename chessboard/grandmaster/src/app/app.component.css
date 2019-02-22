@@ -15,6 +15,7 @@
     background-color: #03A9F4;
     float: left;
     height: 70px;
+    overflow: hidden;
     width: 70px;
 }
 .black
@@ -22,6 +23,7 @@
     background-color: #1976D2;
     float: left;
     height: 70px;
+    overflow: hidden;
     width: 70px;
 }
 .rank
