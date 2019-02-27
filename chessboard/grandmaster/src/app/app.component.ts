@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
-import { PieceComponent } from './piece/piece.component';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +7,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent{
   dato = '';
   title = 'grandmaster';
+
+  statusa3 = true;
 
   a1 = [{cvalue: String.fromCharCode(9814), cid: "11", cssclass: "white-piece", kind: "R"}];
   a2 = [{cvalue: String.fromCharCode(9817), cid: "21", cssclass: "white-piece", kind: "P"}];
@@ -84,10 +84,16 @@ export class AppComponent {
   h6 = [];
   h7 = [{cvalue: String.fromCharCode(9823), cid: "38", cssclass: "black-piece", kind: "P"}];
   h8 = [{cvalue: String.fromCharCode(9820), cid: "48", cssclass: "black-piece", kind: "R"}];
-  
+
   public started(event: CdkDragStart) {
     console.log("estoy aqui dragStart")  
-    console.log(event)
+    console.log(event.source.element.nativeElement.parentElement.getAttribute("name"))
+
+    if (event.source.element.nativeElement.parentElement.getAttribute("name") == "a2"){
+      this.statusa3 = false;
+    } else {
+      this.statusa3 = true;
+    }
   }
 
   public moved(event: CdkDrag){
@@ -100,7 +106,7 @@ export class AppComponent {
       while (event.container.data.length > 0){
         this.dato = event.container.data.pop()
       }
- 
+
       transferArrayItem(event.previousContainer.data,
                         event.container.data,
                         event.previousIndex,

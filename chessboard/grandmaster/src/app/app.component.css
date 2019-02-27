@@ -10,6 +10,16 @@
     margin: 0;
     text-align: center;
 }
+.red
+{
+    background-color: rosybrown;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+    text-align: center;
+}
 .white 
 {
     background-color: #03A9F4;
@@ -17,6 +27,9 @@
     height: 70px;
     overflow: hidden;
     width: 70px;
+    display: block;
+    text-align: center;
+    cursor: move;
 }
 .black
 {
@@ -25,6 +38,24 @@
     height: 70px;
     overflow: hidden;
     width: 70px;
+    display: block;
+    text-align: center;
+    cursor: move;
+}
+.cdk-drop-list-dragging 
+{
+    color: inherit;
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.cdk-drag-animating 
+{
+    color: inherit;
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.cdk-drag-preview
+{
+    margin: 0;
+    color: initial;
 }
 .rank
 {
@@ -99,19 +130,21 @@ body
 {
     color: white; 
     font-size: 15px;
+
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
 }
 :host /deep/ .vertical-white-letter 
 {
     color: white; 
     font-size: 15px;
+ 
     height: 70px;
-    padding-top: 25px;
+    overflow: hidden;
+    text-align: center;
 }
 :host /deep/ .black-piece
 {
     color: black;
-}
-.cdk-drag-preview
-{
-    display: none;
 }

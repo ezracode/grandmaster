@@ -159,7 +159,7 @@
             </div>
             <div  class = "rank" name = "fila3">
                 <div class = "whiteside"><p class = "vertical-white-letter"><b>3</b></p></div>          
-                <div cdkDropList [cdkDropListData] = "a3" class = "black" name = "a3" (cdkDropListDropped) = "drop($event)">
+                <div cdkDropList [cdkDropListData] = "a3" [ngClass] = "statusa3 ? 'black' : 'red'" name = "a3" (cdkDropListDropped) = "drop($event)">
                     <app-piece cdkDrag [cdkDragData] = "item" *ngFor = "let item of a3" value = "{{item.cvalue}}" class = "{{item.cssclass}}" (cdkDragStarted) = "started($event)"></app-piece>
                 </div>
                 <div cdkDropList [cdkDropListData] = "b3" class = "white" name = "b3" (cdkDropListDropped) = "drop($event)">
