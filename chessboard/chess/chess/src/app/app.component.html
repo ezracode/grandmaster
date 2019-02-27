@@ -608,7 +608,7 @@
       [cdkDropListData] = "h1"
       class = "white"
       (cdkDropListDropped) = "drop($event)">
-      <span class = "box" *ngFor = "let item of h1" cdkDrag>{{item.cvalue}}</span>
+      <div class = "box" *ngFor = "let item of h1" cdkDrag><span class='{{item.cssclass}}'>{{item.cvalue}}</span></div>
     </div>
   </div>
   <div class = "blackside"></div>          
