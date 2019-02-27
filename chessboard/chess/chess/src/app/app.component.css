@@ -116,7 +116,7 @@
 .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
-:host /deep/ .white-piece
+.white-piece
 {
     color: white; 
 }
@@ -134,8 +134,10 @@
     font-size: 15px;
     height: 70px;
     overflow: hidden;
+    padding-top: 25px;
+    padding-left: 5px;
 }
-:host /deep/ .black-piece
+.black-piece
 {
     color: black;
 }
