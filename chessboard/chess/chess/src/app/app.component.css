@@ -1,0 +1,141 @@
+.whitecorner
+{
+    background-color: #03A9F4;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+.blackcorner
+{
+    background-color: #1976D2;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+.whiteside
+{
+    background-color: #03A9F4;
+    display: inline-block;
+    height: 70px;
+    vertical-align: top;
+    width: 20px;
+}
+.blackside
+{
+    background-color: #1976D2;
+    display: inline-block;
+    height: 70px;
+    vertical-align: top;
+    width: 20px;
+}
+.upborder
+{
+    display: block;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    width: 600px;
+}
+.downborder
+{
+    display: block;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    width: 600px;
+}
+.board
+{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+}
+.white 
+{
+    background-color: #03A9F4;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
+.black
+{
+    background-color: #1976D2;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
+.container
+{
+  background: transparent;
+  display: inline-block;
+  height: 70px;
+  margin: 0;
+  vertical-align: top;
+  width: 70px;
+}
+.list 
+{
+  background: transparent;
+  border: solid 1px #ccc;
+  clear: both;
+  display: block;
+  float: left;
+  height: 70px;
+  overflow: hidden;
+  width: 70px;
+}
+.box 
+{
+  align-items: center;
+  background: transparent;
+  box-sizing: border-box;
+  cursor: grab;
+  display: flex;
+  flex-direction: row;
+  font-size: 60px;
+  height: 70px;
+  justify-content: center;
+  width: 70px;
+}
+.cdk-drag-placeholder 
+{
+  opacity: 0;
+}
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.example-box:last-child 
+{
+  border: none;
+}
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.white-piece
+{
+    color: white; 
+}
+.white-letter
+{
+    color: white; 
+    font-size: 15px;
+    height: 20px;
+    overflow: hidden;
+    padding-left: 30px;
+}
+.vertical-white-letter 
+{
+    color: white; 
+    font-size: 15px;
+    height: 70px;
+    overflow: hidden;
+}
+.black-piece
+{
+    color: black;
+}
