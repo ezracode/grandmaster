@@ -25,3 +25,15 @@
 ## 15/09/2019
 
     Creacion de tablero de ajedrez con arrastre de piezas, sin validaciones.  Hecho en Angular 7 usando el Drag and Drop de Angular Material.  Se publicó en Firebase:  https://grandmaster-d288a.firebaseapp.com/.
+
+## 22/08/2019
+    No hubo reunión.
+    Se investiga y hacen pruebas sobre uso de mas eventos al momento de hacer drag and drop en angular material.
+    Segun Angular no es correcto acceder al DOM, por lo que se investiga sobre como modificar los valores de las casillas para cambiarles el color.
+    Se utiliza binding para cambiar valores de las clases. 
+    
+## 01/03/2019
+    Se volvio a crear el tablero por problemas con las animaciones y con la estructua del HTML.
+    Se instala Shiny Server sobre Ubuntu 18.10
+    Se trabaja sobre la opcion de marcar las celdas a donde puede la pieza mover
+    La ruta para el nuevo proyecto es: https://chess-ec7ad.firebaseapp.com/  
