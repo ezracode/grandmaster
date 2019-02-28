@@ -20,11 +20,14 @@
 
 ## 08/02/2019
 
-    Lectura de cada juego para crear nuevo dataset de cada jugada.  Se trabajó movimiento de Torre, Alfil, Caballo, Reina, Rey, Enroque Corto y Enroque Largo, hecho en R.
+    Lectura de cada juego para crear nuevo dataset de cada jugada.
+    Se trabajó movimiento de Torre, Alfil, Caballo, Reina, Rey, Enroque Corto y Enroque Largo, hecho en R.
 
 ## 15/02/2019
 
-    Creacion de tablero de ajedrez con arrastre de piezas, sin validaciones.  Hecho en Angular 7 usando el Drag and Drop de Angular Material.  Se publicó en Firebase:  https://grandmaster-d288a.firebaseapp.com/.
+    Creacion de tablero de ajedrez con arrastre de piezas, sin validaciones.
+    Hecho en Angular 7 usando el Drag and Drop de Angular Material.
+    Se publicó en Firebase:  https://grandmaster-d288a.firebaseapp.com/.
 
 ## 22/02/2019
 
