@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,9 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private apiService: ApiService){}
+
   dato = '';
   title = 'chess';
 
@@ -81,6 +86,14 @@ export class AppComponent {
   h6 = [];
   h7 = [{cvalue: String.fromCharCode(9823), cid: "38", cssclass: "black-piece", kind: "P"}];
   h8 = [{cvalue: String.fromCharCode(9820), cid: "48", cssclass: "black-piece", kind: "R"}];
+
+  res = ""
+
+  ngOnInit(){
+      this.apiService.getGames().subscribe(res => {
+              console.log(res)})    
+      console.log("ngOnInit")  
+    };
 
   drop(event: CdkDragDrop<string[]>) {
 

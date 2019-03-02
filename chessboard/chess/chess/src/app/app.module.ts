@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
