@@ -1,7 +1,7 @@
-import {Component, ViewContainerRef} from '@angular/core';
-import {CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem, CdkDragEnd} from '@angular/cdk/drag-drop';
-import { HttpClientModule } from '@angular/common/http';
-import { ApiService } from './api.service';
+import {Component, ViewContainerRef} from '@angular/core'
+import {CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem} from '@angular/cdk/drag-drop'
+import { HttpClientModule } from '@angular/common/http'
+import { ApiService } from './api.service'
 
 @Component({
   selector: 'app-root',
@@ -100,32 +100,19 @@ export class AppComponent {
     a3: true, b3: true, c3: true, d3: true, e3: true, f3: true, g3: true, h3: true,
     a2: true, b2: true, c2: true, d2: true, e2: true, f2: true, g2: true, h2: true,
     a1: true, b1: true, c1: true, d1: true, e1: true, f1: true, g1: true, h1: true
-  };
-
-  names = {
-    a8: "a8", b8: "b8", c8: "c8", d8: "d8", e8: "e8", f8: "f8", g8: "g8", h8: "h8",
-    a7: "a7", b7: "b7", c7: "c7", d7: "d7", e7: "e7", f7: "f7", g7: "g7", h7: "h7",
-    a6: "a6", b6: "b6", c6: "c6", d6: "d6", e6: "e6", f6: "f6", g6: "g6", h6: "h6",
-    a5: "a5", b5: "b5", c5: "c5", d5: "d5", e5: "e5", f5: "f5", g5: "g5", h5: "h5",
-    a4: "a4", b4: "b4", c4: "c4", d4: "d4", e4: "e4", f4: "f4", g4: "g4", h4: "h4",
-    a3: "a3", b3: "b3", c3: "c3", d3: "d3", e3: "e3", f3: "f3", g3: "g3", h3: "h3",
-    a2: "a2", b2: "b2", c2: "c2", d2: "d2", e2: "e2", f2: "f2", g2: "g2", h2: "h2",
-    a1: "a1", b1: "b1", c1: "c1", d1: "d1", e1: "e1", f1: "f1", g1: "g1", h1: "h1" 
-  };
+  }
 
   ngOnInit() {
       //this.apiService.getGames().subscribe(res => {
       //        console.log(res)})    
       //console.log("ngOnInit")  
-    };
+    }
 
-    public end(even: CdkDrag)
-    {
-        
+    public end(even: CdkDrag){
         console.log(event.initEvent.name)
         console.log("fin del drag")
-        this.status["a3"] = true;
-        this.status["a4"] = true;
+        this.status["a3"] = true
+        this.status["a4"] = true
     }
 
     public started(event: CdkDragStart) {
@@ -137,8 +124,8 @@ export class AppComponent {
       this.name = event.source.element.nativeElement.parentElement.getAttribute("name")
 
       if (this.name == "a2") {
-        this.status["a3"] = false;
-        this.status["a4"] = false;
+        this.status["a3"] = false
+        this.status["a4"] = false
       }
     }
 
@@ -147,8 +134,8 @@ export class AppComponent {
     if (event.previousContainer != event.container) {
       //if (event.container.element.nativeElement.parentElement.getAttribute("name") == "da3" || 
       //   event.container.element.nativeElement.parentElement.getAttribute("name") == "da4") {
-        this.status["a3"] = true;
-        this.status["a4"] = true;
+        this.status["a3"] = true
+        this.status["a4"] = true
       //}
       while (event.container.data.length > 0){
         this.dato = event.container.data.pop()
@@ -156,7 +143,7 @@ export class AppComponent {
       transferArrayItem(event.previousContainer.data,
                         event.container.data,
                         event.previousIndex,
-                        event.currentIndex);
+                        event.currentIndex)
     }
   }
 }
