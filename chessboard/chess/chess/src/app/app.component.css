@@ -69,6 +69,24 @@
     width: 70px;
     display: block;
 }
+.red
+{
+    background-color: #e60000;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
+.softred
+{
+  background-color: #ff6666;
+  float: left;
+  height: 70px;
+  overflow: hidden;
+  width: 70px;
+  display: block;
+}
 .container
 {
   background: transparent;
