@@ -1,5 +1,5 @@
-import {Component, ViewContainerRef} from '@angular/core'
-import {CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem} from '@angular/cdk/drag-drop'
+import {Component} from '@angular/core'
+import {CdkDragStart, CdkDragDrop, transferArrayItem, CdkDragEnd} from '@angular/cdk/drag-drop'
 import { HttpClientModule } from '@angular/common/http'
 import { ApiService } from './api.service'
 
@@ -15,7 +15,9 @@ export class AppComponent {
   dato = ''
   res = ""
   title = 'chess'
-  name = ""
+  currentName = ""
+  previousName = ""
+  currentPiece = {}
 
   cells = {
     a1: [{cvalue: String.fromCharCode(9814), cid: "11", cssclass: "white-piece", kind: "R"}],
@@ -103,35 +105,43 @@ export class AppComponent {
   }
 
   ngOnInit() {
-      //this.apiService.getGames().subscribe(res => {
-      //        console.log(res)})    
-      //console.log("ngOnInit")  
+    //this.apiService.getGames().subscribe(res => {
+    //        console.log(res)})    
+    //console.log("ngOnInit")  
+  }
+
+  public ended(event: CdkDragEnd){
+      console.log("ended method")
+      this.status["a3"] = true
+      this.status["a4"] = true
+  }
+
+  public started(event: CdkDragStart) {
+
+    console.log("started method")  
+    console.log(event.source.element.nativeElement.parentElement.getAttribute("name") )
+
+    this.previousName = event.source.element.nativeElement.parentElement.getAttribute("name")
+    this.currentPiece = this.cells[this.previousName][0]
+    console.log(this.currentPiece["kind"])
+
+    if (this.previousName == "a2") {
+      this.status["a3"] = false
+      this.status["a4"] = false
     }
+  }
 
-    public end(even: CdkDrag){
-        console.log(event.initEvent.name)
-        console.log("fin del drag")
-        this.status["a3"] = true
-        this.status["a4"] = true
-    }
-
-    public started(event: CdkDragStart) {
-      console.log("estoy aqui dragStart")  
-      console.log(event.source.element.nativeElement)
-      console.log(event.source.element.nativeElement.childNodes)
-      console.log(event.source.element.nativeElement.parentElement.getAttribute("name"))
-  
-      this.name = event.source.element.nativeElement.parentElement.getAttribute("name")
-
-      if (this.name == "a2") {
-        this.status["a3"] = false
-        this.status["a4"] = false
-      }
-    }
-
-    drop(event: CdkDragDrop<string[]>) {
+  drop(event: CdkDragDrop<string[]>) {
 
     if (event.previousContainer != event.container) {
+      this.previousName = event.previousContainer.element.nativeElement.getAttribute("name")
+      this.currentName = event.container.element.nativeElement.getAttribute("name")
+      console.log("drop method")
+      console.log(this.currentName)
+      console.log(this.previousName)
+      console.log(this.cells[this.currentName])
+      this.currentPiece = this.cells[this.currentName]
+      console.log(this.currentPiece["cvalue"])
       //if (event.container.element.nativeElement.parentElement.getAttribute("name") == "da3" || 
       //   event.container.element.nativeElement.parentElement.getAttribute("name") == "da4") {
         this.status["a3"] = true
