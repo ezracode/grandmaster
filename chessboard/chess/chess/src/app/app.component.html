@@ -20,7 +20,8 @@
       [cdkDropListData] = "cells['a8']"
       [ngClass] = "status['a8'] ? 'white' : 'softred'" 
       name = "a8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -30,7 +31,8 @@
       [cdkDropListData] = "cells['b8']"
       [ngClass] = "status['b8'] ? 'black' : 'red'" 
       name = "b8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -40,7 +42,8 @@
       [cdkDropListData] = "cells['c8']"
       [ngClass] = "status['c8'] ? 'white' : 'softred'" 
       name = "c8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -48,9 +51,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d8']"
-      [ngClass] = "status['d8'] ? ' black' : 'red'" 
+      [ngClass] = "status['d8'] ? 'black' : 'red'" 
       name = "d8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -60,7 +64,8 @@
       [cdkDropListData] = "cells['e8']"
       [ngClass] = "status['e8'] ? 'white' : 'softred'" 
       name = "e8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -68,9 +73,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f8']"
-      [ngClass] = "status['f8'] ? ' black' : 'red'" 
+      [ngClass] = "status['f8'] ? 'black' : 'red'" 
       name = "f8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -80,7 +86,8 @@
       [cdkDropListData] = "cells['g8']"
       [ngClass] = "status['g8'] ? 'white' : 'softred'" 
       name = "g8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -88,9 +95,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h8']"
-      [ngClass] = "status['h8'] ? ' black' : 'red'" 
+      [ngClass] = "status['h8'] ? 'black' : 'red'" 
       name = "h8"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h8']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -101,9 +109,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a7']"
-      [ngClass] = "status['a7'] ? ' black' : 'red'" 
+      [ngClass] = "status['a7'] ? 'black' : 'red'" 
       name = "a7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -113,7 +122,8 @@
       [cdkDropListData] = "cells['b7']"
       [ngClass] = "status['b7'] ? 'white' : 'softred'" 
       name = "b7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -121,9 +131,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c7']"
-      [ngClass] = "status['c7'] ? ' black' : 'red'" 
+      [ngClass] = "status['c7'] ? 'black' : 'red'" 
       name = "c7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -133,7 +144,8 @@
       [cdkDropListData] = "cells['d7']"
       [ngClass] = "status['d7'] ? 'white' : 'softred'" 
       name = "d7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -141,9 +153,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e7']"
-      [ngClass] = "status['e7'] ? ' black' : 'red'" 
+      [ngClass] = "status['e7'] ? 'black' : 'red'" 
       name = "e7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -153,7 +166,8 @@
       [cdkDropListData] = "cells['f7']"
       [ngClass] = "status['f7'] ? 'white' : 'softred'" 
       name = "f7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -161,9 +175,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g7']"
-      [ngClass] = "status['g7'] ? ' black' : 'red'" 
+      [ngClass] = "status['g7'] ? 'black' : 'red'" 
       name = "g7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -173,7 +188,8 @@
       [cdkDropListData] = "cells['h7']"
       [ngClass] = "status['h7'] ? 'white' : 'softred'" 
       name = "h7"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h7']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -186,7 +202,8 @@
       [cdkDropListData] = "cells['a6']"
       [ngClass] = "status['a6'] ? 'white' : 'softred'" 
       name = "a6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -194,9 +211,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b6']"
-      [ngClass] = "status['b6'] ? ' black' : 'red'" 
+      [ngClass] = "status['b6'] ? 'black' : 'red'" 
       name = "b6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -206,7 +224,8 @@
       [cdkDropListData] = "cells['c6']"
       [ngClass] = "status['c6'] ? 'white' : 'softred'" 
       name = "c6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -214,9 +233,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d6']"
-      [ngClass] = "status['d6'] ? ' black' : 'red'" 
+      [ngClass] = "status['d6'] ? 'black' : 'red'" 
       name = "d6"
-      (cdkDropLitDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -226,7 +246,8 @@
       [cdkDropListData] = "cells['e6']"
       [ngClass] = "status['e6'] ? 'white' : 'softred'" 
       name = "e6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -234,9 +255,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f6']"
-      [ngClass] = "status['f6'] ? ' black' : 'red'" 
+      [ngClass] = "status['f6'] ? 'black' : 'red'" 
       name = "f6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -246,7 +268,8 @@
       [cdkDropListData] = "cells['g6']"
       [ngClass] = "status['g6'] ? 'white' : 'softred'" 
       name = "g6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -254,9 +277,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h6']"
-      [ngClass] = "status['h6'] ? ' black' : 'red'" 
+      [ngClass] = "status['h6'] ? 'black' : 'red'" 
       name = "h6"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h6']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -267,9 +291,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a5']"
-      [ngClass] = "status['a5'] ? ' black' : 'red'" 
+      [ngClass] = "status['a5'] ? 'black' : 'red'" 
       name = "a5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -279,7 +304,8 @@
       [cdkDropListData] = "cells['b5']"
       [ngClass] = "status['b5'] ? 'white' : 'softred'" 
       name = "b5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -287,9 +313,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c5']"
-      [ngClass] = "status['c5'] ? ' black' : 'red'" 
+      [ngClass] = "status['c5'] ? 'black' : 'red'" 
       name = "c5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)" 
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -299,7 +326,8 @@
       [cdkDropListData] = "cells['d5']"
       [ngClass] = "status['d5'] ? 'white' : 'softred'" 
       name = "d5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -307,9 +335,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e5']"
-      [ngClass] = "status['e5'] ? ' black' : 'red'" 
+      [ngClass] = "status['e5'] ? 'black' : 'red'" 
       name = "e5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -319,7 +348,8 @@
       [cdkDropListData] = "cells['f5']"
       [ngClass] = "status['f5'] ? 'white' : 'softred'" 
       name = "f5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -327,9 +357,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g5']"
-      [ngClass] = "status['g5'] ? ' black' : 'red'" 
+      [ngClass] = "status['g5'] ? 'black' : 'red'" 
       name = "g5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -339,7 +370,8 @@
       [cdkDropListData] = "cells['h5']"
       [ngClass] = "status['h5'] ? 'white' : 'softred'" 
       name = "h5"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h5']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -352,7 +384,8 @@
       [cdkDropListData] = "cells['a4']"
       [ngClass] = "status['a4'] ? 'white' : 'softred'" 
       name = "a4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a4']" (cdkDragStarted) = "started($event)" (cdkDragEnd) = "end($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -360,9 +393,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b4']"
-      [ngClass] = "status['b4'] ? ' black' : 'red'" 
+      [ngClass] = "status['b4'] ? 'black' : 'red'" 
       name = "b4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -372,7 +406,8 @@
       [cdkDropListData] = "cells['c4']"
       [ngClass] = "status['c4'] ? 'white' : 'softred'" 
       name = "c4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -380,9 +415,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d4']"
-      [ngClass] = "status['d4'] ? ' black' : 'red'" 
+      [ngClass] = "status['d4'] ? 'black' : 'red'" 
       name = "d4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -392,7 +428,8 @@
       [cdkDropListData] = "cells['e4']"
       [ngClass] = "status['e4'] ? 'white' : 'softred'" 
       name = "e4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -400,9 +437,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f4']"
-      [ngClass] = "status['f4'] ? ' black' : 'red'" 
+      [ngClass] = "status['f4'] ? 'black' : 'red'" 
       name = "f4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -412,7 +450,8 @@
       [cdkDropListData] = "cells['g4']"
       [ngClass] = "status['g4'] ? 'white' : 'softred'" 
       name = "g4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -420,9 +459,10 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h4']"
-      [ngClass] = "status['h4'] ? ' black' : 'red'" 
+      [ngClass] = "status['h4'] ? 'black' : 'red'" 
       name = "h4"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h4']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -435,7 +475,8 @@
       [cdkDropListData] = "cells['a3']"      
       [ngClass] = "status['a3'] ? 'black' : 'red'" 
       name = "a3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a3']" (cdkDragStarted) = "started($event)" (cdkDragEnd) = "end($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -445,7 +486,8 @@
       [cdkDropListData] = "cells['b3']"
       [ngClass] = "status['b3'] ? 'white' : 'softred'" 
       name = "b3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -455,7 +497,8 @@
       [cdkDropListData] = "cells['c3']"
       [ngClass] = "status['c3'] ? 'black' : 'red'" 
       name = "c3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -465,7 +508,8 @@
       [cdkDropListData] = "cells['d3']"
       [ngClass] = "status['d3'] ? 'white' : 'softred'" 
       name = "d3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -475,7 +519,8 @@
       [cdkDropListData] = "cells['e3']"
       [ngClass] = "status['e3'] ? 'black' : 'red'" 
       name = "e3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -485,7 +530,8 @@
       [cdkDropListData] = "cells['f3']"
       [ngClass] = "status['f3'] ? 'white' : 'softred'" 
       name = "f3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -495,7 +541,8 @@
       [cdkDropListData] = "cells['g3']"
       [ngClass] = "status['g3'] ? 'black' : 'red'" 
       name = "g3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -505,7 +552,8 @@
       [cdkDropListData] = "cells['h3']"
       [ngClass] = "status['h3'] ? 'white' : 'softred'" 
       name = "h3"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h3']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -518,7 +566,8 @@
       [cdkDropListData] = "cells['a2']"
       [ngClass] = "status['a2'] ? 'white' : 'softred'" 
       name = "a2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -528,7 +577,8 @@
       [cdkDropListData] = "cells['b2']"
       [ngClass] = "status['b2'] ? 'black' : 'red'" 
       name = "b2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)" 
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -538,7 +588,8 @@
       [cdkDropListData] = "cells['c2']"
       [ngClass] = "status['c2'] ? 'white' : 'softred'" 
       name = "c2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -548,7 +599,8 @@
       [cdkDropListData] = "cells['d2']"
       [ngClass] = "status['d2'] ? 'black' : 'red'" 
       name = "d2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)" 
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -558,7 +610,8 @@
       [cdkDropListData] = "cells['e2']"
       [ngClass] = "status['e2'] ? 'white' : 'softred'" 
       name = "e2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -568,7 +621,8 @@
       [cdkDropListData] = "cells['f2']"
       [ngClass] = "status['f2'] ? 'black' : 'red'" 
       name = "f2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -578,7 +632,8 @@
       [cdkDropListData] = "cells['g2']"
       [ngClass] = "status['g2'] ? 'white' : 'softred'" 
       name = "g2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -588,7 +643,8 @@
       [cdkDropListData] = "cells['h2']"
       [ngClass] = "status['h2'] ? 'black' : 'red'" 
       name = "h2"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h2']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -601,7 +657,8 @@
       [cdkDropListData] = "cells['a1']"
       [ngClass] = "status['a1'] ? 'black' : 'red'" 
       name = "a1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['a1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -611,7 +668,8 @@
       [cdkDropListData] = "cells['b1']"
       [ngClass] = "status['b1'] ? 'white' : 'softred'" 
       name = "b1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['b1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -621,7 +679,8 @@
       [cdkDropListData] = "cells['c1']"
       [ngClass] = "status['c1'] ? 'black' : 'red'" 
       name = "c1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['c1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -631,7 +690,8 @@
       [cdkDropListData] = "cells['d1']"
       [ngClass] = "status['d1'] ? 'white' : 'softred'" 
       name = "d1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['d1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -641,7 +701,8 @@
       [cdkDropListData] = "cells['e1']"
       [ngClass] = "status['e1'] ? 'black' : 'red'" 
       name = "e1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['e1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -651,7 +712,8 @@
       [cdkDropListData] = "cells['f1']"
       [ngClass] = "status['f1'] ? 'white' : 'softred'" 
       name = "f1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['f1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -661,7 +723,8 @@
       [cdkDropListData] = "cells['g1']"
       [ngClass] = "status['g1'] ? 'black' : 'red'" 
       name = "g1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['g1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
@@ -671,7 +734,8 @@
       [cdkDropListData] = "cells['h1']"
       [ngClass] = "status['h1'] ? 'white' : 'softred'" 
       name = "h1"
-      (cdkDropListDropped) = "drop($event)">
+      (cdkDropListDropped) = "drop($event)"
+      [cdkDropListEnterPredicate] = "allowdrop">
       <div cdkDrag class = "box" *ngFor = "let item of cells['h1']" (cdkDragStarted) = "started($event)" (cdkDragEnded) = "ended($event)" [cdkDragData] = "item"><span class='{{item.cssclass}}'><b>{{item.cvalue}}</b></span></div>
     </div>
   </div>
