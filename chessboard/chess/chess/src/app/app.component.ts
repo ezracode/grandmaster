@@ -192,94 +192,274 @@ export class AppComponent {
     var tempCellCenter = []
     var tempCellRight = []
  
+    var tempCellLeftUp1 = []
+    var tempCellLeftUp2 = []
+    var tempCellRightUp1 = []
+    var tempCellRightUp2 = []
+    var tempCellRightDown1 = []
+    var tempCellRightDown2 = []
+    var tempCellLeftDown1 = []
+    var tempCellLeftDown2 = []
+
     this.currentPiece["cellsToPaint"] = []
 
     if (this.currentPiece["kind"] == "P") {
       lrank = +this.rank
       
       if (this.currentPiece["color"] == "W") {
-        //if (lrank + 1 < 8) {
-          lrank++
-          
-          tempCell = this.file.concat(lrank.toString())
-          tempCellCenter = this.cells[tempCell]
-          if (tempCellCenter.length == 0) {
-            this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+        lrank++
+        
+        tempCell = this.file.concat(lrank.toString())
+        tempCellCenter = this.cells[tempCell]
+        if (tempCellCenter.length == 0) {
+          this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+        }
+                  
+        if (this.file != "a") {
+          //searching at the left of the current posicion
+          tempCell = this.files[this.files.indexOf(this.file) - 1]
+          tempCell = tempCell.concat(lrank.toString())
+          tempCellLeft = this.cells[tempCell]
+          if (tempCellLeft.length != 0) {
+            if (tempCellLeft[0].color == "B") {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
           }
-                    
-          if (this.file != "a") {
-            //busco a la izquierda de la posicion
+          if (+this.rank == 5) {
             tempCell = this.files[this.files.indexOf(this.file) - 1]
-            tempCell = tempCell.concat(lrank.toString())
+            tempCell = tempCell.concat((lrank - 1).toString())
             tempCellLeft = this.cells[tempCell]
             if (tempCellLeft.length != 0) {
               if (tempCellLeft[0].color == "B") {
+                tempCell = this.files[this.files.indexOf(this.file) - 1]
+                tempCell = tempCell.concat((lrank).toString())
                 this.currentPiece["cellsToPaint"].push(tempCell)
               }
             }
-          } 
-
-          if (this.file != "h") {
-            //busco a la derecha de la position
-            tempCell = this.files[this.files.indexOf(this.file) + 1]
-            console.log("derecha")
-            tempCell = tempCell.concat(lrank.toString())
-            console.log(tempCell)
-            tempCellRight = this.cells[tempCell]
-            if (tempCellRight.length != 0) {
-              if (tempCellRight[0].color == "B") {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            }
-          }  
-        //}
-      } else {
-        //if (lrank - 1 > 1) {
-          lrank--  
-          tempCell = this.file.concat(lrank.toString())
-          tempCellCenter = this.cells[tempCell]
-          if (tempCellCenter.length == 0){
-            this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
           }
-                    
-          if (this.file != "a"){
-            //busco a la izquierda de la posicion
+        } 
+
+        if (this.file != "h") {
+          //searching at the right of the position
+          tempCell = this.files[this.files.indexOf(this.file) + 1]
+          console.log("derecha")
+          tempCell = tempCell.concat(lrank.toString())
+          console.log(tempCell)
+          tempCellRight = this.cells[tempCell]
+          if (tempCellRight.length != 0) {
+            if (tempCellRight[0].color == "B") {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          }
+          if (+this.rank == 5) {
+            tempCell = this.files[this.files.indexOf(this.file) + 1]
+            tempCell = tempCell.concat((lrank - 1).toString())
+            tempCellLeft = this.cells[tempCell]
+            if (tempCellLeft.length != 0) {
+              if (tempCellLeft[0].color == "B") {
+                tempCell = this.files[this.files.indexOf(this.file) + 1]
+                tempCell = tempCell.concat((lrank).toString())
+                this.currentPiece["cellsToPaint"].push(tempCell)
+              }
+            }
+          }
+        }  
+      } else {
+        lrank--  
+        tempCell = this.file.concat(lrank.toString())
+        tempCellCenter = this.cells[tempCell]
+        if (tempCellCenter.length == 0){
+          this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+        }
+                  
+        if (this.file != "a") {
+          //searching at the left of the current posicion
+          tempCell = this.files[this.files.indexOf(this.file) - 1]
+          tempCell = tempCell.concat(lrank.toString())
+          tempCellLeft = this.cells[tempCell]
+          if (tempCellLeft.length != 0) {
+            if (tempCellLeft[0].color == "W") {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          }
+          if (+this.rank == 4) {
             tempCell = this.files[this.files.indexOf(this.file) - 1]
-            tempCell = tempCell.concat(lrank.toString())
+            tempCell = tempCell.concat((lrank + 1).toString())
             tempCellLeft = this.cells[tempCell]
             if (tempCellLeft.length != 0) {
               if (tempCellLeft[0].color == "W") {
+                tempCell = this.files[this.files.indexOf(this.file) - 1]
+                tempCell = tempCell.concat((lrank).toString())
                 this.currentPiece["cellsToPaint"].push(tempCell)
               }
             }
-          } 
+          }
+        } 
 
-          if (this.file != "h"){
-            //busco a la derecha de la position
+        if (this.file != "h") {
+          //searching at the right of the current posicion
+          tempCell = this.files[this.files.indexOf(this.file) + 1]
+          tempCell = tempCell.concat(lrank.toString())
+          tempCellRight = this.cells[tempCell]
+          if (tempCellRight.length != 0) {
+            if (tempCellRight[0].color == "W") {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          }
+          if (+this.rank == 4) {
             tempCell = this.files[this.files.indexOf(this.file) + 1]
-            tempCell = tempCell.concat(lrank.toString())
-            tempCellRight = this.cells[tempCell]
-            if (tempCellRight.length != 0) {
-              if (tempCellRight[0].color == "W") {
+            tempCell = tempCell.concat((lrank + 1).toString())
+            tempCellLeft = this.cells[tempCell]
+            if (tempCellLeft.length != 0) {
+              if (tempCellLeft[0].color == "W") {
+                tempCell = this.files[this.files.indexOf(this.file) + 1]
+                tempCell = tempCell.concat((lrank).toString())
                 this.currentPiece["cellsToPaint"].push(tempCell)
               }
             }
-          }  
-        //}
+          }
+        }  
       }
 
-      if (this.currentPiece["counterOfMoves"] == 0 && tempCellCenter.length == 0) {
+      if (this.currentPiece["counterOfMoves"] == 0) {
         if (this.currentPiece["color"] == "W") {
           lrank++
         } else {
           lrank--
         }
-        this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+
+        tempCell = this.file.concat(lrank.toString())
+        tempCellCenter = this.cells[tempCell]
+        if (tempCellCenter.length == 0){
+          this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+        }
       }
 
       console.log("cell to paint")
       console.log(this.currentPiece["cellsToPaint"])
-    }
+    } else if (this.currentPiece["kind"] == "R") {
+    } else if (this.currentPiece["kind"] == "N") {
+      lrank = +this.rank
+
+      if ((this.files[this.files.indexOf(this.file) - 2] != undefined) &&
+         (lrank + 1 < 9)){
+          tempCell = this.files[this.files.indexOf(this.file) - 2]
+          tempCell = tempCell.concat((lrank + 1).toString())
+          tempCellLeftUp1 = this.cells[tempCell]
+          if (tempCellLeftUp1.length != 0) {
+            if (tempCellLeftUp1[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) - 1] != undefined) &&
+         (lrank + 2 < 9)){
+          tempCell = this.files[this.files.indexOf(this.file) - 1]
+          tempCell = tempCell.concat((lrank + 2).toString())
+          tempCellLeftUp2 = this.cells[tempCell]
+          if (tempCellLeftUp2.length != 0) {
+            if (tempCellLeftUp2[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) + 1] != undefined) &&
+         (lrank + 2 < 9)){
+          tempCell = this.files[this.files.indexOf(this.file) + 1]
+          tempCell = tempCell.concat((lrank + 2).toString())
+          tempCellRightUp1 = this.cells[tempCell]
+          if (tempCellRightUp1.length != 0) {
+            if (tempCellRightUp1[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) + 2] != undefined) &&
+         (lrank + 1 < 9)){
+          tempCell = this.files[this.files.indexOf(this.file) + 2]
+          tempCell = tempCell.concat((lrank + 1).toString())
+          tempCellRightUp2 = this.cells[tempCell]
+          if (tempCellRightUp2.length != 0) {
+            if (tempCellRightUp2[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) + 2] != undefined) &&
+         (lrank - 1 > 0)){
+          tempCell = this.files[this.files.indexOf(this.file) + 2]
+          tempCell = tempCell.concat((lrank - 1).toString())
+          tempCellRightDown1 = this.cells[tempCell]
+          if (tempCellRightDown1.length != 0) {
+            if (tempCellRightDown1[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) + 1] != undefined) &&
+         (lrank - 2 > 0)){
+          tempCell = this.files[this.files.indexOf(this.file) + 1]
+          tempCell = tempCell.concat((lrank - 2).toString())
+          tempCellRightDown2 = this.cells[tempCell]
+          if (tempCellRightDown2.length != 0) {
+            if (tempCellRightDown2[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) - 1] != undefined) &&
+         (lrank - 2 > 0)){
+          tempCell = this.files[this.files.indexOf(this.file) - 1]
+          tempCell = tempCell.concat((lrank - 2).toString())
+          tempCellLeftDown1 = this.cells[tempCell]
+          if (tempCellLeftDown1.length != 0) {
+            if (tempCellLeftDown1[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      if ((this.files[this.files.indexOf(this.file) - 2] != undefined) &&
+         (lrank - 1 > 0)){
+          tempCell = this.files[this.files.indexOf(this.file) - 2]
+          tempCell = tempCell.concat((lrank - 1).toString())
+          tempCellLeftDown2 = this.cells[tempCell]
+          if (tempCellLeftDown2.length != 0) {
+            if (tempCellLeftDown2[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+      }
+
+      console.log("cell to paint")
+      console.log(this.currentPiece["cellsToPaint"])
+
+    } else if (this.currentPiece["kind"] == "B") {
+    } else if (this.currentPiece["kind"] == "Q") {
+    } else if (this.currentPiece["kind"] == "K") {
+    } 
 
     for (let item of this.currentPiece["cellsToPaint"]) {
       this.status[item] = false
@@ -303,7 +483,7 @@ export class AppComponent {
       this.currentPiece["currentPosition"] = this.currentName
       this.cells[this.currentName][0] = this.currentPiece 
 
-      while (event.container.data.length > 0){
+      while (event.container.data.length > 0) {
         this.dato = event.container.data.pop()
       }
       transferArrayItem(event.previousContainer.data,

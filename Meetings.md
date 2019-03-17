@@ -42,3 +42,35 @@
     Se instala Shiny Server sobre Ubuntu 18.10
     Se trabaja sobre la opcion de marcar las celdas a donde puede la pieza mover
     La ruta para el nuevo proyecto es: https://chess-ec7ad.firebaseapp.com/  
+
+## 08/03/2019
+
+    Se trabajó sobre la manipulacion de eventos del drag and drop.  La configuracion debe de tener las palabras clave al principio.
+
+## 17/03/2019
+
+    Se marcan las celdas donde pueden mover los peones y los caballos.  Hay un problema con la captura al paso del peon.
+    La ruta para el demo es: https://chess-ec7ad.firebaseapp.com/
+
+    He investigado sobre las variantes del ajedrez y hay algunas cosas curiosas.
+
+    1. El ajadrez de Capa Blanca
+    2. El Shatranj
+    3. El ajedrez grotesco
+    4. El ajedrez de Fischer o ajedrez 960
+
+    De los primeros dos puedo extraer cuatro piezas que no existen en el ajedrez actual:
+
+    Alfereza (Shatranj), que se mueve en solo en diagonal un solo paso
+    Alfere (Shatranj), que se mueve dos posicioes en diagonal, pero salta sobre las otras pieas, como en las damas, que saltan una pieza.
+    Canciller (Capa Blanca), que se mueve como torre o caballo.
+    Arzobispo (Capa Blanca), que se mueve como alfil o caballo.
+
+    Y como mi aporte al juego, voy a agregar una pieza mas
+    El primer ministro (Esdras), que se mueve como torre, alfil o caballo.
+
+    En el caso del ajedrez grotesco, se ponen caso extremos como un rey y un peon contra las 16 piezas del ajedrez, ganando el rey y el peon.
+
+    En el caso del ajedrez 960, las piezas mayores se colocan de forma aleatoria en el tablero.
+
+    Me gustaria hacer una modalidad, en donde pueda colocar las cinco piezas, las dos del Shatranj, las dos de Capa Blanca y la mia, y para completar tendria una reina mas, siendo que serian 22 piezas mayores, mas 22 peones. y el tablero seria de 22 por 8, me gustaria ver un tablero de 22 por 22.  Bueno son solo ideas.
