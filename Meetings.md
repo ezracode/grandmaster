@@ -56,15 +56,20 @@
 
     1. El ajadrez de Capa Blanca
     2. El Shatranj
-    3. El ajedrez grotesco
-    4. El ajedrez de Fischer o ajedrez 960
+    3. El ajedrez Omega
+    4. El ajedrez grotesco
+    5. El ajedrez de Fischer o ajedrez 960
 
-    De los primeros dos puedo extraer cuatro piezas que no existen en el ajedrez actual:
+    De los primeros tres puedo extraer seis piezas que no existen en el ajedrez actual:
 
     Alfereza (Shatranj), que se mueve en solo en diagonal un solo paso
     Alfere (Shatranj), que se mueve dos posicioes en diagonal, pero salta sobre las otras pieas, como en las damas, que saltan una pieza.
     Canciller (Capa Blanca), que se mueve como torre o caballo.
     Arzobispo (Capa Blanca), que se mueve como alfil o caballo.
+    Campeon (Omega), que salta dos piezas en cualquier direccion o se desliza una ortogonalmente.
+    Hechicero, que salta (1,3) o (3,1) o se desliza uno diagonalmente, al saltar asi esta en las casillas de su mismo color, como el alfil. (No me gustan los nombres de las piezas del ajedrez omega, podiramos cambiarlos)
+
+    En el ajedrez Omega los peones se mueven 1, 2 o 3 casillas en su primer movimiento.
 
     Y como mi aporte al juego, voy a agregar una pieza mas
     El primer ministro (Esdras), que se mueve como torre, alfil o caballo.
@@ -73,4 +78,4 @@
 
     En el caso del ajedrez 960, las piezas mayores se colocan de forma aleatoria en el tablero.
 
-    Me gustaria hacer una modalidad, en donde pueda colocar las cinco piezas, las dos del Shatranj, las dos de Capa Blanca y la mia, y para completar tendria una reina mas, siendo que serian 22 piezas mayores, mas 22 peones. y el tablero seria de 22 por 8, me gustaria ver un tablero de 22 por 22.  Bueno son solo ideas.
+    Me gustaria hacer una modalidad, en donde pueda colocar las siete piezas, las dos del Shatranj, las dos de Capa Blanca, las dos del Omega y la mia, y para completar tendria una reina mas, siendo que serian 24 piezas mayores, mas 24 peones. y el tablero seria de 24 por 8, me gustaria ver un tablero de 24 por 24 y con dos filas de peones.  Bueno son solo ideas.
