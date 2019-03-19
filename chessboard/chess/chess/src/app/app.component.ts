@@ -23,6 +23,38 @@ export class AppComponent {
 
   files = ["a", "b", "c", "d", "e", "f", "g", "h"]
 
+  whiteDiagonals = {
+    d1: ["a2", "b1"],
+    d2: ["a4", "b3", "c2", "d1"],
+    d3: ["a6", "b5", "c4", "d3", "e2", "f1"],
+    d4: ["a8", "b7", "c6", "d5", "e4", "f3", "g2", "h1"],
+    d5: ["c8", "d7", "e6", "f5", "g4", "h3"],
+    d6: ["e8", "f7", "g6", "h5"],
+    d7: ["g8", "h7"],
+    d8: ["a6", "b7", "c8"],
+    d9: ["a4", "b5", "c6", "d7", "e8"],
+    d10: ["a2", "b3", "c4", "d5", "e6", "f7", "g8"],
+    d11: ["b1", "c2", "d3", "e4", "f5", "g6", "h7"],
+    d12: ["d1", "e2", "f3", "g4", "h5"],
+    d13: ["f1", "g2", "h3"]
+  }
+
+  blackDiagonals = {
+      d1: ["a7", "b8"],
+      d2: ["a5", "b6", "c7", "d8"],
+      d3: ["a3", "b4", "c5", "d6", "e7", "f8"],
+      d4: ["a1", "b2", "c3", "d4", "e5", "f6", "g7", "h8"],
+      d5: ["c1", "d2", "e3", "f4", "g5", "h6"],
+      d6: ["e1", "f2", "g3", "h4"],
+      d7: ["g1", "h2"],
+      d8: ["a3", "b2", "c1"],
+      d9: ["a5", "b4", "c3", "d2", "e1"],
+      d10: ["a7", "b6", "c5", "d4", "e3", "f2", "g1"],
+      d11: ["b8", "c7", "d6", "e5", "f4", "g3", "h2"],
+      d12: ["d8", "e7", "f6", "g5", "h4"],
+      d13: ["f8", "g7", "h6"]
+  }
+
   public cells = {
     a1: [{cvalue: String.fromCharCode(9814), cid: "11", cssclass: "white-piece", kind: "R", currentPosition: "a1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white left rock", cellsToPaint: []}],
     a2: [{cvalue: String.fromCharCode(9817), cid: "21", cssclass: "white-piece", kind: "P", currentPosition: "a2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn left rock", cellsToPaint: []}],
@@ -149,6 +181,33 @@ export class AppComponent {
     //console.log("ngOnInit")  
   }
 
+  colorOfCell(file: string, rank: string) {
+    //file is a letter, rank is a number
+    //file even and rank even black - columna impar fila impar negro
+    //file even and rank odd  white - columna impar fila par   blanco
+    //file odd  and rank even white - columna par   fila impar blanco
+    //file odd  and rank odd  black - columna par   fila par   negro
+
+    var oddFiles = ["a", "c", "e", "g"]
+    var found = oddFiles.find(function(element) {
+      return element == file;
+    });
+
+    if (found) {
+      if( ((+rank) % 2) != 0 ) {
+          return ("B")
+      } else {
+          return ("W")
+      }
+    } else {
+        if( ((+rank) % 2) != 0 ) {
+            return ("W")
+        } else {
+            return ("B")
+        }
+    }
+  }
+    
   public allowdrop(item: CdkDrag, listItem: CdkDropList) {
     //console.log("alowdrop")
 
@@ -183,10 +242,15 @@ export class AppComponent {
     this.file = this.currentPiece["currentPosition"]
     this.rank = this.currentPiece["currentPosition"]
     this.file = this.file.substring(0,1)
-    this.rank = this.rank.substring(1,2)  
-    
+    this.rank = this.rank.substring(1,2) 
+   
+    var currentPosition = ""
+    currentPosition = this.currentPiece["currentPosition"]
+
     var lrank = 0
     var tempCell = ""
+
+    var tempCellDiagonal = []
 
     var tempCellLeft = []
     var tempCellCenter = []
@@ -200,6 +264,9 @@ export class AppComponent {
     var tempCellRightDown2 = []
     var tempCellLeftDown1 = []
     var tempCellLeftDown2 = []
+
+    var colorOfCurrentCell = ""
+    var diagonals = {}
 
     this.currentPiece["cellsToPaint"] = []
 
@@ -457,6 +524,41 @@ export class AppComponent {
       console.log(this.currentPiece["cellsToPaint"])
 
     } else if (this.currentPiece["kind"] == "B") {
+      console.log("bishop")
+      lrank = +this.rank
+      colorOfCurrentCell = this.colorOfCell(this.file, this.rank)
+
+      if (colorOfCurrentCell == "W") {
+        diagonals = this.whiteDiagonals
+      } else {
+        diagonals = this.blackDiagonals
+      }
+
+      for (let subset in diagonals) {
+        // in because is an object
+        var found = diagonals[subset].find(function(element) {
+          return element == currentPosition;
+        });
+
+        if (found) {
+          console.log(diagonals[subset])
+          for (let item of diagonals[subset]) {
+            if (item != this.currentPiece["currentPosition"]) { 
+              console.log(item)
+              // of because is an array
+              tempCellDiagonal = this.cells[item]
+              if (tempCellDiagonal.length != 0) {
+                if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+                  this.currentPiece["cellsToPaint"].push(item)
+                }
+                break
+              } else {
+                this.currentPiece["cellsToPaint"].push(item)
+              } 
+            }
+          }
+        }
+      }
     } else if (this.currentPiece["kind"] == "Q") {
     } else if (this.currentPiece["kind"] == "K") {
     } 
