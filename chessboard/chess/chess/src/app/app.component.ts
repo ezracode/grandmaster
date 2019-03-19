@@ -525,44 +525,115 @@ export class AppComponent {
 
     } else if (this.currentPiece["kind"] == "B") {
       console.log("bishop")
+
+      //left and up
+      console.log("left and up")
       lrank = +this.rank
-      colorOfCurrentCell = this.colorOfCell(this.file, this.rank)
+      var follow = true
+      var i = 1
+      while (follow){
+        if (this.files[this.files.indexOf(this.file) - i] != undefined 
+            && lrank + i < 9) {
 
-      if (colorOfCurrentCell == "W") {
-        diagonals = this.whiteDiagonals
-      } else {
-        diagonals = this.blackDiagonals
-      }
+          tempCell = this.files[this.files.indexOf(this.file) - i]
+          tempCell = tempCell.concat((lrank + i).toString())
+          console.log(tempCell)
 
-      for (let subset in diagonals) {
-        // in because is an object
-        var found = diagonals[subset].find(function(element) {
-          return element == currentPosition;
-        });
-
-        if (found) {
-          console.log(diagonals[subset])
-          for (let item of diagonals[subset]) {
-            if (item != this.currentPiece["currentPosition"]) { 
-              console.log(item)
-              // of because is an array
-              tempCellDiagonal = this.cells[item]
-              if (tempCellDiagonal.length != 0) {
-                if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                  this.currentPiece["cellsToPaint"].push(item)
-                }
-                break
-              } else {
-                this.currentPiece["cellsToPaint"].push(item)
-              } 
+          tempCellDiagonal = this.cells[tempCell]
+          if (tempCellDiagonal.length != 0) {
+            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
             }
+            follow = false
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
           }
+        } else {
+          follow = false
         }
+        i++
+      }
+      //right and up
+      console.log("right and up")
+      follow = true
+      i = 1
+      while (follow){
+        if (this.files[this.files.indexOf(this.file) + i] != undefined 
+            && lrank + i < 9) {
+
+          tempCell = this.files[this.files.indexOf(this.file) + i]
+          tempCell = tempCell.concat((lrank + i).toString())
+          console.log(tempCell)
+
+          tempCellDiagonal = this.cells[tempCell]
+          if (tempCellDiagonal.length != 0) {
+            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+            follow = false
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          follow = false
+        }
+        i++
+      }
+      //left and down
+      console.log("left and down")
+      follow = true
+      i = 1
+      while (follow){
+        if (this.files[this.files.indexOf(this.file) - i] != undefined 
+            && lrank - i > 0) {
+
+          tempCell = this.files[this.files.indexOf(this.file) - i]
+          tempCell = tempCell.concat((lrank - i).toString())
+          console.log(tempCell)
+
+          tempCellDiagonal = this.cells[tempCell]
+          if (tempCellDiagonal.length != 0) {
+            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+            follow = false
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          follow = false
+        }
+        i++
+      }
+      //right and down
+      console.log("right and down")
+      follow = true
+      i = 1
+      while (follow){
+        if (this.files[this.files.indexOf(this.file) + i] != undefined 
+            && lrank - i > 0) {
+
+          tempCell = this.files[this.files.indexOf(this.file) + i]
+          tempCell = tempCell.concat((lrank - i).toString())
+          console.log(tempCell)
+
+          tempCellDiagonal = this.cells[tempCell]
+          if (tempCellDiagonal.length != 0) {
+            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+            follow = false
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          follow = false
+        }
+        i++
       }
     } else if (this.currentPiece["kind"] == "Q") {
     } else if (this.currentPiece["kind"] == "K") {
     } 
-
     for (let item of this.currentPiece["cellsToPaint"]) {
       this.status[item] = false
     }
