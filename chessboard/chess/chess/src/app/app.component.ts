@@ -202,7 +202,7 @@ export class AppComponent {
         }
       }     
     }
-    console.log(this.cells)
+    //console.log(this.cells)
   }
 
   colorOfCell(file: string, rank: string) {
@@ -865,7 +865,6 @@ export class AppComponent {
       }
       //left and up
       console.log("left and up")
-      lrank = +this.rank
       var follow = true
       var i = 1
       while (follow){
@@ -969,6 +968,150 @@ export class AppComponent {
         i++
       }
     } else if (this.currentPiece["kind"] == "K") {
+      console.log("King")
+
+      //left
+      console.log("left")
+      lrank = +this.rank
+      if (this.files[this.files.indexOf(this.file) - 1] != undefined) {
+
+        tempCell = this.files[this.files.indexOf(this.file) - 1]
+        tempCell = tempCell.concat((lrank).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      }    
+      //right
+      console.log("right")
+      if (this.files[this.files.indexOf(this.file) + 1] != undefined) {
+
+        tempCell = this.files[this.files.indexOf(this.file) + 1]
+        tempCell = tempCell.concat((lrank).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      } 
+      //down
+      console.log("down")
+      if (lrank - 1 > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(this.file)]
+        tempCell = tempCell.concat((lrank - 1).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      }
+      //up
+      console.log("up")
+      if (lrank + 1 < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(this.file)]
+        tempCell = tempCell.concat((lrank + 1).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      }
+      //left and up
+      console.log("left and up")
+      if (this.files[this.files.indexOf(this.file) - 1] != undefined 
+          && lrank + 1 < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(this.file) - 1]
+        tempCell = tempCell.concat((lrank + 1).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      }
+      //right and up
+      console.log("right and up")
+      if (this.files[this.files.indexOf(this.file) + 1] != undefined 
+          && lrank + 1 < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(this.file) + 1]
+        tempCell = tempCell.concat((lrank + 1).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      } 
+      //left and down
+      console.log("left and down")
+      if (this.files[this.files.indexOf(this.file) - 1] != undefined 
+          && lrank - 1 > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(this.file) - 1]
+        tempCell = tempCell.concat((lrank - 1).toString())
+        console.log(tempCell)
+
+        tempCellDiagonal = this.cells[tempCell]
+        if (tempCellDiagonal.length != 0) {
+          if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+          follow = false
+        } else {
+          this.currentPiece["cellsToPaint"].push(tempCell)
+        }
+      }
+      //right and down
+      console.log("right and down")
+        if (this.files[this.files.indexOf(this.file) + 1] != undefined 
+            && lrank - 1 > this.minLimit) {
+
+          tempCell = this.files[this.files.indexOf(this.file) + 1]
+          tempCell = tempCell.concat((lrank - 1).toString())
+          console.log(tempCell)
+
+          tempCellDiagonal = this.cells[tempCell]
+          if (tempCellDiagonal.length != 0) {
+            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
+              this.currentPiece["cellsToPaint"].push(tempCell)
+            }
+          } else {
+            this.currentPiece["cellsToPaint"].push(tempCell)
+          }
+        }
     } 
     for (let item of this.currentPiece["cellsToPaint"]) {
       this.status[item] = false
@@ -1004,7 +1147,7 @@ export class AppComponent {
       this.disablePiece(this.whiteTurn)
 
       console.log(this.whiteTurn)
-      console.log(event.container.data)
+      //console.log(event.container.data)
     }
   }
 }
