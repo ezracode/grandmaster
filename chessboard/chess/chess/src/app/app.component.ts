@@ -3,6 +3,15 @@ import {CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem, CdkDragEnd, CdkDr
 import { HttpClientModule } from '@angular/common/http'
 import { ApiService } from './api.service'
 
+class Employee {
+  fullName: string;
+}
+
+class Turn {
+  turnNumber: number;
+  piece: {};
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +21,7 @@ export class AppComponent {
 
   constructor(private apiService: ApiService) {
     this.whiteTurn = false
+    this.turnNumber = 0
     this.disablePiece(this.whiteTurn)
     console.log(this.whiteTurn)
   }
@@ -31,6 +41,11 @@ export class AppComponent {
   blackEnPassantMove = ""
   whiteEnPassantRank = 5
   blackEnPassantRank = 4
+
+  turnNumber = 0
+  blackMoves: Array<Turn> = []
+  whiteMoves: Array<Turn> = []
+  currentTurn: Turn = {turnNumber: 0, piece: {}}
 
   files = ["a", "b", "c", "d", "e", "f", "g", "h"]
 
@@ -192,7 +207,7 @@ export class AppComponent {
     //console.log("ngOnInit")  
   }
 
-  disablePiece(enable: boolean){
+  disablePiece(enable: boolean) {
     for (let item in this.cells) {
       if (this.cells[item].length != 0) {
         if (this.cells[item][0].color == "W") {
@@ -248,6 +263,7 @@ export class AppComponent {
 
   public ended(event: CdkDragEnd) {
     console.log("ended method")
+
     this.currentName = event.source.element.nativeElement.getAttribute("name")
     this.currentPiece = this.cells[this.previousName][0]
     for (let item of this.currentPiece["cellsToPaint"]) {
@@ -302,6 +318,7 @@ export class AppComponent {
         
         tempCell = this.file.concat(lrank.toString())
         tempCellCenter = this.cells[tempCell]
+        //if the cell in from of the pawn is empty, add to the colored ones
         if (tempCellCenter.length == 0) {
           this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
         }
@@ -311,20 +328,30 @@ export class AppComponent {
           tempCell = this.files[this.files.indexOf(this.file) - 1]
           tempCell = tempCell.concat(lrank.toString())
           tempCellLeft = this.cells[tempCell]
+          //if the cell to the left of the pawn is not empty and is and opponet, add to the colored ones
           if (tempCellLeft.length != 0) {
             if (tempCellLeft[0].color == "B") {
               this.currentPiece["cellsToPaint"].push(tempCell)
             }
           }
+          //if the pawn is on the fifth rank it can capture en passant only if the opponent is at the left
           if (+this.rank == this.whiteEnPassantRank) {
             tempCell = this.files[this.files.indexOf(this.file) - 1]
             tempCell = tempCell.concat((lrank - 1).toString())
             tempCellLeft = this.cells[tempCell]
             if (tempCellLeft.length != 0) {
-              if (tempCellLeft[0].color == "B") {
-                tempCell = this.files[this.files.indexOf(this.file) - 1]
-                tempCell = tempCell.concat((lrank).toString())
-                this.currentPiece["cellsToPaint"].push(tempCell)
+              // En passant can be done only if the move of the opponent is the first move 
+              if (tempCellLeft[0].color == "B" && tempCellLeft[0].counterOfMoves == 1) {
+                var temp: Turn = new Turn()
+                temp = this.blackMoves[this.whiteMoves.length - 1]
+                console.log(temp)
+                // Just to confirm the current position of the opponent  
+                if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
+                  tempCell = this.files[this.files.indexOf(this.file) - 1]
+                  tempCell = tempCell.concat((lrank).toString())
+                  this.whiteEnPassantMove = temp.piece["currentPosition"]
+                  this.currentPiece["cellsToPaint"].push(tempCell)
+                }
               }
             }
           }
@@ -345,12 +372,18 @@ export class AppComponent {
           if (+this.rank == this.whiteEnPassantRank) {
             tempCell = this.files[this.files.indexOf(this.file) + 1]
             tempCell = tempCell.concat((lrank - 1).toString())
-            tempCellLeft = this.cells[tempCell]
-            if (tempCellLeft.length != 0) {
-              if (tempCellLeft[0].color == "B") {
-                tempCell = this.files[this.files.indexOf(this.file) + 1]
-                tempCell = tempCell.concat((lrank).toString())
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellRight = this.cells[tempCell]
+            if (tempCellRight.length != 0) {
+              if (tempCellRight[0].color == "B" && tempCellRight[0].counterOfMoves == 1) {
+                var temp: Turn = new Turn()
+                temp = this.blackMoves[this.whiteMoves.length - 1]
+                console.log(temp)
+                if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
+                  tempCell = this.files[this.files.indexOf(this.file) + 1]
+                  tempCell = tempCell.concat((lrank).toString())
+                  this.whiteEnPassantMove = temp.piece["currentPosition"]
+                  this.currentPiece["cellsToPaint"].push(tempCell)
+                }
               }
             }
           }
@@ -359,7 +392,7 @@ export class AppComponent {
         lrank--  
         tempCell = this.file.concat(lrank.toString())
         tempCellCenter = this.cells[tempCell]
-        if (tempCellCenter.length == 0){
+        if (tempCellCenter.length == 0) {
           this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
         }
                   
@@ -378,10 +411,16 @@ export class AppComponent {
             tempCell = tempCell.concat((lrank + 1).toString())
             tempCellLeft = this.cells[tempCell]
             if (tempCellLeft.length != 0) {
-              if (tempCellLeft[0].color == "W") {
-                tempCell = this.files[this.files.indexOf(this.file) - 1]
-                tempCell = tempCell.concat((lrank).toString())
-                this.currentPiece["cellsToPaint"].push(tempCell)
+              if (tempCellLeft[0].color == "W"  && tempCellLeft[0].counterOfMoves == 1) {
+                var temp: Turn = new Turn()
+                temp = this.whiteMoves[this.whiteMoves.length - 1]
+                console.log(temp)
+                if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
+                  tempCell = this.files[this.files.indexOf(this.file) - 1]
+                  tempCell = tempCell.concat((lrank).toString())
+                  this.blackEnPassantMove = temp.piece["currentPosition"]
+                  this.currentPiece["cellsToPaint"].push(tempCell)
+                }
               }
             }
           }
@@ -400,12 +439,18 @@ export class AppComponent {
           if (+this.rank == this.blackEnPassantRank) {
             tempCell = this.files[this.files.indexOf(this.file) + 1]
             tempCell = tempCell.concat((lrank + 1).toString())
-            tempCellLeft = this.cells[tempCell]
-            if (tempCellLeft.length != 0) {
-              if (tempCellLeft[0].color == "W") {
-                tempCell = this.files[this.files.indexOf(this.file) + 1]
-                tempCell = tempCell.concat((lrank).toString())
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellRight = this.cells[tempCell]
+            if (tempCellRight.length != 0) {
+              if (tempCellRight[0].color == "W" && tempCellRight[0].counterOfMoves == 1) {
+                var temp: Turn = new Turn()
+                temp = this.whiteMoves[this.whiteMoves.length - 1]
+                console.log(temp)
+                if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
+                  tempCell = this.files[this.files.indexOf(this.file) + 1]
+                  tempCell = tempCell.concat((lrank).toString())
+                  this.blackEnPassantMove = temp.piece["currentPosition"]
+                  this.currentPiece["cellsToPaint"].push(tempCell)
+                }
               }
             }
           }
@@ -422,7 +467,7 @@ export class AppComponent {
         tempCell = this.file.concat(lrank.toString())
         tempCellCenter = this.cells[tempCell]
         console.log(tempCell)
-        if (tempCellCenter.length == 0){
+        if (tempCellCenter.length == 0) {
           this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
         }
       }
@@ -437,7 +482,7 @@ export class AppComponent {
       lrank = +this.rank
       var follow = true
       var i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) - i] != undefined) {
 
           tempCell = this.files[this.files.indexOf(this.file) - i]
@@ -462,7 +507,7 @@ export class AppComponent {
       console.log("right")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) + i] != undefined) {
 
           tempCell = this.files[this.files.indexOf(this.file) + i]
@@ -487,7 +532,7 @@ export class AppComponent {
       console.log("down")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (lrank - i > this.minLimit) {
 
           tempCell = this.files[this.files.indexOf(this.file)]
@@ -512,7 +557,7 @@ export class AppComponent {
       console.log("up")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (lrank + i < this.maxLimit) {
 
           tempCell = this.files[this.files.indexOf(this.file)]
@@ -537,7 +582,7 @@ export class AppComponent {
       lrank = +this.rank
 
       if ((this.files[this.files.indexOf(this.file) - 2] != undefined) &&
-         (lrank + 1 < this.maxLimit)){
+         (lrank + 1 < this.maxLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) - 2]
           tempCell = tempCell.concat((lrank + 1).toString())
           tempCellLeftUp1 = this.cells[tempCell]
@@ -551,7 +596,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) - 1] != undefined) &&
-         (lrank + 2 < this.maxLimit)){
+         (lrank + 2 < this.maxLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) - 1]
           tempCell = tempCell.concat((lrank + 2).toString())
           tempCellLeftUp2 = this.cells[tempCell]
@@ -565,7 +610,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) + 1] != undefined) &&
-         (lrank + 2 < this.maxLimit)){
+         (lrank + 2 < this.maxLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) + 1]
           tempCell = tempCell.concat((lrank + 2).toString())
           tempCellRightUp1 = this.cells[tempCell]
@@ -579,7 +624,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) + 2] != undefined) &&
-         (lrank + 1 < this.maxLimit)){
+         (lrank + 1 < this.maxLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) + 2]
           tempCell = tempCell.concat((lrank + 1).toString())
           tempCellRightUp2 = this.cells[tempCell]
@@ -593,7 +638,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) + 2] != undefined) &&
-         (lrank - 1 > this.minLimit)){
+         (lrank - 1 > this.minLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) + 2]
           tempCell = tempCell.concat((lrank - 1).toString())
           tempCellRightDown1 = this.cells[tempCell]
@@ -607,7 +652,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) + 1] != undefined) &&
-         (lrank - 2 > this.minLimit)){
+         (lrank - 2 > this.minLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) + 1]
           tempCell = tempCell.concat((lrank - 2).toString())
           tempCellRightDown2 = this.cells[tempCell]
@@ -621,7 +666,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) - 1] != undefined) &&
-         (lrank - 2 > this.minLimit)){
+         (lrank - 2 > this.minLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) - 1]
           tempCell = tempCell.concat((lrank - 2).toString())
           tempCellLeftDown1 = this.cells[tempCell]
@@ -635,7 +680,7 @@ export class AppComponent {
       }
 
       if ((this.files[this.files.indexOf(this.file) - 2] != undefined) &&
-         (lrank - 1 > this.minLimit)){
+         (lrank - 1 > this.minLimit)) {
           tempCell = this.files[this.files.indexOf(this.file) - 2]
           tempCell = tempCell.concat((lrank - 1).toString())
           tempCellLeftDown2 = this.cells[tempCell]
@@ -659,7 +704,7 @@ export class AppComponent {
       lrank = +this.rank
       var follow = true
       var i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) - i] != undefined 
             && lrank + i < this.maxLimit) {
 
@@ -685,7 +730,7 @@ export class AppComponent {
       console.log("right and up")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) + i] != undefined 
             && lrank + i < this.maxLimit) {
 
@@ -711,7 +756,7 @@ export class AppComponent {
       console.log("left and down")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) - i] != undefined 
             && lrank - i > this.minLimit) {
 
@@ -737,7 +782,7 @@ export class AppComponent {
       console.log("right and down")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) + i] != undefined 
             && lrank - i > this.minLimit) {
 
@@ -767,7 +812,7 @@ export class AppComponent {
       lrank = +this.rank
       var follow = true
       var i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) - i] != undefined) {
 
           tempCell = this.files[this.files.indexOf(this.file) - i]
@@ -792,7 +837,7 @@ export class AppComponent {
       console.log("right")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) + i] != undefined) {
 
           tempCell = this.files[this.files.indexOf(this.file) + i]
@@ -817,7 +862,7 @@ export class AppComponent {
       console.log("down")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (lrank - i > this.minLimit) {
 
           tempCell = this.files[this.files.indexOf(this.file)]
@@ -842,7 +887,7 @@ export class AppComponent {
       console.log("up")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (lrank + i < this.maxLimit) {
 
           tempCell = this.files[this.files.indexOf(this.file)]
@@ -867,7 +912,7 @@ export class AppComponent {
       console.log("left and up")
       var follow = true
       var i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) - i] != undefined 
             && lrank + i < this.maxLimit) {
 
@@ -893,7 +938,7 @@ export class AppComponent {
       console.log("right and up")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) + i] != undefined 
             && lrank + i < this.maxLimit) {
 
@@ -919,7 +964,7 @@ export class AppComponent {
       console.log("left and down")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) - i] != undefined 
             && lrank - i > this.minLimit) {
 
@@ -945,7 +990,7 @@ export class AppComponent {
       console.log("right and down")
       follow = true
       i = 1
-      while (follow){
+      while (follow) {
         if (this.files[this.files.indexOf(this.file) + i] != undefined 
             && lrank - i > this.minLimit) {
 
@@ -1142,11 +1187,38 @@ export class AppComponent {
                         event.container.data,
                         event.previousIndex,
                         event.currentIndex)
+                        
+      this.currentTurn = new Turn()
+
       //one move per team
+      if (!this.whiteTurn) {
+        //white is moving
+        this.turnNumber++
+        this.currentTurn.turnNumber = this.turnNumber
+        this.currentTurn.piece  = this.currentPiece
+        this.whiteMoves.push(this.currentTurn)
+        //If your move is the en Passant remove the opponent pawn
+        if (this.whiteEnPassantMove != "") {
+          this.cells[this.whiteEnPassantMove] = []
+          this.whiteEnPassantMove = ""
+        }
+      } else {
+        //black is moving
+        this.currentTurn.turnNumber = this.turnNumber
+        this.currentTurn.piece  = this.currentPiece
+        this.blackMoves.push(this.currentTurn)
+        if (this.blackEnPassantMove != "") {
+           this.cells[this.blackEnPassantMove] = []
+           this.blackEnPassantMove = ""
+        }
+      } 
+
       this.whiteTurn = !this.whiteTurn
       this.disablePiece(this.whiteTurn)
 
       console.log(this.whiteTurn)
+      console.log(this.whiteMoves)
+      console.log(this.blackMoves)
       //console.log(event.container.data)
     }
   }

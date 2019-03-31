@@ -79,3 +79,53 @@
     En el caso del ajedrez 960, las piezas mayores se colocan de forma aleatoria en el tablero.
 
     Me gustaria hacer una modalidad, en donde pueda colocar las siete piezas, las dos del Shatranj, las dos de Capa Blanca, las dos del Omega y la mia, y para completar tendria una reina mas, siendo que serian 24 piezas mayores, mas 24 peones. y el tablero seria de 24 por 8, me gustaria ver un tablero de 24 por 24 y con dos filas de peones.  Bueno son solo ideas.
+   
+## 28/03/2019
+
+    La pieza que quiero agregar tiene nombre, se llama Amazona, y se mueve como caballo, torre y alfil.  
+
+    Existe un concepto de piezas mágicas, que son piezas que tienen movimientos diferentes a las piezas tradicionales, seria interesante crear un tablero con todas las piezas magicas, solo para probar.
+
+    Los cinco mejores motores de análisis de juegos según el blog hezugzwangblog.com:
+
+    1. Stockfish 3388 puntos de ELO
+    2. Andscacs 3211 puntos de ELO
+    3. Fire 3209 puntos de ELO
+    4. Gull 3196 puntos de ELO
+    5. Fizbo 3190 puntos de ELO
+
+    Los mejores canales para aprender ajedrez:
+    1. hezugzwangblog.com
+    2. chess.com
+    3. youtube canal partidasinmortales
+
+    Temas de ajedrez
+    Deep Blue
+    AlphaZero
+    Stockfish
+    ELMO
+
+    Con respecto al marco teórico.  Creo que los temas pueden ser los siguientes.
+
+    1. Historia del Ajedrez
+    2. Reglas del Ajedrez
+    3. Notación algebraica del Ajedrez
+    4. Piezas del Ajedrez y sus movimientos
+    5. Variantes del ajedrez y piezas mágicas.
+    6. Grandes Campeones de Ajedrez
+        Emanuel Lasker
+        Jose Raul Capablanca
+        Mijail Botvinik
+        Tigran Petrosian
+        Boris Spassky
+        Bobby Fischer
+        Anatoli Karpo
+        Garri Kaspárov
+        Vladimir Kramnik
+        Viswanathan Anand
+        Magnus Carlsen
+    7. Maquinas jugando ajedrez:  Deep Blue
+    8. Software jugando ajedrez:  Stockfish
+    9. Inteligencia Artificial ajedrez:  AlphaZero
+    10. Bases de Datos de Finales
+    11. Software para mejorar en ajedrez:  GrandMaster
