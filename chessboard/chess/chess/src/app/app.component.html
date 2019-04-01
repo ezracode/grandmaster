@@ -754,4 +754,27 @@
     <div class = "whitecorner"></div>
   </div>    
 </div>
-<div>{{res}}</div> 
+<div class = "moves">
+    <cdk-table [dataSource] = "gameMoves">
+        <!-- Turn Column -->
+        <ng-container cdkColumnDef = "turn">
+          <cdk-header-cell *cdkHeaderCellDef> No. </cdk-header-cell>
+          <cdk-cell *cdkCellDef="let element"> {{element.turn}} </cdk-cell>
+        </ng-container>
+      
+        <!-- White Move Column -->
+        <ng-container cdkColumnDef = "white">
+          <cdk-header-cell *cdkHeaderCellDef> White </cdk-header-cell >
+          <cdk-cell *cdkCellDef="let element"> {{element.white}} </cdk-cell>
+        </ng-container>
+      
+        <!-- Black Move Column -->
+        <ng-container cdkColumnDef = "black">
+          <cdk-header-cell *cdkHeaderCellDef> Black </cdk-header-cell>
+          <cdk-cell *cdkCellDef="let element"> {{element.black}} </cdk-cell>
+        </ng-container>
+      
+        <cdk-header-row *cdkHeaderRowDef = "displayedColumns"></cdk-header-row>
+        <cdk-row *cdkRowDef = "let row; columns: displayedColumns;"></cdk-row>
+    </cdk-table>
+</div> 

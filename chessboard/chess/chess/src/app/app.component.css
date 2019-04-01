@@ -46,6 +46,8 @@
 }
 .board
 {
+    display: block;
+    float: left;
     height: 600px;
     margin: 0;
     padding: 0;
@@ -80,59 +82,59 @@
 }
 .softred
 {
-  background-color: #00cc7a;
-  float: left;
-  height: 70px;
-  overflow: hidden;
-  width: 70px;
-  display: block;
+    background-color: #00cc7a;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
 }
 .container
 {
-  background: transparent;
-  display: inline-block;
-  height: 70px;
-  margin: 0;
-  vertical-align: top;
-  width: 70px;
+    background: transparent;
+    display: inline-block;
+    height: 70px;
+    margin: 0;
+    vertical-align: top;
+    width: 70px;
 }
 .list 
 {
-  background: transparent;
-  border: solid 1px #ccc;
-  clear: both;
-  display: block;
-  float: left;
-  height: 70px;
-  overflow: hidden;
-  width: 70px;
+    background: transparent;
+    border: solid 1px #ccc;
+    clear: both;
+    display: block;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
 }
 .box 
 {
-  align-items: center;
-  background: transparent;
-  box-sizing: border-box;
-  cursor: grab;
-  display: flex;
-  flex-direction: row;
-  font-size: 60px;
-  height: 70px;
-  justify-content: center;
-  width: 70px;
+    align-items: center;
+    background: transparent;
+    box-sizing: border-box;
+    cursor: grab;
+    display: flex;
+    flex-direction: row;
+    font-size: 60px;
+    height: 70px;
+    justify-content: center;
+    width: 70px;
 }
 .cdk-drag-placeholder 
 {
-  opacity: 0;
+    opacity: 0;
 }
 .cdk-drag-animating {
-  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
 .example-box:last-child 
 {
-  border: none;
+    border: none;
 }
 .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
-  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
 .white-piece
 {
@@ -158,4 +160,39 @@
 .black-piece
 {
     color: black;
+}
+.moves
+{
+    color: green;
+    display: block;
+    float: left;
+    height: 600px;
+    margin: 0;
+    overflow-y: scroll;
+    padding: 10px;
+    scroll-behavior: auto;
+    width: 200px;
+}
+.cdk-header-row
+{
+  display: block;  
+}
+.cdk-row
+{
+  display: block;
+}
+.cdk-column-turn
+{
+  display: inline-block;
+  width: 30px;
+}
+.cdk-column-white
+{
+  display: inline-block;
+  width: 70px;
+}
+.cdk-column-black
+{
+  display: inline-block;
+  width: 70px;
 }
