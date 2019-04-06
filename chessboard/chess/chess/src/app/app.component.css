@@ -89,6 +89,24 @@
     width: 70px;
     display: block;
 }
+.yellow
+{
+    background-color: #FFA726;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
+.softyellow
+{
+    background-color: #FFB74D;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
 .container
 {
     background: transparent;

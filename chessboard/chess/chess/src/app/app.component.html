@@ -18,7 +18,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a8']"
-      [ngClass] = "status['a8'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['a8'], 'softred' : !status['a8'], 'softyellow' : colorOfCurrentMove['a8']}" 
       name = "a8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -29,7 +29,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b8']"
-      [ngClass] = "status['b8'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['b8'], 'red' : !status['b8'], 'yellow' : colorOfCurrentMove['b8']}" 
       name = "b8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -40,7 +40,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c8']"
-      [ngClass] = "status['c8'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['c8'], 'softred' : !status['c8'], 'softyellow' : colorOfCurrentMove['c8']}" 
       name = "c8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -51,7 +51,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d8']"
-      [ngClass] = "status['d8'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['d8'], 'red' : !status['d8'], 'yellow' : colorOfCurrentMove['d8']}" 
       name = "d8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -62,7 +62,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e8']"
-      [ngClass] = "status['e8'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['e8'], 'softred' : !status['e8'], 'softyellow' : colorOfCurrentMove['e8']}" 
       name = "e8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -73,7 +73,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f8']"
-      [ngClass] = "status['f8'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['f8'], 'red' : !status['f8'], 'yellow' : colorOfCurrentMove['f8']}" 
       name = "f8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -84,7 +84,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g8']"
-      [ngClass] = "status['g8'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['g8'], 'softred' : !status['g8'], 'softyellow' : colorOfCurrentMove['g8']}" 
       name = "g8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -95,7 +95,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h8']"
-      [ngClass] = "status['h8'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['h8'], 'red' : !status['h8'], 'yellow' : colorOfCurrentMove['h8']}" 
       name = "h8"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -109,7 +109,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a7']"
-      [ngClass] = "status['a7'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['a7'], 'red' : !status['a7'], 'yellow' : colorOfCurrentMove['a7']}" 
       name = "a7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -120,7 +120,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b7']"
-      [ngClass] = "status['b7'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['b7'], 'softred' : !status['b7'], 'softyellow' : colorOfCurrentMove['b7']}" 
       name = "b7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -131,7 +131,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c7']"
-      [ngClass] = "status['c7'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['c7'], 'red' : !status['c7'], 'yellow' : colorOfCurrentMove['c7']}" 
       name = "c7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -142,7 +142,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d7']"
-      [ngClass] = "status['d7'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['d7'], 'softred' : !status['d7'], 'softyellow' : colorOfCurrentMove['d7']}" 
       name = "d7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -153,7 +153,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e7']"
-      [ngClass] = "status['e7'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['e7'], 'red' : !status['e7'], 'yellow' : colorOfCurrentMove['e7']}" 
       name = "e7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -164,7 +164,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f7']"
-      [ngClass] = "status['f7'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['f7'], 'softred' : !status['f7'], 'softyellow' : colorOfCurrentMove['f7']}" 
       name = "f7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -175,7 +175,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g7']"
-      [ngClass] = "status['g7'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['g7'], 'red' : !status['g7'], 'yellow' : colorOfCurrentMove['g7']}" 
       name = "g7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -186,7 +186,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h7']"
-      [ngClass] = "status['h7'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['h7'], 'softred' : !status['h7'], 'softyellow' : colorOfCurrentMove['h7']}" 
       name = "h7"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -200,7 +200,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a6']"
-      [ngClass] = "status['a6'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['a6'], 'softred' : !status['a6'], 'softyellow' : colorOfCurrentMove['a6']}" 
       name = "a6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -211,7 +211,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b6']"
-      [ngClass] = "status['b6'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['b6'], 'red' : !status['b6'], 'yellow' : colorOfCurrentMove['b6']}" 
       name = "b6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -222,7 +222,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c6']"
-      [ngClass] = "status['c6'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['c6'], 'softred' : !status['c6'], 'softyellow' : colorOfCurrentMove['c6']}" 
       name = "c6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -233,7 +233,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d6']"
-      [ngClass] = "status['d6'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['d6'], 'red' : !status['d6'], 'yellow' : colorOfCurrentMove['d6']}" 
       name = "d6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -244,7 +244,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e6']"
-      [ngClass] = "status['e6'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['e6'], 'softred' : !status['e6'], 'softyellow' : colorOfCurrentMove['e6']}" 
       name = "e6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -255,7 +255,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f6']"
-      [ngClass] = "status['f6'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['f6'] , 'red' : !status['f6'] , 'yellow' : colorOfCurrentMove['f6']}" 
       name = "f6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -266,7 +266,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g6']"
-      [ngClass] = "status['g6'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['g6'], 'softred' : !status['g6'], 'softyellow' : colorOfCurrentMove['g6']}" 
       name = "g6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -277,7 +277,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h6']"
-      [ngClass] = "status['h6'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['h6'], 'red' : !status['h6'], 'yellow' : colorOfCurrentMove['h6']}" 
       name = "h6"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -291,7 +291,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a5']"
-      [ngClass] = "status['a5'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['a5'], 'red' : !status['a5'], 'yellow' : colorOfCurrentMove['a5']}" 
       name = "a5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -302,7 +302,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b5']"
-      [ngClass] = "status['b5'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['b5'] , 'softred' : !status['b5'] , 'softyellow' : colorOfCurrentMove['b5']}" 
       name = "b5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -313,7 +313,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c5']"
-      [ngClass] = "status['c5'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['c5'], 'red' : !status['c5'], 'yellow' : colorOfCurrentMove['c5']}" 
       name = "c5"
       (cdkDropListDropped) = "drop($event)" 
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -324,7 +324,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d5']"
-      [ngClass] = "status['d5'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['d5'], 'softred' : !status['d5'], 'softyellow' : colorOfCurrentMove['d5']}" 
       name = "d5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -335,7 +335,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e5']"
-      [ngClass] = "status['e5'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['e5'], 'red' : !status['e5'], 'yellow' : colorOfCurrentMove['e5']}" 
       name = "e5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -346,7 +346,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f5']"
-      [ngClass] = "status['f5'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['f5'], 'softred' : !status['f5'], 'softyellow' : colorOfCurrentMove['f5']}" 
       name = "f5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -357,7 +357,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g5']"
-      [ngClass] = "status['g5'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['g5'], 'red' : !status['g5'], 'yellow' : colorOfCurrentMove['g5']}" 
       name = "g5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -368,7 +368,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h5']"
-      [ngClass] = "status['h5'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['h5'], 'softred' : !status['h5'], 'softyellow' : colorOfCurrentMove['h5']}" 
       name = "h5"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -382,7 +382,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a4']"
-      [ngClass] = "status['a4'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['a4'], 'softred' : !status['a4'], 'softyellow' : colorOfCurrentMove['a4']}" 
       name = "a4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -393,7 +393,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b4']"
-      [ngClass] = "status['b4'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['b4'], 'red' : !status['b4'], 'yellow' : colorOfCurrentMove['b4']}" 
       name = "b4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -404,7 +404,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c4']"
-      [ngClass] = "status['c4'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['c4'], 'softred' : !status['c4'], 'softyellow' : colorOfCurrentMove['c4']}" 
       name = "c4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -415,7 +415,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d4']"
-      [ngClass] = "status['d4'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['d4'], 'red' : !status['d4'], 'yellow' : colorOfCurrentMove['d4']}" 
       name = "d4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -426,7 +426,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e4']"
-      [ngClass] = "status['e4'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['e4'], 'softred' : !status['e4'], 'softyellow' : colorOfCurrentMove['e4']}" 
       name = "e4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -437,7 +437,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f4']"
-      [ngClass] = "status['f4'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['f4'], 'red' : !status['f4'], 'yellow' : colorOfCurrentMove['f4']}" 
       name = "f4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -448,7 +448,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g4']"
-      [ngClass] = "status['g4'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['g4'], 'softred' : !status['g4'], 'softyellow' : colorOfCurrentMove['g4']}" 
       name = "g4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -459,7 +459,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h4']"
-      [ngClass] = "status['h4'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['h4'], 'red' : !status['h4'], 'yellow' : colorOfCurrentMove['h4']}" 
       name = "h4"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -473,7 +473,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a3']"      
-      [ngClass] = "status['a3'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['a3'], 'red' : !status['a3'], 'yellow' : colorOfCurrentMove['a3']}" 
       name = "a3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -484,7 +484,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b3']"
-      [ngClass] = "status['b3'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['b3'], 'softred' : !status['b3'], 'softyellow' : colorOfCurrentMove['b3']}" 
       name = "b3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -495,7 +495,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c3']"
-      [ngClass] = "status['c3'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['c3'], 'red' : !status['c3'], 'yellow' : colorOfCurrentMove['c3']}" 
       name = "c3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -506,7 +506,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d3']"
-      [ngClass] = "status['d3'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['d3'], 'softred' : !status['d3'], 'softyellow' : colorOfCurrentMove['d3']}" 
       name = "d3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -517,7 +517,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e3']"
-      [ngClass] = "status['e3'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['e3'], 'red' : !status['e3'], 'yellow' : colorOfCurrentMove['e3']}" 
       name = "e3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -528,7 +528,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f3']"
-      [ngClass] = "status['f3'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['f3'], 'softred' : !status['f3'], 'softyellow' : colorOfCurrentMove['f3']}" 
       name = "f3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -539,7 +539,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g3']"
-      [ngClass] = "status['g3'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['g3'], 'red' : !status['g3'], 'yellow' : colorOfCurrentMove['g3']}" 
       name = "g3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -550,7 +550,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h3']"
-      [ngClass] = "status['h3'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['h3'], 'softred' : !status['h3'], 'softyellow' : colorOfCurrentMove['h3']}" 
       name = "h3"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -564,7 +564,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a2']"
-      [ngClass] = "status['a2'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['a2'], 'softred' : !status['a2'], 'softyellow' : colorOfCurrentMove['a2']}" 
       name = "a2"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -575,7 +575,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b2']"
-      [ngClass] = "status['b2'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['b2'], 'red' : !status['b2'], 'yellow' : colorOfCurrentMove['b2']}" 
       name = "b2"
       (cdkDropListDropped) = "drop($event)" 
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -586,7 +586,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c2']"
-      [ngClass] = "status['c2'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['c2'], 'softred' : !status['c2'], 'softyellow' : colorOfCurrentMove['c2']}" 
       name = "c2"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -597,7 +597,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d2']"
-      [ngClass] = "status['d2'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['d2'], 'red' : !status['d2'], 'yellow' : colorOfCurrentMove['d2']}" 
       name = "d2"
       (cdkDropListDropped) = "drop($event)" 
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -608,7 +608,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e2']"
-      [ngClass] = "status['e2'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['e2'], 'softred' : !status['e2'], 'softyellow' : colorOfCurrentMove['e2']}" 
       name = "e2"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -619,7 +619,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f2']"
-      [ngClass] = "status['f2'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['f2'], 'red' : !status['f2'], 'yellow' : colorOfCurrentMove['f2']}" 
       name = "f2"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -630,7 +630,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g2']"
-      [ngClass] = "status['g2'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['g2'], 'softred' : !status['g2'], 'softyellow' : colorOfCurrentMove['g2']}" 
       name = "g2"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -641,7 +641,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h2']"
-      [ngClass] = "status['h2'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['h2'], 'red' : !status['h2'], 'yellow' : colorOfCurrentMove['h2']}" 
       name = "h2"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -655,7 +655,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['a1']"
-      [ngClass] = "status['a1'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['a1'], 'red' : !status['a1'], 'yellow' : colorOfCurrentMove['a1']}" 
       name = "a1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -666,7 +666,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['b1']"
-      [ngClass] = "status['b1'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['b1'], 'softred' : !status['b1'], 'softyellow' : colorOfCurrentMove['b1']}" 
       name = "b1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -677,7 +677,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['c1']"
-      [ngClass] = "status['c1'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['c1'], 'red' : !status['c1'], 'yellow' : colorOfCurrentMove['c1']}" 
       name = "c1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -688,7 +688,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['d1']"
-      [ngClass] = "status['d1'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['d1'], 'softred' : !status['d1'], 'softyellow' : colorOfCurrentMove['d1']}" 
       name = "d1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -699,7 +699,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['e1']"
-      [ngClass] = "status['e1'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['e1'], 'red' : !status['e1'], 'yellow' : colorOfCurrentMove['e1']}" 
       name = "e1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -710,7 +710,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['f1']"
-      [ngClass] = "status['f1'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['f1'], 'softred' : !status['f1'], 'softyellow' : colorOfCurrentMove['f1']}" 
       name = "f1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -721,7 +721,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['g1']"
-      [ngClass] = "status['g1'] ? 'black' : 'red'" 
+      [ngClass] = "{'black' : status['g1'], 'red' : !status['g1'], 'yellow' : colorOfCurrentMove['g1']}" 
       name = "g1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
@@ -732,7 +732,7 @@
     <div
       cdkDropList
       [cdkDropListData] = "cells['h1']"
-      [ngClass] = "status['h1'] ? 'white' : 'softred'" 
+      [ngClass] = "{'white' : status['h1'], 'softred' : !status['h1'], 'softyellow' : colorOfCurrentMove['h1']}" 
       name = "h1"
       (cdkDropListDropped) = "drop($event)"
       [cdkDropListEnterPredicate] = "allowdrop">
