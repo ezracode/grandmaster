@@ -79,7 +79,7 @@
     En el caso del ajedrez 960, las piezas mayores se colocan de forma aleatoria en el tablero.
 
     Me gustaria hacer una modalidad, en donde pueda colocar las siete piezas, las dos del Shatranj, las dos de Capa Blanca, las dos del Omega y la mia, y para completar tendria una reina mas, siendo que serian 24 piezas mayores, mas 24 peones. y el tablero seria de 24 por 8, me gustaria ver un tablero de 24 por 24 y con dos filas de peones.  Bueno son solo ideas.
-   
+
 ## 28/03/2019
 
     La pieza que quiero agregar tiene nombre, se llama Amazona, y se mueve como caballo, torre y alfil.  
@@ -129,3 +129,26 @@
     9. Inteligencia Artificial ajedrez:  AlphaZero
     10. Bases de Datos de Finales
     11. Software para mejorar en ajedrez:  GrandMaster
+
+## 06/04/2019
+
+    En esta semana se completó lo siguiente:
+    1. Bloqueo de piezas cuando el otro oponente esta jugando
+    2. Se muestra en color amarillo cual es la ultima jugada
+    3. Enroques largo y corto
+    4. Se corrigio el problema de la captura al paso
+    5. Se empezó la anotación del juego
+
+    Queria comprar algunos titulos de ajedrez, vi un tiutlo que se llamaba Bobby Fischer Move by Move, y encontre que hay toda una serie de libros dedicados a los grandes jugadores.  La editorial se llama EveryMan Chess, es una empresa dedicada a la publicación de libros de ajedrez, desde los años 1940.
+
+    Encontre un problema cuando el peon mueve dos posicion la primera vez, puede regresar a una casilla anterior.  Lo voy a revisar.
+
+    Para la siguiente semana quiero completar lo siguiente
+
+    1. Issue cuando el peon mueve dos casilla y luego regresa una
+    2. Promocion del peon
+    3. Jaque
+    4. Jaque Mate
+    5. Pinned de las piezas
+    6. Notación algebraica
+    7. Notación para los casos de dos o mas piezas en una misma fila o columnas
