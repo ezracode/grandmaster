@@ -26,6 +26,7 @@ interface DataToPromote {
   currentCell: string;
   setOfPieces: Array<Piece>;
   selected: string;
+  pieceColor: string;
 }
 
 let ELEMENT_DATA: GameMove[] = []
@@ -81,6 +82,15 @@ export class AppComponent {
       console.log(result)
       this.cells[dataToSend.currentCell][0]["cvalue"] = result.value
       this.cells[dataToSend.currentCell][0]["kind"] = result.kind
+
+      this.currentMove = ELEMENT_DATA.pop()
+      if (dataToSend.pieceColor == "W"){
+        this.currentMove.white = this.currentMove.white.concat("=").concat(result.value)
+      } else {
+        this.currentMove.black = this.currentMove.black.concat("=").concat(result.value)
+      }
+      ELEMENT_DATA.push(this.currentMove)
+      this.gameMoves.data.next(ELEMENT_DATA)
      });
   }
 
@@ -1383,27 +1393,14 @@ export class AppComponent {
           
           if (this.currentPiece["kind"] == "P") {
             if (takesPiece) {
-              if (this.currentName.substring(1,2) == "8") {
-                //Promote
-                this.currentMove.white = this.file.concat("x").concat(this.currentName)
-                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.whitePieces, selected: ""}
-                this.openDialog(dataToSend)
-                console.log("Promoted to")
-                console.log(this.promote)
-              } else {
-                this.currentMove.white = this.file.concat("x").concat(this.currentName)
-              }
+              this.currentMove.white = this.file.concat("x").concat(this.currentName)
             } else {
-              if (this.currentName.substring(1,2) == "8") {
-                //Promote    
-                this.currentMove.white = this.file.concat("x").concat(this.currentName)
-                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.whitePieces, selected: ""}
-                this.openDialog(dataToSend)
-                console.log("Promoted to")
-                console.log(this.promote)
-               } else {
-                this.currentMove.white = this.currentName
-              }
+              this.currentMove.white = this.currentName
+            }
+            if (this.currentName.substring(1,2) == "8") {
+              //Promote    
+              var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.whitePieces, selected: "", pieceColor: "W"}
+              this.openDialog(dataToSend)
             }
           } else {
             if (takesPiece) {
@@ -1443,7 +1440,7 @@ export class AppComponent {
             this.currentMove.white = "O-O-O"
           }
 
-          this.currentMove.black = ""
+          //this.currentMove.black = ""
           ELEMENT_DATA.push(this.currentMove)
           this.gameMoves.data.next(ELEMENT_DATA)
         } else {
@@ -1456,25 +1453,14 @@ export class AppComponent {
 
           if (this.currentPiece["kind"] == "P") {
             if (takesPiece) {
-              if (this.currentName.substring(1,2) == "1") {
-                //Promote
-                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.blackPieces, selected: ""}
-                this.openDialog(dataToSend)
-                console.log("Promoted to")
-                console.log(this.promote)
-              } else {
-                  this.currentMove.black = this.file.concat("x").concat(this.currentName)
-                }
+                this.currentMove.black = this.file.concat("x").concat(this.currentName)
             } else {
-              if (this.currentName.substring(1,2) == "1") {
-                //Promote
-                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.blackPieces, selected: ""}
-                this.openDialog(dataToSend)
-                console.log("Promoted to")
-                console.log(this.promote)
-              } else {
                 this.currentMove.black = this.currentName
-              }
+            }
+            if (this.currentName.substring(1,2) == "1") {
+              //Promote
+              var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.blackPieces, selected: "", pieceColor: "B"}
+              this.openDialog(dataToSend)
             }
           } else {
             if (takesPiece) {
