@@ -4,11 +4,28 @@ import { HttpClientModule } from '@angular/common/http'
 import { ApiService } from './api.service'
 import { DataSource } from '@angular/cdk/collections';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { Inject } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+import { MatSelectModule } from '@angular/material';
+
+interface Piece {
+  value: string;
+  kind: string;
+}
 
 interface GameMove {
   turn: number;
   white: string;
   black: string;
+}
+
+interface DataToPromote {
+  turn: number;
+  piece: string;
+  currentCell: string;
+  setOfPieces: Array<Piece>;
+  selected: string;
 }
 
 let ELEMENT_DATA: GameMove[] = []
@@ -38,7 +55,7 @@ export class GameDataSource extends DataSource<GameMove> {
 
 export class AppComponent {
 
-  constructor(private apiService: ApiService) {
+  constructor(private apiService: ApiService, public dialog: MatDialog) {
     this.whiteTurn = false
     this.turnNumber = 0
     this.currentMove = {turn: 0, white: "", black: ""}
@@ -48,6 +65,26 @@ export class AppComponent {
     console.log(this.whiteTurn)
   }
 
+  openDialog(dataToSend : DataToPromote): void {
+
+    console.log("inside openDialog")
+    console.log(dataToSend)
+    
+    const dialogRef = this.dialog.open(PromoteDialog, {
+      width: '250px',
+      data: { turn: dataToSend.turn, piece: dataToSend.piece, setOfPieces: dataToSend.setOfPieces }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.promote = result;
+      console.log('The dialog was closed');
+      console.log(result)
+      this.cells[dataToSend.currentCell][0]["cvalue"] = result.value
+      this.cells[dataToSend.currentCell][0]["kind"] = result.kind
+     });
+  }
+
+  promote = ""
   dato = ''
   res = ""
   title = 'chess'
@@ -114,6 +151,20 @@ export class AppComponent {
       d12: ["d8", "e7", "f6", "g5", "h4"],
       d13: ["f8", "g7", "h6"]
   }
+
+  public whitePieces: Array<Piece> = [
+    {value: String.fromCharCode(9813), kind: "Q"},
+    {value: String.fromCharCode(9814), kind: "R"},
+    {value: String.fromCharCode(9816), kind: "N"},
+    {value: String.fromCharCode(9815), kind: "B"}
+  ];
+
+  public blackPieces: Array<Piece> = [
+    {value: String.fromCharCode(9819), kind: "Q"},
+    {value: String.fromCharCode(9820), kind: "R"},
+    {value: String.fromCharCode(9822), kind: "N"},
+    {value: String.fromCharCode(9821), kind: "B"}
+  ];
 
   public cells = {
     a1: [{cvalue: String.fromCharCode(9814), cid: "11", cssclass: "white-piece", kind: "R", currentPosition: "a1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white left rock", cellsToPaint: [], disabled: this.whiteTurn}],
@@ -329,7 +380,10 @@ export class AppComponent {
     var currentColor = this.currentPiece["color"]
 
     if (currentColor == "W" && !this.whiteTurn || currentColor == "B" && this.whiteTurn) {
-  
+
+      console.log ("color: " + currentColor )
+      console.log ("whiteTurn: " + this.whiteTurn)
+
       this.file = this.currentPiece["currentPosition"]
       this.rank = this.currentPiece["currentPosition"]
       this.file = this.file.substring(0,1)
@@ -505,6 +559,8 @@ export class AppComponent {
             }
           }  
         }
+
+        console.log ("countefOfMoves: " + this.currentPiece["counterOfMoves"])
 
         if (this.currentPiece["counterOfMoves"] == 0) {
           if (this.currentPiece["color"] == "W") {
@@ -1269,157 +1325,224 @@ export class AppComponent {
       this.previousName = event.previousContainer.element.nativeElement.getAttribute("name")
       this.currentName = event.container.element.nativeElement.getAttribute("name")
       console.log("drop method")
+
       //console.log(this.currentName)
       //console.log(this.previousName)
       //console.log(this.cells[this.currentName])
       this.currentPiece = this.cells[this.previousName][0]
       //console.log(this.currentPiece["cvalue"])
 
-      //console.log("currentName")
-      //console.log(this.cells[this.currentName].length)
-      //console.log("previousName")
-      //console.log(this.cells[this.previousName].length)
-      if (this.cells[this.currentName].length == 1) {
-        takesPiece = true
-      }
 
-      this.currentPiece["counterOfMoves"]++
-      this.currentPiece["previousPosition"] = this.previousName
-      this.currentPiece["currentPosition"] = this.currentName
-      this.cells[this.currentName][0] = this.currentPiece 
+      if (this.currentPiece["color"] == "W" && !this.whiteTurn || this.currentPiece["color"] == "B" && this.whiteTurn) {
 
-      this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false
-      this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false
+        //console.log("currentName")
+        //console.log(this.cells[this.currentName].length)
+        //console.log("previousName")
+        //console.log(this.cells[this.previousName].length)
+        if (this.cells[this.currentName].length == 1) {
+          takesPiece = true
+        }
 
-      this.cellOfLastMove.push(this.previousName)
-      this.cellOfLastMove.push(this.currentName)
+        this.currentPiece["counterOfMoves"]++
+        this.currentPiece["previousPosition"] = this.previousName
+        this.currentPiece["currentPosition"] = this.currentName
+        this.cells[this.currentName][0] = this.currentPiece 
 
-      this.colorOfCurrentMove[this.previousName] = true
-      this.colorOfCurrentMove[this.currentName] = true
+        this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false
+        this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false
 
-      while (event.container.data.length > 0) {
-        this.dato = event.container.data.pop()
-      }
+        this.cellOfLastMove.push(this.previousName)
+        this.cellOfLastMove.push(this.currentName)
 
-      console.log("Takes piece")
-      console.log(takesPiece)
-      transferArrayItem(event.previousContainer.data,
-                        event.container.data,
-                        event.previousIndex,
-                        event.currentIndex)
-                        
-      this.currentTurn = new Turn()
+        this.colorOfCurrentMove[this.previousName] = true
+        this.colorOfCurrentMove[this.currentName] = true
 
-      //one move per team
-      if (!this.whiteTurn) {
-        //white is moving
-        this.turnNumber++
-        this.currentTurn.turnNumber = this.turnNumber
-        this.currentTurn.piece  = this.currentPiece
-        this.whiteMoves.push(this.currentTurn)
+        while (event.container.data.length > 0) {
+          this.dato = event.container.data.pop()
+        }
 
-        this.currentMove = {turn: 0, white: "", black: ""}
-        this.currentMove.turn = this.turnNumber
+        console.log("Takes piece")
+        console.log(takesPiece)
+        transferArrayItem(event.previousContainer.data,
+                          event.container.data,
+                          event.previousIndex,
+                          event.currentIndex)
+                          
+        this.currentTurn = new Turn()
+
+        //one move per team
+        if (!this.whiteTurn) {
+          //white is moving
+          this.turnNumber++
+          this.currentTurn.turnNumber = this.turnNumber
+          this.currentTurn.piece  = this.currentPiece
+          this.whiteMoves.push(this.currentTurn)
+
+          this.currentMove = {turn: 0, white: "", black: ""}
+          this.currentMove.turn = this.turnNumber
+          
+          if (this.currentPiece["kind"] == "P") {
+            if (takesPiece) {
+              if (this.currentName.substring(1,2) == "8") {
+                //Promote
+                this.currentMove.white = this.file.concat("x").concat(this.currentName)
+                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.whitePieces, selected: ""}
+                this.openDialog(dataToSend)
+                console.log("Promoted to")
+                console.log(this.promote)
+              } else {
+                this.currentMove.white = this.file.concat("x").concat(this.currentName)
+              }
+            } else {
+              if (this.currentName.substring(1,2) == "8") {
+                //Promote    
+                this.currentMove.white = this.file.concat("x").concat(this.currentName)
+                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.whitePieces, selected: ""}
+                this.openDialog(dataToSend)
+                console.log("Promoted to")
+                console.log(this.promote)
+               } else {
+                this.currentMove.white = this.currentName
+              }
+            }
+          } else {
+            if (takesPiece) {
+              this.currentMove.white = this.currentPiece["kind"].concat("x").concat(this.currentName)
+            } else {  
+              this.currentMove.white = this.currentPiece["kind"].concat(this.currentName)
+            }
+          }
+
+          //If your move is the en Passant remove the opponent pawn
+          if (this.whiteEnPassantMove != "" && this.whiteEnPassantMove == this.currentName) {
+            this.cells[this.whiteEnPassantOpponentPosition] = []
+            this.whiteEnPassantMove = ""
+            this.whiteEnPassantOpponentPosition = ""
+            this.currentMove.white = this.file.concat("x").concat(this.currentName).concat("e.p.")
+          }
+
+          //If your move is short castling
+          if (this.whiteShortCastlingMove != "" && this.whiteShortCastlingMove == this.currentName) {
+            this.cells["f1"].push(this.cells["h1"][0]) 
+            this.cells["f1"][0]["counterOfMoves"]++
+            this.cells["f1"][0]["previousPosition"] = "h1"
+            this.cells["f1"][0]["currentPosition"] = "f1"
+            this.cells["h1"] = []
+            this.whiteShortCastlingMove = ""
+            this.currentMove.white = "O-O"
+          }
+
+          //If your move is long castling
+          if (this.whiteLongCastlingMove != "" && this.whiteLongCastlingMove == this.currentName) {
+            this.cells["d1"].push(this.cells["a1"][0])
+            this.cells["d1"][0]["counterOfMoves"]++
+            this.cells["d1"][0]["previousPosition"] = "a1"
+            this.cells["d1"][0]["currentPosition"] = "d1"
+            this.cells["a1"] = []
+            this.whiteLongCastlingMove = ""
+            this.currentMove.white = "O-O-O"
+          }
+
+          this.currentMove.black = ""
+          ELEMENT_DATA.push(this.currentMove)
+          this.gameMoves.data.next(ELEMENT_DATA)
+        } else {
+          //black is moving
+          this.currentTurn.turnNumber = this.turnNumber
+          this.currentTurn.piece  = this.currentPiece
+          this.blackMoves.push(this.currentTurn)
+
+          this.currentMove = ELEMENT_DATA.pop()
+
+          if (this.currentPiece["kind"] == "P") {
+            if (takesPiece) {
+              if (this.currentName.substring(1,2) == "1") {
+                //Promote
+                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.blackPieces, selected: ""}
+                this.openDialog(dataToSend)
+                console.log("Promoted to")
+                console.log(this.promote)
+              } else {
+                  this.currentMove.black = this.file.concat("x").concat(this.currentName)
+                }
+            } else {
+              if (this.currentName.substring(1,2) == "1") {
+                //Promote
+                var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.blackPieces, selected: ""}
+                this.openDialog(dataToSend)
+                console.log("Promoted to")
+                console.log(this.promote)
+              } else {
+                this.currentMove.black = this.currentName
+              }
+            }
+          } else {
+            if (takesPiece) {
+              this.currentMove.black = this.currentPiece["kind"].concat("x").concat(this.currentName)
+            } else {
+              this.currentMove.black = this.currentPiece["kind"].concat(this.currentName)
+            }
+          }
+
+          //If your move is the en Passant remove the opponent pawn
+          if (this.blackEnPassantMove != "" && this.blackEnPassantMove == this.currentName) {
+            this.cells[this.blackEnPassantOpponentPosition] = []
+            this.blackEnPassantMove = ""
+            this.blackEnPassantOpponentPosition = ""
+            this.currentMove.black = this.file.concat("x").concat(this.currentName).concat("e.p.")
+          }
+
+          //If your move is short castling
+          if (this.blackShortCastlingMove != "" && this.blackShortCastlingMove == this.currentName) {
+            this.cells["f8"].push(this.cells["h8"][0]) 
+            this.cells["f8"][0]["counterOfMoves"]++
+            this.cells["f8"][0]["previousPosition"] = "h8"
+            this.cells["f8"][0]["currentPosition"] = "f8"
+
+            this.cells["h8"] = []
+            this.blackShortCastlingMove = ""
+            this.currentMove.black = "O-O"
+          }
+
+          //If your move is long castling
+          if (this.blackLongCastlingMove != "" && this.blackLongCastlingMove == this.currentName) {
+            this.cells["d8"].push(this.cells["a8"][0]) 
+            this.cells["a8"][0]["counterOfMoves"]++
+            this.cells["a8"][0]["previousPosition"] = "a8"
+            this.cells["a8"][0]["currentPosition"] = "d8"
+
+            this.cells["a8"] = []
+            this.blackLongCastlingMove = ""
+            this.currentMove.black = "O-O-O"
+          }
         
-        if (this.currentPiece["kind"] == "P") {
-          if (takesPiece) {
-            this.currentMove.white = this.file.concat("x").concat(this.currentName)
-          } else {
-            this.currentMove.white = this.currentName
-          }
-        } else {
-          if (takesPiece) {
-            this.currentMove.white = this.currentPiece["kind"].concat("x").concat(this.currentName)
-          } else {  
-            this.currentMove.white = this.currentPiece["kind"].concat(this.currentName)
-          }
-        }
+          console.log(this.currentMove)
+          ELEMENT_DATA.push(this.currentMove)
+          this.gameMoves.data.next(ELEMENT_DATA)
+        } 
 
-        //If your move is the en Passant remove the opponent pawn
-        if (this.whiteEnPassantMove != "" && this.whiteEnPassantMove == this.currentName) {
-          this.cells[this.whiteEnPassantOpponentPosition] = []
-          this.whiteEnPassantMove = ""
-          this.whiteEnPassantOpponentPosition = ""
-          this.currentMove.white = this.file.concat("x").concat(this.currentName).concat("e.p.")
-        }
-
-        //If your move is short castling
-        if (this.whiteShortCastlingMove != "" && this.whiteShortCastlingMove == this.currentName) {
-          this.cells["f1"].push(this.cells["h1"][0]) 
-          this.cells["h1"] = []
-          this.whiteShortCastlingMove = ""
-          this.currentMove.white = "O-O"
-        }
-
-        //If your move is long castling
-        if (this.whiteLongCastlingMove != "" && this.whiteLongCastlingMove == this.currentName) {
-          this.cells["d1"].push(this.cells["a1"][0]) 
-          this.cells["a1"] = []
-          this.whiteLongCastlingMove = ""
-          this.currentMove.white = "O-O-O"
-        }
-
-        this.currentMove.black = ""
-        ELEMENT_DATA.push(this.currentMove)
-        this.gameMoves.data.next(ELEMENT_DATA)
-      } else {
-        //black is moving
-        this.currentTurn.turnNumber = this.turnNumber
-        this.currentTurn.piece  = this.currentPiece
-        this.blackMoves.push(this.currentTurn)
-
-        this.currentMove = ELEMENT_DATA.pop()
-
-        if (this.currentPiece["kind"] == "P") {
-          if (takesPiece) {
-            this.currentMove.black = this.file.concat("x").concat(this.currentName)
-          } else {
-            this.currentMove.black = this.currentName
-          }
-        } else {
-          if (takesPiece) {
-            this.currentMove.black = this.currentPiece["kind"].concat("x").concat(this.currentName)
-          } else {
-            this.currentMove.black = this.currentPiece["kind"].concat(this.currentName)
-          }
-        }
-
-        //If your move is the en Passant remove the opponent pawn
-        if (this.blackEnPassantMove != "" && this.blackEnPassantMove == this.currentName) {
-           this.cells[this.blackEnPassantOpponentPosition] = []
-           this.blackEnPassantMove = ""
-           this.blackEnPassantOpponentPosition = ""
-           this.currentMove.black = this.file.concat("x").concat(this.currentName).concat("e.p.")
-        }
-
-        //If your move is short castling
-        if (this.blackShortCastlingMove != "" && this.blackShortCastlingMove == this.currentName) {
-          this.cells["f8"].push(this.cells["h8"][0]) 
-          this.cells["h8"] = []
-          this.blackShortCastlingMove = ""
-          this.currentMove.black = "O-O"
-        }
-
-        //If your move is long castling
-        if (this.blackLongCastlingMove != "" && this.blackLongCastlingMove == this.currentName) {
-          this.cells["d8"].push(this.cells["a8"][0]) 
-          this.cells["a8"] = []
-          this.blackLongCastlingMove = ""
-          this.currentMove.black = "O-O-O"
-        }
-       
-        console.log(this.currentMove)
-        ELEMENT_DATA.push(this.currentMove)
-        this.gameMoves.data.next(ELEMENT_DATA)
-      } 
-
-      this.whiteTurn = !this.whiteTurn
-      this.disablePiece(this.whiteTurn)
- 
-      console.log(this.whiteTurn)
-      console.log(this.whiteMoves)
-      console.log(this.blackMoves)
-      //console.log(event.container.data)
+        this.whiteTurn = !this.whiteTurn
+        this.disablePiece(this.whiteTurn)
+  
+        console.log(this.whiteTurn)
+        console.log(this.whiteMoves)
+        console.log(this.blackMoves)
+        //console.log(event.container.data)
+      }
     }
+  }
+}
+
+@Component({
+  selector: 'promote-dialog',
+  templateUrl: 'promote-dialog.html'
+})
+export class PromoteDialog {
+  constructor(
+    public dialogRef: MatDialogRef<PromoteDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: DataToPromote) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 }

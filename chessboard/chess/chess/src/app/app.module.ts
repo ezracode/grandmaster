@@ -2,21 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { AppComponent } from './app.component';
+import { AppComponent, PromoteDialog } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CdkTableModule } from '@angular/cdk/table';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectModule } from '@angular/material';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     DragDropModule,
     HttpClientModule,
-    CdkTableModule
+    CdkTableModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
+  declarations: [
+    AppComponent, PromoteDialog
+  ],
+  entryComponents: [PromoteDialog],
   providers: [],
   bootstrap: [AppComponent]
 })

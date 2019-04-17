@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Turn Number {{data.turn}}</h1>
+<p>{{data.piece}}</p>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Promote To</mat-label>
+    <mat-select [(value)]="data.selected">
+      <mat-option *ngFor="let piece of data.setOfPieces" [value]="piece">
+        {{piece.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.selected" cdkFocusInitial>Ok</button>
+</div>
