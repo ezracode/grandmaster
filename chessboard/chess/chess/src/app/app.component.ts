@@ -1,7 +1,7 @@
-import { Component } from '@angular/core'
-import { CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem, CdkDragEnd, CdkDropList } from '@angular/cdk/drag-drop'
-import { HttpClientModule } from '@angular/common/http'
-import { ApiService } from './api.service'
+import { Component } from '@angular/core';
+import { CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem, CdkDragEnd, CdkDropList } from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './api.service';
 import { DataSource } from '@angular/cdk/collections';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Inject } from '@angular/core';
@@ -29,7 +29,7 @@ interface DataToPromote {
   pieceColor: string;
 }
 
-let ELEMENT_DATA: GameMove[] = []
+const ELEMENT_DATA: GameMove[] = [];
 
 class Turn {
   turnNumber: number;
@@ -38,7 +38,7 @@ class Turn {
 
 export class GameDataSource extends DataSource<GameMove> {
   /** Stream of data that is provided to the table. */
-  data = new BehaviorSubject<GameMove[]>(ELEMENT_DATA);
+  data = new BehaviorSubject<GameMove[]>(ELEMENT_DATA)
 
   /** Connect function called by the table to retrieve one stream containing the data to render. */
   connect(): Observable<GameMove[]> {
@@ -46,6 +46,20 @@ export class GameDataSource extends DataSource<GameMove> {
   }
 
   disconnect() {}
+}
+
+@Component({
+  selector: 'app-promote-dialog',
+  templateUrl: 'promote-dialog.html'
+})
+export class PromoteDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<PromoteDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DataToPromote) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 }
 
 @Component({
@@ -57,197 +71,211 @@ export class GameDataSource extends DataSource<GameMove> {
 export class AppComponent {
 
   constructor(private apiService: ApiService, public dialog: MatDialog) {
-    this.whiteTurn = false
-    this.turnNumber = 0
-    this.currentMove = {turn: 0, white: "", black: ""}
-    this.gameMoves = new GameDataSource()
-    this.disablePiece(this.whiteTurn)
-    this.cellOfLastMove = []
-    console.log(this.whiteTurn)
+    this.whiteTurn = false;
+    this.turnNumber = 0;
+    this.currentMove = {turn: 0, white: '', black: ''};
+    this.gameMoves = new GameDataSource();
+    this.disablePiece(this.whiteTurn);
+    this.cellOfLastMove = [];
+    console.log(this.whiteTurn);
   }
 
-  openDialog(dataToSend : DataToPromote): void {
+  promote = '';
+  dato = '';
+  res = '';
+  title = 'chess';
+  currentName = '';
+  previousName = '';
+  currentPiece = {};
+  file = '';
+  rank = '';
+  whiteTurn = false;
+  maxLimit = 9;
+  minLimit = 0;
+  whiteEnPassantMove = '';
+  whiteEnPassantOpponentPosition = '';
+  blackEnPassantMove = '';
+  blackEnPassantOpponentPosition = '';
+  whiteEnPassantRank = '';
+  blackEnPassantRank = 4;
+  whiteShortCastlingMove = '';
+  whiteLongCastlingMove = '';
+  blackShortCastlingMove = '';
+  blackLongCastlingMove = '';
 
-    console.log("inside openDialog")
-    console.log(dataToSend)
-    
-    const dialogRef = this.dialog.open(PromoteDialog, {
-      width: '250px',
-      data: { turn: dataToSend.turn, piece: dataToSend.piece, setOfPieces: dataToSend.setOfPieces }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      this.promote = result;
-      console.log('The dialog was closed');
-      console.log(result)
-      this.cells[dataToSend.currentCell][0]["cvalue"] = result.value
-      this.cells[dataToSend.currentCell][0]["kind"] = result.kind
-
-      this.currentMove = ELEMENT_DATA.pop()
-      if (dataToSend.pieceColor == "W"){
-        this.currentMove.white = this.currentMove.white.concat("=").concat(result.value)
-      } else {
-        this.currentMove.black = this.currentMove.black.concat("=").concat(result.value)
-      }
-      ELEMENT_DATA.push(this.currentMove)
-      this.gameMoves.data.next(ELEMENT_DATA)
-     });
-  }
-
-  promote = ""
-  dato = ''
-  res = ""
-  title = 'chess'
-  currentName = ""
-  previousName = ""
-  currentPiece = {}
-  file = ""
-  rank = ""
-  whiteTurn = false
-  maxLimit = 9
-  minLimit = 0
-  whiteEnPassantMove = ""
-  whiteEnPassantOpponentPosition = ""
-  blackEnPassantMove = ""
-  blackEnPassantOpponentPosition = ""
-  whiteEnPassantRank = 5
-  blackEnPassantRank = 4
-  whiteShortCastlingMove = ""
-  whiteLongCastlingMove = ""
-  blackShortCastlingMove = ""
-  blackLongCastlingMove = ""
-
-  turnNumber = 0
-  blackMoves: Array<Turn> = []
-  whiteMoves: Array<Turn> = []
-  currentTurn: Turn = {turnNumber: 0, piece: {}}
-  currentMove: GameMove = {turn: 0, white: "", black: ""}
+  turnNumber = 0;
+  blackMoves: Array<Turn> = [];
+  whiteMoves: Array<Turn> = [];
+  currentTurn: Turn = {turnNumber: 0, piece: {}};
+  currentMove: GameMove = {turn: 0, white: '', black: ''};
 
   displayedColumns: string[] = ['turn', 'white', 'black'];
-  gameMoves: GameDataSource
+  gameMoves: GameDataSource;
 
-  cellOfLastMove = []
+  cellOfLastMove = [];
 
-  files = ["a", "b", "c", "d", "e", "f", "g", "h"]
+  whiteRockList = ['11', '18'];
+  whiteKnightList = ['12', '17'];
+  whiteBishopList = ['13', '16'];
+  whiteQueenList = ['14'];
+
+  blackRockList = ['41', '48'];
+  blackKnightList = ['42', '47'];
+  blackBishopList = ['43', '46'];
+  blackQueenList = ['44'];
+
+  files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
   whiteDiagonals = {
-    d1: ["a2", "b1"],
-    d2: ["a4", "b3", "c2", "d1"],
-    d3: ["a6", "b5", "c4", "d3", "e2", "f1"],
-    d4: ["a8", "b7", "c6", "d5", "e4", "f3", "g2", "h1"],
-    d5: ["c8", "d7", "e6", "f5", "g4", "h3"],
-    d6: ["e8", "f7", "g6", "h5"],
-    d7: ["g8", "h7"],
-    d8: ["a6", "b7", "c8"],
-    d9: ["a4", "b5", "c6", "d7", "e8"],
-    d10: ["a2", "b3", "c4", "d5", "e6", "f7", "g8"],
-    d11: ["b1", "c2", "d3", "e4", "f5", "g6", "h7"],
-    d12: ["d1", "e2", "f3", "g4", "h5"],
-    d13: ["f1", "g2", "h3"]
-  }
+    d1: ['a2', 'b1'],
+    d2: ['a4', 'b3', 'c2', 'd1'],
+    d3: ['a6', 'b5', 'c4', 'd3', 'e2', 'f1'],
+    d4: ['a8', 'b7', 'c6', 'd5', 'e4', 'f3', 'g2', 'h1'],
+    d5: ['c8', 'd7', 'e6', 'f5', 'g4', 'h3'],
+    d6: ['e8', 'f7', 'g6', 'h5'],
+    d7: ['g8', 'h7'],
+    d8: ['a6', 'b7', 'c8'],
+    d9: ['a4', 'b5', 'c6', 'd7', 'e8'],
+    d10: ['a2', 'b3', 'c4', 'd5', 'e6', 'f7', 'g8'],
+    d11: ['b1', 'c2', 'd3', 'e4', 'f5', 'g6', 'h7'],
+    d12: ['d1', 'e2', 'f3', 'g4', 'h5'],
+    d13: ['f1', 'g2', 'h3']
+  };
 
   blackDiagonals = {
-      d1: ["a7", "b8"],
-      d2: ["a5", "b6", "c7", "d8"],
-      d3: ["a3", "b4", "c5", "d6", "e7", "f8"],
-      d4: ["a1", "b2", "c3", "d4", "e5", "f6", "g7", "h8"],
-      d5: ["c1", "d2", "e3", "f4", "g5", "h6"],
-      d6: ["e1", "f2", "g3", "h4"],
-      d7: ["g1", "h2"],
-      d8: ["a3", "b2", "c1"],
-      d9: ["a5", "b4", "c3", "d2", "e1"],
-      d10: ["a7", "b6", "c5", "d4", "e3", "f2", "g1"],
-      d11: ["b8", "c7", "d6", "e5", "f4", "g3", "h2"],
-      d12: ["d8", "e7", "f6", "g5", "h4"],
-      d13: ["f8", "g7", "h6"]
-  }
+      d1: ['a7', 'b8'],
+      d2: ['a5', 'b6', 'c7', 'd8'],
+      d3: ['a3', 'b4', 'c5', 'd6', 'e7', 'f8'],
+      d4: ['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7', 'h8'],
+      d5: ['c1', 'd2', 'e3', 'f4', 'g5', 'h6'],
+      d6: ['e1', 'f2', 'g3', 'h4'],
+      d7: ['g1', 'h2'],
+      d8: ['a3', 'b2', 'c1'],
+      d9: ['a5', 'b4', 'c3', 'd2', 'e1'],
+      d10: ['a7', 'b6', 'c5', 'd4', 'e3', 'f2', 'g1'],
+      d11: ['b8', 'c7', 'd6', 'e5', 'f4', 'g3', 'h2'],
+      d12: ['d8', 'e7', 'f6', 'g5', 'h4'],
+      d13: ['f8', 'g7', 'h6']
+  };
 
   public whitePieces: Array<Piece> = [
-    {value: String.fromCharCode(9813), kind: "Q"},
-    {value: String.fromCharCode(9814), kind: "R"},
-    {value: String.fromCharCode(9816), kind: "N"},
-    {value: String.fromCharCode(9815), kind: "B"}
+    {value: String.fromCharCode(9813), kind: 'Q'},
+    {value: String.fromCharCode(9814), kind: 'R'},
+    {value: String.fromCharCode(9816), kind: 'N'},
+    {value: String.fromCharCode(9815), kind: 'B'}
   ];
 
   public blackPieces: Array<Piece> = [
-    {value: String.fromCharCode(9819), kind: "Q"},
-    {value: String.fromCharCode(9820), kind: "R"},
-    {value: String.fromCharCode(9822), kind: "N"},
-    {value: String.fromCharCode(9821), kind: "B"}
+    {value: String.fromCharCode(9819), kind: 'Q'},
+    {value: String.fromCharCode(9820), kind: 'R'},
+    {value: String.fromCharCode(9822), kind: 'N'},
+    {value: String.fromCharCode(9821), kind: 'B'}
   ];
 
   public cells = {
-    a1: [{cvalue: String.fromCharCode(9814), cid: "11", cssclass: "white-piece", kind: "R", currentPosition: "a1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white left rock", cellsToPaint: [], disabled: this.whiteTurn}],
-    a2: [{cvalue: String.fromCharCode(9817), cid: "21", cssclass: "white-piece", kind: "P", currentPosition: "a2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn left rock", cellsToPaint: [], disabled: this.whiteTurn}],
+    a1: [{cvalue: String.fromCharCode(9814), cid: '11', cssclass: 'white-piece', kind: 'R', currentPosition: 'a1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white left rock', cellsToPaint: [], disabled: this.whiteTurn}],
+    a2: [{cvalue: String.fromCharCode(9817), cid: '21', cssclass: 'white-piece', kind: 'P', currentPosition: 'a2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn left rock', cellsToPaint: [], disabled: this.whiteTurn}],
     a3: [],
     a4: [],
     a5: [],
     a6: [],
-    a7: [{cvalue: String.fromCharCode(9823), cid: "31", cssclass: "black-piece", kind: "P", currentPosition: "a7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn left rock", cellsToPaint: [], disabled: !this.whiteTurn}],
-    a8: [{cvalue: String.fromCharCode(9820), cid: "41", cssclass: "black-piece", kind: "R", currentPosition: "a8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black left rock", cellsToPaint: [], disabled: !this.whiteTurn}],
+    a7: [{cvalue: String.fromCharCode(9823), cid: '31', cssclass: 'black-piece', kind: 'P', currentPosition: 'a7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn left rock', cellsToPaint: [], disabled: !this.whiteTurn}],
+    a8: [{cvalue: String.fromCharCode(9820), cid: '41', cssclass: 'black-piece', kind: 'R', currentPosition: 'a8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black left rock', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    b1: [{cvalue: String.fromCharCode(9816), cid: "12", cssclass: "white-piece", kind: "N", currentPosition: "b1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white left knight", cellsToPaint: [], disabled: this.whiteTurn}],
-    b2: [{cvalue: String.fromCharCode(9817), cid: "22", cssclass: "white-piece", kind: "P", currentPosition: "b2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn left knight", cellsToPaint: [], disabled: this.whiteTurn}],
+    b1: [{cvalue: String.fromCharCode(9816), cid: '12', cssclass: 'white-piece', kind: 'N', currentPosition: 'b1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white left knight', cellsToPaint: [], disabled: this.whiteTurn}],
+    b2: [{cvalue: String.fromCharCode(9817), cid: '22', cssclass: 'white-piece', kind: 'P', currentPosition: 'b2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn left knight', cellsToPaint: [], disabled: this.whiteTurn}],
     b3: [],
     b4: [],
     b5: [],
     b6: [],
-    b7: [{cvalue: String.fromCharCode(9823), cid: "32", cssclass: "black-piece", kind: "P", currentPosition: "b7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn left knight", cellsToPaint: [], disabled: !this.whiteTurn}],
-    b8: [{cvalue: String.fromCharCode(9822), cid: "42", cssclass: "black-piece", kind: "N", currentPosition: "b8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black left knight", cellsToPaint: [], disabled: !this.whiteTurn}],
+    b7: [{cvalue: String.fromCharCode(9823), cid: '32', cssclass: 'black-piece', kind: 'P', currentPosition: 'b7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn left knight', cellsToPaint: [], disabled: !this.whiteTurn}],
+    b8: [{cvalue: String.fromCharCode(9822), cid: '42', cssclass: 'black-piece', kind: 'N', currentPosition: 'b8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black left knight', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    c1: [{cvalue: String.fromCharCode(9815), cid: "13", cssclass: "white-piece", kind: "B", currentPosition: "c1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white left bishop", cellsToPaint: [], disabled: this.whiteTurn}],
-    c2: [{cvalue: String.fromCharCode(9817), cid: "23", cssclass: "white-piece", kind: "P", currentPosition: "c2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn left bishop", cellsToPaint: [], disabled: this.whiteTurn}],
+    c1: [{cvalue: String.fromCharCode(9815), cid: '13', cssclass: 'white-piece', kind: 'B', currentPosition: 'c1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white left bishop', cellsToPaint: [], disabled: this.whiteTurn}],
+    c2: [{cvalue: String.fromCharCode(9817), cid: '23', cssclass: 'white-piece', kind: 'P', currentPosition: 'c2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn left bishop', cellsToPaint: [], disabled: this.whiteTurn}],
     c3: [],
     c4: [],
     c5: [],
     c6: [],
-    c7: [{cvalue: String.fromCharCode(9823), cid: "33", cssclass: "black-piece", kind: "P", currentPosition: "c7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn left bishop", cellsToPaint: [], disabled: !this.whiteTurn}],
-    c8: [{cvalue: String.fromCharCode(9821), cid: "43", cssclass: "black-piece", kind: "B", currentPosition: "c8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black left bishop", cellsToPaint: [], disabled: !this.whiteTurn}],
+    c7: [{cvalue: String.fromCharCode(9823), cid: '33', cssclass: 'black-piece', kind: 'P', currentPosition: 'c7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn left bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
+    c8: [{cvalue: String.fromCharCode(9821), cid: '43', cssclass: 'black-piece', kind: 'B', currentPosition: 'c8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black left bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    d1: [{cvalue: String.fromCharCode(9813), cid: "14", cssclass: "white-piece", kind: "Q", currentPosition: "d1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white queen", cellsToPaint: [], disabled: this.whiteTurn}],
-    d2: [{cvalue: String.fromCharCode(9817), cid: "24", cssclass: "white-piece", kind: "P", currentPosition: "d2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn queen", cellsToPaint: [], disabled: this.whiteTurn}],
+    d1: [{cvalue: String.fromCharCode(9813), cid: '14', cssclass: 'white-piece', kind: 'Q', currentPosition: 'd1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white queen', cellsToPaint: [], disabled: this.whiteTurn}],
+    d2: [{cvalue: String.fromCharCode(9817), cid: '24', cssclass: 'white-piece', kind: 'P', currentPosition: 'd2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn queen', cellsToPaint: [], disabled: this.whiteTurn}],
     d3: [],
     d4: [],
     d5: [],
     d6: [],
-    d7: [{cvalue: String.fromCharCode(9823), cid: "34", cssclass: "black-piece", kind: "P", currentPosition: "d7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn queen", cellsToPaint: [], disabled: !this.whiteTurn}],
-    d8: [{cvalue: String.fromCharCode(9819), cid: "44", cssclass: "black-piece", kind: "Q", currentPosition: "d8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black queen", cellsToPaint: [], disabled: !this.whiteTurn}],
+    d7: [{cvalue: String.fromCharCode(9823), cid: '34', cssclass: 'black-piece', kind: 'P', currentPosition: 'd7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn queen', cellsToPaint: [], disabled: !this.whiteTurn}],
+    d8: [{cvalue: String.fromCharCode(9819), cid: '44', cssclass: 'black-piece', kind: 'Q', currentPosition: 'd8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black queen', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    e1: [{cvalue: String.fromCharCode(9812), cid: "15", cssclass: "white-piece", kind: "K", currentPosition: "e1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white king", cellsToPaint: [], disabled: this.whiteTurn}],
-    e2: [{cvalue: String.fromCharCode(9817), cid: "25", cssclass: "white-piece", kind: "P", currentPosition: "e2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn king", cellsToPaint: [], disabled: this.whiteTurn}],
+    e1: [{cvalue: String.fromCharCode(9812), cid: '15', cssclass: 'white-piece', kind: 'K', currentPosition: 'e1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white king', cellsToPaint: [], disabled: this.whiteTurn}],
+    e2: [{cvalue: String.fromCharCode(9817), cid: '25', cssclass: 'white-piece', kind: 'P', currentPosition: 'e2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn king', cellsToPaint: [], disabled: this.whiteTurn}],
     e3: [],
     e4: [],
     e5: [],
     e6: [],
-    e7: [{cvalue: String.fromCharCode(9823), cid: "35", cssclass: "black-piece", kind: "P", currentPosition: "e7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn king", cellsToPaint: [], disabled: !this.whiteTurn}],
-    e8: [{cvalue: String.fromCharCode(9818), cid: "45", cssclass: "black-piece", kind: "K", currentPosition: "e8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black king", cellsToPaint: [], disabled: !this.whiteTurn}],
+    e7: [{cvalue: String.fromCharCode(9823), cid: '35', cssclass: 'black-piece', kind: 'P', currentPosition: 'e7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn king', cellsToPaint: [], disabled: !this.whiteTurn}],
+    e8: [{cvalue: String.fromCharCode(9818), cid: '45', cssclass: 'black-piece', kind: 'K', currentPosition: 'e8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black king', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    f1: [{cvalue: String.fromCharCode(9815), cid: "16", cssclass: "white-piece", kind: "B", currentPosition: "f1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white right bishop", cellsToPaint: [], disabled: this.whiteTurn}],
-    f2: [{cvalue: String.fromCharCode(9817), cid: "26", cssclass: "white-piece", kind: "P", currentPosition: "f2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn right bishop", cellsToPaint: [], disabled: this.whiteTurn}],
+    f1: [{cvalue: String.fromCharCode(9815), cid: '16', cssclass: 'white-piece', kind: 'B', currentPosition: 'f1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white right bishop', cellsToPaint: [], disabled: this.whiteTurn}],
+    f2: [{cvalue: String.fromCharCode(9817), cid: '26', cssclass: 'white-piece', kind: 'P', currentPosition: 'f2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn right bishop', cellsToPaint: [], disabled: this.whiteTurn}],
     f3: [],
     f4: [],
     f5: [],
     f6: [],
-    f7: [{cvalue: String.fromCharCode(9823), cid: "36", cssclass: "black-piece", kind: "P", currentPosition: "f7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn right bishop", cellsToPaint: [], disabled: !this.whiteTurn}],
-    f8: [{cvalue: String.fromCharCode(9821), cid: "46", cssclass: "black-piece", kind: "B", currentPosition: "f8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black right bishop", cellsToPaint: [], disabled: !this.whiteTurn}],
+    f7: [{cvalue: String.fromCharCode(9823), cid: '36', cssclass: 'black-piece', kind: 'P', currentPosition: 'f7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn right bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
+    f8: [{cvalue: String.fromCharCode(9821), cid: '46', cssclass: 'black-piece', kind: 'B', currentPosition: 'f8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black right bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    g1: [{cvalue: String.fromCharCode(9816), cid: "17", cssclass: "white-piece", kind: "N", currentPosition: "g1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white right knight", cellsToPaint: [], disabled: this.whiteTurn}],
-    g2: [{cvalue: String.fromCharCode(9817), cid: "27", cssclass: "white-piece", kind: "P", currentPosition: "g2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn right knight", cellsToPaint: [], disabled: this.whiteTurn}],
+    g1: [{cvalue: String.fromCharCode(9816), cid: '17', cssclass: 'white-piece', kind: 'N', currentPosition: 'g1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white right knight', cellsToPaint: [], disabled: this.whiteTurn}],
+    g2: [{cvalue: String.fromCharCode(9817), cid: '27', cssclass: 'white-piece', kind: 'P', currentPosition: 'g2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn right knight', cellsToPaint: [], disabled: this.whiteTurn}],
     g3: [],
     g4: [],
     g5: [],
     g6: [],
-    g7: [{cvalue: String.fromCharCode(9823), cid: "37", cssclass: "black-piece", kind: "P", currentPosition: "g7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn right knight", cellsToPaint: [], disabled: !this.whiteTurn}],
-    g8: [{cvalue: String.fromCharCode(9822), cid: "47", cssclass: "black-piece", kind: "N", currentPosition: "g8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black right knight", cellsToPaint: [], disabled: !this.whiteTurn}],
+    g7: [{cvalue: String.fromCharCode(9823), cid: '37', cssclass: 'black-piece', kind: 'P', currentPosition: 'g7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn right knight', cellsToPaint: [], disabled: !this.whiteTurn}],
+    g8: [{cvalue: String.fromCharCode(9822), cid: '47', cssclass: 'black-piece', kind: 'N', currentPosition: 'g8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black right knight', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    h1: [{cvalue: String.fromCharCode(9814), cid: "18", cssclass: "white-piece", kind: "R", currentPosition: "h1", previousPosition: "", counterOfMoves: 0, color: "W", named: "white right rock", cellsToPaint: [], disabled: this.whiteTurn}],
-    h2: [{cvalue: String.fromCharCode(9817), cid: "28", cssclass: "white-piece", kind: "P", currentPosition: "h2", previousPosition: "", counterOfMoves: 0, color: "W", named: "white pawn right rock", cellsToPaint: [], disabled: this.whiteTurn}],
+    h1: [{cvalue: String.fromCharCode(9814), cid: '18', cssclass: 'white-piece', kind: 'R', currentPosition: 'h1', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white right rock', cellsToPaint: [], disabled: this.whiteTurn}],
+    h2: [{cvalue: String.fromCharCode(9817), cid: '28', cssclass: 'white-piece', kind: 'P', currentPosition: 'h2', previousPosition: '',
+          counterOfMoves: 0, color: 'W', named: 'white pawn right rock', cellsToPaint: [], disabled: this.whiteTurn}],
     h3: [],
     h4: [],
     h5: [],
     h6: [],
-    h7: [{cvalue: String.fromCharCode(9823), cid: "38", cssclass: "black-piece", kind: "P", currentPosition: "h7", previousPosition: "", counterOfMoves: 0, color: "B", named: "black right rock", cellsToPaint: [], disabled: !this.whiteTurn}],
-    h8: [{cvalue: String.fromCharCode(9820), cid: "48", cssclass: "black-piece", kind: "R", currentPosition: "h8", previousPosition: "", counterOfMoves: 0, color: "B", named: "black pawn right rock", cellsToPaint: [], disabled: !this.whiteTurn}]
+    h7: [{cvalue: String.fromCharCode(9823), cid: '38', cssclass: 'black-piece', kind: 'P', currentPosition: 'h7', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black right rock', cellsToPaint: [], disabled: !this.whiteTurn}],
+    h8: [{cvalue: String.fromCharCode(9820), cid: '48', cssclass: 'black-piece', kind: 'R', currentPosition: 'h8', previousPosition: '',
+          counterOfMoves: 0, color: 'B', named: 'black pawn right rock', cellsToPaint: [], disabled: !this.whiteTurn}]
   }
 
   colorOfCurrentMove = {
@@ -259,7 +287,7 @@ export class AppComponent {
     a3: false, b3: false, c3: false, d3: false, e3: false, f3: false, g3: false, h3: false,
     a2: false, b2: false, c2: false, d2: false, e2: false, f2: false, g2: false, h2: false,
     a1: false, b1: false, c1: false, d1: false, e1: false, f1: false, g1: false, h1: false
-  }
+  };
 
   status = {
     a8: true, b8: true, c8: true, d8: true, e8: true, f8: true, g8: true, h8: true,
@@ -270,1265 +298,1278 @@ export class AppComponent {
     a3: true, b3: true, c3: true, d3: true, e3: true, f3: true, g3: true, h3: true,
     a2: true, b2: true, c2: true, d2: true, e2: true, f2: true, g2: true, h2: true,
     a1: true, b1: true, c1: true, d1: true, e1: true, f1: true, g1: true, h1: true
-  }
+  };
 
   pieceAlive = {
-    c11: {alive: true, currentKind: "R"},
-    c12: {alive: true, currentKind: "N"},
-    c13: {alive: true, currentKind: "B"},
-    c14: {alive: true, currentKind: "Q"},
-    c15: {alive: true, currentKind: "K"},
-    c16: {alive: true, currentKind: "B"},
-    c17: {alive: true, currentKind: "N"},
-    c18: {alive: true, currentKind: "R"},
-    c21: {alive: true, currentKind: "P", previousKind: ""},
-    c22: {alive: true, currentKind: "P", previousKind: ""},
-    c23: {alive: true, currentKind: "P", previousKind: ""},
-    c24: {alive: true, currentKind: "P", previousKind: ""},
-    c25: {alive: true, currentKind: "P", previousKind: ""},
-    c26: {alive: true, currentKind: "P", previousKind: ""},
-    c27: {alive: true, currentKind: "P", previousKind: ""},
-    c28: {alive: true, currentKind: "P", previousKind: ""},
-    c31: {alive: true, currentKind: "P", previousKind: ""},
-    c32: {alive: true, currentKind: "P", previousKind: ""},
-    c33: {alive: true, currentKind: "P", previousKind: ""},
-    c34: {alive: true, currentKind: "P", previousKind: ""},
-    c35: {alive: true, currentKind: "P", previousKind: ""},
-    c36: {alive: true, currentKind: "P", previousKind: ""},
-    c37: {alive: true, currentKind: "P", previousKind: ""},
-    c38: {alive: true, currentKind: "P", previousKind: ""},
-    c41: {alive: true, currentKind: "R"},
-    c42: {alive: true, currentKind: "N"},
-    c43: {alive: true, currentKind: "B"},
-    c44: {alive: true, currentKind: "Q"},
-    c45: {alive: true, currentKind: "K"},
-    c46: {alive: true, currentKind: "B"},
-    c47: {alive: true, currentKind: "N"},
-    c48: {alive: true, currentKind: "R"},
+    c11: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a1'},
+    c12: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'b1'},
+    c13: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'c1'},
+    c14: {alive: true, currentKind: 'Q', capturedBy: '', currentCell: 'd1'},
+    c15: {alive: true, currentKind: 'K', capturedBy: '', currentCell: 'e1'},
+    c16: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'f1'},
+    c17: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'g1'},
+    c18: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'h1'},
+    c21: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'a2', previousKind: ''},
+    c22: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'b2', previousKind: ''},
+    c23: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'c2', previousKind: ''},
+    c24: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'd2', previousKind: ''},
+    c25: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'e2', previousKind: ''},
+    c26: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f2', previousKind: ''},
+    c27: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g2', previousKind: ''},
+    c28: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h2', previousKind: ''},
+    c31: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'a3', previousKind: ''},
+    c32: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'b3', previousKind: ''},
+    c33: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'c3', previousKind: ''},
+    c34: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'd3', previousKind: ''},
+    c35: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'e3', previousKind: ''},
+    c36: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f3', previousKind: ''},
+    c37: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g3', previousKind: ''},
+    c38: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h3', previousKind: ''},
+    c41: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a4'},
+    c42: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'b4'},
+    c43: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'c4'},
+    c44: {alive: true, currentKind: 'Q', capturedBy: '', currentCell: 'd4'},
+    c45: {alive: true, currentKind: 'K', capturedBy: '', currentCell: 'e4'},
+    c46: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'f4'},
+    c47: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'g4'},
+    c48: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'h4'}
+  };
+
+  openDialog(dataToSend: DataToPromote): void {
+
+    console.log('inside openDialog');
+    console.log(dataToSend);
+    const dialogRef = this.dialog.open(PromoteDialogComponent, {
+      width: '250px',
+      data: { turn: dataToSend.turn, piece: dataToSend.piece, setOfPieces: dataToSend.setOfPieces }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.promote = result;
+      console.log('The dialog was closed');
+      console.log(result);
+      this.cells[dataToSend.currentCell][0]['cvalue'] = result.value;
+      this.cells[dataToSend.currentCell][0]['kind'] = result.kind;
+
+      this.currentMove = ELEMENT_DATA.pop();
+      if (dataToSend.pieceColor === 'W') {
+        this.currentMove.white = this.currentMove.white.concat('=').concat(result.value);
+      } else {
+        this.currentMove.black = this.currentMove.black.concat('=').concat(result.value);
+      }
+      ELEMENT_DATA.push(this.currentMove);
+      this.gameMoves.data.next(ELEMENT_DATA);
+     })
   }
 
   ngOnInit() {
-    //this.apiService.getGames().subscribe(res => {
-    //        console.log(res)})    
-    //console.log("ngOnInit")  
+    // this.apiService.getGames().subscribe(res => {
+    //         console.log(res)});
+    // console.log('ngOnInit');
   }
 
   disablePiece(enable: boolean) {
-    for (let item in this.cells) {
-      if (this.cells[item].length != 0) {
-        if (this.cells[item][0].color == "W") {
-          this.cells[item][0].disabled = enable
+    for (const item in this.cells) {
+      if (this.cells[item].length !== 0) {
+        if (this.cells[item][0].color === 'W') {
+          this.cells[item][0].disabled = enable;
         } else {
-          this.cells[item][0].disabled = !enable
+          this.cells[item][0].disabled = !enable;
         }
-      }     
+      }
     }
-    //console.log(this.cells)
+    // console.log(this.cells)
   }
 
   colorOfCell(file: string, rank: string) {
-    //file is a letter, rank is a number
-    //file even and rank even black - columna impar fila impar negro
-    //file even and rank odd  white - columna impar fila par   blanco
-    //file odd  and rank even white - columna par   fila impar blanco
-    //file odd  and rank odd  black - columna par   fila par   negro
+    // file is a letter, rank is a number
+    // file even and rank even black - columna impar fila impar negro
+    // file even and rank odd  white - columna impar fila par   blanco
+    // file odd  and rank even white - columna par   fila impar blanco
+    // file odd  and rank odd  black - columna par   fila par   negro
 
-    var oddFiles = ["a", "c", "e", "g"]
-    var found = oddFiles.find(function(element) {
-      return element == file;
+    const oddFiles = ['a', 'c', 'e', 'g'];
+    const found = oddFiles.find(function(element) {
+      return element === file;
     });
 
     if (found) {
-      if( ((+rank) % 2) != 0 ) {
-          return ("B")
+      if( ((+rank) % 2) !== 0 ) {
+          return ('B');
       } else {
-          return ("W")
+          return ('W');
       }
     } else {
-        if( ((+rank) % 2) != 0 ) {
-            return ("W")
+        if( ((+rank) % 2) !== 0 ) {
+            return ('W');
         } else {
-            return ("B")
+            return ('B');
         }
     }
   }
-    
-  public allowdrop(item: CdkDrag, listItem: CdkDropList) {
-    //console.log("alowdrop")
 
-    var found = item.data["cellsToPaint"].find(function(element) {
-      return element == listItem.element.nativeElement.getAttribute("name");
+  public allowdrop(item: CdkDrag, listItem: CdkDropList) {
+    // console.log('alowdrop')
+
+    const found = item.data['cellsToPaint'].find(function(element) {
+      return element === listItem.element.nativeElement.getAttribute('name');
     });
-    
-    if (found != undefined) {
-      return true
+
+    if (found !== undefined) {
+      return true;
     } else {
-      return false
+      return false;
     }
   }
 
   public ended(event: CdkDragEnd) {
-    console.log("ended method")
+    console.log('ended method');
 
-    this.currentName = event.source.element.nativeElement.getAttribute("name")
-    this.currentPiece = this.cells[this.previousName][0]
-    for (let item of this.currentPiece["cellsToPaint"]) {
-      this.status[item] = true
+    this.currentName = event.source.element.nativeElement.getAttribute('name');
+    this.currentPiece = this.cells[this.previousName][0];
+    for (const item of this.currentPiece['cellsToPaint']) {
+      this.status[item] = true;
     }
   }
 
   public started(event: CdkDragStart) {
 
-    console.log("started method")  
-    console.log(event.source.element.nativeElement.parentElement.getAttribute("name") )
+    console.log('started method');
+    console.log(event.source.element.nativeElement.parentElement.getAttribute('name'));
 
-    this.previousName = event.source.element.nativeElement.parentElement.getAttribute("name")
-    this.currentPiece = this.cells[this.previousName][0]
-    console.log(this.currentPiece["kind"])
-    console.log(this.currentPiece["color"])
-    console.log(this.whiteTurn)
-    var currentColor = this.currentPiece["color"]
+    this.previousName = event.source.element.nativeElement.parentElement.getAttribute('name');
+    this.currentPiece = this.cells[this.previousName][0];
+    console.log(this.currentPiece['kind']);
+    console.log(this.currentPiece['color']);
+    console.log(this.whiteTurn);
+    const currentColor = this.currentPiece['color'];
 
-    if (currentColor == "W" && !this.whiteTurn || currentColor == "B" && this.whiteTurn) {
+    if (currentColor === 'W' && !this.whiteTurn || currentColor === 'B' && this.whiteTurn) {
 
-      console.log ("color: " + currentColor )
-      console.log ("whiteTurn: " + this.whiteTurn)
+      console.log ('color: ' + currentColor );
+      console.log ('whiteTurn: ' + this.whiteTurn);
 
-      this.file = this.currentPiece["currentPosition"]
-      this.rank = this.currentPiece["currentPosition"]
-      this.file = this.file.substring(0,1)
-      this.rank = this.rank.substring(1,2) 
-    
-      var lrank = 0
-      var tempCell = ""
+      this.file = this.currentPiece['currentPosition'];
+      this.rank = this.currentPiece['currentPosition'];
+      this.file = this.file.substring(0,1);
+      this.rank = this.rank.substring(1,2);
 
-      var tempCellDiagonal = []
+      let lrank = 0;
+      let i = 0;
+      let follow = true;
+      let temp: Turn = new Turn();
+      let tempCell = '';
 
-      var tempCellLeft = []
-      var tempCellCenter = []
-      var tempCellRight = []
-  
-      var tempCellLeftUp1 = []
-      var tempCellLeftUp2 = []
-      var tempCellRightUp1 = []
-      var tempCellRightUp2 = []
-      var tempCellRightDown1 = []
-      var tempCellRightDown2 = []
-      var tempCellLeftDown1 = []
-      var tempCellLeftDown2 = []
+      let tempCellDiagonal = [];
 
-      this.currentPiece["cellsToPaint"] = []
+      let tempCellLeft = [];
+      let tempCellCenter = [];
+      let tempCellRight = [];
 
-      if (this.currentPiece["kind"] == "P") {
-        lrank = +this.rank
-        
-        if (this.currentPiece["color"] == "W") {
-          lrank++
-          
-          tempCell = this.file.concat(lrank.toString())
-          tempCellCenter = this.cells[tempCell]
-          //if the cell in from of the pawn is empty, add to the colored ones
-          if (tempCellCenter.length == 0) {
-            this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+      let tempCellLeftUp1 = [];
+      let tempCellLeftUp2 = [];
+      let tempCellRightUp1 = [];
+      let tempCellRightUp2 = [];
+      let tempCellRightDown1 = [];
+      let tempCellRightDown2 = [];
+      let tempCellLeftDown1 = [];
+      let tempCellLeftDown2 = [];
+
+      this.currentPiece['cellsToPaint'] = [];
+
+      if (this.currentPiece['kind'] === 'P') {
+        lrank = +this.rank;
+
+        if (this.currentPiece['color'] === 'W') {
+          lrank++;
+
+          tempCell = this.file.concat(lrank.toString());
+          tempCellCenter = this.cells[tempCell];
+          // if the cell in from of the pawn is empty, add to the colored ones
+          if (tempCellCenter.length === 0) {
+            this.currentPiece['cellsToPaint'].push(this.file.concat(lrank.toString()));
           }
-                    
-          if (this.file != "a") {
-            //searching at the left of the current posicion
-            tempCell = this.files[this.files.indexOf(this.file) - 1]
-            tempCell = tempCell.concat(lrank.toString())
-            tempCellLeft = this.cells[tempCell]
-            //if the cell to the left of the pawn is not empty and is and opponet, add to the colored ones
-            if (tempCellLeft.length != 0) {
-              if (tempCellLeft[0].color == "B") {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+
+          if (this.file !== 'a') {
+            // searching at the left of the current posicion
+            tempCell = this.files[this.files.indexOf(this.file) - 1];
+            tempCell = tempCell.concat(lrank.toString());
+            tempCellLeft = this.cells[tempCell];
+            // if the cell to the left of the pawn is not empty and is and opponet, add to the colored ones
+            if (tempCellLeft.length !== 0) {
+              if (tempCellLeft[0].color === 'B') {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
             }
-            //if the pawn is on the fifth rank it can capture en passant only if the opponent is at the left
-            if (+this.rank == this.whiteEnPassantRank) {
-              tempCell = this.files[this.files.indexOf(this.file) - 1]
-              tempCell = tempCell.concat((lrank - 1).toString())
-              tempCellLeft = this.cells[tempCell]
-              if (tempCellLeft.length != 0) {
+            // if the pawn is on the fifth rank it can capture en passant only if the opponent is at the left
+            if (this.rank === this.whiteEnPassantRank) {
+              tempCell = this.files[this.files.indexOf(this.file) - 1];
+              tempCell = tempCell.concat((lrank - 1).toString());
+              tempCellLeft = this.cells[tempCell];
+              if (tempCellLeft.length !== 0) {
                 // En passant can be done only if the move of the opponent is the first move 
-                if (tempCellLeft[0].color == "B" && tempCellLeft[0].counterOfMoves == 1) {
-                  var temp: Turn = new Turn()
-                  temp = this.blackMoves[this.whiteMoves.length - 1]
-                  console.log(temp)
+                if (tempCellLeft[0].color === 'B' && tempCellLeft[0].counterOfMoves === 1) {
+                  temp = new Turn();
+                  temp = this.blackMoves[this.whiteMoves.length - 1];
+                  console.log(temp);
                   // Just to confirm the current position of the opponent  
-                  if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
-                    tempCell = this.files[this.files.indexOf(this.file) - 1]
-                    tempCell = tempCell.concat((lrank).toString())
-                    this.whiteEnPassantMove = tempCell
-                    this.whiteEnPassantOpponentPosition = temp.piece["currentPosition"]
-                    this.currentPiece["cellsToPaint"].push(tempCell)
+                  if (temp.piece['kind'] === 'P' && tempCell === temp.piece['currentPosition']) {
+                    tempCell = this.files[this.files.indexOf(this.file) - 1];
+                    tempCell = tempCell.concat((lrank).toString());
+                    this.whiteEnPassantMove = tempCell;
+                    this.whiteEnPassantOpponentPosition = temp.piece['currentPosition'];
+                    this.currentPiece['cellsToPaint'].push(tempCell);
                   }
                 }
               }
             }
-          } 
+          }
 
-          if (this.file != "h") {
-            //searching at the right of the position
-            tempCell = this.files[this.files.indexOf(this.file) + 1]
-            console.log("derecha")
-            tempCell = tempCell.concat(lrank.toString())
-            console.log(tempCell)
-            tempCellRight = this.cells[tempCell]
-            if (tempCellRight.length != 0) {
-              if (tempCellRight[0].color == "B") {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+          if (this.file !== 'h') {
+            // searching at the right of the position
+            tempCell = this.files[this.files.indexOf(this.file) + 1];
+            console.log('derecha');
+            tempCell = tempCell.concat(lrank.toString());
+            console.log(tempCell);
+            tempCellRight = this.cells[tempCell];
+            if (tempCellRight.length !== 0) {
+              if (tempCellRight[0].color === 'B') {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
             }
-            if (+this.rank == this.whiteEnPassantRank) {
-              tempCell = this.files[this.files.indexOf(this.file) + 1]
-              tempCell = tempCell.concat((lrank - 1).toString())
-              tempCellRight = this.cells[tempCell]
-              if (tempCellRight.length != 0) {
-                if (tempCellRight[0].color == "B" && tempCellRight[0].counterOfMoves == 1) {
-                  var temp: Turn = new Turn()
-                  temp = this.blackMoves[this.whiteMoves.length - 1]
-                  console.log(temp)
-                  if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
-                    tempCell = this.files[this.files.indexOf(this.file) + 1]
-                    tempCell = tempCell.concat((lrank).toString())
-                    this.whiteEnPassantMove = tempCell
-                    this.whiteEnPassantOpponentPosition = temp.piece["currentPosition"]
-                    this.currentPiece["cellsToPaint"].push(tempCell)
+            if (this.rank === this.whiteEnPassantRank) {
+              tempCell = this.files[this.files.indexOf(this.file) + 1];
+              tempCell = tempCell.concat((lrank - 1).toString());
+              tempCellRight = this.cells[tempCell];
+              if (tempCellRight.length !== 0) {
+                if (tempCellRight[0].color === 'B' && tempCellRight[0].counterOfMoves === 1) {
+                  temp = new Turn();
+                  temp = this.blackMoves[this.whiteMoves.length - 1];
+                  console.log(temp);
+                  if (temp.piece['kind'] === 'P' && tempCell === temp.piece['currentPosition']) {
+                    tempCell = this.files[this.files.indexOf(this.file) + 1];
+                    tempCell = tempCell.concat((lrank).toString());
+                    this.whiteEnPassantMove = tempCell;
+                    this.whiteEnPassantOpponentPosition = temp.piece['currentPosition'];
+                    this.currentPiece['cellsToPaint'].push(tempCell);
                   }
                 }
               }
             }
-          }  
+          }
         } else {
-          lrank--  
-          tempCell = this.file.concat(lrank.toString())
-          tempCellCenter = this.cells[tempCell]
-          if (tempCellCenter.length == 0) {
-            this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+          lrank--;
+          tempCell = this.file.concat(lrank.toString());
+          tempCellCenter = this.cells[tempCell];
+          if (tempCellCenter.length === 0) {
+            this.currentPiece['cellsToPaint'].push(this.file.concat(lrank.toString()));
           }
-                    
-          if (this.file != "a") {
-            //searching at the left of the current posicion
-            tempCell = this.files[this.files.indexOf(this.file) - 1]
-            tempCell = tempCell.concat(lrank.toString())
-            tempCellLeft = this.cells[tempCell]
-            if (tempCellLeft.length != 0) {
-              if (tempCellLeft[0].color == "W") {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+
+          if (this.file !== 'a') {
+            // searching at the left of the current posicion
+            tempCell = this.files[this.files.indexOf(this.file) - 1];
+            tempCell = tempCell.concat(lrank.toString());
+            tempCellLeft = this.cells[tempCell];
+            if (tempCellLeft.length !== 0) {
+              if (tempCellLeft[0].color === 'W') {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
             }
-            if (+this.rank == this.blackEnPassantRank) {
-              tempCell = this.files[this.files.indexOf(this.file) - 1]
-              tempCell = tempCell.concat((lrank + 1).toString())
-              tempCellLeft = this.cells[tempCell]
-              if (tempCellLeft.length != 0) {
-                if (tempCellLeft[0].color == "W"  && tempCellLeft[0].counterOfMoves == 1) {
-                  var temp: Turn = new Turn()
-                  temp = this.whiteMoves[this.whiteMoves.length - 1]
-                  console.log(temp)
-                  if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
-                    tempCell = this.files[this.files.indexOf(this.file) - 1]
-                    tempCell = tempCell.concat((lrank).toString())
-                    this.blackEnPassantMove = tempCell
-                    this.blackEnPassantOpponentPosition = temp.piece["currentPosition"]
-                    this.currentPiece["cellsToPaint"].push(tempCell)
+            if (+this.rank === this.blackEnPassantRank) {
+              tempCell = this.files[this.files.indexOf(this.file) - 1];
+              tempCell = tempCell.concat((lrank + 1).toString());
+              tempCellLeft = this.cells[tempCell];
+              if (tempCellLeft.length !== 0) {
+                if (tempCellLeft[0].color === 'W'  && tempCellLeft[0].counterOfMoves === 1) {
+                  temp = new Turn();
+                  temp = this.whiteMoves[this.whiteMoves.length - 1];
+                  console.log(temp);
+                  if (temp.piece['kind'] === 'P' && tempCell === temp.piece['currentPosition']) {
+                    tempCell = this.files[this.files.indexOf(this.file) - 1];
+                    tempCell = tempCell.concat((lrank).toString());
+                    this.blackEnPassantMove = tempCell;
+                    this.blackEnPassantOpponentPosition = temp.piece['currentPosition'];
+                    this.currentPiece['cellsToPaint'].push(tempCell);
                   }
                 }
               }
             }
-          } 
+          }
 
-          if (this.file != "h") {
-            //searching at the right of the current posicion
-            tempCell = this.files[this.files.indexOf(this.file) + 1]
-            tempCell = tempCell.concat(lrank.toString())
-            tempCellRight = this.cells[tempCell]
-            if (tempCellRight.length != 0) {
-              if (tempCellRight[0].color == "W") {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+          if (this.file !== 'h') {
+            // searching at the right of the current posicion
+            tempCell = this.files[this.files.indexOf(this.file) + 1];
+            tempCell = tempCell.concat(lrank.toString());
+            tempCellRight = this.cells[tempCell];
+            if (tempCellRight.length !== 0) {
+              if (tempCellRight[0].color === 'W') {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
             }
-            if (+this.rank == this.blackEnPassantRank) {
-              tempCell = this.files[this.files.indexOf(this.file) + 1]
-              tempCell = tempCell.concat((lrank + 1).toString())
-              tempCellRight = this.cells[tempCell]
-              if (tempCellRight.length != 0) {
-                if (tempCellRight[0].color == "W" && tempCellRight[0].counterOfMoves == 1) {
-                  var temp: Turn = new Turn()
-                  temp = this.whiteMoves[this.whiteMoves.length - 1]
-                  console.log(temp)
-                  if (temp.piece["kind"] == "P" && tempCell == temp.piece["currentPosition"]) {
-                    tempCell = this.files[this.files.indexOf(this.file) + 1]
-                    tempCell = tempCell.concat((lrank).toString())
-                    this.blackEnPassantMove = tempCell
-                    this.blackEnPassantOpponentPosition = temp.piece["currentPosition"]
-                    this.currentPiece["cellsToPaint"].push(tempCell)
+            if (+this.rank === this.blackEnPassantRank) {
+              tempCell = this.files[this.files.indexOf(this.file) + 1];
+              tempCell = tempCell.concat((lrank + 1).toString());
+              tempCellRight = this.cells[tempCell];
+              if (tempCellRight.length !== 0) {
+                if (tempCellRight[0].color === 'W' && tempCellRight[0].counterOfMoves === 1) {
+                  temp = new Turn();
+                  temp = this.whiteMoves[this.whiteMoves.length - 1];
+                  console.log(temp);
+                  if (temp.piece['kind'] === 'P' && tempCell === temp.piece['currentPosition']) {
+                    tempCell = this.files[this.files.indexOf(this.file) + 1];
+                    tempCell = tempCell.concat((lrank).toString());
+                    this.blackEnPassantMove = tempCell;
+                    this.blackEnPassantOpponentPosition = temp.piece['currentPosition'];
+                    this.currentPiece['cellsToPaint'].push(tempCell);
                   }
                 }
               }
             }
-          }  
+          }
         }
 
-        console.log ("countefOfMoves: " + this.currentPiece["counterOfMoves"])
+        console.log ('countefOfMoves: ' + this.currentPiece['counterOfMoves']);
 
-        if (this.currentPiece["counterOfMoves"] == 0) {
-          if (this.currentPiece["color"] == "W") {
-            lrank++
+        if (this.currentPiece['counterOfMoves'] === 0) {
+          if (this.currentPiece['color'] === 'W') {
+            lrank++;
           } else {
-            lrank--
+            lrank--;
           }
 
-          tempCell = this.file.concat(lrank.toString())
-          tempCellCenter = this.cells[tempCell]
-          console.log(tempCell)
-          if (tempCellCenter.length == 0) {
-            this.currentPiece["cellsToPaint"].push(this.file.concat(lrank.toString()))
+          tempCell = this.file.concat(lrank.toString());
+          tempCellCenter = this.cells[tempCell];
+          console.log(tempCell);
+          if (tempCellCenter.length === 0) {
+            this.currentPiece['cellsToPaint'].push(this.file.concat(lrank.toString()));
           }
         }
 
-        console.log("cell to paint")
-        console.log(this.currentPiece["cellsToPaint"])
-      } else if (this.currentPiece["kind"] == "R") {
-        console.log("rock")
+        console.log('cell to paint');
+        console.log(this.currentPiece['cellsToPaint']);
+      } else if (this.currentPiece['kind'] === 'R') {
+        console.log('rock');
 
-        //left
-        console.log("left")
-        lrank = +this.rank
-        var follow = true
-        var i = 1
+        // left
+        console.log('left');
+        lrank = +this.rank;
+        follow = true;
+        i = 1;
         while (follow) {
-          if (this.files[this.files.indexOf(this.file) - i] != undefined) {
+          if (this.files[this.files.indexOf(this.file) - i] !== undefined) {
 
-            tempCell = this.files[this.files.indexOf(this.file) - i]
-            tempCell = tempCell.concat((lrank).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file) - i];
+            tempCell = tempCell.concat((lrank).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //right
-        console.log("right")
-        follow = true
-        i = 1
+        // right
+        console.log('right');
+        follow = true;
+        i = 1;
         while (follow) {
-          if (this.files[this.files.indexOf(this.file) + i] != undefined) {
+          if (this.files[this.files.indexOf(this.file) + i] !== undefined) {
 
-            tempCell = this.files[this.files.indexOf(this.file) + i]
-            tempCell = tempCell.concat((lrank).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file) + i];
+            tempCell = tempCell.concat((lrank).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //down
-        console.log("down")
-        follow = true
-        i = 1
-        while (follow) {
-          if (lrank - i > this.minLimit) {
-
-            tempCell = this.files[this.files.indexOf(this.file)]
-            tempCell = tempCell.concat((lrank - i).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-        //up
-        console.log("up")
-        follow = true
-        i = 1
-        while (follow) {
-          if (lrank + i < this.maxLimit) {
-
-            tempCell = this.files[this.files.indexOf(this.file)]
-            tempCell = tempCell.concat((lrank + i).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-      } else if (this.currentPiece["kind"] == "N") {
-        lrank = +this.rank
-
-        if ((this.files[this.files.indexOf(this.file) - 2] != undefined) &&
-          (lrank + 1 < this.maxLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) - 2]
-            tempCell = tempCell.concat((lrank + 1).toString())
-            tempCellLeftUp1 = this.cells[tempCell]
-            if (tempCellLeftUp1.length != 0) {
-              if (tempCellLeftUp1[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) - 1] != undefined) &&
-          (lrank + 2 < this.maxLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) - 1]
-            tempCell = tempCell.concat((lrank + 2).toString())
-            tempCellLeftUp2 = this.cells[tempCell]
-            if (tempCellLeftUp2.length != 0) {
-              if (tempCellLeftUp2[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) + 1] != undefined) &&
-          (lrank + 2 < this.maxLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) + 1]
-            tempCell = tempCell.concat((lrank + 2).toString())
-            tempCellRightUp1 = this.cells[tempCell]
-            if (tempCellRightUp1.length != 0) {
-              if (tempCellRightUp1[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) + 2] != undefined) &&
-          (lrank + 1 < this.maxLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) + 2]
-            tempCell = tempCell.concat((lrank + 1).toString())
-            tempCellRightUp2 = this.cells[tempCell]
-            if (tempCellRightUp2.length != 0) {
-              if (tempCellRightUp2[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) + 2] != undefined) &&
-          (lrank - 1 > this.minLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) + 2]
-            tempCell = tempCell.concat((lrank - 1).toString())
-            tempCellRightDown1 = this.cells[tempCell]
-            if (tempCellRightDown1.length != 0) {
-              if (tempCellRightDown1[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) + 1] != undefined) &&
-          (lrank - 2 > this.minLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) + 1]
-            tempCell = tempCell.concat((lrank - 2).toString())
-            tempCellRightDown2 = this.cells[tempCell]
-            if (tempCellRightDown2.length != 0) {
-              if (tempCellRightDown2[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) - 1] != undefined) &&
-          (lrank - 2 > this.minLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) - 1]
-            tempCell = tempCell.concat((lrank - 2).toString())
-            tempCellLeftDown1 = this.cells[tempCell]
-            if (tempCellLeftDown1.length != 0) {
-              if (tempCellLeftDown1[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        if ((this.files[this.files.indexOf(this.file) - 2] != undefined) &&
-          (lrank - 1 > this.minLimit)) {
-            tempCell = this.files[this.files.indexOf(this.file) - 2]
-            tempCell = tempCell.concat((lrank - 1).toString())
-            tempCellLeftDown2 = this.cells[tempCell]
-            if (tempCellLeftDown2.length != 0) {
-              if (tempCellLeftDown2[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-        }
-
-        console.log("cell to paint")
-        console.log(this.currentPiece["cellsToPaint"])
-
-      } else if (this.currentPiece["kind"] == "B") {
-        console.log("bishop")
-
-        //left and up
-        console.log("left and up")
-        lrank = +this.rank
-        var follow = true
-        var i = 1
-        while (follow) {
-          if (this.files[this.files.indexOf(this.file) - i] != undefined 
-              && lrank + i < this.maxLimit) {
-
-            tempCell = this.files[this.files.indexOf(this.file) - i]
-            tempCell = tempCell.concat((lrank + i).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-        //right and up
-        console.log("right and up")
-        follow = true
-        i = 1
-        while (follow) {
-          if (this.files[this.files.indexOf(this.file) + i] != undefined 
-              && lrank + i < this.maxLimit) {
-
-            tempCell = this.files[this.files.indexOf(this.file) + i]
-            tempCell = tempCell.concat((lrank + i).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-        //left and down
-        console.log("left and down")
-        follow = true
-        i = 1
-        while (follow) {
-          if (this.files[this.files.indexOf(this.file) - i] != undefined 
-              && lrank - i > this.minLimit) {
-
-            tempCell = this.files[this.files.indexOf(this.file) - i]
-            tempCell = tempCell.concat((lrank - i).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-        //right and down
-        console.log("right and down")
-        follow = true
-        i = 1
-        while (follow) {
-          if (this.files[this.files.indexOf(this.file) + i] != undefined 
-              && lrank - i > this.minLimit) {
-
-            tempCell = this.files[this.files.indexOf(this.file) + i]
-            tempCell = tempCell.concat((lrank - i).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-      } else if (this.currentPiece["kind"] == "Q") {
-        console.log("queen")
-
-        //left
-        console.log("left")
-        lrank = +this.rank
-        var follow = true
-        var i = 1
-        while (follow) {
-          if (this.files[this.files.indexOf(this.file) - i] != undefined) {
-
-            tempCell = this.files[this.files.indexOf(this.file) - i]
-            tempCell = tempCell.concat((lrank).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-        //right
-        console.log("right")
-        follow = true
-        i = 1
-        while (follow) {
-          if (this.files[this.files.indexOf(this.file) + i] != undefined) {
-
-            tempCell = this.files[this.files.indexOf(this.file) + i]
-            tempCell = tempCell.concat((lrank).toString())
-            console.log(tempCell)
-
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
-              }
-              follow = false
-            } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
-            }
-          } else {
-            follow = false
-          }
-          i++
-        }
-        //down
-        console.log("down")
-        follow = true
-        i = 1
+        // down
+        console.log('down');
+        follow = true;
+        i = 1;
         while (follow) {
           if (lrank - i > this.minLimit) {
 
-            tempCell = this.files[this.files.indexOf(this.file)]
-            tempCell = tempCell.concat((lrank - i).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file)];
+            tempCell = tempCell.concat((lrank - i).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //up
-        console.log("up")
-        follow = true
-        i = 1
+        // up
+        console.log('up');
+        follow = true;
+        i = 1;
         while (follow) {
           if (lrank + i < this.maxLimit) {
 
-            tempCell = this.files[this.files.indexOf(this.file)]
-            tempCell = tempCell.concat((lrank + i).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file)];
+            tempCell = tempCell.concat((lrank + i).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //left and up
-        console.log("left and up")
-        var follow = true
-        var i = 1
+      } else if (this.currentPiece['kind'] === 'N') {
+        lrank = +this.rank;
+
+        if ((this.files[this.files.indexOf(this.file) - 2] !== undefined) &&
+          (lrank + 1 < this.maxLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) - 2];
+            tempCell = tempCell.concat((lrank + 1).toString());
+            tempCellLeftUp1 = this.cells[tempCell];
+            if (tempCellLeftUp1.length !== 0) {
+              if (tempCellLeftUp1[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) - 1] !== undefined) &&
+          (lrank + 2 < this.maxLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) - 1];
+            tempCell = tempCell.concat((lrank + 2).toString());
+            tempCellLeftUp2 = this.cells[tempCell];
+            if (tempCellLeftUp2.length !== 0) {
+              if (tempCellLeftUp2[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) + 1] !== undefined) &&
+          (lrank + 2 < this.maxLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) + 1];
+            tempCell = tempCell.concat((lrank + 2).toString());
+            tempCellRightUp1 = this.cells[tempCell];
+            if (tempCellRightUp1.length !== 0) {
+              if (tempCellRightUp1[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) + 2] !== undefined) &&
+          (lrank + 1 < this.maxLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) + 2];
+            tempCell = tempCell.concat((lrank + 1).toString());
+            tempCellRightUp2 = this.cells[tempCell];
+            if (tempCellRightUp2.length !== 0) {
+              if (tempCellRightUp2[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) + 2] !== undefined) &&
+          (lrank - 1 > this.minLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) + 2];
+            tempCell = tempCell.concat((lrank - 1).toString());
+            tempCellRightDown1 = this.cells[tempCell];
+            if (tempCellRightDown1.length !== 0) {
+              if (tempCellRightDown1[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) + 1] !== undefined) &&
+          (lrank - 2 > this.minLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) + 1];
+            tempCell = tempCell.concat((lrank - 2).toString());
+            tempCellRightDown2 = this.cells[tempCell];
+            if (tempCellRightDown2.length !== 0) {
+              if (tempCellRightDown2[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) - 1] !== undefined) &&
+          (lrank - 2 > this.minLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) - 1];
+            tempCell = tempCell.concat((lrank - 2).toString());
+            tempCellLeftDown1 = this.cells[tempCell];
+            if (tempCellLeftDown1.length !== 0) {
+              if (tempCellLeftDown1[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        if ((this.files[this.files.indexOf(this.file) - 2] !== undefined) &&
+          (lrank - 1 > this.minLimit)) {
+            tempCell = this.files[this.files.indexOf(this.file) - 2];
+            tempCell = tempCell.concat((lrank - 1).toString());
+            tempCellLeftDown2 = this.cells[tempCell];
+            if (tempCellLeftDown2.length !== 0) {
+              if (tempCellLeftDown2[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+        }
+
+        console.log('cell to paint');
+        console.log(this.currentPiece['cellsToPaint']);
+
+      } else if (this.currentPiece['kind'] === 'B') {
+        console.log('bishop');
+
+        // left and up
+        console.log('left and up');
+        lrank = +this.rank;
+        follow = true;
+        i = 1;
         while (follow) {
-          if (this.files[this.files.indexOf(this.file) - i] != undefined 
+          if (this.files[this.files.indexOf(this.file) - i] !== undefined
               && lrank + i < this.maxLimit) {
 
-            tempCell = this.files[this.files.indexOf(this.file) - i]
-            tempCell = tempCell.concat((lrank + i).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file) - i];
+            tempCell = tempCell.concat((lrank + i).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //right and up
-        console.log("right and up")
-        follow = true
-        i = 1
+        // right and up
+        console.log('right and up');
+        follow = true;
+        i = 1;
         while (follow) {
-          if (this.files[this.files.indexOf(this.file) + i] != undefined 
+          if (this.files[this.files.indexOf(this.file) + i] !== undefined
               && lrank + i < this.maxLimit) {
 
-            tempCell = this.files[this.files.indexOf(this.file) + i]
-            tempCell = tempCell.concat((lrank + i).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file) + i];
+            tempCell = tempCell.concat((lrank + i).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //left and down
-        console.log("left and down")
-        follow = true
-        i = 1
+        // left and down
+        console.log('left and down');
+        follow = true;
+        i = 1;
         while (follow) {
-          if (this.files[this.files.indexOf(this.file) - i] != undefined 
+          if (this.files[this.files.indexOf(this.file) - i] !== undefined
               && lrank - i > this.minLimit) {
 
-            tempCell = this.files[this.files.indexOf(this.file) - i]
-            tempCell = tempCell.concat((lrank - i).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file) - i];
+            tempCell = tempCell.concat((lrank - i).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-        //right and down
-        console.log("right and down")
-        follow = true
-        i = 1
+        // right and down
+        console.log('right and down');
+        follow = true;
+        i = 1;
         while (follow) {
-          if (this.files[this.files.indexOf(this.file) + i] != undefined 
+          if (this.files[this.files.indexOf(this.file) + i] !== undefined
               && lrank - i > this.minLimit) {
 
-            tempCell = this.files[this.files.indexOf(this.file) + i]
-            tempCell = tempCell.concat((lrank - i).toString())
-            console.log(tempCell)
+            tempCell = this.files[this.files.indexOf(this.file) + i];
+            tempCell = tempCell.concat((lrank - i).toString());
+            console.log(tempCell);
 
-            tempCellDiagonal = this.cells[tempCell]
-            if (tempCellDiagonal.length != 0) {
-              if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-                this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
               }
-              follow = false
+              follow = false;
             } else {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            follow = false
+            follow = false;
           }
-          i++
+          i++;
         }
-      } else if (this.currentPiece["kind"] == "K") {
-        console.log("King")
+      } else if (this.currentPiece['kind'] === 'Q') {
+        console.log('queen');
 
-        //left
-        console.log("left")
-        lrank = +this.rank
-        if (this.files[this.files.indexOf(this.file) - 1] != undefined) {
+        // left
+        console.log('left');
+        lrank = +this.rank;
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (this.files[this.files.indexOf(this.file) - i] !== undefined) {
+            tempCell = this.files[this.files.indexOf(this.file) - i];
+            tempCell = tempCell.concat((lrank).toString());
+            console.log(tempCell);
 
-          tempCell = this.files[this.files.indexOf(this.file) - 1]
-          tempCell = tempCell.concat((lrank).toString())
-          console.log(tempCell)
-
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            follow = false;
           }
-        }    
-        //right
-        console.log("right")
-        if (this.files[this.files.indexOf(this.file) + 1] != undefined) {
+          i++;
+        }
+        // right
+        console.log('right');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (this.files[this.files.indexOf(this.file) + i] !== undefined) {
+            tempCell = this.files[this.files.indexOf(this.file) + i];
+            tempCell = tempCell.concat((lrank).toString());
+            console.log(tempCell);
 
-          tempCell = this.files[this.files.indexOf(this.file) + 1]
-          tempCell = tempCell.concat((lrank).toString())
-          console.log(tempCell)
-
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            follow = false;
+          }
+          i++;
+        }
+        // down
+        console.log('down');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (lrank - i > this.minLimit) {
+
+            tempCell = this.files[this.files.indexOf(this.file)];
+            tempCell = tempCell.concat((lrank - i).toString());
+            console.log(tempCell);
+
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            follow = false;
+          }
+          i++;
+        }
+        // up
+        console.log('up');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (lrank + i < this.maxLimit) {
+
+            tempCell = this.files[this.files.indexOf(this.file)];
+            tempCell = tempCell.concat((lrank + i).toString());
+            console.log(tempCell);
+
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            follow = false;
+          }
+          i++;
+        }
+        // left and up
+        console.log('left and up');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (this.files[this.files.indexOf(this.file) - i] !== undefined
+              && lrank + i < this.maxLimit) {
+
+            tempCell = this.files[this.files.indexOf(this.file) - i];
+            tempCell = tempCell.concat((lrank + i).toString());
+            console.log(tempCell);
+
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            follow = false;
+          }
+          i++;
+        }
+        // right and up
+        console.log('right and up');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (this.files[this.files.indexOf(this.file) + i] !== undefined
+              && lrank + i < this.maxLimit) {
+
+            tempCell = this.files[this.files.indexOf(this.file) + i];
+            tempCell = tempCell.concat((lrank + i).toString());
+            console.log(tempCell);
+
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            follow = false;
+          }
+          i++;
+        }
+        // left and down
+        console.log('left and down');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (this.files[this.files.indexOf(this.file) - i] !== undefined
+              && lrank - i > this.minLimit) {
+
+            tempCell = this.files[this.files.indexOf(this.file) - i];
+            tempCell = tempCell.concat((lrank - i).toString());
+            console.log(tempCell);
+
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            follow = false;
+          }
+          i++;
+        }
+        // right and down
+        console.log('right and down');
+        follow = true;
+        i = 1;
+        while (follow) {
+          if (this.files[this.files.indexOf(this.file) + i] !== undefined
+              && lrank - i > this.minLimit) {
+
+            tempCell = this.files[this.files.indexOf(this.file) + i];
+            tempCell = tempCell.concat((lrank - i).toString());
+            console.log(tempCell);
+
+            tempCellDiagonal = this.cells[tempCell];
+            if (tempCellDiagonal.length !== 0) {
+              if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
+              follow = false;
+            } else {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            follow = false;
+          }
+          i++;
+        }
+      } else if (this.currentPiece['kind'] === 'K') {
+        console.log('King');
+
+        // left
+        console.log('left');
+        lrank = +this.rank;
+        if (this.files[this.files.indexOf(this.file) - 1] !== undefined) {
+
+          tempCell = this.files[this.files.indexOf(this.file) - 1];
+          tempCell = tempCell.concat((lrank).toString());
+          console.log(tempCell);
+
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            this.currentPiece['cellsToPaint'].push(tempCell);
+          }
+        }
+        // right
+        console.log('right');
+        if (this.files[this.files.indexOf(this.file) + 1] !== undefined) {
+          tempCell = this.files[this.files.indexOf(this.file) + 1];
+          tempCell = tempCell.concat((lrank).toString());
+          console.log(tempCell);
+
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
+            }
+          } else {
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         } 
-        //down
-        console.log("down")
+        // down
+        console.log('down');
         if (lrank - 1 > this.minLimit) {
+          tempCell = this.files[this.files.indexOf(this.file)];
+          tempCell = tempCell.concat((lrank - 1).toString());
+          console.log(tempCell);
 
-          tempCell = this.files[this.files.indexOf(this.file)]
-          tempCell = tempCell.concat((lrank - 1).toString())
-          console.log(tempCell)
-
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         }
-        //up
-        console.log("up")
+        // up
+        console.log('up');
         if (lrank + 1 < this.maxLimit) {
+          tempCell = this.files[this.files.indexOf(this.file)];
+          tempCell = tempCell.concat((lrank + 1).toString());
+          console.log(tempCell);
 
-          tempCell = this.files[this.files.indexOf(this.file)]
-          tempCell = tempCell.concat((lrank + 1).toString())
-          console.log(tempCell)
-
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         }
-        //left and up
-        console.log("left and up")
-        if (this.files[this.files.indexOf(this.file) - 1] != undefined 
+        // left and up
+        console.log('left and up');
+        if (this.files[this.files.indexOf(this.file) - 1] !== undefined
             && lrank + 1 < this.maxLimit) {
+          tempCell = this.files[this.files.indexOf(this.file) - 1];
+          tempCell = tempCell.concat((lrank + 1).toString());
+          console.log(tempCell);
 
-          tempCell = this.files[this.files.indexOf(this.file) - 1]
-          tempCell = tempCell.concat((lrank + 1).toString())
-          console.log(tempCell)
-
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         }
-        //right and up
-        console.log("right and up")
-        if (this.files[this.files.indexOf(this.file) + 1] != undefined 
+        // right and up
+        console.log('right and up');
+        if (this.files[this.files.indexOf(this.file) + 1] !== undefined
             && lrank + 1 < this.maxLimit) {
+          tempCell = this.files[this.files.indexOf(this.file) + 1];
+          tempCell = tempCell.concat((lrank + 1).toString());
+          console.log(tempCell);
 
-          tempCell = this.files[this.files.indexOf(this.file) + 1]
-          tempCell = tempCell.concat((lrank + 1).toString())
-          console.log(tempCell)
-
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         } 
-        //left and down
-        console.log("left and down")
-        if (this.files[this.files.indexOf(this.file) - 1] != undefined 
+        // left and down
+        console.log('left and down');
+        if (this.files[this.files.indexOf(this.file) - 1] !== undefined
             && lrank - 1 > this.minLimit) {
 
-          tempCell = this.files[this.files.indexOf(this.file) - 1]
-          tempCell = tempCell.concat((lrank - 1).toString())
-          console.log(tempCell)
+          tempCell = this.files[this.files.indexOf(this.file) - 1];
+          tempCell = tempCell.concat((lrank - 1).toString());
+          console.log(tempCell);
 
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
-            follow = false
+            follow = false;
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         }
-        //right and down
-        console.log("right and down")
-        if (this.files[this.files.indexOf(this.file) + 1] != undefined 
+        // right and down
+        console.log('right and down');
+        if (this.files[this.files.indexOf(this.file) + 1] !== undefined
             && lrank - 1 > this.minLimit) {
 
-          tempCell = this.files[this.files.indexOf(this.file) + 1]
-          tempCell = tempCell.concat((lrank - 1).toString())
-          console.log(tempCell)
+          tempCell = this.files[this.files.indexOf(this.file) + 1];
+          tempCell = tempCell.concat((lrank - 1).toString());
+          console.log(tempCell);
 
-          tempCellDiagonal = this.cells[tempCell]
-          if (tempCellDiagonal.length != 0) {
-            if (tempCellDiagonal[0].color != this.currentPiece["color"]) {
-              this.currentPiece["cellsToPaint"].push(tempCell)
+          tempCellDiagonal = this.cells[tempCell];
+          if (tempCellDiagonal.length !== 0) {
+            if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+              this.currentPiece['cellsToPaint'].push(tempCell);
             }
           } else {
-            this.currentPiece["cellsToPaint"].push(tempCell)
+            this.currentPiece['cellsToPaint'].push(tempCell);
           }
         }
 
-        //Conditions for Castling
-        //King moves equals cero
-        //Rock moves equals cero
-        //Cells between King and Rock must be empty
-        //--For current version only first three conditions checked
-        //Cells between King and Rock are not under attack
-        //When Castling ends, King is not in check
+        // Conditions for Castling
+        // King moves equals cero
+        // Rock moves equals cero
+        // Cells between King and Rock must be empty
+        // --For current version only first three conditions checked
+        // Cells between King and Rock are not under attack
+        // When Castling ends, King is not in check
 
-        if (this.currentPiece["color"] == "W") {
-          //Castling for white King only if the King has no moves
-          if (this.currentPiece["counterOfMoves"] == 0) {
-            //Short Castling
-            if (this.cells["f1"].length == 0 && this.cells["g1"].length == 0 && this.cells["h1"].length != 0) {
-              if (this.cells["h1"][0].counterOfMoves == 0) {
-                console.log("white short castling")
-                this.whiteShortCastlingMove = "g1"
-                this.currentPiece["cellsToPaint"].push(this.whiteShortCastlingMove)
+        if (this.currentPiece['color'] === 'W') {
+          // Castling for white King only if the King has no moves
+          if (this.currentPiece['counterOfMoves'] === 0) {
+            // Short Castling
+            if (this.cells['f1'].length === 0 && this.cells['g1'].length === 0 && this.cells['h1'].length !== 0) {
+              if (this.cells['h1'][0].counterOfMoves === 0) {
+                console.log('white short castling');
+                this.whiteShortCastlingMove = 'g1';
+                this.currentPiece['cellsToPaint'].push(this.whiteShortCastlingMove);
               }
             }
-            //Long Castling
-            if (this.cells["b1"].length == 0 && this.cells["c1"].length == 0 && this.cells["d1"].length == 0 && this.cells["a1"].length != 0) {
-              if (this.cells["a1"][0].counterOfMoves == 0) {
-                console.log("white short castling")
-                this.whiteLongCastlingMove = "c1"
-                this.currentPiece["cellsToPaint"].push(this.whiteLongCastlingMove)
+            // Long Castling
+            if (this.cells['b1'].length === 0 && this.cells['c1'].length === 0 && this.cells['d1'].length === 0
+              && this.cells['a1'].length !== 0) {
+              if (this.cells['a1'][0].counterOfMoves === 0) {
+                console.log('white short castling');
+                this.whiteLongCastlingMove = 'c1';
+                this.currentPiece['cellsToPaint'].push(this.whiteLongCastlingMove);
               }
             }
           }
         } else {
-          //Castling for black King only if the King has no moves
-          if (this.currentPiece["counterOfMoves"] == 0) {
-            //Short Castling
-            if (this.cells["f8"].length == 0 && this.cells["g8"].length == 0 && this.cells["h8"].length != 0) {
-              if (this.currentPiece["counterOfMoves"] == 0 && this.cells["h8"][0].counterOfMoves == 0) {
-                console.log("white short castling")
-                this.blackShortCastlingMove = "g8"
-                this.currentPiece["cellsToPaint"].push(this.blackShortCastlingMove)
+          // Castling for black King only if the King has no moves
+          if (this.currentPiece['counterOfMoves'] === 0) {
+            // Short Castling
+            if (this.cells['f8'].length === 0 && this.cells['g8'].length === 0 && this.cells['h8'].length !== 0) {
+              if (this.currentPiece['counterOfMoves'] === 0 && this.cells['h8'][0].counterOfMoves === 0) {
+                console.log('white short castling');
+                this.blackShortCastlingMove = 'g8';
+                this.currentPiece['cellsToPaint'].push(this.blackShortCastlingMove);
               }
             }
-            //Long Castling
-            if (this.cells["b8"].length == 0 && this.cells["c8"].length == 0 && this.cells["d8"].length == 0 && this.cells["a8"].length != 0) {
-              if (this.currentPiece["counterOfMoves"] == 0 && this.cells["a8"][0].counterOfMoves == 0) {
-                console.log("white short castling")
-                this.blackLongCastlingMove = "c8"
-                this.currentPiece["cellsToPaint"].push(this.blackLongCastlingMove)
+            // Long Castling
+            if (this.cells['b8'].length === 0 && this.cells['c8'].length === 0 && this.cells['d8'].length === 0
+               && this.cells['a8'].length !== 0) {
+              if (this.currentPiece['counterOfMoves'] === 0 && this.cells['a8'][0].counterOfMoves === 0) {
+                console.log('white short castling');
+                this.blackLongCastlingMove = 'c8';
+                this.currentPiece['cellsToPaint'].push(this.blackLongCastlingMove);
               }
             }
           }
         }
-      } 
-      for (let item of this.currentPiece["cellsToPaint"]) {
-        this.status[item] = false
+      }
+      for (const item of this.currentPiece['cellsToPaint']) {
+        this.status[item] = false;
       }
     }
   }
 
   drop(event: CdkDragDrop<string[]>) {
-    if (event.previousContainer != event.container) {
-      var takesPiece = false
-      this.previousName = event.previousContainer.element.nativeElement.getAttribute("name")
-      this.currentName = event.container.element.nativeElement.getAttribute("name")
-      console.log("drop method")
+    if (event.previousContainer !== event.container) {
+      let dataToSend: DataToPromote;
+      let takesPiece = false;
+      this.previousName = event.previousContainer.element.nativeElement.getAttribute('name');
+      this.currentName = event.container.element.nativeElement.getAttribute('name');
+      console.log('drop method');
 
-      //console.log(this.currentName)
-      //console.log(this.previousName)
-      //console.log(this.cells[this.currentName])
-      this.currentPiece = this.cells[this.previousName][0]
-      //console.log(this.currentPiece["cvalue"])
+      // console.log(this.currentName)
+      // console.log(this.previousName)
+      // console.log(this.cells[this.currentName])
+      this.currentPiece = this.cells[this.previousName][0];
+      // console.log(this.currentPiece['cvalue'])
 
+      if (this.currentPiece['color'] === 'W' && !this.whiteTurn || this.currentPiece['color'] === 'B' && this.whiteTurn) {
 
-      if (this.currentPiece["color"] == "W" && !this.whiteTurn || this.currentPiece["color"] == "B" && this.whiteTurn) {
-
-        //console.log("currentName")
-        //console.log(this.cells[this.currentName].length)
-        //console.log("previousName")
-        //console.log(this.cells[this.previousName].length)
-        if (this.cells[this.currentName].length == 1) {
-          takesPiece = true
+        // console.log('currentName')
+        // console.log(this.cells[this.currentName].length)
+        // console.log('previousName')
+        // console.log(this.cells[this.previousName].length)
+        if (this.cells[this.currentName].length === 1) {
+          takesPiece = true;
         }
 
-        this.currentPiece["counterOfMoves"]++
-        this.currentPiece["previousPosition"] = this.previousName
-        this.currentPiece["currentPosition"] = this.currentName
-        this.cells[this.currentName][0] = this.currentPiece 
+        this.currentPiece['counterOfMoves']++;
+        this.currentPiece['previousPosition'] = this.previousName;
+        this.currentPiece['currentPosition'] = this.currentName;
+        this.cells[this.currentName][0] = this.currentPiece ;
 
-        this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false
-        this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false
+        this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false;
+        this.colorOfCurrentMove[this.cellOfLastMove.pop()] = false;
 
-        this.cellOfLastMove.push(this.previousName)
-        this.cellOfLastMove.push(this.currentName)
+        this.cellOfLastMove.push(this.previousName);
+        this.cellOfLastMove.push(this.currentName);
 
-        this.colorOfCurrentMove[this.previousName] = true
-        this.colorOfCurrentMove[this.currentName] = true
+        this.colorOfCurrentMove[this.previousName] = true;
+        this.colorOfCurrentMove[this.currentName] = true;
 
         while (event.container.data.length > 0) {
-          this.dato = event.container.data.pop()
+          this.dato = event.container.data.pop();
         }
 
-        console.log("Takes piece")
-        console.log(takesPiece)
+        console.log('Takes piece');
+        console.log(takesPiece);
         transferArrayItem(event.previousContainer.data,
                           event.container.data,
                           event.previousIndex,
-                          event.currentIndex)
-                          
-        this.currentTurn = new Turn()
+                          event.currentIndex);
 
-        //one move per team
+        this.currentTurn = new Turn();
+
+        // one move per team
         if (!this.whiteTurn) {
-          //white is moving
-          this.turnNumber++
-          this.currentTurn.turnNumber = this.turnNumber
-          this.currentTurn.piece  = this.currentPiece
-          this.whiteMoves.push(this.currentTurn)
+          // white is moving
+          this.turnNumber++;
+          this.currentTurn.turnNumber = this.turnNumber;
+          this.currentTurn.piece  = this.currentPiece;
+          this.whiteMoves.push(this.currentTurn);
 
-          this.currentMove = {turn: 0, white: "", black: ""}
-          this.currentMove.turn = this.turnNumber
-          
-          if (this.currentPiece["kind"] == "P") {
+          this.currentMove = {turn: 0, white: '', black: ''};
+          this.currentMove.turn = this.turnNumber;
+
+          if (this.currentPiece['kind'] === 'P') {
             if (takesPiece) {
-              this.currentMove.white = this.file.concat("x").concat(this.currentName)
+              this.currentMove.white = this.file.concat('x').concat(this.currentName);
             } else {
-              this.currentMove.white = this.currentName
+              this.currentMove.white = this.currentName;
             }
-            if (this.currentName.substring(1,2) == "8") {
-              //Promote    
-              var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.whitePieces, selected: "", pieceColor: "W"}
-              this.openDialog(dataToSend)
+            if (this.currentName.substring(1, 2) === '8') {
+              // Promote
+              dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'], 
+                            currentCell: this.currentName, setOfPieces: this.whitePieces, selected: '', pieceColor: 'W'};
+              this.openDialog(dataToSend);
             }
           } else {
             if (takesPiece) {
-              this.currentMove.white = this.currentPiece["kind"].concat("x").concat(this.currentName)
-            } else {  
-              this.currentMove.white = this.currentPiece["kind"].concat(this.currentName)
+              this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
+            } else {
+              this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
             }
           }
 
-          //If your move is the en Passant remove the opponent pawn
-          if (this.whiteEnPassantMove != "" && this.whiteEnPassantMove == this.currentName) {
-            this.cells[this.whiteEnPassantOpponentPosition] = []
-            this.whiteEnPassantMove = ""
-            this.whiteEnPassantOpponentPosition = ""
-            this.currentMove.white = this.file.concat("x").concat(this.currentName).concat("e.p.")
+          // If your move is the en Passant remove the opponent pawn
+          if (this.whiteEnPassantMove !== '' && this.whiteEnPassantMove === this.currentName) {
+            this.cells[this.whiteEnPassantOpponentPosition] = [];
+            this.whiteEnPassantMove = '';
+            this.whiteEnPassantOpponentPosition = '';
+            this.currentMove.white = this.file.concat('x').concat(this.currentName).concat('e.p.');
           }
 
-          //If your move is short castling
-          if (this.whiteShortCastlingMove != "" && this.whiteShortCastlingMove == this.currentName) {
-            this.cells["f1"].push(this.cells["h1"][0]) 
-            this.cells["f1"][0]["counterOfMoves"]++
-            this.cells["f1"][0]["previousPosition"] = "h1"
-            this.cells["f1"][0]["currentPosition"] = "f1"
-            this.cells["h1"] = []
-            this.whiteShortCastlingMove = ""
-            this.currentMove.white = "O-O"
+          // If your move is short castling
+          if (this.whiteShortCastlingMove !== '' && this.whiteShortCastlingMove === this.currentName) {
+            this.cells['f1'].push(this.cells['h1'][0]);
+            this.cells['f1'][0]['counterOfMoves']++;
+            this.cells['f1'][0]['previousPosition'] = 'h1';
+            this.cells['f1'][0]['currentPosition'] = 'f1';
+            this.cells['h1'] = [];
+            this.whiteShortCastlingMove = '';
+            this.currentMove.white = 'O-O';
           }
 
-          //If your move is long castling
-          if (this.whiteLongCastlingMove != "" && this.whiteLongCastlingMove == this.currentName) {
-            this.cells["d1"].push(this.cells["a1"][0])
-            this.cells["d1"][0]["counterOfMoves"]++
-            this.cells["d1"][0]["previousPosition"] = "a1"
-            this.cells["d1"][0]["currentPosition"] = "d1"
-            this.cells["a1"] = []
-            this.whiteLongCastlingMove = ""
-            this.currentMove.white = "O-O-O"
+          // If your move is long castling
+          if (this.whiteLongCastlingMove !== '' && this.whiteLongCastlingMove === this.currentName) {
+            this.cells['d1'].push(this.cells['a1'][0]);
+            this.cells['d1'][0]['counterOfMoves']++;
+            this.cells['d1'][0]['previousPosition'] = 'a1';
+            this.cells['d1'][0]['currentPosition'] = 'd1';
+            this.cells['a1'] = [];
+            this.whiteLongCastlingMove = '';
+            this.currentMove.white = 'O-O-O';
           }
 
-          //this.currentMove.black = ""
-          ELEMENT_DATA.push(this.currentMove)
-          this.gameMoves.data.next(ELEMENT_DATA)
+          // this.currentMove.black = ''
+          ELEMENT_DATA.push(this.currentMove);
+          this.gameMoves.data.next(ELEMENT_DATA);
         } else {
-          //black is moving
-          this.currentTurn.turnNumber = this.turnNumber
-          this.currentTurn.piece  = this.currentPiece
-          this.blackMoves.push(this.currentTurn)
+          // black is moving
+          this.currentTurn.turnNumber = this.turnNumber;
+          this.currentTurn.piece  = this.currentPiece;
+          this.blackMoves.push(this.currentTurn);
 
-          this.currentMove = ELEMENT_DATA.pop()
+          this.currentMove = ELEMENT_DATA.pop();
 
-          if (this.currentPiece["kind"] == "P") {
+          if (this.currentPiece['kind'] === 'P') {
             if (takesPiece) {
-                this.currentMove.black = this.file.concat("x").concat(this.currentName)
+                this.currentMove.black = this.file.concat('x').concat(this.currentName);
             } else {
-                this.currentMove.black = this.currentName
+                this.currentMove.black = this.currentName;
             }
-            if (this.currentName.substring(1,2) == "1") {
-              //Promote
-              var dataToSend : DataToPromote = {turn: this.currentMove.turn, piece: this.currentPiece["cvalue"], currentCell: this.currentName, setOfPieces: this.blackPieces, selected: "", pieceColor: "B"}
+            if (this.currentName.substring(1, 2) === '1') {
+              // Promote
+              dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'],
+                            currentCell: this.currentName, setOfPieces: this.blackPieces, selected: '', pieceColor: 'B'}
               this.openDialog(dataToSend)
             }
           } else {
             if (takesPiece) {
-              this.currentMove.black = this.currentPiece["kind"].concat("x").concat(this.currentName)
+              this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
             } else {
-              this.currentMove.black = this.currentPiece["kind"].concat(this.currentName)
+              this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
             }
           }
 
-          //If your move is the en Passant remove the opponent pawn
-          if (this.blackEnPassantMove != "" && this.blackEnPassantMove == this.currentName) {
-            this.cells[this.blackEnPassantOpponentPosition] = []
-            this.blackEnPassantMove = ""
-            this.blackEnPassantOpponentPosition = ""
-            this.currentMove.black = this.file.concat("x").concat(this.currentName).concat("e.p.")
+          // If your move is the en Passant remove the opponent pawn
+          if (this.blackEnPassantMove !== '' && this.blackEnPassantMove === this.currentName) {
+            this.cells[this.blackEnPassantOpponentPosition] = [];
+            this.blackEnPassantMove = '';
+            this.blackEnPassantOpponentPosition = '';
+            this.currentMove.black = this.file.concat('x').concat(this.currentName).concat('e.p.');
           }
 
-          //If your move is short castling
-          if (this.blackShortCastlingMove != "" && this.blackShortCastlingMove == this.currentName) {
-            this.cells["f8"].push(this.cells["h8"][0]) 
-            this.cells["f8"][0]["counterOfMoves"]++
-            this.cells["f8"][0]["previousPosition"] = "h8"
-            this.cells["f8"][0]["currentPosition"] = "f8"
+          // If your move is short castling
+          if (this.blackShortCastlingMove !== '' && this.blackShortCastlingMove === this.currentName) {
+            this.cells['f8'].push(this.cells['h8'][0]);
+            this.cells['f8'][0]['counterOfMoves']++;
+            this.cells['f8'][0]['previousPosition'] = 'h8';
+            this.cells['f8'][0]['currentPosition'] = 'f8';
 
-            this.cells["h8"] = []
-            this.blackShortCastlingMove = ""
-            this.currentMove.black = "O-O"
+            this.cells['h8'] = [];
+            this.blackShortCastlingMove = '';
+            this.currentMove.black = 'O-O';
           }
 
-          //If your move is long castling
-          if (this.blackLongCastlingMove != "" && this.blackLongCastlingMove == this.currentName) {
-            this.cells["d8"].push(this.cells["a8"][0]) 
-            this.cells["a8"][0]["counterOfMoves"]++
-            this.cells["a8"][0]["previousPosition"] = "a8"
-            this.cells["a8"][0]["currentPosition"] = "d8"
+          // If your move is long castling
+          if (this.blackLongCastlingMove !== '' && this.blackLongCastlingMove === this.currentName) {
+            this.cells['d8'].push(this.cells['a8'][0]);
+            this.cells['a8'][0]['counterOfMoves']++;
+            this.cells['a8'][0]['previousPosition'] = 'a8';
+            this.cells['a8'][0]['currentPosition'] = 'd8';
 
-            this.cells["a8"] = []
-            this.blackLongCastlingMove = ""
-            this.currentMove.black = "O-O-O"
+            this.cells['a8'] = [];
+            this.blackLongCastlingMove = '';
+            this.currentMove.black = 'O-O-O';
           }
-        
-          console.log(this.currentMove)
-          ELEMENT_DATA.push(this.currentMove)
-          this.gameMoves.data.next(ELEMENT_DATA)
+
+          console.log(this.currentMove);
+          ELEMENT_DATA.push(this.currentMove);
+          this.gameMoves.data.next(ELEMENT_DATA);
         } 
 
-        this.whiteTurn = !this.whiteTurn
-        this.disablePiece(this.whiteTurn)
-  
-        console.log(this.whiteTurn)
-        console.log(this.whiteMoves)
-        console.log(this.blackMoves)
-        //console.log(event.container.data)
+        this.whiteTurn = !this.whiteTurn;
+        this.disablePiece(this.whiteTurn);
+
+        console.log(this.whiteTurn);
+        console.log(this.whiteMoves);
+        console.log(this.blackMoves);
+        //  console.log(event.container.data)
       }
     }
-  }
-}
-
-@Component({
-  selector: 'promote-dialog',
-  templateUrl: 'promote-dialog.html'
-})
-export class PromoteDialog {
-  constructor(
-    public dialogRef: MatDialogRef<PromoteDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: DataToPromote) {}
-
-  onNoClick(): void {
-    this.dialogRef.close();
   }
 }

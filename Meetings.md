@@ -152,3 +152,24 @@
     5. Pinned de las piezas
     6. Notación algebraica
     7. Notación para los casos de dos o mas piezas en una misma fila o columnas
+
+## 26/04/2019
+
+    En el trancurso de estas ultimas tres semanas se completó lo siguiente:
+
+    1. Issue cuando el peon mueve dos casilla y luego regresa una
+    2. Issue cuando se hacian los enroques porque las torres no se actualizaban correctamente
+    3. Promocion del peon
+    4. Activación de la pieza promovida para que funcione correctamente
+
+    Para la siguiente semana quiero avanzar en lo siguiente
+
+    1. Notación para los casos de dos o mas piezas en una misma fila o columnas
+    2. Jaque
+    3. Jaque Mate
+    4. Pinned de las piezas
+    5. Notación algebraica de Jaque y Jaque Mate
+    6. Rey ahogado
+    7. Boton de retroceso del log del juego
+    8. Boton de avance del log del juego
+    

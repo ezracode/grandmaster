@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { AppComponent, PromoteDialog } from './app.component';
+import { AppComponent, PromoteDialogComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CdkTableModule } from '@angular/cdk/table';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -20,9 +20,9 @@ import { MatSelectModule } from '@angular/material';
     MatSelectModule
   ],
   declarations: [
-    AppComponent, PromoteDialog
+    AppComponent, PromoteDialogComponent
   ],
-  entryComponents: [PromoteDialog],
+  entryComponents: [PromoteDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

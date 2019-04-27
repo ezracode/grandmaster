@@ -6,20 +6,20 @@ import { Game } from './game';
   providedIn: 'root'
 })
 export class ApiService {
-  apiURL: string = 'http://localhost:5762';
+  apiURL = 'http://localhost:5762';
   constructor(private httpClient: HttpClient) { }
-
-  public getGameByEvent(event: string){}
 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin':'*',
-      'Access-Control-Allow-Headers':'X-Requested-With'
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'X-Requested-With'
     })
    };
 
-  public getGames(){
+  public getGameByEvent(event: string) {}
+
+  public getGames() {
     return this.httpClient.get<Game[]>(`${this.apiURL}/games`, this.httpOptions );
   }
 }
