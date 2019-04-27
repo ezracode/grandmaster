@@ -176,3 +176,9 @@
     6. Rey ahogado
     7. Boton de retroceso del log del juego
     8. Boton de avance del log del juego
+
+    Revisar la pagina de wikipedia Lc0, Lc0 gano el campeonato de ajedrez
+    TCEC
+
+    https://en.wikipedia.org/wiki/Leela_Chess_Zero
+    https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship
