@@ -156,11 +156,15 @@
 ## 26/04/2019
 
     En el trancurso de estas ultimas tres semanas se completó lo siguiente:
-
-    1. Issue cuando el peon mueve dos casilla y luego regresa una
-    2. Issue cuando se hacian los enroques porque las torres no se actualizaban correctamente
-    3. Promocion del peon
-    4. Activación de la pieza promovida para que funcione correctamente
+    1. Se completó la forma basica de la notación algebraica
+    2. La captura al paso
+    3. Notacion algebraica de la captura la paso
+    4. Issue cuando el peon mueve dos casilla y luego regresa una
+    5. Issue cuando se hacian los enroques porque las torres no se actualizaban correctamente
+    6. Promocion del peon
+    7. Notacion algebraica de la promocion del peon
+    8. Activación de la pieza promovida para que funcione correctamente
+    9. Lintern de los archivos TS
 
     Para la siguiente semana quiero avanzar en lo siguiente
 
@@ -172,4 +176,3 @@
     6. Rey ahogado
     7. Boton de retroceso del log del juego
     8. Boton de avance del log del juego
-    
