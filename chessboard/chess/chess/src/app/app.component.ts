@@ -96,7 +96,7 @@ export class AppComponent {
   whiteEnPassantOpponentPosition = '';
   blackEnPassantMove = '';
   blackEnPassantOpponentPosition = '';
-  whiteEnPassantRank = '';
+  whiteEnPassantRank = 5;
   blackEnPassantRank = 4;
   whiteShortCastlingMove = '';
   whiteLongCastlingMove = '';
@@ -113,16 +113,6 @@ export class AppComponent {
   gameMoves: GameDataSource;
 
   cellOfLastMove = [];
-
-  whiteRockList = ['11', '18'];
-  whiteKnightList = ['12', '17'];
-  whiteBishopList = ['13', '16'];
-  whiteQueenList = ['14'];
-
-  blackRockList = ['41', '48'];
-  blackKnightList = ['42', '47'];
-  blackBishopList = ['43', '46'];
-  blackQueenList = ['44'];
 
   files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
@@ -173,108 +163,108 @@ export class AppComponent {
   ];
 
   public cells = {
-    a1: [{cvalue: String.fromCharCode(9814), cid: '11', cssclass: 'white-piece', kind: 'R', currentPosition: 'a1', previousPosition: '',
+    a1: [{cvalue: String.fromCharCode(9814), cid: 'c11', cssclass: 'white-piece', kind: 'R', currentPosition: 'a1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white left rock', cellsToPaint: [], disabled: this.whiteTurn}],
-    a2: [{cvalue: String.fromCharCode(9817), cid: '21', cssclass: 'white-piece', kind: 'P', currentPosition: 'a2', previousPosition: '',
+    a2: [{cvalue: String.fromCharCode(9817), cid: 'c21', cssclass: 'white-piece', kind: 'P', currentPosition: 'a2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn left rock', cellsToPaint: [], disabled: this.whiteTurn}],
     a3: [],
     a4: [],
     a5: [],
     a6: [],
-    a7: [{cvalue: String.fromCharCode(9823), cid: '31', cssclass: 'black-piece', kind: 'P', currentPosition: 'a7', previousPosition: '',
+    a7: [{cvalue: String.fromCharCode(9823), cid: 'c31', cssclass: 'black-piece', kind: 'P', currentPosition: 'a7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn left rock', cellsToPaint: [], disabled: !this.whiteTurn}],
-    a8: [{cvalue: String.fromCharCode(9820), cid: '41', cssclass: 'black-piece', kind: 'R', currentPosition: 'a8', previousPosition: '',
+    a8: [{cvalue: String.fromCharCode(9820), cid: 'c41', cssclass: 'black-piece', kind: 'R', currentPosition: 'a8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black left rock', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    b1: [{cvalue: String.fromCharCode(9816), cid: '12', cssclass: 'white-piece', kind: 'N', currentPosition: 'b1', previousPosition: '',
+    b1: [{cvalue: String.fromCharCode(9816), cid: 'c12', cssclass: 'white-piece', kind: 'N', currentPosition: 'b1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white left knight', cellsToPaint: [], disabled: this.whiteTurn}],
-    b2: [{cvalue: String.fromCharCode(9817), cid: '22', cssclass: 'white-piece', kind: 'P', currentPosition: 'b2', previousPosition: '',
+    b2: [{cvalue: String.fromCharCode(9817), cid: 'c22', cssclass: 'white-piece', kind: 'P', currentPosition: 'b2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn left knight', cellsToPaint: [], disabled: this.whiteTurn}],
     b3: [],
     b4: [],
     b5: [],
     b6: [],
-    b7: [{cvalue: String.fromCharCode(9823), cid: '32', cssclass: 'black-piece', kind: 'P', currentPosition: 'b7', previousPosition: '',
+    b7: [{cvalue: String.fromCharCode(9823), cid: 'c32', cssclass: 'black-piece', kind: 'P', currentPosition: 'b7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn left knight', cellsToPaint: [], disabled: !this.whiteTurn}],
-    b8: [{cvalue: String.fromCharCode(9822), cid: '42', cssclass: 'black-piece', kind: 'N', currentPosition: 'b8', previousPosition: '',
+    b8: [{cvalue: String.fromCharCode(9822), cid: 'c42', cssclass: 'black-piece', kind: 'N', currentPosition: 'b8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black left knight', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    c1: [{cvalue: String.fromCharCode(9815), cid: '13', cssclass: 'white-piece', kind: 'B', currentPosition: 'c1', previousPosition: '',
+    c1: [{cvalue: String.fromCharCode(9815), cid: 'c13', cssclass: 'white-piece', kind: 'B', currentPosition: 'c1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white left bishop', cellsToPaint: [], disabled: this.whiteTurn}],
-    c2: [{cvalue: String.fromCharCode(9817), cid: '23', cssclass: 'white-piece', kind: 'P', currentPosition: 'c2', previousPosition: '',
+    c2: [{cvalue: String.fromCharCode(9817), cid: 'c23', cssclass: 'white-piece', kind: 'P', currentPosition: 'c2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn left bishop', cellsToPaint: [], disabled: this.whiteTurn}],
     c3: [],
     c4: [],
     c5: [],
     c6: [],
-    c7: [{cvalue: String.fromCharCode(9823), cid: '33', cssclass: 'black-piece', kind: 'P', currentPosition: 'c7', previousPosition: '',
+    c7: [{cvalue: String.fromCharCode(9823), cid: 'c33', cssclass: 'black-piece', kind: 'P', currentPosition: 'c7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn left bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
-    c8: [{cvalue: String.fromCharCode(9821), cid: '43', cssclass: 'black-piece', kind: 'B', currentPosition: 'c8', previousPosition: '',
+    c8: [{cvalue: String.fromCharCode(9821), cid: 'c43', cssclass: 'black-piece', kind: 'B', currentPosition: 'c8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black left bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    d1: [{cvalue: String.fromCharCode(9813), cid: '14', cssclass: 'white-piece', kind: 'Q', currentPosition: 'd1', previousPosition: '',
+    d1: [{cvalue: String.fromCharCode(9813), cid: 'c14', cssclass: 'white-piece', kind: 'Q', currentPosition: 'd1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white queen', cellsToPaint: [], disabled: this.whiteTurn}],
-    d2: [{cvalue: String.fromCharCode(9817), cid: '24', cssclass: 'white-piece', kind: 'P', currentPosition: 'd2', previousPosition: '',
+    d2: [{cvalue: String.fromCharCode(9817), cid: 'c24', cssclass: 'white-piece', kind: 'P', currentPosition: 'd2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn queen', cellsToPaint: [], disabled: this.whiteTurn}],
     d3: [],
     d4: [],
     d5: [],
     d6: [],
-    d7: [{cvalue: String.fromCharCode(9823), cid: '34', cssclass: 'black-piece', kind: 'P', currentPosition: 'd7', previousPosition: '',
+    d7: [{cvalue: String.fromCharCode(9823), cid: 'c34', cssclass: 'black-piece', kind: 'P', currentPosition: 'd7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn queen', cellsToPaint: [], disabled: !this.whiteTurn}],
-    d8: [{cvalue: String.fromCharCode(9819), cid: '44', cssclass: 'black-piece', kind: 'Q', currentPosition: 'd8', previousPosition: '',
+    d8: [{cvalue: String.fromCharCode(9819), cid: 'c44', cssclass: 'black-piece', kind: 'Q', currentPosition: 'd8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black queen', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    e1: [{cvalue: String.fromCharCode(9812), cid: '15', cssclass: 'white-piece', kind: 'K', currentPosition: 'e1', previousPosition: '',
+    e1: [{cvalue: String.fromCharCode(9812), cid: 'c15', cssclass: 'white-piece', kind: 'K', currentPosition: 'e1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white king', cellsToPaint: [], disabled: this.whiteTurn}],
-    e2: [{cvalue: String.fromCharCode(9817), cid: '25', cssclass: 'white-piece', kind: 'P', currentPosition: 'e2', previousPosition: '',
+    e2: [{cvalue: String.fromCharCode(9817), cid: 'c25', cssclass: 'white-piece', kind: 'P', currentPosition: 'e2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn king', cellsToPaint: [], disabled: this.whiteTurn}],
     e3: [],
     e4: [],
     e5: [],
     e6: [],
-    e7: [{cvalue: String.fromCharCode(9823), cid: '35', cssclass: 'black-piece', kind: 'P', currentPosition: 'e7', previousPosition: '',
+    e7: [{cvalue: String.fromCharCode(9823), cid: 'c35', cssclass: 'black-piece', kind: 'P', currentPosition: 'e7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn king', cellsToPaint: [], disabled: !this.whiteTurn}],
-    e8: [{cvalue: String.fromCharCode(9818), cid: '45', cssclass: 'black-piece', kind: 'K', currentPosition: 'e8', previousPosition: '',
+    e8: [{cvalue: String.fromCharCode(9818), cid: 'c45', cssclass: 'black-piece', kind: 'K', currentPosition: 'e8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black king', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    f1: [{cvalue: String.fromCharCode(9815), cid: '16', cssclass: 'white-piece', kind: 'B', currentPosition: 'f1', previousPosition: '',
+    f1: [{cvalue: String.fromCharCode(9815), cid: 'c16', cssclass: 'white-piece', kind: 'B', currentPosition: 'f1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white right bishop', cellsToPaint: [], disabled: this.whiteTurn}],
-    f2: [{cvalue: String.fromCharCode(9817), cid: '26', cssclass: 'white-piece', kind: 'P', currentPosition: 'f2', previousPosition: '',
+    f2: [{cvalue: String.fromCharCode(9817), cid: 'c26', cssclass: 'white-piece', kind: 'P', currentPosition: 'f2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn right bishop', cellsToPaint: [], disabled: this.whiteTurn}],
     f3: [],
     f4: [],
     f5: [],
     f6: [],
-    f7: [{cvalue: String.fromCharCode(9823), cid: '36', cssclass: 'black-piece', kind: 'P', currentPosition: 'f7', previousPosition: '',
+    f7: [{cvalue: String.fromCharCode(9823), cid: 'c36', cssclass: 'black-piece', kind: 'P', currentPosition: 'f7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn right bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
-    f8: [{cvalue: String.fromCharCode(9821), cid: '46', cssclass: 'black-piece', kind: 'B', currentPosition: 'f8', previousPosition: '',
+    f8: [{cvalue: String.fromCharCode(9821), cid: 'c46', cssclass: 'black-piece', kind: 'B', currentPosition: 'f8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black right bishop', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    g1: [{cvalue: String.fromCharCode(9816), cid: '17', cssclass: 'white-piece', kind: 'N', currentPosition: 'g1', previousPosition: '',
+    g1: [{cvalue: String.fromCharCode(9816), cid: 'c17', cssclass: 'white-piece', kind: 'N', currentPosition: 'g1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white right knight', cellsToPaint: [], disabled: this.whiteTurn}],
-    g2: [{cvalue: String.fromCharCode(9817), cid: '27', cssclass: 'white-piece', kind: 'P', currentPosition: 'g2', previousPosition: '',
+    g2: [{cvalue: String.fromCharCode(9817), cid: 'c27', cssclass: 'white-piece', kind: 'P', currentPosition: 'g2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn right knight', cellsToPaint: [], disabled: this.whiteTurn}],
     g3: [],
     g4: [],
     g5: [],
     g6: [],
-    g7: [{cvalue: String.fromCharCode(9823), cid: '37', cssclass: 'black-piece', kind: 'P', currentPosition: 'g7', previousPosition: '',
+    g7: [{cvalue: String.fromCharCode(9823), cid: 'c37', cssclass: 'black-piece', kind: 'P', currentPosition: 'g7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn right knight', cellsToPaint: [], disabled: !this.whiteTurn}],
-    g8: [{cvalue: String.fromCharCode(9822), cid: '47', cssclass: 'black-piece', kind: 'N', currentPosition: 'g8', previousPosition: '',
+    g8: [{cvalue: String.fromCharCode(9822), cid: 'c47', cssclass: 'black-piece', kind: 'N', currentPosition: 'g8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black right knight', cellsToPaint: [], disabled: !this.whiteTurn}],
 
-    h1: [{cvalue: String.fromCharCode(9814), cid: '18', cssclass: 'white-piece', kind: 'R', currentPosition: 'h1', previousPosition: '',
+    h1: [{cvalue: String.fromCharCode(9814), cid: 'c18', cssclass: 'white-piece', kind: 'R', currentPosition: 'h1', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white right rock', cellsToPaint: [], disabled: this.whiteTurn}],
-    h2: [{cvalue: String.fromCharCode(9817), cid: '28', cssclass: 'white-piece', kind: 'P', currentPosition: 'h2', previousPosition: '',
+    h2: [{cvalue: String.fromCharCode(9817), cid: 'c28', cssclass: 'white-piece', kind: 'P', currentPosition: 'h2', previousPosition: '',
           counterOfMoves: 0, color: 'W', named: 'white pawn right rock', cellsToPaint: [], disabled: this.whiteTurn}],
     h3: [],
     h4: [],
     h5: [],
     h6: [],
-    h7: [{cvalue: String.fromCharCode(9823), cid: '38', cssclass: 'black-piece', kind: 'P', currentPosition: 'h7', previousPosition: '',
+    h7: [{cvalue: String.fromCharCode(9823), cid: 'c38', cssclass: 'black-piece', kind: 'P', currentPosition: 'h7', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black right rock', cellsToPaint: [], disabled: !this.whiteTurn}],
-    h8: [{cvalue: String.fromCharCode(9820), cid: '48', cssclass: 'black-piece', kind: 'R', currentPosition: 'h8', previousPosition: '',
+    h8: [{cvalue: String.fromCharCode(9820), cid: 'c48', cssclass: 'black-piece', kind: 'R', currentPosition: 'h8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn right rock', cellsToPaint: [], disabled: !this.whiteTurn}]
   }
 
@@ -299,6 +289,16 @@ export class AppComponent {
     a2: true, b2: true, c2: true, d2: true, e2: true, f2: true, g2: true, h2: true,
     a1: true, b1: true, c1: true, d1: true, e1: true, f1: true, g1: true, h1: true
   };
+
+  whiteRockList = ['c11', 'c18'];
+  whiteKnightList = ['c12', 'c17'];
+  whiteBishopList = ['c13', 'c16'];
+  whiteQueenList = ['c14'];
+
+  blackRockList = ['c41', 'c48'];
+  blackKnightList = ['c42', 'c47'];
+  blackBishopList = ['c43', 'c46'];
+  blackQueenList = ['c44'];
 
   pieceAlive = {
     c11: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a1'},
@@ -345,6 +345,15 @@ export class AppComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
+      if (result === undefined) {
+        // If the player hits scapte Queen piece is selected
+        if (dataToSend.pieceColor === 'W') {
+          result = {value: String.fromCharCode(9813), kind: 'Q'};
+        } else {
+          result = {value: String.fromCharCode(9819), kind: 'Q'};
+        }
+      }
+
       this.promote = result;
       console.log('The dialog was closed');
       console.log(result);
@@ -353,10 +362,34 @@ export class AppComponent {
 
       this.currentMove = ELEMENT_DATA.pop();
       if (dataToSend.pieceColor === 'W') {
+        if (this.cells[dataToSend.currentCell][0]['kind'] === 'R') {
+          this.whiteRockList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        } else if (this.cells[dataToSend.currentCell][0]['kind'] === 'N') {
+          this.whiteKnightList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        } else if (this.cells[dataToSend.currentCell][0]['kind'] === 'B') {
+          this.whiteBishopList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        } else if (this.cells[dataToSend.currentCell][0]['kind'] === 'Q') {
+          this.whiteQueenList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        }
         this.currentMove.white = this.currentMove.white.concat('=').concat(result.value);
       } else {
+        if (this.cells[dataToSend.currentCell][0]['kind'] === 'R') {
+          this.blackRockList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        } else if (this.cells[dataToSend.currentCell][0]['kind'] === 'N') {
+          this.blackKnightList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        } else if (this.cells[dataToSend.currentCell][0]['kind'] === 'B') {
+          this.blackBishopList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        } else if (this.cells[dataToSend.currentCell][0]['kind'] === 'Q') {
+          this.blackQueenList.push(this.cells[dataToSend.currentCell][0]['cid']);
+        }
         this.currentMove.black = this.currentMove.black.concat('=').concat(result.value);
       }
+
+      this.pieceAlive[this.cells[dataToSend.currentCell][0]['cid']].currentCell =
+      this.cells[dataToSend.currentCell][0]['currentPosition'];
+      this.pieceAlive[this.cells[dataToSend.currentCell][0]['cid']].previousKind = 'P';
+      this.pieceAlive[this.cells[dataToSend.currentCell][0]['cid']].currentKind = result.kind;
+
       ELEMENT_DATA.push(this.currentMove);
       this.gameMoves.data.next(ELEMENT_DATA);
      })
@@ -502,7 +535,7 @@ export class AppComponent {
               }
             }
             // if the pawn is on the fifth rank it can capture en passant only if the opponent is at the left
-            if (this.rank === this.whiteEnPassantRank) {
+            if (+this.rank === this.whiteEnPassantRank) {
               tempCell = this.files[this.files.indexOf(this.file) - 1];
               tempCell = tempCell.concat((lrank - 1).toString());
               tempCellLeft = this.cells[tempCell];
@@ -510,9 +543,9 @@ export class AppComponent {
                 // En passant can be done only if the move of the opponent is the first move 
                 if (tempCellLeft[0].color === 'B' && tempCellLeft[0].counterOfMoves === 1) {
                   temp = new Turn();
-                  temp = this.blackMoves[this.whiteMoves.length - 1];
+                  temp = this.blackMoves[this.blackMoves.length - 1];
                   console.log(temp);
-                  // Just to confirm the current position of the opponent  
+                  // Just to confirm the current position of the opponent
                   if (temp.piece['kind'] === 'P' && tempCell === temp.piece['currentPosition']) {
                     tempCell = this.files[this.files.indexOf(this.file) - 1];
                     tempCell = tempCell.concat((lrank).toString());
@@ -537,14 +570,14 @@ export class AppComponent {
                 this.currentPiece['cellsToPaint'].push(tempCell);
               }
             }
-            if (this.rank === this.whiteEnPassantRank) {
+            if (+this.rank === this.whiteEnPassantRank) {
               tempCell = this.files[this.files.indexOf(this.file) + 1];
               tempCell = tempCell.concat((lrank - 1).toString());
               tempCellRight = this.cells[tempCell];
               if (tempCellRight.length !== 0) {
                 if (tempCellRight[0].color === 'B' && tempCellRight[0].counterOfMoves === 1) {
                   temp = new Turn();
-                  temp = this.blackMoves[this.whiteMoves.length - 1];
+                  temp = this.blackMoves[this.blackMoves.length - 1];
                   console.log(temp);
                   if (temp.piece['kind'] === 'P' && tempCell === temp.piece['currentPosition']) {
                     tempCell = this.files[this.files.indexOf(this.file) + 1];
@@ -580,7 +613,7 @@ export class AppComponent {
               tempCell = tempCell.concat((lrank + 1).toString());
               tempCellLeft = this.cells[tempCell];
               if (tempCellLeft.length !== 0) {
-                if (tempCellLeft[0].color === 'W'  && tempCellLeft[0].counterOfMoves === 1) {
+                if (tempCellLeft[0].color === 'W' && tempCellLeft[0].counterOfMoves === 1) {
                   temp = new Turn();
                   temp = this.whiteMoves[this.whiteMoves.length - 1];
                   console.log(temp);
@@ -645,7 +678,7 @@ export class AppComponent {
           }
         }
 
-        console.log('cell to paint');
+        console.log('cells to paint');
         console.log(this.currentPiece['cellsToPaint']);
       } else if (this.currentPiece['kind'] === 'R') {
         console.log('rock');
@@ -1386,6 +1419,7 @@ export class AppComponent {
     if (event.previousContainer !== event.container) {
       let dataToSend: DataToPromote;
       let takesPiece = false;
+      let pieceTaked = {};
       this.previousName = event.previousContainer.element.nativeElement.getAttribute('name');
       this.currentName = event.container.element.nativeElement.getAttribute('name');
       console.log('drop method');
@@ -1404,6 +1438,7 @@ export class AppComponent {
         // console.log(this.cells[this.previousName].length)
         if (this.cells[this.currentName].length === 1) {
           takesPiece = true;
+          pieceTaked = this.cells[this.currentName][0];
         }
 
         this.currentPiece['counterOfMoves']++;
@@ -1438,7 +1473,7 @@ export class AppComponent {
           // white is moving
           this.turnNumber++;
           this.currentTurn.turnNumber = this.turnNumber;
-          this.currentTurn.piece  = this.currentPiece;
+          this.currentTurn.piece = this.currentPiece;
           this.whiteMoves.push(this.currentTurn);
 
           this.currentMove = {turn: 0, white: '', black: ''};
@@ -1446,10 +1481,14 @@ export class AppComponent {
 
           if (this.currentPiece['kind'] === 'P') {
             if (takesPiece) {
+              this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
+              this.pieceAlive[pieceTaked['cid']].alive = false;
+
               this.currentMove.white = this.file.concat('x').concat(this.currentName);
             } else {
               this.currentMove.white = this.currentName;
             }
+            this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
             if (this.currentName.substring(1, 2) === '8') {
               // Promote
               dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'], 
@@ -1458,10 +1497,15 @@ export class AppComponent {
             }
           } else {
             if (takesPiece) {
+              this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
+              this.pieceAlive[pieceTaked['cid']].alive = false;
+
               this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
             } else {
               this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
             }
+
+            this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
 
           // If your move is the en Passant remove the opponent pawn
@@ -1478,6 +1522,7 @@ export class AppComponent {
             this.cells['f1'][0]['counterOfMoves']++;
             this.cells['f1'][0]['previousPosition'] = 'h1';
             this.cells['f1'][0]['currentPosition'] = 'f1';
+            this.pieceAlive[this.cells['f1'][0].cid].currentCell = 'f1';
             this.cells['h1'] = [];
             this.whiteShortCastlingMove = '';
             this.currentMove.white = 'O-O';
@@ -1489,6 +1534,7 @@ export class AppComponent {
             this.cells['d1'][0]['counterOfMoves']++;
             this.cells['d1'][0]['previousPosition'] = 'a1';
             this.cells['d1'][0]['currentPosition'] = 'd1';
+            this.pieceAlive[this.cells['d1'][0].cid].currentCell = 'd1';
             this.cells['a1'] = [];
             this.whiteLongCastlingMove = '';
             this.currentMove.white = 'O-O-O';
@@ -1507,10 +1553,14 @@ export class AppComponent {
 
           if (this.currentPiece['kind'] === 'P') {
             if (takesPiece) {
-                this.currentMove.black = this.file.concat('x').concat(this.currentName);
+              this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
+              this.pieceAlive[pieceTaked['cid']].alive = false;
+
+              this.currentMove.black = this.file.concat('x').concat(this.currentName);
             } else {
                 this.currentMove.black = this.currentName;
             }
+            this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
             if (this.currentName.substring(1, 2) === '1') {
               // Promote
               dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'],
@@ -1519,10 +1569,15 @@ export class AppComponent {
             }
           } else {
             if (takesPiece) {
+              this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
+              this.pieceAlive[pieceTaked['cid']].alive = false;
+
               this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
             } else {
               this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
             }
+
+            this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
 
           // If your move is the en Passant remove the opponent pawn
@@ -1539,7 +1594,7 @@ export class AppComponent {
             this.cells['f8'][0]['counterOfMoves']++;
             this.cells['f8'][0]['previousPosition'] = 'h8';
             this.cells['f8'][0]['currentPosition'] = 'f8';
-
+            this.pieceAlive[this.cells['f8'][0].cid].currentCell = 'f8';
             this.cells['h8'] = [];
             this.blackShortCastlingMove = '';
             this.currentMove.black = 'O-O';
@@ -1548,10 +1603,10 @@ export class AppComponent {
           // If your move is long castling
           if (this.blackLongCastlingMove !== '' && this.blackLongCastlingMove === this.currentName) {
             this.cells['d8'].push(this.cells['a8'][0]);
-            this.cells['a8'][0]['counterOfMoves']++;
-            this.cells['a8'][0]['previousPosition'] = 'a8';
-            this.cells['a8'][0]['currentPosition'] = 'd8';
-
+            this.cells['d8'][0]['counterOfMoves']++;
+            this.cells['d8'][0]['previousPosition'] = 'a8';
+            this.cells['d8'][0]['currentPosition'] = 'd8';
+            this.pieceAlive[this.cells['d8'][0].cid].currentCell = 'd8';
             this.cells['a8'] = [];
             this.blackLongCastlingMove = '';
             this.currentMove.black = 'O-O-O';
@@ -1560,7 +1615,7 @@ export class AppComponent {
           console.log(this.currentMove);
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
-        } 
+        }
 
         this.whiteTurn = !this.whiteTurn;
         this.disablePiece(this.whiteTurn);
@@ -1568,6 +1623,7 @@ export class AppComponent {
         console.log(this.whiteTurn);
         console.log(this.whiteMoves);
         console.log(this.blackMoves);
+        console.log(this.pieceAlive);
         //  console.log(event.container.data)
       }
     }

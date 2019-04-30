@@ -126,9 +126,11 @@
         Magnus Carlsen
     7. Maquinas jugando ajedrez:  Deep Blue
     8. Software jugando ajedrez:  Stockfish
-    9. Inteligencia Artificial ajedrez:  AlphaZero
+    9. Inteligencia Artificial ajedrez:  Lc0, AlphaZero
     10. Bases de Datos de Finales
     11. Software para mejorar en ajedrez:  GrandMaster
+    12. Herramientas y librerias de desarrollo
+    13. Evolucion del proyecto
 
 ## 06/04/2019
 
@@ -182,3 +184,5 @@
 
     https://en.wikipedia.org/wiki/Leela_Chess_Zero
     https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship
+
+    Se han completado 16 semanas de trabajo
