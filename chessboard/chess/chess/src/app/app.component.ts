@@ -441,7 +441,7 @@ export class AppComponent {
     }
   }
 
-  private cellsOfRock(file: string, rank: string) {
+  private cellsOfRock(file: string, rank: string, currentPiece: {}) {
     let lrank = 0;
     let i = 0;
     let follow = true;
@@ -466,7 +466,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -491,7 +491,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -516,7 +516,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -541,7 +541,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -558,7 +558,7 @@ export class AppComponent {
     return cellsToPaint;
   }
 
-  private cellsOfKnight(file: string, rank: string) {
+  private cellsOfKnight(file: string, rank: string, currentPiece: {}) {
     let lrank = 0;
     let tempCell = '';
 
@@ -581,7 +581,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank + 1).toString());
         tempCellLeftUp1 = this.cells[tempCell];
         if (tempCellLeftUp1.length !== 0) {
-          if (tempCellLeftUp1[0].color !== this.currentPiece['color']) {
+          if (tempCellLeftUp1[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -595,7 +595,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank + 2).toString());
         tempCellLeftUp2 = this.cells[tempCell];
         if (tempCellLeftUp2.length !== 0) {
-          if (tempCellLeftUp2[0].color !== this.currentPiece['color']) {
+          if (tempCellLeftUp2[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -609,7 +609,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank + 2).toString());
         tempCellRightUp1 = this.cells[tempCell];
         if (tempCellRightUp1.length !== 0) {
-          if (tempCellRightUp1[0].color !== this.currentPiece['color']) {
+          if (tempCellRightUp1[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -623,7 +623,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank + 1).toString());
         tempCellRightUp2 = this.cells[tempCell];
         if (tempCellRightUp2.length !== 0) {
-          if (tempCellRightUp2[0].color !== this.currentPiece['color']) {
+          if (tempCellRightUp2[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -637,7 +637,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank - 1).toString());
         tempCellRightDown1 = this.cells[tempCell];
         if (tempCellRightDown1.length !== 0) {
-          if (tempCellRightDown1[0].color !== this.currentPiece['color']) {
+          if (tempCellRightDown1[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -651,7 +651,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank - 2).toString());
         tempCellRightDown2 = this.cells[tempCell];
         if (tempCellRightDown2.length !== 0) {
-          if (tempCellRightDown2[0].color !== this.currentPiece['color']) {
+          if (tempCellRightDown2[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -665,7 +665,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank - 2).toString());
         tempCellLeftDown1 = this.cells[tempCell];
         if (tempCellLeftDown1.length !== 0) {
-          if (tempCellLeftDown1[0].color !== this.currentPiece['color']) {
+          if (tempCellLeftDown1[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -679,7 +679,7 @@ export class AppComponent {
         tempCell = tempCell.concat((lrank - 1).toString());
         tempCellLeftDown2 = this.cells[tempCell];
         if (tempCellLeftDown2.length !== 0) {
-          if (tempCellLeftDown2[0].color !== this.currentPiece['color']) {
+          if (tempCellLeftDown2[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
         } else {
@@ -692,7 +692,7 @@ export class AppComponent {
     return cellsToPaint;
   }
 
-  private cellsOfBishop(file: string, rank: string) {
+  private cellsOfBishop(file: string, rank: string, currentPiece: {}) {
     let lrank = 0;
     let i = 0;
     let follow = true;
@@ -719,7 +719,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -745,7 +745,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -771,7 +771,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -797,7 +797,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -815,7 +815,7 @@ export class AppComponent {
     return cellsToPaint;
   }
 
-  private cellsOfQueen(file: string, rank: string) {
+  private cellsOfQueen(file: string, rank: string, currentPiece: {}) {
     let lrank = 0;
     let i = 0;
     let follow = true;
@@ -840,7 +840,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -864,7 +864,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -889,7 +889,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -914,7 +914,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -940,7 +940,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -966,7 +966,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -992,7 +992,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
@@ -1018,7 +1018,7 @@ export class AppComponent {
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
-          if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
+          if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
           }
           follow = false;
