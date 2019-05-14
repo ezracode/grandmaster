@@ -2188,10 +2188,11 @@ export class AppComponent {
             if (takesPiece) {
               this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
               this.pieceAlive[pieceTaked['cid']].alive = false;
-
-              this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
+              // this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
+              this.currentMove.white = this.correctMoveNotation(file, rank, this.currentPiece).concat('x').concat(this.currentName);
             } else {
-              this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
+              // this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
+              this.currentMove.white = this.correctMoveNotation(file, rank, this.currentPiece).concat(this.currentName);
             }
 
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
