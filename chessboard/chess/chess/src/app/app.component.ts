@@ -8,6 +8,7 @@ import { Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { MatSelectModule } from '@angular/material';
+import { PortalHostDirective } from '@angular/cdk/portal';
 
 interface Piece {
   value: string;
@@ -1035,6 +1036,91 @@ export class AppComponent {
     return cellsToPaint;
   }
 
+  private correctMoveNotation(file: string, rank: string, currentPiece: {}) {
+    let currentMove = '';
+    let piecePosition = {};
+    let listOfPieces = [];
+    let numberOfOcurrences = 0;
+    const possiblePieces = [];
+
+    currentMove = file.concat(rank);
+
+    if (currentPiece['kind'] === 'R') {
+      // according to color the list of Rocks is sets
+      if (currentPiece['color'] === 'W') {
+        listOfPieces = this.whiteRockList;
+      } else {
+        listOfPieces = this.blackRockList;
+      }
+
+      // for every Rock in the list the available cells are listed
+      for (const piece of listOfPieces) {
+        piecePosition = this.pieceAlive[piece];
+        const cellsAllowed = this.cellsOfRock(file, rank, currentPiece);
+
+        // CurrentMove is searched in the available positions
+        const found = cellsAllowed.find(function(element) {
+          return element === currentMove;
+        });
+        if (found) {
+          possiblePieces.push(piece);
+          numberOfOcurrences++;
+        }
+        console.log('total of pieces pointing to this cell');
+        console.log(numberOfOcurrences);
+      }
+      if (possiblePieces.length === 1) {
+        // Single Notation
+        return this.currentPiece['kind'];
+      } else if (possiblePieces.length === 2) {
+        // File or Rank Notation
+        let filea = '';
+        let fileb = '';
+        let ranka = '';
+        let rankb = '';
+        let notation = '';
+
+        filea = this.pieceAlive[possiblePieces[0]['currentCell']];
+        ranka = this.pieceAlive[possiblePieces[0]['currentCell']];
+        filea = filea.substring(0, 1);
+        ranka = ranka.substring(1, 2);
+
+        fileb = this.pieceAlive[possiblePieces[1]['currentCell']];
+        rankb = this.pieceAlive[possiblePieces[1]['currentCell']];
+        fileb = fileb.substring(0, 1);
+        rankb = rankb.substring(1, 2);
+
+        if (ranka === rankb) {
+          notation = currentPiece['currentPosition'].substring(0, 1);
+        } else if (filea === fileb) {
+          notation = currentPiece['currentPosition'].substring(1, 2);
+        }
+
+      } else if (possiblePieces.length > 2) {
+        // Full Notation
+        return this.currentPiece['kind'].concat(file).concat(rank);
+      }
+    } else if (currentPiece['kind'] === 'K') {
+      if (currentPiece['color'] === 'W') {
+        listOfPieces = this.whiteKnightList;
+      } else {
+        listOfPieces = this.blackKnightList;
+      }
+    } else if (currentPiece['kind'] === 'B') {
+      if (currentPiece['color'] === 'W') {
+        listOfPieces = this.whiteBishopList;
+      } else {
+        listOfPieces = this.blackBishopList;
+      }
+    } else if (currentPiece['kind'] === 'Q') {
+      if (currentPiece['color'] === 'W') {
+        listOfPieces = this.whiteQueenList;
+      } else {
+        listOfPieces = this.blackQueenList;
+      }
+    }
+  }
+
   public allowdrop(item: CdkDrag, listItem: CdkDropList) {
     // console.log('alowdrop')
 
@@ -2010,18 +2096,27 @@ export class AppComponent {
   }
 
   drop(event: CdkDragDrop<string[]>) {
+    let file = '';
+    let rank = '';
+
     if (event.previousContainer !== event.container) {
       let dataToSend: DataToPromote;
       let takesPiece = false;
       let pieceTaked = {};
       this.previousName = event.previousContainer.element.nativeElement.getAttribute('name');
       this.currentName = event.container.element.nativeElement.getAttribute('name');
+
       console.log('drop method');
 
       // console.log(this.currentName)
       // console.log(this.previousName)
       // console.log(this.cells[this.currentName])
       this.currentPiece = this.cells[this.previousName][0];
+      file = this.currentPiece['currentPosition'];
+      rank = this.currentPiece['currentPosition'];
+      file = file.substring(0, 1);
+      rank = rank.substring(1, 2);
+
       // console.log(this.currentPiece['cvalue'])
 
       if (this.currentPiece['color'] === 'W' && !this.whiteTurn || this.currentPiece['color'] === 'B' && this.whiteTurn) {
