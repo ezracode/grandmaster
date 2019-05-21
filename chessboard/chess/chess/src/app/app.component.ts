@@ -267,7 +267,7 @@ export class AppComponent {
           counterOfMoves: 0, color: 'B', named: 'black right rock', cellsToPaint: [], disabled: !this.whiteTurn}],
     h8: [{cvalue: String.fromCharCode(9820), cid: 'c48', cssclass: 'black-piece', kind: 'R', currentPosition: 'h8', previousPosition: '',
           counterOfMoves: 0, color: 'B', named: 'black pawn right rock', cellsToPaint: [], disabled: !this.whiteTurn}]
-  }
+  };
 
   colorOfCurrentMove = {
     a8: false, b8: false, c8: false, d8: false, e8: false, f8: false, g8: false, h8: false,
@@ -442,7 +442,7 @@ export class AppComponent {
     }
   }
 
-  private cellsOfRock(targetCell: string, currentPiece: {}) {
+  private cellsOfRock(currentPiece: {}) {
     let file = '';
     let rank = '';
     let lrank = 0;
@@ -456,8 +456,6 @@ export class AppComponent {
     console.log('cells of rock');
     console.log('Piece to review');
     console.log(currentPiece);
-    console.log('Target cell');
-    console.log(targetCell);
 
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
@@ -564,12 +562,14 @@ export class AppComponent {
       }
       i++;
     }
-    console.log('function rock cells to paint');
+    console.log('function Rock cells to paint');
     console.log(cellsToPaint);
     return cellsToPaint;
   }
 
-  private cellsOfKnight(file: string, rank: string, currentPiece: {}) {
+  private cellsOfKnight(currentPiece: {}) {
+    let file = '';
+    let rank = '';
     let lrank = 0;
     let tempCell = '';
 
@@ -583,6 +583,9 @@ export class AppComponent {
     let tempCellLeftDown2 = [];
 
     const cellsToPaint = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
 
     lrank = +rank;
 
@@ -698,12 +701,14 @@ export class AppComponent {
         }
     }
 
-    console.log('cells to paint');
+    console.log('function Knight cells to paint');
     console.log(cellsToPaint);
     return cellsToPaint;
   }
 
-  private cellsOfBishop(file: string, rank: string, currentPiece: {}) {
+  private cellsOfBishop(currentPiece: {}) {
+    let file = '';
+    let rank = '';
     let lrank = 0;
     let i = 0;
     let follow = true;
@@ -712,6 +717,9 @@ export class AppComponent {
     let tempCellDiagonal = [];
 
     const cellsToPaint = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
 
     console.log('bishop');
 
@@ -821,12 +829,14 @@ export class AppComponent {
       i++;
     }
 
-    console.log('cells to paint');
+    console.log('function Bishop cells to paint');
     console.log(cellsToPaint);
     return cellsToPaint;
   }
 
-  private cellsOfQueen(file: string, rank: string, currentPiece: {}) {
+  private cellsOfQueen(currentPiece: {}) {
+    let file = '';
+    let rank = '';
     let lrank = 0;
     let i = 0;
     let follow = true;
@@ -835,6 +845,9 @@ export class AppComponent {
     let tempCellDiagonal = [];
 
     const cellsToPaint = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
 
     console.log('queen');
 
@@ -1041,7 +1054,7 @@ export class AppComponent {
       }
       i++;
     }
-    console.log('cells to paint');
+    console.log('function Queen cells to paint');
     console.log(cellsToPaint);
     return cellsToPaint;
   }
@@ -1062,83 +1075,7 @@ export class AppComponent {
       } else {
         listOfPieces = this.blackRockList;
       }
-
-      console.log('List of Pieces');
-      console.log(listOfPieces);
-      console.log('Current move');
-      console.log(targetCell);
-      console.log('coordinates');
-      console.log(file);
-      console.log(rank);
-      // for every Rock in the list the available cells are listed
-      for (const piece of listOfPieces) {
-        piecePosition = this.pieceAlive[piece].currentCell;
-        console.log('Piece');
-        console.log(piece);
-        console.log('Piece Position');
-        console.log(piecePosition);
-
-        const cellsAllowed = this.cellsOfRock(targetCell, this.cells[piecePosition][0]);
-        console.log('Cells Allowed');
-        console.log(cellsAllowed);
-
-        // CurrentMove is searched in the available positions
-        const found = cellsAllowed.find(function(element) {
-          return element === targetCell;
-        });
-        if (found) {
-          possiblePieces.push(piece);
-          numberOfOcurrences++;
-        }
-      }
-
-      console.log('total of pieces pointing to this cell');
-      console.log(numberOfOcurrences);
-
-      console.log('Possible Pieces');
-      console.log(possiblePieces);
-
-      if (possiblePieces.length === 1) {
-        // Single Notation
-        return this.currentPiece['kind'];
-      } else if (possiblePieces.length === 2) {
-        // File or Rank Notation
-        let filea = '';
-        let fileb = '';
-        let ranka = '';
-        let rankb = '';
-        let notation = '';
-
-        console.log('Two Options');
-        filea = this.pieceAlive[possiblePieces[0]]['currentCell'];
-        ranka = this.pieceAlive[possiblePieces[0]]['currentCell'];
-        console.log('First');
-        console.log(filea);
-        console.log(ranka);
-        filea = filea.substring(0, 1);
-        ranka = ranka.substring(1, 2);
-
-        fileb = this.pieceAlive[possiblePieces[1]]['currentCell'];
-        rankb = this.pieceAlive[possiblePieces[1]]['currentCell'];
-        console.log('Second');
-        console.log(fileb);
-        console.log(rankb);
-        fileb = fileb.substring(0, 1);
-        rankb = rankb.substring(1, 2);
-
-        if (ranka === rankb) {
-          notation = currentPiece['currentPosition'].substring(0, 1);
-        } else if (filea === fileb) {
-          notation = currentPiece['currentPosition'].substring(1, 2);
-        } else {
-          notation = currentPiece['currentPosition'].substring(0, 1);
-        }
-        return this.currentPiece['kind'].concat(notation);
-      } else if (possiblePieces.length > 2) {
-        // Full Notation
-        return this.currentPiece['kind'].concat(file).concat(rank);
-      }
-    } else if (currentPiece['kind'] === 'K') {
+    } else if (currentPiece['kind'] === 'N') {
       if (currentPiece['color'] === 'W') {
         listOfPieces = this.whiteKnightList;
       } else {
@@ -1156,6 +1093,73 @@ export class AppComponent {
       } else {
         listOfPieces = this.blackQueenList;
       }
+    }
+
+    console.log('List');
+    console.log(listOfPieces);
+
+    let cellsAllowed = [];
+    // for every piece in the list the available cells are listed
+    for (const piece of listOfPieces) {
+      piecePosition = this.pieceAlive[piece].currentCell;
+      console.log('Pieces');
+      console.log(piece);
+
+      if (currentPiece['kind'] === 'R') {
+        cellsAllowed = this.cellsOfRock(this.cells[piecePosition][0]);
+      } else if (currentPiece['kind'] === 'N') {
+        cellsAllowed = this.cellsOfKnight(this.cells[piecePosition][0]);
+      } else if (currentPiece['kind'] === 'B') {
+        cellsAllowed = this.cellsOfBishop(this.cells[piecePosition][0]);
+      } else if (currentPiece['kind'] === 'Q') {
+        cellsAllowed = this.cellsOfQueen(this.cells[piecePosition][0]);
+      }
+
+      // CurrentMove is searched in the available positions
+      const found = cellsAllowed.find(function(element) {
+        return element === targetCell;
+      });
+      if (found) {
+        possiblePieces.push(piece);
+        numberOfOcurrences++;
+      }
+    }
+
+    console.log('Posible Pieces');
+    console.log(possiblePieces);
+
+    if (possiblePieces.length === 1) {
+      // Single Notation
+      return this.currentPiece['kind'];
+    } else if (possiblePieces.length === 2) {
+      // File or Rank Notation
+      let filea = '';
+      let fileb = '';
+      let ranka = '';
+      let rankb = '';
+      let notation = '';
+
+      filea = this.pieceAlive[possiblePieces[0]]['currentCell'];
+      ranka = this.pieceAlive[possiblePieces[0]]['currentCell'];
+      filea = filea.substring(0, 1);
+      ranka = ranka.substring(1, 2);
+
+      fileb = this.pieceAlive[possiblePieces[1]]['currentCell'];
+      rankb = this.pieceAlive[possiblePieces[1]]['currentCell'];
+      fileb = fileb.substring(0, 1);
+      rankb = rankb.substring(1, 2);
+
+      if (ranka === rankb) {
+        notation = currentPiece['currentPosition'].substring(0, 1);
+      } else if (filea === fileb) {
+        notation = currentPiece['currentPosition'].substring(1, 2);
+      } else {
+        notation = currentPiece['currentPosition'].substring(0, 1);
+      }
+      return this.currentPiece['kind'].concat(notation);
+    } else if (possiblePieces.length > 2) {
+      // Full Notation
+      return this.currentPiece['kind'].concat(file).concat(rank);
     }
   }
 
@@ -2291,7 +2295,7 @@ export class AppComponent {
 
               this.currentMove.black = this.file.concat('x').concat(this.currentName);
             } else {
-                this.currentMove.black = this.currentName;
+              this.currentMove.black = this.currentName;
             }
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
             if (this.currentName.substring(1, 2) === '1') {
@@ -2305,9 +2309,11 @@ export class AppComponent {
               this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
               this.pieceAlive[pieceTaked['cid']].alive = false;
 
-              this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
+              // this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
+              this.currentMove.black = currentNotationMove.concat('x').concat(this.currentName);
             } else {
-              this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
+              // this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
+              this.currentMove.black = currentNotationMove.concat(this.currentName);
             }
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
