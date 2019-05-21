@@ -318,22 +318,22 @@ export class AppComponent {
     c26: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f2', previousKind: ''},
     c27: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g2', previousKind: ''},
     c28: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h2', previousKind: ''},
-    c31: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'a3', previousKind: ''},
-    c32: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'b3', previousKind: ''},
-    c33: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'c3', previousKind: ''},
-    c34: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'd3', previousKind: ''},
-    c35: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'e3', previousKind: ''},
-    c36: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f3', previousKind: ''},
-    c37: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g3', previousKind: ''},
-    c38: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h3', previousKind: ''},
-    c41: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a4'},
-    c42: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'b4'},
-    c43: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'c4'},
-    c44: {alive: true, currentKind: 'Q', capturedBy: '', currentCell: 'd4'},
-    c45: {alive: true, currentKind: 'K', capturedBy: '', currentCell: 'e4'},
-    c46: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'f4'},
-    c47: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'g4'},
-    c48: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'h4'}
+    c31: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'a7', previousKind: ''},
+    c32: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'b7', previousKind: ''},
+    c33: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'c7', previousKind: ''},
+    c34: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'd7', previousKind: ''},
+    c35: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'e7', previousKind: ''},
+    c36: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f7', previousKind: ''},
+    c37: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g7', previousKind: ''},
+    c38: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h7', previousKind: ''},
+    c41: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a8'},
+    c42: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'b8'},
+    c43: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'c8'},
+    c44: {alive: true, currentKind: 'Q', capturedBy: '', currentCell: 'd8'},
+    c45: {alive: true, currentKind: 'K', capturedBy: '', currentCell: 'e8'},
+    c46: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'f8'},
+    c47: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'g8'},
+    c48: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'h8'}
   };
 
   openDialog(dataToSend: DataToPromote): void {
@@ -442,7 +442,9 @@ export class AppComponent {
     }
   }
 
-  private cellsOfRock(file: string, rank: string, currentPiece: {}) {
+  private cellsOfRock(targetCell: string, currentPiece: {}) {
+    let file = '';
+    let rank = '';
     let lrank = 0;
     let i = 0;
     let follow = true;
@@ -451,7 +453,14 @@ export class AppComponent {
     let tempCellDiagonal = [];
     const cellsToPaint = [];
 
-    console.log('rock');
+    console.log('cells of rock');
+    console.log('Piece to review');
+    console.log(currentPiece);
+    console.log('Target cell');
+    console.log(targetCell);
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
 
     // left
     console.log('left');
@@ -531,6 +540,7 @@ export class AppComponent {
     }
     // up
     console.log('up');
+    console.log(currentPiece['color']);
     follow = true;
     i = 1;
     while (follow) {
@@ -554,7 +564,7 @@ export class AppComponent {
       }
       i++;
     }
-    console.log('cells to paint');
+    console.log('function rock cells to paint');
     console.log(cellsToPaint);
     return cellsToPaint;
   }
@@ -1036,15 +1046,15 @@ export class AppComponent {
     return cellsToPaint;
   }
 
-  private correctMoveNotation(file: string, rank: string, currentPiece: {}) {
+  private correctMoveNotation(file: string, rank: string, targetCell: string, currentPiece: {}) {
     let currentMove = '';
-    let piecePosition = {};
+    let piecePosition = '';
     let listOfPieces = [];
     let numberOfOcurrences = 0;
     const possiblePieces = [];
 
     currentMove = file.concat(rank);
-
+    console.log('Correct Move Notation');
     if (currentPiece['kind'] === 'R') {
       // according to color the list of Rocks is sets
       if (currentPiece['color'] === 'W') {
@@ -1053,22 +1063,41 @@ export class AppComponent {
         listOfPieces = this.blackRockList;
       }
 
+      console.log('List of Pieces');
+      console.log(listOfPieces);
+      console.log('Current move');
+      console.log(targetCell);
+      console.log('coordinates');
+      console.log(file);
+      console.log(rank);
       // for every Rock in the list the available cells are listed
       for (const piece of listOfPieces) {
-        piecePosition = this.pieceAlive[piece];
-        const cellsAllowed = this.cellsOfRock(file, rank, currentPiece);
+        piecePosition = this.pieceAlive[piece].currentCell;
+        console.log('Piece');
+        console.log(piece);
+        console.log('Piece Position');
+        console.log(piecePosition);
+
+        const cellsAllowed = this.cellsOfRock(targetCell, this.cells[piecePosition][0]);
+        console.log('Cells Allowed');
+        console.log(cellsAllowed);
 
         // CurrentMove is searched in the available positions
         const found = cellsAllowed.find(function(element) {
-          return element === currentMove;
+          return element === targetCell;
         });
         if (found) {
           possiblePieces.push(piece);
           numberOfOcurrences++;
         }
-        console.log('total of pieces pointing to this cell');
-        console.log(numberOfOcurrences);
       }
+
+      console.log('total of pieces pointing to this cell');
+      console.log(numberOfOcurrences);
+
+      console.log('Possible Pieces');
+      console.log(possiblePieces);
+
       if (possiblePieces.length === 1) {
         // Single Notation
         return this.currentPiece['kind'];
@@ -1080,13 +1109,20 @@ export class AppComponent {
         let rankb = '';
         let notation = '';
 
-        filea = this.pieceAlive[possiblePieces[0]['currentCell']];
-        ranka = this.pieceAlive[possiblePieces[0]['currentCell']];
+        console.log('Two Options');
+        filea = this.pieceAlive[possiblePieces[0]]['currentCell'];
+        ranka = this.pieceAlive[possiblePieces[0]]['currentCell'];
+        console.log('First');
+        console.log(filea);
+        console.log(ranka);
         filea = filea.substring(0, 1);
         ranka = ranka.substring(1, 2);
 
-        fileb = this.pieceAlive[possiblePieces[1]['currentCell']];
-        rankb = this.pieceAlive[possiblePieces[1]['currentCell']];
+        fileb = this.pieceAlive[possiblePieces[1]]['currentCell'];
+        rankb = this.pieceAlive[possiblePieces[1]]['currentCell'];
+        console.log('Second');
+        console.log(fileb);
+        console.log(rankb);
         fileb = fileb.substring(0, 1);
         rankb = rankb.substring(1, 2);
 
@@ -1094,8 +1130,10 @@ export class AppComponent {
           notation = currentPiece['currentPosition'].substring(0, 1);
         } else if (filea === fileb) {
           notation = currentPiece['currentPosition'].substring(1, 2);
+        } else {
+          notation = currentPiece['currentPosition'].substring(0, 1);
         }
-
+        return this.currentPiece['kind'].concat(notation);
       } else if (possiblePieces.length > 2) {
         // Full Notation
         return this.currentPiece['kind'].concat(file).concat(rank);
@@ -1357,9 +1395,6 @@ export class AppComponent {
             this.currentPiece['cellsToPaint'].push(this.file.concat(lrank.toString()));
           }
         }
-
-        console.log('cells to paint');
-        console.log(this.currentPiece['cellsToPaint']);
       } else if (this.currentPiece['kind'] === 'R') {
         console.log('rock');
 
@@ -1578,10 +1613,6 @@ export class AppComponent {
               this.currentPiece['cellsToPaint'].push(tempCell);
             }
         }
-
-        console.log('cell to paint');
-        console.log(this.currentPiece['cellsToPaint']);
-
       } else if (this.currentPiece['kind'] === 'B') {
         console.log('bishop');
 
@@ -2089,6 +2120,8 @@ export class AppComponent {
           }
         }
       }
+      console.log('cells to paint');
+      console.log(this.currentPiece['cellsToPaint']);
       for (const item of this.currentPiece['cellsToPaint']) {
         this.status[item] = false;
       }
@@ -2100,6 +2133,7 @@ export class AppComponent {
     let rank = '';
 
     if (event.previousContainer !== event.container) {
+      let currentNotationMove = '';
       let dataToSend: DataToPromote;
       let takesPiece = false;
       let pieceTaked = {};
@@ -2128,6 +2162,10 @@ export class AppComponent {
         if (this.cells[this.currentName].length === 1) {
           takesPiece = true;
           pieceTaked = this.cells[this.currentName][0];
+        }
+
+        if (this.currentPiece['kind'] !== 'P') {
+          currentNotationMove = this.correctMoveNotation(file, rank, this.currentName, this.currentPiece);
         }
 
         this.currentPiece['counterOfMoves']++;
@@ -2189,12 +2227,11 @@ export class AppComponent {
               this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
               this.pieceAlive[pieceTaked['cid']].alive = false;
               // this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
-              this.currentMove.white = this.correctMoveNotation(file, rank, this.currentPiece).concat('x').concat(this.currentName);
+              this.currentMove.white = currentNotationMove.concat('x').concat(this.currentName);
             } else {
               // this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
-              this.currentMove.white = this.correctMoveNotation(file, rank, this.currentPiece).concat(this.currentName);
+              this.currentMove.white = currentNotationMove.concat(this.currentName);
             }
-
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
 
@@ -2272,7 +2309,6 @@ export class AppComponent {
             } else {
               this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
             }
-
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
 
@@ -2326,9 +2362,7 @@ export class AppComponent {
         console.log(this.whiteMoves);
         console.log(this.blackMoves);
         console.log(this.pieceAlive);
-        console.log(this.whiteQueenList);
-        console.log(this.blackQueenList);
-
+        console.log(this.cells);
         //  console.log(event.container.data)
       }
     }
