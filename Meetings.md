@@ -186,3 +186,26 @@
     https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship
 
     Se han completado 16 semanas de trabajo
+
+## 21/05/2019
+
+    Se completaron 19 semanas de trabajo.
+
+    Se completó la notación para los casos de dos o mas piezas en una misma fila o columnas.
+
+    Queda pendiente los siguientes temas:
+
+    1. Pinned de las piezas cuando defienden al rey
+    2. Jaque
+    3. Jaque Mate
+    4. Notación algebraica de Jaque y Jaque Mate
+    5. Rey ahogado
+    6. Evitar el enroque si las casillas donde pasa el rey estan amenazadas.
+    7. Evitar el enroque si al hacer el movimiento el rey queda en jaque.
+    8. Empate por material insuficiente
+    9. Boton de retroceso del log del juego
+    10. Boton de avance del log del juego
+
+## 24/05/2019
+
+    Se completaron 20 semanas de trabajo
