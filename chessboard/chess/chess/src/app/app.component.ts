@@ -291,6 +291,9 @@ export class AppComponent {
     a1: true, b1: true, c1: true, d1: true, e1: true, f1: true, g1: true, h1: true
   };
 
+  whiteThreatPieces = [];
+  blackThreatPieces = [];
+
   whiteRockList = ['c11', 'c18'];
   whiteKnightList = ['c12', 'c17'];
   whiteBishopList = ['c13', 'c16'];
@@ -373,6 +376,7 @@ export class AppComponent {
           this.whiteQueenList.push(this.cells[dataToSend.currentCell][0]['cid']);
         }
         this.currentMove.white = this.currentMove.white.concat('=').concat(result.value);
+        this.reviewIfWhiteCheck();
       } else {
         if (this.cells[dataToSend.currentCell][0]['kind'] === 'R') {
           this.blackRockList.push(this.cells[dataToSend.currentCell][0]['cid']);
@@ -384,6 +388,7 @@ export class AppComponent {
           this.blackQueenList.push(this.cells[dataToSend.currentCell][0]['cid']);
         }
         this.currentMove.black = this.currentMove.black.concat('=').concat(result.value);
+        this.reviewIfBlackCheck();
       }
 
       this.pieceAlive[this.cells[dataToSend.currentCell][0]['cid']].currentCell =
@@ -393,7 +398,7 @@ export class AppComponent {
 
       ELEMENT_DATA.push(this.currentMove);
       this.gameMoves.data.next(ELEMENT_DATA);
-     })
+     });
   }
 
   ngOnInit() {
@@ -1059,6 +1064,344 @@ export class AppComponent {
     return cellsToPaint;
   }
 
+  private check(currentPiece: {}) {
+    let file = '';
+    let rank = '';
+    let lrank = 0;
+    let i = 0;
+    let follow = true;
+    let tempCell = '';
+
+    let tempCellDiagonal = [];
+    let tempCellLeftUp1 = [];
+    let tempCellLeftUp2 = [];
+    let tempCellRightUp1 = [];
+    let tempCellRightUp2 = [];
+    let tempCellRightDown1 = [];
+    let tempCellRightDown2 = [];
+    let tempCellLeftDown1 = [];
+    let tempCellLeftDown2 = [];
+
+    const cellsToPaint = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
+
+    console.log('check');
+    console.log('current piece');
+    console.log(currentPiece);
+
+    // left
+    console.log('left');
+    lrank = +rank;
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined) {
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right
+    console.log('right');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined) {
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // down
+    console.log('down');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file)];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // up
+    console.log('up');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file)];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // left and up
+    console.log('left and up');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined
+          && lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        } 
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right and up
+    console.log('right and up');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined
+          && lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // left and down
+    console.log('left and down');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined
+          && lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right and down
+    console.log('right and down');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined
+          && lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+
+    // possible positions of knights
+
+    if ((this.files[this.files.indexOf(file) - 2] !== undefined) &&
+      (lrank + 1 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 2];
+        tempCell = tempCell.concat((lrank + 1).toString());
+        tempCellLeftUp1 = this.cells[tempCell];
+        if (tempCellLeftUp1.length !== 0) {
+          if ((tempCellLeftUp1[0].color !== currentPiece['color']) &&
+             (tempCellLeftUp1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) - 1] !== undefined) &&
+      (lrank + 2 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 1];
+        tempCell = tempCell.concat((lrank + 2).toString());
+        tempCellLeftUp2 = this.cells[tempCell];
+        if (tempCellLeftUp2.length !== 0) {
+          if ((tempCellLeftUp2[0].color !== currentPiece['color']) &&
+             (tempCellLeftUp2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 1] !== undefined) &&
+      (lrank + 2 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 1];
+        tempCell = tempCell.concat((lrank + 2).toString());
+        tempCellRightUp1 = this.cells[tempCell];
+        if (tempCellRightUp1.length !== 0) {
+          if ((tempCellRightUp1[0].color !== currentPiece['color']) &&
+             (tempCellRightUp1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 2] !== undefined) &&
+      (lrank + 1 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 2];
+        tempCell = tempCell.concat((lrank + 1).toString());
+        tempCellRightUp2 = this.cells[tempCell];
+        if (tempCellRightUp2.length !== 0) {
+          if ((tempCellRightUp2[0].color !== currentPiece['color']) &&
+             (tempCellRightUp2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 2] !== undefined) &&
+      (lrank - 1 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 2];
+        tempCell = tempCell.concat((lrank - 1).toString());
+        tempCellRightDown1 = this.cells[tempCell];
+        if (tempCellRightDown1.length !== 0) {
+          if ((tempCellRightDown1[0].color !== currentPiece['color']) &&
+             (tempCellRightDown1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 1] !== undefined) &&
+      (lrank - 2 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 1];
+        tempCell = tempCell.concat((lrank - 2).toString());
+        tempCellRightDown2 = this.cells[tempCell];
+        if (tempCellRightDown2.length !== 0) {
+          if ((tempCellRightDown2[0].color !== currentPiece['color']) &&
+             (tempCellRightDown2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) - 1] !== undefined) &&
+      (lrank - 2 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 1];
+        tempCell = tempCell.concat((lrank - 2).toString());
+        tempCellLeftDown1 = this.cells[tempCell];
+        if (tempCellLeftDown1.length !== 0) {
+          if ((tempCellLeftDown1[0].color !== currentPiece['color']) &&
+             (tempCellLeftDown1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) - 2] !== undefined) &&
+      (lrank - 1 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 2];
+        tempCell = tempCell.concat((lrank - 1).toString());
+        tempCellLeftDown2 = this.cells[tempCell];
+        if (tempCellLeftDown2.length !== 0) {
+          if ((tempCellLeftDown2[0].color !== currentPiece['color']) &&
+             (tempCellLeftDown2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    console.log('function Check cells to paint');
+    console.log(cellsToPaint);
+    return cellsToPaint;
+  }
+
   private correctMoveNotation(file: string, rank: string, targetCell: string, currentPiece: {}) {
     let currentMove = '';
     let piecePosition = '';
@@ -1125,7 +1468,7 @@ export class AppComponent {
       }
     }
 
-    console.log('Posible Pieces');
+    console.log('Possible Pieces');
     console.log(possiblePieces);
 
     if (possiblePieces.length === 1) {
@@ -2132,6 +2475,26 @@ export class AppComponent {
     }
   }
 
+  private reviewIfWhiteCheck(): void {
+    this.blackThreatPieces = [];
+    this.blackThreatPieces = this.check(this.cells[this.pieceAlive.c45.currentCell][0]);
+    console.log('threat pieces');
+    console.log(this.blackThreatPieces);
+    if (this.blackThreatPieces.length > 0) {
+      this.currentMove.white = this.currentMove.white.concat('+');
+    }
+  }
+
+  private reviewIfBlackCheck(): void {
+    this.whiteThreatPieces = [];
+    this.whiteThreatPieces = this.check(this.cells[this.pieceAlive.c15.currentCell][0]);
+    console.log('threat pieces');
+    console.log(this.whiteThreatPieces);
+    if (this.whiteThreatPieces.length > 0) {
+      this.currentMove.black = this.currentMove.black.concat('+');
+    }
+  }
+
   drop(event: CdkDragDrop<string[]>) {
     let file = '';
     let rank = '';
@@ -2168,7 +2531,7 @@ export class AppComponent {
           pieceTaked = this.cells[this.currentName][0];
         }
 
-        if (this.currentPiece['kind'] !== 'P') {
+        if (this.currentPiece['kind'] !== 'P' && this.currentPiece['kind'] !== 'K') {
           currentNotationMove = this.correctMoveNotation(file, rank, this.currentName, this.currentPiece);
         }
 
@@ -2219,10 +2582,13 @@ export class AppComponent {
             } else {
               this.currentMove.white = this.currentName;
             }
+
+            this.reviewIfWhiteCheck();
+
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
             if (this.currentName.substring(1, 2) === '8') {
               // Promote
-              dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'], 
+              dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'],
                             currentCell: this.currentName, setOfPieces: this.whitePieces, selected: '', pieceColor: 'W'};
               this.openDialog(dataToSend);
             }
@@ -2230,12 +2596,23 @@ export class AppComponent {
             if (takesPiece) {
               this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
               this.pieceAlive[pieceTaked['cid']].alive = false;
-              // this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
-              this.currentMove.white = currentNotationMove.concat('x').concat(this.currentName);
+              // You cannot make check with King
+              if (this.currentPiece['kind'] === 'K') {
+                this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
+              } else {
+                this.currentMove.white = currentNotationMove.concat('x').concat(this.currentName);
+                this.reviewIfWhiteCheck();
+              }
             } else {
-              // this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
-              this.currentMove.white = currentNotationMove.concat(this.currentName);
+              // You cannot make check with King
+              if (this.currentPiece['kind'] === 'K') {
+                this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
+              } else {
+                this.currentMove.white = currentNotationMove.concat(this.currentName);
+                this.reviewIfWhiteCheck();
+              }
             }
+
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
 
@@ -2251,6 +2628,8 @@ export class AppComponent {
             this.pieceAlive[pieceTaked['cid']].alive = false;
 
             this.currentMove.white = this.file.concat('x').concat(this.currentName).concat('e.p.');
+
+            this.reviewIfWhiteCheck();
           }
 
           // If your move is short castling
@@ -2263,6 +2642,7 @@ export class AppComponent {
             this.cells['h1'] = [];
             this.whiteShortCastlingMove = '';
             this.currentMove.white = 'O-O';
+            this.reviewIfWhiteCheck();
           }
 
           // If your move is long castling
@@ -2275,6 +2655,7 @@ export class AppComponent {
             this.cells['a1'] = [];
             this.whiteLongCastlingMove = '';
             this.currentMove.white = 'O-O-O';
+            this.reviewIfWhiteCheck();
           }
 
           // this.currentMove.black = ''
@@ -2297,6 +2678,9 @@ export class AppComponent {
             } else {
               this.currentMove.black = this.currentName;
             }
+
+            this.reviewIfBlackCheck();
+
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
             if (this.currentName.substring(1, 2) === '1') {
               // Promote
@@ -2309,12 +2693,23 @@ export class AppComponent {
               this.pieceAlive[pieceTaked['cid']].capturedBy = this.cells[this.currentName][0].cid;
               this.pieceAlive[pieceTaked['cid']].alive = false;
 
-              // this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
-              this.currentMove.black = currentNotationMove.concat('x').concat(this.currentName);
+              // You cannot make check with King
+              if (this.currentPiece['kind'] === 'K') {
+                this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
+              } else {
+                this.currentMove.black = currentNotationMove.concat('x').concat(this.currentName);
+                this.reviewIfBlackCheck();
+              }
             } else {
-              // this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
-              this.currentMove.black = currentNotationMove.concat(this.currentName);
+              // You cannot make check with King
+              if (this.currentPiece['kind'] === 'K') {
+                this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
+              } else {
+                this.currentMove.black = currentNotationMove.concat(this.currentName);
+                this.reviewIfBlackCheck();
+              }
             }
+
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
           }
 
@@ -2330,6 +2725,7 @@ export class AppComponent {
             this.pieceAlive[pieceTaked['cid']].alive = false;
 
             this.currentMove.black = this.file.concat('x').concat(this.currentName).concat('e.p.');
+            this.reviewIfBlackCheck();
           }
 
           // If your move is short castling
@@ -2342,6 +2738,7 @@ export class AppComponent {
             this.cells['h8'] = [];
             this.blackShortCastlingMove = '';
             this.currentMove.black = 'O-O';
+            this.reviewIfBlackCheck();
           }
 
           // If your move is long castling
@@ -2354,6 +2751,7 @@ export class AppComponent {
             this.cells['a8'] = [];
             this.blackLongCastlingMove = '';
             this.currentMove.black = 'O-O-O';
+            this.reviewIfBlackCheck();
           }
 
           console.log(this.currentMove);
