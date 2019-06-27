@@ -293,6 +293,8 @@ export class AppComponent {
 
   whiteThreatPieces = [];
   blackThreatPieces = [];
+  whiteCheck = false;
+  blackCheck = false;
 
   whiteRockList = ['c11', 'c18'];
   whiteKnightList = ['c12', 'c17'];
@@ -433,13 +435,13 @@ export class AppComponent {
     });
 
     if (found) {
-      if( ((+rank) % 2) !== 0 ) {
+      if (((+rank) % 2) !== 0) {
           return ('B');
       } else {
           return ('W');
       }
     } else {
-        if( ((+rank) % 2) !== 0 ) {
+        if (((+rank) % 2) !== 0) {
             return ('W');
         } else {
             return ('B');
@@ -1522,11 +1524,53 @@ export class AppComponent {
 
   public ended(event: CdkDragEnd) {
     console.log('ended method');
+    let threatedCells = [];
 
     this.currentName = event.source.element.nativeElement.getAttribute('name');
     this.currentPiece = this.cells[this.previousName][0];
-    for (const item of this.currentPiece['cellsToPaint']) {
-      this.status[item] = true;
+
+    if (!this.whiteTurn) {
+      threatedCells = this.whiteThreatPieces;
+    } else {
+      threatedCells = this.blackThreatPieces;
+    }
+
+    console.log('Threat Cells');
+    console.log(threatedCells);
+
+    if (this.currentPiece['kind'] === 'K') {
+
+      const forbiddenCells = [];
+
+      let tempCells = [];
+      for (const item of threatedCells) {
+        if (this.cells[item][0].kind === 'R') {
+          tempCells = this.cellsOfRock(this.cells[item][0]);
+        } else if (this.cells[item][0].kind === 'B') {
+          tempCells = this.cellsOfBishop(this.cells[item][0]);
+        } else if (this.cells[item][0].kind === 'N') {
+          tempCells = this.cellsOfKnight(this.cells[item][0]);
+        } else if (this.cells[item][0].kind === 'Q') {
+          tempCells = this.cellsOfQueen(this.cells[item][0]);
+        }
+        for (const sItem of tempCells) {
+          forbiddenCells.push(sItem);
+        }
+      }
+
+      for (const item of this.currentPiece['cellsToPaint']) {
+        // check if the cell is not under attack
+        const found = forbiddenCells.find(element => element === item);
+
+        if (found === undefined) {
+          // If the cell is not under attack King can move to this cell
+          this.status[item] = true;
+        }
+      }
+    } else {
+      for (const item of this.currentPiece['cellsToPaint']) {
+        this.status[item] = true;
+      }
     }
   }
 
@@ -2469,28 +2513,76 @@ export class AppComponent {
       }
       console.log('cells to paint');
       console.log(this.currentPiece['cellsToPaint']);
-      for (const item of this.currentPiece['cellsToPaint']) {
-        this.status[item] = false;
+
+      let threatedCells = [];
+      if (!this.whiteTurn) {
+        threatedCells = this.whiteThreatPieces;
+      } else {
+        threatedCells = this.blackThreatPieces;
+      }
+      console.log('Threat Cells');
+      console.log(threatedCells);
+
+      if (this.currentPiece['kind'] === 'K') {
+        const forbiddenCells = [];
+
+        let tempCells = [];
+        for (const item of threatedCells) {
+          if (this.cells[item][0].kind === 'R') {
+            tempCells = this.cellsOfRock(this.cells[item][0]);
+          } else if (this.cells[item][0].kind === 'B') {
+            tempCells = this.cellsOfBishop(this.cells[item][0]);
+          } else if (this.cells[item][0].kind === 'N') {
+            tempCells = this.cellsOfKnight(this.cells[item][0]);
+          } else if (this.cells[item][0].kind === 'Q') {
+            tempCells = this.cellsOfQueen(this.cells[item][0]);
+          }
+
+          for (const sItem of tempCells) {
+            forbiddenCells.push(sItem);
+          }
+        }
+
+        console.log('Forbidden cells');
+        console.log(forbiddenCells);
+
+        for (const item of this.currentPiece['cellsToPaint']) {
+          // check if the cell is not under attack
+          const found = forbiddenCells.find(element => element === item);
+
+          if (found === undefined) {
+            // If the cell is not under attack King can move to this cell
+            this.status[item] = false;
+          }
+        }
+      } else {
+        for (const item of this.currentPiece['cellsToPaint']) {
+          this.status[item] = false;
+        }
       }
     }
   }
 
   private reviewIfWhiteCheck(): void {
     this.blackThreatPieces = [];
+    this.blackCheck = false;
     this.blackThreatPieces = this.check(this.cells[this.pieceAlive.c45.currentCell][0]);
     console.log('threat pieces');
     console.log(this.blackThreatPieces);
     if (this.blackThreatPieces.length > 0) {
+      this.blackCheck = true;
       this.currentMove.white = this.currentMove.white.concat('+');
     }
   }
 
   private reviewIfBlackCheck(): void {
     this.whiteThreatPieces = [];
+    this.whiteCheck = false;
     this.whiteThreatPieces = this.check(this.cells[this.pieceAlive.c15.currentCell][0]);
     console.log('threat pieces');
     console.log(this.whiteThreatPieces);
     if (this.whiteThreatPieces.length > 0) {
+      this.whiteCheck = true;
       this.currentMove.black = this.currentMove.black.concat('+');
     }
   }
@@ -2545,6 +2637,7 @@ export class AppComponent {
 
         this.cellOfLastMove.push(this.previousName);
         this.cellOfLastMove.push(this.currentName);
+
 
         this.colorOfCurrentMove[this.previousName] = true;
         this.colorOfCurrentMove[this.currentName] = true;
