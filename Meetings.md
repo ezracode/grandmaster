@@ -209,3 +209,23 @@
 ## 24/05/2019
 
     Se completaron 20 semanas de trabajo
+
+## 27/06/2019
+
+    Despues de cuatro semanas de descanso por muchas razones se retomo el desarrollo del tablero.
+
+    Se debe de crear una funcion que determine las casillas prohibidas para cada rey, tanto de piezas blancas como de piezas negras.  Con eso ya se puede calcular lo siguiente:
+
+    * Jaque
+    * Jaque Mate
+    * Rey Ahogado
+    * Evitar el enroque
+
+## 10/07/2019
+
+    Se completaron 27 semanas de trabajo
+
+## 18/07/2019
+
+    Se creo la funcion para obtener las celdas prohibidas para cada rey
+    Se completaron 28 semanas de trabajo

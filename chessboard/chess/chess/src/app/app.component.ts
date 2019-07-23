@@ -293,6 +293,8 @@ export class AppComponent {
 
   whiteThreatPieces = [];
   blackThreatPieces = [];
+  whiteForbiddenCells = [];
+  blackForbiddenCells = [];
   whiteCheck = false;
   blackCheck = false;
 
@@ -307,38 +309,38 @@ export class AppComponent {
   blackQueenList = ['c44'];
 
   pieceAlive = {
-    c11: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a1'},
-    c12: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'b1'},
-    c13: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'c1'},
-    c14: {alive: true, currentKind: 'Q', capturedBy: '', currentCell: 'd1'},
-    c15: {alive: true, currentKind: 'K', capturedBy: '', currentCell: 'e1'},
-    c16: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'f1'},
-    c17: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'g1'},
-    c18: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'h1'},
-    c21: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'a2', previousKind: ''},
-    c22: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'b2', previousKind: ''},
-    c23: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'c2', previousKind: ''},
-    c24: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'd2', previousKind: ''},
-    c25: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'e2', previousKind: ''},
-    c26: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f2', previousKind: ''},
-    c27: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g2', previousKind: ''},
-    c28: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h2', previousKind: ''},
-    c31: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'a7', previousKind: ''},
-    c32: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'b7', previousKind: ''},
-    c33: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'c7', previousKind: ''},
-    c34: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'd7', previousKind: ''},
-    c35: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'e7', previousKind: ''},
-    c36: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'f7', previousKind: ''},
-    c37: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'g7', previousKind: ''},
-    c38: {alive: true, currentKind: 'P', capturedBy: '', currentCell: 'h7', previousKind: ''},
-    c41: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'a8'},
-    c42: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'b8'},
-    c43: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'c8'},
-    c44: {alive: true, currentKind: 'Q', capturedBy: '', currentCell: 'd8'},
-    c45: {alive: true, currentKind: 'K', capturedBy: '', currentCell: 'e8'},
-    c46: {alive: true, currentKind: 'B', capturedBy: '', currentCell: 'f8'},
-    c47: {alive: true, currentKind: 'N', capturedBy: '', currentCell: 'g8'},
-    c48: {alive: true, currentKind: 'R', capturedBy: '', currentCell: 'h8'}
+    c11: {alive: true, color: 'W', currentKind: 'R', capturedBy: '', currentCell: 'a1'},
+    c12: {alive: true, color: 'W', currentKind: 'N', capturedBy: '', currentCell: 'b1'},
+    c13: {alive: true, color: 'W', currentKind: 'B', capturedBy: '', currentCell: 'c1'},
+    c14: {alive: true, color: 'W', currentKind: 'Q', capturedBy: '', currentCell: 'd1'},
+    c15: {alive: true, color: 'W', currentKind: 'K', capturedBy: '', currentCell: 'e1'},
+    c16: {alive: true, color: 'W', currentKind: 'B', capturedBy: '', currentCell: 'f1'},
+    c17: {alive: true, color: 'W', currentKind: 'N', capturedBy: '', currentCell: 'g1'},
+    c18: {alive: true, color: 'W', currentKind: 'R', capturedBy: '', currentCell: 'h1'},
+    c21: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'a2', previousKind: ''},
+    c22: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'b2', previousKind: ''},
+    c23: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'c2', previousKind: ''},
+    c24: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'd2', previousKind: ''},
+    c25: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'e2', previousKind: ''},
+    c26: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'f2', previousKind: ''},
+    c27: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'g2', previousKind: ''},
+    c28: {alive: true, color: 'W', currentKind: 'P', capturedBy: '', currentCell: 'h2', previousKind: ''},
+    c31: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'a7', previousKind: ''},
+    c32: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'b7', previousKind: ''},
+    c33: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'c7', previousKind: ''},
+    c34: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'd7', previousKind: ''},
+    c35: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'e7', previousKind: ''},
+    c36: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'f7', previousKind: ''},
+    c37: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'g7', previousKind: ''},
+    c38: {alive: true, color: 'B', currentKind: 'P', capturedBy: '', currentCell: 'h7', previousKind: ''},
+    c41: {alive: true, color: 'B', currentKind: 'R', capturedBy: '', currentCell: 'a8'},
+    c42: {alive: true, color: 'B', currentKind: 'N', capturedBy: '', currentCell: 'b8'},
+    c43: {alive: true, color: 'B', currentKind: 'B', capturedBy: '', currentCell: 'c8'},
+    c44: {alive: true, color: 'B', currentKind: 'Q', capturedBy: '', currentCell: 'd8'},
+    c45: {alive: true, color: 'B', currentKind: 'K', capturedBy: '', currentCell: 'e8'},
+    c46: {alive: true, color: 'B', currentKind: 'B', capturedBy: '', currentCell: 'f8'},
+    c47: {alive: true, color: 'B', currentKind: 'N', capturedBy: '', currentCell: 'g8'},
+    c48: {alive: true, color: 'B', currentKind: 'R', capturedBy: '', currentCell: 'h8'}
   };
 
   openDialog(dataToSend: DataToPromote): void {
@@ -447,6 +449,81 @@ export class AppComponent {
             return ('B');
         }
     }
+  }
+
+  private cellsOfPawn(currentPiece: {}) {
+
+    let file = '';
+    let rank = '';
+    let lrank = 0;
+    let tempCell = '';
+
+    let tempCellLeft = [];
+    let tempCellRight = [];
+    const cellsToPaint = [];
+
+    console.log('cells of pawn');
+    console.log('Piece to review');
+    console.log(currentPiece);
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
+    lrank = +rank;
+
+    if (currentPiece['color'] === 'W') {
+      lrank++;
+      if (file !== 'a') {
+        // searching at the left of the current posicion
+        tempCell = this.files[this.files.indexOf(file) - 1];
+        console.log('left');
+        tempCell = tempCell.concat(lrank.toString());
+        console.log(tempCell);
+        tempCellLeft = this.cells[tempCell];
+        // if the cell to the left of the pawn is empty add to the colored ones
+        if (tempCellLeft.length === 0) {
+          cellsToPaint.push(tempCell);
+        }
+      }
+      if (file !== 'h') {
+        // searching at the right of the position
+        tempCell = this.files[this.files.indexOf(file) + 1];
+        console.log('right');
+        tempCell = tempCell.concat(lrank.toString());
+        console.log(tempCell);
+        tempCellRight = this.cells[tempCell];
+        if (tempCellRight.length === 0) {
+          cellsToPaint.push(tempCell);
+        }
+      }
+    } else {
+      lrank--;
+      if (file !== 'a') {
+        // searching at the left of the current posicion
+        tempCell = this.files[this.files.indexOf(file) - 1];
+        console.log('left');
+        tempCell = tempCell.concat(lrank.toString());
+        console.log(tempCell);
+        tempCellLeft = this.cells[tempCell];
+        if (tempCellLeft.length === 0) {
+          cellsToPaint.push(tempCell);
+        }
+      }
+      if (file !== 'h') {
+        // searching at the right of the current posicion
+        tempCell = this.files[this.files.indexOf(file) + 1];
+        console.log('right');
+        tempCell = tempCell.concat(lrank.toString());
+        console.log(tempCell);
+        tempCellRight = this.cells[tempCell];
+        if (tempCellRight.length === 0) {
+          cellsToPaint.push(tempCell);
+        }
+      }
+    }
+
+    console.log('function Pawn cells to paint');
+    console.log(cellsToPaint);
+    return cellsToPaint;
   }
 
   private cellsOfRock(currentPiece: {}) {
@@ -1062,6 +1139,162 @@ export class AppComponent {
       i++;
     }
     console.log('function Queen cells to paint');
+    console.log(cellsToPaint);
+    return cellsToPaint;
+  }
+
+  private cellsOfKing(currentPiece: {}) {
+    let file = '';
+    let rank = '';
+    let lrank = 0;
+    let tempCell = '';
+
+    let tempCellDiagonal = [];
+
+    const cellsToPaint = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
+
+    console.log('King');
+
+    // left
+    console.log('left');
+    lrank = +rank;
+    if (this.files[this.files.indexOf(file) - 1] !== undefined) {
+
+      tempCell = this.files[this.files.indexOf(file) - 1];
+      tempCell = tempCell.concat((lrank).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // right
+    console.log('right');
+    if (this.files[this.files.indexOf(file) + 1] !== undefined) {
+      tempCell = this.files[this.files.indexOf(file) + 1];
+      tempCell = tempCell.concat((lrank).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // down
+    console.log('down');
+    if (lrank - 1 > this.minLimit) {
+      tempCell = this.files[this.files.indexOf(file)];
+      tempCell = tempCell.concat((lrank - 1).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // up
+    console.log('up');
+    if (lrank + 1 < this.maxLimit) {
+      tempCell = this.files[this.files.indexOf(file)];
+      tempCell = tempCell.concat((lrank + 1).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // left and up
+    console.log('left and up');
+    if (this.files[this.files.indexOf(file) - 1] !== undefined
+        && lrank + 1 < this.maxLimit) {
+      tempCell = this.files[this.files.indexOf(file) - 1];
+      tempCell = tempCell.concat((lrank + 1).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // right and up
+    console.log('right and up');
+    if (this.files[this.files.indexOf(file) + 1] !== undefined
+        && lrank + 1 < this.maxLimit) {
+      tempCell = this.files[this.files.indexOf(file) + 1];
+      tempCell = tempCell.concat((lrank + 1).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // left and down
+    console.log('left and down');
+    if (this.files[this.files.indexOf(file) - 1] !== undefined
+        && lrank - 1 > this.minLimit) {
+
+      tempCell = this.files[this.files.indexOf(file) - 1];
+      tempCell = tempCell.concat((lrank - 1).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    // right and down
+    console.log('right and down');
+    if (this.files[this.files.indexOf(file) + 1] !== undefined
+        && lrank - 1 > this.minLimit) {
+
+      tempCell = this.files[this.files.indexOf(file) + 1];
+      tempCell = tempCell.concat((lrank - 1).toString());
+      console.log(tempCell);
+
+      tempCellDiagonal = this.cells[tempCell];
+      if (tempCellDiagonal.length !== 0) {
+        if (tempCellDiagonal[0].color !== currentPiece['color']) {
+          cellsToPaint.push(tempCell);
+        }
+      } else {
+        cellsToPaint.push(tempCell);
+      }
+    }
+    console.log('function King cells to paint');
     console.log(cellsToPaint);
     return cellsToPaint;
   }
@@ -2435,7 +2668,6 @@ export class AppComponent {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
               this.currentPiece['cellsToPaint'].push(tempCell);
             }
-            follow = false;
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
           }
@@ -2563,11 +2795,11 @@ export class AppComponent {
     }
   }
 
-  private reviewIfWhiteCheck(): void {
+  private reviewIfBlackCheck(): void {
     this.blackThreatPieces = [];
     this.blackCheck = false;
     this.blackThreatPieces = this.check(this.cells[this.pieceAlive.c45.currentCell][0]);
-    console.log('threat pieces');
+    console.log('reviewIfBlackCheck threat pieces');
     console.log(this.blackThreatPieces);
     if (this.blackThreatPieces.length > 0) {
       this.blackCheck = true;
@@ -2575,16 +2807,56 @@ export class AppComponent {
     }
   }
 
-  private reviewIfBlackCheck(): void {
+  private reviewIfWhiteCheck(): void {
     this.whiteThreatPieces = [];
     this.whiteCheck = false;
     this.whiteThreatPieces = this.check(this.cells[this.pieceAlive.c15.currentCell][0]);
-    console.log('threat pieces');
+    console.log('reviewIfWhiteCheck threat pieces');
     console.log(this.whiteThreatPieces);
     if (this.whiteThreatPieces.length > 0) {
       this.whiteCheck = true;
       this.currentMove.black = this.currentMove.black.concat('+');
     }
+  }
+
+  private setForbiddenCells(color: string) {
+    const forbiddenCells = [];
+    let piecePosition = '';
+    console.log('setForbiddenCells');
+    for (const item in this.pieceAlive) {
+      if (this.pieceAlive[item].alive === true && this.pieceAlive[item].color === color) {
+        piecePosition = this.pieceAlive[item].currentCell;
+        console.log(item);
+        console.log(piecePosition);
+        switch(this.pieceAlive[item].currentKind) {
+          case 'P': {
+            forbiddenCells.push(this.cellsOfPawn(this.cells[piecePosition][0]));
+            break;
+          }
+          case 'R': {
+            forbiddenCells.push(this.cellsOfRock(this.cells[piecePosition][0]));
+            break;
+          }
+          case 'N': {
+            forbiddenCells.push(this.cellsOfKnight(this.cells[piecePosition][0]));
+            break;
+          }
+          case 'B': {
+            forbiddenCells.push(this.cellsOfBishop(this.cells[piecePosition][0]));
+            break;
+          }
+          case 'Q': {
+            forbiddenCells.push(this.cellsOfQueen(this.cells[piecePosition][0]));
+            break;
+          }
+          case 'K': {
+            forbiddenCells.push(this.cellsOfKing(this.cells[piecePosition][0]));
+            break;
+          }
+        }
+      }
+    }
+    return forbiddenCells;
   }
 
   drop(event: CdkDragDrop<string[]>) {
@@ -2637,7 +2909,6 @@ export class AppComponent {
 
         this.cellOfLastMove.push(this.previousName);
         this.cellOfLastMove.push(this.currentName);
-
 
         this.colorOfCurrentMove[this.previousName] = true;
         this.colorOfCurrentMove[this.currentName] = true;
@@ -2752,6 +3023,7 @@ export class AppComponent {
           }
 
           // this.currentMove.black = ''
+          this.whiteForbiddenCells = this.setForbiddenCells('W');
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
         } else {
@@ -2848,6 +3120,7 @@ export class AppComponent {
           }
 
           console.log(this.currentMove);
+          this.blackForbiddenCells = this.setForbiddenCells('B');
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
         }
@@ -2855,9 +3128,12 @@ export class AppComponent {
         this.whiteTurn = !this.whiteTurn;
         this.disablePiece(this.whiteTurn);
 
+        console.log('Game resume');
         console.log(this.whiteTurn);
         console.log(this.whiteMoves);
         console.log(this.blackMoves);
+        console.log(this.whiteForbiddenCells)
+        console.log(this.blackForbiddenCells)
         console.log(this.pieceAlive);
         console.log(this.cells);
         //  console.log(event.container.data)
