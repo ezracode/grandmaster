@@ -462,9 +462,9 @@ export class AppComponent {
     let tempCellRight = [];
     const cellsToPaint = [];
 
-    console.log('cells of pawn');
-    console.log('Piece to review');
-    console.log(currentPiece);
+    // console.log('cells of pawn');
+    // console.log('Piece to review');
+    // console.log(currentPiece);
 
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
@@ -475,9 +475,9 @@ export class AppComponent {
       if (file !== 'a') {
         // searching at the left of the current posicion
         tempCell = this.files[this.files.indexOf(file) - 1];
-        console.log('left');
+        // console.log('left');
         tempCell = tempCell.concat(lrank.toString());
-        console.log(tempCell);
+        // console.log(tempCell);
         tempCellLeft = this.cells[tempCell];
         // if the cell to the left of the pawn is empty add to the colored ones
         if (tempCellLeft.length === 0) {
@@ -487,9 +487,9 @@ export class AppComponent {
       if (file !== 'h') {
         // searching at the right of the position
         tempCell = this.files[this.files.indexOf(file) + 1];
-        console.log('right');
+        // console.log('right');
         tempCell = tempCell.concat(lrank.toString());
-        console.log(tempCell);
+        // console.log(tempCell);
         tempCellRight = this.cells[tempCell];
         if (tempCellRight.length === 0) {
           cellsToPaint.push(tempCell);
@@ -500,9 +500,9 @@ export class AppComponent {
       if (file !== 'a') {
         // searching at the left of the current posicion
         tempCell = this.files[this.files.indexOf(file) - 1];
-        console.log('left');
+        // console.log('left');
         tempCell = tempCell.concat(lrank.toString());
-        console.log(tempCell);
+        // console.log(tempCell);
         tempCellLeft = this.cells[tempCell];
         if (tempCellLeft.length === 0) {
           cellsToPaint.push(tempCell);
@@ -511,9 +511,9 @@ export class AppComponent {
       if (file !== 'h') {
         // searching at the right of the current posicion
         tempCell = this.files[this.files.indexOf(file) + 1];
-        console.log('right');
+        // console.log('right');
         tempCell = tempCell.concat(lrank.toString());
-        console.log(tempCell);
+        // console.log(tempCell);
         tempCellRight = this.cells[tempCell];
         if (tempCellRight.length === 0) {
           cellsToPaint.push(tempCell);
@@ -521,8 +521,8 @@ export class AppComponent {
       }
     }
 
-    console.log('function Pawn cells to paint');
-    console.log(cellsToPaint);
+    // console.log('function Pawn cells to paint');
+    // console.log(cellsToPaint);
     return cellsToPaint;
   }
 
@@ -537,15 +537,15 @@ export class AppComponent {
     let tempCellDiagonal = [];
     const cellsToPaint = [];
 
-    console.log('cells of rock');
-    console.log('Piece to review');
-    console.log(currentPiece);
+    // console.log('cells of rock');
+    // console.log('Piece to review');
+    // console.log(currentPiece);
 
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
 
     // left
-    console.log('left');
+    // console.log('left');
     lrank = +rank;
     follow = true;
     i = 1;
@@ -554,7 +554,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) - i];
         tempCell = tempCell.concat((lrank).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -571,7 +571,7 @@ export class AppComponent {
       i++;
     }
     // right
-    console.log('right');
+    // console.log('right');
     follow = true;
     i = 1;
     while (follow) {
@@ -579,7 +579,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) + i];
         tempCell = tempCell.concat((lrank).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -596,7 +596,7 @@ export class AppComponent {
       i++;
     }
     // down
-    console.log('down');
+    // console.log('down');
     follow = true;
     i = 1;
     while (follow) {
@@ -604,7 +604,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file)];
         tempCell = tempCell.concat((lrank - i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -621,8 +621,8 @@ export class AppComponent {
       i++;
     }
     // up
-    console.log('up');
-    console.log(currentPiece['color']);
+    // console.log('up');
+    // console.log(currentPiece['color']);
     follow = true;
     i = 1;
     while (follow) {
@@ -630,7 +630,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file)];
         tempCell = tempCell.concat((lrank + i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -646,8 +646,8 @@ export class AppComponent {
       }
       i++;
     }
-    console.log('function Rock cells to paint');
-    console.log(cellsToPaint);
+    // console.log('function Rock cells to paint');
+    // console.log(cellsToPaint);
     return cellsToPaint;
   }
 
@@ -667,6 +667,7 @@ export class AppComponent {
     let tempCellLeftDown2 = [];
 
     const cellsToPaint = [];
+    // console.log('cells of knight');
 
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
@@ -785,8 +786,8 @@ export class AppComponent {
         }
     }
 
-    console.log('function Knight cells to paint');
-    console.log(cellsToPaint);
+    // console.log('function Knight cells to paint');
+    // console.log(cellsToPaint);
     return cellsToPaint;
   }
 
@@ -805,10 +806,10 @@ export class AppComponent {
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
 
-    console.log('bishop');
+    // console.log('bishop');
 
     // left and up
-    console.log('left and up');
+    // console.log('left and up');
     lrank = +rank;
     follow = true;
     i = 1;
@@ -818,7 +819,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) - i];
         tempCell = tempCell.concat((lrank + i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -835,7 +836,7 @@ export class AppComponent {
       i++;
     }
     // right and up
-    console.log('right and up');
+    // console.log('right and up');
     follow = true;
     i = 1;
     while (follow) {
@@ -844,7 +845,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) + i];
         tempCell = tempCell.concat((lrank + i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -861,7 +862,7 @@ export class AppComponent {
       i++;
     }
     // left and down
-    console.log('left and down');
+    // console.log('left and down');
     follow = true;
     i = 1;
     while (follow) {
@@ -870,7 +871,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) - i];
         tempCell = tempCell.concat((lrank - i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -887,7 +888,7 @@ export class AppComponent {
       i++;
     }
     // right and down
-    console.log('right and down');
+    // console.log('right and down');
     follow = true;
     i = 1;
     while (follow) {
@@ -896,7 +897,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) + i];
         tempCell = tempCell.concat((lrank - i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -913,8 +914,8 @@ export class AppComponent {
       i++;
     }
 
-    console.log('function Bishop cells to paint');
-    console.log(cellsToPaint);
+    // console.log('function Bishop cells to paint');
+    // console.log(cellsToPaint);
     return cellsToPaint;
   }
 
@@ -933,10 +934,10 @@ export class AppComponent {
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
 
-    console.log('queen');
+    // console.log('queen');
 
     // left
-    console.log('left');
+    // console.log('left');
     lrank = +rank;
     follow = true;
     i = 1;
@@ -944,7 +945,7 @@ export class AppComponent {
       if (this.files[this.files.indexOf(file) - i] !== undefined) {
         tempCell = this.files[this.files.indexOf(file) - i];
         tempCell = tempCell.concat((lrank).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -961,14 +962,14 @@ export class AppComponent {
       i++;
     }
     // right
-    console.log('right');
+    // console.log('right');
     follow = true;
     i = 1;
     while (follow) {
       if (this.files[this.files.indexOf(file) + i] !== undefined) {
         tempCell = this.files[this.files.indexOf(file) + i];
         tempCell = tempCell.concat((lrank).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -985,7 +986,7 @@ export class AppComponent {
       i++;
     }
     // down
-    console.log('down');
+    // console.log('down');
     follow = true;
     i = 1;
     while (follow) {
@@ -993,7 +994,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file)];
         tempCell = tempCell.concat((lrank - i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -1010,7 +1011,7 @@ export class AppComponent {
       i++;
     }
     // up
-    console.log('up');
+    // console.log('up');
     follow = true;
     i = 1;
     while (follow) {
@@ -1018,7 +1019,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file)];
         tempCell = tempCell.concat((lrank + i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -1035,7 +1036,7 @@ export class AppComponent {
       i++;
     }
     // left and up
-    console.log('left and up');
+    // console.log('left and up');
     follow = true;
     i = 1;
     while (follow) {
@@ -1044,7 +1045,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) - i];
         tempCell = tempCell.concat((lrank + i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -1061,7 +1062,7 @@ export class AppComponent {
       i++;
     }
     // right and up
-    console.log('right and up');
+    // console.log('right and up');
     follow = true;
     i = 1;
     while (follow) {
@@ -1070,7 +1071,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) + i];
         tempCell = tempCell.concat((lrank + i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -1087,7 +1088,7 @@ export class AppComponent {
       i++;
     }
     // left and down
-    console.log('left and down');
+    // console.log('left and down');
     follow = true;
     i = 1;
     while (follow) {
@@ -1096,7 +1097,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) - i];
         tempCell = tempCell.concat((lrank - i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -1113,7 +1114,7 @@ export class AppComponent {
       i++;
     }
     // right and down
-    console.log('right and down');
+    // console.log('right and down');
     follow = true;
     i = 1;
     while (follow) {
@@ -1122,7 +1123,7 @@ export class AppComponent {
 
         tempCell = this.files[this.files.indexOf(file) + i];
         tempCell = tempCell.concat((lrank - i).toString());
-        console.log(tempCell);
+        // console.log(tempCell);
 
         tempCellDiagonal = this.cells[tempCell];
         if (tempCellDiagonal.length !== 0) {
@@ -1138,8 +1139,8 @@ export class AppComponent {
       }
       i++;
     }
-    console.log('function Queen cells to paint');
-    console.log(cellsToPaint);
+    // console.log('function Queen cells to paint');
+    // console.log(cellsToPaint);
     return cellsToPaint;
   }
 
@@ -1156,16 +1157,16 @@ export class AppComponent {
     file = currentPiece['currentPosition'].substring(0, 1);
     rank = currentPiece['currentPosition'].substring(1, 2);
 
-    console.log('King');
+    // console.log('King');
 
     // left
-    console.log('left');
+    // console.log('left');
     lrank = +rank;
     if (this.files[this.files.indexOf(file) - 1] !== undefined) {
 
       tempCell = this.files[this.files.indexOf(file) - 1];
       tempCell = tempCell.concat((lrank).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1177,11 +1178,11 @@ export class AppComponent {
       }
     }
     // right
-    console.log('right');
+    // console.log('right');
     if (this.files[this.files.indexOf(file) + 1] !== undefined) {
       tempCell = this.files[this.files.indexOf(file) + 1];
       tempCell = tempCell.concat((lrank).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1193,11 +1194,11 @@ export class AppComponent {
       }
     }
     // down
-    console.log('down');
+    // console.log('down');
     if (lrank - 1 > this.minLimit) {
       tempCell = this.files[this.files.indexOf(file)];
       tempCell = tempCell.concat((lrank - 1).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1209,11 +1210,11 @@ export class AppComponent {
       }
     }
     // up
-    console.log('up');
+    // console.log('up');
     if (lrank + 1 < this.maxLimit) {
       tempCell = this.files[this.files.indexOf(file)];
       tempCell = tempCell.concat((lrank + 1).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1225,12 +1226,12 @@ export class AppComponent {
       }
     }
     // left and up
-    console.log('left and up');
+    // console.log('left and up');
     if (this.files[this.files.indexOf(file) - 1] !== undefined
         && lrank + 1 < this.maxLimit) {
       tempCell = this.files[this.files.indexOf(file) - 1];
       tempCell = tempCell.concat((lrank + 1).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1242,12 +1243,12 @@ export class AppComponent {
       }
     }
     // right and up
-    console.log('right and up');
+    // console.log('right and up');
     if (this.files[this.files.indexOf(file) + 1] !== undefined
         && lrank + 1 < this.maxLimit) {
       tempCell = this.files[this.files.indexOf(file) + 1];
       tempCell = tempCell.concat((lrank + 1).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1259,13 +1260,13 @@ export class AppComponent {
       }
     }
     // left and down
-    console.log('left and down');
+    // console.log('left and down');
     if (this.files[this.files.indexOf(file) - 1] !== undefined
         && lrank - 1 > this.minLimit) {
 
       tempCell = this.files[this.files.indexOf(file) - 1];
       tempCell = tempCell.concat((lrank - 1).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1277,13 +1278,13 @@ export class AppComponent {
       }
     }
     // right and down
-    console.log('right and down');
+    // console.log('right and down');
     if (this.files[this.files.indexOf(file) + 1] !== undefined
         && lrank - 1 > this.minLimit) {
 
       tempCell = this.files[this.files.indexOf(file) + 1];
       tempCell = tempCell.concat((lrank - 1).toString());
-      console.log(tempCell);
+      // console.log(tempCell);
 
       tempCellDiagonal = this.cells[tempCell];
       if (tempCellDiagonal.length !== 0) {
@@ -1294,8 +1295,8 @@ export class AppComponent {
         cellsToPaint.push(tempCell);
       }
     }
-    console.log('function King cells to paint');
-    console.log(cellsToPaint);
+    // console.log('function King cells to paint');
+    // console.log(cellsToPaint);
     return cellsToPaint;
   }
 
@@ -2756,7 +2757,7 @@ export class AppComponent {
       console.log(threatedCells);
 
       if (this.currentPiece['kind'] === 'K') {
-        const forbiddenCells = [];
+        let forbiddenCells = [];
 
         let tempCells = [];
         for (const item of threatedCells) {
@@ -2770,10 +2771,12 @@ export class AppComponent {
             tempCells = this.cellsOfQueen(this.cells[item][0]);
           }
 
-          for (const sItem of tempCells) {
-            forbiddenCells.push(sItem);
-          }
+          tempCells.forEach(function(element) {
+            forbiddenCells.push(element);
+          });
         }
+
+        forbiddenCells = Array.from(new Set(forbiddenCells));
 
         console.log('Forbidden cells');
         console.log(forbiddenCells);
@@ -2795,7 +2798,7 @@ export class AppComponent {
     }
   }
 
-  private reviewIfBlackCheck(): void {
+  private reviewIfWhiteCheck(): void {
     this.blackThreatPieces = [];
     this.blackCheck = false;
     this.blackThreatPieces = this.check(this.cells[this.pieceAlive.c45.currentCell][0]);
@@ -2807,7 +2810,7 @@ export class AppComponent {
     }
   }
 
-  private reviewIfWhiteCheck(): void {
+  private reviewIfBlackCheck(): void {
     this.whiteThreatPieces = [];
     this.whiteCheck = false;
     this.whiteThreatPieces = this.check(this.cells[this.pieceAlive.c15.currentCell][0]);
@@ -2820,40 +2823,47 @@ export class AppComponent {
   }
 
   private setForbiddenCells(color: string) {
-    const forbiddenCells = [];
+    let tempCells = [];
+    let forbiddenCells = [];
     let piecePosition = '';
     console.log('setForbiddenCells');
     for (const item in this.pieceAlive) {
       if (this.pieceAlive[item].alive === true && this.pieceAlive[item].color === color) {
         piecePosition = this.pieceAlive[item].currentCell;
-        console.log(item);
-        console.log(piecePosition);
+        // console.log(item);
+        // console.log(piecePosition);
         switch(this.pieceAlive[item].currentKind) {
           case 'P': {
-            forbiddenCells.push(this.cellsOfPawn(this.cells[piecePosition][0]));
+            tempCells = this.cellsOfPawn(this.cells[piecePosition][0]);
             break;
           }
           case 'R': {
-            forbiddenCells.push(this.cellsOfRock(this.cells[piecePosition][0]));
+            tempCells = this.cellsOfRock(this.cells[piecePosition][0]);
             break;
           }
           case 'N': {
-            forbiddenCells.push(this.cellsOfKnight(this.cells[piecePosition][0]));
+            tempCells = this.cellsOfKnight(this.cells[piecePosition][0]);
             break;
           }
           case 'B': {
-            forbiddenCells.push(this.cellsOfBishop(this.cells[piecePosition][0]));
+            tempCells = this.cellsOfBishop(this.cells[piecePosition][0]);
             break;
           }
           case 'Q': {
-            forbiddenCells.push(this.cellsOfQueen(this.cells[piecePosition][0]));
+            tempCells = this.cellsOfQueen(this.cells[piecePosition][0]);
             break;
           }
           case 'K': {
-            forbiddenCells.push(this.cellsOfKing(this.cells[piecePosition][0]));
+            tempCells = this.cellsOfKing(this.cells[piecePosition][0]);
             break;
           }
         }
+
+        tempCells.forEach(function(element) {
+          forbiddenCells.push(element);
+        });
+
+        forbiddenCells = Array.from(new Set(forbiddenCells));
       }
     }
     return forbiddenCells;
