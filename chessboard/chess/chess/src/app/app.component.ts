@@ -563,6 +563,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -590,6 +592,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -617,6 +621,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -645,6 +651,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -836,6 +844,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -864,6 +874,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -892,6 +904,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -920,6 +934,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -970,6 +986,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -996,6 +1014,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -1023,6 +1043,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -1050,6 +1072,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -1078,6 +1102,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -1106,6 +1132,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -1134,6 +1162,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
@@ -1162,6 +1192,8 @@ export class AppComponent {
             if (tempCellDiagonal[0].kind !== 'K') {
               follow = false;
             }
+          } else {
+            follow = false;
           }
         } else {
           cellsToPaint.push(tempCell);
