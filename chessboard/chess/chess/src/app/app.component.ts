@@ -560,8 +560,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -585,8 +587,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -610,8 +614,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -636,8 +642,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -825,8 +833,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -851,8 +861,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -877,8 +889,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -903,8 +917,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -951,8 +967,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -975,8 +993,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -1000,8 +1020,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -1025,8 +1047,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -1051,8 +1075,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -1077,8 +1103,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -1103,8 +1131,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -1129,8 +1159,10 @@ export class AppComponent {
         if (tempCellDiagonal.length !== 0) {
           if (tempCellDiagonal[0].color !== currentPiece['color']) {
             cellsToPaint.push(tempCell);
+            if (tempCellDiagonal[0].kind !== 'K') {
+              follow = false;
+            }
           }
-          follow = false;
         } else {
           cellsToPaint.push(tempCell);
         }
@@ -2588,7 +2620,7 @@ export class AppComponent {
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
           }
-        } 
+        }
         // down
         console.log('down');
         if (lrank - 1 > this.minLimit) {
@@ -2696,28 +2728,32 @@ export class AppComponent {
         // King moves equals cero
         // Rock moves equals cero
         // Cells between King and Rock must be empty
-        // --For current version only first three conditions checked
-        // Cells between King and Rock are not under attack
-        // When Castling ends, King is not in check
-
         if (this.currentPiece['color'] === 'W') {
           // Castling for white King only if the King has no moves
           if (this.currentPiece['counterOfMoves'] === 0) {
             // Short Castling
             if (this.cells['f1'].length === 0 && this.cells['g1'].length === 0 && this.cells['h1'].length !== 0) {
               if (this.cells['h1'][0].counterOfMoves === 0) {
-                console.log('white short castling');
-                this.whiteShortCastlingMove = 'g1';
-                this.currentPiece['cellsToPaint'].push(this.whiteShortCastlingMove);
+                if (this.whiteForbiddenCells.indexOf('f1') !== -1 && this.whiteForbiddenCells.indexOf('g1') !== -1) {
+                  // Cells between King and Rock are not under attack
+                  // When Castling ends, King is not in check
+                  console.log('white short castling');
+                  this.whiteShortCastlingMove = 'g1';
+                  this.currentPiece['cellsToPaint'].push(this.whiteShortCastlingMove);
+                }
               }
             }
             // Long Castling
             if (this.cells['b1'].length === 0 && this.cells['c1'].length === 0 && this.cells['d1'].length === 0
               && this.cells['a1'].length !== 0) {
               if (this.cells['a1'][0].counterOfMoves === 0) {
-                console.log('white short castling');
-                this.whiteLongCastlingMove = 'c1';
-                this.currentPiece['cellsToPaint'].push(this.whiteLongCastlingMove);
+                if (this.whiteForbiddenCells.indexOf('c1') !== -1 && this.whiteForbiddenCells.indexOf('d1') !== -1) {
+                  // Cells between King and Rock are not under attack
+                  // When Castling ends, King is not in check
+                  console.log('white long castling');
+                  this.whiteLongCastlingMove = 'c1';
+                  this.currentPiece['cellsToPaint'].push(this.whiteLongCastlingMove);
+                }
               }
             }
           }
@@ -2726,19 +2762,27 @@ export class AppComponent {
           if (this.currentPiece['counterOfMoves'] === 0) {
             // Short Castling
             if (this.cells['f8'].length === 0 && this.cells['g8'].length === 0 && this.cells['h8'].length !== 0) {
-              if (this.currentPiece['counterOfMoves'] === 0 && this.cells['h8'][0].counterOfMoves === 0) {
-                console.log('white short castling');
-                this.blackShortCastlingMove = 'g8';
-                this.currentPiece['cellsToPaint'].push(this.blackShortCastlingMove);
+              if (this.cells['h8'][0].counterOfMoves === 0) {
+                if (this.blackForbiddenCells.indexOf('f8') !== -1 && this.blackForbiddenCells.indexOf('g8') !== -1) {
+                  // Cells between King and Rock are not under attack
+                  // When Castling ends, King is not in check
+                  console.log('black short castling');
+                  this.blackShortCastlingMove = 'g8';
+                  this.currentPiece['cellsToPaint'].push(this.blackShortCastlingMove);
+                }
               }
             }
             // Long Castling
             if (this.cells['b8'].length === 0 && this.cells['c8'].length === 0 && this.cells['d8'].length === 0
                && this.cells['a8'].length !== 0) {
-              if (this.currentPiece['counterOfMoves'] === 0 && this.cells['a8'][0].counterOfMoves === 0) {
-                console.log('white short castling');
-                this.blackLongCastlingMove = 'c8';
-                this.currentPiece['cellsToPaint'].push(this.blackLongCastlingMove);
+              if (this.cells['a8'][0].counterOfMoves === 0) {
+                if (this.blackForbiddenCells.indexOf('c8') !== -1 && this.blackForbiddenCells.indexOf('d8') !== -1) {
+                  // Cells between King and Rock are not under attack
+                  // When Castling ends, King is not in check
+                  console.log('black long castling');
+                  this.blackLongCastlingMove = 'c8';
+                  this.currentPiece['cellsToPaint'].push(this.blackLongCastlingMove);
+                }
               }
             }
           }
@@ -2747,6 +2791,7 @@ export class AppComponent {
       console.log('cells to paint');
       console.log(this.currentPiece['cellsToPaint']);
 
+      // Must add the threated cells for King and then evaluate the forbidden ones
       let threatedCells = [];
       if (!this.whiteTurn) {
         threatedCells = this.whiteThreatPieces;
@@ -2775,6 +2820,17 @@ export class AppComponent {
             forbiddenCells.push(element);
           });
         }
+
+        // Must add the forbidden cells for King
+        if (!this.whiteTurn) {
+          threatedCells = this.blackForbiddenCells;
+        } else {
+          threatedCells = this.whiteForbiddenCells;
+        }
+
+        threatedCells.forEach(function(element) {
+          forbiddenCells.push(element);
+        });
 
         forbiddenCells = Array.from(new Set(forbiddenCells));
 

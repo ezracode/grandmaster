@@ -227,5 +227,22 @@
 
 ## 18/07/2019
 
-    Se creo la funcion para obtener las celdas prohibidas para cada rey
+    Se creó la funcion para obtener las celdas prohibidas para cada rey
     Se completaron 28 semanas de trabajo
+
+## 06/08/2019
+
+    Se completaron 31 semanas de trabajo
+    Se mejoró la funcion para obtener las celdas prohibidas para cada rey
+    Se completó que no pueda hacer el enroque de los reyes si las posiciones estan amenazadas
+    El rey no se puede mover si todas las casillas a su alrededor estan amenazadas
+
+    1. Pinned de las piezas cuando defienden al rey
+    2. No permitirle al rey que capture una pieza enemiga si está esta siendo protegida por otras piezas.
+    3. Jaque Mate
+    4. Notación algebraica de Jaque Mate
+    5. Empate por Rey ahogado
+    6. Empate por material insuficiente
+    7. Boton de retroceso del log del juego
+    8. Boton de avance del log del juego
+    9. Codificación de tablero para enviarlo a algoritmos de mejores jugadas
