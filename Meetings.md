@@ -246,3 +246,8 @@
     7. Boton de retroceso del log del juego
     8. Boton de avance del log del juego
     9. Codificación de tablero para enviarlo a algoritmos de mejores jugadas
+    10. Empate por triple repetición de posicion
+    11. Empate por regla de los cincuenta movimientos
+
+    En la parte del backend no olvidar que estamos usando R para codificar los tableros
+    Revisar que falta como pendiente en el backend
