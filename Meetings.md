@@ -240,14 +240,15 @@
     1. Pinned de las piezas cuando defienden al rey
     2. No permitirle al rey que capture una pieza enemiga si está esta siendo protegida por otras piezas.
     3. Jaque Mate
-    4. Notación algebraica de Jaque Mate
-    5. Empate por Rey ahogado
-    6. Empate por material insuficiente
-    7. Boton de retroceso del log del juego
-    8. Boton de avance del log del juego
-    9. Codificación de tablero para enviarlo a algoritmos de mejores jugadas
-    10. Empate por triple repetición de posicion
-    11. Empate por regla de los cincuenta movimientos
+    4. Defensa de Jaque Mate, obligar a todas las piezas posibles a defender al rey
+    5. Notación algebraica de Jaque Mate
+    6. Empate por Rey ahogado
+    7. Empate por material insuficiente
+    8. Boton de retroceso del log del juego
+    9. Boton de avance del log del juego
+    10. Codificación de tablero para enviarlo a algoritmos de mejores jugadas
+    11. Empate por triple repetición de posicion
+    12. Empate por regla de los cincuenta movimientos
 
     En la parte del backend no olvidar que estamos usando R para codificar los tableros
     Revisar que falta como pendiente en el backend
