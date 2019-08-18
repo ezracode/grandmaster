@@ -39,7 +39,7 @@ class Turn {
 
 export class GameDataSource extends DataSource<GameMove> {
   /** Stream of data that is provided to the table. */
-  data = new BehaviorSubject<GameMove[]>(ELEMENT_DATA)
+  data = new BehaviorSubject<GameMove[]>(ELEMENT_DATA);
 
   /** Connect function called by the table to retrieve one stream containing the data to render. */
   connect(): Observable<GameMove[]> {
@@ -88,6 +88,7 @@ export class AppComponent {
   currentName = '';
   previousName = '';
   currentPiece = {};
+  currentCellsToPaint = [];
   file = '';
   rank = '';
   whiteTurn = false;
@@ -295,6 +296,8 @@ export class AppComponent {
   blackThreatPieces = [];
   whiteForbiddenCells = [];
   blackForbiddenCells = [];
+  whitePinnedPieces = [];
+  blackPinnedPieces = [];
   whiteCheck = false;
   blackCheck = false;
 
@@ -380,6 +383,8 @@ export class AppComponent {
           this.whiteQueenList.push(this.cells[dataToSend.currentCell][0]['cid']);
         }
         this.currentMove.white = this.currentMove.white.concat('=').concat(result.value);
+        this.reviewBlackPinnedPieces();
+        this.reviewWhitePinnedPieces();
         this.reviewIfWhiteCheck();
       } else {
         if (this.cells[dataToSend.currentCell][0]['kind'] === 'R') {
@@ -392,6 +397,8 @@ export class AppComponent {
           this.blackQueenList.push(this.cells[dataToSend.currentCell][0]['cid']);
         }
         this.currentMove.black = this.currentMove.black.concat('=').concat(result.value);
+        this.reviewBlackPinnedPieces();
+        this.reviewWhitePinnedPieces();
         this.reviewIfBlackCheck();
       }
 
@@ -1702,6 +1709,283 @@ export class AppComponent {
     return cellsToPaint;
   }
 
+  private checkPinnedPieces(currentPiece: {}) {
+    let file = '';
+    let rank = '';
+    let lrank = 0;
+    let i = 0;
+    let follow = true;
+    let tempCell = '';
+
+    let tempCellDiagonal = [];
+    let temporalPiece = '';
+
+    const pinnedPieces = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
+
+    console.log('checkPinnedPieces');
+    console.log('current piece');
+    console.log(currentPiece);
+
+    // left
+    console.log('left');
+    lrank = +rank;
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined) {
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right
+    console.log('right');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined) {
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // down
+    console.log('down');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file)];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // up
+    console.log('up');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file)];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // left and up
+    console.log('left and up');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined
+          && lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right and up
+    console.log('right and up');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined
+          && lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // left and down
+    console.log('left and down');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined
+          && lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right and down
+    console.log('right and down');
+    temporalPiece = '';
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined
+          && lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color !== currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q')) {
+              pinnedPieces.push(temporalPiece);
+              follow = false;
+          } else {
+            if (temporalPiece !== '') {
+              follow = false;
+            } else {
+              temporalPiece = tempCell;
+            }
+          }
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+
+    console.log('function checkPinnedPieces pieces');
+    console.log(pinnedPieces);
+    return pinnedPieces;
+  }
+
   private correctMoveNotation(file: string, rank: string, targetCell: string, currentPiece: {}) {
     let currentMove = '';
     let piecePosition = '';
@@ -1870,29 +2154,42 @@ export class AppComponent {
         this.status[item] = true;
       }
     }
+    this.currentCellsToPaint = [];
   }
 
   public started(event: CdkDragStart) {
 
     console.log('started method');
-    console.log(event.source.element.nativeElement.parentElement.getAttribute('name'));
+    console.log(event);
+    if (event instanceof MouseEvent) {
+      this.previousName = event['path'][3].attributes[3].value;
+    } else {
+      this.previousName = event.source.element.nativeElement.parentElement.getAttribute('name');
+    }
+    console.log(this.previousName);
 
-    this.previousName = event.source.element.nativeElement.parentElement.getAttribute('name');
+    // Unpaint previous cells to paint
+    for (const item of this.currentCellsToPaint ) {
+      this.status[item] = true;
+    }
+
     this.currentPiece = this.cells[this.previousName][0];
     console.log(this.currentPiece['kind']);
     console.log(this.currentPiece['color']);
     console.log(this.whiteTurn);
+
     const currentColor = this.currentPiece['color'];
 
-    if (currentColor === 'W' && !this.whiteTurn || currentColor === 'B' && this.whiteTurn) {
+    if (currentColor === 'W' && !this.whiteTurn && this.whitePinnedPieces.indexOf(this.previousName) === -1
+     || currentColor === 'B' && this.whiteTurn  && this.blackPinnedPieces.indexOf(this.previousName) === -1) {
 
       console.log ('color: ' + currentColor );
       console.log ('whiteTurn: ' + this.whiteTurn);
 
       this.file = this.currentPiece['currentPosition'];
       this.rank = this.currentPiece['currentPosition'];
-      this.file = this.file.substring(0,1);
-      this.rank = this.rank.substring(1,2);
+      this.file = this.file.substring(0, 1);
+      this.rank = this.rank.substring(1, 2);
 
       let lrank = 0;
       let i = 0;
@@ -2875,11 +3172,13 @@ export class AppComponent {
 
           if (found === undefined) {
             // If the cell is not under attack King can move to this cell
+            this.currentCellsToPaint.push(item);
             this.status[item] = false;
           }
         }
       } else {
         for (const item of this.currentPiece['cellsToPaint']) {
+          this.currentCellsToPaint.push(item);
           this.status[item] = false;
         }
       }
@@ -2908,6 +3207,20 @@ export class AppComponent {
       this.whiteCheck = true;
       this.currentMove.black = this.currentMove.black.concat('+');
     }
+  }
+
+  private reviewWhitePinnedPieces(): void {
+    this.whitePinnedPieces = [];
+    this.whitePinnedPieces = this.checkPinnedPieces(this.cells[this.pieceAlive.c15.currentCell][0]);
+    console.log('reviewWhitePinnedPieces pinned pieces');
+    console.log(this.whitePinnedPieces);
+  }
+
+  private reviewBlackPinnedPieces(): void {
+    this.blackPinnedPieces = [];
+    this.blackPinnedPieces = this.checkPinnedPieces(this.cells[this.pieceAlive.c45.currentCell][0]);
+    console.log('reviewBlackPinnedPieces pinned pieces');
+    console.log(this.blackPinnedPieces);
   }
 
   private setForbiddenCells(color: string) {
@@ -3045,6 +3358,8 @@ export class AppComponent {
               this.currentMove.white = this.currentName;
             }
 
+            this.reviewWhitePinnedPieces();
+            this.reviewBlackPinnedPieces();
             this.reviewIfWhiteCheck();
 
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
@@ -3063,6 +3378,8 @@ export class AppComponent {
                 this.currentMove.white = this.currentPiece['kind'].concat('x').concat(this.currentName);
               } else {
                 this.currentMove.white = currentNotationMove.concat('x').concat(this.currentName);
+                this.reviewWhitePinnedPieces();
+                this.reviewBlackPinnedPieces();
                 this.reviewIfWhiteCheck();
               }
             } else {
@@ -3071,6 +3388,8 @@ export class AppComponent {
                 this.currentMove.white = this.currentPiece['kind'].concat(this.currentName);
               } else {
                 this.currentMove.white = currentNotationMove.concat(this.currentName);
+                this.reviewWhitePinnedPieces();
+                this.reviewBlackPinnedPieces();
                 this.reviewIfWhiteCheck();
               }
             }
@@ -3091,6 +3410,8 @@ export class AppComponent {
 
             this.currentMove.white = this.file.concat('x').concat(this.currentName).concat('e.p.');
 
+            this.reviewWhitePinnedPieces();
+            this.reviewBlackPinnedPieces();
             this.reviewIfWhiteCheck();
           }
 
@@ -3104,6 +3425,8 @@ export class AppComponent {
             this.cells['h1'] = [];
             this.whiteShortCastlingMove = '';
             this.currentMove.white = 'O-O';
+            this.reviewWhitePinnedPieces();
+            this.reviewBlackPinnedPieces();
             this.reviewIfWhiteCheck();
           }
 
@@ -3117,6 +3440,8 @@ export class AppComponent {
             this.cells['a1'] = [];
             this.whiteLongCastlingMove = '';
             this.currentMove.white = 'O-O-O';
+            this.reviewWhitePinnedPieces();
+            this.reviewBlackPinnedPieces();
             this.reviewIfWhiteCheck();
           }
 
@@ -3142,6 +3467,8 @@ export class AppComponent {
               this.currentMove.black = this.currentName;
             }
 
+            this.reviewBlackPinnedPieces();
+            this.reviewWhitePinnedPieces();
             this.reviewIfBlackCheck();
 
             this.pieceAlive[this.cells[this.currentName][0].cid].currentCell = this.currentName;
@@ -3149,7 +3476,7 @@ export class AppComponent {
               // Promote
               dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'],
                             currentCell: this.currentName, setOfPieces: this.blackPieces, selected: '', pieceColor: 'B'}
-              this.openDialog(dataToSend)
+              this.openDialog(dataToSend);
             }
           } else {
             if (takesPiece) {
@@ -3161,6 +3488,8 @@ export class AppComponent {
                 this.currentMove.black = this.currentPiece['kind'].concat('x').concat(this.currentName);
               } else {
                 this.currentMove.black = currentNotationMove.concat('x').concat(this.currentName);
+                this.reviewBlackPinnedPieces();
+                this.reviewWhitePinnedPieces();
                 this.reviewIfBlackCheck();
               }
             } else {
@@ -3169,6 +3498,8 @@ export class AppComponent {
                 this.currentMove.black = this.currentPiece['kind'].concat(this.currentName);
               } else {
                 this.currentMove.black = currentNotationMove.concat(this.currentName);
+                this.reviewBlackPinnedPieces();
+                this.reviewWhitePinnedPieces();
                 this.reviewIfBlackCheck();
               }
             }
@@ -3188,6 +3519,8 @@ export class AppComponent {
             this.pieceAlive[pieceTaked['cid']].alive = false;
 
             this.currentMove.black = this.file.concat('x').concat(this.currentName).concat('e.p.');
+            this.reviewBlackPinnedPieces();
+            this.reviewWhitePinnedPieces();
             this.reviewIfBlackCheck();
           }
 
@@ -3201,6 +3534,8 @@ export class AppComponent {
             this.cells['h8'] = [];
             this.blackShortCastlingMove = '';
             this.currentMove.black = 'O-O';
+            this.reviewBlackPinnedPieces();
+            this.reviewWhitePinnedPieces();
             this.reviewIfBlackCheck();
           }
 
@@ -3214,6 +3549,8 @@ export class AppComponent {
             this.cells['a8'] = [];
             this.blackLongCastlingMove = '';
             this.currentMove.black = 'O-O-O';
+            this.reviewBlackPinnedPieces();
+            this.reviewWhitePinnedPieces();
             this.reviewIfBlackCheck();
           }
 
@@ -3230,8 +3567,10 @@ export class AppComponent {
         console.log(this.whiteTurn);
         console.log(this.whiteMoves);
         console.log(this.blackMoves);
-        console.log(this.whiteForbiddenCells)
-        console.log(this.blackForbiddenCells)
+        console.log(this.whiteForbiddenCells);
+        console.log(this.blackForbiddenCells);
+        console.log(this.whitePinnedPieces);
+        console.log(this.blackPinnedPieces);
         console.log(this.pieceAlive);
         console.log(this.cells);
         //  console.log(event.container.data)

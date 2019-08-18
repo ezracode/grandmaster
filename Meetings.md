@@ -237,6 +237,7 @@
     Se completó que no pueda hacer el enroque de los reyes si las posiciones estan amenazadas
     El rey no se puede mover si todas las casillas a su alrededor estan amenazadas
 
+    0. Marcar las celdas a las que se puede mover una pieza tambien dando clic
     1. Pinned de las piezas cuando defienden al rey
     2. No permitirle al rey que capture una pieza enemiga si está esta siendo protegida por otras piezas.
     3. Jaque Mate
