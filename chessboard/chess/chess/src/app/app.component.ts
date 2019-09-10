@@ -1709,6 +1709,352 @@ export class AppComponent {
     return cellsToPaint;
   }
 
+  private isProtected(currentPiece: {}) {
+    let file = '';
+    let rank = '';
+    let lrank = 0;
+    let i = 0;
+    let follow = true;
+    let tempCell = '';
+
+    let tempCellDiagonal = [];
+    let tempCellLeftUp1 = [];
+    let tempCellLeftUp2 = [];
+    let tempCellRightUp1 = [];
+    let tempCellRightUp2 = [];
+    let tempCellRightDown1 = [];
+    let tempCellRightDown2 = [];
+    let tempCellLeftDown1 = [];
+    let tempCellLeftDown2 = [];
+
+    const cellsToPaint = [];
+
+    file = currentPiece['currentPosition'].substring(0, 1);
+    rank = currentPiece['currentPosition'].substring(1, 2);
+
+    console.log('isProtected');
+    console.log('current piece');
+    console.log(currentPiece);
+
+    // left
+    console.log('left');
+    lrank = +rank;
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined) {
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right
+    console.log('right');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined) {
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // down
+    console.log('down');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file)];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // up
+    console.log('up');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file)];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'R' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // left and up
+    console.log('left and up');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined
+          && lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1) ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1) )) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        } 
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right and up
+    console.log('right and up');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined
+          && lrank + i < this.maxLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank + i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1) ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // left and down
+    console.log('left and down');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) - i] !== undefined
+          && lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) - i];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1) ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+    // right and down
+    console.log('right and down');
+    follow = true;
+    i = 1;
+    while (follow) {
+      if (this.files[this.files.indexOf(file) + i] !== undefined
+          && lrank - i > this.minLimit) {
+
+        tempCell = this.files[this.files.indexOf(file) + i];
+        tempCell = tempCell.concat((lrank - i).toString());
+        console.log(tempCell);
+
+        tempCellDiagonal = this.cells[tempCell];
+        if (tempCellDiagonal.length !== 0) {
+          if ((tempCellDiagonal[0].color === currentPiece['color']) &&
+             (tempCellDiagonal[0].kind === 'B' || tempCellDiagonal[0].kind === 'Q' ||
+             (tempCellDiagonal[0].kind === 'K' && i === 1) ||
+             (tempCellDiagonal[0].kind === 'P' && i === 1))) {
+              cellsToPaint.push(tempCell);
+          }
+          follow = false;
+        }
+      } else {
+        follow = false;
+      }
+      i++;
+    }
+
+    // possible positions of knights
+
+    if ((this.files[this.files.indexOf(file) - 2] !== undefined) &&
+      (lrank + 1 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 2];
+        tempCell = tempCell.concat((lrank + 1).toString());
+        tempCellLeftUp1 = this.cells[tempCell];
+        if (tempCellLeftUp1.length !== 0) {
+          if ((tempCellLeftUp1[0].color === currentPiece['color']) &&
+             (tempCellLeftUp1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) - 1] !== undefined) &&
+      (lrank + 2 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 1];
+        tempCell = tempCell.concat((lrank + 2).toString());
+        tempCellLeftUp2 = this.cells[tempCell];
+        if (tempCellLeftUp2.length !== 0) {
+          if ((tempCellLeftUp2[0].color === currentPiece['color']) &&
+             (tempCellLeftUp2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 1] !== undefined) &&
+      (lrank + 2 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 1];
+        tempCell = tempCell.concat((lrank + 2).toString());
+        tempCellRightUp1 = this.cells[tempCell];
+        if (tempCellRightUp1.length !== 0) {
+          if ((tempCellRightUp1[0].color === currentPiece['color']) &&
+             (tempCellRightUp1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 2] !== undefined) &&
+      (lrank + 1 < this.maxLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 2];
+        tempCell = tempCell.concat((lrank + 1).toString());
+        tempCellRightUp2 = this.cells[tempCell];
+        if (tempCellRightUp2.length !== 0) {
+          if ((tempCellRightUp2[0].color === currentPiece['color']) &&
+             (tempCellRightUp2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 2] !== undefined) &&
+      (lrank - 1 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 2];
+        tempCell = tempCell.concat((lrank - 1).toString());
+        tempCellRightDown1 = this.cells[tempCell];
+        if (tempCellRightDown1.length !== 0) {
+          if ((tempCellRightDown1[0].color === currentPiece['color']) &&
+             (tempCellRightDown1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) + 1] !== undefined) &&
+      (lrank - 2 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) + 1];
+        tempCell = tempCell.concat((lrank - 2).toString());
+        tempCellRightDown2 = this.cells[tempCell];
+        if (tempCellRightDown2.length !== 0) {
+          if ((tempCellRightDown2[0].color === currentPiece['color']) &&
+             (tempCellRightDown2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) - 1] !== undefined) &&
+      (lrank - 2 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 1];
+        tempCell = tempCell.concat((lrank - 2).toString());
+        tempCellLeftDown1 = this.cells[tempCell];
+        if (tempCellLeftDown1.length !== 0) {
+          if ((tempCellLeftDown1[0].color === currentPiece['color']) &&
+             (tempCellLeftDown1[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    if ((this.files[this.files.indexOf(file) - 2] !== undefined) &&
+      (lrank - 1 > this.minLimit)) {
+        tempCell = this.files[this.files.indexOf(file) - 2];
+        tempCell = tempCell.concat((lrank - 1).toString());
+        tempCellLeftDown2 = this.cells[tempCell];
+        if (tempCellLeftDown2.length !== 0) {
+          if ((tempCellLeftDown2[0].color === currentPiece['color']) &&
+             (tempCellLeftDown2[0].kind === 'N')) {
+              cellsToPaint.push(tempCell);
+          }
+        }
+    }
+
+    console.log('function isProtected cells to paint');
+    console.log(cellsToPaint);
+    return cellsToPaint;
+  }
+
   private checkPinnedPieces(currentPiece: {}) {
     let file = '';
     let rank = '';
@@ -2916,6 +3262,10 @@ export class AppComponent {
       } else if (this.currentPiece['kind'] === 'K') {
         console.log('King');
 
+        let protectedCells = [];
+        console.log('Protected Cells');
+        console.log(protectedCells);
+
         // left
         console.log('left');
         lrank = +this.rank;
@@ -2928,7 +3278,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -2944,7 +3297,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -2960,7 +3316,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -2976,7 +3335,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -2993,7 +3355,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -3010,7 +3375,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -3028,7 +3396,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);
@@ -3046,7 +3417,10 @@ export class AppComponent {
           tempCellDiagonal = this.cells[tempCell];
           if (tempCellDiagonal.length !== 0) {
             if (tempCellDiagonal[0].color !== this.currentPiece['color']) {
-              this.currentPiece['cellsToPaint'].push(tempCell);
+              protectedCells = this.isProtected(tempCellDiagonal[0]);
+              if (protectedCells.length === 0) {
+                this.currentPiece['cellsToPaint'].push(tempCell);
+              }
             }
           } else {
             this.currentPiece['cellsToPaint'].push(tempCell);

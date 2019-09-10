@@ -253,3 +253,24 @@
 
     En la parte del backend no olvidar que estamos usando R para codificar los tableros
     Revisar que falta como pendiente en el backend
+
+## 10/09/2019
+
+    Se completaron 36 semanas de trabajo
+    Se completaron los incisos 0, 1 y 2
+
+    Pendiente
+
+    3. Jaque Mate
+    4. Defensa de Jaque Mate, obligar a todas las piezas posibles a defender al rey
+    5. Notación algebraica de Jaque Mate
+    6. Empate por Rey ahogado
+    7. Empate por material insuficiente
+    8. Boton de retroceso del log del juego
+    9. Boton de avance del log del juego
+    10. Codificación de tablero para enviarlo a algoritmos de mejores jugadas
+    11. Empate por triple repetición de posicion
+    12. Empate por regla de los cincuenta movimientos
+
+    Bug del inciso 0
+    Si la pieza a la que se da clic es la misma solo desmarcar las celdas marcadas
