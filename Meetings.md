@@ -254,7 +254,7 @@
     En la parte del backend no olvidar que estamos usando R para codificar los tableros
     Revisar que falta como pendiente en el backend
 
-## 10/09/2019
+## 09/09/2019
 
     Se completaron 36 semanas de trabajo
     Se completaron los incisos 0, 1 y 2
@@ -274,3 +274,7 @@
 
     Bug del inciso 0
     Si la pieza a la que se da clic es la misma solo desmarcar las celdas marcadas
+
+## 10/09/2019
+
+    Bug del inciso 0 corregido

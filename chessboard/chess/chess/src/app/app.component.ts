@@ -87,6 +87,8 @@ export class AppComponent {
   title = 'chess';
   currentName = '';
   previousName = '';
+  clickedName = '';
+  samePieceClicked = false;
   currentPiece = {};
   currentCellsToPaint = [];
   file = '';
@@ -2507,9 +2509,20 @@ export class AppComponent {
 
     console.log('started method');
     console.log(event);
+    console.log('same piece clicked');
+    console.log(this.samePieceClicked);
+    console.log(this.clickedName);
+
     if (event instanceof MouseEvent) {
+      if (this.clickedName !== event['path'][3].attributes[3].value) {
+        this.samePieceClicked = false;
+      } else {
+        this.samePieceClicked = !this.samePieceClicked;
+      }
+      this.clickedName = event['path'][3].attributes[3].value;
       this.previousName = event['path'][3].attributes[3].value;
     } else {
+      this.samePieceClicked = false;
       this.previousName = event.source.element.nativeElement.parentElement.getAttribute('name');
     }
     console.log(this.previousName);
@@ -3540,20 +3553,24 @@ export class AppComponent {
         console.log('Forbidden cells');
         console.log(forbiddenCells);
 
-        for (const item of this.currentPiece['cellsToPaint']) {
-          // check if the cell is not under attack
-          const found = forbiddenCells.find(element => element === item);
+        if (!this.samePieceClicked) {
+          for (const item of this.currentPiece['cellsToPaint']) {
+            // check if the cell is not under attack
+            const found = forbiddenCells.find(element => element === item);
 
-          if (found === undefined) {
-            // If the cell is not under attack King can move to this cell
-            this.currentCellsToPaint.push(item);
-            this.status[item] = false;
+            if (found === undefined) {
+              // If the cell is not under attack King can move to this cell
+              this.currentCellsToPaint.push(item);
+              this.status[item] = false;
+            }
           }
         }
       } else {
-        for (const item of this.currentPiece['cellsToPaint']) {
-          this.currentCellsToPaint.push(item);
-          this.status[item] = false;
+        if (!this.samePieceClicked) {
+          for (const item of this.currentPiece['cellsToPaint']) {
+            this.currentCellsToPaint.push(item);
+            this.status[item] = false;
+          }
         }
       }
     }
