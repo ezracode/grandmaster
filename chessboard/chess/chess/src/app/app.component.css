@@ -107,6 +107,26 @@
     width: 70px;
     display: block;
 }
+.yellowcanbecaptured
+{
+    background-color: #FFA726;
+    border-color: #00b36b;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
+.softyellowcanbecaptured
+{
+    background-color: #FFB74D;
+    border-color: #00cc7a;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    display: block;
+}
 .container
 {
     background: transparent;

@@ -280,3 +280,10 @@
     Bug del inciso 0 corregido
     Se agrega item 13.
     13. Si un elemento que acaba de ser movido puede ser capturado por una pieza enemiga, tambien debe de marcarse.
+
+## 28/10/2019
+
+    Se retoma el proyecto despues de 7 semanas de descanso
+    Se hara un sprint de 8 semanas para completar el tablero
+
+    
