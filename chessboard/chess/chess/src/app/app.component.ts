@@ -425,11 +425,13 @@ export class AppComponent {
      });
   }
 
-  ngOnInit() {
-    // this.apiService.getGames().subscribe(res => {
-    //         console.log(res)});
-    // console.log('ngOnInit');
+/*
+    ngOnInit() {
+    this.apiService.getGames().subscribe(res => {
+    console.log(res)});
+    console.log('ngOnInit');
   }
+*/
 
   disablePiece(enable: boolean) {
     for (const item in this.cells) {
@@ -1526,7 +1528,7 @@ export class AppComponent {
               cellsToPaint.push(tempCell);
           }
           follow = false;
-        } 
+        }
       } else {
         follow = false;
       }
@@ -1869,7 +1871,7 @@ export class AppComponent {
               cellsToPaint.push(tempCell);
           }
           follow = false;
-        } 
+        }
       } else {
         follow = false;
       }
@@ -2506,11 +2508,19 @@ export class AppComponent {
         if (found === undefined) {
           // If the cell is not under attack King can move to this cell
           this.status[item] = true;
+
+          if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
+            this.colorOfCurrentMoveCanBeCaptured[item] = false;
+          }
         }
       }
     } else {
       for (const item of this.currentPiece['cellsToPaint']) {
         this.status[item] = true;
+
+        if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
+          this.colorOfCurrentMoveCanBeCaptured[item] = false;
+        }
       }
     }
     this.currentCellsToPaint = [];
@@ -2541,6 +2551,9 @@ export class AppComponent {
     // Unpaint previous cells to paint
     for (const item of this.currentCellsToPaint ) {
       this.status[item] = true;
+      if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
+        this.colorOfCurrentMoveCanBeCaptured[item] = false;
+      }
     }
 
     this.currentPiece = this.cells[this.previousName][0];
@@ -2614,7 +2627,7 @@ export class AppComponent {
               tempCell = tempCell.concat((lrank - 1).toString());
               tempCellLeft = this.cells[tempCell];
               if (tempCellLeft.length !== 0) {
-                // En passant can be done only if the move of the opponent is the first move 
+                // En passant can be done only if the move of the opponent is the first move
                 if (tempCellLeft[0].color === 'B' && tempCellLeft[0].counterOfMoves === 1) {
                   temp = new Turn();
                   temp = this.blackMoves[this.blackMoves.length - 1];
@@ -3465,6 +3478,11 @@ export class AppComponent {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
                   console.log('white short castling');
+                  console.log(this.whiteForbiddenCells);
+                  console.log(this.whiteForbiddenCells.indexOf('f1'));
+                  console.log(this.whiteForbiddenCells.indexOf('g1'));
+                  console.log(this.whiteForbiddenCells.indexOf('f1') !== -1 && this.whiteForbiddenCells.indexOf('g1') !== -1);
+                  console.log('white short castling');
                   this.whiteShortCastlingMove = 'g1';
                   this.currentPiece['cellsToPaint'].push(this.whiteShortCastlingMove);
                 }
@@ -3477,6 +3495,11 @@ export class AppComponent {
                 if (this.whiteForbiddenCells.indexOf('c1') !== -1 && this.whiteForbiddenCells.indexOf('d1') !== -1) {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
+                  console.log('white long castling');
+                  console.log(this.whiteForbiddenCells);
+                  console.log(this.whiteForbiddenCells.indexOf('c1'));
+                  console.log(this.whiteForbiddenCells.indexOf('d1'));
+                  console.log(this.whiteForbiddenCells.indexOf('c1') !== -1 && this.whiteForbiddenCells.indexOf('d1') !== -1);
                   console.log('white long castling');
                   this.whiteLongCastlingMove = 'c1';
                   this.currentPiece['cellsToPaint'].push(this.whiteLongCastlingMove);
@@ -3494,6 +3517,11 @@ export class AppComponent {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
                   console.log('black short castling');
+                  console.log(this.blackForbiddenCells);
+                  console.log(this.blackForbiddenCells.indexOf('f8'));
+                  console.log(this.blackForbiddenCells.indexOf('g8'));
+                  console.log(this.blackForbiddenCells.indexOf('f8') !== -1 && this.blackForbiddenCells.indexOf('g8') !== -1);
+                  console.log('black short castling');
                   this.blackShortCastlingMove = 'g8';
                   this.currentPiece['cellsToPaint'].push(this.blackShortCastlingMove);
                 }
@@ -3506,6 +3534,11 @@ export class AppComponent {
                 if (this.blackForbiddenCells.indexOf('c8') !== -1 && this.blackForbiddenCells.indexOf('d8') !== -1) {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
+                  console.log('black long castling');
+                  console.log(this.blackForbiddenCells);
+                  console.log(this.blackForbiddenCells.indexOf('c8'));
+                  console.log(this.blackForbiddenCells.indexOf('d8'));
+                  console.log(this.blackForbiddenCells.indexOf('c8') !== -1 && this.blackForbiddenCells.indexOf('d8') !== -1);
                   console.log('black long castling');
                   this.blackLongCastlingMove = 'c8';
                   this.currentPiece['cellsToPaint'].push(this.blackLongCastlingMove);
@@ -3573,6 +3606,9 @@ export class AppComponent {
               // If the cell is not under attack King can move to this cell
               this.currentCellsToPaint.push(item);
               this.status[item] = false;
+              if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
+                this.colorOfCurrentMoveCanBeCaptured[item] = true;
+              }
             }
           }
         }
@@ -3581,6 +3617,9 @@ export class AppComponent {
           for (const item of this.currentPiece['cellsToPaint']) {
             this.currentCellsToPaint.push(item);
             this.status[item] = false;
+            if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
+              this.colorOfCurrentMoveCanBeCaptured[item] = true;
+            }
           }
         }
       }
@@ -3635,7 +3674,7 @@ export class AppComponent {
         piecePosition = this.pieceAlive[item].currentCell;
         // console.log(item);
         // console.log(piecePosition);
-        switch(this.pieceAlive[item].currentKind) {
+        switch (this.pieceAlive[item].currentKind) {
           case 'P': {
             tempCells = this.cellsOfPawn(this.cells[piecePosition][0]);
             break;
@@ -3848,7 +3887,8 @@ export class AppComponent {
           }
 
           // this.currentMove.black = ''
-          this.whiteForbiddenCells = this.setForbiddenCells('W');
+          this.blackForbiddenCells = this.setForbiddenCells('W');
+          this.whiteForbiddenCells = this.setForbiddenCells('B');
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
         } else {
@@ -3877,7 +3917,7 @@ export class AppComponent {
             if (this.currentName.substring(1, 2) === '1') {
               // Promote
               dataToSend = {turn: this.currentMove.turn, piece: this.currentPiece['cvalue'],
-                            currentCell: this.currentName, setOfPieces: this.blackPieces, selected: '', pieceColor: 'B'}
+                            currentCell: this.currentName, setOfPieces: this.blackPieces, selected: '', pieceColor: 'B'};
               this.openDialog(dataToSend);
             }
           } else {
@@ -3957,7 +3997,8 @@ export class AppComponent {
           }
 
           console.log(this.currentMove);
-          this.blackForbiddenCells = this.setForbiddenCells('B');
+          this.whiteForbiddenCells = this.setForbiddenCells('B');
+          this.blackForbiddenCells = this.setForbiddenCells('W');
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
         }
@@ -3969,12 +4010,15 @@ export class AppComponent {
         console.log(this.whiteTurn);
         console.log(this.whiteMoves);
         console.log(this.blackMoves);
+        console.log('White Forbidden Cells');
         console.log(this.whiteForbiddenCells);
+        console.log('Black Forbidden Cells');
         console.log(this.blackForbiddenCells);
         console.log(this.whitePinnedPieces);
         console.log(this.blackPinnedPieces);
         console.log(this.pieceAlive);
         console.log(this.cells);
+        console.log(this.cellOfLastMove);
         //  console.log(event.container.data)
       }
     }

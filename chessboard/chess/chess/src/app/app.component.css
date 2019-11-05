@@ -56,75 +56,99 @@
 .white 
 {
     background-color: #03A9F4;
+    border-color: #03A9F4;
+    border-width: 2px;
+    border-style: solid;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .black
 {
     background-color: #1976D2;
+    border-color: #1976D2;
+    border-width: 2px;
+    border-style: solid;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .red
 {
     background-color: #00b36b;
+    border-color: #00b36b;
+    border-width: 2px;
+    border-style: solid;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .softred
 {
     background-color: #00cc7a;
+    border-color: #00cc7a;
+    border-width: 2px;
+    border-style: solid;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .yellow
 {
     background-color: #FFA726;
+    border-color: #FFA726;
+    border-width: 2px;
+    border-style: solid;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .softyellow
 {
     background-color: #FFB74D;
+    border-color: #FFB74D;
+    border-width: 2px;
+    border-style: solid;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .yellowcanbecaptured
 {
     background-color: #FFA726;
+    /*background-color: #00b36b*/;
     border-color: #00b36b;
+    border-width: 2px;
+    border-style: dotted;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .softyellowcanbecaptured
 {
     background-color: #FFB74D;
+    /*background-color: #00cc7a;*/
     border-color: #00cc7a;
+    border-width: 2px;
+    border-style: dotted;
     float: left;
-    height: 70px;
+    height: 66px;
     overflow: hidden;
-    width: 70px;
+    width: 66px;
     display: block;
 }
 .container

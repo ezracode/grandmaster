@@ -286,4 +286,10 @@
     Se retoma el proyecto despues de 7 semanas de descanso
     Se hara un sprint de 8 semanas para completar el tablero
 
-    
+## 01/11/2019
+
+    Se resuelve el item numero 13.
+
+## 04/11/2019
+
+    Bug encontrado al hacer enroques, se ha resuelto correctamente
