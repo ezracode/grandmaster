@@ -3474,14 +3474,9 @@ export class AppComponent {
             // Short Castling
             if (this.cells['f1'].length === 0 && this.cells['g1'].length === 0 && this.cells['h1'].length !== 0) {
               if (this.cells['h1'][0].counterOfMoves === 0) {
-                if (this.whiteForbiddenCells.indexOf('f1') !== -1 && this.whiteForbiddenCells.indexOf('g1') !== -1) {
+                if (this.whiteForbiddenCells.indexOf('f1') === -1 && this.whiteForbiddenCells.indexOf('g1') === -1) {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
-                  console.log('white short castling');
-                  console.log(this.whiteForbiddenCells);
-                  console.log(this.whiteForbiddenCells.indexOf('f1'));
-                  console.log(this.whiteForbiddenCells.indexOf('g1'));
-                  console.log(this.whiteForbiddenCells.indexOf('f1') !== -1 && this.whiteForbiddenCells.indexOf('g1') !== -1);
                   console.log('white short castling');
                   this.whiteShortCastlingMove = 'g1';
                   this.currentPiece['cellsToPaint'].push(this.whiteShortCastlingMove);
@@ -3492,14 +3487,9 @@ export class AppComponent {
             if (this.cells['b1'].length === 0 && this.cells['c1'].length === 0 && this.cells['d1'].length === 0
               && this.cells['a1'].length !== 0) {
               if (this.cells['a1'][0].counterOfMoves === 0) {
-                if (this.whiteForbiddenCells.indexOf('c1') !== -1 && this.whiteForbiddenCells.indexOf('d1') !== -1) {
+                if (this.whiteForbiddenCells.indexOf('c1') === -1 && this.whiteForbiddenCells.indexOf('d1') === -1) {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
-                  console.log('white long castling');
-                  console.log(this.whiteForbiddenCells);
-                  console.log(this.whiteForbiddenCells.indexOf('c1'));
-                  console.log(this.whiteForbiddenCells.indexOf('d1'));
-                  console.log(this.whiteForbiddenCells.indexOf('c1') !== -1 && this.whiteForbiddenCells.indexOf('d1') !== -1);
                   console.log('white long castling');
                   this.whiteLongCastlingMove = 'c1';
                   this.currentPiece['cellsToPaint'].push(this.whiteLongCastlingMove);
@@ -3513,14 +3503,9 @@ export class AppComponent {
             // Short Castling
             if (this.cells['f8'].length === 0 && this.cells['g8'].length === 0 && this.cells['h8'].length !== 0) {
               if (this.cells['h8'][0].counterOfMoves === 0) {
-                if (this.blackForbiddenCells.indexOf('f8') !== -1 && this.blackForbiddenCells.indexOf('g8') !== -1) {
+                if (this.blackForbiddenCells.indexOf('f8') === -1 && this.blackForbiddenCells.indexOf('g8') === -1) {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
-                  console.log('black short castling');
-                  console.log(this.blackForbiddenCells);
-                  console.log(this.blackForbiddenCells.indexOf('f8'));
-                  console.log(this.blackForbiddenCells.indexOf('g8'));
-                  console.log(this.blackForbiddenCells.indexOf('f8') !== -1 && this.blackForbiddenCells.indexOf('g8') !== -1);
                   console.log('black short castling');
                   this.blackShortCastlingMove = 'g8';
                   this.currentPiece['cellsToPaint'].push(this.blackShortCastlingMove);
@@ -3531,14 +3516,9 @@ export class AppComponent {
             if (this.cells['b8'].length === 0 && this.cells['c8'].length === 0 && this.cells['d8'].length === 0
                && this.cells['a8'].length !== 0) {
               if (this.cells['a8'][0].counterOfMoves === 0) {
-                if (this.blackForbiddenCells.indexOf('c8') !== -1 && this.blackForbiddenCells.indexOf('d8') !== -1) {
+                if (this.blackForbiddenCells.indexOf('c8') === -1 && this.blackForbiddenCells.indexOf('d8') === -1) {
                   // Cells between King and Rock are not under attack
                   // When Castling ends, King is not in check
-                  console.log('black long castling');
-                  console.log(this.blackForbiddenCells);
-                  console.log(this.blackForbiddenCells.indexOf('c8'));
-                  console.log(this.blackForbiddenCells.indexOf('d8'));
-                  console.log(this.blackForbiddenCells.indexOf('c8') !== -1 && this.blackForbiddenCells.indexOf('d8') !== -1);
                   console.log('black long castling');
                   this.blackLongCastlingMove = 'c8';
                   this.currentPiece['cellsToPaint'].push(this.blackLongCastlingMove);
@@ -3548,6 +3528,7 @@ export class AppComponent {
           }
         }
       }
+
       console.log('cells to paint');
       console.log(this.currentPiece['cellsToPaint']);
 
@@ -3583,9 +3564,9 @@ export class AppComponent {
 
         // Must add the forbidden cells for King
         if (!this.whiteTurn) {
-          threatedCells = this.blackForbiddenCells;
-        } else {
           threatedCells = this.whiteForbiddenCells;
+        } else {
+          threatedCells = this.blackForbiddenCells;
         }
 
         threatedCells.forEach(function(element) {
@@ -3600,15 +3581,19 @@ export class AppComponent {
         if (!this.samePieceClicked) {
           for (const item of this.currentPiece['cellsToPaint']) {
             // check if the cell is not under attack
-            const found = forbiddenCells.find(element => element === item);
-
-            if (found === undefined) {
+            const found = forbiddenCells.indexOf(item);
+            console.log(item);
+            console.log(found);
+            if (found === -1) {
               // If the cell is not under attack King can move to this cell
               this.currentCellsToPaint.push(item);
               this.status[item] = false;
               if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
                 this.colorOfCurrentMoveCanBeCaptured[item] = true;
               }
+            } else {
+              // If the cell is under attack it must be delete from the list
+              this.currentPiece['cellsToPaint'] = this.currentPiece['cellsToPaint'].splice(found, 1);
             }
           }
         }
@@ -3624,6 +3609,8 @@ export class AppComponent {
         }
       }
     }
+    console.log('cells to paint at the end of the procedure');
+    console.log(this.currentPiece['cellsToPaint']);
   }
 
   private reviewIfWhiteCheck(): void {
@@ -3887,8 +3874,8 @@ export class AppComponent {
           }
 
           // this.currentMove.black = ''
-          this.blackForbiddenCells = this.setForbiddenCells('W');
-          this.whiteForbiddenCells = this.setForbiddenCells('B');
+          this.blackForbiddenCells = this.setForbiddenCells('W');  // Foribden cells for black king are white moves
+          this.whiteForbiddenCells = this.setForbiddenCells('B');  // Foribden cells for white king are black moves
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
         } else {
@@ -3997,8 +3984,8 @@ export class AppComponent {
           }
 
           console.log(this.currentMove);
-          this.whiteForbiddenCells = this.setForbiddenCells('B');
-          this.blackForbiddenCells = this.setForbiddenCells('W');
+          this.whiteForbiddenCells = this.setForbiddenCells('B');  // Foribden cells for white king are black moves
+          this.blackForbiddenCells = this.setForbiddenCells('W');  // Foribden cells for black king are white moves
           ELEMENT_DATA.push(this.currentMove);
           this.gameMoves.data.next(ELEMENT_DATA);
         }
