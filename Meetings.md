@@ -293,3 +293,61 @@
 ## 04/11/2019
 
     Bug encontrado al hacer enroques, se ha resuelto correctamente
+
+## 05/11/2019
+
+    Pendiente del Tablero
+
+    1.  Defensa de Jaque, obligar a todas las piezas posibles a defender al rey o mover el regy
+    2.  Bloquear el tablero para que se elimine el Jaque
+    3.  Jaque Mate
+    4.  Defensa de Jaque Mate, obligar a todas las piezas posibles a defender al rey
+    5.  Notación algebraica de Jaque Mate
+    6.  Empate por Rey ahogado
+    7.  Empate por material insuficiente
+    8.  Boton de retroceso del log del juego
+    9.  Boton de avance del log del juego
+    10. Codificación de tablero para enviarlo a algoritmos de mejores jugadas
+    11. Empate por triple repetición de posicion
+    12. Empate por regla de los cincuenta movimientos
+
+    Pendientes del Back End (El analisis hecho en R)
+
+    1.  Codificar la notación cuando las piezas capturan
+    2.  Codificar la notacion especial cuando dos piezas iguales estando en diferente posicion     puede ir a una misma celda
+    3.  Codificar los jaques (ver todos los casos)
+    4.  Codificar los jaque mates (ver todos los casos)
+    5.  Codificar la captura al paso
+    6.  Determinar si el analisis sera:
+        1. Jugar contra la base de datos
+        2. Sugerir la mejor jugada
+        3. Prevenir la peor jugada
+    7.  Ejecutar un script de R desde NodeJS (Esto ya se investigó pero hay que hacer el web       service)
+
+    Con respecto al marco teórico.  Creo que los temas pueden ser los siguientes.
+
+    1.  Historia del Ajedrez
+    2.  Reglas del Ajedrez
+    3.  Notación algebraica del Ajedrez
+    4.  Piezas del Ajedrez y sus movimientos
+    5.  Variantes del ajedrez y piezas mágicas.
+    6.  Grandes Campeones de Ajedrez
+          Emanuel Lasker
+          Jose Raul Capablanca
+          Mijail Botvinik
+          Tigran Petrosian
+          Boris Spassky
+          Bobby Fischer
+          Anatoli Karpov
+          Garri Kaspárov
+          Vladimir Kramnik
+          Viswanathan Anand
+          Magnus Carlsen
+    7.  Maquinas jugando ajedrez:  Deep Blue
+    8.  Software jugando ajedrez:  Stockfish
+    9.  Inteligencia Artificial en ajedrez:  Lc0, AlphaZero
+    10. Bases de Datos de Finales
+    11. Software para mejorar en ajedrez:  GrandMaster
+    12. Herramientas y librerias de desarrollo
+    13. Evolucion del proyecto
+    14. Atrasos en la ejecución del proyecto
