@@ -298,7 +298,7 @@
 
     Pendiente del Tablero
 
-    1.  Defensa de Jaque, obligar a todas las piezas posibles a defender al rey o mover el regy
+    1.  Defensa de Jaque, obligar a todas las piezas posibles a defender al rey o mover el rey
     2.  Bloquear el tablero para que se elimine el Jaque
     3.  Jaque Mate
     4.  Defensa de Jaque Mate, obligar a todas las piezas posibles a defender al rey
@@ -314,7 +314,7 @@
     Pendientes del Back End (El analisis hecho en R)
 
     1.  Codificar la notación cuando las piezas capturan
-    2.  Codificar la notacion especial cuando dos piezas iguales estando en diferente posicion     puede ir a una misma celda
+    2.  Codificar la notacion especial cuando dos piezas iguales estando en diferente posicion puede ir a una misma celda
     3.  Codificar los jaques (ver todos los casos)
     4.  Codificar los jaque mates (ver todos los casos)
     5.  Codificar la captura al paso
@@ -322,7 +322,7 @@
         1. Jugar contra la base de datos
         2. Sugerir la mejor jugada
         3. Prevenir la peor jugada
-    7.  Ejecutar un script de R desde NodeJS (Esto ya se investigó pero hay que hacer el web       service)
+    7.  Ejecutar un script de R desde NodeJS (Esto ya se investigó pero hay que hacer el web service)
 
     Con respecto al marco teórico.  Creo que los temas pueden ser los siguientes.
 

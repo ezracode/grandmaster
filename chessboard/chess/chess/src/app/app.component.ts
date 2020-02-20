@@ -2501,6 +2501,11 @@ export class AppComponent {
         }
       }
 
+      console.log('Forbidden Cells');
+      console.log(forbiddenCells);
+      console.log('Cells to unPaint');
+      console.log(this.currentPiece['cellsToPaint']);
+
       for (const item of this.currentPiece['cellsToPaint']) {
         // check if the cell is not under attack
         const found = forbiddenCells.find(element => element === item);
@@ -3582,6 +3587,7 @@ export class AppComponent {
           for (const item of this.currentPiece['cellsToPaint']) {
             // check if the cell is not under attack
             const found = forbiddenCells.indexOf(item);
+            console.log('check if the cell is not under attack');
             console.log(item);
             console.log(found);
             if (found === -1) {
@@ -3591,10 +3597,9 @@ export class AppComponent {
               if (this.cellOfLastMove[0] === item || this.cellOfLastMove[1] === item) {
                 this.colorOfCurrentMoveCanBeCaptured[item] = true;
               }
-            } else {
-              // If the cell is under attack it must be delete from the list
-              this.currentPiece['cellsToPaint'] = this.currentPiece['cellsToPaint'].splice(found, 1);
             }
+            console.log(this.currentPiece['cellsToPaint']);
+            this.currentPiece['cellsToPaint'] = this.currentCellsToPaint;
           }
         }
       } else {
@@ -3995,19 +4000,30 @@ export class AppComponent {
 
         console.log('Game resume');
         console.log(this.whiteTurn);
+        console.log('White Moves');
         console.log(this.whiteMoves);
+        console.log('Black Moves');
         console.log(this.blackMoves);
         console.log('White Forbidden Cells');
         console.log(this.whiteForbiddenCells);
         console.log('Black Forbidden Cells');
         console.log(this.blackForbiddenCells);
+        console.log('White Pinned Cells');
         console.log(this.whitePinnedPieces);
+        console.log('Black Pinned Cells');
         console.log(this.blackPinnedPieces);
+        console.log('Alive Pieces');
         console.log(this.pieceAlive);
+        console.log('chessboard');
         console.log(this.cells);
+        console.log('Last Move')
         console.log(this.cellOfLastMove);
         //  console.log(event.container.data)
-      }
+        console.log('White is in Check?');
+        console.log(this.whiteCheck);
+        console.log('Black is in Check?');
+        console.log(this.blackCheck);
+       }
     }
   }
 }
