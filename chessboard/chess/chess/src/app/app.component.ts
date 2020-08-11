@@ -5,9 +5,9 @@ import { ApiService } from './api.service';
 import { DataSource } from '@angular/cdk/collections';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { MatSelectModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material/select';
 import { PortalHostDirective } from '@angular/cdk/portal';
 
 interface Piece {
