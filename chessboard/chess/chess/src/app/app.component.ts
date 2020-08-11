@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
 import { CdkDrag, CdkDragStart, CdkDragDrop, transferArrayItem, CdkDragEnd, CdkDropList } from '@angular/cdk/drag-drop';
-import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './api.service';
 import { DataSource } from '@angular/cdk/collections';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { trigger, state, style, transition, animate } from '@angular/animations';
-import { MatSelectModule } from '@angular/material/select';
-import { PortalHostDirective } from '@angular/cdk/portal';
 
 interface Piece {
   value: string;
