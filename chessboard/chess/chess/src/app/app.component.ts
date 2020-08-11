@@ -3583,6 +3583,8 @@ export class AppComponent {
         console.log('Forbidden cells');
         console.log(forbiddenCells);
 
+        this.currentCellsToPaint = [];
+
         if (!this.samePieceClicked) {
           for (const item of this.currentPiece['cellsToPaint']) {
             // check if the cell is not under attack
@@ -3600,6 +3602,7 @@ export class AppComponent {
             }
             console.log(this.currentPiece['cellsToPaint']);
             this.currentPiece['cellsToPaint'] = this.currentCellsToPaint;
+            console.log('Validator');
           }
         }
       } else {
